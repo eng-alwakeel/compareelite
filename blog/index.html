@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Guides | CompareElite</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .blog-header {
+            background-color: var(--primary-light);
+            padding: 4rem 0;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .blog-header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .filter-bar {
+            display: flex;
+            gap: 1rem;
+            margin: 3rem 0;
+            flex-wrap: wrap;
+        }
+
+        .filter-input {
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            font-family: inherit;
+            font-size: 1rem;
+        }
+        
+        .filter-input:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(37,99,235,0.1);
+        }
+
+        .search-input {
+            flex-grow: 1;
+            min-width: 250px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="../index.html" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                CompareElite
+            </a>
+            <nav class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="index.html" class="active">Guides</a>
+                <a href="../dashboard/index.html">Dashboard</a>
+                <button class="btn btn-outline" style="padding: 0.4rem 0.6rem; border: none; font-size: 1.2rem;" onclick="toggleTheme()" aria-label="Toggle Dark Mode">🌓</button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="blog-header">
+        <div class="container">
+            <h1>Buying Guides & Reviews</h1>
+            <p style="font-size: 1.1rem; max-width: 600px; margin: 0 auto;">Read our unbiased, expert reviews on hundreds of products so you can buy with confidence.</p>
+        </div>
+    </div>
+
+    <main class="container">
+        <!-- Filter Options -->
+        <div class="filter-bar">
+            <input type="text" id="search-input" class="filter-input search-input" placeholder="Search guides...">
+            
+            <select id="category-filter" class="filter-input">
+                <option value="All">All Categories</option>
+                <option value="Technology">Technology</option>
+                <option value="Home & Garden">Home & Garden</option>
+                <option value="Health & Fitness">Health & Fitness</option>
+            </select>
+            
+            <select id="sort-filter" class="filter-input">
+                <option value="Latest">Latest</option>
+                <option value="Popular">Most Popular</option>
+            </select>
+        </div>
+
+        <div class="grid-3" id="blog-articles-container" style="margin-bottom: 5rem;">
+            <!-- Skeleton cards -->
+            <div class="card skeleton">
+                <div class="card-img-wrapper skeleton"></div>
+                <div class="card-content">
+                    <div class="skeleton" style="height: 15px; width: 40%; margin-bottom: 10px;"></div>
+                    <div class="skeleton" style="height: 25px; width: 80%; margin-bottom: 15px;"></div>
+                    <div class="skeleton" style="height: 15px; margin-bottom: 8px;"></div>
+                    <div class="skeleton" style="height: 15px; margin-bottom: 8px;"></div>
+                </div>
+            </div>
+            <div class="card skeleton">
+                <div class="card-img-wrapper skeleton"></div>
+                <div class="card-content">
+                    <div class="skeleton" style="height: 15px; width: 40%; margin-bottom: 10px;"></div>
+                    <div class="skeleton" style="height: 25px; width: 80%; margin-bottom: 15px;"></div>
+                    <div class="skeleton" style="height: 15px; margin-bottom: 8px;"></div>
+                    <div class="skeleton" style="height: 15px; margin-bottom: 8px;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Pagination (Static Mock) -->
+        <div style="display: flex; justify-content: center; gap: 0.5rem; margin-bottom: 5rem;">
+            <button class="btn btn-primary" style="padding: 0.5rem 1rem;">1</button>
+            <button class="btn btn-outline" style="padding: 0.5rem 1rem;">2</button>
+            <button class="btn btn-outline" style="padding: 0.5rem 1rem;">3</button>
+            <span style="padding: 0.5rem;">...</span>
+            <button class="btn btn-outline" style="padding: 0.5rem 1rem;">Next</button>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container" style="text-align: center; color: var(--text-light);">
+            &copy; 2026 CompareElite. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="../js/github.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
