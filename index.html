@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompareElite | The Most Trusted Buying Guides</title>
+    <meta name="description" content="Discover unbiased reviews, side-by-side comparisons, and expert recommendations across 1000+ products. CompareElite helps you make the right choice.">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                CompareElite
+            </a>
+            <nav class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="blog/index.html">Guides</a>
+                <a href="dashboard/index.html">Dashboard</a>
+                <button class="btn btn-outline" style="padding: 0.4rem 0.6rem; border: none; font-size: 1.2rem;" onclick="toggleTheme()" aria-label="Toggle Dark Mode">🌓</button>
+                <a href="blog/index.html" class="btn btn-primary">Start Reading</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <span class="badge">Unbiased Reviews</span>
+                <h1>The Most Trusted Buying Guides</h1>
+                <p>We analyze, test, and compare top-rated products to give you clear, actionable recommendations you can trust.</p>
+                
+                <div style="display: flex; gap: 1rem; justify-content: center;">
+                    <a href="blog/index.html" class="btn btn-primary" style="padding: 0.75rem 2rem; font-size: 1.1rem;">Explore Guides</a>
+                    <a href="#featured" class="btn btn-outline" style="padding: 0.75rem 2rem; font-size: 1.1rem;">View Latest</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-value">50+</span>
+                        <span class="stat-label">In-depth Guides</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">500K</span>
+                        <span class="stat-label">Monthly Readers</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">1000+</span>
+                        <span class="stat-label">Products Analyzed</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="featured" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <h2 class="section-title">Featured Articles</h2>
+                        <p>Our most recent and popular buying guides.</p>
+                    </div>
+                    <a href="blog/index.html" class="btn btn-outline">View All</a>
+                </div>
+
+                <!-- Articles Grid -->
+                <div class="grid-3" id="home-articles-container">
+                    <!-- Skeleton Cards for Loading State -->
+                    <div class="card skeleton">
+                        <div class="card-img-wrapper skeleton"></div>
+                        <div class="card-content">
+                            <div class="skeleton" style="height: 15px; width: 40%; margin-bottom: 10px;"></div>
+                            <div class="skeleton" style="height: 25px; width: 80%; margin-bottom: 15px;"></div>
+                            <div class="skeleton" style="height: 15px; margin-bottom: 8px;"></div>
+                            <div class="skeleton" style="height: 15px; margin-bottom: 8px;"></div>
+                            <div class="skeleton" style="height: 15px; width: 60%;"></div>
+                        </div>
+                    </div>
+                     <div class="card skeleton">
+                        <div class="card-img-wrapper skeleton"></div>
+                        <div class="card-content">
+                            <div class="skeleton" style="height: 15px; width: 40%; margin-bottom: 10px;"></div>
+                            <div class="skeleton" style="height: 25px; width: 80%; margin-bottom: 15px;"></div>
+                            <div class="skeleton" style="height: 15px; margin-bottom: 8px;"></div>
+                            <div class="skeleton" style="height: 15px; margin-bottom: 8px;"></div>
+                            <div class="skeleton" style="height: 15px; width: 60%;"></div>
+                        </div>
+                    </div>
+                     <div class="card skeleton">
+                        <div class="card-img-wrapper skeleton"></div>
+                        <div class="card-content">
+                            <div class="skeleton" style="height: 15px; width: 40%; margin-bottom: 10px;"></div>
+                            <div class="skeleton" style="height: 25px; width: 80%; margin-bottom: 15px;"></div>
+                            <div class="skeleton" style="height: 15px; margin-bottom: 8px;"></div>
+                            <div class="skeleton" style="height: 15px; margin-bottom: 8px;"></div>
+                            <div class="skeleton" style="height: 15px; width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="newsletter-section">
+                    <div class="newsletter-content">
+                        <h3>Never Buy the Wrong Product Again</h3>
+                        <p>Join 500,000+ readers getting our top buying recommendations directly in their inbox.</p>
+                        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
+                            <input type="email" placeholder="Enter your email address" class="input-field" required>
+                            <button type="submit" class="btn btn-primary" style="padding: 0.75rem 2rem;">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="margin-bottom: 1rem;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        CompareElite
+                    </a>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">Empowering consumers with expert product knowledge and transparent reviews.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Categories</h4>
+                    <ul class="footer-nav">
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Home & Garden</a></li>
+                        <li><a href="#">Health & Fitness</a></li>
+                        <li><a href="#">Auto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul class="footer-nav">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Editorial Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul class="footer-nav">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Affiliate Disclosure</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 CompareElite. All rights reserved. Not actual products. Example text.
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/github.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
