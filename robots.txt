@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /dashboard/
+
+# Sitemaps
+Sitemap: https://compareelite.com/sitemap.xml
