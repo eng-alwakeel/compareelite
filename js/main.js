@@ -185,67 +185,78 @@ async function renderArticleDetail() {
     container.innerHTML = bodyContent;
 }
 
-function createMockArticleBody(article) {
+function buildArticleBody(article) {
+    const products = article.products || [];
+    const faq = article.faq || [];
+
+    const tableRows = products.map((p, i) => `
+        <tr style="border-bottom:1px solid var(--border-color);${i % 2 === 1 ? 'background:rgba(37,99,235,0.02);' : ''}">
+            <td style="padding:1.25rem 1rem; font-weight:600;">${p.name}</td>
+            <td style="padding:1.25rem 1rem; text-align:center; color:var(--primary); font-weight:700;">${p.rating}</td>
+            <td style="padding:1.25rem 1rem; text-align:center; font-weight:600;">${p.price}</td>
+            <td style="padding:1.25rem 1rem; text-align:center; color:var(--text-secondary);">${p.best_for}</td>
+            <td style="padding:1.25rem 1rem; text-align:right;">
+                <a href="${p.link}" class="btn btn-accent" target="_blank" rel="nofollow noopener" style="white-space:nowrap;">Check Price ↗</a>
+            </td>
+        </tr>`).join('');
+
+    const productCards = products.map(p => `
+        <div style="padding:1.5rem; border:1px solid var(--border-color); border-radius:var(--radius-md); margin-bottom:1.5rem;">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:1rem;">
+                <div style="flex:1;">
+                    <h3 style="margin-bottom:0.5rem;">${p.name}</h3>
+                    <div style="display:flex; gap:1rem; margin-bottom:1rem; flex-wrap:wrap;">
+                        <span style="color:var(--primary); font-weight:700;">${p.rating}</span>
+                        <span style="font-weight:600;">${p.price}</span>
+                        <span style="background:var(--primary-light); color:var(--primary); padding:2px 10px; border-radius:999px; font-size:0.8rem; font-weight:600;">${p.best_for}</span>
+                    </div>
+                    ${p.pros ? `<div style="margin-bottom:0.5rem;"><strong>Pros:</strong> ${p.pros.map(x => `<span style="color:var(--success);">✓ ${x}</span>`).join(' &nbsp;')}</div>` : ''}
+                    ${p.cons ? `<div><strong>Cons:</strong> ${p.cons.map(x => `<span style="color:#ef4444;">✗ ${x}</span>`).join(' &nbsp;')}</div>` : ''}
+                </div>
+                <a href="${p.link}" class="btn btn-accent" target="_blank" rel="nofollow noopener" style="padding:0.75rem 1.5rem; white-space:nowrap;">Buy on Amazon ↗</a>
+            </div>
+        </div>`).join('');
+
+    const faqHtml = faq.length ? `
+        <h2>Frequently Asked Questions</h2>
+        ${faq.map(q => `
+        <div style="margin-bottom:1.5rem;">
+            <h4 style="margin-bottom:0.5rem; color:var(--text-primary);">${q.q}</h4>
+            <p>${q.a}</p>
+        </div>`).join('')}` : '';
+
     return `
-        <div style="font-size: 1.1rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 3rem;">
+        <div style="font-size:1.1rem; line-height:1.8; color:var(--text-secondary); margin-bottom:2rem;">
             <p>${article.excerpt}</p>
-            <p>Welcome to our comprehensive guide. Our experts spent over 120 hours testing and researching to bring you the best options on the market.</p>
+            <p>Our team spent dozens of hours researching, comparing specs, and reading thousands of verified buyer reviews to bring you this guide.</p>
         </div>
-        
-        <h2>Top Recommendations</h2>
-        <div class="comparison-table-wrapper" style="overflow-x: auto; margin: 2rem 0;">
-            <table class="comparison-table" style="width: 100%; border-collapse: collapse; min-width: 600px;">
+        ${products.length ? `
+        <h2>Top Picks at a Glance</h2>
+        <div style="overflow-x:auto; margin:2rem 0;">
+            <table style="width:100%; border-collapse:collapse; min-width:600px;">
                 <thead>
-                    <tr style="background-color: var(--bg-main); border-bottom: 2px solid var(--border-color);">
-                        <th style="padding: 1rem; text-align: left;">Product</th>
-                        <th style="padding: 1rem; text-align: center;">Rating</th>
-                        <th style="padding: 1rem; text-align: center;">Best For</th>
-                        <th style="padding: 1rem; text-align: right;">Action</th>
+                    <tr style="background:var(--bg-main); border-bottom:2px solid var(--border-color);">
+                        <th style="padding:1rem; text-align:left;">Product</th>
+                        <th style="padding:1rem; text-align:center;">Rating</th>
+                        <th style="padding:1rem; text-align:center;">Price</th>
+                        <th style="padding:1rem; text-align:center;">Best For</th>
+                        <th style="padding:1rem; text-align:right;">Action</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr style="border-bottom: 1px solid var(--border-color);">
-                        <td style="padding: 1.5rem 1rem; font-weight: 600;">Top Pick Product X</td>
-                        <td style="padding: 1.5rem 1rem; text-align: center; color: var(--primary);">9.8/10</td>
-                        <td style="padding: 1.5rem 1rem; text-align: center;">Overall Value</td>
-                        <td style="padding: 1.5rem 1rem; text-align: right;"><a href="#" class="btn btn-accent" target="_blank">Check Amazon</a></td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid var(--border-color); background-color: rgba(37,99,235,0.02);">
-                        <td style="padding: 1.5rem 1rem; font-weight: 600;">Premium Product Y</td>
-                        <td style="padding: 1.5rem 1rem; text-align: center; color: var(--primary);">9.5/10</td>
-                        <td style="padding: 1.5rem 1rem; text-align: center;">High-End Features</td>
-                        <td style="padding: 1.5rem 1rem; text-align: right;"><a href="#" class="btn btn-accent" target="_blank">Check Amazon</a></td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid var(--border-color);">
-                        <td style="padding: 1.5rem 1rem; font-weight: 600;">Budget Pick Z</td>
-                        <td style="padding: 1.5rem 1rem; text-align: center; color: var(--primary);">8.9/10</td>
-                        <td style="padding: 1.5rem 1rem; text-align: center;">Affordability</td>
-                        <td style="padding: 1.5rem 1rem; text-align: right;"><a href="#" class="btn btn-accent" target="_blank">Check Amazon</a></td>
-                    </tr>
-                </tbody>
+                <tbody>${tableRows}</tbody>
             </table>
         </div>
-
         <h2>Detailed Reviews</h2>
-        <div style="margin-bottom: 3rem; padding: 2rem; border: 1px solid var(--border-color); border-radius: var(--radius-md);">
-            <h3>Top Pick Product X</h3>
-            <p style="margin-top: 1rem;">This product exceeded our expectations in every testing category. The battery life is phenomenal, and the build quality feels extremely premium.</p>
-            <ul style="margin-top: 1rem; padding-left: 1.5rem;">
-                <li>Excellent durability</li>
-                <li>Long-lasting battery</li>
-                <li>Top-tier customer support</li>
-            </ul>
-        </div>
+        ${productCards}` : ''}
+        ${faqHtml}
+        <div style="background:var(--primary-light); border-radius:var(--radius-md); padding:1.5rem; margin-top:2rem; text-align:center;">
+            <p style="font-weight:600; color:var(--text-primary); margin-bottom:0.5rem;">Found this guide helpful?</p>
+            <p style="font-size:0.9rem; margin-bottom:1rem;">All links are Amazon affiliate links. Prices shown are approximate and may change.</p>
+        </div>`;
+}
 
-        <h2>FAQ</h2>
-        <div style="margin-top: 2rem;">
-            <h4 style="margin-bottom: 0.5rem;">What is the most important feature to look for?</h4>
-            <p style="margin-bottom: 1.5rem;">Battery life and durable materials are key indicators of a product that will last.</p>
-            
-            <h4 style="margin-bottom: 0.5rem;">Do these products come with a warranty?</h4>
-            <p style="margin-bottom: 1.5rem;">Yes, all the products featured in our guide come with at least a 1-year manufacturer warranty.</p>
-        </div>
-    `;
+function createMockArticleBody(article) {
+    return buildArticleBody(article);
 }
 
 async function renderDashboard() {

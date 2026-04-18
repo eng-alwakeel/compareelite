@@ -1,0 +1,58 @@
+{
+  "slug": "best-portable-power-banks-2026",
+  "title": "Best Portable Power Banks of 2026: Fast Charging Picks",
+  "category": "Technology",
+  "date": "2026-04-16",
+  "excerpt": "Never run out of battery again. We ranked the best power banks for phones, laptops, and everything in between.",
+  "thumbnail": "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=800&q=80",
+  "author": "CompareElite Team",
+  "stats": { "readers": 0 },
+  "products": [
+    {
+      "name": "Anker 737 Power Bank (PowerCore 26K)",
+      "rating": "9.7/10",
+      "price": "$89",
+      "best_for": "Best Overall",
+      "link": "https://www.amazon.com/s?k=Anker+737+PowerCore+26K&tag=compareelite-20",
+      "pros": ["140W output charges laptops", "26,800mAh", "Smart display"],
+      "cons": ["Heavy (1.5 lbs)", "Expensive"]
+    },
+    {
+      "name": "Anker Nano Power Bank 10K",
+      "rating": "9.3/10",
+      "price": "$35",
+      "best_for": "Most Portable",
+      "link": "https://www.amazon.com/s?k=Anker+Nano+Power+Bank+10K&tag=compareelite-20",
+      "pros": ["Credit-card thin", "Built-in USB-C cable", "30W fast charge"],
+      "cons": ["10,000mAh only", "One port"]
+    },
+    {
+      "name": "Baseus 65W Power Bank 20K",
+      "rating": "9.0/10",
+      "price": "$59",
+      "best_for": "Best Value",
+      "link": "https://www.amazon.com/s?k=Baseus+65W+Power+Bank+20000mAh&tag=compareelite-20",
+      "pros": ["65W PD charging", "20,000mAh", "4 ports"],
+      "cons": ["Gets warm during fast charge"]
+    },
+    {
+      "name": "INIU Power Bank 22.5W 10K",
+      "rating": "8.7/10",
+      "price": "$22",
+      "best_for": "Best Under $25",
+      "link": "https://www.amazon.com/s?k=INIU+Power+Bank+22.5W+10000mAh&tag=compareelite-20",
+      "pros": ["22.5W fast charge", "LED display", "Slim design"],
+      "cons": ["No laptop charging", "Slow self-recharge"]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can a power bank charge a laptop?",
+      "a": "Yes, but only if it outputs 45W or more via USB-C PD. The Anker 737 (140W) and Baseus 65W are great laptop-compatible options."
+    },
+    {
+      "q": "Are power banks allowed on airplanes?",
+      "a": "Yes, in carry-on bags only. Most airlines allow power banks up to 100Wh (about 27,000mAh at 3.7V). Check your airline's specific policy."
+    }
+  ]
+}
