@@ -1,3 +1,23 @@
+// Mobile Menu
+function toggleMenu() {
+    const nav = document.getElementById('nav-menu');
+    const btn = document.querySelector('.hamburger');
+    nav.classList.toggle('open');
+    btn.classList.toggle('open');
+}
+
+function closeMenu() {
+    const nav = document.getElementById('nav-menu');
+    const btn = document.querySelector('.hamburger');
+    nav.classList.remove('open');
+    btn.classList.remove('open');
+}
+
+// Close menu on resize
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) closeMenu();
+});
+
 // Theme Initialization
 const initTheme = () => {
     const savedTheme = localStorage.getItem('ce_theme');
