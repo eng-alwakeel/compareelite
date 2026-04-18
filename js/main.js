@@ -245,29 +245,29 @@ function buildArticleBody(article) {
 
     const tableRows = products.map((p, i) => `
         <tr style="border-bottom:1px solid var(--border-color);${i % 2 === 1 ? 'background:rgba(37,99,235,0.02);' : ''}">
-            <td style="padding:1.25rem 1rem; font-weight:600;">${p.name}</td>
-            <td style="padding:1.25rem 1rem; text-align:center; color:var(--primary); font-weight:700;">${p.rating}</td>
-            <td style="padding:1.25rem 1rem; text-align:center; font-weight:600;">${p.price}</td>
-            <td style="padding:1.25rem 1rem; text-align:center; color:var(--text-secondary);">${p.best_for}</td>
-            <td style="padding:1.25rem 1rem; text-align:right;">
+            <td class="col-product" style="font-weight:600;">${p.name}</td>
+            <td class="col-rating" style="text-align:center; color:var(--primary); font-weight:700;">${p.rating}</td>
+            <td class="col-price" style="text-align:center; font-weight:600;">${p.price}</td>
+            <td class="col-bestfor" style="text-align:center; color:var(--text-secondary);">${p.best_for}</td>
+            <td class="col-action" style="text-align:right;">
                 <a href="${p.link}" class="btn btn-accent" target="_blank" rel="nofollow noopener" style="white-space:nowrap;">Check Price ↗</a>
             </td>
         </tr>`).join('');
 
     const productCards = products.map(p => `
-        <div style="padding:1.5rem; border:1px solid var(--border-color); border-radius:var(--radius-md); margin-bottom:1.5rem;">
-            <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:1rem;">
-                <div style="flex:1;">
+        <div class="product-card">
+            <div class="product-card-inner">
+                <div class="product-card-body">
                     <h3 style="margin-bottom:0.5rem;">${p.name}</h3>
                     <div style="display:flex; gap:1rem; margin-bottom:1rem; flex-wrap:wrap;">
                         <span style="color:var(--primary); font-weight:700;">${p.rating}</span>
                         <span style="font-weight:600;">${p.price}</span>
                         <span style="background:var(--primary-light); color:var(--primary); padding:2px 10px; border-radius:999px; font-size:0.8rem; font-weight:600;">${p.best_for}</span>
                     </div>
-                    ${p.pros ? `<div style="margin-bottom:0.5rem;"><strong>Pros:</strong> ${p.pros.map(x => `<span style="color:var(--success);">✓ ${x}</span>`).join(' &nbsp;')}</div>` : ''}
-                    ${p.cons ? `<div><strong>Cons:</strong> ${p.cons.map(x => `<span style="color:#ef4444;">✗ ${x}</span>`).join(' &nbsp;')}</div>` : ''}
+                    ${p.pros ? `<div style="margin-bottom:0.5rem;"><strong>Pros:</strong>${p.pros.map(x => `<div class="pro-item">✓ ${x}</div>`).join('')}</div>` : ''}
+                    ${p.cons ? `<div><strong>Cons:</strong>${p.cons.map(x => `<div class="con-item">✗ ${x}</div>`).join('')}</div>` : ''}
                 </div>
-                <a href="${p.link}" class="btn btn-accent" target="_blank" rel="nofollow noopener" style="padding:0.75rem 1.5rem; white-space:nowrap;">Buy on Amazon ↗</a>
+                <a href="${p.link}" class="btn btn-accent btn-amazon" target="_blank" rel="nofollow noopener" style="padding:0.75rem 1.5rem; white-space:nowrap;">Buy on Amazon ↗</a>
             </div>
         </div>`).join('');
 
@@ -286,15 +286,15 @@ function buildArticleBody(article) {
         </div>
         ${products.length ? `
         <h2>Top Picks at a Glance</h2>
-        <div style="overflow-x:auto; margin:2rem 0;">
-            <table style="width:100%; border-collapse:collapse; min-width:600px;">
+        <div class="picks-table-wrapper">
+            <table class="picks-table">
                 <thead>
                     <tr style="background:var(--bg-main); border-bottom:2px solid var(--border-color);">
-                        <th style="padding:1rem; text-align:left;">Product</th>
-                        <th style="padding:1rem; text-align:center;">Rating</th>
-                        <th style="padding:1rem; text-align:center;">Price</th>
-                        <th style="padding:1rem; text-align:center;">Best For</th>
-                        <th style="padding:1rem; text-align:right;">Action</th>
+                        <th class="col-product" style="text-align:left;">Product</th>
+                        <th class="col-rating" style="text-align:center;">Rating</th>
+                        <th class="col-price" style="text-align:center;">Price</th>
+                        <th class="col-bestfor" style="text-align:center;">Best For</th>
+                        <th class="col-action" style="text-align:right;">Action</th>
                     </tr>
                 </thead>
                 <tbody>${tableRows}</tbody>

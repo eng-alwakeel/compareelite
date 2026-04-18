@@ -519,6 +519,28 @@ a:hover {
   flex-wrap: wrap;
 }
 
+/* Article product table */
+.picks-table-wrapper { overflow-x: auto; margin: 2rem 0; -webkit-overflow-scrolling: touch; }
+.picks-table { width: 100%; border-collapse: collapse; }
+.picks-table th, .picks-table td { padding: 1rem; }
+
+/* Article product cards */
+.product-card { padding: 1.5rem; border: 1px solid var(--border-color); border-radius: var(--radius-md); margin-bottom: 1.5rem; }
+.product-card-inner { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; }
+.product-card-body { flex: 1; min-width: 0; }
+.pro-item { display: block; color: var(--success); margin-top: 0.2rem; }
+.con-item { display: block; color: #ef4444; margin-top: 0.2rem; }
+
+@media (max-width: 640px) {
+  /* Table: hide Rating and Best For columns to fit in 3 cols */
+  .col-rating, .col-bestfor { display: none; }
+  .picks-table th, .picks-table td { padding: 0.75rem 0.5rem; font-size: 0.9rem; }
+
+  /* Product cards: stack button below content */
+  .product-card-inner { flex-direction: column; }
+  .btn-amazon { width: 100%; text-align: center; box-sizing: border-box; }
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .hero { padding: 3.5rem 0; }
