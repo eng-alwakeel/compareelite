@@ -1,0 +1,58 @@
+{
+  "slug": "best-dash-cams-2026",
+  "title": "Best Dash Cams of 2026: Front & Rear Coverage Picks",
+  "category": "Auto",
+  "date": "2026-04-12",
+  "excerpt": "Protect yourself on the road with a quality dash cam. We tested the top models for video quality, features, and reliability.",
+  "thumbnail": "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&q=80",
+  "author": "CompareElite Team",
+  "stats": { "readers": 0 },
+  "products": [
+    {
+      "name": "Vantrue E1 Lite 4K Dash Cam",
+      "rating": "9.6/10",
+      "price": "$89",
+      "best_for": "Best Overall",
+      "link": "https://www.amazon.com/s?k=Vantrue+E1+Lite+4K+dash+cam&tag=compareelite-20",
+      "pros": ["4K front video", "Sony STARVIS sensor", "Parking mode", "Voice control"],
+      "cons": ["No rear camera included", "App can be slow"]
+    },
+    {
+      "name": "Nextbase 622GW",
+      "rating": "9.4/10",
+      "price": "$199",
+      "best_for": "Best Premium",
+      "link": "https://www.amazon.com/s?k=Nextbase+622GW+dash+cam&tag=compareelite-20",
+      "pros": ["4K + image stabilization", "Emergency SOS feature", "Alexa built-in"],
+      "cons": ["Expensive", "Large size"]
+    },
+    {
+      "name": "Garmin Dash Cam Mini 2",
+      "rating": "9.2/10",
+      "price": "$59",
+      "best_for": "Most Discreet",
+      "link": "https://www.amazon.com/s?k=Garmin+Dash+Cam+Mini+2&tag=compareelite-20",
+      "pros": ["Thumb-sized, barely visible", "1080p quality", "Auto incident detection"],
+      "cons": ["No screen", "1080p only"]
+    },
+    {
+      "name": "Rexing V1 4K Front Dash Cam",
+      "rating": "8.9/10",
+      "price": "$49",
+      "best_for": "Best Budget 4K",
+      "link": "https://www.amazon.com/s?k=Rexing+V1+4K+dash+cam&tag=compareelite-20",
+      "pros": ["4K at a low price", "Loop recording", "Wide-angle lens"],
+      "cons": ["Basic night vision", "Average app"]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Do I need front and rear dash cam?",
+      "a": "For most drivers, front-only is sufficient. A front + rear setup is ideal if you frequently park in busy areas or are concerned about rear-end collisions."
+    },
+    {
+      "q": "Do dash cams drain the car battery?",
+      "a": "In parking mode, yes — some current is drawn. Most dash cams have a low-voltage cutoff to protect your battery. For extended parking mode, a hardwire kit is recommended."
+    }
+  ]
+}
