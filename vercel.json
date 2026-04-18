@@ -1,0 +1,10 @@
+{
+  "buildCommand": null,
+  "outputDirectory": ".",
+  "framework": null,
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/blog/article", "destination": "/blog/article.html" },
+    { "source": "/dashboard/login", "destination": "/dashboard/login.html" }
+  ]
+}
