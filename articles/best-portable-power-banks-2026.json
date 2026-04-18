@@ -9,11 +9,11 @@
   "stats": { "readers": 0 },
   "products": [
     {
-      "name": "Anker 737 Power Bank (PowerCore 26K)",
+      "name": "Anker 737 Power Bank (PowerCore 24K)",
       "rating": "9.7/10",
       "price": "$89",
       "best_for": "Best Overall",
-      "link": "https://www.amazon.com/s?k=Anker+737+PowerCore+26K&tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B09VPHVT2Z?tag=compareelite-20",
       "pros": ["140W output charges laptops", "26,800mAh", "Smart display"],
       "cons": ["Heavy (1.5 lbs)", "Expensive"]
     },
