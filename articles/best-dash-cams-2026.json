@@ -9,11 +9,11 @@
   "stats": { "readers": 0 },
   "products": [
     {
-      "name": "Vantrue E1 Lite 4K Dash Cam",
+      "name": "Vantrue E1 Pro 4K Dash Cam",
       "rating": "9.6/10",
       "price": "$89",
       "best_for": "Best Overall",
-      "link": "https://www.amazon.com/s?k=Vantrue+E1+Lite+4K+dash+cam&tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B0DSKXJV3H?tag=compareelite-20",
       "pros": ["4K front video", "Sony STARVIS sensor", "Parking mode", "Voice control"],
       "cons": ["No rear camera included", "App can be slow"]
     },
@@ -22,7 +22,7 @@
       "rating": "9.4/10",
       "price": "$199",
       "best_for": "Best Premium",
-      "link": "https://www.amazon.com/s?k=Nextbase+622GW+dash+cam&tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B08CVN4CVD?tag=compareelite-20",
       "pros": ["4K + image stabilization", "Emergency SOS feature", "Alexa built-in"],
       "cons": ["Expensive", "Large size"]
     },
@@ -31,7 +31,7 @@
       "rating": "9.2/10",
       "price": "$59",
       "best_for": "Most Discreet",
-      "link": "https://www.amazon.com/s?k=Garmin+Dash+Cam+Mini+2&tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B0931YZ82P?tag=compareelite-20",
       "pros": ["Thumb-sized, barely visible", "1080p quality", "Auto incident detection"],
       "cons": ["No screen", "1080p only"]
     },
@@ -40,7 +40,7 @@
       "rating": "8.9/10",
       "price": "$49",
       "best_for": "Best Budget 4K",
-      "link": "https://www.amazon.com/s?k=Rexing+V1+4K+dash+cam&tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B084T8QHNX?tag=compareelite-20",
       "pros": ["4K at a low price", "Loop recording", "Wide-angle lens"],
       "cons": ["Basic night vision", "Average app"]
     }

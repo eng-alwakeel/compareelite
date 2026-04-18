@@ -31,7 +31,7 @@
       "rating": "9.2/10",
       "price": "$229",
       "best_for": "Best for Android",
-      "link": "https://www.amazon.com/s?k=Samsung+Galaxy+Buds3+Pro&tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B0D9YZJ3V7?tag=compareelite-20",
       "pros": ["Deep Samsung integration", "Hi-Fi audio", "Blade design"],
       "cons": ["Best with Samsung phones only"]
     },
@@ -40,7 +40,7 @@
       "rating": "9.0/10",
       "price": "$179",
       "best_for": "Best Calls",
-      "link": "https://www.amazon.com/s?k=Jabra+Elite+10+Gen+2&tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B0D5DLF39S?tag=compareelite-20",
       "pros": ["6-mic call quality", "Comfortable fit", "Multipoint connection"],
       "cons": ["Average ANC vs price"]
     },
@@ -49,7 +49,7 @@
       "rating": "8.6/10",
       "price": "$79",
       "best_for": "Best Budget",
-      "link": "https://www.amazon.com/s?k=Soundcore+Liberty+4+NC&tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B0BZV4QFP8?tag=compareelite-20",
       "pros": ["Incredible value", "Good ANC", "50hr total battery"],
       "cons": ["Average soundstage", "Plastic build"]
     }

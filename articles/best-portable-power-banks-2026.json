@@ -22,7 +22,7 @@
       "rating": "9.3/10",
       "price": "$35",
       "best_for": "Most Portable",
-      "link": "https://www.amazon.com/s?k=Anker+Nano+Power+Bank+10K&tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B0C9CJKCH3?tag=compareelite-20",
       "pros": ["Credit-card thin", "Built-in USB-C cable", "30W fast charge"],
       "cons": ["10,000mAh only", "One port"]
     },
@@ -31,7 +31,7 @@
       "rating": "9.0/10",
       "price": "$59",
       "best_for": "Best Value",
-      "link": "https://www.amazon.com/s?k=Baseus+65W+Power+Bank+20000mAh&tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B08THFDRSZ?tag=compareelite-20",
       "pros": ["65W PD charging", "20,000mAh", "4 ports"],
       "cons": ["Gets warm during fast charge"]
     },
@@ -40,7 +40,7 @@
       "rating": "8.7/10",
       "price": "$22",
       "best_for": "Best Under $25",
-      "link": "https://www.amazon.com/s?k=INIU+Power+Bank+22.5W+10000mAh&tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B09176JCKZ?tag=compareelite-20",
       "pros": ["22.5W fast charge", "LED display", "Slim design"],
       "cons": ["No laptop charging", "Slow self-recharge"]
     }
