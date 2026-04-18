@@ -166,20 +166,74 @@ async function renderArticleDetail() {
         return;
     }
 
-    // Set Header Info
+    const pageUrl = `https://compareelite.com/blog/article?slug=${slug}`;
+
+    // Update title & meta
     document.title = `${article.title} | CompareElite`;
-    // We adjust the path assuming the articles fetched have the body, if not we show mock body
-    const bodyContent = article.content || createMockArticleBody(article);
-    
+    document.querySelector('meta[name="description"]').setAttribute('content', article.excerpt);
+    document.getElementById('og-title').setAttribute('content', `${article.title} | CompareElite`);
+    document.getElementById('og-description').setAttribute('content', article.excerpt);
+    document.getElementById('og-image').setAttribute('content', article.thumbnail || 'https://compareelite.com/og-image.jpg');
+    document.getElementById('og-url').setAttribute('content', pageUrl);
+    document.getElementById('tw-title').setAttribute('content', `${article.title} | CompareElite`);
+    document.getElementById('tw-description').setAttribute('content', article.excerpt);
+    document.getElementById('tw-image').setAttribute('content', article.thumbnail || 'https://compareelite.com/og-image.jpg');
+    document.getElementById('canonical-url').setAttribute('href', pageUrl);
+
+    // Update breadcrumb
+    const breadcrumbTitle = document.getElementById('breadcrumb-title');
+    if (breadcrumbTitle) breadcrumbTitle.textContent = article.title;
+
+    // Inject JSON-LD: Article + FAQPage + BreadcrumbList
+    const faqSchema = article.faq && article.faq.length ? {
+        "@type": "FAQPage",
+        "mainEntity": article.faq.map(q => ({
+            "@type": "Question",
+            "name": q.q,
+            "acceptedAnswer": { "@type": "Answer", "text": q.a }
+        }))
+    } : null;
+
+    const schemaGraph = [
+        {
+            "@type": "Article",
+            "@id": `${pageUrl}#article`,
+            "headline": article.title,
+            "description": article.excerpt,
+            "image": article.thumbnail || 'https://compareelite.com/og-image.jpg',
+            "datePublished": article.date,
+            "dateModified": article.date,
+            "author": { "@type": "Organization", "name": "CompareElite", "url": "https://compareelite.com" },
+            "publisher": { "@type": "Organization", "name": "CompareElite", "url": "https://compareelite.com" },
+            "mainEntityOfPage": { "@type": "WebPage", "@id": pageUrl }
+        },
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://compareelite.com" },
+                { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://compareelite.com/blog" },
+                { "@type": "ListItem", "position": 3, "name": article.title, "item": pageUrl }
+            ]
+        }
+    ];
+    if (faqSchema) schemaGraph.push(faqSchema);
+
+    const ldScript = document.createElement('script');
+    ldScript.type = 'application/ld+json';
+    ldScript.textContent = JSON.stringify({ "@context": "https://schema.org", "@graph": schemaGraph });
+    document.head.appendChild(ldScript);
+
+    const bodyContent = article.content || buildArticleBody(article);
+
     header.innerHTML = `
         <div class="badge">${article.category}</div>
-        <h1 class="article-title" style="font-size: 2.5rem; margin-bottom: 1rem; color: var(--text-primary);">${article.title}</h1>
-        <div class="article-meta" style="display: flex; gap: 1.5rem; color: var(--text-secondary); margin-bottom: 2rem;">
+        <h1 style="font-size: 2.5rem; margin-bottom: 1rem; color: var(--text-primary); line-height:1.2;">${article.title}</h1>
+        <div style="display:flex; gap:1.5rem; color:var(--text-secondary); margin-bottom:2rem; flex-wrap:wrap; justify-content:center; font-size:0.95rem;">
             <span>By <strong>${article.author || 'CompareElite Team'}</strong></span>
-            <span>📅 ${new Date(article.date).toLocaleDateString()}</span>
-            <span>⏱️ 10 min read</span>
+            <span>📅 ${new Date(article.date).toLocaleDateString('en-US', {year:'numeric',month:'long',day:'numeric'})}</span>
+            <span>⏱️ ${Math.ceil((article.products?.length || 3) * 2)} min read</span>
         </div>
-        <img src="${article.thumbnail || 'https://via.placeholder.com/1200x600?text=No+Image'}" alt="${article.title}" style="width: 100%; border-radius: var(--radius-lg); margin-bottom: 3rem; box-shadow: var(--shadow-md);">
+        <img src="${article.thumbnail || 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=900&q=80'}" alt="${article.title}" style="width:100%; border-radius:var(--radius-lg); margin-bottom:3rem; box-shadow:var(--shadow-md);" loading="eager">
     `;
 
     container.innerHTML = bodyContent;
