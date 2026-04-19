@@ -6,7 +6,9 @@
   "excerpt": "A dead battery shouldn't ruin your day. These portable jump starters are compact, powerful, and can save you anywhere.",
   "thumbnail": "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=800&q=80",
   "author": "CompareElite Team",
-  "stats": { "readers": 0 },
+  "stats": {
+    "readers": 0
+  },
   "products": [
     {
       "name": "NOCO Boost Plus GB40 (1000A)",
@@ -14,8 +16,17 @@
       "price": "$99",
       "best_for": "Best Overall",
       "link": "https://www.amazon.com/dp/B015TKUPIC?tag=compareelite-20",
-      "pros": ["Jumps up to 6L gas / 3L diesel", "Spark-proof", "USB charging port", "Compact size"],
-      "cons": ["Pricier than generic brands", "Cable could be longer"]
+      "pros": [
+        "Jumps up to 6L gas / 3L diesel",
+        "Spark-proof",
+        "USB charging port",
+        "Compact size"
+      ],
+      "cons": [
+        "Pricier than generic brands",
+        "Cable could be longer"
+      ],
+      "image": "https://m.media-amazon.com/images/I/413QJ52orPL._SL500_.jpg"
     },
     {
       "name": "NOCO Boost HD GB70 (2000A)",
@@ -23,8 +34,16 @@
       "price": "$179",
       "best_for": "Best for Trucks & SUVs",
       "link": "https://www.amazon.com/dp/B016UG6PWE?tag=compareelite-20",
-      "pros": ["Jumps up to 8L gas / 6L diesel", "Heavy-duty vehicles", "Multiple safety protections"],
-      "cons": ["Large and heavy", "Overkill for sedans"]
+      "pros": [
+        "Jumps up to 8L gas / 6L diesel",
+        "Heavy-duty vehicles",
+        "Multiple safety protections"
+      ],
+      "cons": [
+        "Large and heavy",
+        "Overkill for sedans"
+      ],
+      "image": "https://m.media-amazon.com/images/I/41l37y84S-L._SL500_.jpg"
     },
     {
       "name": "HULKMAN Alpha85 (2000A)",
@@ -32,8 +51,15 @@
       "price": "$89",
       "best_for": "Best Value High-Power",
       "link": "https://www.amazon.com/dp/B08M41FX48?tag=compareelite-20",
-      "pros": ["2000A peak current", "LCD battery display", "Smart clamps"],
-      "cons": ["Less established brand than NOCO"]
+      "pros": [
+        "2000A peak current",
+        "LCD battery display",
+        "Smart clamps"
+      ],
+      "cons": [
+        "Less established brand than NOCO"
+      ],
+      "image": "https://m.media-amazon.com/images/I/412TiAH208L._SL500_.jpg"
     },
     {
       "name": "Antigravity Micro-Start XP-10",
@@ -41,8 +67,14 @@
       "price": "$149",
       "best_for": "Most Compact",
       "link": "https://www.amazon.com/dp/B0CH1L89N2?tag=compareelite-20",
-      "pros": ["Wallet-sized", "Lithium technology", "10-year lifespan"],
-      "cons": ["Lower peak amps than NOCO GB40"]
+      "pros": [
+        "Wallet-sized",
+        "Lithium technology",
+        "10-year lifespan"
+      ],
+      "cons": [
+        "Lower peak amps than NOCO GB40"
+      ]
     }
   ],
   "faq": [

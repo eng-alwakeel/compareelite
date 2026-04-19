@@ -6,7 +6,9 @@
   "excerpt": "Protect yourself on the road with a quality dash cam. We tested the top models for video quality, features, and reliability.",
   "thumbnail": "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&q=80",
   "author": "CompareElite Team",
-  "stats": { "readers": 0 },
+  "stats": {
+    "readers": 0
+  },
   "products": [
     {
       "name": "Vantrue E1 Pro 4K Dash Cam",
@@ -14,8 +16,17 @@
       "price": "$89",
       "best_for": "Best Overall",
       "link": "https://www.amazon.com/dp/B0DSKXJV3H?tag=compareelite-20",
-      "pros": ["4K front video", "Sony STARVIS sensor", "Parking mode", "Voice control"],
-      "cons": ["No rear camera included", "App can be slow"]
+      "pros": [
+        "4K front video",
+        "Sony STARVIS sensor",
+        "Parking mode",
+        "Voice control"
+      ],
+      "cons": [
+        "No rear camera included",
+        "App can be slow"
+      ],
+      "image": "https://m.media-amazon.com/images/I/5145ccmzbaL._SL500_.jpg"
     },
     {
       "name": "Nextbase 622GW",
@@ -23,8 +34,16 @@
       "price": "$199",
       "best_for": "Best Premium",
       "link": "https://www.amazon.com/dp/B08CVN4CVD?tag=compareelite-20",
-      "pros": ["4K + image stabilization", "Emergency SOS feature", "Alexa built-in"],
-      "cons": ["Expensive", "Large size"]
+      "pros": [
+        "4K + image stabilization",
+        "Emergency SOS feature",
+        "Alexa built-in"
+      ],
+      "cons": [
+        "Expensive",
+        "Large size"
+      ],
+      "image": "https://m.media-amazon.com/images/I/41QYD5TVTqL._SL500_.jpg"
     },
     {
       "name": "Garmin Dash Cam Mini 2",
@@ -32,8 +51,16 @@
       "price": "$59",
       "best_for": "Most Discreet",
       "link": "https://www.amazon.com/dp/B0931YZ82P?tag=compareelite-20",
-      "pros": ["Thumb-sized, barely visible", "1080p quality", "Auto incident detection"],
-      "cons": ["No screen", "1080p only"]
+      "pros": [
+        "Thumb-sized, barely visible",
+        "1080p quality",
+        "Auto incident detection"
+      ],
+      "cons": [
+        "No screen",
+        "1080p only"
+      ],
+      "image": "https://m.media-amazon.com/images/I/317xpYMvJNL._SL500_.jpg"
     },
     {
       "name": "Rexing V1 4K Front Dash Cam",
@@ -41,8 +68,16 @@
       "price": "$49",
       "best_for": "Best Budget 4K",
       "link": "https://www.amazon.com/dp/B084T8QHNX?tag=compareelite-20",
-      "pros": ["4K at a low price", "Loop recording", "Wide-angle lens"],
-      "cons": ["Basic night vision", "Average app"]
+      "pros": [
+        "4K at a low price",
+        "Loop recording",
+        "Wide-angle lens"
+      ],
+      "cons": [
+        "Basic night vision",
+        "Average app"
+      ],
+      "image": "https://m.media-amazon.com/images/I/51FpYNp5aEL._SL500_.jpg"
     }
   ],
   "faq": [

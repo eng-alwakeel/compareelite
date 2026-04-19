@@ -6,7 +6,9 @@
   "excerpt": "From allergies to wildfire smoke, we found the best air purifiers to keep your home's air clean and healthy.",
   "thumbnail": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&q=80",
   "author": "CompareElite Team",
-  "stats": { "readers": 0 },
+  "stats": {
+    "readers": 0
+  },
   "products": [
     {
       "name": "Levoit Core 600S Pro",
@@ -14,8 +16,16 @@
       "price": "$229",
       "best_for": "Best for Large Rooms",
       "link": "https://www.amazon.com/dp/B09BJMY8HL?tag=compareelite-20",
-      "pros": ["Covers 635 sq ft", "Auto mode", "HEPA + activated carbon"],
-      "cons": ["Louder on high speed", "Filter replacements cost $40"]
+      "pros": [
+        "Covers 635 sq ft",
+        "Auto mode",
+        "HEPA + activated carbon"
+      ],
+      "cons": [
+        "Louder on high speed",
+        "Filter replacements cost $40"
+      ],
+      "image": "https://m.media-amazon.com/images/I/41BggGY83EL._SL500_.jpg"
     },
     {
       "name": "Winix 5500-2",
@@ -23,8 +33,15 @@
       "price": "$149",
       "best_for": "Best Value",
       "link": "https://www.amazon.com/dp/B0DJG1731C?tag=compareelite-20",
-      "pros": ["PlasmaWave tech", "Sleep mode", "Covers 360 sq ft"],
-      "cons": ["Bulky design", "Loud fan on high"]
+      "pros": [
+        "PlasmaWave tech",
+        "Sleep mode",
+        "Covers 360 sq ft"
+      ],
+      "cons": [
+        "Bulky design",
+        "Loud fan on high"
+      ]
     },
     {
       "name": "Coway Airmega AP-1512HH",
@@ -32,8 +49,15 @@
       "price": "$99",
       "best_for": "Best Under $100",
       "link": "https://www.amazon.com/dp/B00BTKAPUU?tag=compareelite-20",
-      "pros": ["360-degree intake", "Air quality indicator", "Energy Star"],
-      "cons": ["360 sq ft only", "Older design"]
+      "pros": [
+        "360-degree intake",
+        "Air quality indicator",
+        "Energy Star"
+      ],
+      "cons": [
+        "360 sq ft only",
+        "Older design"
+      ]
     },
     {
       "name": "Levoit Core 300S",
@@ -41,8 +65,16 @@
       "price": "$79",
       "best_for": "Best for Bedrooms",
       "link": "https://www.amazon.com/dp/B0G19ZCNP9?tag=compareelite-20",
-      "pros": ["Ultra-quiet sleep mode", "Smart app", "Compact size"],
-      "cons": ["219 sq ft only", "Small room only"]
+      "pros": [
+        "Ultra-quiet sleep mode",
+        "Smart app",
+        "Compact size"
+      ],
+      "cons": [
+        "219 sq ft only",
+        "Small room only"
+      ],
+      "image": "https://m.media-amazon.com/images/I/41c7amAWvnL._SL500_.jpg"
     }
   ],
   "faq": [

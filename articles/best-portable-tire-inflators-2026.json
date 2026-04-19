@@ -6,7 +6,9 @@
   "excerpt": "A flat tire shouldn't leave you stranded. These portable inflators are fast, accurate, and fit in your glove box.",
   "thumbnail": "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=800&q=80",
   "author": "CompareElite Team",
-  "stats": { "readers": 0 },
+  "stats": {
+    "readers": 0
+  },
   "products": [
     {
       "name": "Fanttik X8 Apex Tire Inflator",
@@ -14,8 +16,17 @@
       "price": "$79",
       "best_for": "Best Overall",
       "link": "https://www.amazon.com/dp/B09YD2D96V?tag=compareelite-20",
-      "pros": ["1.06 gal/min flow rate", "Digital PSI display", "Auto-shutoff", "Inflates car tire in 4 min"],
-      "cons": ["Pricier than budget options", "Hose could be longer"]
+      "pros": [
+        "1.06 gal/min flow rate",
+        "Digital PSI display",
+        "Auto-shutoff",
+        "Inflates car tire in 4 min"
+      ],
+      "cons": [
+        "Pricier than budget options",
+        "Hose could be longer"
+      ],
+      "image": "https://m.media-amazon.com/images/I/41Qe1+dnDtL._SL500_.jpg"
     },
     {
       "name": "AstroAI Tire Inflator Portable Air Compressor",
@@ -23,8 +34,16 @@
       "price": "$39",
       "best_for": "Best Value",
       "link": "https://www.amazon.com/dp/B07QR4Q42L?tag=compareelite-20",
-      "pros": ["LED flashlight", "4 nozzle adapters", "Accurate digital gauge"],
-      "cons": ["Slower than premium models", "Gets warm with extended use"]
+      "pros": [
+        "LED flashlight",
+        "4 nozzle adapters",
+        "Accurate digital gauge"
+      ],
+      "cons": [
+        "Slower than premium models",
+        "Gets warm with extended use"
+      ],
+      "image": "https://m.media-amazon.com/images/I/41X1VcY8dbL._SL500_.jpg"
     },
     {
       "name": "Ryobi One+ 18V Cordless Inflator",
@@ -32,8 +51,15 @@
       "price": "$49",
       "best_for": "Best Cordless (Battery)",
       "link": "https://www.amazon.com/dp/B0CRG5VR5R?tag=compareelite-20",
-      "pros": ["Works without being plugged in", "Ryobi battery compatible", "Auto-shutoff"],
-      "cons": ["Requires Ryobi battery (sold separately)"]
+      "pros": [
+        "Works without being plugged in",
+        "Ryobi battery compatible",
+        "Auto-shutoff"
+      ],
+      "cons": [
+        "Requires Ryobi battery (sold separately)"
+      ],
+      "image": "https://m.media-amazon.com/images/I/31XIcD3rO7L._SL500_.jpg"
     },
     {
       "name": "Avid Power Tire Inflator (12V)",
@@ -41,8 +67,16 @@
       "price": "$29",
       "best_for": "Best Budget",
       "link": "https://www.amazon.com/dp/B07RM5D9C3?tag=compareelite-20",
-      "pros": ["Very affordable", "Digital display", "Works from car outlet"],
-      "cons": ["Needs car to be running", "Cord tethered to car"]
+      "pros": [
+        "Very affordable",
+        "Digital display",
+        "Works from car outlet"
+      ],
+      "cons": [
+        "Needs car to be running",
+        "Cord tethered to car"
+      ],
+      "image": "https://m.media-amazon.com/images/I/51ubVn7xHFL._SL500_.jpg"
     }
   ],
   "faq": [

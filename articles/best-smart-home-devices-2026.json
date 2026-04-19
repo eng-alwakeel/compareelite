@@ -6,7 +6,9 @@
   "excerpt": "From smart speakers to video doorbells — the best devices to automate your home in 2026 at every price point.",
   "thumbnail": "https://images.unsplash.com/photo-1558002038-1055907df827?w=800&q=80",
   "author": "CompareElite Team",
-  "stats": { "readers": 0 },
+  "stats": {
+    "readers": 0
+  },
   "products": [
     {
       "name": "Amazon Echo Dot (5th Gen)",
@@ -14,8 +16,15 @@
       "price": "$49",
       "best_for": "Best Smart Speaker",
       "link": "https://www.amazon.com/dp/B09B8X9RGM?tag=compareelite-20",
-      "pros": ["Improved sound", "Alexa routines", "Room temperature sensor"],
-      "cons": ["Needs Amazon ecosystem", "No screen"]
+      "pros": [
+        "Improved sound",
+        "Alexa routines",
+        "Room temperature sensor"
+      ],
+      "cons": [
+        "Needs Amazon ecosystem",
+        "No screen"
+      ]
     },
     {
       "name": "Ring Video Doorbell 4",
@@ -23,8 +32,15 @@
       "price": "$99",
       "best_for": "Best Video Doorbell",
       "link": "https://www.amazon.com/dp/B08CKHPP52?tag=compareelite-20",
-      "pros": ["Color pre-roll video", "Easy install", "Works with Alexa"],
-      "cons": ["Subscription for full features", "Battery needs recharging"]
+      "pros": [
+        "Color pre-roll video",
+        "Easy install",
+        "Works with Alexa"
+      ],
+      "cons": [
+        "Subscription for full features",
+        "Battery needs recharging"
+      ]
     },
     {
       "name": "Kasa Smart Plug EP25 (2-Pack)",
@@ -32,8 +48,15 @@
       "price": "$19",
       "best_for": "Best Smart Plug",
       "link": "https://www.amazon.com/dp/B0B14C719T?tag=compareelite-20",
-      "pros": ["Matter compatible", "Energy monitoring", "No hub needed"],
-      "cons": ["App setup required"]
+      "pros": [
+        "Matter compatible",
+        "Energy monitoring",
+        "No hub needed"
+      ],
+      "cons": [
+        "App setup required"
+      ],
+      "image": "https://m.media-amazon.com/images/I/41LVbPDPTeL._SL500_.jpg"
     },
     {
       "name": "Govee RGBIC LED Strip Lights",
@@ -41,8 +64,15 @@
       "price": "$29",
       "best_for": "Best Smart Lighting",
       "link": "https://www.amazon.com/dp/B0991Q94KP?tag=compareelite-20",
-      "pros": ["16 million colors", "Music sync", "Works with Alexa & Google"],
-      "cons": ["Adhesive weakens over time"]
+      "pros": [
+        "16 million colors",
+        "Music sync",
+        "Works with Alexa & Google"
+      ],
+      "cons": [
+        "Adhesive weakens over time"
+      ],
+      "image": "https://m.media-amazon.com/images/I/51x8uUsdLeL._SL500_.jpg"
     }
   ],
   "faq": [

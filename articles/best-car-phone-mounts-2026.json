@@ -6,7 +6,9 @@
   "excerpt": "Keep your phone in view without distracted driving. These are the best car phone mounts for navigation and hands-free calls.",
   "thumbnail": "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=800&q=80",
   "author": "CompareElite Team",
-  "stats": { "readers": 0 },
+  "stats": {
+    "readers": 0
+  },
   "products": [
     {
       "name": "iOttie Easy One Touch 5 Dashboard Mount",
@@ -14,8 +16,16 @@
       "price": "$35",
       "best_for": "Best Overall",
       "link": "https://www.amazon.com/dp/B08G3R5B7N?tag=compareelite-20",
-      "pros": ["One-touch release", "360° rotation", "Strong suction cup", "Universal fit"],
-      "cons": ["Suction can loosen in extreme heat"]
+      "pros": [
+        "One-touch release",
+        "360° rotation",
+        "Strong suction cup",
+        "Universal fit"
+      ],
+      "cons": [
+        "Suction can loosen in extreme heat"
+      ],
+      "image": "https://m.media-amazon.com/images/I/417L0md5N7L._SL500_.jpg"
     },
     {
       "name": "ESR HaloLock MagSafe Car Mount",
@@ -23,8 +33,16 @@
       "price": "$29",
       "best_for": "Best for iPhone (MagSafe)",
       "link": "https://www.amazon.com/dp/B0B38P9TF8?tag=compareelite-20",
-      "pros": ["Snap-on magnetic for iPhone", "Wireless charging compatible", "Very clean look"],
-      "cons": ["iPhone only (MagSafe)", "Magnetic cases limit fit"]
+      "pros": [
+        "Snap-on magnetic for iPhone",
+        "Wireless charging compatible",
+        "Very clean look"
+      ],
+      "cons": [
+        "iPhone only (MagSafe)",
+        "Magnetic cases limit fit"
+      ],
+      "image": "https://m.media-amazon.com/images/I/41+U5DKShYL._SL500_.jpg"
     },
     {
       "name": "Lamicall Gooseneck Phone Holder",
@@ -32,8 +50,14 @@
       "price": "$22",
       "best_for": "Best Flexible Arm",
       "link": "https://www.amazon.com/dp/B088R8YMBP?tag=compareelite-20",
-      "pros": ["Flexible positioning", "Secure CD slot + dashboard mount", "No blocking vents"],
-      "cons": ["Arm can vibrate on rough roads"]
+      "pros": [
+        "Flexible positioning",
+        "Secure CD slot + dashboard mount",
+        "No blocking vents"
+      ],
+      "cons": [
+        "Arm can vibrate on rough roads"
+      ]
     },
     {
       "name": "Spigen OneTap Pro MagSafe Vent Mount",
@@ -41,8 +65,16 @@
       "price": "$39",
       "best_for": "Best Vent Mount",
       "link": "https://www.amazon.com/dp/B08Y2CXKG5?tag=compareelite-20",
-      "pros": ["MagSafe compatible", "One-touch drop", "Premium build quality"],
-      "cons": ["Blocks one vent slot", "Higher price"]
+      "pros": [
+        "MagSafe compatible",
+        "One-touch drop",
+        "Premium build quality"
+      ],
+      "cons": [
+        "Blocks one vent slot",
+        "Higher price"
+      ],
+      "image": "https://m.media-amazon.com/images/I/41XFnLRJYAS._SL500_.jpg"
     }
   ],
   "faq": [

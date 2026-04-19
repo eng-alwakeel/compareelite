@@ -6,7 +6,9 @@
   "excerpt": "Creatine is the most researched supplement in sports science. Here are the best, purest, and most cost-effective options in 2026.",
   "thumbnail": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80",
   "author": "CompareElite Team",
-  "stats": { "readers": 0 },
+  "stats": {
+    "readers": 0
+  },
   "products": [
     {
       "name": "Optimum Nutrition Micronized Creatine (1.32 lbs)",
@@ -14,8 +16,16 @@
       "price": "$24",
       "best_for": "Best Overall",
       "link": "https://www.amazon.com/dp/B002DYIZEO?tag=compareelite-20",
-      "pros": ["Creapure certified", "Pure monohydrate", "Mixes easily", "Unflavored"],
-      "cons": ["Plain taste", "No flavored option in this size"]
+      "pros": [
+        "Creapure certified",
+        "Pure monohydrate",
+        "Mixes easily",
+        "Unflavored"
+      ],
+      "cons": [
+        "Plain taste",
+        "No flavored option in this size"
+      ]
     },
     {
       "name": "Thorne Creatine",
@@ -23,8 +33,15 @@
       "price": "$39",
       "best_for": "Best Quality",
       "link": "https://www.amazon.com/dp/B07978VPPH?tag=compareelite-20",
-      "pros": ["NSF Certified for Sport", "Ultra-fine powder", "No fillers"],
-      "cons": ["Most expensive per serving"]
+      "pros": [
+        "NSF Certified for Sport",
+        "Ultra-fine powder",
+        "No fillers"
+      ],
+      "cons": [
+        "Most expensive per serving"
+      ],
+      "image": "https://m.media-amazon.com/images/I/31VsWovZ7HL._SL500_.jpg"
     },
     {
       "name": "BulkSupplements Creatine (1kg)",
@@ -32,8 +49,16 @@
       "price": "$19",
       "best_for": "Best Value",
       "link": "https://www.amazon.com/dp/B00E9M4XEE?tag=compareelite-20",
-      "pros": ["Cheapest per gram", "Third-party tested", "No additives"],
-      "cons": ["Plain bulk packaging", "No scoop included"]
+      "pros": [
+        "Cheapest per gram",
+        "Third-party tested",
+        "No additives"
+      ],
+      "cons": [
+        "Plain bulk packaging",
+        "No scoop included"
+      ],
+      "image": "https://m.media-amazon.com/images/I/41zp2yKoEcL._SL500_.jpg"
     },
     {
       "name": "Nutricost Creatine (500g)",
@@ -41,8 +66,15 @@
       "price": "$22",
       "best_for": "Best Mid-Range",
       "link": "https://www.amazon.com/dp/B00GL2HMES?tag=compareelite-20",
-      "pros": ["GMP certified facility", "Good mixability", "Consistent quality"],
-      "cons": ["Some batches clump slightly"]
+      "pros": [
+        "GMP certified facility",
+        "Good mixability",
+        "Consistent quality"
+      ],
+      "cons": [
+        "Some batches clump slightly"
+      ],
+      "image": "https://m.media-amazon.com/images/I/415W2NL+KYL._SL500_.jpg"
     }
   ],
   "faq": [

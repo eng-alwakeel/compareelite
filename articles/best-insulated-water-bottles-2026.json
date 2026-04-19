@@ -6,7 +6,9 @@
   "excerpt": "We put the most popular insulated water bottles head-to-head. Find out which keeps drinks cold longest and is worth the hype.",
   "thumbnail": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=800&q=80",
   "author": "CompareElite Team",
-  "stats": { "readers": 0 },
+  "stats": {
+    "readers": 0
+  },
   "products": [
     {
       "name": "Stanley Quencher H2.0 (40oz)",
@@ -14,8 +16,15 @@
       "price": "$45",
       "best_for": "Overall Best",
       "link": "https://www.amazon.com/dp/B0BY4W8BL8?tag=compareelite-20",
-      "pros": ["Keeps ice 2+ days", "Handle + straw", "Dishwasher safe"],
-      "cons": ["Heavy when full", "Large footprint"]
+      "pros": [
+        "Keeps ice 2+ days",
+        "Handle + straw",
+        "Dishwasher safe"
+      ],
+      "cons": [
+        "Heavy when full",
+        "Large footprint"
+      ]
     },
     {
       "name": "Owala FreeSip (24oz)",
@@ -23,8 +32,15 @@
       "price": "$29",
       "best_for": "Best Design",
       "link": "https://www.amazon.com/dp/B085DTZQNZ?tag=compareelite-20",
-      "pros": ["Dual-drink lid (straw + sip)", "Leak-proof", "Fits cup holders"],
-      "cons": ["Smaller capacity", "Lid can be tricky to clean"]
+      "pros": [
+        "Dual-drink lid (straw + sip)",
+        "Leak-proof",
+        "Fits cup holders"
+      ],
+      "cons": [
+        "Smaller capacity",
+        "Lid can be tricky to clean"
+      ]
     },
     {
       "name": "Hydro Flask Standard Mouth (21oz)",
@@ -32,8 +48,15 @@
       "price": "$44",
       "best_for": "Best for Outdoors",
       "link": "https://www.amazon.com/dp/B081QSM46D?tag=compareelite-20",
-      "pros": ["Premium build quality", "Many accessories", "Lifetime warranty"],
-      "cons": ["No handle", "Pricey for size"]
+      "pros": [
+        "Premium build quality",
+        "Many accessories",
+        "Lifetime warranty"
+      ],
+      "cons": [
+        "No handle",
+        "Pricey for size"
+      ]
     },
     {
       "name": "YETI Rambler (36oz)",
@@ -41,8 +64,16 @@
       "price": "$55",
       "best_for": "Most Durable",
       "link": "https://www.amazon.com/dp/B0842BNR1D?tag=compareelite-20",
-      "pros": ["Indestructible build", "No flavor transfer", "DuraCoat finish"],
-      "cons": ["Most expensive", "Heavy"]
+      "pros": [
+        "Indestructible build",
+        "No flavor transfer",
+        "DuraCoat finish"
+      ],
+      "cons": [
+        "Most expensive",
+        "Heavy"
+      ],
+      "image": "https://m.media-amazon.com/images/I/31bn5-5NqAL._SL500_.jpg"
     }
   ],
   "faq": [

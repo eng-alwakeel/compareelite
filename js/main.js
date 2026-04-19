@@ -272,7 +272,7 @@ function buildArticleBody(article) {
         </tr>`).join('');
 
     const productCards = sorted.map(p => {
-        const imgUrl = getAmazonImg(p.link);
+        const imgUrl = p.image || getAmazonImg(p.link);
         const tags = (p.pros || []).slice(0, 3).map(x => `<span class="ptag">${x}</span>`).join('');
         return `
         <div class="pcard">
