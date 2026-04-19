@@ -1,14 +1,14 @@
 # Daily Article Generator — CompareElite
 
-Generate **4 new affiliate articles** for compareelite.com, commit them, and push to `main`.
+Generate **4 new affiliate articles** for compareelite.com with full SEO optimization, then commit and push to `main`.
 
 ---
 
 ## Step 1 — Pick 4 New Topics
 
-Read all existing slugs from `articles/` directory, then choose **4 topics** from the rotation list below that do NOT already have a file. Pick topics that are diverse (different categories).
+List all files in `articles/` to get existing slugs. Then pick **4 topics** from the rotation list below that have **no matching file yet**. Choose diverse categories (avoid picking 2 from the same category).
 
-### Full Topic Rotation List
+### Topic Rotation List
 
 ```
 SLUG                                    | TITLE                                              | CATEGORY      | UNSPLASH_ID
@@ -31,7 +31,13 @@ best-drones-2026                        | Best Drones for Beginners & Pros 2026 
 best-vr-headsets-2026                   | Best VR Headsets of 2026                           | Technology    | photo-1593508512255-86ab42a8e620
 best-home-security-cameras-2026         | Best Home Security Cameras of 2026                 | Technology    | photo-1557597774-9d273605dfa9
 best-wifi-routers-2026                  | Best Wi-Fi 6 Routers of 2026                       | Technology    | photo-1544197150-b99a580bb7a8
+best-smart-plugs-2026                   | Best Smart Plugs of 2026                           | Technology    | photo-1558618666-fcd25c85cd64
+best-laptop-bags-2026                   | Best Laptop Bags & Backpacks 2026                  | Technology    | photo-1553062407-98eeb64c6a62
 best-electric-toothbrushes-2026         | Best Electric Toothbrushes of 2026                 | Health        | photo-1609840114035-3c981b782dfe
+best-sunscreens-2026                    | Best Sunscreens of 2026                            | Health        | photo-1507003211169-0a1dd7228f2d
+best-beard-trimmers-2026                | Best Beard Trimmers of 2026                        | Health        | photo-1503951914875-452162b0f3f1
+best-hair-dryers-2026                   | Best Hair Dryers of 2026                           | Health        | photo-1522338242992-e1a54906a8da
+best-electric-shavers-2026              | Best Electric Shavers of 2026                      | Health        | photo-1503951914875-452162b0f3f1
 best-air-fryers-2026                    | Best Air Fryers of 2026                            | Kitchen       | photo-1574269909862-7e1d70bb8078
 best-coffee-makers-2026                 | Best Coffee Makers of 2026                         | Kitchen       | photo-1495474472287-4d71bcdd2085
 best-instant-pots-2026                  | Best Instant Pots & Pressure Cookers 2026          | Kitchen       | photo-1556909114-f6e7ad7d3136
@@ -60,7 +66,7 @@ best-hiking-backpacks-2026              | Best Hiking Backpacks of 2026         
 best-portable-grills-2026               | Best Portable Grills of 2026                       | Outdoor       | photo-1555041469-a586c61ea9bc
 best-camp-stoves-2026                   | Best Camp Stoves of 2026                           | Outdoor       | photo-1508193638397-1c4234db14d8
 best-headlamps-2026                     | Best Headlamps of 2026                             | Outdoor       | photo-1551632811-561732d1e306
-best-sunscreens-2026                    | Best Sunscreens of 2026                            | Health        | photo-1507003211169-0a1dd7228f2d
+best-solar-chargers-2026                | Best Solar Chargers of 2026                        | Outdoor       | photo-1509391366360-2e959784a276
 best-car-vacuums-2026                   | Best Car Vacuums of 2026                           | Automotive    | photo-1558618047-3c8c76ca7d13
 best-car-floor-mats-2026                | Best Car Floor Mats of 2026                        | Automotive    | photo-1503376780353-7e6692767b70
 best-portable-car-chargers-2026         | Best Portable Car Battery Chargers 2026            | Automotive    | photo-1609592806596-b66b7d72ae9d
@@ -70,83 +76,125 @@ best-led-desk-lamps-2026                | Best LED Desk Lamps of 2026           
 best-electric-blankets-2026             | Best Electric Blankets of 2026                     | Home          | photo-1555041469-a586c61ea9bc
 best-humidifiers-2026                   | Best Humidifiers of 2026                           | Home          | photo-1585771724684-38269d6639fd
 best-dehumidifiers-2026                 | Best Dehumidifiers of 2026                         | Home          | photo-1585771724684-38269d6639fd
-best-smart-plugs-2026                   | Best Smart Plugs of 2026                           | Technology    | photo-1558618666-fcd25c85cd64
-best-solar-chargers-2026                | Best Solar Chargers of 2026                        | Outdoor       | photo-1509391366360-2e959784a276
-best-laptop-bags-2026                   | Best Laptop Bags & Backpacks 2026                  | Technology    | photo-1553062407-98eeb64c6a62
-best-sunglasses-2026                    | Best Polarized Sunglasses of 2026                  | Fashion       | photo-1508214751196-bcfd4ca60f91
-best-beard-trimmers-2026                | Best Beard Trimmers of 2026                        | Health        | photo-1503951914875-452162b0f3f1
-best-hair-dryers-2026                   | Best Hair Dryers of 2026                           | Health        | photo-1522338242992-e1a54906a8da
-best-electric-shavers-2026              | Best Electric Shavers of 2026                      | Health        | photo-1503951914875-452162b0f3f1
 best-luggage-sets-2026                  | Best Luggage Sets of 2026                          | Travel        | photo-1553531889-e6cf4d692b1b
 best-travel-pillows-2026                | Best Travel Pillows of 2026                        | Travel        | photo-1436491865332-7a61a109cc05
 best-packing-cubes-2026                 | Best Packing Cubes of 2026                         | Travel        | photo-1553531889-e6cf4d692b1b
+best-sunglasses-2026                    | Best Polarized Sunglasses of 2026                  | Fashion       | photo-1508214751196-bcfd4ca60f91
 ```
 
 ---
 
-## Step 2 — Generate Each Article
+## Step 2 — Generate Each Article with Full SEO
 
-For **each of the 4 chosen topics**, generate a complete JSON file following this exact schema. Use your knowledge of real Amazon products with accurate ASINs:
+For **each of the 4 topics**, produce a complete JSON using this exact schema:
 
 ```json
 {
-  "slug": "best-CATEGORY-2026",
+  "slug": "best-SLUG-2026",
   "title": "Best X of 2026",
   "category": "Technology|Kitchen|Fitness|Outdoor|Health|Automotive|Home|Travel|Fashion",
   "date": "TODAYS_DATE",
-  "excerpt": "2-sentence hook that mentions the top use case and what criteria we used.",
+  "excerpt": "SEO meta description: 140–160 characters, starts with primary keyword, clear value proposition.",
   "thumbnail": "https://images.unsplash.com/UNSPLASH_ID?w=800&q=80",
   "author": "CompareElite Team",
-  "keywords": ["keyword1", "keyword2", "keyword3", "keyword4", "keyword5"],
+  "keywords": [
+    "primary keyword 2026",
+    "best [product] to buy",
+    "top [product] review",
+    "[product] buying guide",
+    "[product] comparison",
+    "affordable [product]",
+    "[product] for [use case]"
+  ],
   "stats": { "readers": 0 },
   "products": [
     {
       "name": "Full Product Name",
       "rating": "9.X/10",
       "price": "$XX",
-      "best_for": "Best Overall|Best Value|Best Budget|Best Premium|Most Durable|etc.",
+      "best_for": "Best Overall",
       "link": "https://www.amazon.com/dp/REAL_ASIN?tag=compareelite-20",
-      "pros": ["Pro 1", "Pro 2", "Pro 3"],
-      "cons": ["Con 1", "Con 2"]
+      "pros": ["Specific feature benefit", "Measurable spec", "Key advantage"],
+      "cons": ["Specific limitation"]
     }
   ],
   "faq": [
-    { "q": "Question?", "a": "Answer." },
-    { "q": "Question?", "a": "Answer." }
+    {
+      "q": "What is the best [product] in 2026?",
+      "a": "Detailed 2–3 sentence answer mentioning top pick by name with key reason why."
+    },
+    {
+      "q": "What should I look for when buying a [product]?",
+      "a": "Detailed 2–3 sentence answer covering 2–3 key buying criteria with specifics."
+    },
+    {
+      "q": "Is a [budget option] worth it or should I spend more?",
+      "a": "Balanced 2–3 sentence answer that helps the reader decide based on their use case."
+    }
   ]
 }
 ```
 
-**Rules:**
-- Include **4 products** per article, sorted highest rating first
-- Ratings between `8.0/10` and `9.9/10` — vary them realistically
-- Use **real Amazon ASINs** you know from training data; prefer popular well-reviewed products
-- `best_for` must be unique per article (no two products share the same badge)
-- `pros` = 3 items max, `cons` = 1-2 items max — keep them short (3-5 words each)
-- `faq` = exactly 2 questions relevant to the product category
-- `excerpt` must be unique and specific to the niche
-- Today's date format: `YYYY-MM-DD`
+---
+
+## SEO Rules — Apply Strictly
+
+### `title`
+- Under 60 characters
+- Format: `Best [Product] of 2026` or `Best [Product] for [Use Case] 2026`
+- Include the year (2026)
+- No clickbait — clear and descriptive
+
+### `excerpt` (meta description)
+- **140–160 characters exactly** — count them
+- Start with the primary keyword (e.g. "Best air fryers of 2026...")
+- Include a clear benefit or differentiator ("...tested for crispiness, speed, and ease of cleaning")
+- End with a call-to-action hint ("Find your perfect match in our expert guide")
+- Do NOT start with "We" or "Our" — lead with the topic
+
+### `keywords`
+- 6–8 keywords, all lowercase
+- Mix: 1 head keyword + 3–4 long-tail + 1–2 use-case variants
+- Include the year in at least one keyword
+- Examples for air fryers: `["best air fryer 2026", "air fryer buying guide", "best air fryer under $100", "small air fryer for one person", "air fryer vs oven", "healthiest air fryer", "best air fryer for family"]`
+
+### `products`
+- Exactly **4 products**, sorted highest rating first
+- Ratings: `9.6–9.9` (Best Overall), `9.0–9.5` (runner-up), `8.5–8.9` (budget pick), `8.0–8.4` (niche pick)
+- Use **real Amazon ASINs** from your training data — popular, well-reviewed products only
+- `best_for` badges must all be unique: e.g. `Best Overall`, `Best Value`, `Best Budget`, `Best Premium` / `Most Portable` / `Best for Beginners` / `Most Durable`
+- `pros`: 3 items, each 3–6 words, specific and measurable (e.g. "20-hour battery life", not "long battery")
+- `cons`: 1–2 items, honest and specific (e.g. "No companion app", "Loud fan noise at max")
+- `link`: Always `https://www.amazon.com/dp/ASIN?tag=compareelite-20`
+
+### `faq`
+- Exactly **3 questions** — not 2
+- Write questions as real Google search queries people type
+- Answers: 2–3 sentences each, mention product names where relevant, give concrete advice
+- Cover: (1) overall best pick, (2) buying criteria, (3) budget vs premium decision
 
 ---
 
 ## Step 3 — Save Files
 
-Write each article JSON to:
+Write each JSON to:
 ```
-/home/user/compareelite/articles/[slug].json
+articles/[slug].json
 ```
 
 ---
 
-## Step 4 — Find Amazon Image URLs
+## Step 4 — Find Amazon Product Images
 
-After saving all 4 articles, spawn a background agent to find the real Amazon CDN image URLs for each product ASIN. The agent should:
+After saving all 4 articles, spawn a **background subagent** (WebSearch-capable) to find the real `m.media-amazon.com` CDN image URL for each ASIN.
 
-1. For each ASIN, search the web for the image URL pattern `https://m.media-amazon.com/images/I/[IMAGE_ID]._SL500_.jpg`
-2. Update the JSON files by adding an `"image"` field to each product
-3. Save the updated JSON files
+For each ASIN:
+1. Search: `site:bigbangprice.com ASIN` or `ASIN amazon product image m.media-amazon.com`
+2. Extract the image ID pattern: `[0-9A-Za-z+/]{11,14}L`
+3. Build URL: `https://m.media-amazon.com/images/I/[IMAGE_ID]._SL500_.jpg`
+4. Add `"image": "URL"` field to that product in the JSON and save
 
-If images cannot be found for a product, skip it (the fallback renderer will handle it).
+If an image cannot be confirmed, skip it — the fallback renderer handles it automatically.
 
 ---
 
@@ -154,16 +202,18 @@ If images cannot be found for a product, skip it (the fallback renderer will han
 
 ```bash
 git add articles/
-git commit -m "Add 4 daily articles: [list slugs]"
+git commit -m "Add 4 daily articles: [slug1], [slug2], [slug3], [slug4]"
 git push -u origin main
 ```
 
 ---
 
-## Output
+## Output Summary
 
-Report back:
-- The 4 article slugs generated
-- Product count per article
-- Whether images were found
+Report:
+- Article slugs and titles generated
+- `excerpt` character count for each (must be 140–160)
+- Keywords count per article
+- FAQ question count (must be 3)
+- Images found vs skipped
 - Git push status
