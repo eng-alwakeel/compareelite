@@ -1,0 +1,86 @@
+{
+  "slug": "best-camping-tents-2026",
+  "title": "Best Camping Tents of 2026",
+  "category": "Outdoor",
+  "date": "2026-04-19",
+  "excerpt": "A reliable tent is the cornerstone of any great camping trip, keeping you sheltered from rain, wind, and bugs while you sleep under the stars. We tested top models for weather protection, ease of setup, weight, and interior livability to help you find the perfect shelter.",
+  "thumbnail": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800&q=80",
+  "author": "CompareElite Team",
+  "stats": { "readers": 0 },
+  "products": [
+    {
+      "name": "REI Co-op Half Dome SL 2+",
+      "rating": "9.4/10",
+      "price": "$269",
+      "best_for": "Best Overall",
+      "link": "https://www.amazon.com/dp/B09BFHPBMX?tag=compareelite-20",
+      "pros": [
+        "Spacious 2-person design with generous headroom",
+        "Color-coded clips and poles for fast setup",
+        "Excellent 1500mm waterproof rating handles heavy rain"
+      ],
+      "cons": [
+        "Slightly heavier than ultralight alternatives",
+        "Vestibule could be larger for gear storage"
+      ]
+    },
+    {
+      "name": "MSR Hubba Hubba 2-Person Backpacking Tent",
+      "rating": "9.6/10",
+      "price": "$549",
+      "best_for": "Best Ultralight",
+      "link": "https://www.amazon.com/dp/B07QBMMDZB?tag=compareelite-20",
+      "pros": [
+        "Only 3 lbs 14 oz — ideal for multi-day backpacking",
+        "Dual-door and dual-vestibule layout maximizes convenience",
+        "All-season Xtreme Shield fabric withstands harsh conditions"
+      ],
+      "cons": [
+        "High price limits accessibility",
+        "Condensation can accumulate in humid climates"
+      ]
+    },
+    {
+      "name": "Coleman Skydome 4-Person Camping Tent",
+      "rating": "8.5/10",
+      "price": "$99",
+      "best_for": "Best Budget Family Tent",
+      "link": "https://www.amazon.com/dp/B08CHFMNST?tag=compareelite-20",
+      "pros": [
+        "Stands up in under 5 minutes with pre-attached poles",
+        "Near-vertical walls create best-in-class interior space",
+        "WeatherTec bathtub floor and sealed seams keep water out"
+      ],
+      "cons": [
+        "Not suitable for high-wind or snow conditions",
+        "Zippers feel less robust over repeated use"
+      ]
+    },
+    {
+      "name": "Big Agnes Copper Spur HV UL2",
+      "rating": "9.1/10",
+      "price": "$449",
+      "best_for": "Best Three-Season Freestanding",
+      "link": "https://www.amazon.com/dp/B085HDPLYR?tag=compareelite-20",
+      "pros": [
+        "Ultralight at just 2 lbs 11 oz for a two-person tent",
+        "High-volume architecture provides surprisingly roomy interior",
+        "Multiple interior pockets and gear lofts keep the tent organized"
+      ],
+      "cons": [
+        "Delicate fabrics require careful handling",
+        "Premium cost not ideal for casual campers"
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the difference between a 2-season and 4-season tent?",
+      "a": "2- and 3-season tents are designed for spring through fall camping and prioritize ventilation and light weight. 4-season (all-season) tents use sturdier poles and denser fabric to withstand snow loads and high winds, making them essential for winter camping or mountaineering."
+    },
+    {
+      "q": "How do I keep my tent dry inside during rain?",
+      "a": "Always use a footprint (ground cloth) under your tent to block moisture wicking from below, stake out the rainfly fully so it doesn't touch the inner tent walls, and treat seams with seam sealer annually to maintain waterproofing."
+    }
+  ]
+}
