@@ -1,0 +1,50 @@
+name: Daily Article Generator
+
+on:
+  schedule:
+    - cron: '0 5 * * *'   # 8:00 AM KSA (UTC+3)
+  workflow_dispatch:        # يدوي عند الحاجة
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Claude Code CLI
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Configure Git
+        run: |
+          git config user.name "CompareElite Bot"
+          git config user.email "bot@compareelite.com"
+
+      - name: Set remote with token
+        run: |
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+
+      - name: Generate 4 daily articles
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          claude --dangerously-skip-permissions -p "/daily-articles"
+
+      - name: Push if skill didn't push
+        if: always()
+        run: |
+          git pull --rebase origin main 2>/dev/null || true
+          git push origin main 2>/dev/null || echo "Already up to date"
