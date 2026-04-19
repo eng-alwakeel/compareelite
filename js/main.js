@@ -243,33 +243,52 @@ function buildArticleBody(article) {
     const products = article.products || [];
     const faq = article.faq || [];
 
-    const tableRows = products.map((p, i) => `
+    const sorted = [...products].sort((a, b) => parseFloat(b.rating) - parseFloat(a.rating));
+
+    function ratingToStars(ratingStr) {
+        const stars = parseFloat(ratingStr) / 2;
+        let html = '';
+        for (let i = 1; i <= 5; i++) {
+            const cls = stars >= i ? 'full' : stars >= i - 0.5 ? 'half' : 'empty';
+            html += `<span class="pstar ${cls}">★</span>`;
+        }
+        return html;
+    }
+
+    function getAmazonImg(link) {
+        const m = link.match(/\/dp\/([A-Z0-9]{10})/);
+        return m ? `https://images-na.ssl-images-amazon.com/images/P/${m[1]}.01.LZZZZZZZ.jpg` : '';
+    }
+
+    const tableRows = sorted.map((p, i) => `
         <tr style="border-bottom:1px solid var(--border-color);${i % 2 === 1 ? 'background:rgba(37,99,235,0.02);' : ''}">
-            <td style="padding:1.25rem 1rem; font-weight:600;">${p.name}</td>
-            <td style="padding:1.25rem 1rem; text-align:center; color:var(--primary); font-weight:700;">${p.rating}</td>
-            <td style="padding:1.25rem 1rem; text-align:center; font-weight:600;">${p.price}</td>
-            <td style="padding:1.25rem 1rem; text-align:center; color:var(--text-secondary);">${p.best_for}</td>
-            <td style="padding:1.25rem 1rem; text-align:right;">
+            <td class="col-product" style="font-weight:600;">${p.name}</td>
+            <td class="col-rating" style="text-align:center; color:var(--primary); font-weight:700;">${p.rating}</td>
+            <td class="col-price" style="text-align:center; font-weight:600;">${p.price}</td>
+            <td class="col-bestfor" style="text-align:center; color:var(--text-secondary);">${p.best_for}</td>
+            <td class="col-action" style="text-align:right;">
                 <a href="${p.link}" class="btn btn-accent" target="_blank" rel="nofollow noopener" style="white-space:nowrap;">Check Price ↗</a>
             </td>
         </tr>`).join('');
 
-    const productCards = products.map(p => `
-        <div style="padding:1.5rem; border:1px solid var(--border-color); border-radius:var(--radius-md); margin-bottom:1.5rem;">
-            <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:1rem;">
-                <div style="flex:1;">
-                    <h3 style="margin-bottom:0.5rem;">${p.name}</h3>
-                    <div style="display:flex; gap:1rem; margin-bottom:1rem; flex-wrap:wrap;">
-                        <span style="color:var(--primary); font-weight:700;">${p.rating}</span>
-                        <span style="font-weight:600;">${p.price}</span>
-                        <span style="background:var(--primary-light); color:var(--primary); padding:2px 10px; border-radius:999px; font-size:0.8rem; font-weight:600;">${p.best_for}</span>
-                    </div>
-                    ${p.pros ? `<div style="margin-bottom:0.5rem;"><strong>Pros:</strong> ${p.pros.map(x => `<span style="color:var(--success);">✓ ${x}</span>`).join(' &nbsp;')}</div>` : ''}
-                    ${p.cons ? `<div><strong>Cons:</strong> ${p.cons.map(x => `<span style="color:#ef4444;">✗ ${x}</span>`).join(' &nbsp;')}</div>` : ''}
-                </div>
-                <a href="${p.link}" class="btn btn-accent" target="_blank" rel="nofollow noopener" style="padding:0.75rem 1.5rem; white-space:nowrap;">Buy on Amazon ↗</a>
+    const productCards = sorted.map(p => {
+        const imgUrl = p.image || getAmazonImg(p.link);
+        const tags = (p.pros || []).slice(0, 3).map(x => `<span class="ptag">${x}</span>`).join('');
+        return `
+        <div class="pcard">
+            <div class="pcard-img">
+                <img src="${imgUrl}" alt="${p.name}" loading="lazy" onerror="this.style.display='none'">
             </div>
-        </div>`).join('');
+            <div class="pcard-body">
+                <div class="pcard-stars">${ratingToStars(p.rating)}<span class="pcard-score">${p.rating}</span></div>
+                <h3 class="pcard-name">${p.name}</h3>
+                <div class="pcard-price">${p.price}</div>
+                <span class="pcard-badge">${p.best_for}</span>
+                ${tags ? `<div class="pcard-tags">${tags}</div>` : ''}
+                <a href="${p.link}" class="btn btn-accent pcard-btn" target="_blank" rel="nofollow noopener">Buy on Amazon ↗</a>
+            </div>
+        </div>`;
+    }).join('');
 
     const faqHtml = faq.length ? `
         <h2>Frequently Asked Questions</h2>
@@ -286,22 +305,22 @@ function buildArticleBody(article) {
         </div>
         ${products.length ? `
         <h2>Top Picks at a Glance</h2>
-        <div style="overflow-x:auto; margin:2rem 0;">
-            <table style="width:100%; border-collapse:collapse; min-width:600px;">
+        <div class="picks-table-wrapper">
+            <table class="picks-table">
                 <thead>
                     <tr style="background:var(--bg-main); border-bottom:2px solid var(--border-color);">
-                        <th style="padding:1rem; text-align:left;">Product</th>
-                        <th style="padding:1rem; text-align:center;">Rating</th>
-                        <th style="padding:1rem; text-align:center;">Price</th>
-                        <th style="padding:1rem; text-align:center;">Best For</th>
-                        <th style="padding:1rem; text-align:right;">Action</th>
+                        <th class="col-product" style="text-align:left;">Product</th>
+                        <th class="col-rating" style="text-align:center;">Rating</th>
+                        <th class="col-price" style="text-align:center;">Price</th>
+                        <th class="col-bestfor" style="text-align:center;">Best For</th>
+                        <th class="col-action" style="text-align:right;">Action</th>
                     </tr>
                 </thead>
                 <tbody>${tableRows}</tbody>
             </table>
         </div>
         <h2>Detailed Reviews</h2>
-        ${productCards}` : ''}
+        <div class="pcards-grid">${productCards}</div>` : ''}
         ${faqHtml}
         <div style="background:var(--primary-light); border-radius:var(--radius-md); padding:1.5rem; margin-top:2rem; text-align:center;">
             <p style="font-weight:600; color:var(--text-primary); margin-bottom:0.5rem;">Found this guide helpful?</p>

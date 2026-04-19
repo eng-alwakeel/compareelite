@@ -6,34 +6,59 @@
   "excerpt": "Replace an entire rack of weights with one pair. Here are the best adjustable dumbbells that are worth the investment.",
   "thumbnail": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&q=80",
   "author": "CompareElite Team",
-  "stats": { "readers": 0 },
+  "stats": {
+    "readers": 0
+  },
   "products": [
     {
       "name": "Bowflex SelectTech 552 (5-52.5 lbs)",
       "rating": "9.6/10",
       "price": "$349",
       "best_for": "Best Overall",
-      "link": "https://www.amazon.com/s?k=Bowflex+SelectTech+552&tag=compareelite-20",
-      "pros": ["15 weight settings", "Easy dial system", "Replaces 15 pairs of weights"],
-      "cons": ["Bulky cradle", "Takes a few seconds to adjust"]
+      "link": "https://www.amazon.com/dp/B0G6Z84TQM?tag=compareelite-20",
+      "pros": [
+        "15 weight settings",
+        "Easy dial system",
+        "Replaces 15 pairs of weights"
+      ],
+      "cons": [
+        "Bulky cradle",
+        "Takes a few seconds to adjust"
+      ]
     },
     {
       "name": "PowerBlock Elite EXP (5-50 lbs)",
       "rating": "9.4/10",
       "price": "$329",
       "best_for": "Most Durable",
-      "link": "https://www.amazon.com/s?k=PowerBlock+Elite+EXP+adjustable+dumbbells&tag=compareelite-20",
-      "pros": ["Compact rectangular design", "Steel construction", "Expandable to 70/90 lbs"],
-      "cons": ["Unusual shape takes getting used to", "No cradle storage included"]
+      "link": "https://www.amazon.com/dp/B00A21NRNO?tag=compareelite-20",
+      "pros": [
+        "Compact rectangular design",
+        "Steel construction",
+        "Expandable to 70/90 lbs"
+      ],
+      "cons": [
+        "Unusual shape takes getting used to",
+        "No cradle storage included"
+      ],
+      "image": "https://m.media-amazon.com/images/I/41tZVSXGfmL._SL500_.jpg"
     },
     {
       "name": "ATIVAFIT Adjustable Dumbbell (71.5 lbs)",
       "rating": "9.0/10",
       "price": "$199",
       "best_for": "Best Value",
-      "link": "https://www.amazon.com/s?k=ATIVAFIT+adjustable+dumbbell+71.5+lbs&tag=compareelite-20",
-      "pros": ["Good weight range", "Compact", "Much cheaper than Bowflex"],
-      "cons": ["Slightly slower adjustment", "Plastic components"]
+      "link": "https://www.amazon.com/dp/B08TH8CTZM?tag=compareelite-20",
+      "pros": [
+        "Good weight range",
+        "Compact",
+        "Much cheaper than Bowflex"
+      ],
+      "cons": [
+        "Slightly slower adjustment",
+        "Plastic components"
+      ],
+      "image": "https://m.media-amazon.com/images/I/51G4KeLg2YL._SL500_.jpg"
     }
   ],
   "faq": [

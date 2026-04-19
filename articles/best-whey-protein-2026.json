@@ -6,7 +6,9 @@
   "excerpt": "With hundreds of protein powders on the market, we narrowed it down to the best-tasting, cleanest, and most effective options.",
   "thumbnail": "https://images.unsplash.com/photo-1593095948071-474c5cc2989d?w=800&q=80",
   "author": "CompareElite Team",
-  "stats": { "readers": 0 },
+  "stats": {
+    "readers": 0
+  },
   "products": [
     {
       "name": "Optimum Nutrition Gold Standard 100% Whey (5 lbs)",
@@ -14,35 +16,67 @@
       "price": "$69",
       "best_for": "Best Overall",
       "link": "https://www.amazon.com/dp/B000QSNYGI?tag=compareelite-20",
-      "pros": ["24g protein per serving", "120+ flavors", "Fast-digesting isolate blend", "Excellent taste"],
-      "cons": ["Contains sucralose", "Premium pricing"]
+      "pros": [
+        "24g protein per serving",
+        "120+ flavors",
+        "Fast-digesting isolate blend",
+        "Excellent taste"
+      ],
+      "cons": [
+        "Contains sucralose",
+        "Premium pricing"
+      ]
     },
     {
       "name": "Dymatize ISO100 (5 lbs)",
       "rating": "9.5/10",
       "price": "$79",
       "best_for": "Best Isolate",
-      "link": "https://www.amazon.com/s?k=Dymatize+ISO100+5+lbs&tag=compareelite-20",
-      "pros": ["25g protein, 0g sugar", "Hydrolyzed for fast absorption", "NSF Certified"],
-      "cons": ["Most expensive per serving", "Thinner texture"]
+      "link": "https://www.amazon.com/dp/B002N6F2UW?tag=compareelite-20",
+      "pros": [
+        "25g protein, 0g sugar",
+        "Hydrolyzed for fast absorption",
+        "NSF Certified"
+      ],
+      "cons": [
+        "Most expensive per serving",
+        "Thinner texture"
+      ],
+      "image": "https://m.media-amazon.com/images/I/51wI5seW-BL._SL500_.jpg"
     },
     {
       "name": "MuscleTech Nitro-Tech (4 lbs)",
       "rating": "9.2/10",
       "price": "$55",
       "best_for": "Best with Creatine",
-      "link": "https://www.amazon.com/s?k=MuscleTech+Nitro-Tech+whey+protein&tag=compareelite-20",
-      "pros": ["Contains 3g creatine", "30g protein", "Thick texture"],
-      "cons": ["High in sodium", "Contains proprietary blend"]
+      "link": "https://www.amazon.com/dp/B008JC26E4?tag=compareelite-20",
+      "pros": [
+        "Contains 3g creatine",
+        "30g protein",
+        "Thick texture"
+      ],
+      "cons": [
+        "High in sodium",
+        "Contains proprietary blend"
+      ],
+      "image": "https://m.media-amazon.com/images/I/41ZKmy3KZXL._SL500_.jpg"
     },
     {
       "name": "Isopure Zero Carb (3 lbs)",
       "rating": "9.0/10",
       "price": "$49",
       "best_for": "Best Low-Carb/Keto",
-      "link": "https://www.amazon.com/s?k=Isopure+Zero+Carb+protein+powder&tag=compareelite-20",
-      "pros": ["0g carbs, 0g sugar", "25g pure isolate", "Great for keto"],
-      "cons": ["Thinner taste", "Less flavor variety"]
+      "link": "https://www.amazon.com/dp/B000E95HP0?tag=compareelite-20",
+      "pros": [
+        "0g carbs, 0g sugar",
+        "25g pure isolate",
+        "Great for keto"
+      ],
+      "cons": [
+        "Thinner taste",
+        "Less flavor variety"
+      ],
+      "image": "https://m.media-amazon.com/images/I/31fAYL2qADL._SL500_.jpg"
     }
   ],
   "faq": [

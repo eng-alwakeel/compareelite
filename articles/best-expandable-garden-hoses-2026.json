@@ -6,34 +6,58 @@
   "excerpt": "Tired of heavy, tangled hoses? These expandable garden hoses are lightweight, durable, and easy to store.",
   "thumbnail": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80",
   "author": "CompareElite Team",
-  "stats": { "readers": 0 },
+  "stats": {
+    "readers": 0
+  },
   "products": [
     {
       "name": "Flexi Hose+ 100ft Expandable",
       "rating": "9.4/10",
       "price": "$45",
       "best_for": "Best Overall",
-      "link": "https://www.amazon.com/s?k=Flexi+Hose+100ft+expandable+garden+hose&tag=compareelite-20",
-      "pros": ["3750D fabric", "8-function nozzle included", "Kink-free"],
-      "cons": ["Needs full pressure to expand"]
+      "link": "https://www.amazon.com/dp/B07Q9XMT4X?tag=compareelite-20",
+      "pros": [
+        "3750D fabric",
+        "8-function nozzle included",
+        "Kink-free"
+      ],
+      "cons": [
+        "Needs full pressure to expand"
+      ],
+      "image": "https://m.media-amazon.com/images/I/51WQ6wkOE1L._SL500_.jpg"
     },
     {
       "name": "Bionic Steel 100ft",
       "rating": "9.1/10",
       "price": "$39",
       "best_for": "Most Durable",
-      "link": "https://www.amazon.com/s?k=Bionic+Steel+Pro+100ft+garden+hose&tag=compareelite-20",
-      "pros": ["304 stainless steel", "Kink-proof", "Lightweight"],
-      "cons": ["No spray nozzle included", "Can be stiff in cold weather"]
+      "link": "https://www.amazon.com/dp/B07MHQCMT5?tag=compareelite-20",
+      "pros": [
+        "304 stainless steel",
+        "Kink-proof",
+        "Lightweight"
+      ],
+      "cons": [
+        "No spray nozzle included",
+        "Can be stiff in cold weather"
+      ],
+      "image": "https://m.media-amazon.com/images/I/51xPm05tj+L._SL500_.jpg"
     },
     {
       "name": "GrowGreen 100ft Expandable",
       "rating": "8.8/10",
       "price": "$29",
       "best_for": "Best Budget",
-      "link": "https://www.amazon.com/s?k=GrowGreen+100ft+expandable+hose&tag=compareelite-20",
-      "pros": ["8-pattern spray nozzle", "Good value", "Lightweight"],
-      "cons": ["Inner tube less durable than premium models"]
+      "link": "https://www.amazon.com/dp/B09PRQ519F?tag=compareelite-20",
+      "pros": [
+        "8-pattern spray nozzle",
+        "Good value",
+        "Lightweight"
+      ],
+      "cons": [
+        "Inner tube less durable than premium models"
+      ],
+      "image": "https://m.media-amazon.com/images/I/51OG2q4i4yS._SL500_.jpg"
     }
   ],
   "faq": [

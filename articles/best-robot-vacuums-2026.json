@@ -6,43 +6,75 @@
   "excerpt": "Set it and forget it. We tested the top robot vacuums for pet hair, hardwood floors, and carpets — here are the best ones.",
   "thumbnail": "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=800&q=80",
   "author": "CompareElite Team",
-  "stats": { "readers": 0 },
+  "stats": {
+    "readers": 0
+  },
   "products": [
     {
       "name": "Roborock S8 MaxV Ultra",
       "rating": "9.8/10",
       "price": "$999",
       "best_for": "Best Overall",
-      "link": "https://www.amazon.com/s?k=Roborock+S8+MaxV+Ultra&tag=compareelite-20",
-      "pros": ["Self-empties, self-washes, self-refills", "Obstacle avoidance AI", "9,000Pa suction"],
-      "cons": ["Expensive", "Large dock footprint"]
+      "link": "https://www.amazon.com/dp/B0D9QPKX2K?tag=compareelite-20",
+      "pros": [
+        "Self-empties, self-washes, self-refills",
+        "Obstacle avoidance AI",
+        "9,000Pa suction"
+      ],
+      "cons": [
+        "Expensive",
+        "Large dock footprint"
+      ],
+      "image": "https://m.media-amazon.com/images/I/41X6kKjdECL._SL500_.jpg"
     },
     {
       "name": "iRobot Roomba j9+",
       "rating": "9.4/10",
       "price": "$649",
       "best_for": "Best for Pet Hair",
-      "link": "https://www.amazon.com/s?k=iRobot+Roomba+j9+plus&tag=compareelite-20",
-      "pros": ["Cliff-detect + object recognition", "Self-emptying", "Great pet hair pickup"],
-      "cons": ["Expensive for suction level", "No mopping"]
+      "link": "https://www.amazon.com/dp/B0C415NHBM?tag=compareelite-20",
+      "pros": [
+        "Cliff-detect + object recognition",
+        "Self-emptying",
+        "Great pet hair pickup"
+      ],
+      "cons": [
+        "Expensive for suction level",
+        "No mopping"
+      ]
     },
     {
       "name": "Eufy RoboVac 11S Max",
       "rating": "8.9/10",
       "price": "$159",
       "best_for": "Best Budget",
-      "link": "https://www.amazon.com/s?k=Eufy+RoboVac+11S+Max&tag=compareelite-20",
-      "pros": ["Ultra-slim (2.85\")fits under furniture", "2000Pa", "Very quiet"],
-      "cons": ["No mapping", "Must empty manually"]
+      "link": "https://www.amazon.com/dp/B07R295MLS?tag=compareelite-20",
+      "pros": [
+        "Ultra-slim (2.85\")fits under furniture",
+        "2000Pa",
+        "Very quiet"
+      ],
+      "cons": [
+        "No mapping",
+        "Must empty manually"
+      ],
+      "image": "https://m.media-amazon.com/images/I/31d8SEg9M9L._SL500_.jpg"
     },
     {
       "name": "Shark Matrix Plus 2-in-1",
       "rating": "9.1/10",
       "price": "$349",
       "best_for": "Best Vacuum + Mop Combo",
-      "link": "https://www.amazon.com/s?k=Shark+Matrix+Plus+2+in+1+robot+vacuum+mop&tag=compareelite-20",
-      "pros": ["Vacuums + mops simultaneously", "Matrix Clean mapping", "Self-emptying"],
-      "cons": ["Mopping is basic wet pad only"]
+      "link": "https://www.amazon.com/dp/B0B8B6N2G4?tag=compareelite-20",
+      "pros": [
+        "Vacuums + mops simultaneously",
+        "Matrix Clean mapping",
+        "Self-emptying"
+      ],
+      "cons": [
+        "Mopping is basic wet pad only"
+      ],
+      "image": "https://m.media-amazon.com/images/I/51Gzq3evw9L._SL500_.jpg"
     }
   ],
   "faq": [

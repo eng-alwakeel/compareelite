@@ -6,43 +6,71 @@
   "excerpt": "Resistance bands are the most versatile and affordable gym equipment. These are the best sets for every fitness level.",
   "thumbnail": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&q=80",
   "author": "CompareElite Team",
-  "stats": { "readers": 0 },
+  "stats": {
+    "readers": 0
+  },
   "products": [
     {
       "name": "Fit Simplify Resistance Loop Bands (5-Pack)",
       "rating": "9.5/10",
       "price": "$13",
       "best_for": "Best Overall",
-      "link": "https://www.amazon.com/s?k=Fit+Simplify+Resistance+Loop+Bands+5+pack&tag=compareelite-20",
-      "pros": ["5 resistance levels", "Durable latex", "Exercise guide included"],
-      "cons": ["Loop style limits exercises", "Can roll up on legs"]
+      "link": "https://www.amazon.com/dp/B01AVDVHTI?tag=compareelite-20",
+      "pros": [
+        "5 resistance levels",
+        "Durable latex",
+        "Exercise guide included"
+      ],
+      "cons": [
+        "Loop style limits exercises",
+        "Can roll up on legs"
+      ]
     },
     {
       "name": "INTEY Pull-Up Assist Bands",
       "rating": "9.3/10",
       "price": "$29",
       "best_for": "Best for Pull-Ups",
-      "link": "https://www.amazon.com/s?k=INTEY+pull+up+assist+resistance+bands&tag=compareelite-20",
-      "pros": ["Heavy-duty latex", "4 resistance levels (up to 175lbs)", "Great for assisted pull-ups"],
-      "cons": ["Thicker bands can be awkward for smaller exercises"]
+      "link": "https://www.amazon.com/dp/B08ZNRXHC1?tag=compareelite-20",
+      "pros": [
+        "Heavy-duty latex",
+        "4 resistance levels (up to 175lbs)",
+        "Great for assisted pull-ups"
+      ],
+      "cons": [
+        "Thicker bands can be awkward for smaller exercises"
+      ]
     },
     {
       "name": "Undersun Resistance Bands (5-Pack)",
       "rating": "9.2/10",
       "price": "$49",
       "best_for": "Best Premium",
-      "link": "https://www.amazon.com/s?k=Undersun+resistance+bands+5+pack&tag=compareelite-20",
-      "pros": ["Anti-snap guarantee", "Full-body workout guide", "Premium latex"],
-      "cons": ["Most expensive option"]
+      "link": "https://www.amazon.com/dp/B07R5G21SH?tag=compareelite-20",
+      "pros": [
+        "Anti-snap guarantee",
+        "Full-body workout guide",
+        "Premium latex"
+      ],
+      "cons": [
+        "Most expensive option"
+      ],
+      "image": "https://m.media-amazon.com/images/I/81ld0m12kSL._SL500_.jpg"
     },
     {
       "name": "WOD Nation Speed Jump Rope + Bands",
       "rating": "8.9/10",
       "price": "$35",
       "best_for": "Best Home Gym Bundle",
-      "link": "https://www.amazon.com/s?k=WOD+Nation+resistance+bands&tag=compareelite-20",
-      "pros": ["Complete kit", "Great for CrossFit", "Door anchor included"],
-      "cons": ["No handle attachments"]
+      "link": "https://www.amazon.com/dp/B08PPNGSCN?tag=compareelite-20",
+      "pros": [
+        "Complete kit",
+        "Great for CrossFit",
+        "Door anchor included"
+      ],
+      "cons": [
+        "No handle attachments"
+      ]
     }
   ],
   "faq": [
