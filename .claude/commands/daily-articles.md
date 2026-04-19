@@ -97,6 +97,7 @@ For **each of the 4 chosen topics**, generate a complete JSON file following thi
   "excerpt": "2-sentence hook that mentions the top use case and what criteria we used.",
   "thumbnail": "https://images.unsplash.com/UNSPLASH_ID?w=800&q=80",
   "author": "CompareElite Team",
+  "keywords": ["keyword1", "keyword2", "keyword3", "keyword4", "keyword5"],
   "stats": { "readers": 0 },
   "products": [
     {

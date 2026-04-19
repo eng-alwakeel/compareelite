@@ -180,11 +180,27 @@ async function renderArticleDetail() {
     document.getElementById('tw-image').setAttribute('content', article.thumbnail || 'https://compareelite.com/og-image.jpg');
     document.getElementById('canonical-url').setAttribute('href', pageUrl);
 
+    // Author, keywords, og:article dates
+    const metaAuthor = document.getElementById('meta-author');
+    if (metaAuthor) metaAuthor.setAttribute('content', article.author || 'CompareElite Team');
+    const metaKeywords = document.getElementById('meta-keywords');
+    if (metaKeywords) {
+        const base = [article.title, article.category, 'best', 'review', 'buying guide', 'comparison', '2026'];
+        const kw = [...(article.keywords || []), ...base].filter((v, i, a) => a.indexOf(v) === i).join(', ');
+        metaKeywords.setAttribute('content', kw);
+    }
+    const ogPublished = document.getElementById('og-published');
+    if (ogPublished) ogPublished.setAttribute('content', article.date || '');
+    const ogModified = document.getElementById('og-modified');
+    if (ogModified) ogModified.setAttribute('content', article.date || '');
+    const ogSection = document.getElementById('og-section');
+    if (ogSection) ogSection.setAttribute('content', article.category || 'Buying Guides');
+
     // Update breadcrumb
     const breadcrumbTitle = document.getElementById('breadcrumb-title');
     if (breadcrumbTitle) breadcrumbTitle.textContent = article.title;
 
-    // Inject JSON-LD: Article + FAQPage + BreadcrumbList
+    // JSON-LD schemas
     const faqSchema = article.faq && article.faq.length ? {
         "@type": "FAQPage",
         "mainEntity": article.faq.map(q => ({
@@ -194,17 +210,47 @@ async function renderArticleDetail() {
         }))
     } : null;
 
+    const itemListSchema = article.products && article.products.length ? {
+        "@type": "ItemList",
+        "@id": `${pageUrl}#itemlist`,
+        "name": article.title,
+        "description": article.excerpt,
+        "url": pageUrl,
+        "numberOfItems": article.products.length,
+        "itemListElement": article.products.map((p, i) => ({
+            "@type": "ListItem",
+            "position": i + 1,
+            "name": p.name,
+            "url": p.link
+        }))
+    } : null;
+
     const schemaGraph = [
         {
             "@type": "Article",
             "@id": `${pageUrl}#article`,
             "headline": article.title,
             "description": article.excerpt,
-            "image": article.thumbnail || 'https://compareelite.com/og-image.jpg',
+            "image": {
+                "@type": "ImageObject",
+                "url": article.thumbnail || 'https://compareelite.com/og-image.jpg',
+                "width": 1200,
+                "height": 630
+            },
             "datePublished": article.date,
             "dateModified": article.date,
             "author": { "@type": "Organization", "name": "CompareElite", "url": "https://compareelite.com" },
-            "publisher": { "@type": "Organization", "name": "CompareElite", "url": "https://compareelite.com" },
+            "publisher": {
+                "@type": "Organization",
+                "name": "CompareElite",
+                "url": "https://compareelite.com",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://compareelite.com/icon.svg",
+                    "width": 32,
+                    "height": 32
+                }
+            },
             "mainEntityOfPage": { "@type": "WebPage", "@id": pageUrl }
         },
         {
@@ -216,6 +262,7 @@ async function renderArticleDetail() {
             ]
         }
     ];
+    if (itemListSchema) schemaGraph.push(itemListSchema);
     if (faqSchema) schemaGraph.push(faqSchema);
 
     const ldScript = document.createElement('script');
