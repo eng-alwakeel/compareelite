@@ -36,14 +36,13 @@ function toggleTheme() {
 
 // Main Application Logic
 document.addEventListener('DOMContentLoaded', async () => {
-    // 1. Determine current page context
     const isHomePage = document.getElementById('home-articles-container');
     const isBlogPage = document.getElementById('blog-articles-container');
     const isArticlePage = document.getElementById('article-content');
     const isDashboardPage = document.getElementById('dashboard-metrics');
 
     if (isHomePage) {
-        await renderHomeArticles();
+        await renderHomePage();
     } else if (isBlogPage) {
         await renderBlogArticles();
         setupFilters();
@@ -54,7 +53,176 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 });
 
-// Components Rendering Functions
+// ─── HOME PAGE ────────────────────────────────────────────────────────────────
+
+async function renderHomePage() {
+    const articles = await githubAPI.getArticlesList();
+
+    renderHomeCategories(articles);
+    renderHomeMostPopular(articles);
+    renderHomeLatest(articles);
+    initHomeSearch(articles);
+}
+
+// Legacy alias kept in case other code calls it
+async function renderHomeArticles() {
+    return renderHomePage();
+}
+
+// Search -----------------------------------------------------------------------
+function initHomeSearch(articles) {
+    const input = document.getElementById('home-search-input');
+    const resultsBox = document.getElementById('home-search-results');
+    if (!input || !resultsBox) return;
+
+    const fuse = typeof Fuse !== 'undefined'
+        ? new Fuse(articles, {
+            keys: [
+                { name: 'title', weight: 2 },
+                { name: 'excerpt', weight: 1 },
+                { name: 'category', weight: 0.5 }
+            ],
+            threshold: 0.4,
+            includeScore: true,
+            minMatchCharLength: 2
+          })
+        : null;
+
+    input.addEventListener('input', () => {
+        const query = input.value.trim();
+        if (query.length < 2) {
+            resultsBox.style.display = 'none';
+            resultsBox.innerHTML = '';
+            return;
+        }
+
+        let results = [];
+        if (fuse) {
+            results = fuse.search(query).slice(0, 5).map(r => r.item);
+        } else {
+            const q = query.toLowerCase();
+            results = articles
+                .filter(a => a.title.toLowerCase().includes(q) || (a.excerpt || '').toLowerCase().includes(q))
+                .slice(0, 5);
+        }
+
+        if (results.length === 0) {
+            resultsBox.innerHTML = '<p class="search-no-results">No guides found. Try a different keyword.</p>';
+        } else {
+            resultsBox.innerHTML = results.map(a => `
+                <a class="search-result-item" href="blog/article.html?slug=${a.slug}">
+                    <img src="${a.thumbnail || 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=100&q=60'}"
+                         alt="${a.title}" loading="lazy"
+                         onerror="this.src='https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=100&q=60'">
+                    <div>
+                        <div class="search-result-title">${a.title}</div>
+                        <div class="search-result-cat">${a.category}</div>
+                    </div>
+                </a>
+            `).join('');
+        }
+        resultsBox.style.display = 'block';
+    });
+
+    // Hide results when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!input.contains(e.target) && !resultsBox.contains(e.target)) {
+            resultsBox.style.display = 'none';
+        }
+    });
+
+    // Navigate to blog search on Enter
+    input.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' && input.value.trim()) {
+            window.location.href = `blog/index.html?q=${encodeURIComponent(input.value.trim())}`;
+        }
+    });
+}
+
+// Categories ------------------------------------------------------------------
+const HOME_CATEGORIES = [
+    {
+        name: 'Laptops',
+        icon: '💻',
+        keywords: ['laptop', 'laptops', 'notebook', 'ultrabook', 'chromebook'],
+        href: 'blog/index.html?category=Laptops'
+    },
+    {
+        name: 'Monitors',
+        icon: '🖥️',
+        keywords: ['monitor', 'monitors', 'display', 'screen'],
+        href: 'blog/index.html?category=Monitors'
+    },
+    {
+        name: 'Office Chairs',
+        icon: '🪑',
+        keywords: ['chair', 'chairs', 'office chair', 'ergonomic chair', 'desk chair'],
+        href: 'blog/index.html?category=Office+Chairs'
+    }
+];
+
+function countArticlesForCategory(articles, keywords) {
+    return articles.filter(a => {
+        const haystack = ((a.title || '') + ' ' + (a.slug || '') + ' ' + (a.category || '')).toLowerCase();
+        return keywords.some(kw => haystack.includes(kw));
+    }).length;
+}
+
+function renderHomeCategories(articles) {
+    const grid = document.getElementById('home-categories-grid');
+    if (!grid) return;
+
+    grid.innerHTML = HOME_CATEGORIES.map(cat => {
+        const count = countArticlesForCategory(articles, cat.keywords);
+        const label = count === 1 ? '1 guide' : `${count} guide${count === 0 ? 's' : 's'}`;
+        return `
+            <a class="category-card" href="${cat.href}">
+                <span class="cat-icon">${cat.icon}</span>
+                <h3 class="cat-name">${cat.name}</h3>
+                <span class="cat-count">${label}</span>
+            </a>
+        `;
+    }).join('');
+}
+
+// Most Popular ----------------------------------------------------------------
+function renderHomeMostPopular(articles) {
+    const container = document.getElementById('home-popular-container');
+    if (!container) return;
+
+    // Sort by readers desc; fall back to newest if all readers are 0
+    const sorted = [...articles].sort((a, b) => {
+        const diff = (b.stats?.readers || 0) - (a.stats?.readers || 0);
+        if (diff !== 0) return diff;
+        return new Date(b.date || 0) - new Date(a.date || 0);
+    });
+
+    const top3 = sorted.slice(0, 3);
+    if (top3.length === 0) {
+        container.innerHTML = '<p style="grid-column:1/-1; text-align:center; color:var(--text-secondary);">No guides yet. Check back soon!</p>';
+        return;
+    }
+    container.innerHTML = top3.map(createArticleCard).join('');
+}
+
+// Latest Articles (6 newest, 2×3 grid) ----------------------------------------
+function renderHomeLatest(articles) {
+    const container = document.getElementById('home-articles-container');
+    if (!container) return;
+
+    const latest = [...articles]
+        .sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0))
+        .slice(0, 6);
+
+    if (latest.length === 0) {
+        container.innerHTML = '<p style="grid-column:1/-1; text-align:center; color:var(--text-secondary);">No articles yet. Check back soon!</p>';
+        return;
+    }
+    container.innerHTML = latest.map(createArticleCard).join('');
+}
+
+// ─── SHARED COMPONENTS ───────────────────────────────────────────────────────
+
 function createArticleCard(article) {
     return `
         <a href="blog/article.html?slug=${article.slug}" class="card">
@@ -80,25 +248,27 @@ function createArticleCard(article) {
     `;
 }
 
-async function renderHomeArticles() {
-    const container = document.getElementById('home-articles-container');
-    const articles = await githubAPI.getArticlesList();
-    
-    // Take top 6 for homepage
-    const featured = articles.slice(0, 6);
-    
-    if (featured.length === 0) {
-        container.innerHTML = `<p>No articles found. Syncing from GitHub...</p>`;
-        return;
-    }
-    
-    container.innerHTML = featured.map(createArticleCard).join('');
-}
+// ─── BLOG PAGE ───────────────────────────────────────────────────────────────
 
 let allArticles = [];
 async function renderBlogArticles() {
     const container = document.getElementById('blog-articles-container');
     allArticles = await githubAPI.getArticlesList();
+
+    // Pre-filter by URL params if present
+    const params = new URLSearchParams(window.location.search);
+    const qParam = params.get('q') || '';
+    const catParam = params.get('category') || '';
+
+    if (qParam) {
+        const searchInput = document.getElementById('search-input');
+        if (searchInput) searchInput.value = qParam;
+    }
+    if (catParam) {
+        const catFilter = document.getElementById('category-filter');
+        if (catFilter) catFilter.value = catParam;
+    }
+
     displayBlogList(allArticles);
 }
 
@@ -116,13 +286,11 @@ function setupFilters() {
     const categoryFilter = document.getElementById('category-filter');
     const sortFilter = document.getElementById('sort-filter');
 
-    // Fuse.js instance — lazily initialized on first search
     let fuse = null;
 
     const filterAndSort = () => {
         let filtered = [...allArticles];
 
-        // Fuzzy search with Fuse.js
         const query = searchInput ? searchInput.value.trim() : '';
         if (query.length >= 2) {
             if (!fuse && typeof Fuse !== 'undefined') {
@@ -141,7 +309,6 @@ function setupFilters() {
             if (fuse) {
                 filtered = fuse.search(query).map(r => r.item);
             } else {
-                // Fallback if Fuse.js failed to load
                 const q = query.toLowerCase();
                 filtered = filtered.filter(a =>
                     a.title.toLowerCase().includes(q) ||
@@ -150,13 +317,11 @@ function setupFilters() {
             }
         }
 
-        // Category filter
         const cat = categoryFilter ? categoryFilter.value : 'All';
         if (cat !== 'All') {
             filtered = filtered.filter(a => a.category === cat);
         }
 
-        // Sort — skipped when searching (Fuse results are already relevance-ranked)
         if (!query) {
             const sort = sortFilter ? sortFilter.value : 'Latest';
             if (sort === 'Latest') {
@@ -172,9 +337,15 @@ function setupFilters() {
     if (searchInput) searchInput.addEventListener('input', filterAndSort);
     if (categoryFilter) categoryFilter.addEventListener('change', filterAndSort);
     if (sortFilter) sortFilter.addEventListener('change', filterAndSort);
+
+    // Apply URL params on load
+    const params = new URLSearchParams(window.location.search);
+    const hasParams = params.get('q') || params.get('category');
+    if (hasParams) filterAndSort();
 }
 
-// Render dynamic article details
+// ─── ARTICLE DETAIL ──────────────────────────────────────────────────────────
+
 async function renderArticleDetail() {
     const urlParams = new URLSearchParams(window.location.search);
     const slug = urlParams.get('slug');
@@ -195,7 +366,6 @@ async function renderArticleDetail() {
 
     const pageUrl = `https://compareelite.com/blog/article?slug=${slug}`;
 
-    // Update title & meta
     document.title = `${article.title} | CompareElite`;
     document.querySelector('meta[name="description"]').setAttribute('content', article.excerpt);
     document.getElementById('og-title').setAttribute('content', `${article.title} | CompareElite`);
@@ -207,7 +377,6 @@ async function renderArticleDetail() {
     document.getElementById('tw-image').setAttribute('content', article.thumbnail || 'https://compareelite.com/og-image.jpg');
     document.getElementById('canonical-url').setAttribute('href', pageUrl);
 
-    // Author, keywords, og:article dates
     const metaAuthor = document.getElementById('meta-author');
     if (metaAuthor) metaAuthor.setAttribute('content', article.author || 'CompareElite Team');
     const metaKeywords = document.getElementById('meta-keywords');
@@ -223,11 +392,9 @@ async function renderArticleDetail() {
     const ogSection = document.getElementById('og-section');
     if (ogSection) ogSection.setAttribute('content', article.category || 'Buying Guides');
 
-    // Update breadcrumb
     const breadcrumbTitle = document.getElementById('breadcrumb-title');
     if (breadcrumbTitle) breadcrumbTitle.textContent = article.title;
 
-    // JSON-LD schemas
     const faqSchema = article.faq && article.faq.length ? {
         "@type": "FAQPage",
         "mainEntity": article.faq.map(q => ({
@@ -402,9 +569,7 @@ function buildArticleBody(article) {
         </div>`;
 }
 
-function createMockArticleBody(article) {
-    return buildArticleBody(article);
-}
+// ─── DASHBOARD ───────────────────────────────────────────────────────────────
 
 async function renderDashboard() {
     const analytics = await githubAPI.getAnalytics();
