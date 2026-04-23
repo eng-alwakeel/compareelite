@@ -6,7 +6,9 @@
   "excerpt": "Air fryers have revolutionized home cooking by delivering crispy, delicious results with a fraction of the oil used in traditional frying. We evaluated capacity, cooking speed, ease of cleaning, and versatility to find the top models available today.",
   "thumbnail": "https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?w=800&q=80",
   "author": "CompareElite Team",
-  "stats": { "readers": 0 },
+  "stats": {
+    "readers": 0
+  },
   "products": [
     {
       "name": "Ninja Foodi 6-in-1 DualZone Air Fryer XL (DZ401)",
@@ -70,7 +72,8 @@
       "cons": [
         "Premium price tag",
         "Large footprint not suited for small counters"
-      ]
+      ],
+      "image": "https://images-na.ssl-images-amazon.com/images/I/41wK1QKUMiL.jpg"
     }
   ],
   "faq": [
