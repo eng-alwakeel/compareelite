@@ -116,29 +116,56 @@ function setupFilters() {
     const categoryFilter = document.getElementById('category-filter');
     const sortFilter = document.getElementById('sort-filter');
 
+    // Fuse.js instance — lazily initialized on first search
+    let fuse = null;
+
     const filterAndSort = () => {
         let filtered = [...allArticles];
-        
-        // Search
-        const query = searchInput.value.toLowerCase();
-        if (query) {
-            filtered = filtered.filter(a => a.title.toLowerCase().includes(query) || a.excerpt.toLowerCase().includes(query));
+
+        // Fuzzy search with Fuse.js
+        const query = searchInput ? searchInput.value.trim() : '';
+        if (query.length >= 2) {
+            if (!fuse && typeof Fuse !== 'undefined') {
+                fuse = new Fuse(allArticles, {
+                    keys: [
+                        { name: 'title', weight: 2 },
+                        { name: 'excerpt', weight: 1 },
+                        { name: 'category', weight: 0.5 },
+                        { name: 'author', weight: 0.3 }
+                    ],
+                    threshold: 0.4,
+                    includeScore: true,
+                    minMatchCharLength: 2
+                });
+            }
+            if (fuse) {
+                filtered = fuse.search(query).map(r => r.item);
+            } else {
+                // Fallback if Fuse.js failed to load
+                const q = query.toLowerCase();
+                filtered = filtered.filter(a =>
+                    a.title.toLowerCase().includes(q) ||
+                    (a.excerpt || '').toLowerCase().includes(q)
+                );
+            }
         }
 
-        // Category
-        const cat = categoryFilter.value;
+        // Category filter
+        const cat = categoryFilter ? categoryFilter.value : 'All';
         if (cat !== 'All') {
             filtered = filtered.filter(a => a.category === cat);
         }
 
-        // Sort
-        const sort = sortFilter.value;
-        if (sort === 'Latest') {
-            filtered.sort((a, b) => new Date(b.date) - new Date(a.date));
-        } else if (sort === 'Popular') {
-            filtered.sort((a, b) => (b.stats?.readers || 0) - (a.stats?.readers || 0));
+        // Sort — skipped when searching (Fuse results are already relevance-ranked)
+        if (!query) {
+            const sort = sortFilter ? sortFilter.value : 'Latest';
+            if (sort === 'Latest') {
+                filtered.sort((a, b) => new Date(b.date) - new Date(a.date));
+            } else if (sort === 'Popular') {
+                filtered.sort((a, b) => (b.stats?.readers || 0) - (a.stats?.readers || 0));
+            }
         }
-        
+
         displayBlogList(filtered);
     };
 
