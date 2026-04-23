@@ -1,6 +1,7 @@
 // GitHub Data Integration (Safe, public data only, no tokens)
 const GITHUB_REPO = 'eng-alwakeel/compareelite';
-const CACHE_DURATION = 60 * 60 * 1000; // 1 hour in ms
+const CACHE_DURATION = 5 * 60 * 1000;       // 5 minutes (articles list)
+const MANIFEST_CACHE_DURATION = 2 * 60 * 1000; // 2 minutes (manifest — stays fresh for deletion detection)
 
 class GitHubAPI {
     constructor() {
@@ -8,14 +9,15 @@ class GitHubAPI {
         this.rawUrl = `https://raw.githubusercontent.com/${GITHUB_REPO}/main`;
     }
 
-    _isCacheValid(cacheKey) {
+    _isCacheValid(cacheKey, duration) {
+        const ttl = duration !== undefined ? duration : CACHE_DURATION;
         const cached = localStorage.getItem(cacheKey);
         if (!cached) return false;
         
         try {
             const parsed = JSON.parse(cached);
             const now = new Date().getTime();
-            return (now - parsed.timestamp) < CACHE_DURATION;
+            return (now - parsed.timestamp) < ttl;
         } catch (e) {
             return false;
         }
@@ -38,14 +40,58 @@ class GitHubAPI {
         localStorage.setItem(cacheKey, JSON.stringify(cacheObj));
     }
 
-    // Since Paperclip writes to /articles/*.json, we get the directory list first
-    async getArticlesList() {
-        const cacheKey = 'ce_cache_articles_list';
-        
-        if (this._isCacheValid(cacheKey)) {
+    // Fetch the lightweight manifest that tracks which articles currently exist.
+    // Used to detect deletions and bust the articles cache immediately.
+    async _getManifest() {
+        const cacheKey = 'ce_cache_manifest';
+
+        if (this._isCacheValid(cacheKey, MANIFEST_CACHE_DURATION)) {
             return this._getCachedData(cacheKey);
         }
 
+        try {
+            const response = await fetch(
+                `${this.rawUrl}/data/articles-manifest.json`,
+                { cache: 'no-store' }
+            );
+            if (!response.ok) return null;
+            const manifest = await response.json();
+            this._setCachedData(cacheKey, manifest);
+            return manifest;
+        } catch (e) {
+            return null;
+        }
+    }
+
+    // Since Paperclip writes to /articles/*.json, we get the directory list first
+    async getArticlesList() {
+        const cacheKey = 'ce_cache_articles_list';
+
+        // --- Manifest-based cache invalidation ---
+        // Fetch the manifest (cheap, 2-min TTL). If the set of slugs differs from
+        // what we have cached, the cache is stale (article added or deleted) and
+        // must be cleared so we re-fetch the real list from GitHub.
+        const manifest = await this._getManifest();
+        if (manifest && this._isCacheValid(cacheKey)) {
+            const cached = this._getCachedData(cacheKey);
+            if (cached) {
+                const cachedSlugs = new Set(cached.map(a => a.slug));
+                const manifestSlugs = new Set(manifest.slugs);
+                const inSync =
+                    manifest.slugs.every(s => cachedSlugs.has(s)) &&
+                    cached.every(a => manifestSlugs.has(a.slug));
+                if (!inSync) {
+                    // Deletion (or addition) detected — bust the stale cache
+                    localStorage.removeItem(cacheKey);
+                } else {
+                    return cached;
+                }
+            }
+        } else if (this._isCacheValid(cacheKey)) {
+            return this._getCachedData(cacheKey);
+        }
+
+        // --- Fetch fresh list from GitHub ---
         try {
             const response = await fetch(`${this.baseUrl}/articles`);
             if (!response.ok) {
