@@ -1,0 +1,47 @@
+name: Update Articles Manifest
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'articles/**'
+
+permissions:
+  contents: write
+
+jobs:
+  update-manifest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Generate articles manifest
+        run: |
+          node -e "
+            const fs = require('fs');
+            const articlesDir = 'articles';
+            let slugs = [];
+            if (fs.existsSync(articlesDir)) {
+              slugs = fs.readdirSync(articlesDir)
+                .filter(f => f.endsWith('.json'))
+                .map(f => f.replace('.json', ''))
+                .sort();
+            }
+            const manifest = { slugs, count: slugs.length, generatedAt: new Date().toISOString() };
+            fs.mkdirSync('data', { recursive: true });
+            fs.writeFileSync('data/articles-manifest.json', JSON.stringify(manifest, null, 2));
+            console.log('Manifest updated:', slugs.length, 'articles');
+          "
+
+      - name: Configure Git
+        run: |
+          git config user.name "CompareElite Bot"
+          git config user.email "bot@compareelite.com"
+
+      - name: Commit and push manifest
+        run: |
+          git add data/articles-manifest.json
+          git diff --staged --quiet && echo "No changes" || (git commit -m "chore: update articles manifest [skip ci]" && git push origin main)
