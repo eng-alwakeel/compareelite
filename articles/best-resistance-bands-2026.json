@@ -15,7 +15,6 @@
       "rating": "9.5/10",
       "price": "$13",
       "best_for": "Best Overall",
-      "link": "https://www.amazon.com/dp/B01AVDVHTI?tag=compareelite-20",
       "pros": [
         "5 resistance levels",
         "Durable latex",
@@ -25,14 +24,15 @@
         "Loop style limits exercises",
         "Can roll up on legs"
       ],
-      "image": "https://images-na.ssl-images-amazon.com/images/I/51qwtoikBYL.jpg"
+      "image": "https://images-na.ssl-images-amazon.com/images/I/51qwtoikBYL.jpg",
+      "affiliate_link": "https://www.amazon.com/dp/B01AVDVHTI?tag=compareelite-20",
+      "asin": "B01AVDVHTI"
     },
     {
       "name": "INTEY Pull-Up Assist Bands",
       "rating": "9.3/10",
       "price": "$29",
       "best_for": "Best for Pull-Ups",
-      "link": "https://www.amazon.com/dp/B08ZNRXHC1?tag=compareelite-20",
       "pros": [
         "Heavy-duty latex",
         "4 resistance levels (up to 175lbs)",
@@ -40,14 +40,16 @@
       ],
       "cons": [
         "Thicker bands can be awkward for smaller exercises"
-      ]
+      ],
+      "affiliate_link": "https://www.amazon.com/dp/B08ZNRXHC1?tag=compareelite-20",
+      "asin": "B08ZNRXHC1",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B08ZNRXHC1.01._SCLZZZZZZZ_.jpg"
     },
     {
       "name": "Undersun Resistance Bands (5-Pack)",
       "rating": "9.2/10",
       "price": "$49",
       "best_for": "Best Premium",
-      "link": "https://www.amazon.com/dp/B07R5G21SH?tag=compareelite-20",
       "pros": [
         "Anti-snap guarantee",
         "Full-body workout guide",
@@ -56,14 +58,15 @@
       "cons": [
         "Most expensive option"
       ],
-      "image": "https://m.media-amazon.com/images/I/81ld0m12kSL._SL500_.jpg"
+      "image": "https://m.media-amazon.com/images/I/81ld0m12kSL._SL500_.jpg",
+      "affiliate_link": "https://www.amazon.com/dp/B07R5G21SH?tag=compareelite-20",
+      "asin": "B07R5G21SH"
     },
     {
       "name": "WOD Nation Speed Jump Rope + Bands",
       "rating": "8.9/10",
       "price": "$35",
       "best_for": "Best Home Gym Bundle",
-      "link": "https://www.amazon.com/dp/B08PPNGSCN?tag=compareelite-20",
       "pros": [
         "Complete kit",
         "Great for CrossFit",
@@ -71,7 +74,10 @@
       ],
       "cons": [
         "No handle attachments"
-      ]
+      ],
+      "affiliate_link": "https://www.amazon.com/dp/B08PPNGSCN?tag=compareelite-20",
+      "asin": "B08PPNGSCN",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B08PPNGSCN.01._SCLZZZZZZZ_.jpg"
     }
   ],
   "faq": [
