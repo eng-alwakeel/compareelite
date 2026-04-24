@@ -116,12 +116,12 @@ Every article MUST output valid JSON using the EXACT schema below — no excepti
       "a": "3–4 sentence answer (80–105 words) giving a direct, helpful recommendation with product names."
     }
   ],
-  "verdict": "3–4 sentence conclusion (100–130 words) that names the Best Overall pick with its price, top 2 reasons it wins, and a direct recommendation. Then briefly mention the runner-up for a different use case (e.g. budget, travel, performance). End with a confident call to action that reassures the reader they're making a well-researched choice.",
-  "related_articles": [
-    { "slug": "best-related-product-2026", "title": "Best Related Product of 2026" },
-    { "slug": "best-another-related-2026", "title": "Best Another Related of 2026" }
-  ]
+  "verdict": "3–4 sentence conclusion (100–130 words) that names the Best Overall pick with its price, top 2 reasons it wins, and a direct recommendation. Then briefly mention the runner-up for a different use case (e.g. budget, travel, performance). End with a confident call to action that reassures the reader they're making a well-researched choice."
 }
+```
+
+> ⚠️ **DO NOT include `related_articles` in the article JSON.**
+> It is added in a separate post-publish step by fetching the actual list of published articles from the GitHub repository (`articles/` folder) and selecting 2–3 real slugs that match the category. Writing it here risks linking to articles that don't exist yet.
 ```
 
 ---
@@ -206,17 +206,16 @@ Every article MUST output valid JSON using the EXACT schema below — no excepti
 - Examples for wireless earbuds: "Active Noise Cancellation Quality", "Battery Life and Charging Speed", "Sound Quality and Codec Support", "Comfort and Fit for Long Sessions", "Call Quality and Microphone Performance", "Water Resistance and Durability"
 - Avoid generic titles like "Factor 1" or "Performance" — be specific
 
-### Internal Links — `related_articles`
-- Add a `related_articles` array with 2–3 slugs of other CompareElite guides in the same or adjacent category
-- These render as a "You Might Also Like" section at the bottom of the article
-- Only link to articles that plausibly exist on the site (same category or closely related products)
-- Format:
-```json
-"related_articles": [
-  { "slug": "best-noise-cancelling-headphones-2026", "title": "Best Noise-Cancelling Headphones of 2026" },
-  { "slug": "best-bluetooth-speakers-2026", "title": "Best Bluetooth Speakers of 2026" }
-]
-```
+### Internal Links — `related_articles` (POST-PUBLISH ONLY)
+
+> **DO NOT write `related_articles` in this article.** It is a separate step done after publishing.
+>
+> **Why:** Writing it now risks linking to articles that don't exist yet, creating broken "You Might Also Like" links on the live site.
+>
+> **How it's added after publishing:**
+> 1. Fetch the current list of published articles from GitHub: `eng-alwakeel/compareelite` → `articles/` folder
+> 2. Pick 2–3 slugs from real published articles in the same or adjacent category
+> 3. Add `related_articles` to the JSON file directly in the repository
 
 ### `category`
 - Must be exactly one of: `Technology`, `Kitchen`, `Fitness`, `Outdoor`, `Health`, `Automotive`, `Home`, `Travel`, `Fashion`

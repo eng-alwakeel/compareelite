@@ -29,6 +29,25 @@ If REJECTED, list every failed check with a specific fix. Do not approve an arti
 
 ---
 
+## ⚠️ STEP 0 — Fetch Published Articles from GitHub (REQUIRED BEFORE REVIEW)
+
+Before running any checks, fetch the current list of published articles from the GitHub repository:
+
+**Repository:** `eng-alwakeel/compareelite`
+**Path:** `articles/` folder (main branch)
+
+Use the GitHub API or MCP tools to list all `.json` files in the `articles/` folder. Extract the slug from each filename (remove `.json` extension). Store this as the **Published Slugs List**.
+
+Example published slugs:
+- `best-wireless-earbuds-2026`
+- `best-gaming-laptops-2026`
+- `best-office-chairs-2026`
+- *(and all others found in the folder)*
+
+This list is used in Check 19 and Checks 68–71 to validate `related_articles`.
+
+---
+
 ## Check Group 1 — Forbidden Fields (auto-fail)
 
 Run these first. Any forbidden field = immediate REJECTED status regardless of other checks.
@@ -62,7 +81,7 @@ Run these first. Any forbidden field = immediate REJECTED status regardless of o
 | 16 | `buying_guide` exists and non-empty | Must have 6 items |
 | 17 | `faq` exists and non-empty | Must have 5 items |
 | 18 | `verdict` exists | Must be present |
-| 19 | `related_articles` exists | Must have 2–3 items |
+| 19 | `related_articles` — **OPTIONAL** | If present, validate via Checks 68–71. If absent, skip Group 9 entirely — article still passes. `related_articles` is added post-publish; it is NOT required for QC approval. |
 
 ---
 
@@ -110,7 +129,7 @@ Run these first. Any forbidden field = immediate REJECTED status regardless of o
 ### `stats`
 | # | Check | Rule |
 |---|---|---|
-| 31 | Stats format | Must be `{ "readers": 0 }` |
+| 31 | Stats format | Must be exactly `{ "readers": 0 }` — no extra fields like `clicks` |
 
 ---
 
@@ -187,13 +206,18 @@ For each product in `products`:
 
 ---
 
-## Check Group 9 — Related Articles Validation
+## Check Group 9 — Related Articles Validation (ONLY if `related_articles` is present)
+
+> **Skip this entire group if `related_articles` field is absent.** The article still passes without it.
+> `related_articles` is added post-publish using the actual list of published articles fetched from GitHub.
+
+If `related_articles` IS present, run all checks below:
 
 | # | Check | Rule |
 |---|---|---|
 | 68 | 2–3 related articles | Array must have 2–3 items |
-| 69 | Each item has `slug` and `title` | Both fields required |
-| 70 | Slugs are valid format | Lowercase, hyphens, ends with `-2026` |
+| 69 | Each item has `slug` and `title` | Both fields required per item |
+| 70 | Slugs exist in GitHub repo | **Each slug must exist in the Published Slugs List fetched in Step 0.** If a slug is NOT in the GitHub `articles/` folder, it FAILS. This prevents broken internal links. |
 | 71 | Related articles are relevant | Slugs should be same or adjacent category — not random unrelated topics |
 
 ---
@@ -213,8 +237,9 @@ For each product in `products`:
 
 - **Total checks: 75**
 - **Auto-fail checks (Group 1):** Any forbidden field = REJECTED immediately
-- **Pass threshold:** Must pass ALL checks to be APPROVED
-- **Partial pass:** Not possible — if any check fails, status is REJECTED
+- **Group 9 checks (68–71):** Only count toward total if `related_articles` is present
+- **Pass threshold:** Must pass ALL applicable checks to be APPROVED
+- **Partial pass:** Not possible — if any applicable check fails, status is REJECTED
 
 ---
 
@@ -228,7 +253,7 @@ For each product in `products`:
 ═══════════════════════════════════════════
 
 STATUS: APPROVED ✅  /  REJECTED ❌
-Checks passed: XX / 73
+Checks passed: XX / 75
 
 ───────────────────────────────────────────
 FAILED CHECKS (must fix before publishing):
@@ -253,8 +278,8 @@ WORD COUNT BREAKDOWN:
 intro:          XXX words
 products pros:  XXX words
 products cons:  XXX words
-buying_guide:   XXX words
-faq answers:    XXX words
+buying_guide:   XXX words  (per-item counts)
+faq answers:    XXX words  (per-item counts)
 verdict:        XXX words
 TOTAL:          XXXX words  [≥2000 ✅ / <2000 ❌]
 
@@ -274,6 +299,7 @@ TOTAL:          XXXX words  [≥2000 ✅ / <2000 ❌]
 | `content` field present | Delete entirely — website builds content from other fields |
 | `rating: 4.8` (number) | Change to `"9.6/10"` (string) |
 | Thumbnail is Amazon URL | Replace with Unsplash URL: `https://images.unsplash.com/photo-XXXXX?w=800&q=80` |
+| `stats` has extra fields | Change to exactly `{ "readers": 0 }` — remove `clicks` or any other keys |
 | Pros are fragments | Rewrite as full sentences with measurable specs |
 | FAQ uses `question`/`answer` keys | Rename to `q`/`a` |
 | FAQ has only 3 items | Add 2 more questions (lifespan + alternative use case) |
@@ -281,5 +307,5 @@ TOTAL:          XXXX words  [≥2000 ✅ / <2000 ❌]
 | `buying_guide` missing | Add 6-item array with `title` + `body` per item |
 | `intro` is a single paragraph | Split into 3 paragraphs with `\n\n` |
 | `verdict` missing | Add 100–130 word conclusion naming top pick + runner-up |
-| `related_articles` missing | Add 2–3 relevant article slugs with titles |
+| `related_articles` has invalid slug | Fetch actual slug list from GitHub `articles/` folder — only use slugs that exist there |
 | Word count under 2000 | Expand buying_guide bodies and FAQ answers to full target length |
