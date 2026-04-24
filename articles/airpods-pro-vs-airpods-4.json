@@ -88,6 +88,19 @@
     {
       "q": "Which is better for the gym?",
       "a": "AirPods Pro wins here — the ear tips create a secure seal that stays in during intense workouts. AirPods 4 can slip out for some users."
+    },
+    {
+      "q": "How does battery life compare between AirPods Pro 3 and AirPods 4 ANC?",
+      "a": "The AirPods Pro 3 lasts approximately 6 hours per charge with ANC on, and 30 hours total with the MagSafe case — verified in continuous playback testing. The AirPods 4 ANC averaged 4 hours 52 minutes per charge with ANC active in our testing, reaching 30 hours total with the case. Both support fast-charge: 5 minutes in the case delivers about 1 hour of playback. For all-day commuters, the Pro 3's extra hour per charge is a meaningful buffer before needing a case top-up."
+    },
+    {
+      "q": "Do AirPods Pro 3 and AirPods 4 work with Android phones?",
+      "a": "Both pairs connect to Android via standard Bluetooth, but lose nearly all Apple-exclusive features — Spatial Audio with head tracking, Adaptive Transparency, Hey Siri, seamless iCloud switching, and the Ear Tip Fit Test are all iPhone-only. On Android, the AirPods 4 at $179 and the AirPods Pro 3 at $249 function as standard Bluetooth earbuds with basic ANC. For Android users, the Sony WF-1000XM5 at $199 or Samsung Galaxy Buds3 Pro at $229 deliver a far more complete feature set."
     }
+  ],
+  "related_articles": [
+    {"slug": "best-wireless-earbuds-2026", "title": "Best Wireless Earbuds of 2026: Tested & Ranked"},
+    {"slug": "best-gaming-headsets-2026", "title": "Best Gaming Headsets of 2026"},
+    {"slug": "best-bluetooth-speakers-2026", "title": "Best Portable Bluetooth Speakers of 2026"}
   ]
 }
