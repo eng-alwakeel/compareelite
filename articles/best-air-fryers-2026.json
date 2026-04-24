@@ -15,7 +15,6 @@
       "rating": "9.6/10",
       "price": "$199",
       "best_for": "Best Overall",
-      "link": "https://www.amazon.com/dp/B092HLM9WN?tag=compareelite-20",
       "pros": [
         "Two independent 4-qt baskets cook different foods simultaneously",
         "Smart Finish syncs both zones to finish at the same time",
@@ -24,14 +23,16 @@
       "cons": [
         "Takes up significant counter space",
         "Basket coating can wear with heavy use"
-      ]
+      ],
+      "affiliate_link": "https://www.amazon.com/dp/B092HLM9WN?tag=compareelite-20",
+      "asin": "B092HLM9WN",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B092HLM9WN.01._SCLZZZZZZZ_.jpg"
     },
     {
       "name": "Cosori Turbo Blaze 6-Qt Air Fryer",
       "rating": "9.1/10",
       "price": "$119",
       "best_for": "Best Value",
-      "link": "https://www.amazon.com/dp/B0CBMWSMJB?tag=compareelite-20",
       "pros": [
         "TurboBlaze technology preheats in under 2 minutes",
         "12 cooking presets with intuitive touchscreen",
@@ -40,14 +41,16 @@
       "cons": [
         "Single basket limits multitasking",
         "Fan noise is noticeable"
-      ]
+      ],
+      "affiliate_link": "https://www.amazon.com/dp/B0CBMWSMJB?tag=compareelite-20",
+      "asin": "B0CBMWSMJB",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B0CBMWSMJB.01._SCLZZZZZZZ_.jpg"
     },
     {
       "name": "Instant Vortex Plus 6-Quart Air Fryer",
       "rating": "8.7/10",
       "price": "$89",
       "best_for": "Best for Beginners",
-      "link": "https://www.amazon.com/dp/B07W55DDFR?tag=compareelite-20",
       "pros": [
         "Simple one-touch programs for common foods",
         "EvenCrisp technology circulates air effectively",
@@ -56,14 +59,16 @@
       "cons": [
         "Fewer advanced features than rivals",
         "Interior light dims over time"
-      ]
+      ],
+      "affiliate_link": "https://www.amazon.com/dp/B07W55DDFR?tag=compareelite-20",
+      "asin": "B07W55DDFR",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B07W55DDFR.01._SCLZZZZZZZ_.jpg"
     },
     {
       "name": "Breville Smart Oven Air Fryer Pro (BOV900BSS)",
       "rating": "9.3/10",
       "price": "$399",
       "best_for": "Best Premium Toaster-Oven Combo",
-      "link": "https://www.amazon.com/dp/B07GK9NVR6?tag=compareelite-20",
       "pros": [
         "13 cooking functions including roast, bake, and dehydrate",
         "Large 1-cu-ft interior fits a 14-inch pizza",
@@ -73,7 +78,9 @@
         "Premium price tag",
         "Large footprint not suited for small counters"
       ],
-      "image": "https://images-na.ssl-images-amazon.com/images/I/41wK1QKUMiL.jpg"
+      "image": "https://images-na.ssl-images-amazon.com/images/I/41wK1QKUMiL.jpg",
+      "affiliate_link": "https://www.amazon.com/dp/B07GK9NVR6?tag=compareelite-20",
+      "asin": "B07GK9NVR6"
     }
   ],
   "faq": [
