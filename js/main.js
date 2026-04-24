@@ -227,7 +227,7 @@ function createArticleCard(article) {
     return `
         <a href="blog/article.html?slug=${article.slug}" class="card">
             <div class="card-img-wrapper">
-                <img src="${article.thumbnail || 'https://via.placeholder.com/500x300?text=No+Image'}" alt="${article.title}" class="card-img" loading="lazy">
+                <img src="${article.thumbnail || ''}" alt="${article.title}" class="card-img" loading="lazy" onerror="this.style.display='none'">
                 <div style="position: absolute; top: 10px; left: 10px;">
                     <span style="background: rgba(0,0,0,0.7); color: #fff; padding: 4px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 600;">${article.category}</span>
                 </div>
