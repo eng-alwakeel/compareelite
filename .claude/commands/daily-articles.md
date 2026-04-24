@@ -184,6 +184,28 @@ articles/[slug].json
 
 ---
 
+## Step 3.5 — Add `related_articles` (Automatic)
+
+After saving all 4 articles:
+
+1. Run `ls articles/` to get the full list of published slugs (includes existing + the 4 new ones)
+2. For each of the 4 new articles, pick **2–3 slugs** from the list that match the **same category** or an adjacent one — never the article itself
+3. Build the `related_articles` array using real slugs only:
+```json
+"related_articles": [
+  { "slug": "best-noise-cancelling-headphones-2026", "title": "Best Noise-Cancelling Headphones of 2026" },
+  { "slug": "best-wireless-gaming-mice-2026", "title": "Best Wireless Gaming Mice of 2026" }
+]
+```
+4. Add `related_articles` to each article JSON and save the file
+
+**Rules:**
+- Only use slugs that actually exist in `articles/` — never invent slugs
+- Prefer same-category links; fall back to adjacent categories if fewer than 2 exist
+- If no related articles exist yet, skip the field entirely (omit it)
+
+---
+
 ## Step 4 — Find Amazon Product Images
 
 After saving all 4 articles, spawn a **background subagent** (WebSearch-capable) to find the real `m.media-amazon.com` CDN image URL for each ASIN.
