@@ -15,7 +15,6 @@
       "rating": "9.8/10",
       "price": "$249",
       "best_for": "Overall Best",
-      "link": "https://www.amazon.com/dp/B0FQFB8FMG?tag=compareelite-20",
       "pros": [
         "Best-in-class ANC",
         "Seamless Apple ecosystem",
@@ -25,14 +24,15 @@
         "Pricey",
         "Best only with iPhone"
       ],
-      "image": "https://m.media-amazon.com/images/I/218Mmzk0EaL._SL500_.jpg"
+      "image": "https://m.media-amazon.com/images/I/218Mmzk0EaL._SL500_.jpg",
+      "affiliate_link": "https://www.amazon.com/dp/B0FQFB8FMG?tag=compareelite-20",
+      "asin": "B0FQFB8FMG"
     },
     {
       "name": "Sony WF-1000XM5",
       "rating": "9.5/10",
       "price": "$199",
       "best_for": "Best ANC",
-      "link": "https://www.amazon.com/dp/B0C33XXS56?tag=compareelite-20",
       "pros": [
         "Industry-leading noise cancellation",
         "Works with any device",
@@ -42,14 +42,15 @@
         "Bulky case",
         "Expensive"
       ],
-      "image": "https://m.media-amazon.com/images/I/21iD0HdSIEL.jpg"
+      "image": "https://m.media-amazon.com/images/I/21iD0HdSIEL.jpg",
+      "affiliate_link": "https://www.amazon.com/dp/B0C33XXS56?tag=compareelite-20",
+      "asin": "B0C33XXS56"
     },
     {
       "name": "Samsung Galaxy Buds3 Pro",
       "rating": "9.2/10",
       "price": "$229",
       "best_for": "Best for Android",
-      "link": "https://www.amazon.com/dp/B0D9YZJ3V7?tag=compareelite-20",
       "pros": [
         "Deep Samsung integration",
         "Hi-Fi audio",
@@ -58,14 +59,15 @@
       "cons": [
         "Best with Samsung phones only"
       ],
-      "image": "https://m.media-amazon.com/images/I/41lJzPsRHjL._SL500_.jpg"
+      "image": "https://m.media-amazon.com/images/I/41lJzPsRHjL._SL500_.jpg",
+      "affiliate_link": "https://www.amazon.com/dp/B0D9YZJ3V7?tag=compareelite-20",
+      "asin": "B0D9YZJ3V7"
     },
     {
       "name": "Jabra Elite 10 Gen 2",
       "rating": "9.0/10",
       "price": "$179",
       "best_for": "Best Calls",
-      "link": "https://www.amazon.com/dp/B0D5DLF39S?tag=compareelite-20",
       "pros": [
         "6-mic call quality",
         "Comfortable fit",
@@ -74,14 +76,15 @@
       "cons": [
         "Average ANC vs price"
       ],
-      "image": "https://m.media-amazon.com/images/I/21IXom2+TJL._SL500_.jpg"
+      "image": "https://m.media-amazon.com/images/I/21IXom2+TJL._SL500_.jpg",
+      "affiliate_link": "https://www.amazon.com/dp/B0D5DLF39S?tag=compareelite-20",
+      "asin": "B0D5DLF39S"
     },
     {
       "name": "Soundcore Liberty 4 NC",
       "rating": "8.6/10",
       "price": "$79",
       "best_for": "Best Budget",
-      "link": "https://www.amazon.com/dp/B0BZV4QFP8?tag=compareelite-20",
       "pros": [
         "Incredible value",
         "Good ANC",
@@ -91,7 +94,9 @@
         "Average soundstage",
         "Plastic build"
       ],
-      "image": "https://m.media-amazon.com/images/I/31InW7uHGNL._SL500_.jpg"
+      "image": "https://m.media-amazon.com/images/I/31InW7uHGNL._SL500_.jpg",
+      "affiliate_link": "https://www.amazon.com/dp/B0BZV4QFP8?tag=compareelite-20",
+      "asin": "B0BZV4QFP8"
     }
   ],
   "faq": [
