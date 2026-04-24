@@ -120,6 +120,23 @@
     {
       "q": "Do dash cams drain the car battery?",
       "a": "In parking mode, yes — some current is drawn. Most dash cams have a low-voltage cutoff to protect your battery. For extended parking mode, a hardwire kit is recommended."
+    },
+    {
+      "q": "Do dash cams record when the car is parked?",
+      "a": "Yes, if equipped with parking mode. The Vantrue E1 Pro ($89) draws approximately 90mA in parking mode, which a standard 50Ah battery can sustain for over 48 hours before hitting critical voltage. The Nextbase 622GW ($199) uses motion-triggered 1080p clips in parking mode to conserve storage. For reliable overnight or multi-day parking coverage, a hardwire kit with a low-voltage cutoff set at 11.6V is strongly recommended to prevent battery drain."
+    },
+    {
+      "q": "How much storage do I need for a dash cam?",
+      "a": "At 4K/30fps, the Vantrue E1 Pro ($89) uses roughly 3.5GB per 10 minutes, so a 128GB card holds about 6 hours of footage before loop recording overwrites the oldest files. The Garmin Dash Cam Mini 2 ($59) at 1080p uses only 1.2GB per 10 minutes, tripling on-card archive time. For most daily commuters, a 64GB card is sufficient; parking-mode users or rideshare drivers benefit from 128GB or 256GB high-endurance cards like the Samsung Endurance Pro."
+    },
+    {
+      "q": "Are front-and-rear dash cams worth the extra cost?",
+      "a": "For most drivers, yes — a rear camera provides critical evidence for rear-end collisions, which account for roughly 29% of all crashes in the US. The Nextbase 622GW ($199) supports an optional rear camera module that records in 1080p simultaneously with the 4K front lens. Rexing V1 ($49) also supports dual-channel setups via a secondary camera add-on. If you park in busy urban areas or drive professionally, the extra protection justifies the cost over a single front unit alone."
     }
+  ],
+  "related_articles": [
+    {"slug": "best-car-phone-mounts-2026", "title": "Best Car Phone Mounts of 2026: Safe, Secure & Easy to Use"},
+    {"slug": "best-portable-power-banks-2026", "title": "Best Portable Power Banks of 2026: Fast Charging Picks"},
+    {"slug": "best-portable-jump-starters-2026", "title": "Best Portable Jump Starters of 2026: Never Get Stranded Again"}
   ]
 }

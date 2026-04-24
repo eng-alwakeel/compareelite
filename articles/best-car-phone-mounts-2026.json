@@ -118,6 +118,23 @@
     {
       "q": "Are magnetic mounts safe for phones?",
       "a": "Yes — modern smartphones are designed to handle magnetic fields. The small magnet in phone mounts won't damage your device, camera, or credit cards stored in a wallet case."
+    },
+    {
+      "q": "Are magnetic car phone mounts safe for phones?",
+      "a": "Yes — the magnets used in mounts like the ESR HaloLock ($29) and Spigen OneTap Pro ($39) are too weak to damage phone storage, cameras, or credit cards. MagSafe-compatible mounts use precisely tuned magnetic arrays that Apple-certified iPhones are designed to work with. The only exception is phones with magnetic card wallet attachments, where stray fields may demagnetize older magnetic stripe cards over time."
+    },
+    {
+      "q": "What type of car phone mount works best without a CD slot?",
+      "a": "If your car lacks a CD slot, the iOttie Easy One Touch 5 ($35) dashboard suction cup is the best alternative — it attaches firmly to the dash or windshield without any slot required. The ESR HaloLock ($29) and Spigen OneTap Pro ($39) mount via the air vent. For cars with covered or touch-screen vents, a suction-cup dashboard mount is the safest universal solution that avoids damaging sensitive vent mechanisms."
+    },
+    {
+      "q": "Do car phone mounts work with phone cases?",
+      "a": "Most universal cradle mounts like the iOttie Easy One Touch 5 ($35) and Lamicall Gooseneck ($22) accommodate phones up to 3.5 inches wide, fitting the majority of slim and medium-profile cases. MagSafe mounts like the ESR HaloLock ($29) work with any case thickness, but thick magnetic or metal cases can reduce the MagSafe hold to below safe driving strength. Always verify your case-equipped phone width against the mount's rated maximum before purchasing."
     }
+  ],
+  "related_articles": [
+    {"slug": "best-dash-cams-2026", "title": "Best Dash Cams of 2026: Front & Rear Coverage Picks"},
+    {"slug": "best-portable-power-banks-2026", "title": "Best Portable Power Banks of 2026: Fast Charging Picks"},
+    {"slug": "best-portable-tire-inflators-2026", "title": "Best Portable Tire Inflators of 2026: Compact & Powerful"}
   ]
 }

@@ -118,6 +118,23 @@
     {
       "q": "Are power banks allowed on airplanes?",
       "a": "Yes, in carry-on bags only. Most airlines allow power banks up to 100Wh (about 27,000mAh at 3.7V). Check your airline's specific policy."
+    },
+    {
+      "q": "What is the best power bank for charging multiple devices at once?",
+      "a": "The Baseus 65W Power Bank 20K at $59 is the best multi-device option in this guide with four ports — two USB-C PD and two USB-A — allowing you to charge a laptop, phone, earbuds, and smartwatch simultaneously from its 20,000mAh capacity. The Anker 737 at $89 offers two USB-C PD ports and one USB-A. Total output wattage is shared across ports, so the Baseus is ideal when charging several devices at moderate speeds rather than one device at full 65W speed."
+    },
+    {
+      "q": "How long does it take to recharge a power bank?",
+      "a": "Recharge time depends on capacity and the charger wattage used. The Anker 737 at 26,800mAh takes approximately 2.5 hours to fully recharge via a 65W USB-C wall adapter. The Anker Nano Power Bank 10K recharges in under 2 hours with a 30W charger. The INIU Power Bank 22.5W at 10,000mAh is the slowest to self-recharge, taking 4+ hours due to its limited input rate. Always use a USB-C PD wall charger rated 30W or higher to avoid overnight-only recharge times."
+    },
+    {
+      "q": "What is the difference between 10,000mAh and 20,000mAh power banks in real use?",
+      "a": "A 10,000mAh bank like the Anker Nano Power Bank 10K delivers roughly 6,000-7,000mAh of usable charge after conversion losses — about 1.5 full iPhone charges. A 20,000mAh bank like the Baseus 65W provides roughly 12,000-14,000mAh usable — about 3 iPhone charges or 1 full laptop top-up. For day trips, 10,000mAh is sufficient and stays pocket-friendly at under 180g. For multi-day travel or laptop users, the 20,000mAh Baseus at $59 or the 26,800mAh Anker 737 at $89 are worth the extra size."
     }
+  ],
+  "related_articles": [
+    {"slug": "best-wireless-earbuds-2026", "title": "Best Wireless Earbuds of 2026: Tested & Ranked"},
+    {"slug": "best-camping-tents-2026", "title": "Best Camping Tents 2026"},
+    {"slug": "best-bluetooth-speakers-2026", "title": "Best Portable Bluetooth Speakers of 2026"}
   ]
 }

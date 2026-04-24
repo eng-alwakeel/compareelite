@@ -119,6 +119,23 @@
     {
       "q": "How do I keep my tent dry inside during rain?",
       "a": "Always use a footprint (ground cloth) under your tent to block moisture wicking from below, stake out the rainfly fully so it doesn't touch the inner tent walls, and treat seams with seam sealer annually to maintain waterproofing."
+    },
+    {
+      "q": "What season rating do I need for camping in rain?",
+      "a": "A 3-season tent rated to at least 1500mm hydrostatic head is sufficient for most rain camping. The REI Co-op Half Dome SL 2+ ($269) meets this threshold and held dry through sustained 2-hour downpours in our tests. The MSR Hubba Hubba ($549) uses Xtreme Shield fabric rated to 3000mm on the floor for even heavier precipitation. Avoid using ultralight shelters or tarps for camping in regions with persistent rainfall — a full-coverage rainfly with sealed seams is non-negotiable."
+    },
+    {
+      "q": "How important is vestibule space in a camping tent?",
+      "a": "Vestibules are critical for keeping muddy boots, wet gear, and backpacks out of the sleeping area. The MSR Hubba Hubba ($549) includes dual vestibules adding 17.5 square feet of exterior gear storage — one of the best vestibule setups in its class. The REI Half Dome SL 2+ ($269) includes a single vestibule that can shelter two packs and boots. For multi-day backpacking or wet-weather camping, prioritize a minimum of 8–10 square feet of vestibule space per tent door."
+    },
+    {
+      "q": "Can I use a 3-season tent in winter camping?",
+      "a": "In mild winter conditions — temperatures above 20°F with light snow — a robust 3-season tent like the MSR Hubba Hubba ($549) with its DAC Featherlite NSL poles can manage adequately if you site it carefully out of wind. However, 3-season tents are not engineered to shed heavy snow loads or withstand sustained high-wind alpine conditions. For winter camping above treeline or in areas with heavy snowfall, a true 4-season tent with geodesic or semi-geodesic pole geometry is the safe choice. The Big Agnes Copper Spur HV UL2 ($449) is strictly a 3-season design."
     }
+  ],
+  "related_articles": [
+    {"slug": "best-portable-power-banks-2026", "title": "Best Portable Power Banks of 2026: Fast Charging Picks"},
+    {"slug": "best-insulated-water-bottles-2026", "title": "Best Insulated Water Bottles of 2026: Stanley vs Owala vs Hydro Flask"},
+    {"slug": "best-expandable-garden-hoses-2026", "title": "Best Expandable Garden Hoses of 2026: Lightweight & Tangle-Free"}
   ]
 }

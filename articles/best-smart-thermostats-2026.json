@@ -163,5 +163,10 @@
       "q": "Can I install a smart thermostat myself without an electrician?",
       "a": "Yes — most smart thermostats are designed for DIY installation in 20-45 minutes. The Amazon Smart Thermostat guides you through setup entirely via Alexa voice commands, while the Sensi Touch 2 provides step-by-step app guidance. The main consideration is C-wire compatibility: the ecobee, Nest Thermostat, Amazon Smart Thermostat, and Honeywell T9 all include C-wire adapters. Only the Sensi Touch 2 requires an existing C-wire with no workaround included."
     }
+  ],
+  "related_articles": [
+    {"slug": "best-smart-home-devices-2026", "title": "Best Smart Home Devices of 2026: Make Your Home Smarter"},
+    {"slug": "best-robot-vacuums-2026", "title": "Best Robot Vacuums 2026"},
+    {"slug": "best-air-purifiers-2026", "title": "Best Air Purifiers 2026"}
   ]
 }

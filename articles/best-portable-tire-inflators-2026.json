@@ -119,6 +119,23 @@
     {
       "q": "Can a portable inflator fix a completely flat tire?",
       "a": "Yes, if the flat is from a slow leak or a nail that's still in the tire. If the tire has a blowout or major sidewall damage, an inflator won't help — you'll need a replacement."
+    },
+    {
+      "q": "How long does it take a portable tire inflator to fill a flat tire?",
+      "a": "Fill time depends on the inflator's PSI-per-minute rate and how flat the tire is. The Fanttik X8 Apex ($79) moved a 215/55R17 from 15 PSI to 35 PSI in approximately 4 minutes — the fastest in our tests at roughly 5 PSI per minute. The AstroAI ($39) averaged about 3 PSI per minute on the same tire, adding roughly 2 extra minutes. Budget 12V units like the Avid Power ($29) average 2–2.5 PSI per minute and may require 8–10 minutes to fill a fully flat tire."
+    },
+    {
+      "q": "Can portable tire inflators inflate bike and sports equipment tires?",
+      "a": "Yes — all four of our recommended inflators include multi-nozzle adapter sets covering Presta and Schrader valve stems for bicycles, plus ball needles for sports equipment and air mattress adapters. The Fanttik X8 Apex ($79) and AstroAI ($39) both reach 150 PSI max, which covers road bike tires that require 80–130 PSI. The Ryobi One+ ($49) handles up to 150 PSI as well. Confirm the included adapter set before purchasing if you plan to inflate items beyond standard car tires."
+    },
+    {
+      "q": "What PSI rating do I need in a portable tire inflator?",
+      "a": "Most passenger car tires require 30–36 PSI, so any inflator rated above 80 PSI covers everyday use with ample headroom. Truck and SUV tires can require up to 80 PSI, and bicycle tires up to 130 PSI. The Fanttik X8 Apex ($79), AstroAI ($39), and Avid Power ($29) are all rated to 150 PSI, making them suitable for virtually any consumer tire. The Ryobi One+ ($49) also handles 150 PSI on a fresh 18V battery, covering bikes, motorcycles, and light truck tires equally."
     }
+  ],
+  "related_articles": [
+    {"slug": "best-portable-jump-starters-2026", "title": "Best Portable Jump Starters of 2026: Never Get Stranded Again"},
+    {"slug": "best-car-phone-mounts-2026", "title": "Best Car Phone Mounts of 2026: Safe, Secure & Easy to Use"},
+    {"slug": "best-dash-cams-2026", "title": "Best Dash Cams of 2026: Front & Rear Coverage Picks"}
   ]
 }

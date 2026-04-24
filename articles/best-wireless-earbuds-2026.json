@@ -139,6 +139,19 @@
     {
       "q": "How long should wireless earbuds last?",
       "a": "A quality pair should last 2-3 years with regular use. Battery degradation is the main issue over time. Most premium earbuds now offer replaceable batteries."
+    },
+    {
+      "q": "Which wireless earbuds have the best battery life in 2026?",
+      "a": "The Soundcore Liberty 4 NC leads this guide with 10 hours per charge and 50 hours total with the case — the highest combined battery life at its $79 price point. The Sony WF-1000XM5 delivers 8 hours per charge and 24 hours total. Both the Apple AirPods Pro 3 and Jabra Elite 10 Gen 2 offer fast-charge that adds 1 hour of playback from just 5 minutes in the case."
+    },
+    {
+      "q": "What is the best codec for wireless earbuds audio quality?",
+      "a": "LDAC delivers the highest bitrate wireless audio at 990kbps — supported by the Sony WF-1000XM5 and ideal for hi-res streaming on Tidal or Apple Music Lossless. Samsung Galaxy Buds3 Pro users with Galaxy phones get lossless audio via Samsung's Seamless Codec. For iPhone users, Apple AAC on the AirPods Pro 3 is excellent. Standard SBC is a fallback that all earbuds support but produces noticeably compressed audio compared to LDAC or aptX."
     }
+  ],
+  "related_articles": [
+    {"slug": "best-gaming-headsets-2026", "title": "Best Gaming Headsets of 2026"},
+    {"slug": "best-bluetooth-speakers-2026", "title": "Best Portable Bluetooth Speakers of 2026"},
+    {"slug": "airpods-pro-vs-airpods-4", "title": "AirPods Pro 3 vs AirPods 4: Which Should You Buy in 2026?"}
   ]
 }

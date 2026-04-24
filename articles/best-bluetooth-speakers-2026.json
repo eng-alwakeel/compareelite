@@ -119,6 +119,23 @@
     {
       "q": "Can two Bluetooth speakers be paired together?",
       "a": "Yes — most modern speakers support stereo pairing. JBL's PartyBoost and UE's PartyUp allow you to connect multiple speakers of the same brand."
+    },
+    {
+      "q": "Which Bluetooth speaker has the best battery life for camping and outdoor trips?",
+      "a": "The Anker Soundcore 2 at $39 leads this guide with 24 hours of continuous playback at 70% volume — the most battery life per dollar of any speaker tested. The JBL Charge 5 at $149 delivers 20 hours and adds a USB-A port so you can charge your phone directly from the speaker's 7500mAh battery, making it the smarter pick for multi-day trips where both music and phone battery matter."
+    },
+    {
+      "q": "What is the best waterproof Bluetooth speaker in 2026?",
+      "a": "The UE Wonderboom 3 at $99 offers the most durable protection — IP67 waterproofing (submersible to 1 meter for 30 minutes) combined with drop-proof protection from 1.5 meters, the only speaker in this guide rated for both. The JBL Charge 5 and Bose SoundLink Flex Gen 2 both carry IP67 ratings for pool and rain use. The Anker Soundcore 2 has no IP rating and should be kept away from water entirely."
+    },
+    {
+      "q": "How far can a Bluetooth speaker reach before signal drops?",
+      "a": "In open outdoor environments, the JBL Charge 5 and Bose SoundLink Flex Gen 2 both use Bluetooth 5.1 and maintained stable connections beyond 25 meters in our testing — sufficient for most backyard or beach setups. The Anker Soundcore 2 uses Bluetooth 5.0 with a reliable 20-meter range. Walls, trees, and other obstacles reduce range by 30-50% indoors, so real-world ranges are typically 10-15 meters through barriers."
     }
+  ],
+  "related_articles": [
+    {"slug": "best-wireless-earbuds-2026", "title": "Best Wireless Earbuds of 2026: Tested & Ranked"},
+    {"slug": "best-gaming-headsets-2026", "title": "Best Gaming Headsets of 2026"},
+    {"slug": "best-portable-power-banks-2026", "title": "Best Portable Power Banks of 2026: Fast Charging Picks"}
   ]
 }
