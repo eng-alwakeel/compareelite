@@ -15,7 +15,6 @@
       "rating": "9.8/10",
       "price": "$249",
       "best_for": "Best ANC + Features",
-      "link": "https://www.amazon.com/dp/B0FQFB8FMG?tag=compareelite-20",
       "pros": [
         "Active noise cancellation",
         "Transparency mode",
@@ -26,14 +25,15 @@
         "$70 more than AirPods 4",
         "Overkill for casual listeners"
       ],
-      "image": "https://m.media-amazon.com/images/I/218Mmzk0EaL._SL500_.jpg"
+      "image": "https://m.media-amazon.com/images/I/218Mmzk0EaL._SL500_.jpg",
+      "affiliate_link": "https://www.amazon.com/dp/B0FQFB8FMG?tag=compareelite-20",
+      "asin": "B0FQFB8FMG"
     },
     {
       "name": "Apple AirPods 4 (ANC)",
       "rating": "9.3/10",
       "price": "$179",
       "best_for": "Best Value Apple",
-      "link": "https://www.amazon.com/dp/B0DGJ7HYG1?tag=compareelite-20",
       "pros": [
         "ANC now included",
         "New open-ear design",
@@ -43,7 +43,9 @@
         "Less powerful ANC than Pro",
         "No ear tips = less isolation"
       ],
-      "image": "https://m.media-amazon.com/images/I/31bzJADEOkL._SL500_.jpg"
+      "image": "https://m.media-amazon.com/images/I/31bzJADEOkL._SL500_.jpg",
+      "affiliate_link": "https://www.amazon.com/dp/B0DGJ7HYG1?tag=compareelite-20",
+      "asin": "B0DGJ7HYG1"
     }
   ],
   "faq": [
