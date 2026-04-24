@@ -15,7 +15,6 @@
       "rating": "9.7/10",
       "price": "$179",
       "best_for": "Best Premium",
-      "link": "https://www.amazon.com/dp/B09ZV37WC6?tag=compareelite-20",
       "pros": [
         "Lasts 10+ years",
         "Works on induction",
@@ -25,14 +24,15 @@
         "Expensive",
         "Heavy"
       ],
-      "image": "https://m.media-amazon.com/images/I/41dZ9KAx4pL._SL500_.jpg"
+      "image": "https://m.media-amazon.com/images/I/41dZ9KAx4pL._SL500_.jpg",
+      "affiliate_link": "https://www.amazon.com/dp/B09ZV37WC6?tag=compareelite-20",
+      "asin": "B09ZV37WC6"
     },
     {
       "name": "SENSARTE Nonstick (11-Inch)",
       "rating": "9.3/10",
       "price": "$35",
       "best_for": "Best Value",
-      "link": "https://www.amazon.com/dp/B086P9YZGC?tag=compareelite-20",
       "pros": [
         "Swiss granite coating",
         "PFOA-free",
@@ -42,14 +42,15 @@
         "Hand wash only",
         "Not for metal utensils"
       ],
-      "image": "https://m.media-amazon.com/images/I/419M5zbSOFL._SL500_.jpg"
+      "image": "https://m.media-amazon.com/images/I/419M5zbSOFL._SL500_.jpg",
+      "affiliate_link": "https://www.amazon.com/dp/B086P9YZGC?tag=compareelite-20",
+      "asin": "B086P9YZGC"
     },
     {
       "name": "Lodge Cast Iron Skillet (12-Inch)",
       "rating": "9.1/10",
       "price": "$49",
       "best_for": "Best Cast Iron",
-      "link": "https://www.amazon.com/dp/B00G2XGC88?tag=compareelite-20",
       "pros": [
         "Lasts a lifetime",
         "Gets better with use",
@@ -59,14 +60,15 @@
         "Heavy",
         "Requires seasoning"
       ],
-      "image": "https://m.media-amazon.com/images/I/31NVGNHumwL.jpg"
+      "image": "https://m.media-amazon.com/images/I/31NVGNHumwL.jpg",
+      "affiliate_link": "https://www.amazon.com/dp/B00G2XGC88?tag=compareelite-20",
+      "asin": "B00G2XGC88"
     },
     {
       "name": "T-fal E93808 Professional (12-Inch)",
       "rating": "8.8/10",
       "price": "$29",
       "best_for": "Best Budget",
-      "link": "https://www.amazon.com/dp/B000GWG0T2?tag=compareelite-20",
       "pros": [
         "Thermo-spot indicator",
         "Dishwasher safe",
@@ -75,7 +77,9 @@
       "cons": [
         "Coating wears after 2 years"
       ],
-      "image": "https://m.media-amazon.com/images/I/311Y5rGPgEL._SL500_.jpg"
+      "image": "https://m.media-amazon.com/images/I/311Y5rGPgEL._SL500_.jpg",
+      "affiliate_link": "https://www.amazon.com/dp/B000GWG0T2?tag=compareelite-20",
+      "asin": "B000GWG0T2"
     }
   ],
   "faq": [
