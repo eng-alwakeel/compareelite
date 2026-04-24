@@ -358,11 +358,17 @@ async function renderArticleDetail() {
     }
 
     const article = await githubAPI.getArticle(slug);
-    
+
     if (!article) {
         container.innerHTML = `<h1>Article not found or not synced yet.</h1><p>Running sync with GitHub, check back in a few minutes.</p>`;
         return;
     }
+
+    // Normalize fields that differ between article formats
+    article.thumbnail = article.thumbnail || article.featured_image || '';
+    article.date = article.date || article.published_at || '';
+    article.excerpt = article.excerpt || article.seo?.description || '';
+    article.author = article.author || 'CompareElite Team';
 
     const pageUrl = `https://compareelite.com/blog/article?slug=${slug}`;
 
@@ -487,7 +493,8 @@ function buildArticleBody(article) {
     const sorted = [...products].sort((a, b) => parseFloat(b.rating) - parseFloat(a.rating));
 
     function ratingToStars(ratingStr) {
-        const stars = parseFloat(ratingStr) / 2;
+        const raw = parseFloat(ratingStr);
+        const stars = raw > 5 ? raw / 2 : raw;
         let html = '';
         for (let i = 1; i <= 5; i++) {
             const cls = stars >= i ? 'full' : stars >= i - 0.5 ? 'half' : 'empty';
