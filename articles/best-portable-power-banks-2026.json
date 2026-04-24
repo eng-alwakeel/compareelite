@@ -15,7 +15,6 @@
       "rating": "9.7/10",
       "price": "$89",
       "best_for": "Best Overall",
-      "link": "https://www.amazon.com/dp/B09VPHVT2Z?tag=compareelite-20",
       "pros": [
         "140W output charges laptops",
         "26,800mAh",
@@ -25,14 +24,15 @@
         "Heavy (1.5 lbs)",
         "Expensive"
       ],
-      "image": "https://m.media-amazon.com/images/I/3198H-JR0nL.jpg"
+      "image": "https://m.media-amazon.com/images/I/3198H-JR0nL.jpg",
+      "affiliate_link": "https://www.amazon.com/dp/B09VPHVT2Z?tag=compareelite-20",
+      "asin": "B09VPHVT2Z"
     },
     {
       "name": "Anker Nano Power Bank 10K",
       "rating": "9.3/10",
       "price": "$35",
       "best_for": "Most Portable",
-      "link": "https://www.amazon.com/dp/B0C9CJKCH3?tag=compareelite-20",
       "pros": [
         "Credit-card thin",
         "Built-in USB-C cable",
@@ -42,14 +42,15 @@
         "10,000mAh only",
         "One port"
       ],
-      "image": "https://m.media-amazon.com/images/I/31YBCgvXujL._SL500_.jpg"
+      "image": "https://m.media-amazon.com/images/I/31YBCgvXujL._SL500_.jpg",
+      "affiliate_link": "https://www.amazon.com/dp/B0C9CJKCH3?tag=compareelite-20",
+      "asin": "B0C9CJKCH3"
     },
     {
       "name": "Baseus 65W Power Bank 20K",
       "rating": "9.0/10",
       "price": "$59",
       "best_for": "Best Value",
-      "link": "https://www.amazon.com/dp/B08THFDRSZ?tag=compareelite-20",
       "pros": [
         "65W PD charging",
         "20,000mAh",
@@ -58,14 +59,15 @@
       "cons": [
         "Gets warm during fast charge"
       ],
-      "image": "https://m.media-amazon.com/images/I/41P6Q4dLInL._SL500_.jpg"
+      "image": "https://m.media-amazon.com/images/I/41P6Q4dLInL._SL500_.jpg",
+      "affiliate_link": "https://www.amazon.com/dp/B08THFDRSZ?tag=compareelite-20",
+      "asin": "B08THFDRSZ"
     },
     {
       "name": "INIU Power Bank 22.5W 10K",
       "rating": "8.7/10",
       "price": "$22",
       "best_for": "Best Under $25",
-      "link": "https://www.amazon.com/dp/B09176JCKZ?tag=compareelite-20",
       "pros": [
         "22.5W fast charge",
         "LED display",
@@ -75,7 +77,9 @@
         "No laptop charging",
         "Slow self-recharge"
       ],
-      "image": "https://m.media-amazon.com/images/I/416nS4GRFtL._SL500_.jpg"
+      "image": "https://m.media-amazon.com/images/I/416nS4GRFtL._SL500_.jpg",
+      "affiliate_link": "https://www.amazon.com/dp/B09176JCKZ?tag=compareelite-20",
+      "asin": "B09176JCKZ"
     }
   ],
   "faq": [
