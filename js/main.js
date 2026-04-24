@@ -370,6 +370,24 @@ async function renderArticleDetail() {
     article.excerpt = article.excerpt || article.seo?.description || '';
     article.author = article.author || 'CompareElite Team';
 
+    // Normalize faq: may live at content.faq with question/answer keys
+    if (!article.faq && article.content?.faq) {
+        article.faq = article.content.faq.map(f => ({ q: f.question || f.q, a: f.answer || f.a }));
+    }
+
+    // Normalize products: tagline → best_for
+    if (article.products) {
+        article.products = article.products.map(p => ({
+            ...p,
+            best_for: p.best_for || p.tagline || ''
+        }));
+    }
+
+    // If content is an object (not a string), clear it so buildArticleBody is used
+    if (article.content && typeof article.content !== 'string') {
+        article.content = null;
+    }
+
     const pageUrl = `https://compareelite.com/blog/article?slug=${slug}`;
 
     document.title = `${article.title} | CompareElite`;
