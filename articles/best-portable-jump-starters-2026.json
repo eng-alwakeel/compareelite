@@ -26,7 +26,7 @@
         "Cable could be longer"
       ],
       "image": "https://m.media-amazon.com/images/I/413QJ52orPL._SL500_.jpg",
-      "affiliate_link": "https://www.amazon.com/dp/B015TKUPIC?tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B015TKUPIC?tag=compareelite-20",
       "asin": "B015TKUPIC"
     },
     {
@@ -44,7 +44,7 @@
         "Overkill for sedans"
       ],
       "image": "https://m.media-amazon.com/images/I/41l37y84S-L._SL500_.jpg",
-      "affiliate_link": "https://www.amazon.com/dp/B016UG6PWE?tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B016UG6PWE?tag=compareelite-20",
       "asin": "B016UG6PWE"
     },
     {
@@ -61,7 +61,7 @@
         "Less established brand than NOCO"
       ],
       "image": "https://m.media-amazon.com/images/I/412TiAH208L._SL500_.jpg",
-      "affiliate_link": "https://www.amazon.com/dp/B08M41FX48?tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B08M41FX48?tag=compareelite-20",
       "asin": "B08M41FX48"
     },
     {
@@ -77,7 +77,7 @@
       "cons": [
         "Lower peak amps than NOCO GB40"
       ],
-      "affiliate_link": "https://www.amazon.com/dp/B0CH1L89N2?tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B0CH1L89N2?tag=compareelite-20",
       "asin": "B0CH1L89N2",
       "image": "https://images-na.ssl-images-amazon.com/images/P/B0CH1L89N2.01._SCLZZZZZZZ_.jpg"
     }
