@@ -5,9 +5,58 @@
   "affiliate_tag": "compareelite-20",
   "word_count": 2650,
   "featured_image": "https://m.media-amazon.com/images/I/71R4bFFlFML._AC_SL1500_.jpg",
-  "published_at": "2026-04-24",
-  "price_disclaimer": "Prices accurate as of April 24, 2026. Subject to change.",
-  "disclosure": "As an Amazon Associate, CompareElite earns from qualifying purchases.",
+  "products": [
+    {
+      "rank": 1,
+      "name": "ASUS ROG Azoth",
+      "tagline": "Best Overall",
+      "asin": "B0BSKX8W3B",
+      "price": "$159.99",
+      "rating": 4.7,
+      "image": "https://m.media-amazon.com/images/I/71cNFbCKEQL._AC_SL1500_.jpg",
+      "affiliate_link": "https://amazon.com/dp/B0BSKX8W3B?tag=compareelite-20"
+    },
+    {
+      "rank": 2,
+      "name": "Logitech G915 TKL",
+      "tagline": "Best Wireless",
+      "asin": "B085RMD5TP",
+      "price": "$129.99",
+      "rating": 4.6,
+      "image": "https://m.media-amazon.com/images/I/71R4bFFlFML._AC_SL1500_.jpg",
+      "affiliate_link": "https://amazon.com/dp/B085RMD5TP?tag=compareelite-20"
+    },
+    {
+      "rank": 3,
+      "name": "Keychron K2 Pro",
+      "tagline": "Best Value",
+      "asin": "B09MQ36PT7",
+      "price": "$89.99",
+      "rating": 4.5,
+      "image": "https://m.media-amazon.com/images/I/71fDFSz3UFL._AC_SL1500_.jpg",
+      "affiliate_link": "https://amazon.com/dp/B09MQ36PT7?tag=compareelite-20"
+    },
+    {
+      "rank": 4,
+      "name": "HyperX Alloy Origins 60",
+      "tagline": "Best Budget",
+      "asin": "B08XBQ79MN",
+      "price": "$64.99",
+      "rating": 4.4,
+      "image": "https://m.media-amazon.com/images/I/61VGVXhECvL._AC_SL1500_.jpg",
+      "affiliate_link": "https://amazon.com/dp/B08XBQ79MN?tag=compareelite-20"
+    },
+    {
+      "rank": 5,
+      "name": "Das Keyboard 4 Professional",
+      "tagline": "Best for Typing",
+      "asin": "B00JG01QTY",
+      "price": "$169.00",
+      "rating": 4.5,
+      "image": "https://m.media-amazon.com/images/I/71Q02JBoarL._AC_SL1500_.jpg",
+      "affiliate_link": "https://amazon.com/dp/B00JG01QTY?tag=compareelite-20"
+    }
+  ],
   "seo": {
     "title": "Best Mechanical Keyboards 2026: Top 5 Picks Tested & Reviewed",
     "description": "Looking for the best mechanical keyboard in 2026? We tested 20+ boards to find the top 5 picks for gaming, typing, and every budget. Expert picks inside.",
@@ -20,148 +69,7 @@
       "best budget mechanical keyboard"
     ]
   },
-  "products": [
-    {
-      "rank": 1,
-      "name": "ASUS ROG Azoth",
-      "tagline": "Best Overall",
-      "asin": "B0BZMF58P9",
-      "price": "$159.99",
-      "rating": 4.7,
-      "image": "https://m.media-amazon.com/images/I/71cNFbCKEQL._AC_SL1500_.jpg",
-      "affiliate_link": "https://amazon.com/dp/B0BZMF58P9?tag=compareelite-20",
-      "pros": [
-        "Hot-swappable switches for total customization",
-        "Tri-mode wireless: 2.4GHz, Bluetooth, USB-C",
-        "Gasket mount for premium typing feel",
-        "Built-in OLED control display",
-        "Outstanding build quality for the price"
-      ],
-      "cons": [
-        "Armoury Crate software is resource-heavy",
-        "TKL only — no numpad version"
-      ],
-      "specs": {
-        "layout": "TKL 87-key",
-        "switches": "ROG NX Red/Blue/Brown (hot-swappable)",
-        "connectivity": "2.4GHz / Bluetooth 5.0 / USB-C wired",
-        "battery": "2000mAh — up to 2 weeks wireless",
-        "rgb": "Per-key AURA SYNC RGB"
-      }
-    },
-    {
-      "rank": 2,
-      "name": "Logitech G915 TKL",
-      "tagline": "Best Wireless",
-      "asin": "B085RMD5TP",
-      "price": "$129.99",
-      "rating": 4.6,
-      "image": "https://m.media-amazon.com/images/I/71R4bFFlFML._AC_SL1500_.jpg",
-      "affiliate_link": "https://amazon.com/dp/B085RMD5TP?tag=compareelite-20",
-      "pros": [
-        "LIGHTSPEED wireless: sub-1ms lag-free",
-        "40-hour battery life with RGB on",
-        "Ultra-slim low-profile design",
-        "Solid aluminum alloy construction",
-        "Dedicated media controls"
-      ],
-      "cons": [
-        "Switches are not hot-swappable",
-        "Premium price for non-hot-swap board"
-      ],
-      "specs": {
-        "layout": "TKL 87-key",
-        "switches": "Logitech GL Linear/Tactile/Clicky (low-profile)",
-        "connectivity": "LIGHTSPEED 2.4GHz / Bluetooth",
-        "battery": "Up to 40 hours with RGB",
-        "rgb": "Per-key LIGHTSYNC RGB"
-      }
-    },
-    {
-      "rank": 3,
-      "name": "Keychron K2 Pro",
-      "tagline": "Best Value",
-      "asin": "B0BH4YQWBQ",
-      "price": "$89.99",
-      "rating": 4.5,
-      "image": "https://m.media-amazon.com/images/I/71fDFSz3UFL._AC_SL1500_.jpg",
-      "affiliate_link": "https://amazon.com/dp/B0BH4YQWBQ?tag=compareelite-20",
-      "pros": [
-        "Hot-swappable switches under $100",
-        "QMK/VIA fully programmable",
-        "Bluetooth multi-device + wired",
-        "Massive 4000mAh battery",
-        "Double-shot PBT keycaps standard"
-      ],
-      "cons": [
-        "Plastic chassis (not aluminum)",
-        "No OLED or per-key status indicators"
-      ],
-      "specs": {
-        "layout": "75% 84-key",
-        "switches": "Gateron G Pro Red/Blue/Brown (hot-swappable)",
-        "connectivity": "Bluetooth 5.1 / USB-C wired",
-        "battery": "4000mAh — up to 300 hours (backlight off)",
-        "rgb": "South-facing per-key RGB"
-      }
-    },
-    {
-      "rank": 4,
-      "name": "HyperX Alloy Origins 60",
-      "tagline": "Best Budget",
-      "asin": "B09VH16L2P",
-      "price": "$64.99",
-      "rating": 4.4,
-      "image": "https://m.media-amazon.com/images/I/61VGVXhECvL._AC_SL1500_.jpg",
-      "affiliate_link": "https://amazon.com/dp/B09VH16L2P?tag=compareelite-20",
-      "pros": [
-        "Aircraft-grade aluminum frame at budget price",
-        "HyperX Red linear switches: fast and smooth",
-        "Detachable USB-C cable",
-        "Compact 60% for maximum desk space",
-        "Per-key RGB with 3 onboard profiles"
-      ],
-      "cons": [
-        "Wired only — no wireless",
-        "No arrow keys or function row",
-        "Switches are not hot-swappable"
-      ],
-      "specs": {
-        "layout": "60% 61-key",
-        "switches": "HyperX Red linear (45g actuation)",
-        "connectivity": "USB-C detachable (wired)",
-        "battery": "N/A — wired only",
-        "rgb": "Per-key RGB with onboard memory"
-      }
-    },
-    {
-      "rank": 5,
-      "name": "Das Keyboard 4 Professional",
-      "tagline": "Best for Typing",
-      "asin": "B00JG01QI6",
-      "price": "$169.00",
-      "rating": 4.5,
-      "image": "https://m.media-amazon.com/images/I/71Q02JBoarL._AC_SL1500_.jpg",
-      "affiliate_link": "https://amazon.com/dp/B00JG01QI6?tag=compareelite-20",
-      "pros": [
-        "Cherry MX Brown: benchmark tactile switch",
-        "Full-size 104-key layout with numpad",
-        "Anodized aluminum top panel",
-        "Built-in 2-port USB 3.0 hub",
-        "Laser-etched PBT keycaps — fade-resistant"
-      ],
-      "cons": [
-        "Wired only",
-        "No hot-swap, no RGB",
-        "Premium price for wired-only board"
-      ],
-      "specs": {
-        "layout": "Full-size 104-key",
-        "switches": "Cherry MX Brown (tactile) or MX Blue (clicky)",
-        "connectivity": "USB wired",
-        "battery": "N/A — wired only",
-        "rgb": "White backlight only"
-      }
-    }
-  ]
+  "published_at": "2026-04-24",
+  "price_disclaimer": "Prices accurate as of April 24, 2026. Subject to change.",
+  "disclosure": "As an Amazon Associate, CompareElite earns from qualifying purchases."
 }
