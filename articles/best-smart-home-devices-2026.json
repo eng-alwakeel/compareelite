@@ -24,7 +24,7 @@
         "Needs Amazon ecosystem",
         "No screen"
       ],
-      "affiliate_link": "https://www.amazon.com/dp/B09B8X9RGM?tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B09B8X9RGM?tag=compareelite-20",
       "asin": "B09B8X9RGM",
       "image": "https://images-na.ssl-images-amazon.com/images/P/B09B8X9RGM.01._SCLZZZZZZZ_.jpg"
     },
@@ -43,7 +43,7 @@
         "Battery needs recharging"
       ],
       "image": "https://images-na.ssl-images-amazon.com/images/I/41l1kR6Ii9L.jpg",
-      "affiliate_link": "https://www.amazon.com/dp/B08CKHPP52?tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B08CKHPP52?tag=compareelite-20",
       "asin": "B08CKHPP52"
     },
     {
@@ -60,7 +60,7 @@
         "App setup required"
       ],
       "image": "https://m.media-amazon.com/images/I/41LVbPDPTeL._SL500_.jpg",
-      "affiliate_link": "https://www.amazon.com/dp/B0B14C719T?tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B0B14C719T?tag=compareelite-20",
       "asin": "B0B14C719T"
     },
     {
@@ -77,7 +77,7 @@
         "Adhesive weakens over time"
       ],
       "image": "https://m.media-amazon.com/images/I/51x8uUsdLeL._SL500_.jpg",
-      "affiliate_link": "https://www.amazon.com/dp/B0991Q94KP?tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B0991Q94KP?tag=compareelite-20",
       "asin": "B0991Q94KP"
     }
   ],
