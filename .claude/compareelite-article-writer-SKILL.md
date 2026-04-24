@@ -116,13 +116,15 @@ Every article MUST output valid JSON using the EXACT schema below — no excepti
       "a": "3–4 sentence answer (80–105 words) giving a direct, helpful recommendation with product names."
     }
   ],
-  "verdict": "3–4 sentence conclusion (100–130 words) that names the Best Overall pick with its price, top 2 reasons it wins, and a direct recommendation. Then briefly mention the runner-up for a different use case (e.g. budget, travel, performance). End with a confident call to action that reassures the reader they're making a well-researched choice."
+  "verdict": "3–4 sentence conclusion (100–130 words) that names the Best Overall pick with its price, top 2 reasons it wins, and a direct recommendation. Then briefly mention the runner-up for a different use case (e.g. budget, travel, performance). End with a confident call to action that reassures the reader they're making a well-researched choice.",
+  "related_articles": [
+    { "slug": "REAL_SLUG_FROM_ARTICLES_FOLDER", "title": "Real Title" }
+  ]
 }
 ```
 
-> ⚠️ **DO NOT include `related_articles` in the article JSON.**
-> It is added in a separate post-publish step by fetching the actual list of published articles from the GitHub repository (`articles/` folder) and selecting 2–3 real slugs that match the category. Writing it here risks linking to articles that don't exist yet.
-```
+> ⚠️ **`related_articles` must use REAL slugs only — fetched from GitHub before writing.**
+> See the "Final Step" section at the bottom of this skill.
 
 ---
 
@@ -206,16 +208,11 @@ Every article MUST output valid JSON using the EXACT schema below — no excepti
 - Examples for wireless earbuds: "Active Noise Cancellation Quality", "Battery Life and Charging Speed", "Sound Quality and Codec Support", "Comfort and Fit for Long Sessions", "Call Quality and Microphone Performance", "Water Resistance and Durability"
 - Avoid generic titles like "Factor 1" or "Performance" — be specific
 
-### Internal Links — `related_articles` (POST-PUBLISH ONLY)
+### Internal Links — `related_articles`
 
-> **DO NOT write `related_articles` in this article.** It is a separate step done after publishing.
->
-> **Why:** Writing it now risks linking to articles that don't exist yet, creating broken "You Might Also Like" links on the live site.
->
-> **How it's added after publishing:**
-> 1. Fetch the current list of published articles from GitHub: `eng-alwakeel/compareelite` → `articles/` folder
-> 2. Pick 2–3 slugs from real published articles in the same or adjacent category
-> 3. Add `related_articles` to the JSON file directly in the repository
+- **2–3 entries only** — same or adjacent category
+- **Slugs must come from the real `articles/` folder** — fetched in the Final Step below
+- Never invent slugs — if fewer than 2 related articles exist, include only what's real (minimum 1, or omit entirely)
 
 ### `category`
 - Must be exactly one of: `Technology`, `Kitchen`, `Fitness`, `Outdoor`, `Health`, `Automotive`, `Home`, `Travel`, `Fashion`
@@ -349,6 +346,25 @@ The website auto-renders 8 sections from your JSON — **do NOT write a `content
       "a": "The Sony WF-1000XM5 are the best wireless earbuds in 2026, earning a 9.8/10 rating in our testing. They combine class-leading ANC, 36-hour total battery life with the case, and LDAC Hi-Res audio support — all at $279. For budget buyers, the Jabra Elite 4 offers solid ANC and a reliable 7-hour battery at just $79, making it the best value pick for everyday use without breaking the bank."
     }
   ],
-  "verdict": "After six weeks of testing, the Sony WF-1000XM5 remains the clear best wireless earbuds of 2026 at $279 — no other earbud matches its combination of 97% noise reduction, 36-hour battery life with the case, and Hi-Res LDAC audio. For most people, this is the pair to buy. If your budget is under $100, the Jabra Elite 4 at $79 delivers surprisingly good ANC and a stable fit that punches well above its price. Whichever pair you choose from this list, you're getting a well-reviewed product backed by thousands of verified Amazon buyers. Prices are approximate and may vary."
+  "verdict": "After six weeks of testing, the Sony WF-1000XM5 remains the clear best wireless earbuds of 2026 at $279 — no other earbud matches its combination of 97% noise reduction, 36-hour battery life with the case, and Hi-Res LDAC audio. For most people, this is the pair to buy. If your budget is under $100, the Jabra Elite 4 at $79 delivers surprisingly good ANC and a stable fit that punches well above its price. Whichever pair you choose from this list, you're getting a well-reviewed product backed by thousands of verified Amazon buyers. Prices are approximate and may vary.",
+  "related_articles": [
+    { "slug": "best-noise-cancelling-headphones-2026", "title": "Best Noise-Cancelling Headphones of 2026" },
+    { "slug": "best-smartwatches-2026", "title": "Best Smartwatches of 2026" }
+  ]
 }
 ```
+
+---
+
+## Final Step — Add `related_articles` from Real Slugs
+
+**Run this step after completing the full article JSON, before handing off to QC.**
+
+1. Fetch the list of published articles from GitHub:
+   - Use the GitHub MCP tool: `get_file_contents` on `eng-alwakeel/compareelite` → `articles/` folder
+   - This returns the real list of existing slugs
+2. From that list, pick **2–3 slugs** in the same `category` as this article (or adjacent categories if fewer than 2 exist)
+3. Add `related_articles` to the article JSON with the real slugs and their titles
+4. If no related articles exist yet, omit the field entirely
+
+**Why this step exists here:** `related_articles` must reference articles that actually exist on the site. Writing them without checking causes broken "You Might Also Like" links.
