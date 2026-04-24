@@ -6,14 +6,15 @@
   "excerpt": "The right yoga mat provides the grip, cushioning, and durability to support your practice — whether you're a beginner or an advanced yogi. We evaluated thickness, material, traction, and eco-friendliness to surface the best mats on the market.",
   "thumbnail": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80",
   "author": "CompareElite Team",
-  "stats": { "readers": 0 },
+  "stats": {
+    "readers": 0
+  },
   "products": [
     {
       "name": "Liforme Original Yoga Mat",
       "rating": "9.5/10",
       "price": "$150",
       "best_for": "Best Overall",
-      "link": "https://www.amazon.com/dp/B01BMHX37Y?tag=compareelite-20",
       "pros": [
         "Patented AlignForMe system guides proper body alignment",
         "GripForMe surface stays grippy even when wet",
@@ -22,14 +23,16 @@
       "cons": [
         "Premium price compared to most mats",
         "Heavier than travel-oriented mats"
-      ]
+      ],
+      "affiliate_link": "https://www.amazon.com/dp/B01BMHX37Y?tag=compareelite-20",
+      "asin": "B01BMHX37Y",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B01BMHX37Y.01._SCLZZZZZZZ_.jpg"
     },
     {
       "name": "Manduka PRO Yoga Mat",
       "rating": "9.3/10",
       "price": "$120",
       "best_for": "Best for Joint Support",
-      "link": "https://www.amazon.com/dp/B000JILHKK?tag=compareelite-20",
       "pros": [
         "6mm thick cushioning protects knees and wrists",
         "Extremely durable — backed by a lifetime guarantee",
@@ -38,14 +41,16 @@
       "cons": [
         "Heavy at 7.5 lbs, difficult to carry",
         "Slippery when new until broken in"
-      ]
+      ],
+      "affiliate_link": "https://www.amazon.com/dp/B000JILHKK?tag=compareelite-20",
+      "asin": "B000JILHKK",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B000JILHKK.01._SCLZZZZZZZ_.jpg"
     },
     {
       "name": "Gaiam Classic Solid Color Yoga Mat",
       "rating": "8.4/10",
       "price": "$29",
       "best_for": "Best Budget Pick",
-      "link": "https://www.amazon.com/dp/B000NQZQGK?tag=compareelite-20",
       "pros": [
         "Affordable entry point for new practitioners",
         "Lightweight and easy to carry with included strap",
@@ -54,14 +59,16 @@
       "cons": [
         "Thinner cushioning at 4mm",
         "Grip degrades faster than premium mats"
-      ]
+      ],
+      "affiliate_link": "https://www.amazon.com/dp/B000NQZQGK?tag=compareelite-20",
+      "asin": "B000NQZQGK",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B000NQZQGK.01._SCLZZZZZZZ_.jpg"
     },
     {
       "name": "JadeYoga Harmony Mat",
       "rating": "8.8/10",
       "price": "$79",
       "best_for": "Best Eco-Friendly",
-      "link": "https://www.amazon.com/dp/B000LB4TK0?tag=compareelite-20",
       "pros": [
         "Made from natural tapped rubber — no PVC or synthetic rubber",
         "Exceptional grip improves with moisture",
@@ -70,7 +77,10 @@
       "cons": [
         "Natural rubber has a mild odor initially",
         "Not suitable for those with latex allergies"
-      ]
+      ],
+      "affiliate_link": "https://www.amazon.com/dp/B000LB4TK0?tag=compareelite-20",
+      "asin": "B000LB4TK0",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B000LB4TK0.01._SCLZZZZZZZ_.jpg"
     }
   ],
   "faq": [
