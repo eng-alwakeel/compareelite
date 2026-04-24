@@ -15,7 +15,6 @@
       "rating": "9.8/10",
       "price": "$99",
       "best_for": "Best Overall",
-      "link": "https://www.amazon.com/dp/B015TKUPIC?tag=compareelite-20",
       "pros": [
         "Jumps up to 6L gas / 3L diesel",
         "Spark-proof",
@@ -26,14 +25,15 @@
         "Pricier than generic brands",
         "Cable could be longer"
       ],
-      "image": "https://m.media-amazon.com/images/I/413QJ52orPL._SL500_.jpg"
+      "image": "https://m.media-amazon.com/images/I/413QJ52orPL._SL500_.jpg",
+      "affiliate_link": "https://www.amazon.com/dp/B015TKUPIC?tag=compareelite-20",
+      "asin": "B015TKUPIC"
     },
     {
       "name": "NOCO Boost HD GB70 (2000A)",
       "rating": "9.6/10",
       "price": "$179",
       "best_for": "Best for Trucks & SUVs",
-      "link": "https://www.amazon.com/dp/B016UG6PWE?tag=compareelite-20",
       "pros": [
         "Jumps up to 8L gas / 6L diesel",
         "Heavy-duty vehicles",
@@ -43,14 +43,15 @@
         "Large and heavy",
         "Overkill for sedans"
       ],
-      "image": "https://m.media-amazon.com/images/I/41l37y84S-L._SL500_.jpg"
+      "image": "https://m.media-amazon.com/images/I/41l37y84S-L._SL500_.jpg",
+      "affiliate_link": "https://www.amazon.com/dp/B016UG6PWE?tag=compareelite-20",
+      "asin": "B016UG6PWE"
     },
     {
       "name": "HULKMAN Alpha85 (2000A)",
       "rating": "9.3/10",
       "price": "$89",
       "best_for": "Best Value High-Power",
-      "link": "https://www.amazon.com/dp/B08M41FX48?tag=compareelite-20",
       "pros": [
         "2000A peak current",
         "LCD battery display",
@@ -59,14 +60,15 @@
       "cons": [
         "Less established brand than NOCO"
       ],
-      "image": "https://m.media-amazon.com/images/I/412TiAH208L._SL500_.jpg"
+      "image": "https://m.media-amazon.com/images/I/412TiAH208L._SL500_.jpg",
+      "affiliate_link": "https://www.amazon.com/dp/B08M41FX48?tag=compareelite-20",
+      "asin": "B08M41FX48"
     },
     {
       "name": "Antigravity Micro-Start XP-10",
       "rating": "9.1/10",
       "price": "$149",
       "best_for": "Most Compact",
-      "link": "https://www.amazon.com/dp/B0CH1L89N2?tag=compareelite-20",
       "pros": [
         "Wallet-sized",
         "Lithium technology",
@@ -74,7 +76,10 @@
       ],
       "cons": [
         "Lower peak amps than NOCO GB40"
-      ]
+      ],
+      "affiliate_link": "https://www.amazon.com/dp/B0CH1L89N2?tag=compareelite-20",
+      "asin": "B0CH1L89N2",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B0CH1L89N2.01._SCLZZZZZZZ_.jpg"
     }
   ],
   "faq": [
