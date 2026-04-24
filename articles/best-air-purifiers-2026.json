@@ -122,6 +122,23 @@
     {
       "q": "How often should I replace HEPA filters?",
       "a": "Every 6-12 months for most purifiers. Running 24/7 means closer to 6 months. Some models like the Levoit Core 300S have a filter life indicator."
+    },
+    {
+      "q": "What size room does a HEPA air purifier cover?",
+      "a": "Coverage depends on the unit's CADR rating. The Levoit Core 300S at $79 handles rooms up to 219 sq ft — ideal for bedrooms. The Winix 5500-2 at $149 and Coway Airmega AP-1512HH at $99 both cover up to 360 sq ft, suitable for most living rooms. For large open-plan spaces, the Levoit Core 600S Pro at $229 leads this roundup with 635 sq ft coverage and a 410 CFM CADR — the right choice for combined kitchen and dining areas."
+    },
+    {
+      "q": "How often should I replace the HEPA filter?",
+      "a": "Running a purifier 24/7 means replacing filters every 6–8 months. The Coway Airmega AP-1512HH uses a combined HEPA and carbon filter costing around $25 per replacement — the lowest annual filter cost in this roundup at roughly $37–$50 per year. The Levoit Core 600S Pro replacement filter costs $40, adding up to $60–$80 annually at full runtime. The Levoit Core 300S filter costs only $20 but may need more frequent changes in dusty environments due to its smaller filter surface area."
+    },
+    {
+      "q": "Do air purifiers help with pet allergies and dander?",
+      "a": "Yes — all four purifiers in this roundup use True HEPA filters that capture 99.97% of particles at 0.3 microns, including pet dander and allergens. The Winix 5500-2 at $149 adds PlasmaWave technology that breaks down VOCs and odor molecules, making it particularly effective for homes with pets. The Levoit Core 600S Pro at $229 includes an activated carbon layer that absorbs pet odors in addition to capturing dander. For pet allergy sufferers, running a purifier continuously on auto mode delivers the most consistent relief."
     }
+  ],
+  "related_articles": [
+    {"slug": "best-robot-vacuums-2026", "title": "Best Robot Vacuums of 2026: Top Picks for Every Home"},
+    {"slug": "best-smart-home-devices-2026", "title": "Best Smart Home Devices of 2026: Make Your Home Smarter"},
+    {"slug": "best-smart-thermostats-2026", "title": "Best Smart Thermostats 2026: Top 6 Picks Tested & Ranked"}
   ]
 }
