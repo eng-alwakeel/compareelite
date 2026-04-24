@@ -488,7 +488,15 @@ async function renderArticleDetail() {
     ldScript.textContent = JSON.stringify({ "@context": "https://schema.org", "@graph": schemaGraph });
     document.head.appendChild(ldScript);
 
-    const bodyContent = article.content || buildArticleBody(article);
+    const rawContent = article.content;
+    let bodyContent;
+    if (!rawContent) {
+        bodyContent = buildArticleBody(article);
+    } else if (typeof rawContent === 'string') {
+        bodyContent = markdownToHTML(rawContent);
+    } else {
+        bodyContent = buildArticleBody(article);
+    }
 
     header.innerHTML = `
         <div class="badge">${article.category}</div>
@@ -502,6 +510,75 @@ async function renderArticleDetail() {
     `;
 
     container.innerHTML = bodyContent;
+}
+
+function markdownToHTML(md) {
+    if (!md || typeof md !== 'string') return '';
+    let lines = md.split('\n');
+    let html = '';
+    let i = 0;
+
+    while (i < lines.length) {
+        let line = lines[i];
+
+        // Table detection
+        if (i + 1 < lines.length && /^\|/.test(line) && /^\|[\s\-|:]+\|/.test(lines[i + 1])) {
+            const headers = line.split('|').map(h => h.trim()).filter(Boolean);
+            i += 2; // skip header and separator
+            let rows = [];
+            while (i < lines.length && /^\|/.test(lines[i])) {
+                rows.push(lines[i].split('|').map(c => c.trim()).filter(Boolean));
+                i++;
+            }
+            html += `<table style="width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.9rem;">`;
+            html += `<thead><tr>${headers.map(h => `<th style="padding:0.6rem;background:var(--primary);color:#fff;text-align:left;">${inlineMarkdown(h)}</th>`).join('')}</tr></thead>`;
+            html += `<tbody>${rows.map((r, ri) => `<tr style="${ri%2?'background:rgba(0,0,0,0.02)':''}">${r.map(c => `<td style="padding:0.6rem;border-bottom:1px solid var(--border-color);">${inlineMarkdown(c)}</td>`).join('')}</tr>`).join('')}</tbody>`;
+            html += '</table>';
+            continue;
+        }
+
+        // Headings
+        if (/^### /.test(line)) { html += `<h3 style="font-size:1.2rem;margin:1.5rem 0 0.5rem;">${inlineMarkdown(line.slice(4))}</h3>`; i++; continue; }
+        if (/^## /.test(line))  { html += `<h2 style="font-size:1.5rem;margin:2rem 0 0.75rem;padding-top:1rem;border-top:2px solid var(--border-color);">${inlineMarkdown(line.slice(3))}</h2>`; i++; continue; }
+        if (/^# /.test(line))   { i++; continue; } // skip H1 — already in page header
+
+        // Horizontal rule
+        if (/^---+$/.test(line.trim())) { html += '<hr style="margin:2rem 0;border:none;border-top:1px solid var(--border-color);">'; i++; continue; }
+
+        // Blockquote
+        if (/^> /.test(line)) { html += `<blockquote style="border-left:4px solid var(--primary);padding:0.5rem 1rem;margin:1rem 0;color:var(--text-secondary);font-style:italic;">${inlineMarkdown(line.slice(2))}</blockquote>`; i++; continue; }
+
+        // Unordered list
+        if (/^[-*] /.test(line)) {
+            html += '<ul style="padding-left:1.5rem;margin:0.75rem 0;">';
+            while (i < lines.length && /^[-*] /.test(lines[i])) {
+                html += `<li style="margin:0.3rem 0;">${inlineMarkdown(lines[i].slice(2))}</li>`;
+                i++;
+            }
+            html += '</ul>';
+            continue;
+        }
+
+        // Empty line
+        if (line.trim() === '') { i++; continue; }
+
+        // Paragraph
+        let para = [];
+        while (i < lines.length && lines[i].trim() !== '' && !/^[#>-*|]/.test(lines[i]) && !/^---+$/.test(lines[i].trim())) {
+            para.push(lines[i]);
+            i++;
+        }
+        if (para.length) html += `<p style="margin:0.75rem 0;line-height:1.7;">${inlineMarkdown(para.join(' '))}</p>`;
+    }
+    return html;
+}
+
+function inlineMarkdown(text) {
+    return text
+        .replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<img src="$2" alt="$1" style="max-width:100%;border-radius:8px;margin:1rem 0;display:block;">')
+        .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="nofollow noopener" style="color:var(--primary);">$1</a>')
+        .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+        .replace(/\*([^*]+)\*/g, '<em>$1</em>');
 }
 
 function buildArticleBody(article) {
