@@ -14,7 +14,7 @@
       "price": "$159.99",
       "rating": 4.7,
       "image": "https://m.media-amazon.com/images/I/71cNFbCKEQL._AC_SL1500_.jpg",
-      "affiliate_link": "https://amazon.com/dp/B0BSKX8W3B?tag=compareelite-20"
+      "link": "https://amazon.com/dp/B0BSKX8W3B?tag=compareelite-20"
     },
     {
       "rank": 2,
@@ -24,7 +24,7 @@
       "price": "$129.99",
       "rating": 4.6,
       "image": "https://m.media-amazon.com/images/I/71R4bFFlFML._AC_SL1500_.jpg",
-      "affiliate_link": "https://amazon.com/dp/B085RMD5TP?tag=compareelite-20"
+      "link": "https://amazon.com/dp/B085RMD5TP?tag=compareelite-20"
     },
     {
       "rank": 3,
@@ -34,7 +34,7 @@
       "price": "$89.99",
       "rating": 4.5,
       "image": "https://m.media-amazon.com/images/I/71fDFSz3UFL._AC_SL1500_.jpg",
-      "affiliate_link": "https://amazon.com/dp/B09MQ36PT7?tag=compareelite-20"
+      "link": "https://amazon.com/dp/B09MQ36PT7?tag=compareelite-20"
     },
     {
       "rank": 4,
@@ -44,7 +44,7 @@
       "price": "$64.99",
       "rating": 4.4,
       "image": "https://m.media-amazon.com/images/I/61VGVXhECvL._AC_SL1500_.jpg",
-      "affiliate_link": "https://amazon.com/dp/B08XBQ79MN?tag=compareelite-20"
+      "link": "https://amazon.com/dp/B08XBQ79MN?tag=compareelite-20"
     },
     {
       "rank": 5,
@@ -54,7 +54,7 @@
       "price": "$169.00",
       "rating": 4.5,
       "image": "https://m.media-amazon.com/images/I/71Q02JBoarL._AC_SL1500_.jpg",
-      "affiliate_link": "https://amazon.com/dp/B00JG01QTY?tag=compareelite-20"
+      "link": "https://amazon.com/dp/B00JG01QTY?tag=compareelite-20"
     }
   ],
   "seo": {
