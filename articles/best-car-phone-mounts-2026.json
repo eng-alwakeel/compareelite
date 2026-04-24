@@ -15,7 +15,6 @@
       "rating": "9.6/10",
       "price": "$35",
       "best_for": "Best Overall",
-      "link": "https://www.amazon.com/dp/B08G3R5B7N?tag=compareelite-20",
       "pros": [
         "One-touch release",
         "360° rotation",
@@ -25,14 +24,15 @@
       "cons": [
         "Suction can loosen in extreme heat"
       ],
-      "image": "https://m.media-amazon.com/images/I/417L0md5N7L._SL500_.jpg"
+      "image": "https://m.media-amazon.com/images/I/417L0md5N7L._SL500_.jpg",
+      "affiliate_link": "https://www.amazon.com/dp/B08G3R5B7N?tag=compareelite-20",
+      "asin": "B08G3R5B7N"
     },
     {
       "name": "ESR HaloLock MagSafe Car Mount",
       "rating": "9.4/10",
       "price": "$29",
       "best_for": "Best for iPhone (MagSafe)",
-      "link": "https://www.amazon.com/dp/B0B38P9TF8?tag=compareelite-20",
       "pros": [
         "Snap-on magnetic for iPhone",
         "Wireless charging compatible",
@@ -42,14 +42,15 @@
         "iPhone only (MagSafe)",
         "Magnetic cases limit fit"
       ],
-      "image": "https://m.media-amazon.com/images/I/41+U5DKShYL._SL500_.jpg"
+      "image": "https://m.media-amazon.com/images/I/41+U5DKShYL._SL500_.jpg",
+      "affiliate_link": "https://www.amazon.com/dp/B0B38P9TF8?tag=compareelite-20",
+      "asin": "B0B38P9TF8"
     },
     {
       "name": "Lamicall Gooseneck Phone Holder",
       "rating": "9.1/10",
       "price": "$22",
       "best_for": "Best Flexible Arm",
-      "link": "https://www.amazon.com/dp/B088R8YMBP?tag=compareelite-20",
       "pros": [
         "Flexible positioning",
         "Secure CD slot + dashboard mount",
@@ -57,14 +58,16 @@
       ],
       "cons": [
         "Arm can vibrate on rough roads"
-      ]
+      ],
+      "affiliate_link": "https://www.amazon.com/dp/B088R8YMBP?tag=compareelite-20",
+      "asin": "B088R8YMBP",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B088R8YMBP.01._SCLZZZZZZZ_.jpg"
     },
     {
       "name": "Spigen OneTap Pro MagSafe Vent Mount",
       "rating": "9.0/10",
       "price": "$39",
       "best_for": "Best Vent Mount",
-      "link": "https://www.amazon.com/dp/B08Y2CXKG5?tag=compareelite-20",
       "pros": [
         "MagSafe compatible",
         "One-touch drop",
@@ -74,7 +77,9 @@
         "Blocks one vent slot",
         "Higher price"
       ],
-      "image": "https://m.media-amazon.com/images/I/41XFnLRJYAS._SL500_.jpg"
+      "image": "https://m.media-amazon.com/images/I/41XFnLRJYAS._SL500_.jpg",
+      "affiliate_link": "https://www.amazon.com/dp/B08Y2CXKG5?tag=compareelite-20",
+      "asin": "B08Y2CXKG5"
     }
   ],
   "faq": [
