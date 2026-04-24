@@ -6,14 +6,15 @@
   "excerpt": "A great gaming headset can make or break your immersion, from pinpointing enemy footsteps to chatting clearly with teammates. We tested top models across platforms to bring you the very best picks for every type of gamer.",
   "thumbnail": "https://images.unsplash.com/photo-1599861190766-a5563fa716b2?w=800&q=80",
   "author": "CompareElite Team",
-  "stats": { "readers": 0 },
+  "stats": {
+    "readers": 0
+  },
   "products": [
     {
       "name": "SteelSeries Arctis Nova Pro Wireless",
       "rating": "9.7/10",
       "price": "$349",
       "best_for": "Best Overall",
-      "link": "https://www.amazon.com/dp/B09ZY3K6TW?tag=compareelite-20",
       "pros": [
         "Dual wireless system with near-zero latency",
         "Hot-swappable battery for uninterrupted play",
@@ -22,14 +23,16 @@
       "cons": [
         "High price point",
         "Base station required for full feature set"
-      ]
+      ],
+      "affiliate_link": "https://www.amazon.com/dp/B09ZY3K6TW?tag=compareelite-20",
+      "asin": "B09ZY3K6TW",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B09ZY3K6TW.01._SCLZZZZZZZ_.jpg"
     },
     {
       "name": "Sony INZONE H9",
       "rating": "9.2/10",
       "price": "$229",
       "best_for": "Best for PlayStation",
-      "link": "https://www.amazon.com/dp/B0B2HRXT3S?tag=compareelite-20",
       "pros": [
         "Deep PS5 integration with 3D audio support",
         "Excellent noise cancellation",
@@ -38,14 +41,16 @@
       "cons": [
         "Mediocre mic compared to rivals",
         "Battery life could be longer"
-      ]
+      ],
+      "affiliate_link": "https://www.amazon.com/dp/B0B2HRXT3S?tag=compareelite-20",
+      "asin": "B0B2HRXT3S",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B0B2HRXT3S.01._SCLZZZZZZZ_.jpg"
     },
     {
       "name": "Razer BlackShark V2 HyperSpeed",
       "rating": "8.8/10",
       "price": "$99",
       "best_for": "Best Budget Wireless",
-      "link": "https://www.amazon.com/dp/B0BZKFMF9V?tag=compareelite-20",
       "pros": [
         "Outstanding sound clarity for the price",
         "Lightweight and breathable ear cushions",
@@ -54,14 +59,16 @@
       "cons": [
         "No active noise cancellation",
         "Plastic build feels less premium"
-      ]
+      ],
+      "affiliate_link": "https://www.amazon.com/dp/B0BZKFMF9V?tag=compareelite-20",
+      "asin": "B0BZKFMF9V",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B0BZKFMF9V.01._SCLZZZZZZZ_.jpg"
     },
     {
       "name": "HyperX Cloud Alpha Wireless",
       "rating": "8.5/10",
       "price": "$199",
       "best_for": "Best Battery Life",
-      "link": "https://www.amazon.com/dp/B09GQPSHZD?tag=compareelite-20",
       "pros": [
         "300-hour battery on a single charge",
         "Dual-chamber drivers deliver rich audio",
@@ -70,7 +77,10 @@
       "cons": [
         "Larger and heavier than competitors",
         "Mic pickup is average"
-      ]
+      ],
+      "affiliate_link": "https://www.amazon.com/dp/B09GQPSHZD?tag=compareelite-20",
+      "asin": "B09GQPSHZD",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B09GQPSHZD.01._SCLZZZZZZZ_.jpg"
     }
   ],
   "faq": [
