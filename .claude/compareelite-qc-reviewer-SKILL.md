@@ -16,7 +16,7 @@ Paste the article JSON and run this skill. The skill will output:
 
 ```
 STATUS: APPROVED ✅  /  REJECTED ❌
-Score: X / 30 checks passed
+Checks passed: XX / 75
 
 FAILED CHECKS:
 - [CHECK NAME]: [what's wrong] → [how to fix it]
@@ -93,7 +93,7 @@ Run these first. Any forbidden field = immediate REJECTED status regardless of o
 ### `excerpt`
 | # | Check | Rule |
 |---|---|---|
-| 26 | Excerpt length | 150–160 characters exactly. Count the characters. |
+| 26 | Excerpt length | 150–160 characters exactly. Count them — not 140, not 161. |
 | 27 | Excerpt starts with keyword | Must start with the main keyword, not "We" or "Our" |
 
 ### `thumbnail`
@@ -121,19 +121,21 @@ For each product in `products`:
 | # | Check | Rule |
 |---|---|---|
 | 32 | Product count | Exactly 4–5 products |
-| 33 | Products sorted by rating | Highest rating first (e.g. 9.8, 9.4, 8.9, 8.5) |
-| 34 | Rating is a string | Must be `"9.X/10"` format — NOT a number like `4.8`. Scale 8.0–9.9. |
-| 35 | Unique `best_for` labels | No two products can have the same `best_for` value |
-| 36 | `best_for` is descriptive | Must be meaningful: `Best Overall`, `Best Value`, `Best Budget`, `Best Premium`, `Most Portable`, `Best Wireless`, `Best for Beginners`, `Most Durable` — not generic like "Pick 1" |
-| 37 | `link` contains affiliate tag | Every `link` must contain `?tag=compareelite-20` |
-| 38 | `link` uses correct Amazon format | Must be `https://www.amazon.com/dp/[ASIN]?tag=compareelite-20` |
-| 39 | ASIN format | The ASIN in each link must be 10 alphanumeric characters (e.g. `B09ZY3K6TW`) |
-| 40 | `image` URL format (if present) | If `image` field exists, must be `https://m.media-amazon.com/images/I/[IMAGE_ID]._SL500_.jpg` |
-| 41 | `pros` are full sentences | Each pro must be a complete sentence (starts with capital, ends with period, contains a measurable spec or number). Reject fragments like "Long battery life" |
-| 42 | `pros` count | Exactly 3 pros per product |
-| 43 | `cons` are full sentences | Each con must be a complete sentence with a specific limitation. Reject vague entries like "Expensive" |
-| 44 | `cons` count | 1–2 cons per product |
-| 45 | Pros contain numbers/specs | At least 1 pro per product must contain a measurable number (hours, grams, Hz, dB, $, %, watts, etc.) |
+| 33 | Each product has `name` | Full product name with model number — not empty |
+| 34 | Each product has `price` | Format `"$XX"` or `"$X,XXX"` — not empty, not a number |
+| 35 | Products sorted by rating | Highest rating first (e.g. 9.8, 9.4, 8.9, 8.5) |
+| 36 | Rating is a string | Must be `"9.X/10"` format — NOT a number like `4.8`. Scale 8.0–9.9. |
+| 37 | Unique `best_for` labels | No two products can have the same `best_for` value |
+| 38 | `best_for` is descriptive | Must be meaningful: `Best Overall`, `Best Value`, `Best Budget`, `Best Premium`, `Most Portable`, `Best Wireless`, `Best for Beginners`, `Most Durable` — not generic like "Pick 1" |
+| 39 | `link` contains affiliate tag | Every `link` must contain `?tag=compareelite-20` |
+| 40 | `link` uses correct Amazon format | Must be `https://www.amazon.com/dp/[ASIN]?tag=compareelite-20` |
+| 41 | ASIN format | The ASIN in each link must be 10 alphanumeric characters (e.g. `B09ZY3K6TW`) |
+| 42 | `image` URL format (if present) | If `image` field exists, must be `https://m.media-amazon.com/images/I/[IMAGE_ID]._SL500_.jpg` |
+| 43 | `pros` are full sentences | Each pro must be a complete sentence (starts with capital, ends with period, contains a measurable spec or number). Reject fragments like "Long battery life" |
+| 44 | `pros` count | Exactly 3 pros per product |
+| 45 | `cons` are full sentences | Each con must be a complete sentence with a specific limitation. Reject vague entries like "Expensive" |
+| 46 | `cons` count | 1–2 cons per product |
+| 47 | Pros contain numbers/specs | At least 1 pro per product must contain a measurable number (hours, grams, Hz, dB, $, %, watts, etc.) |
 
 ---
 
@@ -141,9 +143,9 @@ For each product in `products`:
 
 | # | Check | Rule |
 |---|---|---|
-| 46 | Intro has 3 paragraphs | The `intro` string must contain `\n\n` separating 3 distinct paragraphs |
-| 47 | Intro word count | 200–250 words total |
-| 48 | Main keyword in first 100 words | The primary product keyword must appear in the first paragraph (first ~100 words) |
+| 48 | Intro has 3 paragraphs | The `intro` string must contain `\n\n` separating 3 distinct paragraphs |
+| 49 | Intro word count | 200–250 words total across all 3 paragraphs |
+| 50 | Main keyword in first 100 words | The primary product keyword must appear in the first paragraph (first ~100 words) |
 
 ---
 
@@ -151,11 +153,11 @@ For each product in `products`:
 
 | # | Check | Rule |
 |---|---|---|
-| 49 | Buying guide has 6 items | Exactly 6 objects in `buying_guide` array |
-| 50 | Each item has `title` and `body` | Both fields required per item |
-| 51 | Titles contain secondary keywords | Titles must be specific (e.g. "Active Noise Cancellation Quality") not generic (e.g. "Factor 1") |
-| 52 | Body word count per item | Each `body` must be 70–100 words. Count them. |
-| 53 | Body contains specifics | Each body must include at least one number, spec, or product name reference |
+| 51 | Buying guide has 6 items | Exactly 6 objects in `buying_guide` array |
+| 52 | Each item has `title` and `body` | Both fields required per item |
+| 53 | Titles contain secondary keywords | Titles must be specific (e.g. "Active Noise Cancellation Quality") not generic (e.g. "Factor 1") |
+| 54 | Body word count per item | Each `body` must be 70–100 words. Count them. |
+| 55 | Body contains specifics | Each body must include at least one number, spec, or product name reference |
 
 ---
 
@@ -163,13 +165,13 @@ For each product in `products`:
 
 | # | Check | Rule |
 |---|---|---|
-| 54 | FAQ has exactly 5 items | Not 3, not 4 — must be 5 (minimum for FAQPage rich snippet) |
-| 55 | Each item uses `q` and `a` keys | NOT `question`/`answer` — must be `q` and `a` |
-| 56 | Questions are real search queries | Each question should read like something a person would type into Google or ask ChatGPT |
-| 57 | Answer word count | Each answer must be 80–100 words |
-| 58 | Answers name a product | Every answer must mention at least one product by its full name |
-| 59 | Answers contain a number | Every answer must contain at least one concrete number (price, hours, rating, year, weight, etc.) |
-| 60 | FAQ coverage | The 5 questions must cover: (1) overall best pick, (2) buying criteria, (3) budget vs premium, (4) durability/lifespan, (5) alternative use case |
+| 56 | FAQ has exactly 5 items | Not 3, not 4 — must be 5 (minimum for FAQPage rich snippet) |
+| 57 | Each item uses `q` and `a` keys | NOT `question`/`answer` — must be `q` and `a` |
+| 58 | Questions are real search queries | Each question should read like something a person would type into Google or ask ChatGPT |
+| 59 | Answer word count | Each answer must be 80–100 words |
+| 60 | Answers name a product | Every answer must mention at least one product by its full name |
+| 61 | Answers contain a number | Every answer must contain at least one concrete number (price, hours, rating, year, weight, etc.) |
+| 62 | FAQ coverage | The 5 questions must cover: (1) overall best pick, (2) buying criteria, (3) budget vs premium, (4) durability/lifespan, (5) alternative use case |
 
 ---
 
@@ -177,11 +179,11 @@ For each product in `products`:
 
 | # | Check | Rule |
 |---|---|---|
-| 61 | Verdict exists | Must be a non-empty string |
-| 62 | Verdict word count | 100–130 words |
-| 63 | Verdict names the top pick | Must mention the Best Overall product by name |
-| 64 | Verdict includes price | Must include the price of the top pick |
-| 65 | Verdict mentions runner-up | Must mention a second product for a different use case |
+| 63 | Verdict exists | Must be a non-empty string |
+| 64 | Verdict word count | 100–130 words |
+| 65 | Verdict names the top pick | Must mention the Best Overall product by name |
+| 66 | Verdict includes price | Must include the price of the top pick |
+| 67 | Verdict mentions runner-up | Must mention a second product for a different use case |
 
 ---
 
@@ -189,10 +191,10 @@ For each product in `products`:
 
 | # | Check | Rule |
 |---|---|---|
-| 66 | 2–3 related articles | Array must have 2–3 items |
-| 67 | Each item has `slug` and `title` | Both fields required |
-| 68 | Slugs are valid format | Lowercase, hyphens, ends with `-2026` |
-| 69 | Related articles are relevant | Slugs should be same or adjacent category — not random unrelated topics |
+| 68 | 2–3 related articles | Array must have 2–3 items |
+| 69 | Each item has `slug` and `title` | Both fields required |
+| 70 | Slugs are valid format | Lowercase, hyphens, ends with `-2026` |
+| 71 | Related articles are relevant | Slugs should be same or adjacent category — not random unrelated topics |
 
 ---
 
@@ -200,16 +202,16 @@ For each product in `products`:
 
 | # | Check | Rule |
 |---|---|---|
-| 70 | No vague language in pros | Reject: "long battery", "great sound", "easy to use", "affordable", "high quality". Require: "70-hour battery", "class-leading ANC", "3-minute setup", "under $100", "aircraft-grade aluminum" |
-| 71 | Word count across all text fields | Count words in: `intro` + all `pros` + all `cons` + all `buying_guide.body` + all `faq.a` + `verdict`. Must be ≥ 2000 words. Target ≥ 2500 words. |
-| 72 | No duplicate product names | All product names in `products` must be unique |
-| 73 | JSON is valid | No syntax errors, no trailing commas, all strings properly quoted |
+| 72 | No vague language in pros | Reject: "long battery", "great sound", "easy to use", "affordable", "high quality". Require: "70-hour battery", "class-leading ANC", "3-minute setup", "under $100", "aircraft-grade aluminum" |
+| 73 | Word count across all text fields | Count words in: `intro` + all `pros` + all `cons` + all `buying_guide.body` + all `faq.a` + `verdict`. Must be ≥ 2000 words. Target ≥ 2500 words. |
+| 74 | No duplicate product names | All product names in `products` must be unique |
+| 75 | JSON is valid | No syntax errors, no trailing commas, all strings properly quoted |
 
 ---
 
 ## Scoring & Decision
 
-- **Total checks: 73**
+- **Total checks: 75**
 - **Auto-fail checks (Group 1):** Any forbidden field = REJECTED immediately
 - **Pass threshold:** Must pass ALL checks to be APPROVED
 - **Partial pass:** Not possible — if any check fails, status is REJECTED

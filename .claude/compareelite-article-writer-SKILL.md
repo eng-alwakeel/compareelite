@@ -44,7 +44,7 @@ Every article MUST output valid JSON using the EXACT schema below — no excepti
   "title": "Best [Product] of 2026: Top X Picks Tested & Ranked",
   "category": "Technology|Kitchen|Fitness|Outdoor|Health|Automotive|Home|Travel|Fashion",
   "date": "YYYY-MM-DD",
-  "excerpt": "140–160 char SEO description. Starts with primary keyword. Clear value proposition. No 'We' or 'Our' at start.",
+  "excerpt": "150–160 char SEO description. Starts with primary keyword. Clear value proposition. No 'We' or 'Our' at start.",
   "thumbnail": "https://images.unsplash.com/photo-XXXXXXXXXXXXXXXXXX?w=800&q=80",
   "author": "CompareElite Team",
   "stats": { "readers": 0 },
@@ -282,11 +282,11 @@ The website auto-renders 8 sections from your JSON — **do NOT write a `content
 - [ ] `slug` uses hyphens, no spaces, ends with `-2026`
 - [ ] `title` under 60 characters, includes year
 - [ ] `date` in `YYYY-MM-DD` format
-- [ ] `excerpt` is 140–160 characters exactly
+- [ ] `excerpt` is 150–160 characters exactly
 - [ ] `thumbnail` is an Unsplash URL (`images.unsplash.com`)
 - [ ] `author` is `"CompareElite Team"`
 - [ ] `stats` is `{ "readers": 0 }`
-- [ ] `intro` has 3 paragraphs separated by `\n\n`, totaling 180–230 words
+- [ ] `intro` has 3 paragraphs separated by `\n\n`, totaling 200–250 words
 - [ ] Products: 4–5 items, sorted by rating highest first
 - [ ] All `best_for` labels are unique
 - [ ] All `rating` values are strings like `"9.X/10"`
