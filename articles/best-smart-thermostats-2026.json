@@ -27,7 +27,7 @@
       "price": "$249",
       "rating": "4.7",
       "image": "https://m.media-amazon.com/images/I/21Pp5E26p2L._SL500_.jpg",
-      "affiliate_link": "https://www.amazon.com/dp/B09XXS48P8?tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B09XXS48P8?tag=compareelite-20",
       "pros": [
         "Built-in Alexa, Siri, and Google Assistant — the only thermostat with all three",
         "Air quality monitoring tracks CO2, VOCs, and humidity in real time",
@@ -57,7 +57,7 @@
       "price": "$279",
       "rating": "4.6",
       "image": "https://m.media-amazon.com/images/I/21sq106KirL._SL500_.jpg",
-      "affiliate_link": "https://www.amazon.com/dp/B0D5BGST5N?tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B0D5BGST5N?tag=compareelite-20",
       "pros": [
         "Auto-learns your preferred temperatures within one week — no manual programming",
         "Matter compatible for future-proof smart home integration",
@@ -87,7 +87,7 @@
       "price": "$149",
       "rating": "4.4",
       "image": "https://m.media-amazon.com/images/I/31bXGmfZdyL._SL500_.jpg",
-      "affiliate_link": "https://www.amazon.com/dp/B07N849J21?tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B07N849J21?tag=compareelite-20",
       "pros": [
         "Smart Room Sensor detects both occupancy and temperature for precise zone control",
         "Industry-leading 200ft sensor wireless range reaches across large homes",
@@ -117,7 +117,7 @@
       "price": "$119",
       "rating": "4.5",
       "image": "https://m.media-amazon.com/images/I/310bZgfCB7L._SL500_.jpg",
-      "affiliate_link": "https://www.amazon.com/dp/B0BKH83KF9?tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B0BKH83KF9?tag=compareelite-20",
       "pros": [
         "Vibrant color touchscreen with the best display clarity in this price range",
         "Strong data privacy commitment — Emerson does not sell or share user data",
@@ -147,7 +147,7 @@
       "price": "$129",
       "rating": "4.5",
       "image": "https://m.media-amazon.com/images/I/216VnCqcVbL._SL500_.jpg",
-      "affiliate_link": "https://www.amazon.com/dp/B08HRPDYTP?tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B08HRPDYTP?tag=compareelite-20",
       "pros": [
         "Mirror display blends seamlessly into any wall when idle",
         "Google Home integration is the tightest in the ecosystem",
@@ -177,7 +177,7 @@
       "price": "$79",
       "rating": "4.3",
       "image": "https://m.media-amazon.com/images/I/31DrUpVcX1L._SL500_.jpg",
-      "affiliate_link": "https://www.amazon.com/dp/B08J4C8871?tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B08J4C8871?tag=compareelite-20",
       "pros": [
         "Lowest price of any ENERGY STAR certified smart thermostat on Amazon",
         "Built with Honeywell Home thermostat technology — proven HVAC reliability",
