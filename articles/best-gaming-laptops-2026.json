@@ -14,7 +14,7 @@
       "price": "$1,449.99",
       "rating": 4.8,
       "image": "https://m.media-amazon.com/images/I/71UypkuaP-L._AC_SL1500_.jpg",
-      "affiliate_link": "https://amazon.com/dp/B0CSJJ54GJ?tag=compareelite-20",
+      "link": "https://amazon.com/dp/B0CSJJ54GJ?tag=compareelite-20",
       "pros": [
         "Exceptional AMD Ryzen 9 + RX 7900S performance",
         "Stunning OLED display with 120Hz refresh rate",
@@ -34,7 +34,7 @@
       "price": "$2,499.99",
       "rating": 4.7,
       "image": "https://m.media-amazon.com/images/I/61WT4PVbHjL._AC_SL1500_.jpg",
-      "affiliate_link": "https://amazon.com/dp/B0CGQ3TBCT?tag=compareelite-20",
+      "link": "https://amazon.com/dp/B0CGQ3TBCT?tag=compareelite-20",
       "pros": [
         "Sleek, ultra-thin CNC aluminum chassis",
         "RTX 4080 delivers elite gaming performance",
@@ -54,7 +54,7 @@
       "price": "$1,699.99",
       "rating": 4.6,
       "image": "https://m.media-amazon.com/images/I/71q5JOG-2ZL._AC_SL1500_.jpg",
-      "affiliate_link": "https://amazon.com/dp/B0C3WJRQYB?tag=compareelite-20",
+      "link": "https://amazon.com/dp/B0C3WJRQYB?tag=compareelite-20",
       "pros": [
         "Intel Core i9-14900HX + RTX 4080 powerhouse combo",
         "18-inch 2560x1600 display at 250Hz",
@@ -74,7 +74,7 @@
       "price": "$899.99",
       "rating": 4.5,
       "image": "https://m.media-amazon.com/images/I/71W0Mh6QCKL._AC_SL1500_.jpg",
-      "affiliate_link": "https://amazon.com/dp/B0C9DDXB9Q?tag=compareelite-20",
+      "link": "https://amazon.com/dp/B0C9DDXB9Q?tag=compareelite-20",
       "pros": [
         "Ryzen 7 8745H + RTX 4060 excellent value combo",
         "2.5K 165Hz IPS display",
@@ -94,7 +94,7 @@
       "price": "$749.99",
       "rating": 4.4,
       "image": "https://m.media-amazon.com/images/I/71JeqDdx2BL._AC_SL1500_.jpg",
-      "affiliate_link": "https://amazon.com/dp/B0BP5T7RY3?tag=compareelite-20",
+      "link": "https://amazon.com/dp/B0BP5T7RY3?tag=compareelite-20",
       "pros": [
         "RTX 4060 provides solid 1080p gaming",
         "165Hz IPS panel with solid color coverage",
