@@ -564,7 +564,7 @@ function markdownToHTML(md) {
 
         // Paragraph
         let para = [];
-        while (i < lines.length && lines[i].trim() !== '' && !/^[#>-*|]/.test(lines[i]) && !/^---+$/.test(lines[i].trim())) {
+        while (i < lines.length && lines[i].trim() !== '' && !/^[#>|*-]/.test(lines[i]) && !/^---+$/.test(lines[i].trim())) {
             para.push(lines[i]);
             i++;
         }
