@@ -120,6 +120,23 @@
     {
       "q": "How much protein do I need per day?",
       "a": "Research suggests 0.7-1g of protein per pound of body weight for muscle building. For a 180 lb person, that's 126-180g per day — achievable with 1-2 shakes plus whole food sources."
+    },
+    {
+      "q": "How much whey protein should I take per day?",
+      "a": "Most research supports 20–40g of whey protein per serving, taken once or twice daily. A single scoop of Optimum Nutrition Gold Standard at $69 delivers 24g per serving — sufficient to maximally stimulate muscle protein synthesis post-workout. For a 180 lb person targeting 1g of protein per pound of bodyweight, one or two daily shakes combined with whole food sources covers the target without overshooting. Exceeding 40g per sitting provides diminishing returns, as the body can only utilize so much protein for muscle synthesis at once."
+    },
+    {
+      "q": "What is the difference between whey concentrate and whey isolate?",
+      "a": "Whey concentrate is filtered to roughly 70–80% protein content by weight and retains more fat and lactose. Whey isolate undergoes additional filtration to reach 90%+ protein purity, removing most fat and nearly all lactose. Dymatize ISO100 at $79 is a hydrolyzed isolate delivering 25g protein per 29g scoop — an 86% yield, the highest on our list — making it ideal for lactose-sensitive athletes. Optimum Nutrition Gold Standard at $69 blends concentrate and isolate, offering a balance of taste and purity at a lower price per gram of protein."
+    },
+    {
+      "q": "Can I take whey protein without working out?",
+      "a": "Yes — whey protein is a food source that contributes to daily protein targets regardless of training status. On rest days, it supports muscle repair and helps maintain nitrogen balance. However, the anabolic benefit of whey's high leucine content is maximized when paired with resistance training stimulus. Using Optimum Nutrition Gold Standard at $69 or Isopure Zero Carb at $49 on non-training days is a practical way to hit daily protein goals, but excess protein beyond your body's needs is simply metabolized for energy rather than converted to additional muscle mass."
     }
+  ],
+  "related_articles": [
+    {"slug": "best-creatine-supplements-2026", "title": "Best Creatine Supplements of 2026: Science-Backed Picks"},
+    {"slug": "best-adjustable-dumbbells-2026", "title": "Best Adjustable Dumbbells of 2026: Space-Saving Home Gym Picks"},
+    {"slug": "best-resistance-bands-2026", "title": "Best Resistance Bands of 2026: For Home Workouts & Travel"}
   ]
 }
