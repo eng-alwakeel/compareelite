@@ -15,7 +15,6 @@
       "rating": "9.8/10",
       "price": "$24",
       "best_for": "Best Overall",
-      "link": "https://www.amazon.com/dp/B002DYIZEO?tag=compareelite-20",
       "pros": [
         "Creapure certified",
         "Pure monohydrate",
@@ -26,14 +25,15 @@
         "Plain taste",
         "No flavored option in this size"
       ],
-      "image": "https://images-na.ssl-images-amazon.com/images/I/41Ov4SdI61L.jpg"
+      "image": "https://images-na.ssl-images-amazon.com/images/I/41Ov4SdI61L.jpg",
+      "affiliate_link": "https://www.amazon.com/dp/B002DYIZEO?tag=compareelite-20",
+      "asin": "B002DYIZEO"
     },
     {
       "name": "Thorne Creatine",
       "rating": "9.5/10",
       "price": "$39",
       "best_for": "Best Quality",
-      "link": "https://www.amazon.com/dp/B07978VPPH?tag=compareelite-20",
       "pros": [
         "NSF Certified for Sport",
         "Ultra-fine powder",
@@ -42,14 +42,15 @@
       "cons": [
         "Most expensive per serving"
       ],
-      "image": "https://m.media-amazon.com/images/I/31VsWovZ7HL._SL500_.jpg"
+      "image": "https://m.media-amazon.com/images/I/31VsWovZ7HL._SL500_.jpg",
+      "affiliate_link": "https://www.amazon.com/dp/B07978VPPH?tag=compareelite-20",
+      "asin": "B07978VPPH"
     },
     {
       "name": "BulkSupplements Creatine (1kg)",
       "rating": "9.2/10",
       "price": "$19",
       "best_for": "Best Value",
-      "link": "https://www.amazon.com/dp/B00E9M4XEE?tag=compareelite-20",
       "pros": [
         "Cheapest per gram",
         "Third-party tested",
@@ -59,14 +60,15 @@
         "Plain bulk packaging",
         "No scoop included"
       ],
-      "image": "https://m.media-amazon.com/images/I/41zp2yKoEcL._SL500_.jpg"
+      "image": "https://m.media-amazon.com/images/I/41zp2yKoEcL._SL500_.jpg",
+      "affiliate_link": "https://www.amazon.com/dp/B00E9M4XEE?tag=compareelite-20",
+      "asin": "B00E9M4XEE"
     },
     {
       "name": "Nutricost Creatine (500g)",
       "rating": "9.0/10",
       "price": "$22",
       "best_for": "Best Mid-Range",
-      "link": "https://www.amazon.com/dp/B00GL2HMES?tag=compareelite-20",
       "pros": [
         "GMP certified facility",
         "Good mixability",
@@ -75,7 +77,9 @@
       "cons": [
         "Some batches clump slightly"
       ],
-      "image": "https://m.media-amazon.com/images/I/415W2NL+KYL._SL500_.jpg"
+      "image": "https://m.media-amazon.com/images/I/415W2NL+KYL._SL500_.jpg",
+      "affiliate_link": "https://www.amazon.com/dp/B00GL2HMES?tag=compareelite-20",
+      "asin": "B00GL2HMES"
     }
   ],
   "faq": [
