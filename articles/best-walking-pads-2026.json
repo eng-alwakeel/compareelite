@@ -25,7 +25,7 @@
         "App required for full features"
       ],
       "image": "https://m.media-amazon.com/images/I/31-b40AFE3S._SL500_.jpg",
-      "affiliate_link": "https://www.amazon.com/dp/B0983LJV6K?tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B0983LJV6K?tag=compareelite-20",
       "asin": "B0983LJV6K"
     },
     {
@@ -43,7 +43,7 @@
         "No incline"
       ],
       "image": "https://m.media-amazon.com/images/I/71BlK10KWBL._SL500_.jpg",
-      "affiliate_link": "https://www.amazon.com/dp/B0DT4YCJS8?tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B0DT4YCJS8?tag=compareelite-20",
       "asin": "B0DT4YCJS8"
     },
     {
@@ -61,7 +61,7 @@
         "Basic display only"
       ],
       "image": "https://m.media-amazon.com/images/I/71hcKoOnMwL._SL500_.jpg",
-      "affiliate_link": "https://www.amazon.com/dp/B0DT4RBQX3?tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B0DT4RBQX3?tag=compareelite-20",
       "asin": "B0DT4RBQX3"
     }
   ],
