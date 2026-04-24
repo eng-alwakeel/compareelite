@@ -6,14 +6,15 @@
   "excerpt": "A reliable tent is the cornerstone of any great camping trip, keeping you sheltered from rain, wind, and bugs while you sleep under the stars. We tested top models for weather protection, ease of setup, weight, and interior livability to help you find the perfect shelter.",
   "thumbnail": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800&q=80",
   "author": "CompareElite Team",
-  "stats": { "readers": 0 },
+  "stats": {
+    "readers": 0
+  },
   "products": [
     {
       "name": "REI Co-op Half Dome SL 2+",
       "rating": "9.4/10",
       "price": "$269",
       "best_for": "Best Overall",
-      "link": "https://www.amazon.com/dp/B09BFHPBMX?tag=compareelite-20",
       "pros": [
         "Spacious 2-person design with generous headroom",
         "Color-coded clips and poles for fast setup",
@@ -22,14 +23,16 @@
       "cons": [
         "Slightly heavier than ultralight alternatives",
         "Vestibule could be larger for gear storage"
-      ]
+      ],
+      "affiliate_link": "https://www.amazon.com/dp/B09BFHPBMX?tag=compareelite-20",
+      "asin": "B09BFHPBMX",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B09BFHPBMX.01._SCLZZZZZZZ_.jpg"
     },
     {
       "name": "MSR Hubba Hubba 2-Person Backpacking Tent",
       "rating": "9.6/10",
       "price": "$549",
       "best_for": "Best Ultralight",
-      "link": "https://www.amazon.com/dp/B07QBMMDZB?tag=compareelite-20",
       "pros": [
         "Only 3 lbs 14 oz — ideal for multi-day backpacking",
         "Dual-door and dual-vestibule layout maximizes convenience",
@@ -38,14 +41,16 @@
       "cons": [
         "High price limits accessibility",
         "Condensation can accumulate in humid climates"
-      ]
+      ],
+      "affiliate_link": "https://www.amazon.com/dp/B07QBMMDZB?tag=compareelite-20",
+      "asin": "B07QBMMDZB",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B07QBMMDZB.01._SCLZZZZZZZ_.jpg"
     },
     {
       "name": "Coleman Skydome 4-Person Camping Tent",
       "rating": "8.5/10",
       "price": "$99",
       "best_for": "Best Budget Family Tent",
-      "link": "https://www.amazon.com/dp/B08CHFMNST?tag=compareelite-20",
       "pros": [
         "Stands up in under 5 minutes with pre-attached poles",
         "Near-vertical walls create best-in-class interior space",
@@ -54,14 +59,16 @@
       "cons": [
         "Not suitable for high-wind or snow conditions",
         "Zippers feel less robust over repeated use"
-      ]
+      ],
+      "affiliate_link": "https://www.amazon.com/dp/B08CHFMNST?tag=compareelite-20",
+      "asin": "B08CHFMNST",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B08CHFMNST.01._SCLZZZZZZZ_.jpg"
     },
     {
       "name": "Big Agnes Copper Spur HV UL2",
       "rating": "9.1/10",
       "price": "$449",
       "best_for": "Best Three-Season Freestanding",
-      "link": "https://www.amazon.com/dp/B085HDPLYR?tag=compareelite-20",
       "pros": [
         "Ultralight at just 2 lbs 11 oz for a two-person tent",
         "High-volume architecture provides surprisingly roomy interior",
@@ -70,7 +77,10 @@
       "cons": [
         "Delicate fabrics require careful handling",
         "Premium cost not ideal for casual campers"
-      ]
+      ],
+      "affiliate_link": "https://www.amazon.com/dp/B085HDPLYR?tag=compareelite-20",
+      "asin": "B085HDPLYR",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B085HDPLYR.01._SCLZZZZZZZ_.jpg"
     }
   ],
   "faq": [
