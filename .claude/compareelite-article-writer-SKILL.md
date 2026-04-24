@@ -71,7 +71,7 @@ Every article MUST output valid JSON using the EXACT schema below — no excepti
   "buying_guide": [
     {
       "title": "Factor Name (e.g. 'Battery Life')",
-      "body": "2–3 sentence explanation (70–100 words) covering why this factor matters, what numbers or specs to look for, and how the products in this guide perform against this criterion. Include specific figures (e.g. 'aim for at least 20 hours per charge'). Mention product names where relevant."
+      "body": "2–3 sentence explanation (70–105 words) covering why this factor matters, what numbers or specs to look for, and how the products in this guide perform against this criterion. Include specific figures (e.g. 'aim for at least 20 hours per charge'). Mention product names where relevant."
     },
     {
       "title": "Second Factor",
@@ -97,23 +97,23 @@ Every article MUST output valid JSON using the EXACT schema below — no excepti
   "faq": [
     {
       "q": "What is the best [product] in 2026?",
-      "a": "3–4 sentence answer (80–100 words) naming the top pick with the specific reasons why it leads — include rating, price, and 2 key specs. Also mention the runner-up for readers with a different budget or need."
+      "a": "3–4 sentence answer (80–105 words) naming the top pick with the specific reasons why it leads — include rating, price, and 2 key specs. Also mention the runner-up for readers with a different budget or need."
     },
     {
       "q": "What should I look for when buying a [product]?",
-      "a": "3–4 sentence answer (80–100 words) covering the 3 most important buying criteria with specific numbers and thresholds. Reference products from this guide as examples."
+      "a": "3–4 sentence answer (80–105 words) covering the 3 most important buying criteria with specific numbers and thresholds. Reference products from this guide as examples."
     },
     {
       "q": "Is a cheaper [product] worth it or should I spend more?",
-      "a": "3–4 sentence answer (80–100 words) giving a clear framework for the decision. Name the budget pick and premium pick with price difference and what you gain by spending more."
+      "a": "3–4 sentence answer (80–105 words) giving a clear framework for the decision. Name the budget pick and premium pick with price difference and what you gain by spending more."
     },
     {
       "q": "How long does a [product] typically last?",
-      "a": "3–4 sentence answer (80–100 words) with concrete lifespan data, what affects longevity, and maintenance tips to extend it."
+      "a": "3–4 sentence answer (80–105 words) with concrete lifespan data, what affects longevity, and maintenance tips to extend it."
     },
     {
       "q": "Can I use [product] for [alternative use case]?",
-      "a": "3–4 sentence answer (80–100 words) giving a direct, helpful recommendation with product names."
+      "a": "3–4 sentence answer (80–105 words) giving a direct, helpful recommendation with product names."
     }
   ],
   "verdict": "3–4 sentence conclusion (100–130 words) that names the Best Overall pick with its price, top 2 reasons it wins, and a direct recommendation. Then briefly mention the runner-up for a different use case (e.g. budget, travel, performance). End with a confident call to action that reassures the reader they're making a well-researched choice.",
@@ -131,9 +131,9 @@ Every article MUST output valid JSON using the EXACT schema below — no excepti
 | Section | Target Words |
 |---|---|
 | `intro` (3 paragraphs) | 200–250 words |
-| Products (5 × pros + cons as full sentences) | 450–550 words |
-| `buying_guide` (6 points × 90 words) | 540–600 words |
-| `faq` (5 × 100 words) | 500–550 words |
+| Products (4, 6, or 8 — even number only) | ~90 words per product (pros + cons) |
+| `buying_guide` (6 points × 70–105 words each) | 540–630 words |
+| `faq` (5 answers × 80–105 words each) | 500–525 words |
 | `verdict` | 100–130 words |
 | Table + headers + other UI text | ~150 words |
 | **Total minimum** | **2,000 words** |
@@ -145,7 +145,7 @@ Every article MUST output valid JSON using the EXACT schema below — no excepti
 
 ## Products Rules
 
-- Exactly **4–5 products**, sorted highest rating first
+- **Even number of products: 4, 6, or 8** — sorted highest rating first
 - `best_for` badges must be **unique** per article: `Best Overall`, `Best Value`, `Best Budget`, `Best Premium`, `Best for Beginners`, `Most Portable`, `Most Durable`, `Best Wireless`, etc.
 - `rating`: always a **string** in format `"9.X/10"` — scale 8.0–9.9
   - Best Overall: 9.6–9.9
@@ -293,9 +293,9 @@ The website auto-renders 8 sections from your JSON — **do NOT write a `content
 - [ ] All `pros` items are complete sentences with measurable specs
 - [ ] All `cons` items are complete sentences with specifics
 - [ ] All `link` values include `?tag=compareelite-20`
-- [ ] `buying_guide` has 6 items, each `body` is 70–100 words
+- [ ] `buying_guide` has 6 items, each `body` is 70–105 words
 - [ ] `faq` has exactly 5 items with `q` and `a` keys
-- [ ] Each FAQ `a` is 80–100 words, names a product, includes a number
+- [ ] Each FAQ `a` is 80–105 words, names a product, includes a number
 - [ ] `verdict` is 100–130 words, names the top pick with price
 - [ ] `intro` first paragraph contains the main keyword within first 100 words
 - [ ] `buying_guide` titles contain secondary keywords (not generic labels)

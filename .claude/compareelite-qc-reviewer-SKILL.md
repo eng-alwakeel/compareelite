@@ -58,7 +58,7 @@ Run these first. Any forbidden field = immediate REJECTED status regardless of o
 | 12 | `author` exists | Must be present |
 | 13 | `stats` exists | Must be present |
 | 14 | `intro` exists | Must be present |
-| 15 | `products` exists and non-empty | Must have 4–5 items |
+| 15 | `products` exists and non-empty | Must have an even number of items: 4, 6, or 8 |
 | 16 | `buying_guide` exists and non-empty | Must have 6 items |
 | 17 | `faq` exists and non-empty | Must have 5 items |
 | 18 | `verdict` exists | Must be present |
@@ -120,7 +120,7 @@ For each product in `products`:
 
 | # | Check | Rule |
 |---|---|---|
-| 32 | Product count | Exactly 4–5 products |
+| 32 | Product count | Even number only: 4, 6, or 8 products |
 | 33 | Each product has `name` | Full product name with model number — not empty |
 | 34 | Each product has `price` | Format `"$XX"` or `"$X,XXX"` — not empty, not a number |
 | 35 | Products sorted by rating | Highest rating first (e.g. 9.8, 9.4, 8.9, 8.5) |
@@ -156,7 +156,7 @@ For each product in `products`:
 | 51 | Buying guide has 6 items | Exactly 6 objects in `buying_guide` array |
 | 52 | Each item has `title` and `body` | Both fields required per item |
 | 53 | Titles contain secondary keywords | Titles must be specific (e.g. "Active Noise Cancellation Quality") not generic (e.g. "Factor 1") |
-| 54 | Body word count per item | Each `body` must be 70–100 words. Count them. |
+| 54 | Body word count per item | Each `body` must be 70–105 words. Count them. |
 | 55 | Body contains specifics | Each body must include at least one number, spec, or product name reference |
 
 ---
@@ -168,7 +168,7 @@ For each product in `products`:
 | 56 | FAQ has exactly 5 items | Not 3, not 4 — must be 5 (minimum for FAQPage rich snippet) |
 | 57 | Each item uses `q` and `a` keys | NOT `question`/`answer` — must be `q` and `a` |
 | 58 | Questions are real search queries | Each question should read like something a person would type into Google or ask ChatGPT |
-| 59 | Answer word count | Each answer must be 80–100 words |
+| 59 | Answer word count | Each answer must be 80–105 words |
 | 60 | Answers name a product | Every answer must mention at least one product by its full name |
 | 61 | Answers contain a number | Every answer must contain at least one concrete number (price, hours, rating, year, weight, etc.) |
 | 62 | FAQ coverage | The 5 questions must cover: (1) overall best pick, (2) buying criteria, (3) budget vs premium, (4) durability/lifespan, (5) alternative use case |
