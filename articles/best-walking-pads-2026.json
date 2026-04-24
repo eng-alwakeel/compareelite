@@ -15,7 +15,6 @@
       "rating": "9.5/10",
       "price": "$399",
       "best_for": "Best Overall",
-      "link": "https://www.amazon.com/dp/B0983LJV6K?tag=compareelite-20",
       "pros": [
         "Folds in half for storage",
         "Smart speed auto-adjust",
@@ -25,14 +24,15 @@
         "Max 3.7 mph (walking only)",
         "App required for full features"
       ],
-      "image": "https://m.media-amazon.com/images/I/31-b40AFE3S._SL500_.jpg"
+      "image": "https://m.media-amazon.com/images/I/31-b40AFE3S._SL500_.jpg",
+      "affiliate_link": "https://www.amazon.com/dp/B0983LJV6K?tag=compareelite-20",
+      "asin": "B0983LJV6K"
     },
     {
       "name": "LifePro Pacer Under-Desk Treadmill",
       "rating": "9.2/10",
       "price": "$449",
       "best_for": "Best Under-Desk",
-      "link": "https://www.amazon.com/dp/B0DT4YCJS8?tag=compareelite-20",
       "pros": [
         "Ultra-slim (5.5\" height)",
         "Bluetooth connectivity",
@@ -42,14 +42,15 @@
         "Heavy for moving around",
         "No incline"
       ],
-      "image": "https://m.media-amazon.com/images/I/71BlK10KWBL._SL500_.jpg"
+      "image": "https://m.media-amazon.com/images/I/71BlK10KWBL._SL500_.jpg",
+      "affiliate_link": "https://www.amazon.com/dp/B0DT4YCJS8?tag=compareelite-20",
+      "asin": "B0DT4YCJS8"
     },
     {
       "name": "Smug Compact Armless Treadmill",
       "rating": "8.9/10",
       "price": "$119",
       "best_for": "Best Budget",
-      "link": "https://www.amazon.com/dp/B0DT4RBQX3?tag=compareelite-20",
       "pros": [
         "Very affordable",
         "Compact design",
@@ -59,7 +60,9 @@
         "Less durable long-term",
         "Basic display only"
       ],
-      "image": "https://m.media-amazon.com/images/I/71hcKoOnMwL._SL500_.jpg"
+      "image": "https://m.media-amazon.com/images/I/71hcKoOnMwL._SL500_.jpg",
+      "affiliate_link": "https://www.amazon.com/dp/B0DT4RBQX3?tag=compareelite-20",
+      "asin": "B0DT4RBQX3"
     }
   ],
   "faq": [
