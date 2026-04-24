@@ -588,6 +588,11 @@ a:hover {
 
 .pcard-btn { margin-top: auto; width: 100%; text-align: center; font-size: 0.8rem; padding: 0.55rem 0.5rem; }
 
+.pcard-pros-cons { margin: 0.5rem 0; font-size: 0.78rem; }
+.pros-label, .cons-label { font-weight: 700; margin: 0.4rem 0 0.15rem; color: var(--text-primary); font-size: 0.75rem; }
+.pros-list, .cons-list { margin: 0; padding-left: 1.1rem; color: var(--text-secondary); line-height: 1.5; }
+.pros-list li, .cons-list li { margin-bottom: 0.2rem; }
+
 @media (max-width: 640px) {
   /* Table: hide Rating and Best For columns to fit in 3 cols */
   .col-rating, .col-bestfor { display: none; }

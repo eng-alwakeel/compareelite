@@ -584,6 +584,7 @@ function inlineMarkdown(text) {
 function buildArticleBody(article) {
     const products = article.products || [];
     const faq = article.faq || [];
+    const buyingGuide = article.buying_guide || [];
 
     const sorted = [...products].sort((a, b) => parseFloat(b.rating) - parseFloat(a.rating));
 
@@ -616,7 +617,8 @@ function buildArticleBody(article) {
 
     const productCards = sorted.map(p => {
         const imgUrl = p.image || getAmazonImg(p.link);
-        const tags = (p.pros || []).slice(0, 3).map(x => `<span class="ptag">${x}</span>`).join('');
+        const pros = p.pros || [];
+        const cons = p.cons || [];
         return `
         <div class="pcard">
             <div class="pcard-img">
@@ -627,25 +629,54 @@ function buildArticleBody(article) {
                 <h3 class="pcard-name">${p.name}</h3>
                 <div class="pcard-price">${p.price}</div>
                 <span class="pcard-badge">${p.best_for}</span>
-                ${tags ? `<div class="pcard-tags">${tags}</div>` : ''}
+                ${pros.length ? `
+                <div class="pcard-pros-cons">
+                    <p class="pros-label">✅ Pros</p>
+                    <ul class="pros-list">${pros.map(x => `<li>${x}</li>`).join('')}</ul>
+                    ${cons.length ? `<p class="cons-label">❌ Cons</p><ul class="cons-list">${cons.map(x => `<li>${x}</li>`).join('')}</ul>` : ''}
+                </div>` : ''}
                 <a href="${p.link}" class="btn btn-accent pcard-btn" target="_blank" rel="nofollow noopener">Buy on Amazon ↗</a>
             </div>
         </div>`;
     }).join('');
 
+    const buyingGuideHtml = buyingGuide.length ? `
+        <h2>Buying Guide: What to Look For</h2>
+        ${buyingGuide.map(item => `
+        <div style="margin-bottom:1.25rem; padding:1.25rem; background:var(--bg-card); border-radius:var(--radius-md); border-left:4px solid var(--primary);">
+            <h4 style="margin:0 0 0.5rem; color:var(--text-primary);">${item.title}</h4>
+            <p style="margin:0; color:var(--text-secondary); line-height:1.7;">${item.body}</p>
+        </div>`).join('')}` : '';
+
     const faqHtml = faq.length ? `
         <h2>Frequently Asked Questions</h2>
         ${faq.map(q => `
-        <div style="margin-bottom:1.5rem;">
+        <div style="margin-bottom:1.5rem; padding-bottom:1.5rem; border-bottom:1px solid var(--border-color);">
             <h4 style="margin-bottom:0.5rem; color:var(--text-primary);">${q.q}</h4>
-            <p>${q.a}</p>
+            <p style="color:var(--text-secondary); line-height:1.7;">${q.a}</p>
         </div>`).join('')}` : '';
 
+    const verdictHtml = article.verdict ? `
+        <div style="background:linear-gradient(135deg,var(--primary-light),var(--bg-card)); border-radius:var(--radius-md); padding:2rem; margin-top:2rem; border:1px solid var(--border-color);">
+            <h2 style="margin-top:0; color:var(--text-primary);">Our Final Verdict</h2>
+            <p style="font-size:1.05rem; line-height:1.8; color:var(--text-secondary); margin:0;">${article.verdict}</p>
+        </div>` : '';
+
+    const relatedArticles = article.related_articles || [];
+    const relatedHtml = relatedArticles.length ? `
+        <div style="margin-top:2rem;">
+            <h2 style="font-size:1.3rem; margin-bottom:1rem;">You Might Also Like</h2>
+            <div style="display:flex; flex-wrap:wrap; gap:0.75rem;">
+                ${relatedArticles.map(r => `<a href="?article=${r.slug}" style="display:inline-block; padding:0.6rem 1.1rem; background:var(--bg-card); border:1px solid var(--border-color); border-radius:var(--radius-md); color:var(--primary); font-size:0.9rem; text-decoration:none; font-weight:500;" onmouseover="this.style.borderColor='var(--primary)'" onmouseout="this.style.borderColor='var(--border-color)'">${r.title}</a>`).join('')}
+            </div>
+        </div>` : '';
+
+    const introHtml = article.intro
+        ? `<div style="font-size:1.1rem; line-height:1.8; color:var(--text-secondary); margin-bottom:2rem;">${article.intro.split('\n\n').map(p => `<p>${p.trim()}</p>`).join('')}</div>`
+        : `<div style="font-size:1.1rem; line-height:1.8; color:var(--text-secondary); margin-bottom:2rem;"><p>${article.excerpt}</p><p>Our team spent dozens of hours researching, comparing specs, and reading thousands of verified buyer reviews to bring you this definitive guide.</p></div>`;
+
     return `
-        <div style="font-size:1.1rem; line-height:1.8; color:var(--text-secondary); margin-bottom:2rem;">
-            <p>${article.excerpt}</p>
-            <p>Our team spent dozens of hours researching, comparing specs, and reading thousands of verified buyer reviews to bring you this guide.</p>
-        </div>
+        ${introHtml}
         ${products.length ? `
         <h2>Top Picks at a Glance</h2>
         <div class="picks-table-wrapper">
@@ -664,7 +695,10 @@ function buildArticleBody(article) {
         </div>
         <h2>Detailed Reviews</h2>
         <div class="pcards-grid">${productCards}</div>` : ''}
+        ${buyingGuideHtml}
         ${faqHtml}
+        ${verdictHtml}
+        ${relatedHtml}
         <div style="background:var(--primary-light); border-radius:var(--radius-md); padding:1.5rem; margin-top:2rem; text-align:center;">
             <p style="font-weight:600; color:var(--text-primary); margin-bottom:0.5rem;">Found this guide helpful?</p>
             <p style="font-size:0.9rem; margin-bottom:1rem;">All links are Amazon affiliate links. Prices shown are approximate and may change.</p>
