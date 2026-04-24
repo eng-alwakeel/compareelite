@@ -234,11 +234,11 @@ function createArticleCard(article) {
             </div>
             <div class="card-content">
                 <div class="card-meta">
-                    <span>📅 ${new Date(article.date).toLocaleDateString()}</span>
+                    <span>📅 ${article.date ? new Date(article.date).toLocaleDateString('en-US', {year:'numeric', month:'short', day:'numeric'}) : ''}</span>
                     <span>👁️ ${article.stats?.readers || 0}</span>
                 </div>
                 <h3 class="card-title">${article.title}</h3>
-                <p class="card-excerpt">${article.excerpt}</p>
+                <p class="card-excerpt">${article.excerpt || ''}</p>
                 <div style="margin-top: auto; color: var(--primary); font-weight: 600; font-size: 0.9rem; display: flex; align-items: center; gap: 4px;">
                     Read Guide 
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
