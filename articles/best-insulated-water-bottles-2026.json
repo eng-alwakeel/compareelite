@@ -131,24 +131,11 @@
     {
       "q": "Can insulated water bottles go in the dishwasher?",
       "a": "It depends on the model. The Stanley Quencher H2.0 40oz at $45 is fully dishwasher-safe, making it one of the easiest bottles to maintain. The YETI Rambler 36oz at $55 is also dishwasher-safe. The Hydro Flask Standard Mouth 21oz at $44 and Owala FreeSip 24oz at $29 are dishwasher-safe for the bottle body, but hand-washing the Owala lid is recommended to prevent water from trapping inside the dual-opening straw tunnel and causing mold buildup over time."
-    },
-    {
-      "q": "What size insulated water bottle should I buy?",
-      "a": "Size depends on your hydration habits and daily routine. The Owala FreeSip 24oz at $29 is ideal for gym bags and commuters \u2014 it fits most car cup holders. The Stanley Quencher H2.0 40oz at $45 suits all-day hydration for desk workers or outdoor activities where refills aren't frequent. The YETI Rambler 36oz at $55 balances capacity and portability for outdoor use. If you drink the recommended 64oz daily, a 32\u201340oz bottle requires only 2 refills instead of 3\u20134 with smaller bottles."
     }
   ],
   "related_articles": [
-    {
-      "slug": "best-camping-tents-2026",
-      "title": "Best Camping Tents of 2026"
-    },
-    {
-      "slug": "best-expandable-garden-hoses-2026",
-      "title": "Best Expandable Garden Hoses 2026"
-    },
-    {
-      "slug": "best-portable-power-banks-2026",
-      "title": "Best Portable Power Banks 2026: Top Picks for Every Need"
-    }
+    {"slug": "best-camping-tents-2026", "title": "Best Camping Tents of 2026"},
+    {"slug": "best-expandable-garden-hoses-2026", "title": "Best Expandable Garden Hoses of 2026: Lightweight & Tangle-Free"},
+    {"slug": "best-portable-power-banks-2026", "title": "Best Portable Power Banks of 2026: Fast Charging Picks"}
   ]
 }
