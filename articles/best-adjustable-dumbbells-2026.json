@@ -15,7 +15,6 @@
       "rating": "9.6/10",
       "price": "$349",
       "best_for": "Best Overall",
-      "link": "https://www.amazon.com/dp/B0G6Z84TQM?tag=compareelite-20",
       "pros": [
         "15 weight settings",
         "Easy dial system",
@@ -24,14 +23,16 @@
       "cons": [
         "Bulky cradle",
         "Takes a few seconds to adjust"
-      ]
+      ],
+      "affiliate_link": "https://www.amazon.com/dp/B0G6Z84TQM?tag=compareelite-20",
+      "asin": "B0G6Z84TQM",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B0G6Z84TQM.01._SCLZZZZZZZ_.jpg"
     },
     {
       "name": "PowerBlock Elite EXP (5-50 lbs)",
       "rating": "9.4/10",
       "price": "$329",
       "best_for": "Most Durable",
-      "link": "https://www.amazon.com/dp/B00A21NRNO?tag=compareelite-20",
       "pros": [
         "Compact rectangular design",
         "Steel construction",
@@ -41,14 +42,15 @@
         "Unusual shape takes getting used to",
         "No cradle storage included"
       ],
-      "image": "https://m.media-amazon.com/images/I/41tZVSXGfmL._SL500_.jpg"
+      "image": "https://m.media-amazon.com/images/I/41tZVSXGfmL._SL500_.jpg",
+      "affiliate_link": "https://www.amazon.com/dp/B00A21NRNO?tag=compareelite-20",
+      "asin": "B00A21NRNO"
     },
     {
       "name": "ATIVAFIT Adjustable Dumbbell (71.5 lbs)",
       "rating": "9.0/10",
       "price": "$199",
       "best_for": "Best Value",
-      "link": "https://www.amazon.com/dp/B08TH8CTZM?tag=compareelite-20",
       "pros": [
         "Good weight range",
         "Compact",
@@ -58,7 +60,9 @@
         "Slightly slower adjustment",
         "Plastic components"
       ],
-      "image": "https://m.media-amazon.com/images/I/51G4KeLg2YL._SL500_.jpg"
+      "image": "https://m.media-amazon.com/images/I/51G4KeLg2YL._SL500_.jpg",
+      "affiliate_link": "https://www.amazon.com/dp/B08TH8CTZM?tag=compareelite-20",
+      "asin": "B08TH8CTZM"
     }
   ],
   "faq": [
