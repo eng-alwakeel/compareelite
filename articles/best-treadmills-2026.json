@@ -170,5 +170,10 @@
       "home treadmill buying guide"
     ]
   },
-  "affiliate_tag": "compareelite-20"
+  "affiliate_tag": "compareelite-20",
+  "related_articles": [
+    {"slug": "best-walking-pads-2026", "title": "Best Walking Pads of 2026: Get Your Steps Without Leaving Home"},
+    {"slug": "best-adjustable-dumbbells-2026", "title": "Best Adjustable Dumbbells of 2026: Space-Saving Home Gym Picks"},
+    {"slug": "best-resistance-bands-2026", "title": "Best Resistance Bands of 2026: For Home Workouts & Travel"}
+  ]
 }
