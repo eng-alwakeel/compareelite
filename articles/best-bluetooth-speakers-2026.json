@@ -15,7 +15,6 @@
       "rating": "9.6/10",
       "price": "$149",
       "best_for": "Overall Best",
-      "link": "https://www.amazon.com/dp/B08MQBL34L?tag=compareelite-20",
       "pros": [
         "20hr battery",
         "IP67 waterproof",
@@ -25,14 +24,15 @@
         "No speakerphone",
         "Heavy for its size"
       ],
-      "image": "https://m.media-amazon.com/images/I/41ohTy6klaL._SL500_.jpg"
+      "image": "https://m.media-amazon.com/images/I/41ohTy6klaL._SL500_.jpg",
+      "affiliate_link": "https://www.amazon.com/dp/B08MQBL34L?tag=compareelite-20",
+      "asin": "B08MQBL34L"
     },
     {
       "name": "Bose SoundLink Flex Gen 2",
       "rating": "9.4/10",
       "price": "$149",
       "best_for": "Best Sound Quality",
-      "link": "https://www.amazon.com/dp/B0D6WD2QSQ?tag=compareelite-20",
       "pros": [
         "Rich balanced sound",
         "PositionIQ tech",
@@ -42,14 +42,15 @@
         "No stereo pairing",
         "Average bass"
       ],
-      "image": "https://m.media-amazon.com/images/I/41hUgnmiplL._SL500_.jpg"
+      "image": "https://m.media-amazon.com/images/I/41hUgnmiplL._SL500_.jpg",
+      "affiliate_link": "https://www.amazon.com/dp/B0D6WD2QSQ?tag=compareelite-20",
+      "asin": "B0D6WD2QSQ"
     },
     {
       "name": "UE Wonderboom 3",
       "rating": "8.8/10",
       "price": "$99",
       "best_for": "Most Durable",
-      "link": "https://www.amazon.com/dp/B09KX27KGN?tag=compareelite-20",
       "pros": [
         "IP67 + drop-proof",
         "360-degree sound",
@@ -59,14 +60,15 @@
         "Limited bass",
         "No aux input"
       ],
-      "image": "https://m.media-amazon.com/images/I/51kt3+Len-L._SL500_.jpg"
+      "image": "https://m.media-amazon.com/images/I/51kt3+Len-L._SL500_.jpg",
+      "affiliate_link": "https://www.amazon.com/dp/B09KX27KGN?tag=compareelite-20",
+      "asin": "B09KX27KGN"
     },
     {
       "name": "Anker Soundcore 2",
       "rating": "8.4/10",
       "price": "$39",
       "best_for": "Best Budget",
-      "link": "https://www.amazon.com/dp/B07N8GF2F9?tag=compareelite-20",
       "pros": [
         "Incredible value",
         "24hr battery",
@@ -76,7 +78,9 @@
         "No waterproofing",
         "Average highs"
       ],
-      "image": "https://m.media-amazon.com/images/I/41BfV8zviLL._SL500_.jpg"
+      "image": "https://m.media-amazon.com/images/I/41BfV8zviLL._SL500_.jpg",
+      "affiliate_link": "https://www.amazon.com/dp/B07N8GF2F9?tag=compareelite-20",
+      "asin": "B07N8GF2F9"
     }
   ],
   "faq": [
