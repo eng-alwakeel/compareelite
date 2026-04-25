@@ -149,7 +149,7 @@ For each product in `products`:
 | 39 | `link` contains affiliate tag | Every `link` must contain `?tag=compareelite-20` |
 | 40 | `link` uses correct Amazon format | Must be `https://www.amazon.com/dp/[ASIN]?tag=compareelite-20` |
 | 41 | ASIN format | The ASIN in each link must be 10 alphanumeric characters (e.g. `B09ZY3K6TW`) |
-| 42 | `image` URL format (if present) | If `image` field exists, must be `https://m.media-amazon.com/images/I/[IMAGE_ID]._SL500_.jpg` |
+| 42 | `image` is present and correct | Every product MUST have an `image` field — missing = auto-fail. Must be `https://m.media-amazon.com/images/I/[IMAGE_ID]._SL500_.jpg`. Reject `images-na.ssl-images-amazon.com`, Amazon product page URLs, or any other format |
 | 43 | `pros` are full sentences | Each pro must be a complete sentence (starts with capital, ends with period, contains a measurable spec or number). Reject fragments like "Long battery life" |
 | 44 | `pros` count | Exactly 3 pros per product |
 | 45 | `cons` are full sentences | Each con must be a complete sentence with a specific limitation. Reject vague entries like "Expensive" |
@@ -310,6 +310,8 @@ TOTAL:          XXXX words  [≥2000 ✅ / <2000 ❌]
 | `affiliate_link` present | Rename to `link` |
 | `content` field present | Delete entirely — website builds content from other fields |
 | `rating: 4.8` (number) | Change to `"9.6/10"` (string) |
+| `image` field missing from product | Article must be rewritten — replace the product with one whose image ID is known. Do not add a placeholder |
+| `image` uses `images-na.ssl-images-amazon.com` | Wrong CDN — always breaks. Replace with `m.media-amazon.com/images/I/[IMAGE_ID]._SL500_.jpg` or swap the product |
 | Thumbnail is Amazon URL | Replace with Unsplash URL: `https://images.unsplash.com/photo-XXXXX?w=800&q=80` |
 | `stats` has extra fields | Change to exactly `{ "readers": 0 }` — remove `clicks` or any other keys |
 | Pros are fragments | Rewrite as full sentences with measurable specs |

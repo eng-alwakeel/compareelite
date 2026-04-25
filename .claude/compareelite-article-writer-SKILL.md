@@ -169,10 +169,25 @@ Every article MUST output valid JSON using the EXACT schema below — no excepti
 - Choose a photo that represents the category visually (lifestyle shot, not a specific product box)
 
 ### `image` (product card — Amazon CDN)
-- Use `https://m.media-amazon.com/images/I/[IMAGE_ID]._SL500_.jpg`
-- Shown inside the article on the product comparison card
-- Find the real image ID from your training data for each ASIN
-- If you cannot verify the image ID, omit the field — the site has a fallback
+
+> ⚠️ **`image` is REQUIRED for every product. Never omit it. Never leave it blank.**
+
+- Format: `https://m.media-amazon.com/images/I/[IMAGE_ID]._SL500_.jpg`
+- The `IMAGE_ID` is a string like `61pN1SjxstL` — it is NOT the ASIN
+- Find it from your training data for well-known products
+
+**How to find the image ID:**
+1. From training data: well-known products (Sony, Apple, Logitech, Herman Miller, NordicTrack, etc.) have image IDs you already know
+2. The image ID is typically 11–14 alphanumeric characters ending in `L` (e.g. `71UypkuaP-L`, `61pN1SjxstL`)
+
+**NEVER do these — images will break:**
+- ❌ `https://images-na.ssl-images-amazon.com/images/P/ASIN...` — wrong CDN, always 404
+- ❌ `https://www.amazon.com/images/...` — hotlink blocked
+- ❌ Omitting the `image` field — shows a broken card on the website
+- ❌ Using the ASIN as the image ID — ASINs and image IDs are different things
+
+**If you genuinely cannot find the image ID for a product:**
+→ Replace that product with a different well-known alternative for which you DO have the image ID. Do not write an article with missing product images.
 
 ---
 
