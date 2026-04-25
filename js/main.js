@@ -141,31 +141,14 @@ function initHomeSearch(articles) {
 
 // Categories ------------------------------------------------------------------
 const HOME_CATEGORIES = [
-    {
-        name: 'Laptops',
-        icon: '💻',
-        keywords: ['laptop', 'laptops', 'notebook', 'ultrabook', 'chromebook'],
-        href: 'blog/index.html?category=Laptops'
-    },
-    {
-        name: 'Monitors',
-        icon: '🖥️',
-        keywords: ['monitor', 'monitors', 'display', 'screen'],
-        href: 'blog/index.html?category=Monitors'
-    },
-    {
-        name: 'Office Chairs',
-        icon: '🪑',
-        keywords: ['chair', 'chairs', 'office chair', 'ergonomic chair', 'desk chair'],
-        href: 'blog/index.html?category=Office+Chairs'
-    }
+    { name: 'Tech',         icon: '💻', category: 'Tech',         href: 'blog/index.html?category=Tech' },
+    { name: 'Home Office',  icon: '🪑', category: 'Home Office',  href: 'blog/index.html?category=Home+Office' },
+    { name: 'Smart Home',   icon: '🏠', category: 'Smart Home',   href: 'blog/index.html?category=Smart+Home' },
+    { name: 'Home Fitness', icon: '🏋️', category: 'Home Fitness', href: 'blog/index.html?category=Home+Fitness' },
 ];
 
-function countArticlesForCategory(articles, keywords) {
-    return articles.filter(a => {
-        const haystack = ((a.title || '') + ' ' + (a.slug || '') + ' ' + (a.category || '')).toLowerCase();
-        return keywords.some(kw => haystack.includes(kw));
-    }).length;
+function countArticlesForCategory(articles, category) {
+    return articles.filter(a => a.category === category).length;
 }
 
 function renderHomeCategories(articles) {
@@ -173,8 +156,8 @@ function renderHomeCategories(articles) {
     if (!grid) return;
 
     grid.innerHTML = HOME_CATEGORIES.map(cat => {
-        const count = countArticlesForCategory(articles, cat.keywords);
-        const label = count === 1 ? '1 guide' : `${count} guide${count === 0 ? 's' : 's'}`;
+        const count = countArticlesForCategory(articles, cat.category);
+        const label = `${count} guide${count !== 1 ? 's' : ''}`;
         return `
             <a class="category-card" href="${cat.href}">
                 <span class="cat-icon">${cat.icon}</span>
@@ -487,6 +470,15 @@ async function renderArticleDetail() {
     ldScript.type = 'application/ld+json';
     ldScript.textContent = JSON.stringify({ "@context": "https://schema.org", "@graph": schemaGraph });
     document.head.appendChild(ldScript);
+
+    // Filter related_articles to same niche only
+    if (article.related_articles && article.category) {
+        try {
+            const allArticles = await githubAPI.getArticlesList();
+            const sameNicheSlugs = new Set(allArticles.filter(a => a.category === article.category).map(a => a.slug));
+            article.related_articles = article.related_articles.filter(r => sameNicheSlugs.has(r.slug));
+        } catch (_) { /* keep original if fetch fails */ }
+    }
 
     const rawContent = article.content;
     let bodyContent;

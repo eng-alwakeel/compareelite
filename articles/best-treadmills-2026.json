@@ -1,7 +1,7 @@
 {
   "slug": "best-treadmills-2026",
   "title": "Best Treadmills of 2026: Top Picks for Every Runner and Budget",
-  "category": "Health & Fitness",
+  "category": "Home Fitness",
   "date": "2026-04-24",
   "excerpt": "Whether you're training for a marathon or just want to stay active at home, these are the best treadmills of 2026 — tested and ranked.",
   "thumbnail": "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=800&q=80",
@@ -53,7 +53,7 @@
         "Requires iFit subscription for full features",
         "Very heavy — difficult to move"
       ],
-      "image": "https://images-na.ssl-images-amazon.com/images/P/B0GSH23JFC.01._SCLZZZZZZZ_.jpg",
+      "image": "https://m.media-amazon.com/images/I/61UEQPwe61L._SL500_.jpg",
       "link": "https://www.amazon.com/dp/B0GSH23JFC?tag=compareelite-20",
       "asin": "B0GSH23JFC"
     },
@@ -72,7 +72,7 @@
         "Peloton All-Access Membership required ($44/mo)",
         "Higher price point than competitors"
       ],
-      "image": "https://images-na.ssl-images-amazon.com/images/P/B0CFR8GWYR.01._SCLZZZZZZZ_.jpg",
+      "image": "https://m.media-amazon.com/images/I/31TOlaNaQ7L._SL500_.jpg",
       "link": "https://www.amazon.com/dp/B0CFR8GWYR?tag=compareelite-20",
       "asin": "B0CFR8GWYR"
     },
@@ -130,7 +130,7 @@
         "Lower 300 lb weight capacity",
         "Basic LCD display only"
       ],
-      "image": "https://images-na.ssl-images-amazon.com/images/P/B0F9LQY1P4.01._SCLZZZZZZZ_.jpg",
+      "image": "https://m.media-amazon.com/images/I/31pAWKay09L._SL500_.jpg",
       "link": "https://www.amazon.com/dp/B0F9LQY1P4?tag=compareelite-20",
       "asin": "B0F9LQY1P4"
     }
@@ -172,8 +172,17 @@
   },
   "affiliate_tag": "compareelite-20",
   "related_articles": [
-    {"slug": "best-walking-pads-2026", "title": "Best Walking Pads of 2026: Get Your Steps Without Leaving Home"},
-    {"slug": "best-adjustable-dumbbells-2026", "title": "Best Adjustable Dumbbells of 2026: Space-Saving Home Gym Picks"},
-    {"slug": "best-resistance-bands-2026", "title": "Best Resistance Bands of 2026: For Home Workouts & Travel"}
+    {
+      "slug": "best-walking-pads-2026",
+      "title": "Best Walking Pads of 2026: Get Your Steps Without Leaving Home"
+    },
+    {
+      "slug": "best-adjustable-dumbbells-2026",
+      "title": "Best Adjustable Dumbbells of 2026: Space-Saving Home Gym Picks"
+    },
+    {
+      "slug": "best-resistance-bands-2026",
+      "title": "Best Resistance Bands of 2026: For Home Workouts & Travel"
+    }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "slug": "best-whey-protein-2026",
   "title": "Best Whey Protein Powders of 2026: Top Picks for Muscle & Recovery",
-  "category": "Health & Fitness",
+  "category": "Home Fitness",
   "date": "2026-04-13",
   "excerpt": "With hundreds of protein powders on the market, we narrowed it down to the best-tasting, cleanest, and most effective options.",
   "thumbnail": "https://images.unsplash.com/photo-1593095948071-474c5cc2989d?w=800&q=80",
@@ -135,8 +135,17 @@
     }
   ],
   "related_articles": [
-    {"slug": "best-creatine-supplements-2026", "title": "Best Creatine Supplements of 2026: Science-Backed Picks"},
-    {"slug": "best-adjustable-dumbbells-2026", "title": "Best Adjustable Dumbbells of 2026: Space-Saving Home Gym Picks"},
-    {"slug": "best-resistance-bands-2026", "title": "Best Resistance Bands of 2026: For Home Workouts & Travel"}
+    {
+      "slug": "best-creatine-supplements-2026",
+      "title": "Best Creatine Supplements of 2026: Science-Backed Picks"
+    },
+    {
+      "slug": "best-adjustable-dumbbells-2026",
+      "title": "Best Adjustable Dumbbells of 2026: Space-Saving Home Gym Picks"
+    },
+    {
+      "slug": "best-resistance-bands-2026",
+      "title": "Best Resistance Bands of 2026: For Home Workouts & Travel"
+    }
   ]
 }

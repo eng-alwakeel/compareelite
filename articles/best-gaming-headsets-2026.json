@@ -1,7 +1,7 @@
 {
   "slug": "best-gaming-headsets-2026",
   "title": "Best Gaming Headsets of 2026",
-  "category": "Technology",
+  "category": "Tech",
   "date": "2026-04-19",
   "excerpt": "A great gaming headset can make or break your immersion, from pinpointing enemy footsteps to chatting clearly with teammates. We tested top models across platforms to bring you the very best picks for every type of gamer.",
   "thumbnail": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80",
@@ -134,8 +134,17 @@
     }
   ],
   "related_articles": [
-    {"slug": "best-wireless-earbuds-2026", "title": "Best Wireless Earbuds of 2026: Tested & Ranked"},
-    {"slug": "best-gaming-laptops-2026", "title": "Best Gaming Laptops 2026: Top 5 Picks for Every Budget"},
-    {"slug": "best-mechanical-keyboards-2026", "title": "Best Mechanical Keyboards 2026: Top 5 Picks Tested"}
+    {
+      "slug": "best-wireless-earbuds-2026",
+      "title": "Best Wireless Earbuds of 2026: Tested & Ranked"
+    },
+    {
+      "slug": "best-gaming-laptops-2026",
+      "title": "Best Gaming Laptops 2026: Top 5 Picks for Every Budget"
+    },
+    {
+      "slug": "best-mechanical-keyboards-2026",
+      "title": "Best Mechanical Keyboards 2026: Top 5 Picks Tested"
+    }
   ]
 }

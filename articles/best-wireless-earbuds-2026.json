@@ -1,7 +1,7 @@
 {
   "slug": "best-wireless-earbuds-2026",
   "title": "Best Wireless Earbuds of 2026: Tested & Ranked",
-  "category": "Technology",
+  "category": "Tech",
   "date": "2026-04-18",
   "excerpt": "We tested 20+ wireless earbuds for sound quality, ANC, battery life, and comfort. Here are the top picks for every budget.",
   "thumbnail": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800&q=80",
@@ -150,8 +150,17 @@
     }
   ],
   "related_articles": [
-    {"slug": "best-gaming-headsets-2026", "title": "Best Gaming Headsets of 2026"},
-    {"slug": "best-bluetooth-speakers-2026", "title": "Best Portable Bluetooth Speakers of 2026"},
-    {"slug": "airpods-pro-vs-airpods-4", "title": "AirPods Pro 3 vs AirPods 4: Which Should You Buy in 2026?"}
+    {
+      "slug": "best-gaming-headsets-2026",
+      "title": "Best Gaming Headsets of 2026"
+    },
+    {
+      "slug": "best-bluetooth-speakers-2026",
+      "title": "Best Portable Bluetooth Speakers of 2026"
+    },
+    {
+      "slug": "airpods-pro-vs-airpods-4",
+      "title": "AirPods Pro 3 vs AirPods 4: Which Should You Buy in 2026?"
+    }
   ]
 }

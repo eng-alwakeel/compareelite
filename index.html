@@ -151,14 +151,13 @@
         .category-card .cat-count { font-size: 0.875rem; color: var(--text-secondary); }
         #home-categories-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             gap: 1.5rem;
+            max-width: 600px;
+            margin: 0 auto;
         }
-        @media (max-width: 640px) {
+        @media (max-width: 480px) {
             #home-categories-grid { grid-template-columns: 1fr; }
-        }
-        @media (min-width: 641px) and (max-width: 900px) {
-            #home-categories-grid { grid-template-columns: repeat(3, 1fr); }
         }
     </style>
 </head>
@@ -233,23 +232,28 @@
             <div class="container">
                 <div style="text-align: center; margin-bottom: 2rem;">
                     <h2 class="section-title" style="font-size: 1.75rem;">Browse Categories</h2>
-                    <p style="color: var(--text-secondary); margin-top: 0.5rem;">Expert comparisons for every tech need</p>
+                    <p style="color: var(--text-secondary); margin-top: 0.5rem;">Expert buying guides across 4 categories</p>
                 </div>
                 <div id="home-categories-grid">
                     <!-- Populated by JS -->
                     <div class="category-card" style="cursor:default;">
                         <span class="cat-icon">💻</span>
-                        <h3 class="cat-name">Laptops</h3>
-                        <span class="cat-count skeleton" style="width:60px; height:14px; border-radius:4px;">&nbsp;</span>
-                    </div>
-                    <div class="category-card" style="cursor:default;">
-                        <span class="cat-icon">🖥️</span>
-                        <h3 class="cat-name">Monitors</h3>
+                        <h3 class="cat-name">Tech</h3>
                         <span class="cat-count skeleton" style="width:60px; height:14px; border-radius:4px;">&nbsp;</span>
                     </div>
                     <div class="category-card" style="cursor:default;">
                         <span class="cat-icon">🪑</span>
-                        <h3 class="cat-name">Office Chairs</h3>
+                        <h3 class="cat-name">Home Office</h3>
+                        <span class="cat-count skeleton" style="width:60px; height:14px; border-radius:4px;">&nbsp;</span>
+                    </div>
+                    <div class="category-card" style="cursor:default;">
+                        <span class="cat-icon">🏠</span>
+                        <h3 class="cat-name">Smart Home</h3>
+                        <span class="cat-count skeleton" style="width:60px; height:14px; border-radius:4px;">&nbsp;</span>
+                    </div>
+                    <div class="category-card" style="cursor:default;">
+                        <span class="cat-icon">🏋️</span>
+                        <h3 class="cat-name">Home Fitness</h3>
                         <span class="cat-count skeleton" style="width:60px; height:14px; border-radius:4px;">&nbsp;</span>
                     </div>
                 </div>

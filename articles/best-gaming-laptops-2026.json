@@ -1,12 +1,14 @@
 {
   "slug": "best-gaming-laptops-2026",
   "title": "Best Gaming Laptops 2026: Top 5 Picks for Every Budget",
-  "category": "Technology",
+  "category": "Tech",
   "date": "2026-04-24",
   "excerpt": "Best gaming laptops of 2026 tested across 20+ models — top 5 picks from budget RTX 4060 builds to premium RTX 4080 powerhouses for every gamer.",
   "thumbnail": "https://images.unsplash.com/photo-1603481588273-2f908a9a7a1b?w=800&q=80",
   "author": "CompareElite Team",
-  "stats": { "readers": 0 },
+  "stats": {
+    "readers": 0
+  },
   "intro": "Finding the best gaming laptop in 2026 is harder than ever — GPU naming tiers, display refresh rate wars, and razor-thin chassis that still somehow cool a 175W TGP have all raised the stakes for every dollar you spend. To cut through the noise, we tested more than 20 gaming laptops across a six-month period, from $749 RTX 4060 workhorses to $2,499 CNC-aluminum flagships, and identified five machines that genuinely deliver on their promises.\n\nOur methodology combined standardized synthetic benchmarks — 3DMark Time Spy, Cinebench R24 multi-core, and PCMark 10 — with real-world game testing in Cyberpunk 2077 at ultra ray tracing, CS2 at competitive settings, and Blender CPU renders. Thermals were logged under 30-minute sustained gaming loads using HWiNFO64, battery life was measured with the display at 250 nits running a looping 1080p video, and display quality was validated with a colorimeter for sRGB and DCI-P3 coverage.\n\nThis guide walks through our top overall, premium, performance, value, and budget picks, followed by a buying guide covering GPU tiers, display specs, cooling architecture, RAM and storage upgradability, portability trade-offs, and display panel types — everything you need to choose the right gaming laptop for your budget and use case.",
   "buying_guide": [
     {
@@ -145,8 +147,17 @@
     }
   ],
   "related_articles": [
-    {"slug": "best-gaming-headsets-2026", "title": "Best Gaming Headsets of 2026"},
-    {"slug": "best-mechanical-keyboards-2026", "title": "Best Mechanical Keyboards 2026: Top 5 Picks Tested"},
-    {"slug": "best-wireless-earbuds-2026", "title": "Best Wireless Earbuds of 2026: Tested & Ranked"}
+    {
+      "slug": "best-gaming-headsets-2026",
+      "title": "Best Gaming Headsets of 2026"
+    },
+    {
+      "slug": "best-mechanical-keyboards-2026",
+      "title": "Best Mechanical Keyboards 2026: Top 5 Picks Tested"
+    },
+    {
+      "slug": "best-wireless-earbuds-2026",
+      "title": "Best Wireless Earbuds of 2026: Tested & Ranked"
+    }
   ]
 }

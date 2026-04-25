@@ -1,7 +1,7 @@
 {
   "slug": "best-resistance-bands-2026",
   "title": "Best Resistance Bands of 2026: For Home Workouts & Travel",
-  "category": "Health & Fitness",
+  "category": "Home Fitness",
   "date": "2026-04-17",
   "excerpt": "Resistance bands are the most versatile and affordable gym equipment. These are the best sets for every fitness level.",
   "thumbnail": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&q=80",
@@ -131,8 +131,17 @@
     }
   ],
   "related_articles": [
-    {"slug": "best-adjustable-dumbbells-2026", "title": "Best Adjustable Dumbbells of 2026: Space-Saving Home Gym Picks"},
-    {"slug": "best-yoga-mats-2026", "title": "Best Yoga Mats of 2026"},
-    {"slug": "best-walking-pads-2026", "title": "Best Walking Pads of 2026: Get Your Steps Without Leaving Home"}
+    {
+      "slug": "best-adjustable-dumbbells-2026",
+      "title": "Best Adjustable Dumbbells of 2026: Space-Saving Home Gym Picks"
+    },
+    {
+      "slug": "best-yoga-mats-2026",
+      "title": "Best Yoga Mats of 2026"
+    },
+    {
+      "slug": "best-walking-pads-2026",
+      "title": "Best Walking Pads of 2026: Get Your Steps Without Leaving Home"
+    }
   ]
 }

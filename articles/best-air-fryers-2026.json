@@ -1,7 +1,7 @@
 {
   "slug": "best-air-fryers-2026",
   "title": "Best Air Fryers of 2026",
-  "category": "Kitchen",
+  "category": "Smart Home",
   "date": "2026-04-19",
   "excerpt": "Air fryers have revolutionized home cooking by delivering crispy, delicious results with a fraction of the oil used in traditional frying. We evaluated capacity, cooking speed, ease of cleaning, and versatility to find the top models available today.",
   "thumbnail": "https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?w=800&q=80",
@@ -10,7 +10,6 @@
     "readers": 0
   },
   "intro": "The best air fryers of 2026 have moved well beyond their novelty-gadget origins — today's top models are legitimate kitchen workhorses that cut cooking times by 25–50% while using up to 75% less oil than deep frying. Whether you're crisping chicken wings for a crowd or reheating last night's fries in three minutes, a quality air fryer changes how you cook every day. We tested over a dozen models across wattage ratings from 1,500W to 1,800W to find the options genuinely worth counter space.\n\nOur evaluation covered four buyer profiles: singles and couples needing compact 2–4-quart units, families of four requiring 6-quart-plus capacity, serious cooks wanting oven-combo versatility, and budget shoppers prioritizing value under $100. Each air fryer was tested on chicken thighs, frozen fries, and fresh vegetables — judging crispiness, cooking evenness, preheat time, noise level at full fan speed, and basket cleanup difficulty after five consecutive uses.\n\nThis guide walks through six critical buying factors — capacity, cooking speed, temperature precision, cleaning ease, smart features, and counter footprint — before presenting our top four picks. Every model featured is available on Amazon with Prime shipping, and prices reflect current listings as of April 2026.",
-
   "buying_guide": [
     {
       "title": "Capacity and Family Size Fit",
@@ -37,9 +36,7 @@
       "body": "Air fryers run fans continuously during cooking, generating 55–72 dB depending on model and speed. The Instant Vortex Plus 6-Quart is the quietest tested at roughly 58 dB at full speed — comparable to a normal conversation. The Cosori Turbo Blaze 6-Qt registers around 65 dB. For footprint: the Instant Vortex Plus occupies about 11\" × 11\" of counter space, while the Ninja Foodi DualZone XL requires a full 15\" × 11\" due to its side-by-side basket design. The Breville Smart Oven Air Fryer Pro demands 21\" × 16\" — plan accordingly for smaller kitchens."
     }
   ],
-
   "verdict": "The Ninja Foodi 6-in-1 DualZone Air Fryer XL at $199 is our top pick for 2026. Its 10-quart dual-zone design — the only air fryer tested that cooks two foods at different temperatures simultaneously — combined with the Smart Finish sync feature makes it unmatched for family cooking. No other air fryer in this price range handles a full chicken dinner with sides in a single cycle. For buyers who don't need that capacity, the Cosori Turbo Blaze 6-Qt at $119 is the best value: sub-2-minute preheat, 12 presets, and a fully dishwasher-safe basket. Both are proven performers with thousands of verified Amazon reviews, and we're confident recommending either for daily use in 2026.",
-
   "products": [
     {
       "name": "Ninja Foodi 6-in-1 DualZone Air Fryer XL (DZ401)",
@@ -137,8 +134,17 @@
     }
   ],
   "related_articles": [
-    {"slug": "best-nonstick-frying-pans-2026", "title": "Best Nonstick Frying Pans of 2026: Tested in Our Kitchen"},
-    {"slug": "best-robot-vacuums-2026", "title": "Best Robot Vacuums of 2026: Top Picks for Every Home"},
-    {"slug": "best-air-purifiers-2026", "title": "Best Air Purifiers of 2026: Clean Air for Every Room"}
+    {
+      "slug": "best-nonstick-frying-pans-2026",
+      "title": "Best Nonstick Frying Pans of 2026: Tested in Our Kitchen"
+    },
+    {
+      "slug": "best-robot-vacuums-2026",
+      "title": "Best Robot Vacuums of 2026: Top Picks for Every Home"
+    },
+    {
+      "slug": "best-air-purifiers-2026",
+      "title": "Best Air Purifiers of 2026: Clean Air for Every Room"
+    }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "slug": "best-smart-home-devices-2026",
   "title": "Best Smart Home Devices of 2026: Make Your Home Smarter",
-  "category": "Technology",
+  "category": "Smart Home",
   "date": "2026-04-15",
   "excerpt": "From smart speakers to video doorbells — the best devices to automate your home in 2026 at every price point.",
   "thumbnail": "https://images.unsplash.com/photo-1558002038-1055907df827?w=800&q=80",
@@ -132,8 +132,17 @@
     }
   ],
   "related_articles": [
-    {"slug": "best-smart-thermostats-2026", "title": "Best Smart Thermostats 2026: Top 6 Picks Tested & Ranked"},
-    {"slug": "best-robot-vacuums-2026", "title": "Best Robot Vacuums 2026"},
-    {"slug": "best-air-purifiers-2026", "title": "Best Air Purifiers 2026"}
+    {
+      "slug": "best-smart-thermostats-2026",
+      "title": "Best Smart Thermostats 2026: Top 6 Picks Tested & Ranked"
+    },
+    {
+      "slug": "best-robot-vacuums-2026",
+      "title": "Best Robot Vacuums 2026"
+    },
+    {
+      "slug": "best-air-purifiers-2026",
+      "title": "Best Air Purifiers 2026"
+    }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "slug": "airpods-pro-vs-airpods-4",
   "title": "AirPods Pro 3 vs AirPods 4: Which Should You Buy in 2026?",
-  "category": "Technology",
+  "category": "Tech",
   "date": "2026-04-14",
   "excerpt": "AirPods Pro 3 or AirPods 4? We break down every difference so you can decide which Apple earbuds are worth your money.",
   "thumbnail": "https://images.unsplash.com/photo-1606220838315-056192d5e927?w=800&q=80",
@@ -99,8 +99,17 @@
     }
   ],
   "related_articles": [
-    {"slug": "best-wireless-earbuds-2026", "title": "Best Wireless Earbuds of 2026: Tested & Ranked"},
-    {"slug": "best-gaming-headsets-2026", "title": "Best Gaming Headsets of 2026"},
-    {"slug": "best-bluetooth-speakers-2026", "title": "Best Portable Bluetooth Speakers of 2026"}
+    {
+      "slug": "best-wireless-earbuds-2026",
+      "title": "Best Wireless Earbuds of 2026: Tested & Ranked"
+    },
+    {
+      "slug": "best-gaming-headsets-2026",
+      "title": "Best Gaming Headsets of 2026"
+    },
+    {
+      "slug": "best-bluetooth-speakers-2026",
+      "title": "Best Portable Bluetooth Speakers of 2026"
+    }
   ]
 }

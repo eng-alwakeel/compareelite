@@ -1,7 +1,7 @@
 {
   "slug": "best-walking-pads-2026",
   "title": "Best Walking Pads of 2026: Get Your Steps Without Leaving Home",
-  "category": "Health & Fitness",
+  "category": "Home Fitness",
   "date": "2026-04-11",
   "excerpt": "Walking pads are the trending home fitness device. Here are the best compact under-desk treadmills for 2026.",
   "thumbnail": "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=800&q=80",
@@ -116,8 +116,17 @@
     }
   ],
   "related_articles": [
-    {"slug": "best-treadmills-2026", "title": "Best Treadmills of 2026: Top Picks for Every Runner and Budget"},
-    {"slug": "best-yoga-mats-2026", "title": "Best Yoga Mats of 2026"},
-    {"slug": "best-resistance-bands-2026", "title": "Best Resistance Bands of 2026: For Home Workouts & Travel"}
+    {
+      "slug": "best-treadmills-2026",
+      "title": "Best Treadmills of 2026: Top Picks for Every Runner and Budget"
+    },
+    {
+      "slug": "best-yoga-mats-2026",
+      "title": "Best Yoga Mats of 2026"
+    },
+    {
+      "slug": "best-resistance-bands-2026",
+      "title": "Best Resistance Bands of 2026: For Home Workouts & Travel"
+    }
   ]
 }
