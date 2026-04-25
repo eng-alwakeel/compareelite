@@ -102,7 +102,7 @@ Run these first. Any forbidden field = immediate REJECTED status regardless of o
 ### `category`
 | # | Check | Rule |
 |---|---|---|
-| 24 | Valid category value | Must be exactly one of: `Technology`, `Kitchen`, `Fitness`, `Outdoor`, `Health`, `Automotive`, `Home`, `Travel`, `Fashion` |
+| 24 | Valid category value | Must be exactly one of: `Tech`, `Home Office`, `Smart Home`, `Home Fitness` — any other value is an auto-fail |
 
 ### `date`
 | # | Check | Rule |
@@ -155,6 +155,7 @@ For each product in `products`:
 | 45 | `cons` are full sentences | Each con must be a complete sentence with a specific limitation. Reject vague entries like "Expensive" |
 | 46 | `cons` count | 1–2 cons per product |
 | 47 | Pros contain numbers/specs | At least 1 pro per product must contain a measurable number (hours, grams, Hz, dB, $, %, watts, etc.) |
+| 48 | Button label is "Buy on Amazon" | The `link` button must render as **"Buy on Amazon"** — reject any article that uses "Check Price", "View Deal", "See Price", or any other label |
 
 ---
 
@@ -233,9 +234,20 @@ If `related_articles` IS present, run all checks below:
 
 ---
 
+## Check Group 11 — UI & Site Rules
+
+| # | Check | Rule |
+|---|---|---|
+| 76 | Category is one of 4 approved niches | `category` must be exactly one of: `Tech`, `Home Office`, `Smart Home`, `Home Fitness` — this duplicates Check 24 as a final gate |
+| 77 | No duplicate CTA buttons | The article must not produce duplicate "Buy on Amazon" buttons for the same product. One button per product only. |
+| 78 | Email signup appears once only | If an email signup / newsletter section exists in the article, it must appear exactly once — not repeated per product or per section |
+| 79 | Buy on Amazon button label | Every Amazon affiliate link must use the label **"Buy on Amazon"** — never "Check Price", "View Deal", "See Price", "Shop Now", or any other label |
+
+---
+
 ## Scoring & Decision
 
-- **Total checks: 75**
+- **Total checks: 79**
 - **Auto-fail checks (Group 1):** Any forbidden field = REJECTED immediately
 - **Group 9 checks (68–71):** Only count toward total if `related_articles` is present
 - **Pass threshold:** Must pass ALL applicable checks to be APPROVED
