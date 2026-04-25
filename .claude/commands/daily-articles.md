@@ -4,6 +4,63 @@ Generate **4 new affiliate articles** for compareelite.com with full SEO optimiz
 
 ---
 
+## Step 0 — Image Health Check (Run First)
+
+Before generating new articles, audit all existing product images to catch any broken URLs.
+
+### What to check
+
+Scan every `articles/*.json` file. For each product, flag its `image` field if it:
+- Contains `images-na.ssl-images-amazon.com` (deprecated CDN — always returns 1×1 GIF)
+- Contains `/images/P/` (old ASIN-based path — always returns 1×1 GIF)
+- Is empty or missing
+
+Also verify the `buying_guide` field is an array (not a string) — a string value causes the JS renderer to crash.
+
+### How to fix broken images
+
+For each broken product image:
+
+1. Extract the ASIN from the product's `link` field:
+   ```
+   https://www.amazon.com/dp/B0XXXXXXXX?tag=... → ASIN = B0XXXXXXXX
+   ```
+
+2. Fetch the Amazon product page:
+   ```bash
+   curl -s "https://www.amazon.com/dp/{ASIN}" \
+     -H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" \
+     --compressed -L --max-time 15
+   ```
+
+3. Extract the image ID using this regex:
+   ```
+   "hiRes":"https://m\.media-amazon\.com/images/I/([^".]+)\.
+   ```
+
+4. Build the final URL:
+   ```
+   https://m.media-amazon.com/images/I/{IMAGE_ID}._SL500_.jpg
+   ```
+
+5. If the ASIN returns 404 (product delisted), search for a current Amazon listing of the same product using WebSearch, get a valid ASIN, and retry from step 2.
+
+6. Update the `image` field in the JSON file with the new URL.
+
+### How to fix broken buying_guide
+
+If `buying_guide` is a string instead of an array, convert it: split the string at recognizable section breaks (e.g. "Title — body." patterns) and transform into:
+```json
+[{"title": "...", "body": "..."}]
+```
+
+### Commit rule
+
+- If **any** fixes were made → `git add articles/ && git commit -m "fix: auto-correct broken product images"`
+- If **no issues found** → skip entirely (no commit, no output)
+
+---
+
 ## Step 1 — Pick 4 New Topics
 
 List all files in `articles/` to get existing slugs. Then pick **4 topics** from the rotation list below that have **no matching file yet**. Choose diverse categories (avoid picking 2 from the same category).
