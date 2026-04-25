@@ -1,12 +1,27 @@
 import { MetadataRoute } from 'next'
-import fs from 'fs'
-import path from 'path'
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const articlesDir = path.join(process.cwd(), 'articles')
-  const slugs = fs.readdirSync(articlesDir)
-    .filter(f => f.endsWith('.json'))
-    .map(f => f.replace('.json', ''))
+export const revalidate = 3600 // re-fetch every hour
+
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  let slugs: string[] = []
+
+  try {
+    const res = await fetch(
+      'https://api.github.com/repos/eng-alwakeel/compareelite/contents/articles',
+      {
+        headers: { Accept: 'application/vnd.github+json' },
+        next: { revalidate: 3600 },
+      }
+    )
+    if (res.ok) {
+      const files: { name: string }[] = await res.json()
+      slugs = files
+        .filter(f => f.name.endsWith('.json'))
+        .map(f => f.name.replace('.json', ''))
+    }
+  } catch {
+    // fall through with empty slugs — static pages still included
+  }
 
   const articleEntries: MetadataRoute.Sitemap = slugs.map(slug => ({
     url: `https://compareelite.com/blog/article?slug=${slug}`,
