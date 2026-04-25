@@ -42,7 +42,7 @@ Every article MUST output valid JSON using the EXACT schema below — no excepti
 {
   "slug": "best-[product]-2026",
   "title": "Best [Product] of 2026: Top X Picks Tested & Ranked",
-  "category": "Technology|Kitchen|Fitness|Outdoor|Health|Automotive|Home|Travel|Fashion",
+  "category": "Tech|Home Office|Smart Home|Home Fitness",
   "date": "YYYY-MM-DD",
   "excerpt": "150–160 char SEO description. Starts with primary keyword. Clear value proposition. No 'We' or 'Our' at start.",
   "thumbnail": "https://images.unsplash.com/photo-XXXXXXXXXXXXXXXXXX?w=800&q=80",
@@ -215,7 +215,18 @@ Every article MUST output valid JSON using the EXACT schema below — no excepti
 - Never invent slugs — if fewer than 2 related articles exist, include only what's real (minimum 1, or omit entirely)
 
 ### `category`
-- Must be exactly one of: `Technology`, `Kitchen`, `Fitness`, `Outdoor`, `Health`, `Automotive`, `Home`, `Travel`, `Fashion`
+
+Must be **exactly one** of these 4 values — nothing else is accepted:
+
+| Category | Use for |
+|---|---|
+| `Tech` | Laptops, monitors, gaming gear, headsets, keyboards, earbuds, speakers, power banks, dashcams, car mounts |
+| `Home Office` | Office chairs, desks, standing desks, desk organizers, ergonomic accessories |
+| `Smart Home` | Security cameras, robot vacuums, smart speakers, smart thermostats, air purifiers, smart plugs |
+| `Home Fitness` | Treadmills, stationary bikes, dumbbells, resistance bands, yoga mats, walking pads, supplements |
+
+**NEVER use:** `Kitchen`, `Food`, `Outdoor`, `Travel`, `Fashion`, `Health`, `Automotive`, or any other value.
+If a product doesn't clearly fit one of the 4 categories, pick the closest one — do not invent a new category.
 
 ---
 
