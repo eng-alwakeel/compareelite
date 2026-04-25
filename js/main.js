@@ -506,7 +506,7 @@ async function renderArticleDetail() {
             <span>📅 ${new Date(article.date).toLocaleDateString('en-US', {year:'numeric',month:'long',day:'numeric'})}</span>
             <span>⏱️ ${Math.ceil((article.products?.length || 3) * 2)} min read</span>
         </div>
-        <img src="${article.thumbnail || 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=900&q=80'}" alt="${article.title}" style="width:100%; border-radius:var(--radius-lg); margin-bottom:3rem; box-shadow:var(--shadow-md);" loading="eager">
+        <img src="${article.thumbnail || 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=900&q=80'}" alt="${article.title}" width="900" height="506" style="width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:var(--radius-lg); margin-bottom:3rem; box-shadow:var(--shadow-md);" loading="eager">
     `;
 
     container.innerHTML = bodyContent;
@@ -622,7 +622,7 @@ function buildArticleBody(article) {
         return `
         <div class="pcard">
             <div class="pcard-img">
-                <img src="${imgUrl}" alt="${p.name}" loading="lazy" onerror="this.style.display='none'">
+                <img src="${imgUrl}" alt="${p.name}" width="500" height="500" style="aspect-ratio:1/1; object-fit:contain;" loading="lazy" onerror="this.style.display='none'">
             </div>
             <div class="pcard-body">
                 <div class="pcard-stars">${ratingToStars(p.rating)}<span class="pcard-score">${p.rating}</span></div>
