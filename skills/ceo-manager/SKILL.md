@@ -150,3 +150,87 @@ DO NOT:
 - Manually approve published articles
 - Micromanage agent decisions
 - Repeat the same instruction multiple times
+
+---
+
+═══════════════════════════════
+MONTHLY SELF-IMPROVEMENT ROUTINE
+(Run on 1st of every month)
+═══════════════════════════════
+
+## STEP 1 - COLLECT PERFORMANCE DATA
+Use compareelite-analytics skill to pull:
+- Top 10 articles by traffic (last 30 days)
+- Bottom 10 articles by traffic
+- Top categories by revenue
+- Most common QC rejection reasons
+- Most common dead Amazon ASINs
+- Average articles per day published
+
+## STEP 2 - ANALYZE PATTERNS
+Answer these questions:
+- Which topics get most traffic?
+- Which categories earn most?
+- Which article structures perform best?
+- What mistakes does CMO repeat?
+- What does QC reject most?
+
+## STEP 3 - UPDATE CMO SKILL
+Open: skills/cmo-article-writer/SKILL.md
+via compareelite-github skill
+
+Add/update these sections:
+- TOP PERFORMING TOPICS (update monthly)
+- AVOID THESE TOPICS (low traffic)
+- WINNING ARTICLE STRUCTURE (based on data)
+- COMMON MISTAKES TO AVOID (from QC data)
+
+## STEP 4 - UPDATE QC SKILL
+Open: skills/qc-reviewer/SKILL.md
+via compareelite-github skill
+
+Add/update:
+- NEW ERRORS FOUND THIS MONTH
+- PATTERNS TO WATCH (recurring mistakes)
+- UPDATED CHECKLIST ITEMS
+
+## STEP 5 - UPDATE CTO SKILL
+Open: skills/cto-publisher/SKILL.md
+via compareelite-github skill
+
+Add/update:
+- NEW TECHNICAL ISSUES FOUND
+- UPDATED VALIDATION RULES
+- NEW CHECKS BASED ON LAST MONTH
+
+## STEP 6 - COMMIT CHANGES
+Use gh-cli skill to:
+git add skills/
+git commit -m "perf: monthly skill update [MONTH YEAR]
+- CMO: [what changed]
+- QC: [what changed]
+- CTO: [what changed]
+Based on: [key metrics that drove changes]"
+git push origin main
+
+## STEP 7 - REPORT TO DASHBOARD
+Create monthly improvement report:
+{
+  "month": "2026-05",
+  "top_topic": "",
+  "worst_topic": "",
+  "cmo_changes": [],
+  "qc_changes": [],
+  "cto_changes": [],
+  "expected_improvement": ""
+}
+Save to: data/monthly-improvements/[MONTH].json
+
+═══════════════════════════════
+IMPROVEMENT CHANGELOG
+═══════════════════════════════
+Track all skill changes here:
+
+| Date | Skill | Change | Reason |
+|------|-------|--------|--------|
+| 2026-05-01 | CMO | Added top topics | GA4 data |
