@@ -1,0 +1,33 @@
+{
+  "title": "",
+  "slug": "",
+  "category": "",
+  "date": "",
+  "thumbnail": "",
+  "excerpt": "",
+  "products": [
+    {
+      "name": "",
+      "price": "",
+      "rating": "9.8/10",
+      "best_for": "",
+      "image": "",
+      "link": "",
+      "pros": [],
+      "cons": []
+    }
+  ],
+  "buying_guide": [
+    {
+      "title": "",
+      "body": ""
+    }
+  ],
+  "faq": [
+    {
+      "q": "",
+      "a": ""
+    }
+  ],
+  "related_articles": []
+}

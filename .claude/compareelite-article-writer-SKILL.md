@@ -11,6 +11,26 @@ Every article MUST output valid JSON using the EXACT schema below — no excepti
 
 ---
 
+## ⛔ Hard Rules (validator will reject the article otherwise)
+
+You MUST use the exact `articles/TEMPLATE.json` structure with these field names:
+
+- Products: `name`, `price`, `rating` (string `"9.8/10"`), `best_for`, `image`, `link`, `pros`, `cons`
+- Buying guide entries: `title`, `body`
+- FAQ entries: `q`, `a`
+- Amazon affiliate URL goes in `link` and MUST contain `?tag=compareelite-20`
+- No markdown allowed in any field — all content must be plain text
+- Category must be exactly one of: `Tech`, `Home Office`, `Smart Home`, `Home Fitness`
+
+The publishing endpoint runs `scripts/validate-article.js` before saving and
+rejects any article that fails. To check locally:
+
+```
+npm run validate-articles articles/<slug>.json
+```
+
+---
+
 ## ⚠️ FORBIDDEN FIELDS — NEVER USE THESE
 
 | ❌ WRONG (breaks website) | ✅ CORRECT |
