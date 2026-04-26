@@ -5,6 +5,17 @@ description: Write high-converting Amazon affiliate articles for compareelite.co
 
 # compareelite-article-writer
 
+## STRICT RULES
+
+- No markdown in any field
+- Plain text only
+- `link` (Amazon affiliate URL) must contain `?tag=compareelite-20`
+- `category` must be one of: Tech, Home Office, Smart Home, Home Fitness
+- Minimum 6 products
+- Exactly 5 FAQ questions
+
+---
+
 Write high-converting Amazon affiliate articles for compareelite.com.
 Every article MUST output valid JSON using the EXACT schema below — no exceptions.
 **Minimum word count: 2000 words. Target: 2500+ words** across all text fields combined.
