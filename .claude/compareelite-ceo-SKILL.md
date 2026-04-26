@@ -38,6 +38,7 @@ Sibling skills in this pipeline: `compareelite-article-writer` (CMO),
 3. Agent reports a blocker
 4. Weekly review (Monday 9 AM)
 5. Monthly goal not on track
+6. DEAD Amazon links > 0 for two consecutive heartbeats (revenue leak)
 
 If none of these are true, do nothing and wait for the next heartbeat.
 
@@ -50,8 +51,9 @@ Every heartbeat (every 4 hours):
 1. Count articles published today
 2. Check if any blockers reported
 3. Check if any pipeline is stuck
-4. If all good → wait for next heartbeat
-5. If issue → resolve it
+4. Read DEAD-link count from `data/broken-amazon-links.json`
+5. If all good → wait for next heartbeat
+6. If issue → resolve it
 
 ### How to gather the numbers
 
@@ -61,6 +63,12 @@ Every heartbeat (every 4 hours):
   comments tagged for the CEO.
 - **Pipeline stuck:** the CTO should be emitting PUBLISH or REJECT reports
   for every queued article. Silence on a queued slug for >4 hours = stuck.
+- **Broken Amazon links:** read `data/broken-amazon-links.json` and count
+  rows where `state === "DEAD"`. Every DEAD link is a click going nowhere
+  — pure revenue leak. The CTO routes these back to the CMO; you only
+  intervene if the count stays > 0 across two consecutive heartbeats.
+  The data file is regenerated every time the CTO runs
+  `node scripts/validate-amazon-links.js`.
 
 ### Heartbeat report format
 
@@ -72,6 +80,7 @@ Every heartbeat (every 4 hours):
 Published today:   <n>
 Blockers:          <n>  [list slug + owner if any]
 Stuck pipelines:   <n>  [list slug + last-touched age if any]
+Dead Amazon links: <n>  [from data/broken-amazon-links.json]
 
 ACTION: <NONE | INTERVENE — <one-line reason>>
 ```
@@ -101,6 +110,12 @@ view on top.
 PUBLISHING VELOCITY
   Published this week:  <n>  /  35 target  (<n%>)
   Status:               <ON TRACK | BEHIND | AT RISK>
+
+LINK INTEGRITY
+  Live Amazon links:    <n>
+  DEAD links:           <n>   [must be 0 to ship cleanly]
+  BLOCKED (unverified): <n>   [datacenter IP false positives]
+  New DEAD this week:   <n>   [vs. last week's report]
 
 RECURRING ISSUES
   - <category>: <count> — <one-line root cause>

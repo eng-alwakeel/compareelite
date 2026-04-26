@@ -35,10 +35,10 @@ on the publish branch). Capture the `slug`, the filename, every product
 | 1 | `thumbnail` URL returns HTTP 200 | `curl -fsI "$thumbnail"` — must exit 0 |
 | 2 | Every product `image` URL returns HTTP 200 | Same `curl -fsI` for each `products[].image` |
 | 3 | Every product `link` contains `?tag=compareelite-20` | String match in each `products[].link` |
-| 4 | Every product `link` returns HTTP 200 | `curl -fsI -L "$link"` for each `products[].link` (follow redirects; Amazon redirects affiliate links) |
+| 4 | Every product `link` returns HTTP 200 | Run `node scripts/validate-amazon-links.js --slug <slug>`. The script does HEAD→GET fallback with a real-browser User-Agent and a 12s timeout. Any `DEAD` result (HTTP 404/410 or "Page Not Found" body marker) = REJECT. `BLOCKED` (503/429) and `ERROR` (timeout) do NOT fail — datacenter IPs trigger false positives. |
 | 5 | Every `related_articles[].slug` exists in `articles/` | List `articles/*.json` on `main` and confirm each related slug has a matching file |
 | 6 | `slug` matches the filename exactly | `article.slug === basename(filePath, ".json")` |
-| 7 | `scripts/validate-article.js` returns PASS | Run `node scripts/validate-article.js articles/<slug>.json` — exit code must be 0 |
+| 7 | `scripts/validate-article.js` returns PASS | Run `node scripts/validate-article.js articles/<slug>.json` — exit code must be 0. (This also enforces the offline ASIN-DEAD-list check using `data/broken-amazon-links.json`.) |
 
 ### 3. Decision
 
@@ -53,12 +53,20 @@ on the publish branch). Capture the `slug`, the filename, every product
 # Schema validation (the source of truth for field names and structure)
 npm run validate-articles articles/<slug>.json
 
-# Liveness probe — fail fast on the first dead URL
-curl -fsI -L "<url>" >/dev/null && echo OK || echo DEAD
+# Amazon-link liveness for the article (writes data/broken-amazon-links.{json,md})
+node scripts/validate-amazon-links.js --slug <slug>
+
+# Quick image / thumbnail liveness probe
+curl -fsI -L --max-time 10 "<url>" >/dev/null && echo OK || echo DEAD
 
 # Slug / filename agreement
 node -e "const p='articles/<slug>.json'; const a=require('./'+p); process.exit(a.slug===require('path').basename(p,'.json')?0:1)"
 ```
+
+After every Amazon-link probe, `data/broken-amazon-links.json` is the
+authoritative list of DEAD ASINs. The schema validator reads it on every
+run, so once a DEAD ASIN is recorded it will fail validation across every
+article that uses it — not just the one that was probed.
 
 ### Report format
 
@@ -112,6 +120,21 @@ Scan every article and find:
 - **Missing same-category links:** articles whose `related_articles` skip
   obvious same-category siblings.
 
+### 2a. Site-wide Amazon link audit
+
+Run `node scripts/validate-amazon-links.js` (no `--slug` flag) to probe
+every product link in `articles/*.json`. The script writes:
+  - `data/broken-amazon-links.json` (machine-readable)
+  - `data/broken-amazon-links.md` (CEO-readable summary)
+
+In the weekly report, surface:
+  - DEAD count (must be 0 to ship cleanly).
+  - BLOCKED count and a note that datacenter IPs trip Amazon's CAPTCHA.
+  - Any new DEAD ASINs that appeared this week vs. last week.
+
+If the script flags DEAD links, do NOT fix them yourself — file the article
+slugs back to the writer (CMO) for ASIN replacement, then re-probe.
+
 ### 3. Report to CEO
 
 ```
@@ -146,6 +169,9 @@ ACTION ITEMS FOR CEO
 - Schema: `articles/TEMPLATE.json`
 - Validator (source of truth): `scripts/validate-article.js`
 - CLI: `npm run validate-articles [path]`
+- Amazon link liveness: `scripts/validate-amazon-links.js`
+  (CLI flags: `--slug <slug>`, `--json <path>`, `--md <path>`,
+  `--no-md`, `--no-json`). Outputs `data/broken-amazon-links.{json,md}`.
 - Publish endpoint (server-side gate): `api/publish.js` — already runs the
   same validator; the CTO checks above are the **pre-publish** layer that
   catches issues before the request even reaches the endpoint.

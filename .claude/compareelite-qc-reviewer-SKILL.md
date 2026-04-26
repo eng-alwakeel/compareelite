@@ -149,6 +149,8 @@ For each product in `products`:
 | 39 | `link` contains affiliate tag | Every `link` must contain `?tag=compareelite-20` |
 | 40 | `link` uses correct Amazon format | Must be `https://www.amazon.com/dp/[ASIN]?tag=compareelite-20` |
 | 41 | ASIN format | The ASIN in each link must be 10 alphanumeric characters (e.g. `B09ZY3K6TW`) |
+| 41a | ASIN not in DEAD list | The ASIN MUST NOT appear in `data/broken-amazon-links.json` with `state: "DEAD"`. If it does → REJECTED. Writer must replace it with a verified ASIN. |
+| 41b | ASIN liveness probe (optional) | If running with network access, run `node scripts/validate-amazon-links.js --slug <slug>` and reject on any DEAD result. BLOCKED/ERROR is not a fail (datacenter IP false positives). |
 | 42 | `image` is present and correct | Every product MUST have an `image` field — missing = auto-fail. Must be `https://m.media-amazon.com/images/I/[IMAGE_ID]._SL500_.jpg`. Reject `images-na.ssl-images-amazon.com`, Amazon product page URLs, or any other format |
 | 43 | `pros` are full sentences | Each pro must be a complete sentence (starts with capital, ends with period, contains a measurable spec or number). Reject fragments like "Long battery life" |
 | 44 | `pros` count | Exactly 3 pros per product |
@@ -304,6 +306,7 @@ TOTAL:          XXXX words  [≥2000 ✅ / <2000 ❌]
 
 | Issue | Fix |
 |---|---|
+| ASIN flagged as DEAD by validator | Open `data/broken-amazon-links.md`, find the row, swap that product's ASIN with a verified live one from amazon.com (or remove the product). Then re-run `npm run validate-articles articles/<slug>.json`. |
 | `featured_image` present | Rename to `thumbnail` — must be Unsplash URL |
 | `published_at` present | Rename to `date` — format `YYYY-MM-DD` |
 | `tagline` present | Rename to `best_for` |

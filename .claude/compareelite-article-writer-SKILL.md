@@ -21,6 +21,29 @@ description: Write high-converting Amazon affiliate articles for compareelite.co
 8. `rating` MUST be string format like "8.5/10" (NOT number)
 9. All images MUST be valid Amazon URLs
 10. `slug` MUST match filename exactly
+11. **DO NOT invent ASINs.** Use only real product ASINs from Amazon. If you don't know a real ASIN for a product, search amazon.com first. Better to have fewer products than fake links. Any ASIN listed in `data/broken-amazon-links.json` (state: DEAD) MUST NOT be reused.
+
+---
+
+## AMAZON LINK INTEGRITY (NON-NEGOTIABLE)
+
+Every product `link` is the entire revenue path. Fake or dead ASINs leak
+clicks to nowhere. Before adding any product:
+
+1. The ASIN must come from a product page you can verify exists on
+   amazon.com (training data is fine for well-known products; for anything
+   you're not sure about, search first).
+2. The ASIN must be exactly 10 alphanumeric characters in `/dp/<ASIN>` —
+   no shortened links, no `gp/product`, no `s?k=`.
+3. The ASIN must NOT appear as `DEAD` in `data/broken-amazon-links.json`.
+   Open that file before writing the article and skip any ASIN with
+   `state: "DEAD"`.
+4. If you cannot find a real, live ASIN for a product → drop the product
+   and pick a different one. Never publish a placeholder.
+
+The CTO runs `node scripts/validate-amazon-links.js --slug <slug>` before
+publishing. Any DEAD ASIN = REJECT. The validator (`validate-article.js`)
+also reads the broken-links report and rejects known-dead ASINs offline.
 
 ---
 
@@ -429,6 +452,10 @@ AI search engines (ChatGPT, Gemini, Perplexity) cite articles that provide struc
 - Use ASINs for well-known, highly-reviewed products from your training data
 - Cross-check: ASIN must match the product name and model
 - If you cannot verify an ASIN confidently, pick a different well-known product
+- Before submitting, cross-reference your ASINs against the DEAD list in
+  `data/broken-amazon-links.json`. If any of yours appear there, swap them.
+- The CTO runs `scripts/validate-amazon-links.js` as a pre-publish gate;
+  any HTTP 404 / 410 / "Page Not Found" body marker fails the article.
 
 ---
 

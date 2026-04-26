@@ -20,6 +20,27 @@ const AMAZON_TAG = '?tag=compareelite-20';
 const MIN_PRODUCTS = 6;
 const FAQ_COUNT = 5;
 const RATING_PATTERN = /^\d+(?:\.\d+)?\/10$/;
+const ASIN_PATH_RE = /\/dp\/([A-Z0-9]{10})(?:[/?]|$)/;
+const BROKEN_LINKS_PATH = path.resolve(__dirname, '..', 'data', 'broken-amazon-links.json');
+
+let knownDeadCache = null;
+function knownDeadAsins() {
+  if (knownDeadCache !== null) return knownDeadCache;
+  try {
+    const raw = fs.readFileSync(BROKEN_LINKS_PATH, 'utf8');
+    const data = JSON.parse(raw);
+    const dead = new Map();
+    for (const r of data.results || []) {
+      if (r.state === 'DEAD' && r.asin) {
+        dead.set(r.asin, r.reason || 'previously confirmed dead');
+      }
+    }
+    knownDeadCache = dead;
+  } catch {
+    knownDeadCache = new Map();
+  }
+  return knownDeadCache;
+}
 
 const REQUIRED_TOP_FIELDS = [
   'title', 'slug', 'category', 'date', 'thumbnail', 'excerpt',
@@ -132,6 +153,16 @@ function validateArticle(article, filePath) {
         if (!isHttpUrl(p.link)) errors.push(`${tag}.link must be a valid http(s) URL`);
         if (!p.link.includes(AMAZON_TAG)) {
           errors.push(`${tag}.link must contain ${AMAZON_TAG}`);
+        }
+        const asinMatch = p.link.match(ASIN_PATH_RE);
+        if (!asinMatch) {
+          errors.push(`${tag}.link must point to /dp/<10-char ASIN>`);
+        } else {
+          const asin = asinMatch[1];
+          const dead = knownDeadAsins();
+          if (dead.has(asin)) {
+            errors.push(`${tag}.link ASIN ${asin} is in the broken-links report (${dead.get(asin)}) — replace with a verified ASIN`);
+          }
         }
       }
       if ('pros' in p) {
