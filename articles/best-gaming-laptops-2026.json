@@ -53,7 +53,8 @@
       "cons": [
         "At $1,449 it sits at the high end of the mid-range, though the OLED display and battery life justify the premium.",
         "No dedicated numpad due to the compact 14-inch form factor."
-      ]
+      ],
+      "asin": "B0CSJJ54GJ"
     },
     {
       "name": "Razer Blade 15 (2024)",
@@ -70,7 +71,8 @@
       "cons": [
         "At $2,499 it is the most expensive laptop on this list — best justified for professionals who also game.",
         "RAM and SSD are soldered, making future upgrades impossible."
-      ]
+      ],
+      "asin": "B0CGQ3TBCT"
     },
     {
       "name": "Acer Predator Helios 18 (2024)",
@@ -87,7 +89,8 @@
       "cons": [
         "Weighs 3.1kg and is best used as a desktop replacement — not practical for daily commuting.",
         "Battery lasts only 2-3 hours under gaming load; always keep the charger nearby."
-      ]
+      ],
+      "asin": "B0D94Z7FL8"
     },
     {
       "name": "Lenovo Legion Slim 5 Gen 9",
@@ -104,7 +107,8 @@
       "cons": [
         "Built-in speakers lack bass and volume — use headphones for the best gaming audio experience.",
         "Webcam is only 1080p 30fps, which feels limited compared to competitors offering 1080p 60fps."
-      ]
+      ],
+      "asin": "B0C9DDXB9Q"
     },
     {
       "name": "HP Omen 16 (2024)",
@@ -121,7 +125,8 @@
       "cons": [
         "Plastic build quality feels noticeably less premium than the metal-chassis competitors on this list.",
         "Fan noise reaches 52dB under full gaming load — audible without headphones."
-      ]
+      ],
+      "asin": "B0DHJXTQ3D"
     }
   ],
   "faq": [

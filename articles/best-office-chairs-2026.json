@@ -53,7 +53,8 @@
       "cons": [
         "At $1,395 it is the most expensive chair on this list — best justified for those spending 6+ hours daily at a desk.",
         "Comes in three sizes (A, B, C) based on height and weight — sizing up correctly is essential for proper lumbar positioning."
-      ]
+      ],
+      "asin": "B01N0ZUN15"
     },
     {
       "name": "Steelcase Leap V2 Chair",
@@ -70,7 +71,8 @@
       "cons": [
         "4D armrests require patience to dial in — the adjustment mechanism is less intuitive than competitors like Branch or Herman Miller.",
         "Fabric-only back panel retains more heat than mesh alternatives during summer months."
-      ]
+      ],
+      "asin": "B01N4FRX5Q"
     },
     {
       "name": "Secretlab Titan Evo 2022",
@@ -87,7 +89,8 @@
       "cons": [
         "Gaming chair aesthetic with side bolsters and racing styling may not suit formal office environments.",
         "Armrests adjust only up/down and left/right — no pivot or depth adjustment compared to the 4D arms on Steelcase and Herman Miller."
-      ]
+      ],
+      "asin": "B0B3RGSD8B"
     },
     {
       "name": "Branch Ergonomic Chair",
@@ -104,7 +107,8 @@
       "cons": [
         "Assembly takes 45-60 minutes with two people — the instruction manual lacks clarity on the armrest attachment steps.",
         "Limited to black colorway — no fabric or color options compared to competitors like Secretlab."
-      ]
+      ],
+      "asin": "B08KHH6L7W"
     },
     {
       "name": "HON Ignition 2.0 Ergonomic Chair",
@@ -121,7 +125,8 @@
       "cons": [
         "Armrests adjust height only — no width, depth, or pivot adjustment limits comfort for users with wider shoulders.",
         "Seat cushion uses medium-density foam that feels noticeably firmer than memory foam alternatives after 4+ hours."
-      ]
+      ],
+      "asin": "B06Y3PGPR2"
     }
   ],
   "faq": [
