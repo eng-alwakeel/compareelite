@@ -26,7 +26,7 @@ jobs:
             let slugs = [];
             if (fs.existsSync(articlesDir)) {
               slugs = fs.readdirSync(articlesDir)
-                .filter(f => f.endsWith('.json'))
+                .filter(f => f.endsWith('.json') && f !== 'TEMPLATE.json')
                 .map(f => f.replace('.json', ''))
                 .sort();
             }
@@ -36,12 +36,15 @@ jobs:
             console.log('Manifest updated:', slugs.length, 'articles');
           "
 
+      - name: Regenerate sitemap.xml
+        run: node scripts/generate-sitemap.js
+
       - name: Configure Git
         run: |
           git config user.name "CompareElite Bot"
           git config user.email "bot@compareelite.com"
 
-      - name: Commit and push manifest
+      - name: Commit and push manifest + sitemap
         run: |
-          git add data/articles-manifest.json
-          git diff --staged --quiet && echo "No changes" || (git commit -m "chore: update articles manifest [skip ci]" && git push origin main)
+          git add data/articles-manifest.json sitemap.xml
+          git diff --staged --quiet && echo "No changes" || (git commit -m "chore: update articles manifest + sitemap [skip ci]" && git push origin main)

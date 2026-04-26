@@ -4,143 +4,203 @@
   <!-- Static Pages -->
   <url>
     <loc>https://compareelite.com/</loc>
-    <lastmod>2026-04-18</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://compareelite.com/blog</loc>
-    <lastmod>2026-04-18</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://compareelite.com/affiliate-disclosure</loc>
-    <lastmod>2026-04-18</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://compareelite.com/privacy</loc>
-    <lastmod>2026-04-18</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://compareelite.com/terms</loc>
-    <lastmod>2026-04-18</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
 
-  <!-- Technology Articles -->
+  <!-- Tech Articles -->
   <url>
-    <loc>https://compareelite.com/blog/article?slug=best-wireless-earbuds-2026</loc>
-    <lastmod>2026-04-18</lastmod>
+    <loc>https://compareelite.com/blog/article?slug=airpods-pro-vs-airpods-4</loc>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://compareelite.com/blog/article?slug=best-bluetooth-speakers-2026</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://compareelite.com/blog/article?slug=best-portable-power-banks-2026</loc>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://compareelite.com/blog/article?slug=best-smart-home-devices-2026</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://compareelite.com/blog/article?slug=airpods-pro-vs-airpods-4</loc>
-    <lastmod>2026-04-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Home & Garden Articles -->
-  <url>
-    <loc>https://compareelite.com/blog/article?slug=best-insulated-water-bottles-2026</loc>
-    <lastmod>2026-04-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://compareelite.com/blog/article?slug=best-robot-vacuums-2026</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://compareelite.com/blog/article?slug=best-air-purifiers-2026</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Health & Fitness Articles -->
-  <url>
-    <loc>https://compareelite.com/blog/article?slug=best-creatine-supplements-2026</loc>
-    <lastmod>2026-04-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://compareelite.com/blog/article?slug=best-resistance-bands-2026</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://compareelite.com/blog/article?slug=best-adjustable-dumbbells-2026</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://compareelite.com/blog/article?slug=best-whey-protein-2026</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://compareelite.com/blog/article?slug=best-walking-pads-2026</loc>
-    <lastmod>2026-04-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Auto Articles -->
-  <url>
-    <loc>https://compareelite.com/blog/article?slug=best-portable-jump-starters-2026</loc>
-    <lastmod>2026-04-18</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://compareelite.com/blog/article?slug=best-car-phone-mounts-2026</loc>
-    <lastmod>2026-04-16</lastmod>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://compareelite.com/blog/article?slug=best-dash-cams-2026</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://compareelite.com/blog/article?slug=best-gaming-headsets-2026</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://compareelite.com/blog/article?slug=best-gaming-laptops-2026</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://compareelite.com/blog/article?slug=best-mechanical-keyboards-2026</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://compareelite.com/blog/article?slug=best-portable-jump-starters-2026</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://compareelite.com/blog/article?slug=best-portable-power-banks-2026</loc>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://compareelite.com/blog/article?slug=best-portable-tire-inflators-2026</loc>
-    <lastmod>2026-04-14</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://compareelite.com/blog/article?slug=best-dash-cams-2026</loc>
-    <lastmod>2026-04-12</lastmod>
+    <loc>https://compareelite.com/blog/article?slug=best-wireless-earbuds-2026</loc>
+    <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Home Office Articles -->
+  <url>
+    <loc>https://compareelite.com/blog/article?slug=best-office-chairs-2026</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Smart Home Articles -->
+  <url>
+    <loc>https://compareelite.com/blog/article?slug=best-air-fryers-2026</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://compareelite.com/blog/article?slug=best-air-purifiers-2026</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://compareelite.com/blog/article?slug=best-robot-vacuums-2026</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://compareelite.com/blog/article?slug=best-smart-home-devices-2026</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://compareelite.com/blog/article?slug=best-smart-security-cameras-2026</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://compareelite.com/blog/article?slug=best-smart-speakers-2026</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://compareelite.com/blog/article?slug=best-smart-thermostats-2026</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Home Fitness Articles -->
+  <url>
+    <loc>https://compareelite.com/blog/article?slug=best-adjustable-dumbbells-2026</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://compareelite.com/blog/article?slug=best-creatine-supplements-2026</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://compareelite.com/blog/article?slug=best-insulated-water-bottles-2026</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://compareelite.com/blog/article?slug=best-resistance-bands-2026</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://compareelite.com/blog/article?slug=best-treadmills-2026</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://compareelite.com/blog/article?slug=best-walking-pads-2026</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://compareelite.com/blog/article?slug=best-whey-protein-2026</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://compareelite.com/blog/article?slug=best-yoga-mats-2026</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
 </urlset>
