@@ -178,10 +178,6 @@
     {
       "q": "Which smart speaker is best for an elderly or non-tech-savvy user?",
       "a": "The Amazon Echo Dot (5th Gen) at $49 is the most recommended smart speaker for elderly users and those new to smart home technology. The Alexa wake word is consistent and well-recognized, the setup process through the Alexa app is guided and straightforward, and common use cases — weather, timers, reminders, phone calls, and music — work reliably with simple natural language commands. Amazon's 'Alexa Together' service ($19.99/month) is specifically designed for elderly family members living independently, adding remote monitoring, fall detection integration, and urgent response features. The Echo Show 5 (with a screen) is an alternative worth considering for users who benefit from visual confirmation of information."
-    },
-    {
-      "q": "Do smart speakers record conversations all the time?",
-      "a": "No — smart speakers are designed to listen only for their wake word and begin recording only after it is detected. The speaker's microphone array continuously processes audio locally on a short rolling buffer (typically 1-2 seconds) to detect the wake word pattern, but this local processing is not transmitted to servers. After the wake word is detected, the following command is sent to cloud servers for processing. All three major platforms allow you to review, listen to, and delete your command history: Amazon via the Alexa app, Google via myactivity.google.com, and Apple via Siri & Search settings. All Echo speakers include a physical microphone mute button that disconnects the hardware circuit, providing verified offline status with a red LED indicator."
     }
   ],
   "related_articles": [
