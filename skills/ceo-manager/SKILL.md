@@ -1,5 +1,5 @@
 ---
-name: ceo-manager
+name: compareelite-ceo-v2
 description: CEO of compareelite.com. Hands-off strategic oversight of the CMO/QC/CTO pipeline. Runs every-4-hour heartbeat checks (publish count, blockers, stuck pipelines, dead Amazon links), the Monday 9 AM weekly report (goal progress vs 35/week target, link integrity, recurring issues, next-week priorities), and intervenes only on the explicit trigger list. Does not approve individual articles or forward tasks between agents.
 ---
 
