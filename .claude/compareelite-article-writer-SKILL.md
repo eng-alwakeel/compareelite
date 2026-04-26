@@ -32,7 +32,7 @@ description: Write high-converting Amazon affiliate articles for compareelite.co
   "slug": "best-product-2026",
   "category": "Tech",
   "date": "2026-04-26",
-  "read_time": "12 min read",
+  "read_time": "12 min read" (optional),
   "thumbnail": "https://valid-image-url.jpg",
   "excerpt": "Brief description in 1-2 sentences.",
   "products": [...],
@@ -48,7 +48,7 @@ description: Write high-converting Amazon affiliate articles for compareelite.co
 
 ```json
 {
-  "rank": 1,
+  "rank": 1 (optional),
   "name": "Brand Model Name",
   "price": "$99",
   "rating": "8.5/10",
@@ -123,7 +123,7 @@ description: Write high-converting Amazon affiliate articles for compareelite.co
 
 Run this checklist mentally:
 
-- ✅ All 6+ products have rank, name, price, rating, best_for, image, link, pros, cons?
+- ✅ All 6+ products have name, price, rating, best_for, image, link, pros, cons?
 - ✅ All amazon links contain ?tag=compareelite-20?
 - ✅ Exactly 5 FAQ questions?
 - ✅ Category is one of 4 niches?
