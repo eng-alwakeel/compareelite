@@ -1,41 +1,58 @@
 import { MetadataRoute } from 'next'
+import fs from 'node:fs'
+import path from 'node:path'
 
-export const revalidate = 3600 // re-fetch every hour
+const SITE_URL = 'https://compareelite.com'
+const ARTICLES_DIR = path.join(process.cwd(), 'articles')
+const VALID_CATEGORIES = ['Tech', 'Home Office', 'Smart Home', 'Home Fitness'] as const
 
-export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  let slugs: string[] = []
+type ArticleEntry = { slug: string; category: string }
 
-  try {
-    const res = await fetch(
-      'https://api.github.com/repos/eng-alwakeel/compareelite/contents/articles',
-      {
-        headers: { Accept: 'application/vnd.github+json' },
-        next: { revalidate: 3600 },
+function readArticles(): ArticleEntry[] {
+  if (!fs.existsSync(ARTICLES_DIR)) return []
+  return fs
+    .readdirSync(ARTICLES_DIR)
+    .filter((f) => f.endsWith('.json') && f !== 'TEMPLATE.json')
+    .map((f) => {
+      const filePath = path.join(ARTICLES_DIR, f)
+      try {
+        const data = JSON.parse(fs.readFileSync(filePath, 'utf8'))
+        return {
+          slug: path.basename(f, '.json'),
+          category: typeof data?.category === 'string' ? data.category : '',
+        }
+      } catch {
+        return null
       }
-    )
-    if (res.ok) {
-      const files: { name: string }[] = await res.json()
-      slugs = files
-        .filter(f => f.name.endsWith('.json'))
-        .map(f => f.name.replace('.json', ''))
-    }
-  } catch {
-    // fall through with empty slugs — static pages still included
-  }
+    })
+    .filter((a): a is ArticleEntry => a !== null)
+}
 
-  const articleEntries: MetadataRoute.Sitemap = slugs.map(slug => ({
-    url: `https://compareelite.com/blog/article?slug=${slug}`,
-    lastModified: new Date(),
+export default function sitemap(): MetadataRoute.Sitemap {
+  const today = new Date()
+  const articles = readArticles()
+
+  const staticPages: MetadataRoute.Sitemap = [
+    { url: `${SITE_URL}/`, lastModified: today, changeFrequency: 'daily', priority: 1.0 },
+    { url: `${SITE_URL}/blog`, lastModified: today, changeFrequency: 'daily', priority: 0.9 },
+    { url: `${SITE_URL}/affiliate-disclosure`, lastModified: today, changeFrequency: 'monthly', priority: 0.3 },
+    { url: `${SITE_URL}/privacy`, lastModified: today, changeFrequency: 'monthly', priority: 0.3 },
+    { url: `${SITE_URL}/terms`, lastModified: today, changeFrequency: 'monthly', priority: 0.3 },
+  ]
+
+  const orderedArticles = VALID_CATEGORIES.flatMap((cat) =>
+    articles
+      .filter((a) => a.category === cat)
+      .sort((a, b) => a.slug.localeCompare(b.slug))
+  )
+  const uncategorized = articles.filter((a) => !VALID_CATEGORIES.includes(a.category as typeof VALID_CATEGORIES[number]))
+
+  const articleEntries: MetadataRoute.Sitemap = [...orderedArticles, ...uncategorized].map((a) => ({
+    url: `${SITE_URL}/blog/article?slug=${a.slug}`,
+    lastModified: today,
     changeFrequency: 'monthly',
-    priority: 0.8,
+    priority: VALID_CATEGORIES.includes(a.category as typeof VALID_CATEGORIES[number]) ? 0.8 : 0.7,
   }))
 
-  return [
-    { url: 'https://compareelite.com/', lastModified: new Date(), changeFrequency: 'daily', priority: 1.0 },
-    { url: 'https://compareelite.com/blog', lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
-    ...articleEntries,
-    { url: 'https://compareelite.com/privacy', lastModified: new Date(), changeFrequency: 'yearly', priority: 0.2 },
-    { url: 'https://compareelite.com/terms', lastModified: new Date(), changeFrequency: 'yearly', priority: 0.2 },
-    { url: 'https://compareelite.com/affiliate-disclosure', lastModified: new Date(), changeFrequency: 'yearly', priority: 0.2 },
-  ]
+  return [...staticPages, ...articleEntries]
 }

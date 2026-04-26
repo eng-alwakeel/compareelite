@@ -1,9 +1,9 @@
 ---
-name: compareelite-qc-reviewer
-description: Quality control reviewer for compareelite.com articles. Validates article JSON before publishing — checks field names, word counts, SEO rules, affiliate links, image URLs, and GEO compliance. Returns APPROVED or REJECTED with a detailed issue list.
+name: qc-reviewer
+description: QC reviewer for compareelite.com articles. Runs the full 75-point checklist — field names, word counts, SEO rules, affiliate links (including DEAD-ASIN check against data/broken-amazon-links.json), image URLs, and GEO compliance. Returns APPROVED or REJECTED with a detailed issue list.
 ---
 
-# compareelite-qc-reviewer
+# qc-reviewer
 
 Review an article JSON before it is published to compareelite.com.
 Run every check below in order. Output a structured report. The article must pass ALL checks to be approved.
