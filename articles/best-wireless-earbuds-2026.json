@@ -127,22 +127,21 @@
       "asin": "B0BZV4QFP8"
     },
     {
-      "name": "Bose QuietComfort Earbuds II",
-      "rating": "9.1/10",
-      "price": "$199",
-      "best_for": "Best Personalized ANC",
+      "name": "JBL Tour Pro 2 True Wireless Earbuds",
+      "rating": "8.3/10",
+      "price": "$139",
+      "best_for": "Best Smart Case",
+      "link": "https://www.amazon.com/dp/B0C3NV42GJ?tag=compareelite-20",
+      "image": "https://m.media-amazon.com/images/I/61zgUyBUGJL._SL500_.jpg",
       "pros": [
-        "CustomTune technology automatically calibrates ANC and sound to your ear shape on every wear, delivering the most personalized noise cancellation of any earbud in 2026",
-        "IPX4 sweat and splash resistance combined with a secure, customizable fit using 3 eartip sizes and 3 stability band sizes for all-day comfort",
-        "24 hours total battery life with the charging case, plus Bluetooth 5.3 for rock-solid multi-device connectivity"
+        "Features a unique touchscreen smart charging case that lets you adjust EQ, toggle ANC modes, and check battery levels without opening the app, offering a level of case-based control unavailable on any other earbud model at this price.",
+        "Delivers up to 10 hours of ANC-on playtime per charge and 40 hours total with the case — one of the longest battery combinations in the under-$200 category, covering a full week of daily commuting on a single charge.",
+        "Equipped with 6 microphones per earbud for call quality that JBL rates equivalent to a dedicated Bluetooth headset, with voice detection that reduces wind noise and background noise simultaneously during outdoor calls."
       ],
       "cons": [
-        "At $199 it matches the Sony WF-1000XM5 on price but offers shorter 6-hour per-charge battery versus the Sony's 8 hours",
-        "No support for aptX or LDAC high-res codecs, limiting wireless audio quality on Android compared to Sony's XM5"
-      ],
-      "image": "https://images-na.ssl-images-amazon.com/images/P/B0B4PSQHD5.01.L.jpg",
-      "link": "https://www.amazon.com/dp/B0B4PSQHD5?tag=compareelite-20",
-      "asin": "B0B4PSQHD5"
+        "At $139 the Tour Pro 2 occupies an awkward middle tier — it lacks the active noise cancellation performance of the Sony WF-1000XM5 and the ecosystem integration of AirPods Pro at a price that is not significantly cheaper than either.",
+        "The smart charging case adds 8g of extra weight compared to standard charging cases and is noticeably larger in a jacket pocket, which makes the Tour Pro 2 a less natural fit for buyers who prioritize portability above case features."
+      ]
     }
   ],
   "faq": [
