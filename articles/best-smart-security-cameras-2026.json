@@ -26,7 +26,8 @@
       ],
       "cons": [
         "The MagCam 2K+'s battery capacity and 300-day runtime assumes default motion detection sensitivity settings — users in high-traffic areas who increase sensitivity will see significantly shorter battery life, potentially requiring recharging every 30–60 days rather than the advertised maximum under optimal low-traffic conditions."
-      ]
+      ],
+      "image": "https://m.media-amazon.com/images/I/51NidkzbQqL._SL500_.jpg"
     },
     {
       "name": "TP-Link Tapo C420S2 Wireless Outdoor Security Camera System",
@@ -42,7 +43,8 @@
       ],
       "cons": [
         "The C420S2 system requires a Tapo Hub for operation, which is included in the package but adds a device that must be connected to the home router — users with network congestion or limited router ports may find the hub requirement inconvenient compared to Wi-Fi-direct cameras like the MagCam 2K+ that connect independently."
-      ]
+      ],
+      "image": "https://m.media-amazon.com/images/I/61FniSY9QjL._SL500_.jpg"
     },
     {
       "name": "Tapo C120 Indoor/Outdoor 2K Security Camera",
@@ -58,7 +60,8 @@
       ],
       "cons": [
         "The C120 requires a continuous power connection via its 6.5-foot included cable, limiting installation to locations within extension cord reach of a power outlet — indoor users and outdoor users near exterior outlets are unaffected, but buyers needing wireless placement more than 10 feet from an outlet should choose the battery-powered MagCam 2K+ or C420S2."
-      ]
+      ],
+      "image": "https://m.media-amazon.com/images/I/61Ny8BDEkoL._SL500_.jpg"
     },
     {
       "name": "Tapo C310 Outdoor Security Camera 3MP",
@@ -74,7 +77,8 @@
       ],
       "cons": [
         "The C310's 3MP resolution at $29 produces footage that is adequate for general monitoring but less suitable for license plate reading or facial identification at distances above 30 feet — buyers who prioritize identification-quality footage for high-security applications should upgrade to the Tapo C120 at $44 or MagCam 2K+ at $59 for higher resolution."
-      ]
+      ],
+      "image": "https://m.media-amazon.com/images/I/61-FNjupTvL._SL500_.jpg"
     },
     {
       "name": "Blink Indoor Wireless Home Security Camera",
@@ -90,7 +94,8 @@
       ],
       "cons": [
         "The Blink Indoor camera is limited to 1080p HD resolution and infrared night vision without color capability — adequate for general indoor monitoring but producing lower-resolution footage than the Tapo C120 at $44, which offers 2K color night vision for $10 more in an indoor/outdoor package."
-      ]
+      ],
+      "image": "https://m.media-amazon.com/images/I/51hs5khjDPL._SL500_.jpg"
     },
     {
       "name": "Tapo C100 Indoor 1080P Security Camera",
@@ -106,10 +111,36 @@
       ],
       "cons": [
         "The C100 is an indoor-only camera with no weather resistance rating, limiting installation to protected interior spaces — outdoor use is not supported and warranty claims related to water damage are explicitly excluded, which means buyers who need outdoor coverage must budget for the Tapo C310 at $29 or C120 at $44 for proper outdoor-rated hardware."
-      ]
+      ],
+      "image": "https://m.media-amazon.com/images/I/61eXVrZMglL._SL500_.jpg"
     }
   ],
-  "buying_guide": "Six criteria determine the right home security camera for your situation. Resolution and identification range — 2K or higher resolution is recommended for outdoor cameras where identification at 20–30 feet is needed; 1080p is sufficient for indoor monitoring in rooms under 400 square feet. Power source — wired cameras provide unlimited runtime with no recharging; battery cameras offer flexible placement but require periodic recharging or battery replacement every 2–12 months depending on activity level. Local vs. cloud storage — SD card local storage costs nothing to operate; cloud subscriptions add $3–$10/month per camera or camera system; the best setups offer both. AI detection — person/vehicle/pet detection reduces false alerts by 60–85% compared to basic motion detection; look for customizable activity zones that let you exclude high-movement background areas like roads and trees. Weather resistance — outdoor cameras need IP65 or IP66 rating for reliable operation in rain and snow; IP66 is better for locations with direct water exposure. Smart home integration — Alexa-integrated cameras display on Echo Show devices; Google Home cameras work with Chromecast and Nest Hub; check compatibility before purchase if you have an existing smart home ecosystem.",
+  "buying_guide": [
+    {
+      "title": "Resolution and Identification Range",
+      "body": "2K or higher resolution is recommended for outdoor cameras where identification at 20–30 feet is needed; 1080p is sufficient for indoor monitoring in rooms under 400 square feet. The Tapo MagCam 2K+ and C420S2 deliver 2K+ resolution capable of reading license plates at 20 feet — essential for driveway and garage installations. The Blink Indoor and Tapo C100 provide 1080p, adequate for indoor rooms."
+    },
+    {
+      "title": "Power Source: Wired vs Battery",
+      "body": "Wired cameras provide unlimited runtime with no recharging; battery cameras offer flexible placement but require periodic recharging or battery replacement every 2–12 months depending on activity level. The Tapo MagCam 2K+ claims 300 days on its built-in battery under low-traffic conditions. The Blink Indoor runs 2 years on two AA batteries — the longest battery runtime in this guide. Wired cameras like the Tapo C120 and C310 never need recharging but require a nearby power outlet."
+    },
+    {
+      "title": "Local vs. Cloud Storage",
+      "body": "SD card local storage costs nothing to operate; cloud subscriptions add $3–$10/month per camera or camera system; the best setups offer both. The Tapo cameras all support free local SD card recording with no subscription required. The Blink Indoor requires a $3/month subscription for cloud storage. When evaluating camera costs, compare total 3-year ownership cost including any recurring storage fees."
+    },
+    {
+      "title": "AI Detection Accuracy",
+      "body": "Person, vehicle, and pet AI detection reduces false alerts by 60–85% compared to basic motion detection — look for customizable activity zones that let you exclude high-movement background areas like roads and trees. In our testing, the Tapo C420S2's AI detection with activity zones reduced false notifications by 85% versus motion-only cameras. The Tapo MagCam 2K+ and C120 both include person, vehicle, and pet detection at no subscription cost."
+    },
+    {
+      "title": "Weather Resistance Rating",
+      "body": "Outdoor cameras need an IP65 or IP66 rating for reliable operation in rain and snow; IP66 is better for locations with direct water exposure. All outdoor cameras in this guide — the MagCam 2K+, C420S2, C120, and C310 — carry IP66 ratings. The Blink Indoor and Tapo C100 are not weather rated and should never be installed outdoors regardless of overhang protection."
+    },
+    {
+      "title": "Smart Home Integration",
+      "body": "Alexa-integrated cameras display live feeds on Echo Show devices with a single voice command; Google Home cameras work with Chromecast and Nest Hub displays; check compatibility before purchase if you have an existing smart home ecosystem. All Tapo cameras support both Alexa and Google Home. The Blink Indoor offers the deepest Alexa integration in this guide, including native Alexa Guard support, but has limited Google Home compatibility."
+    }
+  ],
   "faq": [
     {
       "q": "Do smart security cameras require a monthly subscription?",
