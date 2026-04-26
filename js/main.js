@@ -554,13 +554,17 @@ function markdownToHTML(md) {
         // Empty line
         if (line.trim() === '') { i++; continue; }
 
-        // Paragraph
+        // Paragraph — allow **bold** lines; only exclude actual list items (- text / * text)
         let para = [];
-        while (i < lines.length && lines[i].trim() !== '' && !/^[#>|*-]/.test(lines[i]) && !/^---+$/.test(lines[i].trim())) {
+        while (i < lines.length && lines[i].trim() !== '' && !/^[#>|]/.test(lines[i]) && !/^[-*] /.test(lines[i]) && !/^---+$/.test(lines[i].trim())) {
             para.push(lines[i]);
             i++;
         }
-        if (para.length) html += `<p style="margin:0.75rem 0;line-height:1.7;">${inlineMarkdown(para.join(' '))}</p>`;
+        if (para.length) {
+            html += `<p style="margin:0.75rem 0;line-height:1.7;">${inlineMarkdown(para.join(' '))}</p>`;
+        } else {
+            i++; // safety: skip unhandled line (e.g. stray | not part of a table)
+        }
     }
     return html;
 }
