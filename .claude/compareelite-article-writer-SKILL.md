@@ -5,14 +5,133 @@ description: Write high-converting Amazon affiliate articles for compareelite.co
 
 # compareelite-article-writer
 
-## STRICT RULES
+## STRICT RULES (READ FIRST - NON-NEGOTIABLE)
 
-- No markdown in any field
-- Plain text only
-- `link` (Amazon affiliate URL) must contain `?tag=compareelite-20`
-- `category` must be one of: Tech, Home Office, Smart Home, Home Fitness
-- Minimum 6 products
-- Exactly 5 FAQ questions
+1. Use TEMPLATE.json structure exactly
+2. NO markdown anywhere (no **bold**, no #headers, no *italic*)
+3. Plain text only in all content fields
+4. All `link` fields MUST contain ?tag=compareelite-20
+5. `category` MUST be exactly one of:
+   - Tech
+   - Home Office
+   - Smart Home
+   - Home Fitness
+6. Minimum 6 products per article
+7. Exactly 5 FAQ questions
+8. `rating` MUST be string format like "8.5/10" (NOT number)
+9. All images MUST be valid Amazon URLs
+10. `slug` MUST match filename exactly
+
+---
+
+## ARTICLE STRUCTURE TEMPLATE
+
+```json
+{
+  "title": "Best [Product] 2026: Tested & Ranked",
+  "slug": "best-product-2026",
+  "category": "Tech",
+  "date": "2026-04-26",
+  "read_time": "12 min read",
+  "thumbnail": "https://valid-image-url.jpg",
+  "excerpt": "Brief description in 1-2 sentences.",
+  "products": [...],
+  "buying_guide": [...],
+  "faq": [...],
+  "related_articles": []
+}
+```
+
+---
+
+## PRODUCT TEMPLATE (Copy for each product, minimum 6)
+
+```json
+{
+  "rank": 1,
+  "name": "Brand Model Name",
+  "price": "$99",
+  "rating": "8.5/10",
+  "best_for": "Best Budget",
+  "image": "https://m.media-amazon.com/images/...",
+  "link": "https://www.amazon.com/dp/PRODUCTID?tag=compareelite-20",
+  "pros": [
+    "Pro 1 description",
+    "Pro 2 description",
+    "Pro 3 description"
+  ],
+  "cons": [
+    "Con 1 description",
+    "Con 2 description"
+  ]
+}
+```
+
+---
+
+## FAQ TEMPLATE (Copy 5 times exactly)
+
+```json
+{
+  "q": "Question here?",
+  "a": "Answer in plain text only."
+}
+```
+
+---
+
+## BUYING GUIDE TEMPLATE
+
+```json
+{
+  "title": "Section Title",
+  "body": "Section content in plain text."
+}
+```
+
+---
+
+## CATEGORY MAPPING (Use this to choose category)
+
+**Tech:**
+- Laptops, Monitors, Keyboards, Gaming Gear
+- Earbuds, Headphones, Speakers
+- Phone accessories, Power banks
+- Dash cams, Car accessories
+
+**Home Office:**
+- Office chairs, Standing desks
+- Desk accessories, Lamps
+- Ergonomic equipment
+
+**Smart Home:**
+- Security cameras, Smart speakers
+- Robot vacuums, Air purifiers
+- Smart thermostats, Smart lighting
+- Air fryers, Smart kitchen
+
+**Home Fitness:**
+- Treadmills, Walking pads
+- Dumbbells, Resistance bands
+- Yoga mats, Water bottles
+- Supplements, Protein
+- Creatine, Whey
+
+---
+
+## BEFORE SUBMITTING TO QC
+
+Run this checklist mentally:
+
+- ✅ All 6+ products have rank, name, price, rating, best_for, image, link, pros, cons?
+- ✅ All amazon links contain ?tag=compareelite-20?
+- ✅ Exactly 5 FAQ questions?
+- ✅ Category is one of 4 niches?
+- ✅ No markdown anywhere?
+- ✅ Slug matches the planned filename?
+- ✅ Rating format is "X.X/10"?
+
+If any answer is NO → fix before sending to QC
 
 ---
 
