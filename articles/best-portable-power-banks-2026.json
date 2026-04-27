@@ -108,6 +108,42 @@
       "image": "https://m.media-amazon.com/images/I/416nS4GRFtL._SL500_.jpg",
       "link": "https://www.amazon.com/dp/B09176JCKZ?tag=compareelite-20",
       "asin": "B09176JCKZ"
+    },
+    {
+      "name": "Anker Prime Power Bank (200W, 20000mAh)",
+      "rating": "9.3/10",
+      "price": "$89",
+      "best_for": "Best for Laptop & Multi-Device",
+      "pros": [
+        "The Anker Prime delivers 200W total output across 2 USB-C and 1 USB-A ports simultaneously — enough to fast-charge a 16-inch MacBook Pro (140W) and an iPhone 16 (27W) at full speed at the same time, a capability no other power bank under $100 in this guide matches.",
+        "A 200W USB-C port charges the 20,000mAh internal battery in approximately 75 minutes with a compatible 100W+ charger — 4× faster than the 5-hour recharge time of the Baseus 65W at 65W input.",
+        "The smart digital display shows real-time input wattage, output wattage, remaining capacity in percentage, and estimated time-to-empty simultaneously — providing visibility that the Anker 737's single-line display cannot match."
+      ],
+      "cons": [
+        "At 1.51 lbs, the Anker Prime weighs 0.3 lbs more than the Baseus 65W (1.21 lbs) — a meaningful difference when carried daily in a backpack alongside a laptop and other accessories.",
+        "The 200W output requires a USB-C PD 3.0 or 3.1 source charger rated above 100W to charge at full speed — charging from a standard 65W brick reduces input to 65W and extends full recharge time to approximately 185 minutes."
+      ],
+      "image": "https://m.media-amazon.com/images/I/61bwy5NsMVL._SL500_.jpg",
+      "link": "https://www.amazon.com/dp/B0BYNZXFM2?tag=compareelite-20",
+      "asin": "B0BYNZXFM2"
+    },
+    {
+      "name": "UGREEN Nexode 145W Power Bank (25000mAh)",
+      "rating": "9.0/10",
+      "price": "$79",
+      "best_for": "Best High-Capacity Laptop Charger",
+      "pros": [
+        "The UGREEN Nexode 145W provides 25,000mAh capacity — 5,000mAh more than the Anker Prime and Baseus 65W at an identical or lower price — enabling approximately 1.3 full charges of a 15-inch MacBook Pro (100Wh) alongside 2.5 full iPhone 16 Pro charges.",
+        "A single USB-C1 port delivers up to 140W output directly to laptops requiring PD 3.1 power — charging a 16-inch MacBook Pro from 0% to 56% in 30 minutes, matching wall-charger speed in a portable unit under $80.",
+        "The digital display shows battery percentage, input wattage, and output wattage on a single screen without cycling through modes, enabling instant status checks in under 2 seconds — faster than the Anker Nano's LED indicator system that requires counting light pulses."
+      ],
+      "cons": [
+        "The UGREEN Nexode 145W weighs 1.69 lbs — 0.49 lbs heavier than the Anker Nano Power Bank 10K at 0.47 lbs — making it primarily suitable for carry-on luggage and laptop bags rather than light daypacks or pants pockets.",
+        "Maximum input for recharging is 65W via USB-C, meaning the 25,000mAh battery takes approximately 240 minutes to fully recharge — roughly 1 hour and 45 minutes longer than the Anker Prime's 75-minute recharge at 200W input."
+      ],
+      "image": "https://m.media-amazon.com/images/I/51yVTpKih8L._SL500_.jpg",
+      "link": "https://www.amazon.com/dp/B0BJQ7F16T?tag=compareelite-20",
+      "asin": "B0BJQ7F16T"
     }
   ],
   "faq": [
