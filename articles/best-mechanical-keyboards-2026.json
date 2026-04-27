@@ -105,6 +105,42 @@
         "Cherry MX Blue switches are loud enough to be disruptive in shared office spaces — consider the Brown switch variant for quieter environments.",
         "No wireless option and no RGB backlighting — purely a productivity-focused board without gaming features."
       ]
+    },
+    {
+      "name": "SteelSeries Apex Pro TKL Wireless Gen 3",
+      "rating": "9.3/10",
+      "price": "$230",
+      "best_for": "Best Wireless Competitive",
+      "pros": [
+        "OmniPoint 3.0 HyperMagnetic switches allow per-key actuation adjustment from 0.1mm to 4.0mm, enabling a 0.1mm hair-trigger actuation for competitive FPS titles while keeping standard 2.0mm actuation for typing — all without swapping switches.",
+        "Rapid Trigger mode detects key deactivation within 0.1mm of release rather than waiting for the full reset point, eliminating false re-registrations during rapid WASD movements and providing a measurable competitive advantage in CS2 and Valorant at high sensitivity.",
+        "Dual 2.4GHz and Bluetooth wireless connectivity switches between a gaming PC and a mobile device in under 1 second via the hardware button on the top panel, enabling seamless transitions between competitive gaming and casual mobile use."
+      ],
+      "cons": [
+        "At $230, the Apex Pro TKL Wireless Gen 3 costs $41 more than the ASUS ROG Azoth at $159 — the premium is entirely justified by Rapid Trigger and 0.1mm resolution, features that matter only for competitive FPS play at 1000Hz+ polling rates.",
+        "The tenkeyless layout eliminates the numpad, which creates a workflow inconvenience for accountants, data entry professionals, and traders who rely on numpad input daily."
+      ],
+      "image": "https://m.media-amazon.com/images/I/71Wdt9uQBXL._SL500_.jpg",
+      "link": "https://www.amazon.com/dp/B0DGZ3VV9X?tag=compareelite-20",
+      "asin": "B0DGZ3VV9X"
+    },
+    {
+      "name": "Keychron Q1 Pro QMK Wireless",
+      "rating": "9.0/10",
+      "price": "$169",
+      "best_for": "Best Customizable Wireless",
+      "pros": [
+        "The Keychron Q1 Pro's full aluminum CNC-machined body with double gasket mount reduces typing resonance by approximately 40% compared to standard tray-mount keyboards, producing a deep, dampened thud that is distinctly premium compared to the plastic housings of the Logitech G915 TKL.",
+        "QMK/VIA firmware supports unlimited key remapping, macros, layer switching, and per-key RGB customization through a live graphical interface — no software installation required for basic remapping on any OS including Linux.",
+        "Hot-swap PCB supports 3-pin and 5-pin MX-compatible switches without soldering, allowing complete switch replacement in approximately 15 minutes using the included puller tool — a customization option unavailable on non-hot-swap competitors like the Das Keyboard 4 Professional."
+      ],
+      "cons": [
+        "Bluetooth connectivity supports a maximum polling rate of 125Hz on most implementations — the 2.4GHz USB dongle mode reaches only up to 1000Hz on some adapters, falling short of the 4000Hz polling offered by the SteelSeries Apex Pro TKL Gen 3 for esports use.",
+        "The Q1 Pro ships without keycaps included in the box — separate PBT doubleshot keycap sets compatible with the Q1's layout cost an additional $35–$55 from Keychron's accessory store, increasing the effective entry cost."
+      ],
+      "image": "https://m.media-amazon.com/images/I/61CGMmIiBjL._SL500_.jpg",
+      "link": "https://www.amazon.com/dp/B0BKGH2B95?tag=compareelite-20",
+      "asin": "B0BKGH2B95"
     }
   ],
   "faq": [
