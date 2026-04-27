@@ -130,5 +130,19 @@
       "q": "Can smart home devices be used without a monthly subscription?",
       "a": "Yes — most devices in this guide work fully without subscriptions. The Amazon Echo Dot 5th Gen at $49 includes all Alexa commands, routines, and device control at no recurring cost. The Kasa Smart Plug EP25 2-Pack at $19 operates independently with no monthly fee, including local scheduling and energy monitoring. The Govee RGBIC LED Strip Lights at $29 require no subscription for full app control, music sync, and color scenes. The Ring Video Doorbell 4 at $99 is the exception — video history and rich notifications require a Ring Protect plan at $4.99 per month per device."
     }
+  ],
+  "related_articles": [
+    {
+      "slug": "best-air-fryers-2026",
+      "title": "Best Air Fryers of 2026"
+    },
+    {
+      "slug": "best-air-purifiers-2026",
+      "title": "Best Air Purifiers of 2026: Clean Air for Every Room"
+    },
+    {
+      "slug": "best-robot-vacuums-2026",
+      "title": "Best Robot Vacuums of 2026: Top Picks for Every Home"
+    }
   ]
 }

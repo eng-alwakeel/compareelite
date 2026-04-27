@@ -131,5 +131,19 @@
       "q": "Can a portable power bank charge a laptop?",
       "a": "Yes, but only if the power bank outputs 45W or more via USB-C Power Delivery — and your laptop supports USB-C charging. The Anker 737 at $89 delivers 140W, charging a MacBook Pro at near-wall speed. The Baseus 65W at $59 charges most ultrabooks, including MacBook Air and Dell XPS 13, at or near wall speed. The INIU Power Bank at $22 and Anker Nano 10K at $35 output 22.5W and 30W respectively — sufficient for phones but unable to power most laptops. Always check your laptop's minimum charging wattage requirement before purchasing."
     }
+  ],
+  "related_articles": [
+    {
+      "slug": "airpods-pro-vs-airpods-4",
+      "title": "AirPods Pro 3 vs AirPods 4: Which Should You Buy in 2026?"
+    },
+    {
+      "slug": "best-bluetooth-speakers-2026",
+      "title": "Best Portable Bluetooth Speakers of 2026"
+    },
+    {
+      "slug": "best-car-phone-mounts-2026",
+      "title": "Best Car Phone Mounts of 2026: Safe, Secure & Easy to Use"
+    }
   ]
 }
