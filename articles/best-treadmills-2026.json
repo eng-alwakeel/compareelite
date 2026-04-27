@@ -109,6 +109,42 @@
       "image": "https://m.media-amazon.com/images/I/615c6D7oSXL._SL500_.jpg",
       "link": "https://www.amazon.com/dp/B0B4FC34GP?tag=compareelite-20",
       "asin": "B0B4FC34GP"
+    },
+    {
+      "name": "Horizon Fitness 7.0AT Treadmill",
+      "rating": "8.9/10",
+      "price": "$999",
+      "best_for": "Best Value Smart Treadmill",
+      "pros": [
+        "The Horizon 7.0AT pairs a 3.0 CHP motor with a 20x60-inch belt at $999 — a motor-to-price ratio that outperforms the NordicTrack Commercial 1750's 3.75 CHP at twice the price, making the Horizon the highest value per horsepower in this guide.",
+        "QuickDial controls allow speed and incline adjustment with a single hand without releasing the handrails — compared to touchscreen-only adjustments on the Peloton Tread that require releasing the handlebars and looking at the screen during mid-stride changes.",
+        "Multi-device Bluetooth connectivity allows simultaneous syncing to workout apps including Peloton, Zwift, Kinomap, and Apple Health — providing app flexibility that locked-ecosystem treadmills like the Peloton Tread ($2,295) and NordicTrack ($1,999) restrict through subscription requirements."
+      ],
+      "cons": [
+        "The 7.0AT's 10% maximum incline is lower than the NordicTrack Commercial 1750's 15% maximum and the ProForm Pro 2000's 12% maximum — limiting simulation of steep hill-climbing workouts that appear in training plans for half-marathon and marathon preparation.",
+        "No built-in display screen — the Horizon 7.0AT requires mounting a personal device to the console to access visual workout metrics, unlike the NordicTrack's 10-inch touchscreen and the Peloton Tread's 23.8-inch HD display."
+      ],
+      "image": "https://m.media-amazon.com/images/I/61pP7pKiJrL._SL500_.jpg",
+      "link": "https://www.amazon.com/dp/B0DJ3N5SY9?tag=compareelite-20",
+      "asin": "B0DJ3N5SY9"
+    },
+    {
+      "name": "ProForm Pro 2000 Smart Treadmill",
+      "rating": "9.0/10",
+      "price": "$1,299",
+      "best_for": "Best Incline & iFIT Integration",
+      "pros": [
+        "The ProForm Pro 2000 delivers -3% to 12% incline range — including a 3% decline — the only treadmill in this guide with decline training capability, enabling downhill running simulation that strengthens anterior tibialis muscles stressed during mountain race descents.",
+        "A 3.5 CHP motor with a 22x60-inch running belt provides 2 inches wider stride width than the SOLE F80 and Horizon 7.0AT's 20-inch belts — an ergonomic advantage for runners with stride widths above 12 inches who experience footfall overlap on narrower decks.",
+        "30-day iFIT Pro membership includes trainer-led Google Maps workouts that automatically adjust treadmill speed and incline to match real-world terrain, with over 16,000 on-demand classes available after the trial compared to Peloton's 1,200 treadmill-specific workouts."
+      ],
+      "cons": [
+        "iFIT subscription costs $39/month or $396/year after the 30-day trial — adding a 3-year ownership cost of $1,185 in subscriptions on top of the $1,299 hardware price, bringing total 3-year cost to $2,484 versus the Horizon 7.0AT's $999 hardware with no required subscription.",
+        "The SpaceSaver folding design stores the deck vertically when not in use but requires a dedicated 36×76-inch floor footprint during active use — 2 square feet more floor space than the SOLE F80's 35×81-inch footprint when fully extended."
+      ],
+      "image": "https://m.media-amazon.com/images/I/71ZN0qQ4SGL._SL500_.jpg",
+      "link": "https://www.amazon.com/dp/B08N3NL32C?tag=compareelite-20",
+      "asin": "B08N3NL32C"
     }
   ],
   "faq": [
