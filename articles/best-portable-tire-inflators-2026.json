@@ -108,6 +108,42 @@
       "image": "https://m.media-amazon.com/images/I/51ubVn7xHFL._SL500_.jpg",
       "link": "https://www.amazon.com/dp/B07RM5D9C3?tag=compareelite-20",
       "asin": "B07RM5D9C3"
+    },
+    {
+      "name": "Milwaukee M12 Compact Inflator (2475-20)",
+      "rating": "9.1/10",
+      "price": "$79",
+      "best_for": "Best for Tool Ecosystem Users",
+      "pros": [
+        "The Milwaukee M12 2475-20 uses any M12 battery in the Milwaukee ecosystem — from 1.5Ah to 6.0Ah packs — inflating a standard 225/50R17 car tire from 25 PSI to 35 PSI in approximately 35 seconds on a 2.0Ah battery, matching the performance of dedicated 12V inflators.",
+        "TrueFill auto shut-off technology stops inflation at the preset PSI within ±0.5 PSI accuracy, preventing the 1–3 PSI overinflation that occurs with manual shut-off inflators when ambient temperature changes rapidly.",
+        "The backlit LCD displays target PSI, current PSI, and inflation mode simultaneously on a 2.5-inch screen readable in direct sunlight — a meaningful improvement over the single-LED indicators on the AstroAI and Avid Power inflators."
+      ],
+      "cons": [
+        "The M12 2475-20 is sold as bare tool only — an M12 battery and charger starter kit adds $69–$119 to the total cost, making entry investment approximately $148–$198 for users without existing Milwaukee M12 tools.",
+        "Maximum continuous run time of approximately 20 minutes on a 2.0Ah battery limits use for inflating multiple large truck tires in sequence without battery swaps, unlike the Ryobi One+ 18V that carries more energy per battery pack."
+      ],
+      "image": "https://m.media-amazon.com/images/I/61igXo2d5RL._SL500_.jpg",
+      "link": "https://www.amazon.com/dp/B07CTY3W98?tag=compareelite-20",
+      "asin": "B07CTY3W98"
+    },
+    {
+      "name": "DEWALT DCC020IB 20V MAX Inflator",
+      "rating": "8.9/10",
+      "price": "$79",
+      "best_for": "Best for DEWALT Ecosystem Users",
+      "pros": [
+        "The DEWALT DCC020IB works with all DEWALT 20V MAX batteries from 1.3Ah to 9.0Ah, and also operates directly from a car's 12V DC outlet — making it the only inflator in this guide with both cordless and hardwired vehicle power compatibility.",
+        "A dual-speed motor inflates a car tire approximately 30% faster in high-speed mode than the Avid Power 12V inflator's single-speed operation, completing a standard 235/65R17 SUV tire from 28 PSI to 35 PSI in under 45 seconds.",
+        "Auto shut-off stops inflation within ±1 PSI of the preset target, with a bright LED work light on the front panel that illuminates the valve stem area in low-light roadside conditions — a safety feature absent from the budget Avid Power and AstroAI models."
+      ],
+      "cons": [
+        "Like the Milwaukee M12 2475-20, the DEWALT DCC020IB is a bare tool at $79 — a 20V MAX starter battery and charger add $89–$149 to the entry cost for users without existing DEWALT 20V tools.",
+        "The digital display shows PSI in increments of 1 PSI rather than 0.5 PSI, providing less precision than the Milwaukee M12's 0.5 PSI resolution for performance tires requiring exact inflation targets between whole-number PSI values."
+      ],
+      "image": "https://m.media-amazon.com/images/I/71cN2uWsNJL._SL500_.jpg",
+      "link": "https://www.amazon.com/dp/B07H39S9JQ?tag=compareelite-20",
+      "asin": "B07H39S9JQ"
     }
   ],
   "faq": [
