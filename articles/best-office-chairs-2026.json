@@ -109,6 +109,42 @@
         "Limited to black colorway — no fabric or color options compared to competitors like Secretlab."
       ],
       "asin": "B08KHH6L7W"
+    },
+    {
+      "name": "Autonomous ErgoChair Pro (Black Mesh)",
+      "rating": "9.0/10",
+      "price": "$499",
+      "best_for": "Best Ergonomic Value Under $500",
+      "pros": [
+        "The ErgoChair Pro's adjustable lumbar support moves independently through 4 positions on both vertical and horizontal axes, targeting L2–L5 vertebrae regardless of user torso length — a level of lumbar customization that the Branch Ergonomic Chair ($429) offers only through a single-axis knob adjustment.",
+        "Recline range of 22 degrees with adjustable recline tension accommodates users who prefer active sitting at 95° through to relaxed recline at 117°, with the backrest locking at any angle in 5-degree increments — compared to the Secretlab Titan's gaming-style recline that goes to 165° but lacks intermediate lock positions for office work postures.",
+        "Breathable mesh backrest maintains airflow across the full surface area, keeping back temperature approximately 3°F cooler during 4-hour sessions than the foam-backed Secretlab Titan Evo — a meaningful comfort difference in home offices without dedicated air conditioning."
+      ],
+      "cons": [
+        "At $499, the ErgoChair Pro costs $70 more than the Branch Ergonomic Chair ($429) and lacks the Branch's weight-sensitive mechanism that automatically adjusts recline resistance to the user's body weight — requiring manual tension calibration when different users share the chair.",
+        "Plastic construction throughout the base and armrests produces a total weight of 44.5 lbs — heavier than the Secretlab Titan Evo's 57 lbs but with a notably less premium tactile feel than the Steelcase Leap V2's high-strength steel frame and polymer construction."
+      ],
+      "image": "https://m.media-amazon.com/images/I/617CFsziWVL._SL500_.jpg",
+      "link": "https://www.amazon.com/dp/B0FL2H6GYL?tag=compareelite-20",
+      "asin": "B0FL2H6GYL"
+    },
+    {
+      "name": "SIHOO Doro C300 Ergonomic Chair",
+      "rating": "8.8/10",
+      "price": "$299",
+      "best_for": "Best Budget Ergonomic Chair",
+      "pros": [
+        "The Sihoo Doro C300's dynamic lumbar support adapts to the natural curvature of the lower back through a flexible backrest that follows user movement within ±15° of the neutral position — providing active spinal support during typing and reaching that static lumbar pillows on budget chairs cannot replicate.",
+        "Ultra-soft 3D armrests adjust in height, width, and angle independently, accommodating shoulder widths from 14 to 22 inches — a broader adjustment range than the Branch Ergonomic Chair's 2D armrests that adjust height and pivot only, relevant for users with wider-than-average shoulders.",
+        "At $299, the Sihoo Doro C300 provides adjustable seat depth (1.2-inch range), 4D armrests, and dynamic lumbar support — ergonomic features that competing chairs at this price point typically offer only as a subset, requiring $429–$519 to obtain all three simultaneously."
+      ],
+      "cons": [
+        "The C300's maximum weight capacity of 264 lbs is 36 lbs lower than the Autonomous ErgoChair Pro's 300-lb rating and 86 lbs lower than the Herman Miller Aeron's 350-lb capacity — users between 265 and 300 lbs must upgrade to a higher-capacity option.",
+        "Seat cushion firmness is rated at medium (55 Shore A), which some users find insufficiently cushioned during sessions exceeding 6 hours — the Steelcase Leap V2 and Herman Miller Aeron both use higher-density foam or flexible suspension designs that maintain support integrity beyond 8 hours of continuous use."
+      ],
+      "image": "https://m.media-amazon.com/images/I/71ir96hzGeL._SL500_.jpg",
+      "link": "https://www.amazon.com/dp/B0C3T865C2?tag=compareelite-20",
+      "asin": "B0C3T865C2"
     }
   ],
   "faq": [
