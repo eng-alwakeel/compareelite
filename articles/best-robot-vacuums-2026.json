@@ -108,6 +108,42 @@
       "image": "https://m.media-amazon.com/images/I/31d8SEg9M9L._SL500_.jpg",
       "link": "https://www.amazon.com/dp/B07R295MLS?tag=compareelite-20",
       "asin": "B07R295MLS"
+    },
+    {
+      "name": "Dreame L20 Ultra Robot Vacuum & Mop",
+      "rating": "9.5/10",
+      "price": "$999",
+      "best_for": "Best All-in-One Auto Base Station",
+      "pros": [
+        "The Dreame L20 Ultra's MopExtend technology actively extends the mop module sideways during cleaning to reach within 2mm of baseboards and furniture legs — covering edge zones that center-mounted mops on the Roborock S8 MaxV Ultra miss by 8–12mm during standard operation.",
+        "7,000Pa suction at the brush roll delivers 75% more cleaning force than the Roborock Q5+'s 2,700Pa — extracting embedded cat litter and fine debris from low-pile carpets (< 12mm) that weaker units leave behind in a single pass.",
+        "The fully automatic base station washes mop pads with 70°C hot water, hot-air dries them in approximately 4 hours, self-empties the dustbin, and refills the clean water tank — requiring no manual intervention for up to 7 consecutive cleaning cycles."
+      ],
+      "cons": [
+        "At $999, the Dreame L20 Ultra matches the Roborock S8 MaxV Ultra's price point — users choosing between them should compare the MopExtend edge-reach capability (Dreame) against the Roborock's 3D obstacle avoidance system that identifies and avoids 50+ object types.",
+        "The base station dimensions of 16.5 × 16.5 × 19.7 inches require approximately 2.3 square feet of dedicated floor space — 0.8 square feet more than the Roborock Q5+'s compact dock, a meaningful constraint in apartments with limited utility closet clearance."
+      ],
+      "image": "https://m.media-amazon.com/images/I/71BdlwUe4jL._SL500_.jpg",
+      "link": "https://www.amazon.com/dp/B0CC236CLT?tag=compareelite-20",
+      "asin": "B0CC236CLT"
+    },
+    {
+      "name": "Roborock Q5+ Robot Vacuum with Self-Empty Dock",
+      "rating": "8.9/10",
+      "price": "$299",
+      "best_for": "Best Value Self-Emptying",
+      "pros": [
+        "The Roborock Q5+ pairs 2,700Pa suction with a self-emptying dock whose 2.5L dust bag holds up to 7 weeks of debris before requiring disposal — delivering hands-free cleaning at $300 less than the Shark Matrix Plus's self-empty system at $349 for equivalent bin-emptying functionality.",
+        "PreciSense LiDAR navigation creates a millimeter-accurate floor plan within the first cleaning run, enabling zone cleaning and no-go zone setup in the app within 5 minutes — compared to the Eufy RoboVac 11S Max's camera-based navigation that requires multiple passes to build reliable maps.",
+        "180-minute maximum runtime covers up to 2,150 square feet per charge on hard floors — sufficient to complete a 3-bedroom home in a single session without returning to dock and resuming, which the Eufy RoboVac 11S's 100-minute runtime cannot match for larger homes."
+      ],
+      "cons": [
+        "The Q5+ does not include a mopping attachment — it is a vacuum-only unit, requiring the separate Q5 Pro+ ($459) to add wet mopping capability, unlike the Shark Matrix Plus 2-in-1 ($349) which includes both vacuum and mop functionality in the base configuration.",
+        "The dock's 2.5L dust bag is proprietary and costs approximately $10–$15 per replacement bag, adding $60–$90 annually for households that trigger auto-empty once daily — an ongoing cost absent from the Eufy RoboVac 11S Max's bagless dustbin design."
+      ],
+      "image": "https://m.media-amazon.com/images/I/61K6ND8eIYL._SL500_.jpg",
+      "link": "https://www.amazon.com/dp/B09NM56KJM?tag=compareelite-20",
+      "asin": "B09NM56KJM"
     }
   ],
   "faq": [
