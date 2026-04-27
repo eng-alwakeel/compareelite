@@ -5,6 +5,15 @@
   "cleanUrls": true,
   "rewrites": [
     { "source": "/blog/article", "destination": "/blog/article.html" },
-    { "source": "/dashboard/login", "destination": "/dashboard/login.html" }
+    { "source": "/dashboard/login", "destination": "/dashboard/login.html" },
+    { "source": "/product/:slug*", "destination": "/api/gone" }
+  ],
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "www.compareelite.com" }],
+      "destination": "https://compareelite.com/$1",
+      "permanent": true
+    }
   ]
 }
