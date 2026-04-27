@@ -74,6 +74,34 @@
       "image": "https://m.media-amazon.com/images/I/31bzJADEOkL._SL500_.jpg",
       "link": "https://www.amazon.com/dp/B0DGJ7HYG1?tag=compareelite-20",
       "asin": "B0DGJ7HYG1"
+    },
+    {
+      "asin": "B0C33XXS56",
+      "name": "Sony WF-1000XM5 Wireless Noise Canceling Earbuds",
+      "price": 229,
+      "rating": 4.4,
+      "affiliate_link": "https://www.amazon.com/dp/B0C33XXS56?tag=compareelite-20"
+    },
+    {
+      "asin": "B09MVGQRDD",
+      "name": "Jabra Elite 4 Active True Wireless Earbuds",
+      "price": 79,
+      "rating": 4.3,
+      "affiliate_link": "https://www.amazon.com/dp/B09MVGQRDD?tag=compareelite-20"
+    },
+    {
+      "asin": "B09JL41N9C",
+      "name": "Beats Fit Pro True Wireless Noise Cancelling Earbuds",
+      "price": 149,
+      "rating": 4.4,
+      "affiliate_link": "https://www.amazon.com/dp/B09JL41N9C?tag=compareelite-20"
+    },
+    {
+      "asin": "B0B8J28VMV",
+      "name": "Samsung Galaxy Buds 2 Pro Wireless Earphones",
+      "price": 179,
+      "rating": 4.3,
+      "affiliate_link": "https://www.amazon.com/dp/B0B8J28VMV?tag=compareelite-20"
     }
   ],
   "faq": [
