@@ -107,6 +107,42 @@
       "link": "https://www.amazon.com/dp/B0CH1L89N2?tag=compareelite-20",
       "asin": "B0CH1L89N2",
       "image": "https://m.media-amazon.com/images/I/71y402yLhpL._SL500_.jpg"
+    },
+    {
+      "name": "NOCO Boost Pro GB150 (3000A)",
+      "rating": "9.2/10",
+      "price": "$249",
+      "best_for": "Best for Diesel Trucks & SUVs",
+      "pros": [
+        "The NOCO GB150 delivers 3000A peak current — triple the 1000A of the GB40 — enabling reliable jump starts for diesel engines up to 9.0L and gasoline engines up to 10.0L, covering virtually all full-size trucks, SUVs, and commercial vans on the market.",
+        "Integrated UltraSafe technology with reverse polarity protection, spark-proof connections, and automatic reset prevents battery damage from incorrect clamp connections, providing a 1-second connection error alert before any current flows to the vehicle battery.",
+        "The GB150 includes a 12V adapter and USB-A charging port rated at 2.1A, doubling as a battery pack that charges a smartphone approximately 2.5 times while stored in a glove box for roadside emergencies."
+      ],
+      "cons": [
+        "At $249, the NOCO GB150 costs $150 more than the HULKMAN Alpha85 ($89) — the premium is justified only for diesel truck owners, fleet operators, and commercial drivers who regularly start engines above 6.0L displacement.",
+        "The GB150's extended charging time of approximately 3 hours via the included wall adapter is slower than lithium competitors with USB-C PD input, requiring overnight charging after a particularly active parking lot rescue session."
+      ],
+      "image": "https://m.media-amazon.com/images/I/71BK9TytPEL._SL500_.jpg",
+      "link": "https://www.amazon.com/dp/B015TKSSB8?tag=compareelite-20",
+      "asin": "B015TKSSB8"
+    },
+    {
+      "name": "GOOLOO GP4000 Jump Starter (4000A)",
+      "rating": "8.8/10",
+      "price": "$89",
+      "best_for": "Best Budget High-Amp",
+      "pros": [
+        "The GOOLOO GP4000 delivers 4000A peak current at $89 — the highest peak amp rating per dollar of any jump starter in this guide — covering all gasoline engines and diesel engines up to 10.0L without the premium pricing of the NOCO GB150.",
+        "10 built-in safety protections including overvoltage, overcurrent, short-circuit, reverse polarity, and overtemperature protection operate independently of user error, making the GP4000 as safe to operate as the NOCO UltraSafe lineup at half the price.",
+        "A 50,000mAh equivalent internal battery delivers over 60 jump starts per full charge and doubles as a USB power bank capable of charging a 10,000mAh phone battery 4.5 times before the unit requires recharging."
+      ],
+      "cons": [
+        "The GP4000 lacks the automatic battery health assessment and fault code detection found in the NOCO GB40 — users must visually inspect clamp connections before each use rather than relying on a smart error signal.",
+        "Physical dimensions of 9.3 × 3.9 × 2.0 inches make the GP4000 larger than compact alternatives like the Antigravity XP-10 ($149), which measures 4.0 × 3.0 × 1.3 inches for easier pocket or console storage."
+      ],
+      "image": "https://m.media-amazon.com/images/I/61uFU68ajFL._SL500_.jpg",
+      "link": "https://www.amazon.com/dp/B09HJH1S41?tag=compareelite-20",
+      "asin": "B09HJH1S41"
     }
   ],
   "faq": [
