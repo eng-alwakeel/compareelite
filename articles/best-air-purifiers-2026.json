@@ -150,11 +150,11 @@
   "faq": [
     {
       "q": "What CADR rating do I need?",
-      "a": "Multiply your room's square footage by 0.67 to get the minimum recommended CADR. For a 300 sq ft room, aim for CADR 200+."
+      "a": "Multiply your room's square footage by 0.67 to get the minimum recommended CADR for five air changes per hour (ACH) — the standard for effective allergen and smoke reduction. For a 300 sq ft bedroom, target a CADR of at least 200 cfm. For a 500 sq ft living room, aim for CADR 335+. The Levoit Core 400S ($199) in this guide delivers CADR 260 cfm — suitable for rooms up to 403 sq ft. The Winix 5500-2 ($199) delivers CADR 232 cfm for rooms up to 360 sq ft. If you have pets or smoke indoors, increase your target CADR by 25% above the square footage minimum to ensure adequate filtration even when the purifier runs on a mid-speed setting rather than full power."
     },
     {
       "q": "How often should I replace HEPA filters?",
-      "a": "Every 6-12 months for most purifiers. Running 24/7 means closer to 6 months. Some models like the Levoit Core 300S have a filter life indicator."
+      "a": "Replace HEPA filters every 6–12 months for purifiers running 24 hours daily. The Levoit Core 400S and Core 300S both include filter life indicators that alert you when airflow drops below effective filtration levels — typically at the 6-month mark in pet households or rooms with heavy particulate loads. The Winix 5500-2's pre-filter is washable and reusable: rinse it monthly to extend the main HEPA filter's lifespan to 12 months. Filter replacement costs vary significantly: the Levoit Core 300S uses a $19.99 combined filter; the Levoit Core 400S requires a $39.99 filter due to its larger media surface. Budget $40–$80 per year in replacement filters when calculating the total annual operating cost of any air purifier."
     },
     {
       "q": "Which air purifier is the best overall pick for 2026?",
