@@ -109,6 +109,42 @@
       "link": "https://www.amazon.com/dp/B09GQPSHZD?tag=compareelite-20",
       "asin": "B09GQPSHZD",
       "image": "https://m.media-amazon.com/images/I/71pFeJFdJQL._SL500_.jpg"
+    },
+    {
+      "name": "Logitech G PRO X 2 Lightspeed",
+      "rating": "9.0/10",
+      "price": "$149",
+      "best_for": "Best for PC Competitive Gaming",
+      "pros": [
+        "The G PRO X 2 uses 50mm graphene drivers — graphene is 6× stiffer than conventional polyethylene at 0.77mg per driver — producing a transient response that separates footsteps and reload sounds in competitive games more cleanly than the neodymium drivers in the Corsair HS80.",
+        "LIGHTSPEED 2.4GHz wireless delivers a 4ms latency connection over a 30-foot range, imperceptibly close to wired performance where the SteelSeries Arctis Nova Pro Wireless measures 7ms over its own 2.4GHz link.",
+        "Three connectivity options — LIGHTSPEED USB dongle, Bluetooth 5.1, and 3.5mm aux — allow the G PRO X 2 to pair simultaneously with a PC via dongle and a phone via Bluetooth, switching between sources in under 2 seconds."
+      ],
+      "cons": [
+        "At $149, the G PRO X 2 costs $50 more than the Razer BlackShark V2 HyperSpeed and $100 less than the Sony INZONE H9, occupying a price tier that forces a value comparison against both significantly cheaper and more premium alternatives.",
+        "Dolby Atmos spatial audio requires the PC Dolby Atmos app ($15/year subscription after a 30-day trial), adding ongoing cost that competitors like the HyperX Cloud Alpha Wireless avoid entirely through hardware-based stereo output."
+      ],
+      "image": "https://m.media-amazon.com/images/I/71ntVT5ApXL._SL500_.jpg",
+      "link": "https://www.amazon.com/dp/B0B3F8V4JG?tag=compareelite-20",
+      "asin": "B0B3F8V4JG"
+    },
+    {
+      "name": "Corsair HS80 RGB Wireless",
+      "rating": "8.6/10",
+      "price": "$100",
+      "best_for": "Best Value Wireless",
+      "pros": [
+        "At $100, the Corsair HS80 RGB Wireless delivers Dolby Atmos spatial audio and 2.4GHz wireless connectivity at $1 less than the Razer BlackShark V2 HyperSpeed, making it the only sub-$100 wireless headset in this guide with hardware-certified Dolby Atmos support.",
+        "The broadcast-grade omnidirectional microphone records voice at 100Hz–10kHz with a built-in noise floor of -42dBV/Pa sensitivity, producing clearer teammate communication than the HyperX Cloud Alpha Wireless's directional boom mic in reverberant room environments.",
+        "Memory foam earpads measure 75mm diameter with 20mm depth, providing 7mm more earcup depth than the Razer BlackShark V2's 13mm pads — reducing ear contact for users with larger ears during extended sessions beyond 3 hours."
+      ],
+      "cons": [
+        "Battery life measures approximately 20 hours at moderate volume, 7 hours shorter than the HyperX Cloud Alpha Wireless's 300-hour claim and 17 hours shorter than the SteelSeries Arctis Nova Pro Wireless's dual-battery hot-swap system that provides continuous unlimited runtime.",
+        "The HS80 RGB Wireless lacks Bluetooth connectivity, requiring the USB dongle to remain plugged in for wireless use — unlike the Logitech G PRO X 2 Lightspeed, which pairs simultaneously via both 2.4GHz and Bluetooth without removing the dongle."
+      ],
+      "image": "https://m.media-amazon.com/images/I/71yULbWE8KL._SL500_.jpg",
+      "link": "https://www.amazon.com/dp/B09BBPTDWX?tag=compareelite-20",
+      "asin": "B09BBPTDWX"
     }
   ],
   "faq": [
