@@ -109,6 +109,42 @@
       "image": "https://m.media-amazon.com/images/I/51FpYNp5aEL._SL500_.jpg",
       "link": "https://www.amazon.com/dp/B084T8QHNX?tag=compareelite-20",
       "asin": "B084T8QHNX"
+    },
+    {
+      "name": "VIOFO A229 Pro 2CH Dash Cam",
+      "rating": "9.1/10",
+      "price": "$149",
+      "best_for": "Best Dual-Sensor Upgrade",
+      "pros": [
+        "The VIOFO A229 Pro 2CH pairs a Sony STARVIS 2 IMX678 front sensor (8MP, 1/1.8\") with a STARVIS 2 IMX675 rear sensor, recording 4K at 30fps front and 2K at 30fps rear simultaneously — the only sub-$160 dash cam with dual second-generation STARVIS sensors on both channels.",
+        "Night Vision 2.0 combines a 7-glass F1.6 front aperture with HDR processing that retains license plate legibility at 45 feet under 0.5 lux lighting conditions, producing measurably sharper night footage than single-sensor alternatives in this guide.",
+        "5GHz Wi-Fi transfers a 2-minute 4K clip to the companion app in approximately 18 seconds — roughly 40% faster than 2.4GHz alternatives — making roadside footage retrieval practical without SD card removal."
+      ],
+      "cons": [
+        "At $149, the A229 Pro 2CH costs $60 more than the Rexing V1 and requires a separate $30–$50 hardwire kit for parking mode sessions exceeding 4 hours of continuous monitoring.",
+        "The rear camera module uses a proprietary mini-USB connection rather than USB-C, requiring a brand-specific replacement cable if the included cable is lost or damaged."
+      ],
+      "image": "https://m.media-amazon.com/images/I/717rmTFtSNL._SL500_.jpg",
+      "link": "https://www.amazon.com/dp/B0CKYFSKNN?tag=compareelite-20",
+      "asin": "B0CKYFSKNN"
+    },
+    {
+      "name": "70mai A800S 4K Dash Cam",
+      "rating": "8.7/10",
+      "price": "$100",
+      "best_for": "Best Budget 4K with ADAS",
+      "pros": [
+        "The 70mai A800S records 4K at 3840×2160 with a Sony IMX415 sensor, F1.8 aperture, and 140° field of view — delivering resolution identical to the Vantrue E1 Pro at $11 less while adding active safety features the Vantrue lacks.",
+        "Built-in ADAS provides forward-collision warning and lane-departure alerts calibrated to react approximately 2.2 seconds before estimated impact, making this the only camera under $120 in this guide with active driver assistance.",
+        "The integrated 3-inch IPS touchscreen enables direct on-device playback and clip selection without phone pairing, allowing footage review within 30 seconds of an incident — faster than Wi-Fi-based access on the Garmin Dash Cam Mini 2."
+      ],
+      "cons": [
+        "The 70mai A800S records front footage only in the base configuration — the separate RC06 rear camera module costs an additional $35–$45, bringing the dual-channel total to approximately $135–$145.",
+        "The companion app exports footage at a maximum of 1080p on mobile, requiring SD card removal and a computer to access full 4K clips — a restriction shared with the Garmin Dash Cam Mini 2 at $59."
+      ],
+      "image": "https://m.media-amazon.com/images/I/71oeojyVIHL._SL500_.jpg",
+      "link": "https://www.amazon.com/dp/B09YCZ7PYW?tag=compareelite-20",
+      "asin": "B09YCZ7PYW"
     }
   ],
   "faq": [
