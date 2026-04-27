@@ -107,6 +107,42 @@
       "image": "https://m.media-amazon.com/images/I/51x8uUsdLeL._SL500_.jpg",
       "link": "https://www.amazon.com/dp/B0991Q94KP?tag=compareelite-20",
       "asin": "B0991Q94KP"
+    },
+    {
+      "name": "Amazon Echo Show 8 (3rd Gen)",
+      "rating": "9.2/10",
+      "price": "$149",
+      "best_for": "Best Smart Display Hub",
+      "pros": [
+        "An 8.7-inch HD display with 1280×800 resolution runs adaptive color, automatically adjusting color temperature and brightness based on ambient light — providing a bedside clock that dims to 0% at midnight and brightens to 30% at sunrise without any manual adjustment.",
+        "The built-in Zigbee smart home hub connects directly to Zigbee-protocol devices including Philips Hue bulbs, Yale smart locks, and SONOFF sensors without requiring a separate bridge — consolidating control that previously required 2–3 additional hub devices at $50–$80 each.",
+        "13MP wide-angle camera with automatic subject framing keeps call participants centered during movement within a 4-foot radius, eliminating the fixed-frame issue of the Ring Video Doorbell 4's static camera angle during video calls from a home display."
+      ],
+      "cons": [
+        "At $149, the Echo Show 8 costs $100 more than the Echo Dot 5th Gen — the display adds visual recipe guidance, show/movie streaming, and video calling, but users primarily using Alexa for music and smart home commands will not utilize the screen sufficiently to justify the $100 premium.",
+        "The Alexa ecosystem locks media playback to Amazon Music at full functionality — Spotify Connect works but lacks lyrics display and certain playback controls available natively on the Google Nest Hub's YouTube Music integration for Google account users."
+      ],
+      "image": "https://m.media-amazon.com/images/I/61amQWBoq6L._SL500_.jpg",
+      "link": "https://www.amazon.com/dp/B0BLS3Y632?tag=compareelite-20",
+      "asin": "B0BLS3Y632"
+    },
+    {
+      "name": "Google Nest Learning Thermostat (3rd Gen)",
+      "rating": "9.3/10",
+      "price": "$249",
+      "best_for": "Best Smart Thermostat",
+      "pros": [
+        "The Nest Learning Thermostat automatically builds a heating and cooling schedule within 7–10 days of use by recognizing occupancy patterns — no manual programming required — and EPA studies show it reduces HVAC energy consumption by an average of 10–12% for heating and 15% for cooling annually.",
+        "Farsight display activates when motion is detected within 8 feet, showing time, temperature, or weather without requiring a phone app — providing at-a-glance home status information that the Ring Video Doorbell and Kasa Smart Plug cannot replicate without a separate display.",
+        "Compatible with 95% of 24V heating and cooling systems including 2-stage heat pumps, radiant heat, and forced air — and works with both Alexa and Google Assistant simultaneously, unlike smart plugs that require choosing a single ecosystem for voice control."
+      ],
+      "cons": [
+        "At $249, the Nest Learning Thermostat costs $100 more than the Nest Thermostat E ($149) and provides programmatic learning rather than manual scheduling — users in rental properties or those who prefer manual control pay a significant premium for an automation feature they may override manually.",
+        "Professional installation is recommended for multi-stage HVAC systems and heat pumps, adding $100–$200 in labor costs beyond the device price for households without a dedicated common-wire (C-wire) that existing wiring may lack."
+      ],
+      "image": "https://m.media-amazon.com/images/I/61WEKur1KEL._SL500_.jpg",
+      "link": "https://www.amazon.com/dp/B0DZDB98JG?tag=compareelite-20",
+      "asin": "B0DZDB98JG"
     }
   ],
   "faq": [
