@@ -165,7 +165,7 @@
     },
     {
       "q": "Can smart speakers work without Wi-Fi?",
-      "a": "Smart speakers require Wi-Fi for their core functionality — voice processing, music streaming, smart home commands, and most assistant queries are handled in the cloud. Without Wi-Fi, these speakers are effectively non-functional. The Apple HomePod mini is the partial exception: it can process some Siri requests on-device (timers, alarms, HomeKit automation) without an internet connection, but streaming and complex queries still require connectivity. If you need a speaker that works offline, a standard Bluetooth speaker is the appropriate choice."
+      "a": "Smart speakers require Wi-Fi for their core functionality — voice processing, music streaming, smart home commands, and most assistant queries are handled in the cloud. Without Wi-Fi, these speakers are effectively non-functional. The Apple HomePod mini is the partial exception: it can process some Siri requests on-device (timers, alarms, HomeKit automation) without an internet connection, but streaming and complex queries still require connectivity. If you need a speaker that works offline, a standard Bluetooth speaker is the appropriate choice. For households that lose internet connectivity regularly — rural areas or unreliable ISPs — a Bluetooth speaker paired via phone provides more reliable audio than any smart speaker during outages."
     },
     {
       "q": "What is the difference between Amazon Echo Studio and Echo (4th Gen)?",
