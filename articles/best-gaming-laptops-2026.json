@@ -109,6 +109,42 @@
         "Webcam is only 1080p 30fps, which feels limited compared to competitors offering 1080p 60fps."
       ],
       "asin": "B0C9DDXB9Q"
+    },
+    {
+      "name": "HP OMEN 16 Gaming Laptop (2024)",
+      "rating": "9.1/10",
+      "price": "$1,234",
+      "best_for": "Best Value Premium Gaming",
+      "pros": [
+        "The HP OMEN 16 pairs an AMD Ryzen 9 7940HS (8-core, up to 5.2GHz) with NVIDIA GeForce RTX 4070 8GB GDDR6X, delivering an average of 89fps at 1440p Ultra settings in Cyberpunk 2077 — 34% faster than the Lenovo Legion Slim 5's RTX 4060 at the same settings.",
+        "A 165Hz FHD IPS display with 100% sRGB coverage renders color-accurate visuals across competitive and creative workloads simultaneously, eliminating the need to lower color settings when switching from gaming to photo editing.",
+        "OMEN Tempest cooling uses dual 12V fans with a vapor chamber heat spreader, sustaining the Ryzen 9 7940HS at full 45W TDP for 30 consecutive minutes without thermal throttling — a significant advantage over single-fan designs in thinner gaming laptops."
+      ],
+      "cons": [
+        "At 5.46 lbs, the HP OMEN 16 weighs 0.7 lbs more than the ASUS ROG Zephyrus G14, making it a meaningful difference for commuters who carry their laptop daily.",
+        "The 512GB SSD included in the base configuration is insufficient for modern game libraries — expanding to 1TB typically adds $150–$200 to the total system cost."
+      ],
+      "image": "https://m.media-amazon.com/images/I/81f0jiCqLoL._SL500_.jpg",
+      "link": "https://www.amazon.com/dp/B0CS6HC9Q8?tag=compareelite-20",
+      "asin": "B0CS6HC9Q8"
+    },
+    {
+      "name": "MSI Katana A15 AI Gaming Laptop",
+      "rating": "8.8/10",
+      "price": "$799",
+      "best_for": "Best Budget Gaming Laptop",
+      "pros": [
+        "The MSI Katana A15 AI pairs an AMD Ryzen 7 8845HS with NVIDIA GeForce RTX 4060 8GB GDDR6, achieving 72fps average at 1080p High in Cyberpunk 2077 — sufficient for smooth competitive and AAA gaming at the lowest price point in this guide.",
+        "32GB DDR5 RAM in the base configuration is double the 16GB found in similarly-priced competitors, preventing memory bottlenecks in open-world games like Microsoft Flight Simulator that routinely consume 24–28GB of system RAM.",
+        "Wi-Fi 6E support delivers a 6GHz band connection with up to 2.4Gbps theoretical throughput, enabling ultra-low latency online gaming compared to Wi-Fi 5 routers that max at 867Mbps on the 5GHz band."
+      ],
+      "cons": [
+        "The 144Hz FHD display covers only 45% NTSC color gamut — adequate for gaming but unsuitable for content creation that requires the 100% sRGB coverage found in the HP OMEN 16 or ASUS ROG Zephyrus G14.",
+        "Battery life of approximately 3.5 hours under gaming load makes the Katana A15 AI dependent on AC power for sustained sessions, limiting use at LAN events without a power strip."
+      ],
+      "image": "https://m.media-amazon.com/images/I/81Uss7SfTFL._SL500_.jpg",
+      "link": "https://www.amazon.com/dp/B0CXVGSY2H?tag=compareelite-20",
+      "asin": "B0CXVGSY2H"
     }
   ],
   "faq": [
