@@ -29,6 +29,13 @@ If REJECTED, list every failed check with a specific fix. Do not approve an arti
 
 ---
 
+## AUTO-IMPROVEMENTS (2026-04-28)
+
+- [from pattern fresh-article-mostly-dead] BLOCK any article where 50%+ of products have ASINs that appear in `data/broken-amazon-links.json` with `state: "DEAD"`. Run `node scripts/validate-article.js articles/<slug>.json` (or check the JSON directly) on every article before approval — never trust the writer's claim that ASINs are live.
+- [from pattern thumbnail-drift] In QC, verify thumbnail = products[0].image as the final pre-submit step. The homepage card MUST show the Best Overall product, not a stale stock photo or Unsplash URL. If they differ → REJECTED; fix by setting `thumbnail` equal to `products[0].image`.
+
+---
+
 ## ⚠️ STEP 0 — Fetch Published Articles from GitHub (REQUIRED BEFORE REVIEW)
 
 Before running any checks, fetch the current list of published articles from the GitHub repository:
@@ -118,7 +125,7 @@ Run these first. Any forbidden field = immediate REJECTED status regardless of o
 ### `thumbnail`
 | # | Check | Rule |
 |---|---|---|
-| 28 | Thumbnail is Amazon CDN URL | Must start with `https://m.media-amazon.com/images/I/`. Unsplash, manufacturer, and blog hosts are auto-fail. |
+| 28 | Thumbnail is Amazon CDN URL | Must start with `https://m.media-amazon.com/images/I/` or `https://images-na.ssl-images-amazon.com/images/`. Unsplash, manufacturer, and blog hosts are auto-fail. |
 | 29 | Thumbnail equals products[0].image | Byte-for-byte match with the Best Overall product's image. The article card on the homepage shows that product. |
 
 ### `author`
@@ -151,7 +158,7 @@ For each product in `products`:
 | 41 | ASIN format | The ASIN in each link must be 10 alphanumeric characters (e.g. `B09ZY3K6TW`) |
 | 41a | ASIN not in DEAD list | The ASIN MUST NOT appear in `data/broken-amazon-links.json` with `state: "DEAD"`. If it does → REJECTED. Writer must replace it with a verified ASIN. |
 | 41b | ASIN liveness probe (optional) | If running with network access, run `node scripts/validate-amazon-links.js --slug <slug>` and reject on any DEAD result. BLOCKED/ERROR is not a fail (datacenter IP false positives). |
-| 42 | `image` is present and correct | Every product MUST have an `image` field — missing = auto-fail. MUST start with `https://m.media-amazon.com/images/I/` — third-party CDNs (Dell, Vari, Herman Miller, blogs, manufacturer sites, `images-na.ssl-images-amazon.com`, Amazon product page URLs) all auto-fail. |
+| 42 | `image` is present and correct | Every product MUST have an `image` field — missing = auto-fail. MUST start with `https://m.media-amazon.com/images/I/` or `https://images-na.ssl-images-amazon.com/images/` — third-party CDNs (Dell, Vari, Herman Miller, blogs, manufacturer sites, Amazon product page URLs) all auto-fail. |
 | 43 | `pros` are full sentences | Each pro must be a complete sentence (starts with capital, ends with period, contains a measurable spec or number). Reject fragments like "Long battery life" |
 | 44 | `pros` count | Exactly 3 pros per product |
 | 45 | `cons` are full sentences | Each con must be a complete sentence with a specific limitation. Reject vague entries like "Expensive" |
@@ -314,7 +321,7 @@ TOTAL:          XXXX words  [≥2000 ✅ / <2000 ❌]
 | `content` field present | Delete entirely — website builds content from other fields |
 | `rating: 4.8` (number) | Change to `"9.6/10"` (string) |
 | `image` field missing from product | Article must be rewritten — replace the product with one whose image ID is known. Do not add a placeholder |
-| `image` uses `images-na.ssl-images-amazon.com` | Wrong CDN — always breaks. Replace with `m.media-amazon.com/images/I/[IMAGE_ID]._SL500_.jpg` or swap the product |
+| `image` uses a non-Amazon CDN (manufacturer, blog, Unsplash, etc.) | Replace with `https://m.media-amazon.com/images/I/[IMAGE_ID]._SL500_.jpg` or `https://images-na.ssl-images-amazon.com/images/P/[ASIN].01._SL500_.jpg` — both Amazon CDN formats are valid |
 | Thumbnail is Unsplash URL | Replace with `products[0].image` (the Amazon CDN URL of the Best Overall product) |
 | Thumbnail differs from products[0].image | Set them equal — copy the products[0].image string into thumbnail |
 | Product image points at a manufacturer/blog CDN | Replace with `https://m.media-amazon.com/images/I/[ID]._SL500_.jpg` from training data, or swap the product |

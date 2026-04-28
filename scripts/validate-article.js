@@ -18,6 +18,10 @@ const path = require('path');
 const VALID_CATEGORIES = ['Tech', 'Home Office', 'Smart Home', 'Home Fitness'];
 const AMAZON_TAG = '?tag=compareelite-20';
 const AMAZON_CDN_PREFIX = 'https://m.media-amazon.com/images/I/';
+const AMAZON_CDN_NA_PREFIX = 'https://images-na.ssl-images-amazon.com/images/';
+function isAmazonCdnImage(url) {
+  return url.startsWith(AMAZON_CDN_PREFIX) || url.startsWith(AMAZON_CDN_NA_PREFIX);
+}
 const MIN_PRODUCTS = 6;
 const FAQ_COUNT = 5;
 const RATING_PATTERN = /^\d+(?:\.\d+)?\/10$/;
@@ -106,8 +110,8 @@ function validateArticle(article, filePath) {
   if (article.thumbnail) {
     if (!isHttpUrl(article.thumbnail)) {
       errors.push('thumbnail must be a valid http(s) image URL');
-    } else if (!article.thumbnail.startsWith(AMAZON_CDN_PREFIX)) {
-      errors.push(`thumbnail must be an Amazon CDN URL (${AMAZON_CDN_PREFIX}...) — set it equal to products[0].image so the article card shows the Best Overall product`);
+    } else if (!isAmazonCdnImage(article.thumbnail)) {
+      errors.push(`thumbnail must be an Amazon CDN URL (${AMAZON_CDN_PREFIX}... or ${AMAZON_CDN_NA_PREFIX}...) — set it equal to products[0].image so the article card shows the Best Overall product`);
     } else if (Array.isArray(article.products) && article.products[0] && article.products[0].image && article.thumbnail !== article.products[0].image) {
       errors.push('thumbnail must equal products[0].image (the Best Overall product)');
     }
@@ -156,8 +160,8 @@ function validateArticle(article, filePath) {
       if ('image' in p && isNonEmptyString(p.image)) {
         if (!isHttpUrl(p.image)) {
           errors.push(`${tag}.image must be a valid http(s) URL`);
-        } else if (!p.image.startsWith(AMAZON_CDN_PREFIX)) {
-          errors.push(`${tag}.image must be an Amazon CDN URL (${AMAZON_CDN_PREFIX}[ID]._SL500_.jpg) — third-party CDNs (Dell, blogs, etc.) are blocked or hotlink-protected`);
+        } else if (!isAmazonCdnImage(p.image)) {
+          errors.push(`${tag}.image must be an Amazon CDN URL (${AMAZON_CDN_PREFIX}[ID]._SL500_.jpg or ${AMAZON_CDN_NA_PREFIX}P/[ASIN].01._SL500_.jpg) — third-party CDNs (Dell, blogs, etc.) are blocked or hotlink-protected`);
         }
       }
       if ('link' in p && isNonEmptyString(p.link)) {

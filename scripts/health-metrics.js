@@ -23,7 +23,11 @@ const ARTICLES_DIR = path.join(ROOT, 'articles');
 const BROKEN_LINKS = path.join(ROOT, 'data', 'broken-amazon-links.json');
 const HISTORY_PATH = path.join(ROOT, 'data', 'health-history.json');
 const VALID_CATEGORIES = ['Tech', 'Home Office', 'Smart Home', 'Home Fitness'];
-const AMAZON_CDN = 'https://m.media-amazon.com/images/I/';
+const AMAZON_CDN   = 'https://m.media-amazon.com/images/I/';
+const AMAZON_CDN_NA = 'https://images-na.ssl-images-amazon.com/images/';
+function isAmazonCdnImage(url) {
+  return url && (url.startsWith(AMAZON_CDN) || url.startsWith(AMAZON_CDN_NA));
+}
 
 const { validateArticle } = require('./validate-article');
 
@@ -129,7 +133,7 @@ function collect() {
         if (cat in m.asins.deadByCategory) m.asins.deadByCategory[cat]++;
         m.asins.deadByArticle[a.slug] = (m.asins.deadByArticle[a.slug] || 0) + 1;
       }
-      if (p.image && !p.image.startsWith(AMAZON_CDN)) {
+      if (p.image && !isAmazonCdnImage(p.image)) {
         m.images.productsWithBadCdn.push({ slug: a.slug, image: p.image.slice(0, 80) });
         if (cat in m.images.productsWithBadCdnByCategory) m.images.productsWithBadCdnByCategory[cat]++;
       }

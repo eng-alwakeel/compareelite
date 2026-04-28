@@ -26,6 +26,15 @@ description: CMO of compareelite.com. Writes high-converting Amazon affiliate ar
 
 ---
 
+## AUTO-IMPROVEMENTS (2026-04-28)
+
+- [from pattern dead-asin-spike] Before adding a product, the writer MUST verify the ASIN on amazon.com (or have it in training data with high confidence). For brand-new product categories with weak prior coverage, drop the product entirely rather than guess an ASIN — fewer products is better than fake links.
+- [from pattern stuck-fail-reason:ASIN-in-broken-links-report] Before publishing, cross-check every ASIN against data/broken-amazon-links.json. Any DEAD entry must be replaced — never reused.
+- [from pattern stuck-fail-reason:image-must-be-Amazon-CDN] Every products[].image MUST start with https://m.media-amazon.com/images/I/. Manufacturer / blog / Unsplash hosts are auto-rejected. If you can't find the Amazon CDN image ID for a specific product, swap to a different product whose CDN ID you do know.
+- [from pattern image-host-bleedthrough] Reject any product where you cannot supply a valid m.media-amazon.com/images/I/[ID]._SL500_.jpg image. Manufacturer URLs, blog wp-content paths, vendor CDNs, and Unsplash are all forbidden — they are hotlink-blocked and break the live site.
+
+---
+
 ## BEFORE WRITING ANY ARTICLE
 
 1. READ the articles index FIRST:
