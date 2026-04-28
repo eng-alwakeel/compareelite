@@ -426,6 +426,116 @@ async function renderArticleDetail() {
         }))
     } : null;
 
+    // Helper function to parse rating strings like "9.8/10" or "4.5"
+    function parseRating(ratingStr) {
+        if (!ratingStr) return null;
+        const match = String(ratingStr).match(/(\d+\.?\d*)\s*\/\s*(\d+)/);
+        if (match) {
+            return {
+                ratingValue: parseFloat(match[1]),
+                bestRating: parseFloat(match[2])
+            };
+        }
+        const numericRating = parseFloat(ratingStr);
+        if (!isNaN(numericRating)) {
+            return {
+                ratingValue: numericRating,
+                bestRating: numericRating <= 5 ? 5 : 10
+            };
+        }
+        return null;
+    }
+
+    // Generate Product schemas for each product
+    const productSchemas = [];
+    if (article.products && article.products.length) {
+        article.products.forEach((product, index) => {
+            const rating = parseRating(product.rating);
+            const productSchema = {
+                "@type": "Product",
+                "@id": `${pageUrl}#product-${index + 1}`,
+                "name": product.name,
+                "image": product.image || article.thumbnail,
+                "description": product.best_for || `${product.name} - ${article.title}`,
+            };
+
+            // Extract brand from product name (first word before space)
+            const brandMatch = product.name.match(/^(\S+)/);
+            if (brandMatch) {
+                productSchema.brand = {
+                    "@type": "Brand",
+                    "name": brandMatch[1]
+                };
+            }
+
+            // Add offers (price and link)
+            if (product.price || product.link) {
+                productSchema.offers = {
+                    "@type": "Offer",
+                    "url": product.link || pageUrl,
+                    "priceCurrency": "USD",
+                    "availability": "https://schema.org/InStock"
+                };
+                if (product.price) {
+                    // Remove $ and parse price
+                    const priceMatch = String(product.price).match(/[\d,]+\.?\d*/);
+                    if (priceMatch) {
+                        productSchema.offers.price = priceMatch[0].replace(/,/g, '');
+                    }
+                }
+            }
+
+            // Add aggregateRating if rating is available
+            if (rating) {
+                productSchema.aggregateRating = {
+                    "@type": "AggregateRating",
+                    "ratingValue": rating.ratingValue,
+                    "bestRating": rating.bestRating,
+                    "ratingCount": 1
+                };
+            }
+
+            productSchemas.push(productSchema);
+        });
+    }
+
+    // Generate Review schemas for review articles
+    const reviewSchemas = [];
+    if (article.products && article.products.length && article.title.toLowerCase().includes('review')) {
+        article.products.forEach((product, index) => {
+            const rating = parseRating(product.rating);
+            if (rating) {
+                const reviewBody = [
+                    product.best_for || '',
+                    product.pros ? `Pros: ${product.pros.join(', ')}` : '',
+                    product.cons ? `Cons: ${product.cons.join(', ')}` : ''
+                ].filter(Boolean).join('. ');
+
+                const reviewSchema = {
+                    "@type": "Review",
+                    "@id": `${pageUrl}#review-${index + 1}`,
+                    "itemReviewed": {
+                        "@type": "Product",
+                        "name": product.name,
+                        "image": product.image || article.thumbnail
+                    },
+                    "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": rating.ratingValue,
+                        "bestRating": rating.bestRating
+                    },
+                    "author": {
+                        "@type": "Organization",
+                        "name": "CompareElite"
+                    },
+                    "reviewBody": reviewBody || article.excerpt,
+                    "datePublished": article.date
+                };
+                reviewSchemas.push(reviewSchema);
+            }
+        });
+    }
+
     const schemaGraph = [
         {
             "@type": "Article",
@@ -465,6 +575,16 @@ async function renderArticleDetail() {
     ];
     if (itemListSchema) schemaGraph.push(itemListSchema);
     if (faqSchema) schemaGraph.push(faqSchema);
+
+    // Add Product schemas to graph
+    if (productSchemas.length) {
+        productSchemas.forEach(ps => schemaGraph.push(ps));
+    }
+
+    // Add Review schemas to graph
+    if (reviewSchemas.length) {
+        reviewSchemas.forEach(rs => schemaGraph.push(rs));
+    }
 
     const ldScript = document.createElement('script');
     ldScript.type = 'application/ld+json';
