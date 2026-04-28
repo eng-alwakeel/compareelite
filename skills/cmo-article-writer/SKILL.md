@@ -19,9 +19,10 @@ description: CMO of compareelite.com. Writes high-converting Amazon affiliate ar
 6. Minimum 6 products per article
 7. Exactly 5 FAQ questions
 8. `rating` MUST be string format like "8.5/10" (NOT number)
-9. All images MUST be valid Amazon URLs
-10. `slug` MUST match filename exactly
-11. **DO NOT invent ASINs.** Use only real product ASINs from Amazon. If you don't know a real ASIN for a product, search amazon.com first. Better to have fewer products than fake links. Any ASIN listed in `data/broken-amazon-links.json` (state: DEAD) MUST NOT be reused.
+9. **Every `products[].image` MUST start with `https://m.media-amazon.com/images/I/`** — no third-party CDNs (Dell, Vari, Herman Miller, blogs, etc. all get hotlink-blocked)
+10. **`thumbnail` MUST equal `products[0].image` exactly** — the article card on the homepage shows the Best Overall product, not a generic Unsplash photo
+11. `slug` MUST match filename exactly
+12. **DO NOT invent ASINs.** Use only real product ASINs from Amazon. If you don't know a real ASIN for a product, search amazon.com first. Better to have fewer products than fake links. Any ASIN listed in `data/broken-amazon-links.json` (state: DEAD) MUST NOT be reused.
 
 ---
 
@@ -217,7 +218,8 @@ npm run validate-articles articles/<slug>.json
 | `tagline` | `best_for` |
 | `rating: 4.8` (number) | `rating: "9.8/10"` (string with /10) |
 | `content: "# Markdown..."` | **REMOVE — causes raw text or [object Object]** |
-| Amazon URL for `thumbnail` | Unsplash URL only (see Image Rules) |
+| Unsplash URL for `thumbnail` | `products[0].image` (Amazon CDN — see Image Rules) |
+| Third-party CDN for `image` (Dell, blogs, Vari…) | `https://m.media-amazon.com/images/I/[ID]._SL500_.jpg` only |
 
 **If you use any of the ❌ WRONG fields above, the article will break on the website.**
 
@@ -359,18 +361,24 @@ npm run validate-articles articles/<slug>.json
 
 ## Image Rules
 
-### `thumbnail` (article card — Unsplash ONLY)
-- **MUST be an Unsplash URL**: `https://images.unsplash.com/photo-XXXXXXXXXXXXXXXXXX?w=800&q=80`
-- **NEVER use Amazon, m.media-amazon.com, or any product image** — these are hotlink-blocked and will break the homepage card
-- Choose a photo that represents the category visually (lifestyle shot, not a specific product box)
+### `thumbnail` (article card)
 
-### `image` (product card — Amazon CDN)
+> ⚠️ **`thumbnail` MUST equal `products[0].image` exactly** — the article card shows the Best Overall product, not a generic stock photo.
 
-> ⚠️ **`image` is REQUIRED for every product. Never omit it. Never leave it blank.**
+- Format: `https://m.media-amazon.com/images/I/[IMAGE_ID]._SL500_.jpg`
+- After ranking products by rating (highest first), copy `products[0].image` into `thumbnail`. They must be byte-identical.
+- The validator rejects any thumbnail that isn't an Amazon CDN URL OR doesn't match `products[0].image`.
+- (Old rule was "Unsplash only" — superseded. Unsplash is no longer accepted.)
+
+### `image` (product card — Amazon CDN, REQUIRED for EVERY product)
+
+> ⚠️ **`image` is REQUIRED for every product. Never omit it. Never leave it blank. NEVER use a third-party CDN.**
 
 - Format: `https://m.media-amazon.com/images/I/[IMAGE_ID]._SL500_.jpg`
 - The `IMAGE_ID` is a string like `61pN1SjxstL` — it is NOT the ASIN
 - Find it from your training data for well-known products
+- **Forbidden hosts** (auto-rejected by validator): `snpi.dell.com`, `images.hermanmiller.group`, `*.vari.com`, `*.eartly.com`, `thegww.com`, any `wp-content/uploads/...`, any blog or manufacturer site. ONLY `m.media-amazon.com/images/I/` is accepted.
+- If you can't find the Amazon CDN ID for a specific product → **swap the product** for a different well-known alternative whose image ID you do know. Don't fall back to manufacturer images.
 
 **How to find the image ID:**
 1. From training data: well-known products (Sony, Apple, Logitech, Herman Miller, NordicTrack, etc.) have image IDs you already know
@@ -505,7 +513,8 @@ The website auto-renders 8 sections from your JSON — **do NOT write a `content
 - [ ] `title` under 60 characters, includes year
 - [ ] `date` in `YYYY-MM-DD` format
 - [ ] `excerpt` is 150–160 characters exactly
-- [ ] `thumbnail` is an Unsplash URL (`images.unsplash.com`)
+- [ ] `thumbnail` is an Amazon CDN URL (`m.media-amazon.com/images/I/...`) AND equals `products[0].image` byte-for-byte
+- [ ] every `products[].image` starts with `https://m.media-amazon.com/images/I/` — no manufacturer / blog / Unsplash hosts
 - [ ] `author` is `"CompareElite Team"`
 - [ ] `stats` is `{ "readers": 0 }`
 - [ ] `intro` has 3 paragraphs separated by `\n\n`, totaling 200–250 words

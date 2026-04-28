@@ -1,4 +1,6 @@
 {
+  "_thumbnail_rule": "thumbnail MUST equal products[0].image — the Best Overall product's Amazon CDN photo",
+  "_image_rule": "every products[].image MUST start with https://m.media-amazon.com/images/I/ — no third-party CDNs",
   "title": "",
   "slug": "",
   "category": "",

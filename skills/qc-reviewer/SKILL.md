@@ -118,8 +118,8 @@ Run these first. Any forbidden field = immediate REJECTED status regardless of o
 ### `thumbnail`
 | # | Check | Rule |
 |---|---|---|
-| 28 | Thumbnail is Unsplash URL | Must start with `https://images.unsplash.com/photo-` — NEVER `m.media-amazon.com` or any Amazon URL |
-| 29 | Thumbnail URL format | Must end with `?w=800&q=80` |
+| 28 | Thumbnail is Amazon CDN URL | Must start with `https://m.media-amazon.com/images/I/`. Unsplash, manufacturer, and blog hosts are auto-fail. |
+| 29 | Thumbnail equals products[0].image | Byte-for-byte match with the Best Overall product's image. The article card on the homepage shows that product. |
 
 ### `author`
 | # | Check | Rule |
@@ -151,7 +151,7 @@ For each product in `products`:
 | 41 | ASIN format | The ASIN in each link must be 10 alphanumeric characters (e.g. `B09ZY3K6TW`) |
 | 41a | ASIN not in DEAD list | The ASIN MUST NOT appear in `data/broken-amazon-links.json` with `state: "DEAD"`. If it does → REJECTED. Writer must replace it with a verified ASIN. |
 | 41b | ASIN liveness probe (optional) | If running with network access, run `node scripts/validate-amazon-links.js --slug <slug>` and reject on any DEAD result. BLOCKED/ERROR is not a fail (datacenter IP false positives). |
-| 42 | `image` is present and correct | Every product MUST have an `image` field — missing = auto-fail. Must be `https://m.media-amazon.com/images/I/[IMAGE_ID]._SL500_.jpg`. Reject `images-na.ssl-images-amazon.com`, Amazon product page URLs, or any other format |
+| 42 | `image` is present and correct | Every product MUST have an `image` field — missing = auto-fail. MUST start with `https://m.media-amazon.com/images/I/` — third-party CDNs (Dell, Vari, Herman Miller, blogs, manufacturer sites, `images-na.ssl-images-amazon.com`, Amazon product page URLs) all auto-fail. |
 | 43 | `pros` are full sentences | Each pro must be a complete sentence (starts with capital, ends with period, contains a measurable spec or number). Reject fragments like "Long battery life" |
 | 44 | `pros` count | Exactly 3 pros per product |
 | 45 | `cons` are full sentences | Each con must be a complete sentence with a specific limitation. Reject vague entries like "Expensive" |
@@ -307,7 +307,7 @@ TOTAL:          XXXX words  [≥2000 ✅ / <2000 ❌]
 | Issue | Fix |
 |---|---|
 | ASIN flagged as DEAD by validator | Open `data/broken-amazon-links.md`, find the row, swap that product's ASIN with a verified live one from amazon.com (or remove the product). Then re-run `npm run validate-articles articles/<slug>.json`. |
-| `featured_image` present | Rename to `thumbnail` — must be Unsplash URL |
+| `featured_image` present | Rename to `thumbnail` — must equal `products[0].image` (Amazon CDN) |
 | `published_at` present | Rename to `date` — format `YYYY-MM-DD` |
 | `tagline` present | Rename to `best_for` |
 | `affiliate_link` present | Rename to `link` |
@@ -315,7 +315,9 @@ TOTAL:          XXXX words  [≥2000 ✅ / <2000 ❌]
 | `rating: 4.8` (number) | Change to `"9.6/10"` (string) |
 | `image` field missing from product | Article must be rewritten — replace the product with one whose image ID is known. Do not add a placeholder |
 | `image` uses `images-na.ssl-images-amazon.com` | Wrong CDN — always breaks. Replace with `m.media-amazon.com/images/I/[IMAGE_ID]._SL500_.jpg` or swap the product |
-| Thumbnail is Amazon URL | Replace with Unsplash URL: `https://images.unsplash.com/photo-XXXXX?w=800&q=80` |
+| Thumbnail is Unsplash URL | Replace with `products[0].image` (the Amazon CDN URL of the Best Overall product) |
+| Thumbnail differs from products[0].image | Set them equal — copy the products[0].image string into thumbnail |
+| Product image points at a manufacturer/blog CDN | Replace with `https://m.media-amazon.com/images/I/[ID]._SL500_.jpg` from training data, or swap the product |
 | `stats` has extra fields | Change to exactly `{ "readers": 0 }` — remove `clicks` or any other keys |
 | Pros are fragments | Rewrite as full sentences with measurable specs |
 | FAQ uses `question`/`answer` keys | Rename to `q`/`a` |
