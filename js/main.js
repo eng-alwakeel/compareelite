@@ -622,6 +622,11 @@ async function renderArticleDetail() {
     `;
 
     container.innerHTML = bodyContent;
+
+    // Initialize GA4 affiliate click tracking
+    setTimeout(() => {
+        setupAffiliateTracking(article.slug);
+    }, 100);
 }
 
 function markdownToHTML(md) {
@@ -727,7 +732,13 @@ function buildArticleBody(article) {
             <td class="col-price" style="text-align:center; font-weight:600;">${p.price}</td>
             <td class="col-bestfor" style="text-align:center; color:var(--text-secondary);">${p.best_for}</td>
             <td class="col-action" style="text-align:right;">
-                <a href="${p.link}" class="btn btn-accent" target="_blank" rel="nofollow noopener" style="white-space:nowrap;">Check Price ↗</a>
+                <a href="${p.link}" 
+                   class="btn btn-accent affiliate-link" 
+                   target="_blank" 
+                   rel="nofollow noopener" 
+                   data-product-name="${p.name}"
+                   data-position="table"
+                   style="white-space:nowrap;">Check Price ↗</a>
             </td>
         </tr>`).join('');
 
@@ -751,7 +762,12 @@ function buildArticleBody(article) {
                     <ul class="pros-list">${pros.map(x => `<li>${x}</li>`).join('')}</ul>
                     ${cons.length ? `<p class="cons-label">❌ Cons</p><ul class="cons-list">${cons.map(x => `<li>${x}</li>`).join('')}</ul>` : ''}
                 </div>` : ''}
-                <a href="${p.link}" class="btn btn-accent pcard-btn" target="_blank" rel="nofollow noopener">Buy on Amazon ↗</a>
+                <a href="${p.link}" 
+                   class="btn btn-accent pcard-btn affiliate-link" 
+                   target="_blank" 
+                   rel="nofollow noopener"
+                   data-product-name="${p.name}"
+                   data-position="card">Buy on Amazon ↗</a>
             </div>
         </div>`;
     }).join('');
@@ -819,6 +835,45 @@ function buildArticleBody(article) {
             <p style="font-weight:600; color:var(--text-primary); margin-bottom:0.5rem;">Found this guide helpful?</p>
             <p style="font-size:0.9rem; margin-bottom:1rem;">All links are Amazon affiliate links. Prices shown are approximate and may change.</p>
         </div>`;
+}
+
+// ─── GA4 AFFILIATE CLICK TRACKING ────────────────────────────────────────────
+
+/**
+ * Setup click event listeners on all affiliate links
+ * @param {string} articleSlug - Current article slug
+ */
+function setupAffiliateTracking(articleSlug) {
+    const affiliateLinks = document.querySelectorAll('a.affiliate-link[href*="amazon.com"]');
+    
+    affiliateLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            trackAffiliateClick(this, articleSlug);
+        });
+    });
+}
+
+/**
+ * Track affiliate link click in GA4
+ * @param {HTMLAnchorElement} linkElement - The clicked link element
+ * @param {string} articleSlug - Current article slug
+ */
+function trackAffiliateClick(linkElement, articleSlug) {
+    const href = linkElement.getAttribute('href');
+    const asinMatch = href.match(/\/dp\/([A-Z0-9]{10})/);
+    const asin = asinMatch ? asinMatch[1] : 'unknown';
+    const productName = linkElement.getAttribute('data-product-name') || 'unknown';
+    const position = linkElement.getAttribute('data-position') || 'other';
+    
+    if (typeof gtag !== 'undefined') {
+        gtag('event', 'affiliate_click', {
+            product_name: productName,
+            asin: asin,
+            article_slug: articleSlug || 'unknown',
+            position: position,
+            link_url: href
+        });
+    }
 }
 
 // ─── DASHBOARD ───────────────────────────────────────────────────────────────
