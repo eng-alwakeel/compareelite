@@ -242,6 +242,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://compareelite.com/blog/article?slug=best-video-doorbells-2026</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
   <!-- Home Fitness Articles -->
   <url>
@@ -252,6 +258,12 @@
   </url>
   <url>
     <loc>https://compareelite.com/blog/article?slug=best-creatine-supplements-2026</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://compareelite.com/blog/article?slug=best-exercise-bikes-2026</loc>
     <lastmod>2026-04-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
