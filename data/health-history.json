@@ -1,0 +1,862 @@
+[
+  {
+    "timestamp": "2026-04-28T12:47:00.699Z",
+    "articles": {
+      "total": 45,
+      "jsonValid": 45,
+      "jsonBroken": [],
+      "byCategory": {
+        "Tech": 19,
+        "Home Office": 7,
+        "Smart Home": 9,
+        "Home Fitness": 10
+      },
+      "addedToday": 5
+    },
+    "validator": {
+      "pass": 26,
+      "fail": 19,
+      "failReasons": {
+        "products must have at least 6 items (found 2)": 1,
+        "products[N].link ASIN <X> is in the broken-links report (HTTP 404) — replace with a verified ASIN": 55,
+        "products[N].image must be an Amazon CDN URL (https://m.media-amazon.com/images/I/[ID]._SL500_.jpg) — third-party CDNs (Dell, blogs, etc.) are blocked or hotlink-protected": 12,
+        "thumbnail must be an Amazon CDN URL (https://m.media-amazon.com/images/I/...) — set it equal to products[N].image so the article card shows the Best Overall product": 1,
+        "products must have at least 6 items (found 3)": 1
+      },
+      "passRate": 57.8
+    },
+    "asins": {
+      "totalProducts": 263,
+      "dead": [
+        {
+          "slug": "best-business-laptops-2026",
+          "asin": "B0BT1DLMYG",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-business-laptops-2026",
+          "asin": "B0C0CFHM5V",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-business-laptops-2026",
+          "asin": "B0BGQHKKXS",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-business-laptops-2026",
+          "asin": "B0CG5K4PFJ",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-business-laptops-2026",
+          "asin": "B0BZRFXHLT",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-desk-lamps-2026",
+          "asin": "B076VNFZJK",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-desk-lamps-2026",
+          "asin": "B07GHQ4W7Z",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-desk-lamps-2026",
+          "asin": "B00KBGIQTU",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-desk-lamps-2026",
+          "asin": "B0BTQ1S4TM",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-desk-lamps-2026",
+          "asin": "B08N3L4VB9",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-ergonomic-keyboards-2026",
+          "asin": "B08P4LKPFR",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-ergonomic-keyboards-2026",
+          "asin": "B0BHZ9J5FP",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-exercise-bikes-2026",
+          "asin": "B07VBQM73M",
+          "category": "Home Fitness"
+        },
+        {
+          "slug": "best-exercise-bikes-2026",
+          "asin": "B07S4MVHM1",
+          "category": "Home Fitness"
+        },
+        {
+          "slug": "best-exercise-bikes-2026",
+          "asin": "B07QH7G2C3",
+          "category": "Home Fitness"
+        },
+        {
+          "slug": "best-exercise-bikes-2026",
+          "asin": "B091MWYRFK",
+          "category": "Home Fitness"
+        },
+        {
+          "slug": "best-exercise-bikes-2026",
+          "asin": "B014KBUTHE",
+          "category": "Home Fitness"
+        },
+        {
+          "slug": "best-exercise-bikes-2026",
+          "asin": "B003BLV22U",
+          "category": "Home Fitness"
+        },
+        {
+          "slug": "best-foam-rollers-2026",
+          "asin": "B00A0GQUZY",
+          "category": "Home Fitness"
+        },
+        {
+          "slug": "best-foam-rollers-2026",
+          "asin": "B00BH8TSTW",
+          "category": "Home Fitness"
+        },
+        {
+          "slug": "best-foam-rollers-2026",
+          "asin": "B00LF0MZRY",
+          "category": "Home Fitness"
+        },
+        {
+          "slug": "best-foam-rollers-2026",
+          "asin": "B00J2B4AOU",
+          "category": "Home Fitness"
+        },
+        {
+          "slug": "best-foam-rollers-2026",
+          "asin": "B007TIE5AQ",
+          "category": "Home Fitness"
+        },
+        {
+          "slug": "best-gaming-chairs-2026",
+          "asin": "B09KR4YKWV",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-gaming-chairs-2026",
+          "asin": "B0B1ZGFJZL",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-gaming-chairs-2026",
+          "asin": "B06Y47WVCS",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-gaming-chairs-2026",
+          "asin": "B09XS7F82G",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-gaming-chairs-2026",
+          "asin": "B074XKCVK4",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-gaming-headsets-2026",
+          "asin": "B0B2HRXT3S",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-gaming-headsets-2026",
+          "asin": "B0BZKFMF9V",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-gaming-headsets-2026",
+          "asin": "B09GQPSHZD",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-gaming-laptops-2026",
+          "asin": "B0CSJJ54GJ",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-gaming-laptops-2026",
+          "asin": "B0CGQ3TBCT",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-gaming-laptops-2026",
+          "asin": "B0C9DDXB9Q",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-l-shaped-desks-2026",
+          "asin": "B0C7KSDQPZ",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-l-shaped-desks-2026",
+          "asin": "B07F6YVMRN",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-l-shaped-desks-2026",
+          "asin": "B0BCXRDC75",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-l-shaped-desks-2026",
+          "asin": "B07HSD95Y2",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-l-shaped-desks-2026",
+          "asin": "B07YKDB5Z4",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-l-shaped-desks-2026",
+          "asin": "B07SBJ9NZQ",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-laptop-stands-2026",
+          "asin": "B07ZCMPK7X",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-laptop-stands-2026",
+          "asin": "B07B5K9C7C",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-laptop-stands-2026",
+          "asin": "B01HHYQBB8",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-laptop-stands-2026",
+          "asin": "B06X9J8QLY",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-laptop-stands-2026",
+          "asin": "B01GKGJD5M",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-monitor-arms-2026",
+          "asin": "B07DCS18KD",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-monitor-arms-2026",
+          "asin": "B07C4SGRJ6",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-monitor-arms-2026",
+          "asin": "B00GHFM3O4",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-monitor-stands-2026",
+          "asin": "B07MFX12YZ",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-monitor-stands-2026",
+          "asin": "B078CJ8M4H",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-noise-cancelling-headphones-2026",
+          "asin": "B0B23MGLXY",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-office-chairs-2026",
+          "asin": "B01N4FRX5Q",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-smart-locks-2026",
+          "asin": "B07HHKGVR3",
+          "category": "Smart Home"
+        },
+        {
+          "slug": "best-smart-locks-2026",
+          "asin": "B01LXXK7FW",
+          "category": "Smart Home"
+        },
+        {
+          "slug": "best-standing-desks-2026",
+          "asin": "B07FKK94B8",
+          "category": "Home Office"
+        }
+      ],
+      "deadByCategory": {
+        "Tech": 19,
+        "Home Office": 23,
+        "Smart Home": 2,
+        "Home Fitness": 11
+      },
+      "deadByArticle": {
+        "best-business-laptops-2026": 5,
+        "best-desk-lamps-2026": 5,
+        "best-ergonomic-keyboards-2026": 2,
+        "best-exercise-bikes-2026": 6,
+        "best-foam-rollers-2026": 5,
+        "best-gaming-chairs-2026": 5,
+        "best-gaming-headsets-2026": 3,
+        "best-gaming-laptops-2026": 3,
+        "best-l-shaped-desks-2026": 6,
+        "best-laptop-stands-2026": 5,
+        "best-monitor-arms-2026": 3,
+        "best-monitor-stands-2026": 2,
+        "best-noise-cancelling-headphones-2026": 1,
+        "best-office-chairs-2026": 1,
+        "best-smart-locks-2026": 2,
+        "best-standing-desks-2026": 1
+      },
+      "deadRate": 20.9
+    },
+    "images": {
+      "productsWithBadCdn": [
+        {
+          "slug": "best-noise-cancelling-headphones-2026",
+          "image": "https://images-na.ssl-images-amazon.com/images/P/B098FKXT8L.01._SL500_.jpg"
+        },
+        {
+          "slug": "best-noise-cancelling-headphones-2026",
+          "image": "https://images-na.ssl-images-amazon.com/images/P/B08PZHYWJS.01._SL500_.jpg"
+        },
+        {
+          "slug": "best-noise-cancelling-headphones-2026",
+          "image": "https://images-na.ssl-images-amazon.com/images/P/B0B23MGLXY.01._SL500_.jpg"
+        },
+        {
+          "slug": "best-noise-cancelling-headphones-2026",
+          "image": "https://images-na.ssl-images-amazon.com/images/P/B0863TXGM3.01._SL500_.jpg"
+        },
+        {
+          "slug": "best-noise-cancelling-headphones-2026",
+          "image": "https://images-na.ssl-images-amazon.com/images/P/B0756CYWWD.01._SL500_.jpg"
+        },
+        {
+          "slug": "best-standing-desks-2026",
+          "image": "https://snpi.dell.com/snp/images/products/large/en-us~AC986058/AC986058.jpg"
+        },
+        {
+          "slug": "best-standing-desks-2026",
+          "image": "https://blog.btod.com/blog/wp-content/uploads/2019/10/uplift-v2-commercial-revie"
+        },
+        {
+          "slug": "best-standing-desks-2026",
+          "image": "https://images.hermanmiller.group/m/d28cd58ca284da25/W-FUL_2542428_100312127_bam"
+        },
+        {
+          "slug": "best-standing-desks-2026",
+          "image": "https://thegww.com/wp-content/uploads/2023/05/85DAE382-4E0E-45F0-BAC6-D8EB383F7A"
+        },
+        {
+          "slug": "best-standing-desks-2026",
+          "image": "https://www.vari.com/dw/image/v2/BDFT_PRD/on/demandware.static/-/Sites-vari-mast"
+        },
+        {
+          "slug": "best-standing-desks-2026",
+          "image": "https://www.eartly.com/wp-content/uploads/2024/03/shw-55-inch-large-electric-hei"
+        },
+        {
+          "slug": "best-wireless-earbuds-2026",
+          "image": "https://images-na.ssl-images-amazon.com/images/P/B0B4PSQHD5.01.L.jpg"
+        }
+      ],
+      "productsWithBadCdnByCategory": {
+        "Tech": 6,
+        "Home Office": 6,
+        "Smart Home": 0,
+        "Home Fitness": 0
+      },
+      "thumbnailsNotMatchingProduct0": [
+        "best-standing-desks-2026"
+      ]
+    },
+    "excerpts": {
+      "offRange": [
+        {
+          "slug": "airpods-pro-vs-airpods-4",
+          "length": 118
+        },
+        {
+          "slug": "best-smart-speakers-2026",
+          "length": 170
+        },
+        {
+          "slug": "best-video-doorbells-2026",
+          "length": 149
+        },
+        {
+          "slug": "best-walking-pads-2026",
+          "length": 108
+        },
+        {
+          "slug": "best-wireless-earbuds-2026",
+          "length": 122
+        }
+      ]
+    },
+    "faq": {
+      "shortAnswers": 44,
+      "missingNumber": 2
+    },
+    "brokenLinksReport": {
+      "generatedAt": "2026-04-28T12:29:31.737Z",
+      "summary": {
+        "OK": 153,
+        "DEAD": 55,
+        "BLOCKED": 39,
+        "ERROR": 16
+      }
+    }
+  },
+  {
+    "timestamp": "2026-04-28T12:47:01.762Z",
+    "articles": {
+      "total": 45,
+      "jsonValid": 45,
+      "jsonBroken": [],
+      "byCategory": {
+        "Tech": 19,
+        "Home Office": 7,
+        "Smart Home": 9,
+        "Home Fitness": 10
+      },
+      "addedToday": 5
+    },
+    "validator": {
+      "pass": 26,
+      "fail": 19,
+      "failReasons": {
+        "products must have at least 6 items (found 2)": 1,
+        "products[N].link ASIN <X> is in the broken-links report (HTTP 404) — replace with a verified ASIN": 55,
+        "products[N].image must be an Amazon CDN URL (https://m.media-amazon.com/images/I/[ID]._SL500_.jpg) — third-party CDNs (Dell, blogs, etc.) are blocked or hotlink-protected": 12,
+        "thumbnail must be an Amazon CDN URL (https://m.media-amazon.com/images/I/...) — set it equal to products[N].image so the article card shows the Best Overall product": 1,
+        "products must have at least 6 items (found 3)": 1
+      },
+      "passRate": 57.8
+    },
+    "asins": {
+      "totalProducts": 263,
+      "dead": [
+        {
+          "slug": "best-business-laptops-2026",
+          "asin": "B0BT1DLMYG",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-business-laptops-2026",
+          "asin": "B0C0CFHM5V",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-business-laptops-2026",
+          "asin": "B0BGQHKKXS",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-business-laptops-2026",
+          "asin": "B0CG5K4PFJ",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-business-laptops-2026",
+          "asin": "B0BZRFXHLT",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-desk-lamps-2026",
+          "asin": "B076VNFZJK",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-desk-lamps-2026",
+          "asin": "B07GHQ4W7Z",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-desk-lamps-2026",
+          "asin": "B00KBGIQTU",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-desk-lamps-2026",
+          "asin": "B0BTQ1S4TM",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-desk-lamps-2026",
+          "asin": "B08N3L4VB9",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-ergonomic-keyboards-2026",
+          "asin": "B08P4LKPFR",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-ergonomic-keyboards-2026",
+          "asin": "B0BHZ9J5FP",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-exercise-bikes-2026",
+          "asin": "B07VBQM73M",
+          "category": "Home Fitness"
+        },
+        {
+          "slug": "best-exercise-bikes-2026",
+          "asin": "B07S4MVHM1",
+          "category": "Home Fitness"
+        },
+        {
+          "slug": "best-exercise-bikes-2026",
+          "asin": "B07QH7G2C3",
+          "category": "Home Fitness"
+        },
+        {
+          "slug": "best-exercise-bikes-2026",
+          "asin": "B091MWYRFK",
+          "category": "Home Fitness"
+        },
+        {
+          "slug": "best-exercise-bikes-2026",
+          "asin": "B014KBUTHE",
+          "category": "Home Fitness"
+        },
+        {
+          "slug": "best-exercise-bikes-2026",
+          "asin": "B003BLV22U",
+          "category": "Home Fitness"
+        },
+        {
+          "slug": "best-foam-rollers-2026",
+          "asin": "B00A0GQUZY",
+          "category": "Home Fitness"
+        },
+        {
+          "slug": "best-foam-rollers-2026",
+          "asin": "B00BH8TSTW",
+          "category": "Home Fitness"
+        },
+        {
+          "slug": "best-foam-rollers-2026",
+          "asin": "B00LF0MZRY",
+          "category": "Home Fitness"
+        },
+        {
+          "slug": "best-foam-rollers-2026",
+          "asin": "B00J2B4AOU",
+          "category": "Home Fitness"
+        },
+        {
+          "slug": "best-foam-rollers-2026",
+          "asin": "B007TIE5AQ",
+          "category": "Home Fitness"
+        },
+        {
+          "slug": "best-gaming-chairs-2026",
+          "asin": "B09KR4YKWV",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-gaming-chairs-2026",
+          "asin": "B0B1ZGFJZL",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-gaming-chairs-2026",
+          "asin": "B06Y47WVCS",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-gaming-chairs-2026",
+          "asin": "B09XS7F82G",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-gaming-chairs-2026",
+          "asin": "B074XKCVK4",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-gaming-headsets-2026",
+          "asin": "B0B2HRXT3S",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-gaming-headsets-2026",
+          "asin": "B0BZKFMF9V",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-gaming-headsets-2026",
+          "asin": "B09GQPSHZD",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-gaming-laptops-2026",
+          "asin": "B0CSJJ54GJ",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-gaming-laptops-2026",
+          "asin": "B0CGQ3TBCT",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-gaming-laptops-2026",
+          "asin": "B0C9DDXB9Q",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-l-shaped-desks-2026",
+          "asin": "B0C7KSDQPZ",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-l-shaped-desks-2026",
+          "asin": "B07F6YVMRN",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-l-shaped-desks-2026",
+          "asin": "B0BCXRDC75",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-l-shaped-desks-2026",
+          "asin": "B07HSD95Y2",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-l-shaped-desks-2026",
+          "asin": "B07YKDB5Z4",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-l-shaped-desks-2026",
+          "asin": "B07SBJ9NZQ",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-laptop-stands-2026",
+          "asin": "B07ZCMPK7X",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-laptop-stands-2026",
+          "asin": "B07B5K9C7C",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-laptop-stands-2026",
+          "asin": "B01HHYQBB8",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-laptop-stands-2026",
+          "asin": "B06X9J8QLY",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-laptop-stands-2026",
+          "asin": "B01GKGJD5M",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-monitor-arms-2026",
+          "asin": "B07DCS18KD",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-monitor-arms-2026",
+          "asin": "B07C4SGRJ6",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-monitor-arms-2026",
+          "asin": "B00GHFM3O4",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-monitor-stands-2026",
+          "asin": "B07MFX12YZ",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-monitor-stands-2026",
+          "asin": "B078CJ8M4H",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-noise-cancelling-headphones-2026",
+          "asin": "B0B23MGLXY",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-office-chairs-2026",
+          "asin": "B01N4FRX5Q",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-smart-locks-2026",
+          "asin": "B07HHKGVR3",
+          "category": "Smart Home"
+        },
+        {
+          "slug": "best-smart-locks-2026",
+          "asin": "B01LXXK7FW",
+          "category": "Smart Home"
+        },
+        {
+          "slug": "best-standing-desks-2026",
+          "asin": "B07FKK94B8",
+          "category": "Home Office"
+        }
+      ],
+      "deadByCategory": {
+        "Tech": 19,
+        "Home Office": 23,
+        "Smart Home": 2,
+        "Home Fitness": 11
+      },
+      "deadByArticle": {
+        "best-business-laptops-2026": 5,
+        "best-desk-lamps-2026": 5,
+        "best-ergonomic-keyboards-2026": 2,
+        "best-exercise-bikes-2026": 6,
+        "best-foam-rollers-2026": 5,
+        "best-gaming-chairs-2026": 5,
+        "best-gaming-headsets-2026": 3,
+        "best-gaming-laptops-2026": 3,
+        "best-l-shaped-desks-2026": 6,
+        "best-laptop-stands-2026": 5,
+        "best-monitor-arms-2026": 3,
+        "best-monitor-stands-2026": 2,
+        "best-noise-cancelling-headphones-2026": 1,
+        "best-office-chairs-2026": 1,
+        "best-smart-locks-2026": 2,
+        "best-standing-desks-2026": 1
+      },
+      "deadRate": 20.9
+    },
+    "images": {
+      "productsWithBadCdn": [
+        {
+          "slug": "best-noise-cancelling-headphones-2026",
+          "image": "https://images-na.ssl-images-amazon.com/images/P/B098FKXT8L.01._SL500_.jpg"
+        },
+        {
+          "slug": "best-noise-cancelling-headphones-2026",
+          "image": "https://images-na.ssl-images-amazon.com/images/P/B08PZHYWJS.01._SL500_.jpg"
+        },
+        {
+          "slug": "best-noise-cancelling-headphones-2026",
+          "image": "https://images-na.ssl-images-amazon.com/images/P/B0B23MGLXY.01._SL500_.jpg"
+        },
+        {
+          "slug": "best-noise-cancelling-headphones-2026",
+          "image": "https://images-na.ssl-images-amazon.com/images/P/B0863TXGM3.01._SL500_.jpg"
+        },
+        {
+          "slug": "best-noise-cancelling-headphones-2026",
+          "image": "https://images-na.ssl-images-amazon.com/images/P/B0756CYWWD.01._SL500_.jpg"
+        },
+        {
+          "slug": "best-standing-desks-2026",
+          "image": "https://snpi.dell.com/snp/images/products/large/en-us~AC986058/AC986058.jpg"
+        },
+        {
+          "slug": "best-standing-desks-2026",
+          "image": "https://blog.btod.com/blog/wp-content/uploads/2019/10/uplift-v2-commercial-revie"
+        },
+        {
+          "slug": "best-standing-desks-2026",
+          "image": "https://images.hermanmiller.group/m/d28cd58ca284da25/W-FUL_2542428_100312127_bam"
+        },
+        {
+          "slug": "best-standing-desks-2026",
+          "image": "https://thegww.com/wp-content/uploads/2023/05/85DAE382-4E0E-45F0-BAC6-D8EB383F7A"
+        },
+        {
+          "slug": "best-standing-desks-2026",
+          "image": "https://www.vari.com/dw/image/v2/BDFT_PRD/on/demandware.static/-/Sites-vari-mast"
+        },
+        {
+          "slug": "best-standing-desks-2026",
+          "image": "https://www.eartly.com/wp-content/uploads/2024/03/shw-55-inch-large-electric-hei"
+        },
+        {
+          "slug": "best-wireless-earbuds-2026",
+          "image": "https://images-na.ssl-images-amazon.com/images/P/B0B4PSQHD5.01.L.jpg"
+        }
+      ],
+      "productsWithBadCdnByCategory": {
+        "Tech": 6,
+        "Home Office": 6,
+        "Smart Home": 0,
+        "Home Fitness": 0
+      },
+      "thumbnailsNotMatchingProduct0": [
+        "best-standing-desks-2026"
+      ]
+    },
+    "excerpts": {
+      "offRange": [
+        {
+          "slug": "airpods-pro-vs-airpods-4",
+          "length": 118
+        },
+        {
+          "slug": "best-smart-speakers-2026",
+          "length": 170
+        },
+        {
+          "slug": "best-video-doorbells-2026",
+          "length": 149
+        },
+        {
+          "slug": "best-walking-pads-2026",
+          "length": 108
+        },
+        {
+          "slug": "best-wireless-earbuds-2026",
+          "length": 122
+        }
+      ]
+    },
+    "faq": {
+      "shortAnswers": 44,
+      "missingNumber": 2
+    },
+    "brokenLinksReport": {
+      "generatedAt": "2026-04-28T12:29:31.737Z",
+      "summary": {
+        "OK": 153,
+        "DEAD": 55,
+        "BLOCKED": 39,
+        "ERROR": 16
+      }
+    }
+  }
+]

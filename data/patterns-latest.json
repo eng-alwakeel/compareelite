@@ -1,0 +1,121 @@
+{
+  "generatedAt": "2026-04-28T12:47:01.846Z",
+  "snapshotCount": 2,
+  "findings": [
+    {
+      "id": "dead-asin-spike",
+      "severity": "critical",
+      "skillTarget": "cmo-article-writer",
+      "summary": "55/263 product links are DEAD (20.9%) — high for 2 consecutive snapshots",
+      "proposedRule": "Before adding a product, the writer MUST verify the ASIN on amazon.com (or have it in training data with high confidence). For brand-new product categories with weak prior coverage, drop the product entirely rather than guess an ASIN — fewer products is better than fake links.",
+      "evidence": {
+        "currentDeadRate": 20.9,
+        "worstCategories": [
+          "Home Office (23)",
+          "Tech (19)",
+          "Home Fitness (11)",
+          "Smart Home (2)"
+        ],
+        "worstArticles": [
+          "best-exercise-bikes-2026 (6 dead)",
+          "best-l-shaped-desks-2026 (6 dead)",
+          "best-business-laptops-2026 (5 dead)",
+          "best-desk-lamps-2026 (5 dead)",
+          "best-foam-rollers-2026 (5 dead)"
+        ]
+      }
+    },
+    {
+      "id": "fresh-article-mostly-dead",
+      "severity": "critical",
+      "skillTarget": "qc-reviewer",
+      "summary": "5 articles published today have 4+ DEAD ASINs each — QC is approving without verifying the link list",
+      "proposedRule": "BLOCK any article where 50%+ of products have ASINs that fail validate-amazon-links.js. Run the script (or at minimum check data/broken-amazon-links.json) on every article before approval — never trust the writer's claim that ASINs are real.",
+      "evidence": {
+        "addedToday": 5,
+        "mostlyDead": [
+          "best-business-laptops-2026",
+          "best-desk-lamps-2026",
+          "best-exercise-bikes-2026",
+          "best-foam-rollers-2026",
+          "best-gaming-chairs-2026",
+          "best-l-shaped-desks-2026",
+          "best-laptop-stands-2026"
+        ]
+      }
+    },
+    {
+      "id": "stuck-fail-reason:products[N].link ASIN <X> is in the broken-links report (HTT",
+      "severity": "warning",
+      "skillTarget": "cmo-article-writer",
+      "summary": "\"products[N].link ASIN <X> is in the broken-links report (HTTP 404) — replace with a verified ASIN\" has fired on 55 articles across 2 snapshots — recurring CMO mistake",
+      "proposedRule": "Before publishing, cross-check every ASIN against data/broken-amazon-links.json. Any DEAD entry must be replaced — never reused.",
+      "evidence": {
+        "reason": "products[N].link ASIN <X> is in the broken-links report (HTTP 404) — replace with a verified ASIN",
+        "occurrences": 55,
+        "snapshots": 2
+      }
+    },
+    {
+      "id": "stuck-fail-reason:products[N].image must be an Amazon CDN URL (https://m.media",
+      "severity": "warning",
+      "skillTarget": "cmo-article-writer",
+      "summary": "\"products[N].image must be an Amazon CDN URL (https://m.media-amazon.com/images/I/[ID]._SL500_.jpg) — third-party CDNs (Dell, blogs, etc.) are blocked or hotlink-protected\" has fired on 12 articles across 2 snapshots — recurring CMO mistake",
+      "proposedRule": "Every products[].image MUST start with https://m.media-amazon.com/images/I/. Manufacturer / blog / Unsplash hosts are auto-rejected. If you can't find the Amazon CDN image ID for a specific product, swap to a different product whose CDN ID you do know.",
+      "evidence": {
+        "reason": "products[N].image must be an Amazon CDN URL (https://m.media-amazon.com/images/I/[ID]._SL500_.jpg) — third-party CDNs (Dell, blogs, etc.) are blocked or hotlink-protected",
+        "occurrences": 12,
+        "snapshots": 2
+      }
+    },
+    {
+      "id": "image-host-bleedthrough",
+      "severity": "warning",
+      "skillTarget": "cmo-article-writer",
+      "summary": "12 product images on third-party CDNs across 2 snapshots — CMO not respecting the Amazon-only rule",
+      "proposedRule": "Reject any product where you cannot supply a valid m.media-amazon.com/images/I/[ID]._SL500_.jpg image. Manufacturer URLs, blog wp-content paths, vendor CDNs, and Unsplash are all forbidden — they are hotlink-blocked and break the live site.",
+      "evidence": {
+        "examples": [
+          {
+            "slug": "best-noise-cancelling-headphones-2026",
+            "image": "https://images-na.ssl-images-amazon.com/images/P/B098FKXT8L.01._SL500_.jpg"
+          },
+          {
+            "slug": "best-noise-cancelling-headphones-2026",
+            "image": "https://images-na.ssl-images-amazon.com/images/P/B08PZHYWJS.01._SL500_.jpg"
+          },
+          {
+            "slug": "best-noise-cancelling-headphones-2026",
+            "image": "https://images-na.ssl-images-amazon.com/images/P/B0B23MGLXY.01._SL500_.jpg"
+          },
+          {
+            "slug": "best-noise-cancelling-headphones-2026",
+            "image": "https://images-na.ssl-images-amazon.com/images/P/B0863TXGM3.01._SL500_.jpg"
+          },
+          {
+            "slug": "best-noise-cancelling-headphones-2026",
+            "image": "https://images-na.ssl-images-amazon.com/images/P/B0756CYWWD.01._SL500_.jpg"
+          }
+        ],
+        "byCategory": {
+          "Tech": 6,
+          "Home Office": 6,
+          "Smart Home": 0,
+          "Home Fitness": 0
+        }
+      }
+    },
+    {
+      "id": "thumbnail-drift",
+      "severity": "warning",
+      "skillTarget": "qc-reviewer",
+      "summary": "1 articles have thumbnail ≠ products[0].image",
+      "proposedRule": "In QC, set thumbnail = products[0].image as the final pre-submit step. The card on the homepage MUST show the Best Overall product, not a stale stock photo.",
+      "evidence": {
+        "affected": [
+          "best-standing-desks-2026"
+        ]
+      }
+    }
+  ]
+}
