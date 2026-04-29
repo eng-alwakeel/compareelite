@@ -48,7 +48,7 @@ If the pool runs low, propose new slugs in the same 4 categories — but never u
 For each of the 4 topics, invoke the writer skill — do NOT write the JSON inline in this command. The writer skill is the single source of truth for schema, word counts, pros/cons format, FAQ count, and ASIN/image rules.
 
 ```
-Use the compareelite-article-writer skill to write the article for
+Use the compareelite-cmo-v2 skill to write the article for
 slug=<slug>, category=<category>. Save the output to articles/<slug>.json.
 ```
 
@@ -89,7 +89,7 @@ Any FAIL → REJECTED.
 For each article that passed Step 3, invoke the QC reviewer skill:
 
 ```
-Use the compareelite-qc-reviewer skill to review articles/<slug>.json.
+Use the compareelite-qc-v2 skill to review articles/<slug>.json.
 The skill returns APPROVED or REJECTED with a per-check verdict.
 ```
 
@@ -109,7 +109,7 @@ For each REJECTED article from Step 4:
 
 1. **Hand the QC report back to the writer skill** with an explicit fix instruction:
    ```
-   Use the compareelite-article-writer skill to fix articles/<slug>.json.
+   Use the compareelite-cmo-v2 skill to fix articles/<slug>.json.
    The QC reviewer rejected it for these specific reasons:
    <paste the failed-check list verbatim from Step 4>
    Fix ONLY those issues. Do not rewrite the rest of the article.
@@ -117,7 +117,7 @@ For each REJECTED article from Step 4:
 2. After the writer returns the corrected JSON, **re-run Step 3 liveness gates** (image enrichment + ASIN probe + schema). A fix that re-introduces a dead ASIN or breaks schema is automatic failure — there is no Round 3.
 3. **Re-invoke QC** on the corrected article:
    ```
-   Use the compareelite-qc-reviewer skill to review the corrected articles/<slug>.json.
+   Use the compareelite-qc-v2 skill to review the corrected articles/<slug>.json.
    ```
 4. **Outcome:**
    - APPROVED in Round 2 → proceed to Step 6.
@@ -130,7 +130,7 @@ For each REJECTED article from Step 4:
 For each article that QC approved (Round 1 or Round 2), invoke the CTO skill as the **final pre-publish authority**:
 
 ```
-Use the compareelite-cto skill to run the publish gate on articles/<slug>.json.
+Use the compareelite-cto-v2 skill to run the publish gate on articles/<slug>.json.
 Return PUBLISH or REJECT with the reason.
 ```
 

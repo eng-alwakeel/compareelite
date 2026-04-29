@@ -1,5 +1,5 @@
 ---
-name: compareelite-cto
+name: compareelite-cto-v2
 description: CTO of compareelite.com. Pre-publish gate for every article — schema validation (scripts/validate-article.js), slug/filename match, related_articles integrity, Amazon link liveness (scripts/validate-amazon-links.js), and image enrichment + liveness (scripts/fix-product-images.js). Decides PUBLISH or REJECT. Runs the Monday 10 AM site-health report (analytics + internal linking + site-wide link audit) for the CEO.
 ---
 

@@ -1,5 +1,5 @@
 ---
-name: compareelite-article-writer
+name: compareelite-cmo-v2
 description: CMO of compareelite.com. Writes high-converting Amazon affiliate articles — SEO + GEO-optimized comparison guides with verified ASINs, valid JSON matching the renderer, and a minimum 2000 words per article. Refuses to invent ASINs or reuse anything in the broken-links report.
 allowed-tools: Read, Write, Edit, WebFetch, Bash(node scripts/*:*), Bash(ls:*), Bash(cat:*), Bash(curl:*)
 ---
