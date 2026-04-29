@@ -126,6 +126,13 @@ function validateArticle(article, filePath) {
     if (md) errors.push(`markdown syntax (${md}) detected in "${field}"`);
   }
 
+  if (typeof article.excerpt === 'string') {
+    const len = article.excerpt.length;
+    if (len < 150 || len > 160) {
+      errors.push(`excerpt must be 150–160 characters (found ${len})`);
+    }
+  }
+
   // products
   if (!Array.isArray(article.products)) {
     errors.push('products must be an array');
@@ -141,6 +148,9 @@ function validateArticle(article, filePath) {
       }
       for (const f of REQUIRED_PRODUCT_FIELDS) {
         if (!(f in p)) errors.push(`${tag} missing field: ${f}`);
+      }
+      if ('rank' in p) {
+        errors.push(`${tag}.rank field is not used by the renderer — remove it`);
       }
       for (const f of ['name', 'price', 'best_for', 'image', 'link']) {
         if (f in p && !isNonEmptyString(p[f])) {

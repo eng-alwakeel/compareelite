@@ -281,7 +281,7 @@ npm run validate-articles articles/<slug>.json
   "category": "Tech|Home Office|Smart Home|Home Fitness",
   "date": "YYYY-MM-DD",
   "excerpt": "150–160 char SEO description. Starts with primary keyword. Clear value proposition. No 'We' or 'Our' at start.",
-  "thumbnail": "https://images.unsplash.com/photo-XXXXXXXXXXXXXXXXXX?w=800&q=80",
+  "thumbnail": "https://m.media-amazon.com/images/I/[IMAGE_ID]._SL500_.jpg",
   "author": "CompareElite Team",
   "stats": { "readers": 0 },
   "intro": "Paragraph 1 (60–80 words): Hook the reader with a relatable problem or scenario. Mention the product category and why choosing the right one matters in 2026.\n\nParagraph 2 (60–80 words): Briefly describe your testing methodology — how many products you evaluated, what criteria you used, and what types of buyers this guide covers.\n\nParagraph 3 (50–70 words): Preview what readers will find — comparison table, detailed reviews, buying guide, and FAQ. Mention that all picks are available on Amazon with verified ASINs.",
@@ -556,7 +556,7 @@ The website auto-renders 8 sections from your JSON — **do NOT write a `content
 - [ ] `author` is `"CompareElite Team"`
 - [ ] `stats` is `{ "readers": 0 }`
 - [ ] `intro` has 3 paragraphs separated by `\n\n`, totaling 200–250 words
-- [ ] Products: 4–5 items, sorted by rating highest first
+- [ ] Products: 6 or more items, sorted by rating highest first
 - [ ] All `best_for` labels are unique
 - [ ] All `rating` values are strings like `"9.X/10"`
 - [ ] All `pros` items are complete sentences with measurable specs
@@ -584,7 +584,7 @@ The website auto-renders 8 sections from your JSON — **do NOT write a `content
   "category": "Technology",
   "date": "2026-04-24",
   "excerpt": "Best wireless earbuds of 2026 — tested for sound, ANC, and battery life. Top picks from Sony, Apple & Jabra for every budget. Expert guide inside.",
-  "thumbnail": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=800&q=80",
+  "thumbnail": "https://m.media-amazon.com/images/I/61SUj2aKoEL._SL500_.jpg",
   "author": "CompareElite Team",
   "stats": { "readers": 0 },
   "intro": "Choosing the right wireless earbuds in 2026 is harder than ever — with hundreds of options ranging from $30 budget buds to $350 flagship ANC models, picking the wrong pair means poor sound, uncomfortable fit, or wasted money. Whether you commute daily, hit the gym, or work from home, the right earbuds can genuinely transform your daily experience.\n\nWe tested over 20 pairs of wireless earbuds across six weeks, evaluating sound quality, active noise cancellation effectiveness, call clarity, battery life, and fit stability. Our testing panel included commuters, remote workers, and athletes to ensure recommendations that work for real-world use.\n\nIn this guide you'll find a quick comparison table of our top 5 picks, in-depth reviews with full pros and cons, a buying guide covering the six most important factors, and a detailed FAQ section to answer the questions we hear most. Every product is available on Amazon with a verified ASIN.",

@@ -36,11 +36,13 @@ If the pool runs low, propose new slugs in the same 4 categories — but never u
 For each of the 4 topics, invoke the writer skill — do NOT write the JSON inline in this command. The writer skill is the single source of truth for schema, word counts, pros/cons format, FAQ count, and ASIN/image rules.
 
 ```
-Use the compareelite-cmo-v2 skill (or compareelite-article-writer skill) to write
-the article for slug=<slug>, category=<category>. Save the output to articles/<slug>.json.
+Use the compareelite-article-writer skill to write the article for
+slug=<slug>, category=<category>. Save the output to articles/<slug>.json.
 ```
 
 The writer skill's `AUTO-IMPROVEMENTS (2026-04-29)` section is binding: the writer must NOT hallucinate Amazon image IDs, must WebFetch each ASIN before writing it, and must drop products it cannot verify.
+
+After writing each article, ALSO invoke the compareelite-cto skill to run pre-publish checks (schema, image liveness, link liveness, related-articles integrity) — its decision feeds into Step 4.
 
 ---
 
@@ -75,8 +77,8 @@ Any FAIL → REJECTED.
 For each article that passed Step 3, invoke the QC reviewer skill:
 
 ```
-Use the compareelite-qc-v2 skill (or compareelite-qc-reviewer skill) to review
-articles/<slug>.json. The skill returns APPROVED or REJECTED with a checklist.
+Use the compareelite-qc-reviewer skill to review articles/<slug>.json.
+The skill returns APPROVED or REJECTED with a checklist.
 ```
 
 The QC skill's `AUTO-IMPROVEMENTS (2026-04-29)` section is binding (it re-runs Gates 3a/3b as a final sanity check; do not skip just because Step 3 already ran).
