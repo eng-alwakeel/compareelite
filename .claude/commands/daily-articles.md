@@ -1,6 +1,18 @@
 # Daily Article Generator — CompareElite
 
-Generate **4 new affiliate articles** for compareelite.com. Each article goes through writer → liveness gates → QC review. Only articles that pass every gate get committed and pushed to `main`. Rejected articles are reported and skipped — never silently shipped.
+Generate **4 new affiliate articles** for compareelite.com. Each article moves through a strict assembly line:
+
+```
+Writer writes → liveness gates → QC review
+                                    ↓ REJECTED
+                              Writer fixes (max 1 retry)
+                                    ↓
+                                  QC re-review
+                                    ↓ APPROVED
+                              CTO final gate → commit
+```
+
+No agent pushes directly. The CTO is the only gate that can let an article into the commit batch, and the workflow runs the validators *again* after the skill exits — broken articles are blocked at three independent layers.
 
 ---
 
@@ -42,7 +54,7 @@ slug=<slug>, category=<category>. Save the output to articles/<slug>.json.
 
 The writer skill's `AUTO-IMPROVEMENTS (2026-04-29)` section is binding: the writer must NOT hallucinate Amazon image IDs, must WebFetch each ASIN before writing it, and must drop products it cannot verify.
 
-After writing each article, ALSO invoke the compareelite-cto skill to run pre-publish checks (schema, image liveness, link liveness, related-articles integrity) — its decision feeds into Step 4.
+Do NOT invoke the CTO skill yet — the CTO is the final gate (Step 6), not a pre-flight check. The writer's only handoff is to Step 3.
 
 ---
 
@@ -72,23 +84,65 @@ Any FAIL → REJECTED.
 
 ---
 
-## Step 4 — QC Review (delegate to QC skill)
+## Step 4 — QC Review, Round 1 (delegate to QC skill)
 
 For each article that passed Step 3, invoke the QC reviewer skill:
 
 ```
 Use the compareelite-qc-reviewer skill to review articles/<slug>.json.
-The skill returns APPROVED or REJECTED with a checklist.
+The skill returns APPROVED or REJECTED with a per-check verdict.
 ```
 
 The QC skill's `AUTO-IMPROVEMENTS (2026-04-29)` section is binding (it re-runs Gates 3a/3b as a final sanity check; do not skip just because Step 3 already ran).
 
-- APPROVED → article goes into the commit batch.
-- REJECTED → article does NOT get committed. Write the failed-check list into the run summary so the failure is visible. If running inside a GitHub Actions context, leave the `articles/<slug>.json` file in place so the next run can either fix it or delete it deliberately — never silently overwrite.
+**Outcome routing:**
+- **APPROVED** → proceed to Step 6 (CTO).
+- **REJECTED** → proceed to Step 5 (writer fix loop). Do NOT skip the article yet — the writer gets one chance to fix the specific failed checks.
+
+Capture the QC report in a variable so the writer can see *exactly* which checks failed.
 
 ---
 
-## Step 5 — Commit only (workflow handles push after hard gates)
+## Step 5 — Writer Fix + QC Round 2 (max 1 retry)
+
+For each REJECTED article from Step 4:
+
+1. **Hand the QC report back to the writer skill** with an explicit fix instruction:
+   ```
+   Use the compareelite-article-writer skill to fix articles/<slug>.json.
+   The QC reviewer rejected it for these specific reasons:
+   <paste the failed-check list verbatim from Step 4>
+   Fix ONLY those issues. Do not rewrite the rest of the article.
+   ```
+2. After the writer returns the corrected JSON, **re-run Step 3 liveness gates** (image enrichment + ASIN probe + schema). A fix that re-introduces a dead ASIN or breaks schema is automatic failure — there is no Round 3.
+3. **Re-invoke QC** on the corrected article:
+   ```
+   Use the compareelite-qc-reviewer skill to review the corrected articles/<slug>.json.
+   ```
+4. **Outcome:**
+   - APPROVED in Round 2 → proceed to Step 6.
+   - REJECTED again → article is abandoned for this run. Leave the file on disk, write the second-round failures into the run summary, and skip to the next article. **Do not loop a third time** — endless retries waste budget and rarely produce a clean article when two rounds fail.
+
+---
+
+## Step 6 — CTO Final Gate (delegate to CTO skill)
+
+For each article that QC approved (Round 1 or Round 2), invoke the CTO skill as the **final pre-publish authority**:
+
+```
+Use the compareelite-cto skill to run the publish gate on articles/<slug>.json.
+Return PUBLISH or REJECT with the reason.
+```
+
+The CTO skill independently re-runs `fix-product-images.js`, `validate-amazon-links.js`, and `validate-article.js`, plus checks slug/filename match and `related_articles` integrity. The CTO is intentionally redundant with Step 3 + Step 4 — three layers of defence catch what any single layer missed.
+
+**Outcome:**
+- **PUBLISH** → article goes into the commit batch.
+- **REJECT** → article does NOT get committed, even if QC approved it. The CTO can override QC. Write the CTO's reason into the run summary.
+
+---
+
+## Step 7 — Commit only (workflow handles push after hard gates)
 
 ```bash
 APPROVED_FILES=$(... list of articles/<slug>.json that passed every gate ...)
@@ -110,11 +164,13 @@ Print a structured report at the end of the run:
 
 ```
 Daily run YYYY-MM-DD
-  Topics picked:          4
-  Articles written:       N
-  Failed liveness gates:  M  (list slugs + reason: DEAD ASIN / image 404 / schema)
-  Failed QC review:       K  (list slugs + first 3 failed checks)
-  Approved & pushed:      P
+  Topics picked:                4
+  Articles written:             N
+  Failed liveness gates (S3):   M  (list slugs + reason: DEAD ASIN / image 404 / schema)
+  QC Round 1 rejections:        R1 (list slugs + first 3 failed checks)
+  QC Round 2 rejections:        R2 (list slugs — these are abandoned)
+  CTO final-gate rejections:    C  (list slugs + reason — overrides QC)
+  Approved & committed:         P  (the workflow then runs its own hard gates before pushing)
 ```
 
 Articles never go to production unless they pass every gate. Better to ship 0 articles today than ship one with hallucinated ASINs.
