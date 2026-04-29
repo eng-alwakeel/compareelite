@@ -7,8 +7,10 @@
  *   node scripts/notify-indexnow.js slug1 slug2 ...          # notify only the given slugs
  *   node scripts/notify-indexnow.js --dry-run [slugs...]     # build the request but do not POST
  *
- * Locates the IndexNow key automatically by scanning public/ for a file named
- * <32-hex>.txt whose contents match the filename (per IndexNow protocol).
+ * Locates the IndexNow key automatically by scanning the repository root for a
+ * file named <32-hex>.txt whose contents match the filename (per IndexNow
+ * protocol). The file must live at the root because vercel.json sets
+ * outputDirectory:"." and search engines verify at https://<host>/<key>.txt.
  */
 
 const fs = require('fs');
@@ -16,7 +18,6 @@ const path = require('path');
 const https = require('https');
 
 const ROOT = path.resolve(__dirname, '..');
-const PUBLIC_DIR = path.join(ROOT, 'public');
 const MANIFEST_PATH = path.join(ROOT, 'data', 'articles-manifest.json');
 
 const HOST = 'compareelite.com';
@@ -24,19 +25,16 @@ const URL_PREFIX = `https://${HOST}/blog/article?slug=`;
 const ENDPOINT = { hostname: 'api.indexnow.org', path: '/indexnow', port: 443 };
 
 function findKey() {
-  if (!fs.existsSync(PUBLIC_DIR)) {
-    throw new Error(`public/ directory not found at ${PUBLIC_DIR}`);
-  }
-  const candidates = fs.readdirSync(PUBLIC_DIR).filter(f => /^[a-f0-9]{32}\.txt$/i.test(f));
+  const candidates = fs.readdirSync(ROOT).filter(f => /^[a-f0-9]{32}\.txt$/i.test(f));
   if (candidates.length === 0) {
-    throw new Error('No IndexNow key file found. Expected: public/<32-hex>.txt');
+    throw new Error(`No IndexNow key file found at repo root (${ROOT}). Expected: <32-hex>.txt`);
   }
   if (candidates.length > 1) {
-    throw new Error(`Multiple IndexNow key files found: ${candidates.join(', ')}. Keep exactly one.`);
+    throw new Error(`Multiple IndexNow key files at repo root: ${candidates.join(', ')}. Keep exactly one.`);
   }
   const filename = candidates[0];
   const key = path.basename(filename, '.txt');
-  const contents = fs.readFileSync(path.join(PUBLIC_DIR, filename), 'utf8').trim();
+  const contents = fs.readFileSync(path.join(ROOT, filename), 'utf8').trim();
   if (contents !== key) {
     throw new Error(`Key file contents (${contents}) do not match filename (${key}). IndexNow requires they match.`);
   }

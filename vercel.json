@@ -7,5 +7,13 @@
     { "source": "/blog/article", "destination": "/blog/article.html" },
     { "source": "/dashboard/login", "destination": "/dashboard/login.html" },
     { "source": "/product/:slug*", "destination": "/api/gone" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*).txt",
+      "headers": [
+        { "key": "Content-Type", "value": "text/plain" }
+      ]
+    }
   ]
 }
