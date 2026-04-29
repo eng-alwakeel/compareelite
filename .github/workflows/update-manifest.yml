@@ -42,6 +42,19 @@ jobs:
       - name: Regenerate articles-index.md
         run: node scripts/generate-articles-index.js
 
+      - name: Notify IndexNow of changed articles
+        run: |
+          NEW=$(git diff-tree --no-commit-id --name-only -r --diff-filter=AM HEAD -- 'articles/*.json' \
+                | xargs -I{} basename {} .json \
+                | grep -v '^TEMPLATE$' \
+                | tr '\n' ' ')
+          if [ -z "$NEW" ]; then
+            echo "No added/modified articles in this commit — skipping IndexNow."
+            exit 0
+          fi
+          echo "Submitting to IndexNow: $NEW"
+          node scripts/notify-indexnow.js $NEW
+
       - name: Configure Git
         run: |
           git config user.name "CompareElite Bot"
