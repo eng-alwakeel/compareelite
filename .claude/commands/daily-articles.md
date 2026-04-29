@@ -88,16 +88,17 @@ The QC skill's `AUTO-IMPROVEMENTS (2026-04-29)` section is binding (it re-runs G
 
 ---
 
-## Step 5 — Commit & Push (only the approved subset)
+## Step 5 — Commit only (workflow handles push after hard gates)
 
 ```bash
 APPROVED_FILES=$(... list of articles/<slug>.json that passed every gate ...)
 if [ -n "$APPROVED_FILES" ]; then
   git add $APPROVED_FILES
   git commit -m "Add daily articles: <slug1>, <slug2>, ..."
-  git push -u origin main
 fi
 ```
+
+**DO NOT push.** The workflow runs `validate-article.js` and `validate-amazon-links.js` against the new files after this skill exits. If either validator finds a problem, the workflow fails and the commit is never pushed to `main`. This is intentional: the gates outside the LLM prevent broken articles from reaching production even if the writer or QC missed something.
 
 If zero articles passed, do NOT make an empty commit. Print the rejection summary and exit non-zero so the workflow surfaces the failure.
 

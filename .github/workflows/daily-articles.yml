@@ -37,14 +37,48 @@ jobs:
         run: |
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
 
+      - name: Record HEAD before generation
+        id: pre
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
       - name: Generate 4 daily articles
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
           claude --dangerously-skip-permissions -p "/daily-articles"
 
-      - name: Push if skill didn't push
-        if: always()
+      - name: Identify new article files
+        id: diff
         run: |
-          git pull --rebase origin main 2>/dev/null || true
-          git push origin main 2>/dev/null || echo "Already up to date"
+          NEW=$(git diff --name-only --diff-filter=AM ${{ steps.pre.outputs.sha }} HEAD -- 'articles/*.json' | tr '\n' ' ')
+          echo "files=$NEW" >> "$GITHUB_OUTPUT"
+          echo "Generated articles: $NEW"
+
+      - name: HARD GATE 1 — Schema validation on new articles
+        if: steps.diff.outputs.files != ''
+        run: |
+          echo "Validating: ${{ steps.diff.outputs.files }}"
+          node scripts/validate-article.js ${{ steps.diff.outputs.files }}
+
+      - name: HARD GATE 2 — Amazon link liveness on new articles
+        if: steps.diff.outputs.files != ''
+        run: |
+          for f in ${{ steps.diff.outputs.files }}; do
+            slug=$(basename "$f" .json)
+            echo "Probing $slug"
+            node scripts/validate-amazon-links.js --slug "$slug" --no-md --no-json
+          done
+
+      - name: Push (only after both gates pass)
+        if: success() && steps.diff.outputs.files != ''
+        run: |
+          git pull --rebase origin main || true
+          git push origin main
+
+      - name: Reject — leave commit unpushed if any gate failed
+        if: failure()
+        run: |
+          echo "::error::One or more hard gates failed. The commit was NOT pushed to main."
+          echo "Inspect the failed step above for the offending article(s)."
+          git log -1 --stat
+          exit 1
