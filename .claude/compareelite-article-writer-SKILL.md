@@ -135,7 +135,6 @@ also reads the broken-links report and rejects known-dead ASINs offline.
 
 ```json
 {
-  "rank": 1 (optional),
   "name": "Brand Model Name",
   "price": "$99",
   "rating": "8.5/10",
