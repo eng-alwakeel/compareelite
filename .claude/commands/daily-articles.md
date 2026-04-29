@@ -134,7 +134,11 @@ Use the compareelite-cto skill to run the publish gate on articles/<slug>.json.
 Return PUBLISH or REJECT with the reason.
 ```
 
-The CTO skill independently re-runs `fix-product-images.js`, `validate-amazon-links.js`, and `validate-article.js`, plus checks slug/filename match and `related_articles` integrity. The CTO is intentionally redundant with Step 3 + Step 4 — three layers of defence catch what any single layer missed.
+The CTO skill is the ONLY role authorised to:
+- inject `related_articles` (reads `data/articles-manifest.json`, picks 2–3 same-category siblings, writes them into the JSON)
+- approve the article for commit
+
+The CTO independently re-runs `fix-product-images.js`, `validate-amazon-links.js`, and `validate-article.js`, plus checks slug/filename match and `related_articles` integrity. The CTO is intentionally redundant with Step 3 + Step 4 — three layers of defence catch what any single layer missed. CMO and QC have no GitHub access (`allowed-tools` enforces this) and never populate `related_articles`; that is solely the CTO's job.
 
 **Outcome:**
 - **PUBLISH** → article goes into the commit batch.
