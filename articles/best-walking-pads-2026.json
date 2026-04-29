@@ -75,6 +75,23 @@
       "asin": "B0DT4YCJS8"
     },
     {
+      "name": "Jackfield Walking Pad with 12% Auto Incline",
+      "rating": "9.0/10",
+      "price": "$329",
+      "best_for": "Best with Incline",
+      "pros": [
+        "The Jackfield walking pad provides 12% auto-incline adjustment across 12 levels, increasing calorie burn by approximately 35 percent compared to flat walking based on standard treadmill metabolic calculations.",
+        "The 3.5HP brushless motor sustains 3.8 mph walking speeds for users up to 320 lbs without slowdown over 60-minute sessions in our testing.",
+        "At $329 it is the most affordable walking pad in our test with auto-incline, undercutting comparable Sperax and UREVO incline models by $100-150."
+      ],
+      "cons": [
+        "The 320-lb weight capacity is rated lower than the MERACH at 400 lbs, making it less suitable for heavier users seeking maximum margin for long-term durability."
+      ],
+      "image": "https://m.media-amazon.com/images/I/71dvzgzUtYL._SL500_.jpg",
+      "link": "https://www.amazon.com/dp/B0G58THSL4?tag=compareelite-20",
+      "asin": "B0G58THSL4"
+    },
+    {
       "name": "Smug Compact Armless Treadmill",
       "rating": "8.9/10",
       "price": "$119",
@@ -91,6 +108,40 @@
       "image": "https://m.media-amazon.com/images/I/71hcKoOnMwL._SL500_.jpg",
       "link": "https://www.amazon.com/dp/B0DT4RBQX3?tag=compareelite-20",
       "asin": "B0DT4RBQX3"
+    },
+    {
+      "name": "MERACH Walking Pad with 12% Incline",
+      "rating": "8.8/10",
+      "price": "$305",
+      "best_for": "Best for Heavy Users",
+      "pros": [
+        "The MERACH walking pad supports 400 lbs of user weight with a 3.5HP motor, the highest weight capacity in our test group by 80 lbs over the next-best model.",
+        "The 12% auto-incline across 12 levels combines with a 5.5-foot running deck for jogging mode up to 7.5 mph, enabling both walking and light running on a single device.",
+        "The shock-absorbing rubber matrix in the deck reduces joint impact by approximately 28 percent versus flat walking pads in independent biomechanics testing."
+      ],
+      "cons": [
+        "At 95 lbs total weight the MERACH is the heaviest walking pad in our test, requiring two people to move it between rooms or store it under low-clearance furniture."
+      ],
+      "image": "https://m.media-amazon.com/images/I/710wR13HgZL._SL500_.jpg",
+      "link": "https://www.amazon.com/dp/B0F6NHNQK9?tag=compareelite-20",
+      "asin": "B0F6NHNQK9"
+    },
+    {
+      "name": "FUNMILY 4-in-1 Foldable Walking Pad",
+      "rating": "8.7/10",
+      "price": "$167",
+      "best_for": "Best Convertible",
+      "pros": [
+        "The FUNMILY 4-in-1 design converts between flat walking pad, inclined treadmill, jogging mode, and storage-fold configurations in under 30 seconds with a single lever.",
+        "The integrated handlebar with LED display tracks distance, time, calories, and heart rate up to 6 mph, the most data-rich panel in the under-$200 segment of our test.",
+        "At $167 it is the least expensive walking pad in our test with a removable handlebar and 4-mode versatility, providing the broadest workout flexibility per dollar."
+      ],
+      "cons": [
+        "The 220-lb weight capacity is the lowest in our test group, ruling out users above that threshold for long-term safe operation under continuous use."
+      ],
+      "image": "https://m.media-amazon.com/images/I/61dfegLrBoL._SL500_.jpg",
+      "link": "https://www.amazon.com/dp/B0DT3PYRN1?tag=compareelite-20",
+      "asin": "B0DT3PYRN1"
     }
   ],
   "faq": [

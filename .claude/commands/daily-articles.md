@@ -1,241 +1,176 @@
 # Daily Article Generator — CompareElite
 
-Generate **4 new affiliate articles** for compareelite.com with full SEO optimization, then commit and push to `main`.
+Generate **4 new affiliate articles** for compareelite.com. Each article moves through a strict assembly line:
+
+```
+Writer writes → liveness gates → QC review
+                                    ↓ REJECTED
+                              Writer fixes (max 1 retry)
+                                    ↓
+                                  QC re-review
+                                    ↓ APPROVED
+                              CTO final gate → commit
+```
+
+No agent pushes directly. The CTO is the only gate that can let an article into the commit batch, and the workflow runs the validators *again* after the skill exits — broken articles are blocked at three independent layers.
 
 ---
 
 ## Step 1 — Pick 4 New Topics
 
-List all files in `articles/` to get existing slugs. Then pick **4 topics** from the rotation list below that have **no matching file yet**. Choose diverse categories (avoid picking 2 from the same category).
+1. Read the live articles index:
+   ```
+   curl -s https://raw.githubusercontent.com/eng-alwakeel/compareelite/main/data/articles-index.md
+   ```
+   (or `cat data/articles-index.md` if working in a checkout). The index lists every published slug.
 
-### Topic Rotation List
+2. Pick **4 topics** that are NOT in the index, drawn from the rotation pool below. Choose diverse categories — no two from the same category in one batch.
 
-```
-SLUG                                    | TITLE                                              | CATEGORY      | UNSPLASH_ID
-best-gaming-headsets-2026               | Best Gaming Headsets of 2026                       | Technology    | photo-1599861190766-a5563fa716b2
-best-mechanical-keyboards-2026          | Best Mechanical Keyboards of 2026                  | Technology    | photo-1587829741301-dc798b83add3
-best-ultrawide-monitors-2026            | Best Ultrawide Monitors of 2026                    | Technology    | photo-1527443224154-c4a3942d3acf
-best-external-ssds-2026                 | Best External SSDs of 2026                         | Technology    | photo-1531492746076-161ca9bcad58
-best-webcams-2026                       | Best Webcams for Streaming & Video Calls 2026      | Technology    | photo-1590602847861-f357a9332bbc
-best-usb-c-hubs-2026                    | Best USB-C Hubs & Docking Stations 2026            | Technology    | photo-1518770660439-4636190af475
-best-wireless-gaming-mice-2026          | Best Wireless Gaming Mice of 2026                  | Technology    | photo-1615663245857-ac93bb7c39e7
-best-smartwatches-2026                  | Best Smartwatches of 2026                          | Technology    | photo-1523275335684-37898b6baf30
-best-noise-cancelling-headphones-2026   | Best Noise-Cancelling Headphones of 2026           | Technology    | photo-1505740420928-5e560c06d30e
-best-laptop-stands-2026                 | Best Laptop Stands & Risers of 2026                | Technology    | photo-1593642632559-0c6d3fc62b89
-best-portable-monitors-2026             | Best Portable Monitors of 2026                     | Technology    | photo-1611532736597-de2d4265fba3
-best-smart-displays-2026                | Best Smart Displays of 2026                        | Technology    | photo-1558618666-fcd25c85cd64
-best-streaming-sticks-2026              | Best Streaming Sticks & TV Dongles 2026            | Technology    | photo-1522869635100-9f4c5e86aa37
-best-gaming-controllers-2026            | Best Gaming Controllers of 2026                    | Technology    | photo-1612287230202-1ff1d85d1bdf
-best-action-cameras-2026                | Best Action Cameras of 2026                        | Technology    | photo-1547949003-9792a18a2601
-best-drones-2026                        | Best Drones for Beginners & Pros 2026              | Technology    | photo-1507582020474-9a35b7d455d9
-best-vr-headsets-2026                   | Best VR Headsets of 2026                           | Technology    | photo-1593508512255-86ab42a8e620
-best-home-security-cameras-2026         | Best Home Security Cameras of 2026                 | Technology    | photo-1557597774-9d273605dfa9
-best-wifi-routers-2026                  | Best Wi-Fi 6 Routers of 2026                       | Technology    | photo-1544197150-b99a580bb7a8
-best-smart-plugs-2026                   | Best Smart Plugs of 2026                           | Technology    | photo-1558618666-fcd25c85cd64
-best-laptop-bags-2026                   | Best Laptop Bags & Backpacks 2026                  | Technology    | photo-1553062407-98eeb64c6a62
-best-electric-toothbrushes-2026         | Best Electric Toothbrushes of 2026                 | Health        | photo-1609840114035-3c981b782dfe
-best-sunscreens-2026                    | Best Sunscreens of 2026                            | Health        | photo-1507003211169-0a1dd7228f2d
-best-beard-trimmers-2026                | Best Beard Trimmers of 2026                        | Health        | photo-1503951914875-452162b0f3f1
-best-hair-dryers-2026                   | Best Hair Dryers of 2026                           | Health        | photo-1522338242992-e1a54906a8da
-best-electric-shavers-2026              | Best Electric Shavers of 2026                      | Health        | photo-1503951914875-452162b0f3f1
-best-air-fryers-2026                    | Best Air Fryers of 2026                            | Kitchen       | photo-1574269909862-7e1d70bb8078
-best-coffee-makers-2026                 | Best Coffee Makers of 2026                         | Kitchen       | photo-1495474472287-4d71bcdd2085
-best-instant-pots-2026                  | Best Instant Pots & Pressure Cookers 2026          | Kitchen       | photo-1556909114-f6e7ad7d3136
-best-blenders-2026                      | Best Blenders of 2026                              | Kitchen       | photo-1570222094114-d054a817e56b
-best-knife-sets-2026                    | Best Kitchen Knife Sets of 2026                    | Kitchen       | photo-1615361200141-f45040f367be
-best-stand-mixers-2026                  | Best Stand Mixers of 2026                          | Kitchen       | photo-1556909172-54557c7e4fb7
-best-electric-kettles-2026              | Best Electric Kettles of 2026                      | Kitchen       | photo-1544787219-7f47ccb76574
-best-food-processors-2026               | Best Food Processors of 2026                       | Kitchen       | photo-1556909048-f918d84ec97e
-best-toaster-ovens-2026                 | Best Toaster Ovens & Countertop Ovens 2026         | Kitchen       | photo-1586864387967-d02ef85d93e8
-best-espresso-machines-2026             | Best Espresso Machines Under $500 2026             | Kitchen       | photo-1510591509098-f4fdc6d0ff04
-best-cast-iron-skillets-2026            | Best Cast Iron Skillets of 2026                    | Kitchen       | photo-1484723091739-30a097e8f929
-best-vacuum-sealers-2026                | Best Vacuum Sealers of 2026                        | Kitchen       | photo-1565299507177-b0ac66763828
-best-yoga-mats-2026                     | Best Yoga Mats of 2026                             | Fitness       | photo-1544367567-0f2fcb009e0b
-best-foam-rollers-2026                  | Best Foam Rollers for Recovery 2026                | Fitness       | photo-1571019614242-c5c5dee9f50b
-best-jump-ropes-2026                    | Best Jump Ropes of 2026                            | Fitness       | photo-1598971457999-ca4ef48a9a71
-best-pull-up-bars-2026                  | Best Pull-Up Bars for Home 2026                    | Fitness       | photo-1534438327276-14e5300c3a48
-best-fitness-trackers-2026              | Best Fitness Trackers of 2026                      | Fitness       | photo-1575311373937-040b8e1fd5b6
-best-massage-guns-2026                  | Best Massage Guns of 2026                          | Fitness       | photo-1571019613454-1cb2f99b2d8b
-best-protein-shakers-2026               | Best Protein Shakers & Blender Bottles 2026        | Fitness       | photo-1593095948071-474c5cc2989d
-best-gym-bags-2026                      | Best Gym Bags of 2026                              | Fitness       | photo-1553062407-98eeb64c6a62
-best-treadmills-2026                    | Best Treadmills Under $1000 2026                   | Fitness       | photo-1538805060514-97d9cc17730c
-best-stationary-bikes-2026              | Best Stationary Bikes of 2026                      | Fitness       | photo-1534438327276-14e5300c3a48
-best-camping-tents-2026                 | Best Camping Tents of 2026                         | Outdoor       | photo-1504280390367-361c6d9f38f4
-best-sleeping-bags-2026                 | Best Sleeping Bags of 2026                         | Outdoor       | photo-1445307806294-bff7f67ff225
-best-hiking-backpacks-2026              | Best Hiking Backpacks of 2026                      | Outdoor       | photo-1501555088652-021faa106b9b
-best-portable-grills-2026               | Best Portable Grills of 2026                       | Outdoor       | photo-1555041469-a586c61ea9bc
-best-camp-stoves-2026                   | Best Camp Stoves of 2026                           | Outdoor       | photo-1508193638397-1c4234db14d8
-best-headlamps-2026                     | Best Headlamps of 2026                             | Outdoor       | photo-1551632811-561732d1e306
-best-solar-chargers-2026                | Best Solar Chargers of 2026                        | Outdoor       | photo-1509391366360-2e959784a276
-best-car-vacuums-2026                   | Best Car Vacuums of 2026                           | Automotive    | photo-1558618047-3c8c76ca7d13
-best-car-floor-mats-2026                | Best Car Floor Mats of 2026                        | Automotive    | photo-1503376780353-7e6692767b70
-best-portable-car-chargers-2026         | Best Portable Car Battery Chargers 2026            | Automotive    | photo-1609592806596-b66b7d72ae9d
-best-car-organizers-2026                | Best Car Trunk & Seat Organizers 2026              | Automotive    | photo-1494976388531-d1058494cdd8
-best-desk-organizers-2026               | Best Desk Organizers & Storage 2026                | Home          | photo-1593642632559-0c6d3fc62b89
-best-led-desk-lamps-2026                | Best LED Desk Lamps of 2026                        | Home          | photo-1507473885765-e6ed057f782c
-best-electric-blankets-2026             | Best Electric Blankets of 2026                     | Home          | photo-1555041469-a586c61ea9bc
-best-humidifiers-2026                   | Best Humidifiers of 2026                           | Home          | photo-1585771724684-38269d6639fd
-best-dehumidifiers-2026                 | Best Dehumidifiers of 2026                         | Home          | photo-1585771724684-38269d6639fd
-best-luggage-sets-2026                  | Best Luggage Sets of 2026                          | Travel        | photo-1553531889-e6cf4d692b1b
-best-travel-pillows-2026                | Best Travel Pillows of 2026                        | Travel        | photo-1436491865332-7a61a109cc05
-best-packing-cubes-2026                 | Best Packing Cubes of 2026                         | Travel        | photo-1553531889-e6cf4d692b1b
-best-sunglasses-2026                    | Best Polarized Sunglasses of 2026                  | Fashion       | photo-1508214751196-bcfd4ca60f91
-```
+3. Every topic's `category` field MUST be exactly one of these four values (no others — the validator and renderer reject anything else):
+   - `Tech`
+   - `Home Office`
+   - `Smart Home`
+   - `Home Fitness`
+
+### Topic Rotation Pool (category → suggested slugs)
+
+- **Tech**: best-portable-monitors-2026, best-action-cameras-2026, best-smartwatches-2026, best-streaming-sticks-2026, best-wifi-routers-2026, best-vr-headsets-2026, best-portable-power-stations-2026, best-bluetooth-trackers-2026, best-wireless-chargers-2026
+- **Home Office**: best-task-lighting-2026, best-cable-management-2026, best-desk-mats-2026, best-document-scanners-2026, best-acoustic-panels-2026, best-monitor-light-bars-2026
+- **Smart Home**: best-smart-doorbells-2026, best-smart-curtains-2026, best-leak-detectors-2026, best-smart-bulbs-2026, best-pet-cameras-2026, best-smart-displays-2026, best-robot-mops-2026
+- **Home Fitness**: best-jump-ropes-2026, best-pull-up-bars-2026, best-massage-guns-2026, best-kettlebells-2026, best-rowing-machines-2026, best-suspension-trainers-2026, best-yoga-blocks-2026
+
+If the pool runs low, propose new slugs in the same 4 categories — but never use a category outside the 4.
 
 ---
 
-## Step 2 — Generate Each Article with Full SEO
+## Step 2 — Write Each Article (delegate to writer skill)
 
-For **each of the 4 topics**, produce a complete JSON using this exact schema:
+For each of the 4 topics, invoke the writer skill — do NOT write the JSON inline in this command. The writer skill is the single source of truth for schema, word counts, pros/cons format, FAQ count, and ASIN/image rules.
 
-```json
-{
-  "slug": "best-SLUG-2026",
-  "title": "Best X of 2026",
-  "category": "Technology|Kitchen|Fitness|Outdoor|Health|Automotive|Home|Travel|Fashion",
-  "date": "TODAYS_DATE",
-  "excerpt": "SEO meta description: 140–160 characters, starts with primary keyword, clear value proposition.",
-  "thumbnail": "https://images.unsplash.com/UNSPLASH_ID?w=800&q=80",
-  "author": "CompareElite Team",
-  "keywords": [
-    "primary keyword 2026",
-    "best [product] to buy",
-    "top [product] review",
-    "[product] buying guide",
-    "[product] comparison",
-    "affordable [product]",
-    "[product] for [use case]"
-  ],
-  "stats": { "readers": 0 },
-  "products": [
-    {
-      "name": "Full Product Name",
-      "rating": "9.X/10",
-      "price": "$XX",
-      "best_for": "Best Overall",
-      "link": "https://www.amazon.com/dp/REAL_ASIN?tag=compareelite-20",
-      "pros": ["Specific feature benefit", "Measurable spec", "Key advantage"],
-      "cons": ["Specific limitation"]
-    }
-  ],
-  "faq": [
-    {
-      "q": "What is the best [product] in 2026?",
-      "a": "Detailed 2–3 sentence answer mentioning top pick by name with key reason why."
-    },
-    {
-      "q": "What should I look for when buying a [product]?",
-      "a": "Detailed 2–3 sentence answer covering 2–3 key buying criteria with specifics."
-    },
-    {
-      "q": "Is a [budget option] worth it or should I spend more?",
-      "a": "Balanced 2–3 sentence answer that helps the reader decide based on their use case."
-    }
-  ]
-}
+```
+Use the compareelite-article-writer skill to write the article for
+slug=<slug>, category=<category>. Save the output to articles/<slug>.json.
 ```
 
----
+The writer skill's `AUTO-IMPROVEMENTS (2026-04-29)` section is binding: the writer must NOT hallucinate Amazon image IDs, must WebFetch each ASIN before writing it, and must drop products it cannot verify.
 
-## SEO Rules — Apply Strictly
-
-### `title`
-- Under 60 characters
-- Format: `Best [Product] of 2026` or `Best [Product] for [Use Case] 2026`
-- Include the year (2026)
-- No clickbait — clear and descriptive
-
-### `excerpt` (meta description)
-- **140–160 characters exactly** — count them
-- Start with the primary keyword (e.g. "Best air fryers of 2026...")
-- Include a clear benefit or differentiator ("...tested for crispiness, speed, and ease of cleaning")
-- End with a call-to-action hint ("Find your perfect match in our expert guide")
-- Do NOT start with "We" or "Our" — lead with the topic
-
-### `keywords`
-- 6–8 keywords, all lowercase
-- Mix: 1 head keyword + 3–4 long-tail + 1–2 use-case variants
-- Include the year in at least one keyword
-- Examples for air fryers: `["best air fryer 2026", "air fryer buying guide", "best air fryer under $100", "small air fryer for one person", "air fryer vs oven", "healthiest air fryer", "best air fryer for family"]`
-
-### `products`
-- Exactly **4 products**, sorted highest rating first
-- Ratings: `9.6–9.9` (Best Overall), `9.0–9.5` (runner-up), `8.5–8.9` (budget pick), `8.0–8.4` (niche pick)
-- Use **real Amazon ASINs** from your training data — popular, well-reviewed products only
-- `best_for` badges must all be unique: e.g. `Best Overall`, `Best Value`, `Best Budget`, `Best Premium` / `Most Portable` / `Best for Beginners` / `Most Durable`
-- `pros`: 3 items, each 3–6 words, specific and measurable (e.g. "20-hour battery life", not "long battery")
-- `cons`: 1–2 items, honest and specific (e.g. "No companion app", "Loud fan noise at max")
-- `link`: Always `https://www.amazon.com/dp/ASIN?tag=compareelite-20`
-
-### `faq`
-- Exactly **3 questions** — not 2
-- Write questions as real Google search queries people type
-- Answers: 2–3 sentences each, mention product names where relevant, give concrete advice
-- Cover: (1) overall best pick, (2) buying criteria, (3) budget vs premium decision
+Do NOT invoke the CTO skill yet — the CTO is the final gate (Step 6), not a pre-flight check. The writer's only handoff is to Step 3.
 
 ---
 
-## Step 3 — Save Files
+## Step 3 — Liveness gates (BLOCKING)
 
-Write each JSON to:
+For each newly written `articles/<slug>.json`, run both scripts in order:
+
+### Gate 3a — Image enrichment
+```bash
+node scripts/fix-product-images.js --slug <slug>
 ```
-articles/[slug].json
+This probes every product image. For any image that returns a 43-byte placeholder GIF or HTTP 404, it scrapes Amazon to extract the real image ID and rewrites the JSON. Re-syncs `thumbnail = products[0].image`.
+
+### Gate 3b — ASIN liveness
+```bash
+node scripts/validate-amazon-links.js --slug <slug>
+```
+- `OK` for every product → proceed to Step 4.
+- Any `DEAD` result → mark this article as REJECTED. Do NOT commit it.
+- > 50% `BLOCKED` → IP throttled; wait 60–90s and re-run before deciding.
+
+### Gate 3c — Schema validation
+```bash
+node scripts/validate-article.js articles/<slug>.json
+```
+Any FAIL → REJECTED.
+
+---
+
+## Step 4 — QC Review, Round 1 (delegate to QC skill)
+
+For each article that passed Step 3, invoke the QC reviewer skill:
+
+```
+Use the compareelite-qc-reviewer skill to review articles/<slug>.json.
+The skill returns APPROVED or REJECTED with a per-check verdict.
 ```
 
+The QC skill's `AUTO-IMPROVEMENTS (2026-04-29)` section is binding (it re-runs Gates 3a/3b as a final sanity check; do not skip just because Step 3 already ran).
+
+**Outcome routing:**
+- **APPROVED** → proceed to Step 6 (CTO).
+- **REJECTED** → proceed to Step 5 (writer fix loop). Do NOT skip the article yet — the writer gets one chance to fix the specific failed checks.
+
+Capture the QC report in a variable so the writer can see *exactly* which checks failed.
+
 ---
 
-## Step 3.5 — Add `related_articles` (Automatic)
+## Step 5 — Writer Fix + QC Round 2 (max 1 retry)
 
-After saving all 4 articles:
+For each REJECTED article from Step 4:
 
-1. Run `ls articles/` to get the full list of published slugs (includes existing + the 4 new ones)
-2. For each of the 4 new articles, pick **2–3 slugs** from the list that match the **same category** or an adjacent one — never the article itself
-3. Build the `related_articles` array using real slugs only:
-```json
-"related_articles": [
-  { "slug": "best-noise-cancelling-headphones-2026", "title": "Best Noise-Cancelling Headphones of 2026" },
-  { "slug": "best-wireless-gaming-mice-2026", "title": "Best Wireless Gaming Mice of 2026" }
-]
+1. **Hand the QC report back to the writer skill** with an explicit fix instruction:
+   ```
+   Use the compareelite-article-writer skill to fix articles/<slug>.json.
+   The QC reviewer rejected it for these specific reasons:
+   <paste the failed-check list verbatim from Step 4>
+   Fix ONLY those issues. Do not rewrite the rest of the article.
+   ```
+2. After the writer returns the corrected JSON, **re-run Step 3 liveness gates** (image enrichment + ASIN probe + schema). A fix that re-introduces a dead ASIN or breaks schema is automatic failure — there is no Round 3.
+3. **Re-invoke QC** on the corrected article:
+   ```
+   Use the compareelite-qc-reviewer skill to review the corrected articles/<slug>.json.
+   ```
+4. **Outcome:**
+   - APPROVED in Round 2 → proceed to Step 6.
+   - REJECTED again → article is abandoned for this run. Leave the file on disk, write the second-round failures into the run summary, and skip to the next article. **Do not loop a third time** — endless retries waste budget and rarely produce a clean article when two rounds fail.
+
+---
+
+## Step 6 — CTO Final Gate (delegate to CTO skill)
+
+For each article that QC approved (Round 1 or Round 2), invoke the CTO skill as the **final pre-publish authority**:
+
 ```
-4. Add `related_articles` to each article JSON and save the file
+Use the compareelite-cto skill to run the publish gate on articles/<slug>.json.
+Return PUBLISH or REJECT with the reason.
+```
 
-**Rules:**
-- Only use slugs that actually exist in `articles/` — never invent slugs
-- Prefer same-category links; fall back to adjacent categories if fewer than 2 exist
-- If no related articles exist yet, skip the field entirely (omit it)
+The CTO skill independently re-runs `fix-product-images.js`, `validate-amazon-links.js`, and `validate-article.js`, plus checks slug/filename match and `related_articles` integrity. The CTO is intentionally redundant with Step 3 + Step 4 — three layers of defence catch what any single layer missed.
 
----
-
-## Step 4 — Find Amazon Product Images
-
-After saving all 4 articles, spawn a **background subagent** (WebSearch-capable) to find the real `m.media-amazon.com` CDN image URL for each ASIN.
-
-For each ASIN:
-1. Search: `site:bigbangprice.com ASIN` or `ASIN amazon product image m.media-amazon.com`
-2. Extract the image ID pattern: `[0-9A-Za-z+/]{11,14}L`
-3. Build URL: `https://m.media-amazon.com/images/I/[IMAGE_ID]._SL500_.jpg`
-4. Add `"image": "URL"` field to that product in the JSON and save
-
-If an image cannot be confirmed, skip it — the fallback renderer handles it automatically.
+**Outcome:**
+- **PUBLISH** → article goes into the commit batch.
+- **REJECT** → article does NOT get committed, even if QC approved it. The CTO can override QC. Write the CTO's reason into the run summary.
 
 ---
 
-## Step 5 — Commit & Push
+## Step 7 — Commit only (workflow handles push after hard gates)
 
 ```bash
-git add articles/
-git commit -m "Add 4 daily articles: [slug1], [slug2], [slug3], [slug4]"
-git push -u origin main
+APPROVED_FILES=$(... list of articles/<slug>.json that passed every gate ...)
+if [ -n "$APPROVED_FILES" ]; then
+  git add $APPROVED_FILES
+  git commit -m "Add daily articles: <slug1>, <slug2>, ..."
+fi
 ```
+
+**DO NOT push.** The workflow runs `validate-article.js` and `validate-amazon-links.js` against the new files after this skill exits. If either validator finds a problem, the workflow fails and the commit is never pushed to `main`. This is intentional: the gates outside the LLM prevent broken articles from reaching production even if the writer or QC missed something.
+
+If zero articles passed, do NOT make an empty commit. Print the rejection summary and exit non-zero so the workflow surfaces the failure.
 
 ---
 
 ## Output Summary
 
-Report:
-- Article slugs and titles generated
-- `excerpt` character count for each (must be 140–160)
-- Keywords count per article
-- FAQ question count (must be 3)
-- Images found vs skipped
-- Git push status
+Print a structured report at the end of the run:
+
+```
+Daily run YYYY-MM-DD
+  Topics picked:                4
+  Articles written:             N
+  Failed liveness gates (S3):   M  (list slugs + reason: DEAD ASIN / image 404 / schema)
+  QC Round 1 rejections:        R1 (list slugs + first 3 failed checks)
+  QC Round 2 rejections:        R2 (list slugs — these are abandoned)
+  CTO final-gate rejections:    C  (list slugs + reason — overrides QC)
+  Approved & committed:         P  (the workflow then runs its own hard gates before pushing)
+```
+
+Articles never go to production unless they pass every gate. Better to ship 0 articles today than ship one with hallucinated ASINs.

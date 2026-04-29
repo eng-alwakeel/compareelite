@@ -1,12 +1,17 @@
 ---
-name: compareelite-qc-v2
+name: compareelite-qc-reviewer
 description: QC reviewer for compareelite.com articles. Runs the full 75-point checklist — field names, word counts, SEO rules, affiliate links (including DEAD-ASIN check against data/broken-amazon-links.json), image URLs, and GEO compliance. Returns APPROVED or REJECTED with a detailed issue list.
+allowed-tools: Read, WebFetch, Bash(node scripts/*:*), Bash(ls:*), Bash(cat:*), Bash(curl:*)
 ---
 
 # qc-reviewer
 
 Review an article JSON before it is published to compareelite.com.
 Run every check below in order. Output a structured report. The article must pass ALL checks to be approved.
+
+## Tool boundary (READ FIRST)
+
+QC reviews JSON. QC does **NOT** publish, commit, push, or comment on GitHub issues. If a check requires writing back to GitHub, return the failure list and let the CEO/CTO route it. This skill MUST NOT use `git`, `gh`, or any `mcp__github__*` tool — the harness enforces this via `allowed-tools` in the frontmatter.
 
 ---
 
@@ -29,6 +34,47 @@ If REJECTED, list every failed check with a specific fix. Do not approve an arti
 
 ---
 
+## AUTO-IMPROVEMENTS (2026-04-28)
+
+- [from pattern fresh-article-mostly-dead] BLOCK any article where 50%+ of products have ASINs that appear in `data/broken-amazon-links.json` with `state: "DEAD"`. Run `node scripts/validate-article.js articles/<slug>.json` (or check the JSON directly) on every article before approval — never trust the writer's claim that ASINs are live.
+- [from pattern thumbnail-drift] In QC, verify thumbnail = products[0].image as the final pre-submit step. The homepage card MUST show the Best Overall product, not a stale stock photo or Unsplash URL. If they differ → REJECTED; fix by setting `thumbnail` equal to `products[0].image`.
+
+---
+
+## AUTO-IMPROVEMENTS (2026-04-29) — REQUIRED LIVENESS GATES
+
+**Why this exists:** A 2026-04-29 article (best-spin-bikes-2026) shipped with all 6 ASINs returning HTTP 404 and all 6 image URLs returning HTTP 404. The writer hallucinated everything. Schema validation alone cannot catch this — every output must be probed against amazon.com before approval.
+
+### Gate 1 — ASIN liveness probe (BLOCKING)
+
+Run before approval:
+```
+node scripts/validate-amazon-links.js --slug <slug>
+```
+- Any `DEAD` result → **REJECTED**. The writer must replace the ASIN with a verified one.
+- `BLOCKED` (HTTP 503/CAPTCHA from datacenter IP) is NOT a fail by itself, but if you see > 50% BLOCKED in one run, the IP is throttled — re-run after a delay before approving.
+- `OK` for every product → proceed to Gate 2.
+
+### Gate 2 — Image liveness probe (BLOCKING)
+
+Run before approval:
+```
+node scripts/fix-product-images.js --slug <slug>
+```
+This script probes every `image` URL and, for any that returns a 43-byte placeholder GIF or HTTP 404, scrapes Amazon to extract the real image ID and rewrites the JSON.
+
+After running, re-probe to confirm. Any image that still does not return `image/jpeg` with `Content-Length > 500` → **REJECTED**. The writer must drop the product or supply a verified image.
+
+### Gate 3 — Forbidden field `rank`
+
+The renderer ignores `rank`. If any product has `"rank": <n>` → **REJECTED**, delete the field.
+
+### How to handle a REJECTION
+
+When you reject, write the failures back to the source issue (or the next pipeline step) so the writer/CTO sees them. Empty-pass approvals where the writer never sees the rejection are how broken articles ship to production. If you have an inbox / GitHub issue queue, post a comment on the article's issue with the failed-check list before closing — never silently re-queue.
+
+---
+
 ## ⚠️ STEP 0 — Fetch Published Articles from GitHub (REQUIRED BEFORE REVIEW)
 
 Before running any checks, fetch the current list of published articles from the GitHub repository:
@@ -36,7 +82,7 @@ Before running any checks, fetch the current list of published articles from the
 **Repository:** `eng-alwakeel/compareelite`
 **Path:** `articles/` folder (main branch)
 
-Use the GitHub API or MCP tools to list all `.json` files in the `articles/` folder. Extract the slug from each filename (remove `.json` extension). Store this as the **Published Slugs List**.
+List the local `articles/` folder via `ls articles/*.json` (Bash) when running inside a workflow checkout, or fetch `https://raw.githubusercontent.com/eng-alwakeel/compareelite/main/data/articles-index.md` via WebFetch. Extract the slug from each filename (remove `.json` extension). Store this as the **Published Slugs List**. **Do NOT use any `mcp__github__*` tool — QC has no GitHub credentials and the harness will deny the call.**
 
 Example published slugs:
 - `best-wireless-earbuds-2026`
@@ -118,7 +164,7 @@ Run these first. Any forbidden field = immediate REJECTED status regardless of o
 ### `thumbnail`
 | # | Check | Rule |
 |---|---|---|
-| 28 | Thumbnail is Amazon CDN URL | Must start with `https://m.media-amazon.com/images/I/`. Unsplash, manufacturer, and blog hosts are auto-fail. |
+| 28 | Thumbnail is Amazon CDN URL | Must start with `https://m.media-amazon.com/images/I/` or `https://images-na.ssl-images-amazon.com/images/`. Unsplash, manufacturer, and blog hosts are auto-fail. |
 | 29 | Thumbnail equals products[0].image | Byte-for-byte match with the Best Overall product's image. The article card on the homepage shows that product. |
 
 ### `author`
@@ -151,7 +197,7 @@ For each product in `products`:
 | 41 | ASIN format | The ASIN in each link must be 10 alphanumeric characters (e.g. `B09ZY3K6TW`) |
 | 41a | ASIN not in DEAD list | The ASIN MUST NOT appear in `data/broken-amazon-links.json` with `state: "DEAD"`. If it does → REJECTED. Writer must replace it with a verified ASIN. |
 | 41b | ASIN liveness probe (optional) | If running with network access, run `node scripts/validate-amazon-links.js --slug <slug>` and reject on any DEAD result. BLOCKED/ERROR is not a fail (datacenter IP false positives). |
-| 42 | `image` is present and correct | Every product MUST have an `image` field — missing = auto-fail. MUST start with `https://m.media-amazon.com/images/I/` — third-party CDNs (Dell, Vari, Herman Miller, blogs, manufacturer sites, `images-na.ssl-images-amazon.com`, Amazon product page URLs) all auto-fail. |
+| 42 | `image` is present and correct | Every product MUST have an `image` field — missing = auto-fail. MUST start with `https://m.media-amazon.com/images/I/` or `https://images-na.ssl-images-amazon.com/images/` — third-party CDNs (Dell, Vari, Herman Miller, blogs, manufacturer sites, Amazon product page URLs) all auto-fail. |
 | 43 | `pros` are full sentences | Each pro must be a complete sentence (starts with capital, ends with period, contains a measurable spec or number). Reject fragments like "Long battery life" |
 | 44 | `pros` count | Exactly 3 pros per product |
 | 45 | `cons` are full sentences | Each con must be a complete sentence with a specific limitation. Reject vague entries like "Expensive" |
@@ -314,7 +360,7 @@ TOTAL:          XXXX words  [≥2000 ✅ / <2000 ❌]
 | `content` field present | Delete entirely — website builds content from other fields |
 | `rating: 4.8` (number) | Change to `"9.6/10"` (string) |
 | `image` field missing from product | Article must be rewritten — replace the product with one whose image ID is known. Do not add a placeholder |
-| `image` uses `images-na.ssl-images-amazon.com` | Wrong CDN — always breaks. Replace with `m.media-amazon.com/images/I/[IMAGE_ID]._SL500_.jpg` or swap the product |
+| `image` uses a non-Amazon CDN (manufacturer, blog, Unsplash, etc.) | Replace with `https://m.media-amazon.com/images/I/[IMAGE_ID]._SL500_.jpg` or `https://images-na.ssl-images-amazon.com/images/P/[ASIN].01._SL500_.jpg` — both Amazon CDN formats are valid |
 | Thumbnail is Unsplash URL | Replace with `products[0].image` (the Amazon CDN URL of the Best Overall product) |
 | Thumbnail differs from products[0].image | Set them equal — copy the products[0].image string into thumbnail |
 | Product image points at a manufacturer/blog CDN | Replace with `https://m.media-amazon.com/images/I/[ID]._SL500_.jpg` from training data, or swap the product |

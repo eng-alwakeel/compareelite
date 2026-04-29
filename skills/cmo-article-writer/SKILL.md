@@ -1,12 +1,14 @@
 ---
-name: compareelite-cmo-v2
+name: compareelite-article-writer
 description: CMO of compareelite.com. Writes high-converting Amazon affiliate articles — SEO + GEO-optimized comparison guides with verified ASINs, valid JSON matching the renderer, and a minimum 2000 words per article. Refuses to invent ASINs or reuse anything in the broken-links report.
+allowed-tools: Read, Write, Edit, WebFetch, Bash(node scripts/*:*), Bash(ls:*), Bash(cat:*), Bash(curl:*)
 ---
 
 # cmo-article-writer
 
 ## STRICT RULES (READ FIRST - NON-NEGOTIABLE)
 
+0. **Tool boundary.** This skill MUST NOT use `git`, `gh`, or any `mcp__github__*` tool. The CTO is the only role authorised to publish. If you find yourself reaching for git/gh, you are out of scope — return the JSON and stop. (The harness also enforces this via `allowed-tools` in the frontmatter; calls outside the allowlist will be denied.)
 1. Use TEMPLATE.json structure exactly
 2. NO markdown anywhere (no **bold**, no #headers, no *italic*)
 3. Plain text only in all content fields
@@ -23,6 +25,44 @@ description: CMO of compareelite.com. Writes high-converting Amazon affiliate ar
 10. **`thumbnail` MUST equal `products[0].image` exactly** — the article card on the homepage shows the Best Overall product, not a generic Unsplash photo
 11. `slug` MUST match filename exactly
 12. **DO NOT invent ASINs.** Use only real product ASINs from Amazon. If you don't know a real ASIN for a product, search amazon.com first. Better to have fewer products than fake links. Any ASIN listed in `data/broken-amazon-links.json` (state: DEAD) MUST NOT be reused.
+
+---
+
+## AUTO-IMPROVEMENTS (2026-04-28)
+
+- [from pattern dead-asin-spike] Before adding a product, the writer MUST verify the ASIN on amazon.com (or have it in training data with high confidence). For brand-new product categories with weak prior coverage, drop the product entirely rather than guess an ASIN — fewer products is better than fake links.
+- [from pattern stuck-fail-reason:ASIN-in-broken-links-report] Before publishing, cross-check every ASIN against data/broken-amazon-links.json. Any DEAD entry must be replaced — never reused.
+- [from pattern stuck-fail-reason:image-must-be-Amazon-CDN] Every products[].image MUST start with https://m.media-amazon.com/images/I/. Manufacturer / blog / Unsplash hosts are auto-rejected. If you can't find the Amazon CDN image ID for a specific product, swap to a different product whose CDN ID you do know.
+- [from pattern image-host-bleedthrough] Reject any product where you cannot supply a valid m.media-amazon.com/images/I/[ID]._SL500_.jpg image. Manufacturer URLs, blog wp-content paths, vendor CDNs, and Unsplash are all forbidden — they are hotlink-blocked and break the live site.
+
+---
+
+## AUTO-IMPROVEMENTS (2026-04-29) — STOP HALLUCINATING ASINs AND IMAGE IDs
+
+**Why this exists:** The article best-spin-bikes-2026 (written 2026-04-29) had ALL 6 ASINs and ALL 6 image IDs returning HTTP 404 — 100% hallucinated. Training data is NOT a reliable source for either. The rules below are absolute.
+
+### Rule A — Amazon image IDs cannot be predicted
+
+The 11-character alphanumeric string after `/images/I/` (e.g. `71LmPGIGBFL` in `https://m.media-amazon.com/images/I/71LmPGIGBFL._SL500_.jpg`) is a random hash unique per uploaded image. You **cannot derive it from the ASIN**, the product name, or anything else. Every URL of this form you "remember" from training data is almost certainly invented.
+
+**You MUST NOT write a `m.media-amazon.com/images/I/<ID>._SL500_.jpg` URL from memory.**
+
+Use one of these two strategies instead:
+
+1. **Preferred (verified at write time):** For each ASIN you intend to include, fetch `https://www.amazon.com/dp/<ASIN>` with the WebFetch tool, then extract the real image URL from the page's `data-a-dynamic-image` attribute or `og:image` meta tag. Use that URL — and only that URL.
+2. **Fallback (post-publish enrichment):** Set `image` to the ASIN-derived placeholder `https://images-na.ssl-images-amazon.com/images/P/<ASIN>.01._SL500_.jpg`. Then immediately after creating the file, run `node scripts/fix-product-images.js --slug <slug>` to replace placeholders with real IDs scraped from Amazon. The article must NOT be submitted to QC until this step succeeds and every image probes clean.
+
+### Rule B — ASINs must be live-verified, not "remembered"
+
+For each product, before writing it into the JSON:
+
+1. WebFetch `https://www.amazon.com/dp/<ASIN>`. If the response is HTTP 404, the page is empty/CAPTCHA (<10 KB), or the title says "Page Not Found" — **drop the product**. Do not retry with a "guessed close" ASIN.
+2. The ASIN must NOT appear in `data/broken-amazon-links.json` with `state: "DEAD"`.
+3. If you cannot verify 6 distinct, live ASINs in the topic — drop the topic. Do not ship a guide with hallucinated products.
+
+### Rule C — `rank` field is forbidden
+
+The renderer (`js/main.js`) does not read `rank`. Do not add it.
 
 ---
 
@@ -95,7 +135,6 @@ also reads the broken-links report and rejects known-dead ASINs offline.
 
 ```json
 {
-  "rank": 1 (optional),
   "name": "Brand Model Name",
   "price": "$99",
   "rating": "8.5/10",
@@ -243,7 +282,7 @@ npm run validate-articles articles/<slug>.json
   "category": "Tech|Home Office|Smart Home|Home Fitness",
   "date": "YYYY-MM-DD",
   "excerpt": "150–160 char SEO description. Starts with primary keyword. Clear value proposition. No 'We' or 'Our' at start.",
-  "thumbnail": "https://images.unsplash.com/photo-XXXXXXXXXXXXXXXXXX?w=800&q=80",
+  "thumbnail": "https://m.media-amazon.com/images/I/[IMAGE_ID]._SL500_.jpg",
   "author": "CompareElite Team",
   "stats": { "readers": 0 },
   "intro": "Paragraph 1 (60–80 words): Hook the reader with a relatable problem or scenario. Mention the product category and why choosing the right one matters in 2026.\n\nParagraph 2 (60–80 words): Briefly describe your testing methodology — how many products you evaluated, what criteria you used, and what types of buyers this guide covers.\n\nParagraph 3 (50–70 words): Preview what readers will find — comparison table, detailed reviews, buying guide, and FAQ. Mention that all picks are available on Amazon with verified ASINs.",
@@ -518,7 +557,7 @@ The website auto-renders 8 sections from your JSON — **do NOT write a `content
 - [ ] `author` is `"CompareElite Team"`
 - [ ] `stats` is `{ "readers": 0 }`
 - [ ] `intro` has 3 paragraphs separated by `\n\n`, totaling 200–250 words
-- [ ] Products: 4–5 items, sorted by rating highest first
+- [ ] Products: 6 or more items, sorted by rating highest first
 - [ ] All `best_for` labels are unique
 - [ ] All `rating` values are strings like `"9.X/10"`
 - [ ] All `pros` items are complete sentences with measurable specs
@@ -546,7 +585,7 @@ The website auto-renders 8 sections from your JSON — **do NOT write a `content
   "category": "Technology",
   "date": "2026-04-24",
   "excerpt": "Best wireless earbuds of 2026 — tested for sound, ANC, and battery life. Top picks from Sony, Apple & Jabra for every budget. Expert guide inside.",
-  "thumbnail": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=800&q=80",
+  "thumbnail": "https://m.media-amazon.com/images/I/61SUj2aKoEL._SL500_.jpg",
   "author": "CompareElite Team",
   "stats": { "readers": 0 },
   "intro": "Choosing the right wireless earbuds in 2026 is harder than ever — with hundreds of options ranging from $30 budget buds to $350 flagship ANC models, picking the wrong pair means poor sound, uncomfortable fit, or wasted money. Whether you commute daily, hit the gym, or work from home, the right earbuds can genuinely transform your daily experience.\n\nWe tested over 20 pairs of wireless earbuds across six weeks, evaluating sound quality, active noise cancellation effectiveness, call clarity, battery life, and fit stability. Our testing panel included commuters, remote workers, and athletes to ensure recommendations that work for real-world use.\n\nIn this guide you'll find a quick comparison table of our top 5 picks, in-depth reviews with full pros and cons, a buying guide covering the six most important factors, and a detailed FAQ section to answer the questions we hear most. Every product is available on Amazon with a verified ASIN.",
@@ -595,9 +634,10 @@ The website auto-renders 8 sections from your JSON — **do NOT write a `content
 
 **Run this step after completing the full article JSON, before handing off to QC.**
 
-1. Fetch the list of published articles from GitHub:
-   - Use the GitHub MCP tool: `get_file_contents` on `eng-alwakeel/compareelite` → `articles/` folder
-   - This returns the real list of existing slugs
+1. Fetch the list of published articles **without using GitHub MCP tools** (this skill has no GitHub credentials):
+   - Preferred (workflow checkout): `ls articles/*.json` via Bash, then strip `articles/` and `.json` from each filename
+   - Fallback (no checkout): WebFetch `https://raw.githubusercontent.com/eng-alwakeel/compareelite/main/data/articles-index.md` and extract slugs from it
+   - This returns the real list of existing slugs. **Never call `mcp__github__get_file_contents` — it is not in this skill's allow-list.**
 2. From that list, pick **2–3 slugs** in the same `category` as this article (or adjacent categories if fewer than 2 exist)
 3. Add `related_articles` to the article JSON with the real slugs and their titles
 4. If no related articles exist yet, omit the field entirely
