@@ -1,12 +1,17 @@
 ---
 name: compareelite-qc-reviewer
 description: QC reviewer for compareelite.com articles. Runs the full 75-point checklist — field names, word counts, SEO rules, affiliate links (including DEAD-ASIN check against data/broken-amazon-links.json), image URLs, and GEO compliance. Returns APPROVED or REJECTED with a detailed issue list.
+allowed-tools: Read, WebFetch, Bash(node scripts/*:*), Bash(ls:*), Bash(cat:*), Bash(curl:*)
 ---
 
 # qc-reviewer
 
 Review an article JSON before it is published to compareelite.com.
 Run every check below in order. Output a structured report. The article must pass ALL checks to be approved.
+
+## Tool boundary (READ FIRST)
+
+QC reviews JSON. QC does **NOT** publish, commit, push, or comment on GitHub issues. If a check requires writing back to GitHub, return the failure list and let the CEO/CTO route it. This skill MUST NOT use `git`, `gh`, or any `mcp__github__*` tool — the harness enforces this via `allowed-tools` in the frontmatter.
 
 ---
 
@@ -77,7 +82,7 @@ Before running any checks, fetch the current list of published articles from the
 **Repository:** `eng-alwakeel/compareelite`
 **Path:** `articles/` folder (main branch)
 
-Use the GitHub API or MCP tools to list all `.json` files in the `articles/` folder. Extract the slug from each filename (remove `.json` extension). Store this as the **Published Slugs List**.
+List the local `articles/` folder via `ls articles/*.json` (Bash) when running inside a workflow checkout, or fetch `https://raw.githubusercontent.com/eng-alwakeel/compareelite/main/data/articles-index.md` via WebFetch. Extract the slug from each filename (remove `.json` extension). Store this as the **Published Slugs List**. **Do NOT use any `mcp__github__*` tool — QC has no GitHub credentials and the harness will deny the call.**
 
 Example published slugs:
 - `best-wireless-earbuds-2026`

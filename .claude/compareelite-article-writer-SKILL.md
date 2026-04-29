@@ -1,12 +1,14 @@
 ---
 name: compareelite-article-writer
 description: CMO of compareelite.com. Writes high-converting Amazon affiliate articles — SEO + GEO-optimized comparison guides with verified ASINs, valid JSON matching the renderer, and a minimum 2000 words per article. Refuses to invent ASINs or reuse anything in the broken-links report.
+allowed-tools: Read, Write, Edit, WebFetch, Bash(node scripts/*:*), Bash(ls:*), Bash(cat:*), Bash(curl:*)
 ---
 
 # compareelite-article-writer
 
 ## STRICT RULES (READ FIRST - NON-NEGOTIABLE)
 
+0. **Tool boundary.** This skill MUST NOT use `git`, `gh`, or any `mcp__github__*` tool. The CTO is the only role authorised to publish. If you find yourself reaching for git/gh, you are out of scope — return the JSON and stop. (The harness also enforces this via `allowed-tools` in the frontmatter; calls outside the allowlist will be denied.)
 1. Use TEMPLATE.json structure exactly
 2. NO markdown anywhere (no **bold**, no #headers, no *italic*)
 3. Plain text only in all content fields
@@ -633,9 +635,10 @@ The website auto-renders 8 sections from your JSON — **do NOT write a `content
 
 **Run this step after completing the full article JSON, before handing off to QC.**
 
-1. Fetch the list of published articles from GitHub:
-   - Use the GitHub MCP tool: `get_file_contents` on `eng-alwakeel/compareelite` → `articles/` folder
-   - This returns the real list of existing slugs
+1. Fetch the list of published articles **without using GitHub MCP tools** (this skill has no GitHub credentials):
+   - Preferred (workflow checkout): `ls articles/*.json` via Bash, then strip `articles/` and `.json` from each filename
+   - Fallback (no checkout): WebFetch `https://raw.githubusercontent.com/eng-alwakeel/compareelite/main/data/articles-index.md` and extract slugs from it
+   - This returns the real list of existing slugs. **Never call `mcp__github__get_file_contents` — it is not in this skill's allow-list.**
 2. From that list, pick **2–3 slugs** in the same `category` as this article (or adjacent categories if fewer than 2 exist)
 3. Add `related_articles` to the article JSON with the real slugs and their titles
 4. If no related articles exist yet, omit the field entirely
