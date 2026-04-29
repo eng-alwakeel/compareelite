@@ -35,6 +35,35 @@ description: CMO of compareelite.com. Writes high-converting Amazon affiliate ar
 
 ---
 
+## AUTO-IMPROVEMENTS (2026-04-29) — STOP HALLUCINATING ASINs AND IMAGE IDs
+
+**Why this exists:** The article best-spin-bikes-2026 (written 2026-04-29) had ALL 6 ASINs and ALL 6 image IDs returning HTTP 404 — 100% hallucinated. Training data is NOT a reliable source for either. The rules below are absolute.
+
+### Rule A — Amazon image IDs cannot be predicted
+
+The 11-character alphanumeric string after `/images/I/` (e.g. `71LmPGIGBFL` in `https://m.media-amazon.com/images/I/71LmPGIGBFL._SL500_.jpg`) is a random hash unique per uploaded image. You **cannot derive it from the ASIN**, the product name, or anything else. Every URL of this form you "remember" from training data is almost certainly invented.
+
+**You MUST NOT write a `m.media-amazon.com/images/I/<ID>._SL500_.jpg` URL from memory.**
+
+Use one of these two strategies instead:
+
+1. **Preferred (verified at write time):** For each ASIN you intend to include, fetch `https://www.amazon.com/dp/<ASIN>` with the WebFetch tool, then extract the real image URL from the page's `data-a-dynamic-image` attribute or `og:image` meta tag. Use that URL — and only that URL.
+2. **Fallback (post-publish enrichment):** Set `image` to the ASIN-derived placeholder `https://images-na.ssl-images-amazon.com/images/P/<ASIN>.01._SL500_.jpg`. Then immediately after creating the file, run `node scripts/fix-product-images.js --slug <slug>` to replace placeholders with real IDs scraped from Amazon. The article must NOT be submitted to QC until this step succeeds and every image probes clean.
+
+### Rule B — ASINs must be live-verified, not "remembered"
+
+For each product, before writing it into the JSON:
+
+1. WebFetch `https://www.amazon.com/dp/<ASIN>`. If the response is HTTP 404, the page is empty/CAPTCHA (<10 KB), or the title says "Page Not Found" — **drop the product**. Do not retry with a "guessed close" ASIN.
+2. The ASIN must NOT appear in `data/broken-amazon-links.json` with `state: "DEAD"`.
+3. If you cannot verify 6 distinct, live ASINs in the topic — drop the topic. Do not ship a guide with hallucinated products.
+
+### Rule C — `rank` field is forbidden
+
+The renderer (`js/main.js`) does not read `rank`. Do not add it.
+
+---
+
 ## BEFORE WRITING ANY ARTICLE
 
 1. READ the articles index FIRST:

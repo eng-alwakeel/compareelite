@@ -36,6 +36,40 @@ If REJECTED, list every failed check with a specific fix. Do not approve an arti
 
 ---
 
+## AUTO-IMPROVEMENTS (2026-04-29) — REQUIRED LIVENESS GATES
+
+**Why this exists:** A 2026-04-29 article (best-spin-bikes-2026) shipped with all 6 ASINs returning HTTP 404 and all 6 image URLs returning HTTP 404. The writer hallucinated everything. Schema validation alone cannot catch this — every output must be probed against amazon.com before approval.
+
+### Gate 1 — ASIN liveness probe (BLOCKING)
+
+Run before approval:
+```
+node scripts/validate-amazon-links.js --slug <slug>
+```
+- Any `DEAD` result → **REJECTED**. The writer must replace the ASIN with a verified one.
+- `BLOCKED` (HTTP 503/CAPTCHA from datacenter IP) is NOT a fail by itself, but if you see > 50% BLOCKED in one run, the IP is throttled — re-run after a delay before approving.
+- `OK` for every product → proceed to Gate 2.
+
+### Gate 2 — Image liveness probe (BLOCKING)
+
+Run before approval:
+```
+node scripts/fix-product-images.js --slug <slug>
+```
+This script probes every `image` URL and, for any that returns a 43-byte placeholder GIF or HTTP 404, scrapes Amazon to extract the real image ID and rewrites the JSON.
+
+After running, re-probe to confirm. Any image that still does not return `image/jpeg` with `Content-Length > 500` → **REJECTED**. The writer must drop the product or supply a verified image.
+
+### Gate 3 — Forbidden field `rank`
+
+The renderer ignores `rank`. If any product has `"rank": <n>` → **REJECTED**, delete the field.
+
+### How to handle a REJECTION
+
+When you reject, write the failures back to the source issue (or the next pipeline step) so the writer/CTO sees them. Empty-pass approvals where the writer never sees the rejection are how broken articles ship to production. If you have an inbox / GitHub issue queue, post a comment on the article's issue with the failed-check list before closing — never silently re-queue.
+
+---
+
 ## ⚠️ STEP 0 — Fetch Published Articles from GitHub (REQUIRED BEFORE REVIEW)
 
 Before running any checks, fetch the current list of published articles from the GitHub repository:
