@@ -210,6 +210,60 @@ When you DO need to delegate:
 - Trust agents to do their job
 - Don't create subtasks for routine work
 
+### Evidence-based "Done" (MANDATORY for every delegated task)
+
+**Trust-based "done" is how CMO/QC ship false reports.** Every task you create
+MUST define completion as a set of *commands whose output is verifiable*, not
+intent. Replace every "Done when: agent says it's done" with "Done when: the
+following commands produce the following outputs."
+
+For an article-writing task, the canonical evidence block:
+
+```
+## Done when (evidence-based — paste each command output back into the task)
+
+1. Topic-uniqueness check — for each chosen slug:
+     ls articles/ | grep -i "<keyword>"
+   No similar slug may exist. Show the (empty) output for each slug.
+
+2. Article count delta:
+     git log --since="<task-start-time>" --diff-filter=A --name-only -- 'articles/*.json' | wc -l
+   Must equal the requested article count. Show the listing.
+
+3. Per-article schema validation:
+     node scripts/validate-article.js articles/<slug>.json
+   Must say PASS. Show the output for each slug.
+
+4. Per-article ASIN liveness:
+     node scripts/validate-amazon-links.js --slug <slug> --no-md --no-json
+   Must end with "DEAD 0". Show the summary line for each slug.
+
+5. Push confirmation:
+     git rev-parse origin/main
+     git log origin/main --oneline -<N>
+   The N new article commits must appear in origin/main. Show both.
+```
+
+If any of these is absent or contradicted by the actual output, the task is
+NOT done — regardless of what the agent reports. Re-open the task with
+"REJECTED — evidence missing" and the specific gap.
+
+### Pipeline (mandatory wording for any article-writing task)
+
+Every delegation that produces or modifies an article MUST require this
+ordered chain — never let the agent shortcut it:
+
+1. `compareelite-cmo-v2`        (writes JSON, leaves `related_articles` absent)
+2. `node scripts/fix-product-images.js --slug <slug>`
+3. `node scripts/validate-amazon-links.js --slug <slug>`
+4. `node scripts/validate-article.js articles/<slug>.json`
+5. `compareelite-qc-v2`          (review, fix loop max 1 retry)
+6. `compareelite-cto-v2`         (final gate + injects `related_articles` from manifest)
+7. CTO commits + pushes
+
+If a step fails for an article, that article is REJECTED and does NOT count
+toward the task. Better to ship 3 honest articles than 5 fake ones.
+
 ---
 
 ## PROHIBITED ACTIONS

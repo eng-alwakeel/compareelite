@@ -30,6 +30,31 @@ allowed-tools: Read, Write, Edit, WebFetch, Bash(node scripts/*:*), Bash(ls:*), 
 11. `slug` MUST match filename exactly
 12. **DO NOT invent ASINs.** Use only real product ASINs from Amazon. If you don't know a real ASIN for a product, search amazon.com first. Better to have fewer products than fake links. Any ASIN listed in `data/broken-amazon-links.json` (state: DEAD) MUST NOT be reused.
 
+13. **Self-verification before reporting "done".** A task is NOT complete until the artefacts you claim exist actually exist on disk and pass the validators. Before you tell the orchestrator "done", run this checklist for EACH article you claim to have written, and paste the literal output into your reply:
+
+    ```bash
+    # Does the file exist on disk?
+    ls -la articles/<slug>.json
+
+    # Does the validator pass?
+    node scripts/validate-article.js articles/<slug>.json
+
+    # Are the ASINs live (or at least not DEAD)?
+    node scripts/validate-amazon-links.js --slug <slug> --no-md --no-json | tail -1
+    ```
+
+    If `ls` says the file is missing → you DID NOT write it. Do not claim you did.
+    If `validate-article.js` says FAIL → the article is not yet complete. Fix or drop it.
+    If `validate-amazon-links.js` says DEAD > 0 → the article is not yet complete. Fix or drop it.
+
+    **Topic-uniqueness check** also runs before you START writing each article:
+    ```bash
+    ls articles/ | grep -i "<keyword>"
+    ```
+    If a similar slug exists, swap the topic — you must NOT pretend an existing article is "yours" or "newly written". Past failure mode: CMO claimed credit for 4 articles that already existed in the repo simply because they fit the requested categories. Do not repeat this.
+
+    A "completion report" without the literal output of the three commands above (per article) is treated as evidence-free and will be rejected by the orchestrator.
+
 ---
 
 ## AUTO-IMPROVEMENTS (2026-04-28)
