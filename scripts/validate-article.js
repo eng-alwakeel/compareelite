@@ -8,6 +8,12 @@
  *
  *   node scripts/validate-article.js articles/best-air-fryers-2026.json
  *   node scripts/validate-article.js                       # validate all
+ *   node scripts/validate-article.js --images <file…>      # also probe every
+ *                                                            product image and
+ *                                                            fail if any is
+ *                                                            HTTP 404 or the
+ *                                                            43-byte Amazon
+ *                                                            placeholder GIF
  */
 
 'use strict';
@@ -294,11 +300,85 @@ function printResult(result) {
   return false;
 }
 
-function main() {
+// ─── Image-liveness probe (opt-in via --images) ──────────────────────────
+//
+// The schema-only validator only checks the URL prefix. An ASIN whose image
+// was never uploaded by the seller still parses as a valid Amazon CDN URL
+// but returns the 43-byte transparent-GIF placeholder, leaving the article
+// card with a broken image on the live site. This probe HEAD-checks every
+// products[].image and adds an error per non-live image.
+
+const https = require('https');
+
+function probeImage(url, timeoutMs = 6000) {
+  return new Promise((resolve) => {
+    let u;
+    try {
+      u = new URL(url);
+    } catch {
+      return resolve({ ok: false, reason: 'invalid URL' });
+    }
+    const req = https.request(
+      {
+        method: 'HEAD',
+        hostname: u.hostname,
+        path: u.pathname + u.search,
+        headers: { 'User-Agent': 'compareelite-validator/1.0' },
+      },
+      (res) => {
+        const status = res.statusCode;
+        const len = parseInt(res.headers['content-length'] || '0', 10);
+        const type = (res.headers['content-type'] || '').toLowerCase();
+        if (status !== 200) return resolve({ ok: false, reason: `HTTP ${status}` });
+        if (len > 0 && len < 500) {
+          return resolve({ ok: false, reason: `placeholder (${len} bytes)` });
+        }
+        if (type && !type.startsWith('image/')) {
+          return resolve({ ok: false, reason: `non-image content-type: ${type}` });
+        }
+        resolve({ ok: true });
+      }
+    );
+    req.on('error', (err) => resolve({ ok: false, reason: err.message }));
+    req.setTimeout(timeoutMs, () => {
+      req.destroy(new Error('timeout'));
+      resolve({ ok: false, reason: 'timeout' });
+    });
+    req.end();
+  });
+}
+
+async function probeArticleImages(filePath) {
+  let article;
+  try {
+    article = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+  } catch {
+    return [];
+  }
+  if (!Array.isArray(article.products)) return [];
+  const errors = [];
+  // Probe with concurrency=4 to stay polite to the CDN and finish in seconds.
+  const queue = article.products.map((p, i) => ({ p, i }));
+  const workers = Array.from({ length: 4 }, async () => {
+    while (queue.length) {
+      const { p, i } = queue.shift();
+      if (!p || !p.image) continue;
+      const r = await probeImage(p.image);
+      if (!r.ok) errors.push(`products[${i}].image is not live (${r.reason}): ${p.image}`);
+    }
+  });
+  await Promise.all(workers);
+  return errors;
+}
+
+async function main() {
   const args = process.argv.slice(2);
+  const checkImages = args.includes('--images');
+  const positional = args.filter((a) => !a.startsWith('--'));
+
   let files;
-  if (args.length > 0) {
-    files = args.map((a) => path.resolve(a));
+  if (positional.length > 0) {
+    files = positional.map((a) => path.resolve(a));
   } else {
     const articlesDir = path.resolve(__dirname, '..', 'articles');
     files = fs
@@ -311,12 +391,18 @@ function main() {
   let failed = 0;
   for (const file of files) {
     const result = validateFile(file);
+    if (checkImages && result.errors.length === 0) {
+      // Only probe when schema is clean — there's no point asking the network
+      // about images that already failed an offline rule.
+      const imageErrors = await probeArticleImages(file);
+      result.errors.push(...imageErrors);
+    }
     if (printResult(result)) passed += 1;
     else failed += 1;
   }
 
   console.log('');
-  console.log(`Summary: ${passed} passed, ${failed} failed (${files.length} total)`);
+  console.log(`Summary: ${passed} passed, ${failed} failed (${files.length} total)${checkImages ? ' [with --images]' : ''}`);
   process.exit(failed === 0 ? 0 : 1);
 }
 

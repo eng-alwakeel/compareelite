@@ -54,11 +54,11 @@ jobs:
           echo "files=$NEW" >> "$GITHUB_OUTPUT"
           echo "Generated articles: $NEW"
 
-      - name: HARD GATE 1 — Schema validation on new articles
+      - name: HARD GATE 1 — Schema + image liveness on new articles
         if: steps.diff.outputs.files != ''
         run: |
           echo "Validating: ${{ steps.diff.outputs.files }}"
-          node scripts/validate-article.js ${{ steps.diff.outputs.files }}
+          node scripts/validate-article.js --images ${{ steps.diff.outputs.files }}
 
       - name: HARD GATE 2 — Amazon link liveness on new articles
         if: steps.diff.outputs.files != ''
