@@ -100,7 +100,10 @@ function applyMeta(template, m) {
       // Pattern not found means the template structure changed — fail loudly.
       throw new Error(`Template pattern missing: ${pat}. Re-check blog/article.html structure.`);
     }
-    out = out.replace(pat, `$1${escapeHtmlAttr(value)}$2`);
+    // Escape $ in the replacement so substrings like "$199" or "$329" are NOT
+    // re-interpreted as backreferences ($1, $3, …) by String.prototype.replace.
+    const safe = escapeHtmlAttr(value).replace(/\$/g, '$$$$');
+    out = out.replace(pat, `$1${safe}$2`);
   }
 
   // The shell uses ../css/, ../js/, ../index.html (one level up from /blog/).
