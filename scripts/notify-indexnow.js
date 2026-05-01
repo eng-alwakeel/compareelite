@@ -21,7 +21,7 @@ const ROOT = path.resolve(__dirname, '..');
 const MANIFEST_PATH = path.join(ROOT, 'data', 'articles-manifest.json');
 
 const HOST = 'compareelite.com';
-const URL_PREFIX = `https://${HOST}/blog/article?slug=`;
+const URL_PREFIX = `https://${HOST}/blog/article/`;
 const ENDPOINT = { hostname: 'api.indexnow.org', path: '/indexnow', port: 443 };
 
 function findKey() {

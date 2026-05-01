@@ -3,14 +3,17 @@
   "outputDirectory": ".",
   "framework": null,
   "cleanUrls": true,
-  "rewrites": [
+  "redirects": [
     {
       "source": "/blog/article",
       "has": [
         { "type": "query", "key": "slug", "value": "(?<slug>[a-z0-9-]+)" }
       ],
-      "destination": "/blog/article/:slug.html"
-    },
+      "destination": "/blog/article/:slug",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
     { "source": "/blog/article", "destination": "/blog/article.html" },
     { "source": "/dashboard/login", "destination": "/dashboard/login.html" },
     { "source": "/product/:slug*", "destination": "/api/gone" }

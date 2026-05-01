@@ -92,7 +92,7 @@ function build(articles, lastmod) {
     for (const article of inCat) {
       lines.push(
         urlBlock({
-          loc: `${SITE_URL}/blog/article?slug=${article.slug}`,
+          loc: `${SITE_URL}/blog/article/${article.slug}`,
           lastmod,
           changefreq: 'monthly',
           priority: '0.8',
@@ -110,7 +110,7 @@ function build(articles, lastmod) {
     for (const article of stray) {
       lines.push(
         urlBlock({
-          loc: `${SITE_URL}/blog/article?slug=${article.slug}`,
+          loc: `${SITE_URL}/blog/article/${article.slug}`,
           lastmod,
           changefreq: 'monthly',
           priority: '0.7',

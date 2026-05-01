@@ -110,7 +110,7 @@ function initHomeSearch(articles) {
             resultsBox.innerHTML = '<p class="search-no-results">No guides found. Try a different keyword.</p>';
         } else {
             resultsBox.innerHTML = results.map(a => `
-                <a class="search-result-item" href="blog/article.html?slug=${a.slug}">
+                <a class="search-result-item" href="blog/article/${a.slug}">
                     <img src="${a.thumbnail || 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=100&q=60'}"
                          alt="${a.title}" loading="lazy"
                          onerror="this.src='https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=100&q=60'">
@@ -208,7 +208,7 @@ function renderHomeLatest(articles) {
 
 function createArticleCard(article) {
     return `
-        <a href="blog/article.html?slug=${article.slug}" class="card">
+        <a href="blog/article/${article.slug}" class="card">
             <div class="card-img-wrapper">
                 <img src="${article.thumbnail || ''}" alt="${article.title}" class="card-img" loading="lazy" onerror="this.style.display='none'">
                 <div style="position: absolute; top: 10px; left: 10px;">
@@ -329,9 +329,18 @@ function setupFilters() {
 
 // ─── ARTICLE DETAIL ──────────────────────────────────────────────────────────
 
+function getArticleSlug() {
+    // Clean URL: /blog/article/<slug> (or /blog/article/<slug>.html)
+    const pathMatch = window.location.pathname.match(/\/blog\/article\/([a-z0-9-]+?)(?:\.html)?\/?$/);
+    if (pathMatch) return pathMatch[1];
+    // Legacy URL: /blog/article?slug=<slug> — kept so old bookmarks resolve
+    // before Vercel's 308 redirect catches them.
+    const params = new URLSearchParams(window.location.search);
+    return params.get('slug');
+}
+
 async function renderArticleDetail() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const slug = urlParams.get('slug');
+    const slug = getArticleSlug();
     const container = document.getElementById('article-content');
     const header = document.getElementById('article-header');
     
@@ -371,7 +380,7 @@ async function renderArticleDetail() {
         article.content = null;
     }
 
-    const pageUrl = `https://compareelite.com/blog/article?slug=${slug}`;
+    const pageUrl = `https://compareelite.com/blog/article/${slug}`;
 
     document.title = `${article.title} | CompareElite`;
     document.querySelector('meta[name="description"]').setAttribute('content', article.excerpt);

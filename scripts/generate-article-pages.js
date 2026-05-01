@@ -11,9 +11,11 @@
  *
  * This script reads the shell as a template and emits one HTML file per
  * article into blog/article/<slug>.html, with the per-article metadata
- * baked into the HTML the crawler receives. Vercel rewrites
- * /blog/article?slug=<X> to /blog/article/<X>.html so existing inbound
- * links and the sitemap continue to work unchanged.
+ * baked into the HTML the crawler receives. The canonical URL pattern
+ * is now /blog/article/<slug> (clean URL); the legacy ?slug=<X> form is
+ * 308-redirected to it via vercel.json so old inbound links still
+ * resolve. Vercel's cleanUrls strips the .html extension, so visitors
+ * see /blog/article/<slug> in the address bar.
  *
  * The body of each generated file is identical to the shell — js/main.js
  * still does the actual content rendering on the client. We only fix the
@@ -54,7 +56,7 @@ function escapeHtmlText(s) {
 function articleMeta(article) {
   const title = `${article.title} | CompareElite`;
   const description = article.excerpt || 'Expert product comparison and buying guide.';
-  const url = `${SITE_URL}/blog/article?slug=${article.slug}`;
+  const url = `${SITE_URL}/blog/article/${article.slug}`;
   const image = article.thumbnail || FALLBACK_OG;
   const dateIso = article.date ? `${article.date}T00:00:00Z` : '';
   const section = article.category || 'Buying Guides';
