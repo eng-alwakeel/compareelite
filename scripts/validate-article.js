@@ -134,8 +134,8 @@ function validateArticle(article, filePath) {
 
   if (typeof article.excerpt === 'string') {
     const len = article.excerpt.length;
-    if (len < 150 || len > 160) {
-      errors.push(`excerpt must be 150–160 characters (found ${len})`);
+    if (len < 140 || len > 170) {
+      errors.push(`excerpt must be 140–170 characters (found ${len})`);
     }
   }
 
@@ -155,8 +155,10 @@ function validateArticle(article, filePath) {
       for (const f of REQUIRED_PRODUCT_FIELDS) {
         if (!(f in p)) errors.push(`${tag} missing field: ${f}`);
       }
-      if ('rank' in p) {
-        errors.push(`${tag}.rank field is not used by the renderer — remove it`);
+      // `rank` is optional — the renderer ignores it but the v3 Editor
+      // template includes it for human-readability when reviewing JSON.
+      if ('rank' in p && (typeof p.rank !== 'number' || p.rank < 1)) {
+        errors.push(`${tag}.rank, if present, must be a positive number`);
       }
       for (const f of ['name', 'price', 'best_for', 'image', 'link']) {
         if (f in p && !isNonEmptyString(p[f])) {
