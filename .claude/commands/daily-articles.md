@@ -1,180 +1,158 @@
-# Daily Article Generator — CompareElite
+# Daily Articles — CompareElite v3
 
-Generate **4 new affiliate articles** for compareelite.com. Each article moves through a strict assembly line:
+Run the full daily pipeline. The orchestrator (this slash command) does no writing or pushing of its own. It delegates to the four v3 skills in a strict sequence with one bounded retry loop. The workflow's HARD GATEs run *after* this skill exits and gate the actual `git push`.
 
 ```
-Writer writes → liveness gates → QC review
-                                    ↓ REJECTED
-                              Writer fixes (max 1 retry)
-                                    ↓
-                                  QC re-review
-                                    ↓ APPROVED
-                              CTO final gate → commit
+Director picks 4 NEW topics → Editor writes → Reviewer (R1) → Editor fix → Reviewer (R2) → Publisher → commit → workflow gates → push
 ```
 
-No agent pushes directly. The CTO is the only gate that can let an article into the commit batch, and the workflow runs the validators *again* after the skill exits — broken articles are blocked at three independent layers.
+No agent pushes directly. Reviewer is network-isolated. Editor cannot touch GitHub. Publisher is the only role permitted to write `related_articles` and to commit to `main`.
 
 ---
 
-## Step 1 — Pick 4 New Topics
+## Step 1 — Director picks 4 NEW topics
 
-1. Read the live articles index:
-   ```
-   curl -s https://raw.githubusercontent.com/eng-alwakeel/compareelite/main/data/articles-index.md
-   ```
-   (or `cat data/articles-index.md` if working in a checkout). The index lists every published slug.
+Invoke `compareelite-director` with the daily routine:
 
-2. Pick **4 topics** that are NOT in the index, drawn from the rotation pool below. Choose diverse categories — no two from the same category in one batch.
+```
+Use the compareelite-director skill to run its 8 AM KSA daily routine.
+Output: 4 issues, one per slug, with the canonical evidence block.
+```
 
-3. Every topic's `category` field MUST be exactly one of these four values (no others — the validator and renderer reject anything else):
-   - `Tech`
-   - `Home Office`
-   - `Smart Home`
-   - `Home Fitness`
+Director:
+1. Reads `data/articles-index.md`.
+2. Picks 4 slugs that are NOT in the index (2 Tech, 1 Home Office or Smart Home, 1 Home Fitness or Smart Home).
+3. Opens 4 issues with the standard evidence-block body.
 
-### Topic Rotation Pool (category → suggested slugs)
-
-- **Tech**: best-portable-monitors-2026, best-action-cameras-2026, best-smartwatches-2026, best-streaming-sticks-2026, best-wifi-routers-2026, best-vr-headsets-2026, best-portable-power-stations-2026, best-bluetooth-trackers-2026, best-wireless-chargers-2026
-- **Home Office**: best-task-lighting-2026, best-cable-management-2026, best-desk-mats-2026, best-document-scanners-2026, best-acoustic-panels-2026, best-monitor-light-bars-2026
-- **Smart Home**: best-smart-doorbells-2026, best-smart-curtains-2026, best-leak-detectors-2026, best-smart-bulbs-2026, best-pet-cameras-2026, best-smart-displays-2026, best-robot-mops-2026
-- **Home Fitness**: best-jump-ropes-2026, best-pull-up-bars-2026, best-massage-guns-2026, best-kettlebells-2026, best-rowing-machines-2026, best-suspension-trainers-2026, best-yoga-blocks-2026
-
-If the pool runs low, propose new slugs in the same 4 categories — but never use a category outside the 4.
+The slash command consumes those 4 slugs and runs Steps 2–5 once per slug, in parallel where independent.
 
 ---
 
-## Step 2 — Write Each Article (delegate to writer skill)
+## Step 2 — Editor writes one article per topic
 
-For each of the 4 topics, invoke the writer skill — do NOT write the JSON inline in this command. The writer skill is the single source of truth for schema, word counts, pros/cons format, FAQ count, and ASIN/image rules.
+For each of the 4 slugs:
 
 ```
-Use the compareelite-cmo-v2 skill to write the article for
-slug=<slug>, category=<category>. Save the output to articles/<slug>.json.
+Use the compareelite-editor skill to write the article for
+slug=<slug>, category=<category>. Save to articles/<slug>.json.
 ```
 
-The writer skill's `AUTO-IMPROVEMENTS (2026-04-29)` section is binding: the writer must NOT hallucinate Amazon image IDs, must WebFetch each ASIN before writing it, and must drop products it cannot verify.
+The Editor skill's RULE 6 mandates self-verification before reporting "done": three command outputs (`ls -la`, `validate-article.js`, `validate-amazon-links.js`) must be in the report. The orchestrator REJECTS any "done" message lacking this evidence and re-prompts the Editor with `RESUBMIT — paste the evidence block`.
 
-Do NOT invoke the CTO skill yet — the CTO is the final gate (Step 6), not a pre-flight check. The writer's only handoff is to Step 3.
+The Editor leaves `related_articles` empty (Publisher's job) and never invents ASINs (Rule 2: WebFetch + abandon-on-CAPTCHA).
+
+If the Editor reports `CAPTCHA_BLOCK: <slug>` or `INSUFFICIENT_PRODUCTS: <slug>`: drop the slug from this run, post a comment on the Director issue, do not fall through to Reviewer with a half-written file.
 
 ---
 
-## Step 3 — Liveness gates (BLOCKING)
+## Step 3 — Reviewer (Round 1)
 
-For each newly written `articles/<slug>.json`, run both scripts in order:
+For each successfully written article:
 
-### Gate 3a — Image enrichment
-```bash
-node scripts/fix-product-images.js --slug <slug>
 ```
-This probes every product image. For any image that returns a 43-byte placeholder GIF or HTTP 404, it scrapes Amazon to extract the real image ID and rewrites the JSON. Re-syncs `thumbnail = products[0].image`.
-
-### Gate 3b — ASIN liveness
-```bash
-node scripts/validate-amazon-links.js --slug <slug>
+Use the compareelite-reviewer skill to review articles/<slug>.json.
+The Director issue contains the Editor's evidence block.
 ```
-- `OK` for every product → proceed to Step 4.
-- Any `DEAD` result → mark this article as REJECTED. Do NOT commit it.
-- > 50% `BLOCKED` → IP throttled; wait 60–90s and re-run before deciding.
 
-### Gate 3c — Schema validation
-```bash
-node scripts/validate-article.js articles/<slug>.json
-```
-Any FAIL → REJECTED.
+The Reviewer:
+- Verifies the Editor's evidence is present and matches a re-run.
+- Runs the 80-point checklist.
+- Returns `APPROVED ✅ <score>/80` or `REJECTED ❌ <score>/80` with each failed check.
+
+Routing:
+- **APPROVED** → Step 5 (Publisher).
+- **REJECTED** → Step 4 (Editor fix loop).
 
 ---
 
-## Step 4 — QC Review, Round 1 (delegate to QC skill)
+## Step 4 — Editor fix + Reviewer Round 2 (max 1 retry)
 
-For each article that passed Step 3, invoke the QC reviewer skill:
+For each REJECTED article:
 
 ```
-Use the compareelite-qc-v2 skill to review articles/<slug>.json.
-The skill returns APPROVED or REJECTED with a per-check verdict.
+Use the compareelite-editor skill to fix articles/<slug>.json.
+The Reviewer rejected for these specific reasons:
+<paste the Reviewer's failed-check list verbatim>
+Fix ONLY those issues. Do not rewrite the rest of the article.
+After fixing, re-run the three self-verification commands and paste
+their output as before.
 ```
 
-The QC skill's `AUTO-IMPROVEMENTS (2026-04-29)` section is binding (it re-runs Gates 3a/3b as a final sanity check; do not skip just because Step 3 already ran).
+After the Editor's fix, re-invoke the Reviewer:
 
-**Outcome routing:**
-- **APPROVED** → proceed to Step 6 (CTO).
-- **REJECTED** → proceed to Step 5 (writer fix loop). Do NOT skip the article yet — the writer gets one chance to fix the specific failed checks.
+```
+Use the compareelite-reviewer skill to review the corrected
+articles/<slug>.json.
+```
 
-Capture the QC report in a variable so the writer can see *exactly* which checks failed.
+Outcomes:
+- **APPROVED in Round 2** → Step 5.
+- **REJECTED again** → article is abandoned for this run. Leave the file on disk, comment the Reviewer's R2 failures on the Director issue, skip to the next slug. **Do not loop a third time.**
 
 ---
 
-## Step 5 — Writer Fix + QC Round 2 (max 1 retry)
+## Step 5 — Publisher (final gate + commit)
 
-For each REJECTED article from Step 4:
+For each Reviewer-approved article:
 
-1. **Hand the QC report back to the writer skill** with an explicit fix instruction:
-   ```
-   Use the compareelite-cmo-v2 skill to fix articles/<slug>.json.
-   The QC reviewer rejected it for these specific reasons:
-   <paste the failed-check list verbatim from Step 4>
-   Fix ONLY those issues. Do not rewrite the rest of the article.
-   ```
-2. After the writer returns the corrected JSON, **re-run Step 3 liveness gates** (image enrichment + ASIN probe + schema). A fix that re-introduces a dead ASIN or breaks schema is automatic failure — there is no Round 3.
-3. **Re-invoke QC** on the corrected article:
-   ```
-   Use the compareelite-qc-v2 skill to review the corrected articles/<slug>.json.
-   ```
-4. **Outcome:**
-   - APPROVED in Round 2 → proceed to Step 6.
-   - REJECTED again → article is abandoned for this run. Leave the file on disk, write the second-round failures into the run summary, and skip to the next article. **Do not loop a third time** — endless retries waste budget and rarely produce a clean article when two rounds fail.
+```
+Use the compareelite-publisher skill to publish articles/<slug>.json.
+The Reviewer commented APPROVED ✅ on the Director issue.
+```
+
+The Publisher:
+1. Verifies Reviewer approval is real (must be present on the Director issue).
+2. Runs all three Hard Gates (`fix-product-images`, `validate-amazon-links`, `validate-article --images`). Any failure → REJECT and stop, regardless of Reviewer.
+3. Reads `data/articles-manifest.json`, picks 2–3 same-category siblings by keyword overlap, writes `related_articles` into the JSON.
+4. Re-runs `validate-article.js` to confirm post-injection schema is still PASS.
+5. Generates the per-article static HTML (`scripts/generate-article-pages.js <slug>`).
+6. Commits as `CompareElite Bot <bot@compareelite.com>` with message `Publish: <slug>`.
+7. Pushes to `main`.
+8. Notifies IndexNow (`scripts/notify-indexnow.js <slug>`).
+9. Posts the `PUBLISHED ✅` report block on the Director issue and closes it with the `published` label.
 
 ---
 
-## Step 6 — CTO Final Gate (delegate to CTO skill)
+## Step 6 — Workflow HARD GATEs (outside this slash command)
 
-For each article that QC approved (Round 1 or Round 2), invoke the CTO skill as the **final pre-publish authority**:
+After the Publisher's push lands on `main`, `.github/workflows/daily-articles.yml` runs:
 
-```
-Use the compareelite-cto-v2 skill to run the publish gate on articles/<slug>.json.
-Return PUBLISH or REJECT with the reason.
-```
+- **HARD GATE 1**: `node scripts/validate-article.js --images <new files>` — exits 1 if any new article has a broken image or fails schema. Blocks subsequent push if mid-batch.
+- **HARD GATE 2**: `node scripts/validate-amazon-links.js --slug <slug>` per new file. DEAD count > 0 → fail.
+- **Push step**: only runs `if: success()`. If either gate fails, the commit stays on the runner and main is not advanced.
 
-The CTO skill is the ONLY role authorised to:
-- inject `related_articles` (reads `data/articles-manifest.json`, picks 2–3 same-category siblings, writes them into the JSON)
-- approve the article for commit
-
-The CTO independently re-runs `fix-product-images.js`, `validate-amazon-links.js`, and `validate-article.js`, plus checks slug/filename match and `related_articles` integrity. The CTO is intentionally redundant with Step 3 + Step 4 — three layers of defence catch what any single layer missed. CMO and QC have no GitHub access (`allowed-tools` enforces this) and never populate `related_articles`; that is solely the CTO's job.
-
-**Outcome:**
-- **PUBLISH** → article goes into the commit batch.
-- **REJECT** → article does NOT get committed, even if QC approved it. The CTO can override QC. Write the CTO's reason into the run summary.
+This is the layer Claude itself cannot bypass. Even an LLM that ignores Steps 1–5 entirely cannot land a broken article through this gate.
 
 ---
 
-## Step 7 — Commit only (workflow handles push after hard gates)
+## Success criteria
 
-```bash
-APPROVED_FILES=$(... list of articles/<slug>.json that passed every gate ...)
-if [ -n "$APPROVED_FILES" ]; then
-  git add $APPROVED_FILES
-  git commit -m "Add daily articles: <slug1>, <slug2>, ..."
-fi
-```
+A run is successful when every produced article has:
+- ✅ A commit on `origin/main` authored by `CompareElite Bot`
+- ✅ `validate-article.js` PASS (post-injection)
+- ✅ `validate-amazon-links.js` reports DEAD 0
+- ✅ `validate-article.js --images` reports 0 broken images
+- ✅ `related_articles` populated with 2–3 verified slugs from the manifest
+- ✅ IndexNow returned HTTP 200 or 202
+- ✅ The Director issue closed with the `published` label and the report block
 
-**DO NOT push.** The workflow runs `validate-article.js` and `validate-amazon-links.js` against the new files after this skill exits. If either validator finds a problem, the workflow fails and the commit is never pushed to `main`. This is intentional: the gates outside the LLM prevent broken articles from reaching production even if the writer or QC missed something.
-
-If zero articles passed, do NOT make an empty commit. Print the rejection summary and exit non-zero so the workflow surfaces the failure.
+A run is allowed to publish fewer than 4 articles (e.g., 3 if one CAPTCHA-blocked, 2 if two failed Reviewer R2). Better to ship 3 honest articles than 4 fraudulent ones.
 
 ---
 
-## Output Summary
-
-Print a structured report at the end of the run:
+## Output summary at end of run
 
 ```
 Daily run YYYY-MM-DD
   Topics picked:                4
-  Articles written:             N
-  Failed liveness gates (S3):   M  (list slugs + reason: DEAD ASIN / image 404 / schema)
-  QC Round 1 rejections:        R1 (list slugs + first 3 failed checks)
-  QC Round 2 rejections:        R2 (list slugs — these are abandoned)
-  CTO final-gate rejections:    C  (list slugs + reason — overrides QC)
-  Approved & committed:         P  (the workflow then runs its own hard gates before pushing)
+  Editors completed write:      <N>
+  CAPTCHA-blocked:              <C>  (slugs: …)
+  Reviewer R1 approvals:        <A1>
+  Reviewer R1 rejections:       <R1>
+  Reviewer R2 approvals:        <A2>
+  Reviewer R2 abandoned:        <X>  (slugs: …)
+  Publisher gate failures:      <P>  (slugs: …, gate: …)
+  Published to main:            <Final>
 ```
 
-Articles never go to production unless they pass every gate. Better to ship 0 articles today than ship one with hallucinated ASINs.
+If `Final == 0`, do NOT make any commit. Print the rejection summary and exit non-zero so the workflow surfaces the failure.
