@@ -42,6 +42,9 @@ jobs:
       - name: Regenerate articles-index.md
         run: node scripts/generate-articles-index.js
 
+      - name: Regenerate per-article static HTML pages
+        run: node scripts/generate-article-pages.js
+
       - name: Notify IndexNow of changed articles
         run: |
           NEW=$(git diff-tree --no-commit-id --name-only -r --diff-filter=AM HEAD -- 'articles/*.json' \
@@ -60,7 +63,7 @@ jobs:
           git config user.name "CompareElite Bot"
           git config user.email "bot@compareelite.com"
 
-      - name: Commit and push manifest + sitemap + index
+      - name: Commit and push manifest + sitemap + index + article pages
         run: |
-          git add data/articles-manifest.json data/articles-index.md sitemap.xml
-          git diff --staged --quiet && echo "No changes" || (git commit -m "chore: update articles manifest + sitemap + index [skip ci]" && git push origin main)
+          git add data/articles-manifest.json data/articles-index.md sitemap.xml blog/article/
+          git diff --staged --quiet && echo "No changes" || (git commit -m "chore: update articles manifest + sitemap + index + per-article pages [skip ci]" && git push origin main)
