@@ -1,0 +1,25 @@
+{
+  "schema_version": "brand-hub-v1",
+  "generated": "2026-05-05",
+  "brands": [
+    {
+      "name": "Apple",
+      "slug": "apple",
+      "logo": "https://logo.clearbit.com/apple.com",
+      "tagline": "Think Different",
+      "article_count": 1,
+      "hub_url": "/brand/apple"
+    }
+  ],
+  "articles": [
+    {
+      "slug": "best-apple-iphones-2026",
+      "brand": "apple",
+      "path": "brands/apple/best-apple-iphones-2026.json",
+      "title": "Best Apple iPhones 2026",
+      "category": "smartphones",
+      "date": "2026-05-02",
+      "thumbnail": "https://m.media-amazon.com/images/I/61bX2AuGcWL._SL500_.jpg"
+    }
+  ]
+}

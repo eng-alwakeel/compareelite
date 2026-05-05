@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QEREG8GBQF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-QEREG8GBQF');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brand Guide | CompareElite</title>
+  <meta name="description" content="Expert brand buying guide from CompareElite." id="meta-desc">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://compareelite.com/brand" id="canonical-url">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="CompareElite">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://compareelite.com/brand" id="og-url">
+  <meta property="og:title" content="Brand Guide | CompareElite" id="og-title">
+  <meta property="og:description" content="Expert brand buying guide from CompareElite." id="og-desc">
+  <meta property="og:image" content="https://compareelite.com/og-image.jpg" id="og-image">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@CompareElite">
+  <meta name="twitter:title" content="Brand Guide | CompareElite" id="tw-title">
+  <meta name="twitter:description" content="Expert brand buying guide." id="tw-desc">
+  <meta name="twitter:image" content="https://compareelite.com/og-image.jpg" id="tw-image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/brand-style.css">
+</head>
+<body>
+
+  <!-- ── Header ──────────────────────────────────────────────────────────── -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo" aria-label="CompareElite Home">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+        </svg>
+        CompareElite
+      </a>
+      <div class="header-actions">
+        <button class="btn btn-outline" style="padding:0.4rem 0.6rem;border:none;font-size:1.2rem;" onclick="toggleTheme()" aria-label="Toggle Dark Mode">🌓</button>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <nav class="nav-links" id="nav-menu" aria-label="Main navigation">
+        <a href="/" onclick="closeMenu()">Home</a>
+        <a href="/blog" onclick="closeMenu()">Guides</a>
+        <a href="/blog" class="btn btn-primary" onclick="closeMenu()">All Guides</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── Breadcrumb ───────────────────────────────────────────────────────── -->
+  <nav aria-label="Breadcrumb" style="background:var(--bg-surface);border-bottom:1px solid var(--border-color);padding:0.75rem 0;">
+    <div class="container">
+      <ol style="list-style:none;display:flex;gap:0.5rem;font-size:0.875rem;color:var(--text-secondary);flex-wrap:wrap;">
+        <li><a href="/" style="color:var(--primary);">Home</a></li>
+        <li style="opacity:0.5;">/</li>
+        <li><a href="/blog" style="color:var(--primary);">Guides</a></li>
+        <li style="opacity:0.5;">/</li>
+        <li id="breadcrumb-title" style="color:var(--text-secondary);">Loading…</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- ── Main Page ────────────────────────────────────────────────────────── -->
+  <main id="brand-page-main">
+
+    <!-- Loading skeleton shown until JS renders -->
+    <div class="brand-loading-skeleton" style="padding:4rem 0;">
+      <div class="container">
+        <div class="brand-skeleton" style="height:20px;width:120px;margin-bottom:1.25rem;"></div>
+        <div class="brand-skeleton" style="height:42px;width:75%;margin-bottom:0.875rem;"></div>
+        <div class="brand-skeleton" style="height:42px;width:55%;margin-bottom:1.5rem;"></div>
+        <div class="brand-skeleton" style="height:18px;width:90%;margin-bottom:0.6rem;"></div>
+        <div class="brand-skeleton" style="height:18px;width:80%;margin-bottom:0.6rem;"></div>
+        <div class="brand-skeleton" style="height:18px;width:60%;margin-bottom:2rem;"></div>
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0.75rem;max-width:480px;">
+          <div class="brand-skeleton" style="height:80px;border-radius:12px;"></div>
+          <div class="brand-skeleton" style="height:80px;border-radius:12px;"></div>
+          <div class="brand-skeleton" style="height:80px;border-radius:12px;"></div>
+          <div class="brand-skeleton" style="height:80px;border-radius:12px;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Hero ─────────────────────────────────────────────────────────── -->
+    <section class="brand-hero brand-content-section" id="brand-hero-section" style="display:none;">
+      <!-- Populated by brand-renderer.js -->
+    </section>
+
+    <!-- ── Brand About ──────────────────────────────────────────────────── -->
+    <section class="brand-about-section brand-content-section" id="brand-about-section" style="display:none;">
+      <!-- Populated by brand-renderer.js -->
+    </section>
+
+    <!-- ── Quick Picks ──────────────────────────────────────────────────── -->
+    <section class="quick-picks-section brand-content-section" id="quick-picks-section" style="display:none;">
+      <!-- Populated by brand-renderer.js -->
+    </section>
+
+    <!-- ── Comparison Table ─────────────────────────────────────────────── -->
+    <section class="comparison-section brand-content-section" id="comparison-table-section" style="display:none;">
+      <!-- Populated by brand-renderer.js -->
+    </section>
+
+    <!-- ── Products ─────────────────────────────────────────────────────── -->
+    <section class="products-section brand-content-section" id="products-section" style="display:none;">
+      <!-- Populated by brand-renderer.js -->
+    </section>
+
+    <!-- ── Buying Guide ──────────────────────────────────────────────────── -->
+    <section class="buying-guide-section brand-content-section" id="buying-guide-section" style="display:none;">
+      <!-- Populated by brand-renderer.js -->
+    </section>
+
+    <!-- ── Brand Highlights ─────────────────────────────────────────────── -->
+    <section class="brand-highlights-section brand-content-section" id="brand-highlights-section" style="display:none;">
+      <!-- Populated by brand-renderer.js -->
+    </section>
+
+    <!-- ── Methodology ──────────────────────────────────────────────────── -->
+    <section class="methodology-section brand-content-section" id="methodology-section" style="display:none;">
+      <!-- Populated by brand-renderer.js -->
+    </section>
+
+    <!-- ── Trust Section ────────────────────────────────────────────────── -->
+    <section class="trust-section brand-content-section" id="trust-section" style="display:none;">
+      <!-- Populated by brand-renderer.js -->
+    </section>
+
+    <!-- ── FAQ ──────────────────────────────────────────────────────────── -->
+    <section class="faq-section brand-content-section" id="faq-section" style="display:none;">
+      <!-- Populated by brand-renderer.js -->
+    </section>
+
+    <!-- ── Related Articles ─────────────────────────────────────────────── -->
+    <section class="related-section brand-content-section" id="related-section" style="display:none;">
+      <!-- Populated by brand-renderer.js -->
+    </section>
+
+    <!-- ── Newsletter ───────────────────────────────────────────────────── -->
+    <section style="background:var(--bg-main);padding:4rem 0;border-top:1px solid var(--border-color);">
+      <div class="container">
+        <div class="newsletter-section">
+          <div class="newsletter-content">
+            <h3>Never Buy the Wrong Product Again</h3>
+            <p>Join 500,000+ readers getting our top buying recommendations straight to their inbox.</p>
+            <form class="newsletter-form" onsubmit="event.preventDefault();alert('Subscribed!');">
+              <input type="email" placeholder="Enter your email" class="input-field" required aria-label="Email address">
+              <button type="submit" class="btn btn-primary" style="padding:0.75rem 2rem;">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── Footer ───────────────────────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        &copy; 2026 CompareElite. All rights reserved. |
+        <a href="/affiliate-disclosure" style="color:var(--text-light);">Affiliate Disclosure</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── Scroll to Top ────────────────────────────────────────────────────── -->
+  <button class="scroll-top-btn" id="scroll-top-btn" aria-label="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <script src="/js/main.js"></script>
+  <script src="/js/brand-renderer.js"></script>
+</body>
+</html>

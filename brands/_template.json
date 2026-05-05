@@ -1,0 +1,148 @@
+{
+  "schema_version": "brand-hub-v1",
+  "type": "brand_hub",
+  "brand": {
+    "name": "Apple",
+    "slug": "apple",
+    "logo": "https://logo.clearbit.com/apple.com",
+    "tagline": "Think Different",
+    "founded": 1976,
+    "country": "USA",
+    "official_url": "https://apple.com",
+    "description": "Apple Inc. is the world's most valuable technology company, renowned for designing products that seamlessly blend hardware, software, and services into cohesive user experiences. Founded in 1976 by Steve Jobs, Steve Wozniak, and Ronald Wayne, Apple transformed personal computing, music, smartphones, tablets, and wearables. The company's philosophy centers on creating tools that feel intuitive and powerful — products so well-crafted that users rarely need a manual. Apple's vertical integration — owning its own chips (the A-series and M-series silicon), operating systems, retail stores, and services ecosystem — gives it unparalleled control over quality. Privacy and security are core brand pillars, backed by features like on-device processing, App Tracking Transparency, and end-to-end encryption. Whether you're a creative professional relying on Final Cut Pro, a student carrying an iPad, or a commuter listening on AirPods, Apple's ecosystem rewards loyalty with effortless device continuity. Every product launched under Apple's banner undergoes years of engineering refinement before reaching consumers."
+  },
+  "article": {
+    "title": "Best Apple iPhones 2026",
+    "slug": "best-apple-iphones-2026",
+    "category": "smartphones",
+    "product_line": "iPhone",
+    "date": "2026-05-02",
+    "last_updated": "2026-05-02",
+    "read_time": "12 min read",
+    "thumbnail": "products[0].images[0]",
+    "excerpt": "140-170 chars excerpt about the article topic",
+    "verdict": "50 words quick verdict summarizing the overall lineup and who should buy which model"
+  },
+  "hero": {
+    "main_image": "https://m.media-amazon.com/images/I/placeholder._SL1200_.jpg",
+    "headline": "Hero headline capturing the value proposition",
+    "intro": "150+ words introducing the topic, brand, and what readers will learn in this guide. Explain why these products stand out and what testing was done.",
+    "key_highlights": [
+      {"icon": "⚡", "label": "Chip", "value": "A18 Pro"},
+      {"icon": "📸", "label": "Camera", "value": "48MP Triple"},
+      {"icon": "🔋", "label": "Battery", "value": "33 hrs"},
+      {"icon": "🏆", "label": "Rating", "value": "9.5/10"}
+    ]
+  },
+  "quick_picks": {
+    "best_overall": "product-id-1",
+    "best_value": "product-id-2",
+    "best_camera": "product-id-1",
+    "best_battery": "product-id-3"
+  },
+  "comparison_table": {
+    "headers": ["Feature", "Product 1", "Product 2"],
+    "rows": [
+      ["Display", "6.9\"", "6.3\""],
+      ["Chip", "A18 Pro", "A18 Pro"],
+      ["RAM", "8GB", "8GB"],
+      ["Price", "$1,199", "$999"]
+    ]
+  },
+  "products": [
+    {
+      "rank": 1,
+      "id": "product-id-1",
+      "name": "Product Name",
+      "asin": "B0XXXXXXXXX",
+      "price": "$999",
+      "rating": "9.5/10",
+      "best_for": "Best Overall",
+      "tagline": "60 characters max tagline describing the product",
+      "images": [
+        "https://m.media-amazon.com/images/I/img1._SL500_.jpg",
+        "https://m.media-amazon.com/images/I/img2._SL500_.jpg",
+        "https://m.media-amazon.com/images/I/img3._SL500_.jpg"
+      ],
+      "video_url": "",
+      "key_specs": [
+        {"label": "Display", "value": "6.9\""},
+        {"label": "Chip", "value": "A18 Pro"},
+        {"label": "RAM", "value": "8GB"},
+        {"label": "Storage", "value": "256GB–1TB"},
+        {"label": "Camera", "value": "48MP Triple"},
+        {"label": "Battery", "value": "33 hrs"},
+        {"label": "OS", "value": "iOS 18"},
+        {"label": "Weight", "value": "227g"}
+      ],
+      "why_we_picked_it": "180+ words explaining why we picked this product, what makes it stand out, our testing experience, and specific reasons it earned this ranking. Include real-world usage examples and what types of users will benefit most.",
+      "pros": [
+        "Specific pro with a number or measurement",
+        "Another specific pro",
+        "Third pro with detail",
+        "Fourth pro"
+      ],
+      "cons": [
+        "Specific con with context",
+        "Second con with detail",
+        "Third con"
+      ],
+      "best_for_user": "Who should buy this product — describe the ideal buyer persona",
+      "color_options": ["Natural Titanium", "Black Titanium", "White Titanium", "Desert Titanium"],
+      "amazon_link": "https://www.amazon.com/dp/B0XXXXXXXXX?tag=compareelite-20",
+      "verdict": "60 words summarizing whether to buy this product, who it's for, and the key trade-off versus alternatives."
+    }
+  ],
+  "buying_guide": [
+    {
+      "title": "Guide Section Title",
+      "body": "180+ words of expert buying advice on this specific aspect of the product category. Include specific numbers, comparisons, and actionable tips."
+    }
+  ],
+  "brand_highlights": [
+    {"icon": "🔒", "title": "Privacy", "body": "Explanation of this brand feature or differentiator"},
+    {"icon": "⚡", "title": "Performance", "body": "Explanation of performance leadership"},
+    {"icon": "🌿", "title": "Sustainability", "body": "Environmental commitments"},
+    {"icon": "🛡️", "title": "Longevity", "body": "Software support and durability"}
+  ],
+  "methodology": {
+    "title": "How We Tested",
+    "body": "200+ words explaining testing methodology, conditions, and criteria used to evaluate products.",
+    "test_criteria": [
+      "Criterion 1 with detail",
+      "Criterion 2 with detail"
+    ],
+    "hours_tested": 120
+  },
+  "trust_section": {
+    "title": "Why Trust Us",
+    "body": "150+ words explaining editorial independence, team expertise, and commitment to unbiased reviews.",
+    "credentials": [
+      "Credential or achievement 1",
+      "Credential or achievement 2"
+    ]
+  },
+  "faq": [
+    {
+      "q": "Question about the product category?",
+      "a": "180+ words answering this question thoroughly with specific advice, numbers, and real-world context."
+    }
+  ],
+  "related_brand_articles": ["slug-of-related-brand-article"],
+  "related_general_articles": ["slug-of-general-article"],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Best Apple iPhones 2026",
+    "description": "Expert-tested ranking of the best Apple iPhones in 2026",
+    "numberOfItems": 5,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Product Name",
+        "url": "https://www.amazon.com/dp/B0XXXXXXXXX?tag=compareelite-20"
+      }
+    ]
+  }
+}
