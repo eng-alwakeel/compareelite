@@ -30,6 +30,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { generateStructuredDataScripts } = require('../lib/structured-data');
 
 const ROOT = path.resolve(__dirname, '..');
 const TEMPLATE_PATH = path.join(ROOT, 'blog', 'article.html');
@@ -67,7 +68,7 @@ function articleMeta(article) {
   return { title, description, url, image, dateIso, section, author, keywords };
 }
 
-function applyMeta(template, m) {
+function applyMeta(template, m, article) {
   let out = template;
 
   // <title>...</title>
@@ -105,6 +106,13 @@ function applyMeta(template, m) {
     const safe = escapeHtmlAttr(value).replace(/\$/g, '$$$$');
     out = out.replace(pat, `$1${safe}$2`);
   }
+
+  // Inject JSON-LD structured data right before </head>
+  const structuredData = generateStructuredDataScripts(article);
+  out = out.replace(
+    /<\/head>/,
+    `\n  <!-- Structured Data (JSON-LD) for SEO -->\n${structuredData}\n</head>`
+  );
 
   // The shell uses ../css/, ../js/, ../index.html (one level up from /blog/).
   // Generated files live one level deeper at /blog/article/<slug>.html — so
@@ -184,7 +192,7 @@ function main() {
   let written = 0;
   for (const article of articles) {
     const meta = articleMeta(article);
-    const html = applyMeta(template, meta);
+    const html = applyMeta(template, meta, article);
     const outPath = path.join(OUTPUT_DIR, `${article.slug}.html`);
     fs.writeFileSync(outPath, html);
     written++;
