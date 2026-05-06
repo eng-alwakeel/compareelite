@@ -17,9 +17,9 @@
     { "source": "/blog/article", "destination": "/blog/article.html" },
     { "source": "/dashboard/login", "destination": "/dashboard/login.html" },
     { "source": "/product/:slug*", "destination": "/api/gone" },
-    { "source": "/brand/:slug", "destination": "/pages/brand/[slug]/index.html" },
+    { "source": "/brand/:slug", "destination": "/pages/brand/article.html" },
     { "source": "/brands", "destination": "/pages/brands/index.html" },
-    { "source": "/brands/:brand", "destination": "/pages/brands/[brand]/index.html" }
+    { "source": "/brands/:brand", "destination": "/pages/brands/brand.html" }
   ],
   "headers": [
     {
