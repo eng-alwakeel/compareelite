@@ -178,3 +178,7 @@ Next-week focus:
 - Direct `git push`
 - Closing an Editor / Reviewer / Publisher issue without their explicit "done" comment
 - Skipping the heartbeat when the catalogue has open issues
+
+---
+
+_Last reviewed: 2026-05-06_
