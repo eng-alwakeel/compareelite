@@ -1,6 +1,6 @@
 ---
-name: compareelite-analytics-v2
-description: Monitor compareelite.com full performance — pulls weekly metrics from GA4, Vercel Analytics, Amazon Associates, and the GitHub article repo, then compiles a single weekly report for the CEO. Invoked by the CTO every Monday at 10:00 AM KSA. Reads secrets from GitHub Actions / environment variables — never hardcoded.
+name: compareelite-analytics
+description: "CompareElite v3 — Weekly analytics. Pulls metrics from GA4, Vercel, Amazon Associates and compiles a report for the Director."
 allowed-tools: Read, WebFetch, Bash(node scripts/*:*), Bash(curl:*), Bash(ls:*), Bash(cat:*)
 ---
 

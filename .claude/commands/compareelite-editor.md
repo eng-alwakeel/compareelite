@@ -1,6 +1,6 @@
 ---
 name: compareelite-editor
-description: Writes one article JSON for CompareElite.
+description: "CompareElite v3 — Writes one article JSON. Verifies ASINs, validates schema, reports evidence block."
 allowed-tools: Read, Write, Edit, WebFetch, Bash(node scripts/*:*), Bash(ls:*), Bash(cat:*)
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: compareelite-reviewer
-description: Reviews one article JSON and returns APPROVED or REJECTED with a per-check verdict.
+description: "CompareElite v3 — Reviews one article JSON and returns APPROVED or REJECTED with an 80-point checklist verdict."
 allowed-tools: Read, Bash(node scripts/*:*), Bash(ls:*), Bash(cat:*)
 ---
 

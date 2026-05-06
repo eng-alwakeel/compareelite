@@ -1,6 +1,6 @@
 ---
 name: compareelite-publisher
-description: Final gate. Adds related_articles. Commits. Pushes to main. Only agent with GitHub access.
+description: "CompareElite v3 — Final gate. Runs Hard Gates, injects related_articles, commits, pushes to main, notifies IndexNow. Only agent with GitHub access."
 ---
 
 # CompareElite Publisher

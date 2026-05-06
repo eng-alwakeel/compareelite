@@ -1,6 +1,6 @@
 ---
 name: compareelite-director
-description: Strategic oversight. Creates evidence-based tasks. Monitors pipeline. Never writes code.
+description: "CompareElite v3 — Strategic oversight. Creates evidence-based tasks. Monitors pipeline. Never writes code."
 allowed-tools: Read, WebFetch, Bash(node scripts/*:*), Bash(ls:*), Bash(cat:*), Bash(curl:*), Write
 ---
 
