@@ -19,6 +19,7 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
 const ARTICLES_DIR = path.join(ROOT, 'articles');
+const BRANDS_DIR   = path.join(ROOT, 'brands');
 const SITEMAP_PATH = path.join(ROOT, 'sitemap.xml');
 const SITE_URL = 'https://compareelite.com';
 
@@ -53,6 +54,45 @@ function loadArticles() {
         };
       } catch (err) {
         console.error(`skipping ${f}: ${err.message}`);
+        return null;
+      }
+    })
+    .filter(Boolean);
+}
+
+function collectBrandFiles(dir) {
+  const files = [];
+  try {
+    for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+      const full = path.join(dir, entry.name);
+      if (entry.isDirectory()) {
+        files.push(...collectBrandFiles(full));
+      } else if (
+        entry.isFile() &&
+        entry.name.endsWith('.json') &&
+        !entry.name.startsWith('_') &&
+        entry.name !== 'index.json'
+      ) {
+        files.push(full);
+      }
+    }
+  } catch (_) { /* brands dir may not exist yet */ }
+  return files;
+}
+
+function loadBrandArticles() {
+  const files = collectBrandFiles(BRANDS_DIR);
+  return files
+    .map((filePath) => {
+      try {
+        const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+        const article = data.article || {};
+        return {
+          slug: article.slug || path.basename(filePath, '.json'),
+          date: article.last_updated || article.date || '',
+        };
+      } catch (err) {
+        console.error(`skipping ${filePath}: ${err.message}`);
         return null;
       }
     })
@@ -121,6 +161,23 @@ function build(articles, lastmod) {
       `WARN: ${stray.length} article(s) have unrecognized category — listed under fallback section:\n  ` +
         stray.map((a) => `${a.slug} (category: "${a.category}")`).join('\n  ')
     );
+  }
+
+  // Brand Hub articles
+  const brandArticles = loadBrandArticles();
+  if (brandArticles.length > 0) {
+    lines.push('');
+    lines.push('  <!-- Brand Hub Articles -->');
+    for (const ba of brandArticles.sort((a, b) => a.slug.localeCompare(b.slug))) {
+      lines.push(
+        urlBlock({
+          loc: `${SITE_URL}/brand/${ba.slug}`,
+          lastmod: ba.date || lastmod,
+          changefreq: 'monthly',
+          priority: '0.9',
+        })
+      );
+    }
   }
 
   lines.push('');

@@ -9,13 +9,49 @@ function toggleMenu() {
 function closeMenu() {
     const nav = document.getElementById('nav-menu');
     const btn = document.querySelector('.hamburger');
-    nav.classList.remove('open');
-    btn.classList.remove('open');
+    if (nav) nav.classList.remove('open');
+    if (btn) btn.classList.remove('open');
+    // Close any open dropdowns
+    document.querySelectorAll('.nav-dropdown.open').forEach(d => {
+        d.classList.remove('open');
+        const trigger = d.querySelector('.nav-dropdown-trigger');
+        if (trigger) trigger.setAttribute('aria-expanded', 'false');
+    });
+}
+
+// Nav dropdown (mobile toggle; desktop handled by CSS :hover)
+function toggleDropdown(id) {
+    if (window.innerWidth > 768) return; // desktop: CSS hover handles it
+    const dropdown = document.getElementById(id);
+    if (!dropdown) return;
+    const isOpen = dropdown.classList.contains('open');
+    // Close all other dropdowns first
+    document.querySelectorAll('.nav-dropdown.open').forEach(d => {
+        if (d !== dropdown) {
+            d.classList.remove('open');
+            const t = d.querySelector('.nav-dropdown-trigger');
+            if (t) t.setAttribute('aria-expanded', 'false');
+        }
+    });
+    dropdown.classList.toggle('open', !isOpen);
+    const trigger = dropdown.querySelector('.nav-dropdown-trigger');
+    if (trigger) trigger.setAttribute('aria-expanded', String(!isOpen));
 }
 
 // Close menu on resize
 window.addEventListener('resize', () => {
     if (window.innerWidth > 768) closeMenu();
+});
+
+// Close desktop dropdown when clicking outside
+document.addEventListener('click', (e) => {
+    if (!e.target.closest('.nav-dropdown')) {
+        document.querySelectorAll('.nav-dropdown.open').forEach(d => {
+            d.classList.remove('open');
+            const t = d.querySelector('.nav-dropdown-trigger');
+            if (t) t.setAttribute('aria-expanded', 'false');
+        });
+    }
 });
 
 // Theme Initialization

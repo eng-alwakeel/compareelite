@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QEREG8GBQF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-QEREG8GBQF');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brand Hub | CompareElite</title>
+  <meta name="description" content="In-depth buying guides for the world's top tech and home brands — Apple, Samsung, Sony, Dyson, Herman Miller, and more.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://compareelite.com/brands">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Brand Hub | CompareElite">
+  <meta property="og:description" content="Expert buying guides organised by brand.">
+  <meta property="og:url" content="https://compareelite.com/brands">
+  <meta property="og:image" content="https://compareelite.com/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Brand Hub | CompareElite">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .brands-hero {
+      background: linear-gradient(135deg, #1c1c1e 0%, #2c2c2e 100%);
+      color: #fff;
+      padding: 3.5rem 0 3rem;
+    }
+    .brands-hero h1 {
+      font-size: clamp(1.75rem, 4vw, 2.75rem);
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.75rem;
+    }
+    .brands-hero p {
+      color: rgba(255,255,255,0.65);
+      font-size: 1.05rem;
+      max-width: 560px;
+    }
+    .brands-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.25rem;
+    }
+    .brand-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 1.75rem 1.5rem;
+      text-decoration: none;
+      display: block;
+      transition: all 0.25s ease;
+      position: relative;
+    }
+    .brand-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--primary);
+      text-decoration: none;
+    }
+    .brand-card.coming-soon {
+      opacity: 0.55;
+      cursor: default;
+      pointer-events: none;
+    }
+    .brand-logo-box {
+      width: 60px;
+      height: 60px;
+      background: var(--bg-main);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+    .brand-logo-box img {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+    }
+    .brand-slug-label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      margin-bottom: 0.25rem;
+    }
+    .brand-card-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 0.3rem;
+    }
+    .brand-card-desc {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+      margin-bottom: 0.875rem;
+    }
+    .brand-card-cta {
+      font-size: 0.825rem;
+      font-weight: 600;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+    .coming-soon-pill {
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--text-secondary);
+      background: var(--bg-main);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 0.2rem 0.65rem;
+      display: inline-block;
+    }
+    .brand-article-count {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      font-size: 0.7rem;
+      font-weight: 700;
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 0.2rem 0.6rem;
+      border-radius: 20px;
+    }
+    .articles-preview {
+      margin-top: 0.75rem;
+      padding-top: 0.75rem;
+      border-top: 1px solid var(--border-color);
+    }
+    .article-preview-item {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      padding: 0.2rem 0;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .article-preview-item::before {
+      content: '→';
+      color: var(--primary);
+      font-size: 0.7rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo" aria-label="CompareElite Home">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+        </svg>
+        CompareElite
+      </a>
+      <div class="header-actions">
+        <button class="btn btn-outline" style="padding:0.4rem 0.6rem;border:none;font-size:1.2rem;" onclick="toggleTheme()" aria-label="Toggle Dark Mode">🌓</button>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <nav class="nav-links" id="nav-menu" aria-label="Main navigation">
+        <a href="/" onclick="closeMenu()">Home</a>
+        <a href="/blog" onclick="closeMenu()">Guides</a>
+        <div class="nav-dropdown" id="nav-brands-dropdown">
+          <button class="nav-dropdown-trigger" onclick="toggleDropdown('nav-brands-dropdown')" aria-expanded="false" aria-haspopup="true">
+            Brands <span class="nav-caret" aria-hidden="true">▾</span>
+          </button>
+          <div class="nav-dropdown-menu" role="menu">
+            <a href="/brands/apple" onclick="closeMenu()" role="menuitem">🍎 Apple</a>
+            <a href="/brands/samsung" onclick="closeMenu()" role="menuitem">📱 Samsung</a>
+            <a href="/brands/sony" onclick="closeMenu()" role="menuitem">🎵 Sony</a>
+            <a href="/brands/dyson" onclick="closeMenu()" role="menuitem">🌀 Dyson</a>
+            <a href="/brands/herman-miller" onclick="closeMenu()" role="menuitem">🪑 Herman Miller</a>
+            <a href="/brands/nordictrack" onclick="closeMenu()" role="menuitem">🏃 NordicTrack</a>
+            <div class="dropdown-divider"></div>
+            <a href="/brands" onclick="closeMenu()" class="dropdown-all-link active" role="menuitem">All Brands →</a>
+          </div>
+        </div>
+        <a href="/blog" class="btn btn-primary" onclick="closeMenu()">All Guides</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <nav aria-label="Breadcrumb" style="background:var(--bg-surface);border-bottom:1px solid var(--border-color);padding:0.75rem 0;">
+    <div class="container">
+      <ol style="list-style:none;display:flex;gap:0.5rem;font-size:0.875rem;flex-wrap:wrap;">
+        <li><a href="/" style="color:var(--primary);">Home</a></li>
+        <li style="opacity:0.5;">/</li>
+        <li style="color:var(--text-secondary);">Brand Hub</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="brands-hero">
+    <div class="container">
+      <span style="font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.45);display:block;margin-bottom:0.75rem;">Brand Hub</span>
+      <h1>Expert Guides by Brand</h1>
+      <p>Deep-dive buying guides for every product from the world's top technology and home brands.</p>
+    </div>
+  </section>
+
+  <main style="padding:3rem 0 5rem;">
+    <div class="container">
+
+      <!-- Live brands -->
+      <div style="margin-bottom:1rem;">
+        <h2 style="font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:1.5rem;">Available Now</h2>
+        <div class="brands-grid" id="live-brands-grid">
+          <!-- Apple -->
+          <a class="brand-card" href="/brands/apple">
+            <span class="brand-article-count">1 guide</span>
+            <div class="brand-logo-box">
+              <img src="https://logo.clearbit.com/apple.com" alt="Apple logo" onerror="this.parentNode.innerHTML='🍎'">
+            </div>
+            <div class="brand-slug-label">Apple</div>
+            <div class="brand-card-title">iPhone &amp; Apple Guides</div>
+            <div class="brand-card-desc">Expert reviews of every current iPhone, MacBook, and Apple product — ranked and compared after real-world testing.</div>
+            <div class="articles-preview" id="apple-articles-preview">
+              <div class="article-preview-item">Best Apple iPhones 2026</div>
+            </div>
+            <div class="brand-card-cta" style="margin-top:0.875rem;">View Apple Guides <span aria-hidden="true">→</span></div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Coming soon brands -->
+      <div style="margin-top:3rem;">
+        <h2 style="font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:1.5rem;">Coming Soon</h2>
+        <div class="brands-grid">
+
+          <div class="brand-card coming-soon">
+            <div class="brand-logo-box">
+              <img src="https://logo.clearbit.com/samsung.com" alt="Samsung logo" onerror="this.parentNode.innerHTML='📱'">
+            </div>
+            <div class="brand-slug-label">Samsung</div>
+            <div class="brand-card-title">Galaxy &amp; Samsung Guides</div>
+            <div class="brand-card-desc">Galaxy S-series, foldables, TVs, and home appliances — all tested and ranked.</div>
+            <span class="coming-soon-pill">Coming Soon</span>
+          </div>
+
+          <div class="brand-card coming-soon">
+            <div class="brand-logo-box">
+              <img src="https://logo.clearbit.com/sony.com" alt="Sony logo" onerror="this.parentNode.innerHTML='🎵'">
+            </div>
+            <div class="brand-slug-label">Sony</div>
+            <div class="brand-card-title">Sony Product Guides</div>
+            <div class="brand-card-desc">WH-1000XM headphones, PlayStation, Alpha cameras, and OLED TVs.</div>
+            <span class="coming-soon-pill">Coming Soon</span>
+          </div>
+
+          <div class="brand-card coming-soon">
+            <div class="brand-logo-box">
+              <img src="https://logo.clearbit.com/dyson.com" alt="Dyson logo" onerror="this.parentNode.innerHTML='🌀'">
+            </div>
+            <div class="brand-slug-label">Dyson</div>
+            <div class="brand-card-title">Dyson Product Guides</div>
+            <div class="brand-card-desc">V-series vacuums, Airwrap, Purifier fans — every Dyson product tested.</div>
+            <span class="coming-soon-pill">Coming Soon</span>
+          </div>
+
+          <div class="brand-card coming-soon">
+            <div class="brand-logo-box">
+              <img src="https://logo.clearbit.com/hermanmiller.com" alt="Herman Miller logo" onerror="this.parentNode.innerHTML='🪑'">
+            </div>
+            <div class="brand-slug-label">Herman Miller</div>
+            <div class="brand-card-title">Herman Miller Guides</div>
+            <div class="brand-card-desc">Aeron, Embody, and every Herman Miller chair compared for long-term comfort.</div>
+            <span class="coming-soon-pill">Coming Soon</span>
+          </div>
+
+          <div class="brand-card coming-soon">
+            <div class="brand-logo-box">
+              <img src="https://logo.clearbit.com/nordictrack.com" alt="NordicTrack logo" onerror="this.parentNode.innerHTML='🏃'">
+            </div>
+            <div class="brand-slug-label">NordicTrack</div>
+            <div class="brand-card-title">NordicTrack Fitness Guides</div>
+            <div class="brand-card-desc">Treadmills, bikes, ellipticals, and rowers — ranked after weeks of real workouts.</div>
+            <span class="coming-soon-pill">Coming Soon</span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        &copy; 2026 CompareElite. All rights reserved. |
+        <a href="/affiliate-disclosure" style="color:var(--text-light);">Affiliate Disclosure</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

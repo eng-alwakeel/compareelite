@@ -112,6 +112,21 @@
       <nav class="nav-links">
         <a href="/">Home</a>
         <a href="/blog">Guides</a>
+        <div class="nav-dropdown" id="nav-brands-dropdown">
+          <button class="nav-dropdown-trigger" onclick="toggleDropdown('nav-brands-dropdown')" aria-expanded="false" aria-haspopup="true">
+            Brands <span class="nav-caret" aria-hidden="true">▾</span>
+          </button>
+          <div class="nav-dropdown-menu" role="menu">
+            <a href="/brands/apple" role="menuitem">🍎 Apple</a>
+            <a href="/brands/samsung" role="menuitem">📱 Samsung</a>
+            <a href="/brands/sony" role="menuitem">🎵 Sony</a>
+            <a href="/brands/dyson" role="menuitem">🌀 Dyson</a>
+            <a href="/brands/herman-miller" role="menuitem">🪑 Herman Miller</a>
+            <a href="/brands/nordictrack" role="menuitem">🏃 NordicTrack</a>
+            <div class="dropdown-divider"></div>
+            <a href="/brands" class="dropdown-all-link" role="menuitem">All Brands →</a>
+          </div>
+        </div>
       </nav>
     </div>
   </header>
