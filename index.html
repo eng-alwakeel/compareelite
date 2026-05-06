@@ -175,11 +175,25 @@
                     <span></span><span></span><span></span>
                 </button>
             </div>
-            <nav class="nav-links" id="nav-menu">
-                <a href="index.html" class="active" onclick="closeMenu()">Home</a>
-                <a href="blog/index.html" onclick="closeMenu()">Guides</a>
-                <a href="dashboard/index.html" onclick="closeMenu()">Dashboard</a>
-                <a href="blog/index.html" class="btn btn-primary" onclick="closeMenu()">Start Reading</a>
+            <nav class="nav-links" id="nav-menu" aria-label="Main navigation">
+                <a href="/" class="active" onclick="closeMenu()">Home</a>
+                <a href="/blog" onclick="closeMenu()">Guides</a>
+                <div class="nav-dropdown" id="nav-brands-dropdown">
+                    <button class="nav-dropdown-trigger" onclick="toggleDropdown('nav-brands-dropdown')" aria-expanded="false" aria-haspopup="true">
+                        Brands <span class="nav-caret" aria-hidden="true">▾</span>
+                    </button>
+                    <div class="nav-dropdown-menu" role="menu">
+                        <a href="/brands/apple" onclick="closeMenu()" role="menuitem">🍎 Apple</a>
+                        <a href="/brands/samsung" onclick="closeMenu()" role="menuitem">📱 Samsung</a>
+                        <a href="/brands/sony" onclick="closeMenu()" role="menuitem">🎵 Sony</a>
+                        <a href="/brands/dyson" onclick="closeMenu()" role="menuitem">🌀 Dyson</a>
+                        <a href="/brands/herman-miller" onclick="closeMenu()" role="menuitem">🪑 Herman Miller</a>
+                        <a href="/brands/nordictrack" onclick="closeMenu()" role="menuitem">🏃 NordicTrack</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="/brands" onclick="closeMenu()" class="dropdown-all-link" role="menuitem">All Brands →</a>
+                    </div>
+                </div>
+                <a href="/blog" class="btn btn-primary" onclick="closeMenu()">Start Reading</a>
             </nav>
         </div>
     </header>
@@ -286,12 +300,12 @@
                         <h2 class="section-title">🏷️ Brand Hub</h2>
                         <p>In-depth guides for the world's top tech brands.</p>
                     </div>
-                    <a href="/brand/best-apple-iphones-2026" class="btn btn-outline">Browse Brands</a>
+                    <a href="/brands" class="btn btn-outline">Browse All Brands</a>
                 </div>
                 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.25rem; margin-top: 1.5rem;">
 
                     <!-- Apple -->
-                    <a href="/brand/best-apple-iphones-2026" style="display:block; background: var(--bg-main); border: 1px solid var(--border-color); border-radius: 16px; padding: 1.75rem 1.5rem; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='var(--shadow-md)';this.style.borderColor='var(--primary)';" onmouseout="this.style.transform='';this.style.boxShadow='';this.style.borderColor='var(--border-color)';">
+                    <a href="/brands/apple" style="display:block; background: var(--bg-main); border: 1px solid var(--border-color); border-radius: 16px; padding: 1.75rem 1.5rem; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='var(--shadow-md)';this.style.borderColor='var(--primary)';" onmouseout="this.style.transform='';this.style.boxShadow='';this.style.borderColor='var(--border-color)';">
                         <div style="width:56px;height:56px;background:var(--bg-surface);border:1px solid var(--border-color);border-radius:14px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem;">
                             <img src="https://logo.clearbit.com/apple.com" alt="Apple" width="36" height="36" style="object-fit:contain;" onerror="this.parentNode.innerHTML='🍎';">
                         </div>
@@ -302,7 +316,7 @@
                     </a>
 
                     <!-- Samsung (coming soon) -->
-                    <div style="background: var(--bg-main); border: 1px solid var(--border-color); border-radius: 16px; padding: 1.75rem 1.5rem; opacity: 0.55; cursor: default;">
+                    <a href="/brands/samsung" style="display:block; background: var(--bg-main); border: 1px solid var(--border-color); border-radius: 16px; padding: 1.75rem 1.5rem; text-decoration: none; transition: all 0.3s ease; opacity:0.7;" onmouseover="this.style.opacity='1';this.style.transform='translateY(-3px)';this.style.boxShadow='var(--shadow-md)';" onmouseout="this.style.opacity='0.7';this.style.transform='';this.style.boxShadow='';">
                         <div style="width:56px;height:56px;background:var(--bg-surface);border:1px solid var(--border-color);border-radius:14px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem;">
                             <img src="https://logo.clearbit.com/samsung.com" alt="Samsung" width="36" height="36" style="object-fit:contain;" onerror="this.parentNode.innerHTML='📱';">
                         </div>
@@ -310,10 +324,10 @@
                         <div style="font-size:1.05rem;font-weight:700;color:var(--text-primary);margin-bottom:0.375rem;">Galaxy Buying Guides</div>
                         <div style="font-size:0.825rem;color:var(--text-secondary);">Coming soon</div>
                         <div style="margin-top:1rem;font-size:0.75rem;font-weight:600;color:var(--text-light);background:var(--bg-surface);display:inline-block;padding:0.2rem 0.6rem;border-radius:20px;border:1px solid var(--border-color);">Coming Soon</div>
-                    </div>
+                    </a>
 
                     <!-- Sony (coming soon) -->
-                    <div style="background: var(--bg-main); border: 1px solid var(--border-color); border-radius: 16px; padding: 1.75rem 1.5rem; opacity: 0.55; cursor: default;">
+                    <a href="/brands/sony" style="display:block; background: var(--bg-main); border: 1px solid var(--border-color); border-radius: 16px; padding: 1.75rem 1.5rem; text-decoration: none; transition: all 0.3s ease; opacity:0.7;" onmouseover="this.style.opacity='1';this.style.transform='translateY(-3px)';this.style.boxShadow='var(--shadow-md)';" onmouseout="this.style.opacity='0.7';this.style.transform='';this.style.boxShadow='';">
                         <div style="width:56px;height:56px;background:var(--bg-surface);border:1px solid var(--border-color);border-radius:14px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem;">
                             <img src="https://logo.clearbit.com/sony.com" alt="Sony" width="36" height="36" style="object-fit:contain;" onerror="this.parentNode.innerHTML='🎵';">
                         </div>
@@ -321,7 +335,7 @@
                         <div style="font-size:1.05rem;font-weight:700;color:var(--text-primary);margin-bottom:0.375rem;">Sony Product Guides</div>
                         <div style="font-size:0.825rem;color:var(--text-secondary);">Coming soon</div>
                         <div style="margin-top:1rem;font-size:0.75rem;font-weight:600;color:var(--text-light);background:var(--bg-surface);display:inline-block;padding:0.2rem 0.6rem;border-radius:20px;border:1px solid var(--border-color);">Coming Soon</div>
-                    </div>
+                    </a>
 
                 </div>
             </div>
