@@ -41,11 +41,39 @@ jobs:
         id: pre
         run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
-      - name: Generate 4 daily articles
+      - name: Generate 4 daily articles (with retry)
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
-          claude --dangerously-skip-permissions -p "/daily-articles"
+          # Retry logic: 3 attempts with exponential backoff
+          MAX_ATTEMPTS=3
+          ATTEMPT=1
+          SUCCESS=false
+
+          while [ $ATTEMPT -le $MAX_ATTEMPTS ]; do
+            echo "Article generation attempt $ATTEMPT of $MAX_ATTEMPTS..."
+
+            if claude --dangerously-skip-permissions -p "/daily-articles"; then
+              echo "✅ Article generation succeeded on attempt $ATTEMPT"
+              SUCCESS=true
+              break
+            else
+              echo "❌ Article generation failed on attempt $ATTEMPT"
+
+              if [ $ATTEMPT -lt $MAX_ATTEMPTS ]; then
+                WAIT_TIME=$((2 ** ATTEMPT * 5))  # 10s, 20s exponential backoff
+                echo "Waiting ${WAIT_TIME}s before retry..."
+                sleep $WAIT_TIME
+              fi
+            fi
+
+            ATTEMPT=$((ATTEMPT + 1))
+          done
+
+          if [ "$SUCCESS" = false ]; then
+            echo "::error::Article generation failed after $MAX_ATTEMPTS attempts"
+            exit 1
+          fi
 
       - name: Identify new article files
         id: diff
@@ -82,3 +110,43 @@ jobs:
           echo "Inspect the failed step above for the offending article(s)."
           git log -1 --stat
           exit 1
+
+      - name: Create failure issue on complete workflow failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = `Daily article generation failed - ${new Date().toISOString().split('T')[0]}`;
+            const body = `## Daily Article Generation Failure
+
+            **Workflow run**: [${context.runId}](https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId})
+            **Triggered**: ${new Date().toISOString()}
+            **Status**: ❌ Failed
+
+            ### Possible causes:
+            - Claude API timeout or rate limit
+            - Validation gate failure (schema, images, or Amazon links)
+            - Network issues
+            - Invalid article content generated
+
+            ### Next steps:
+            1. Check the workflow logs above for specific errors
+            2. Manually trigger workflow if transient failure
+            3. Review generated articles if validation failed
+            4. Check Claude API status if generation failed
+
+            ---
+            *Auto-created by daily-articles workflow*`;
+
+            try {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: title,
+                body: body,
+                labels: ['automation', 'daily-articles', 'failure']
+              });
+              console.log('Created failure tracking issue');
+            } catch (error) {
+              console.log('Could not create issue (may not have permissions):', error.message);
+            }
