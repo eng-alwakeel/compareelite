@@ -4,7 +4,7 @@
   "category": "Tech",
   "date": "2026-05-06",
   "read_time": "12 min read",
-  "thumbnail": "https://m.media-amazon.com/images/I/71iKnzUpNwL._SL500_.jpg",
+  "thumbnail": "https://m.media-amazon.com/images/I/61RBOqHLI0L._SL500_.jpg",
   "excerpt": "We tested 25 USB-C hubs over 8 months with M1, M2, and M3 MacBooks. CalDigit TS4 leads for power users; Anker PowerExpand 8-in-1 wins for most at $50.",
   "author": "CompareElite Team",
   "stats": {
@@ -18,7 +18,7 @@
       "price": "$400",
       "rating": "9.7/10",
       "best_for": "Best for Power Users",
-      "image": "https://m.media-amazon.com/images/I/71iKnzUpNwL._SL500_.jpg",
+      "image": "https://m.media-amazon.com/images/I/61RBOqHLI0L._SL500_.jpg",
       "link": "https://www.amazon.com/dp/B09GK8LBWS?tag=compareelite-20",
       "pros": [
         "98W Thunderbolt 4 charging powers 16-inch MacBook Pro at full speed under maximum load",
@@ -38,7 +38,7 @@
       "price": "$50",
       "rating": "9.3/10",
       "best_for": "Best Overall",
-      "image": "https://m.media-amazon.com/images/I/61LJBPStGEL._SL500_.jpg",
+      "image": "https://m.media-amazon.com/images/I/71zuiK5poRL._SL500_.jpg",
       "link": "https://www.amazon.com/dp/B087QZVQJX?tag=compareelite-20",
       "pros": [
         "85W USB-C Power Delivery passthrough charged 14-inch MacBook Pro from 0 to 100 percent in 2.1 hours with all ports active",
@@ -53,12 +53,12 @@
     },
     {
       "rank": 3,
-      "name": "Belkin Connect Pro Thunderbolt 4 Dock",
+      "name": "Belkin Thunderbolt 4 Docking Station 90W",
       "price": "$250",
       "rating": "9.1/10",
       "best_for": "Best Thunderbolt 4",
-      "image": "https://m.media-amazon.com/images/I/71mPGBb3NFL._SL500_.jpg",
-      "link": "https://www.amazon.com/dp/B09GFL3GTJ?tag=compareelite-20",
+      "image": "https://m.media-amazon.com/images/I/61o0xpGAU2L._SL500_.jpg",
+      "link": "https://www.amazon.com/dp/B09MG5GJQL?tag=compareelite-20",
       "pros": [
         "Thunderbolt 4 downstream port transferred 80GB of 8K RED footage in 29 seconds at 2.8 GB/s to NVMe SSD enclosure",
         "HDMI 2.1 port drove an LG UltraFine 4K display at 120Hz with no frame drops during 4 weeks of video editing",
@@ -76,7 +76,7 @@
       "price": "$70",
       "rating": "8.9/10",
       "best_for": "Best for Portability",
-      "image": "https://m.media-amazon.com/images/I/61uMLdNkxQL._SL500_.jpg",
+      "image": "https://m.media-amazon.com/images/I/71FddB6BxoL._SL500_.jpg",
       "link": "https://www.amazon.com/dp/B075FW7H5J?tag=compareelite-20",
       "pros": [
         "Weighs just 4.1 ounces with a built-in 6-inch USB-C cable that cannot be lost or forgotten during travel",
@@ -95,7 +95,7 @@
       "price": "$189",
       "rating": "8.8/10",
       "best_for": "Best for Dual Displays",
-      "image": "https://m.media-amazon.com/images/I/61YNwTb3NxL._SL500_.jpg",
+      "image": "https://m.media-amazon.com/images/I/71-mFYZIp6L._SL500_.jpg",
       "link": "https://www.amazon.com/dp/B0779K9DG2?tag=compareelite-20",
       "pros": [
         "Only hub under $200 that runs dual 4K at 60Hz simultaneously from base M1 and M2 MacBook Pro models via DisplayLink",
@@ -113,7 +113,7 @@
       "price": "$35",
       "rating": "8.4/10",
       "best_for": "Best Budget",
-      "image": "https://m.media-amazon.com/images/I/51FzpKvyJHL._SL500_.jpg",
+      "image": "https://m.media-amazon.com/images/I/714xg7P+LlL._SL500_.jpg",
       "link": "https://www.amazon.com/dp/B087219P5J?tag=compareelite-20",
       "pros": [
         "100W USB-C Power Delivery charged MacBook Air M2 at full speed during 3 months of daily testing",
@@ -175,5 +175,18 @@
     }
   ],
   "verdict": "For most MacBook Pro users, the Anker PowerExpand 8-in-1 at $50 delivers the best balance of ports, reliability, and price. Six months of daily M2 MacBook Pro use produced zero disconnections, 85W charging handled the 14-inch Pro at full load, and the compact aluminum build fits any laptop bag. Power users with permanent desk setups should invest in the CalDigit TS4 at $400, which provides 18 ports, 98W Thunderbolt 4 charging, and the best 5-year warranty in the category. Travelers prioritizing minimal weight should choose the Satechi Aluminum V2 at $70 with its built-in cable and 4.1-ounce body.",
-  "related_articles": []
+  "related_articles": [
+    {
+      "slug": "best-business-laptops-2026",
+      "title": "Best Business Laptops of 2026: Tested & Ranked"
+    },
+    {
+      "slug": "best-gaming-laptops-2026",
+      "title": "Best Gaming Laptops of 2026: Tested & Ranked"
+    },
+    {
+      "slug": "best-noise-cancelling-headphones-2026",
+      "title": "Best Noise-Cancelling Headphones of 2026: Tested & Ranked"
+    }
+  ]
 }
