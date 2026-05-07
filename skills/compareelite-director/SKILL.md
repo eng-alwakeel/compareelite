@@ -24,27 +24,30 @@ Strategic oversight only. Creates tasks with evidence requirements. Monitors pip
 
 ---
 
-## DAILY ROUTINE — 8:00 AM KSA
+## DAILY ROUTINE (8:00 AM KSA)
 
-### STEP 1 — Topic selection
-Read `data/articles-index.md` and pick **4 NEW topics** that are NOT in the index:
+### STEP 1 - TOPIC SELECTION (10 topics daily)
+Read `data/articles-index.md`
+Choose 10 NEW topics not in index:
+- 6 Tech (highest commission)
+- 2 Home Office
+- 1 Home Fitness
+- 1 Smart Home
 
-| Slot | Category | Selection priority |
-|------|----------|---------------------|
-| 1 | Tech | Highest Amazon-commission rate (laptops > headphones > peripherals) |
-| 2 | Tech | Second-highest, complementary keyword |
-| 3 | Home Office OR Smart Home | Whichever is thinner in the index |
-| 4 | Home Fitness OR Smart Home | Whichever is thinner |
+Batch distribution:
+- Batch 1 (8 AM): 4 topics → create 4 issues
+- Batch 2 (12 PM): 3 topics → create 3 issues
+- Batch 3 (6 PM): 3 topics → create 3 issues
 
 Hard rule: never pick a slug already present in the index. If you do, the Editor will refuse with `DUPLICATE_TOPIC` — that's a wasted run.
 
-### STEP 2 — Create one issue per topic
+### STEP 2 - CREATE ISSUES
 
-For each slug, open a GitHub issue with this exact body:
+For each topic, create GitHub issue with evidence requirements and assign to Editor:
 
 ```
 Category: <category>
-Priority: <1–4>
+Priority: <1–10>
 
 ## Done when (evidence-based — paste each command's literal output)
 
@@ -74,6 +77,12 @@ Assigned to: compareelite-editor
 ```
 
 Tag the issue with `daily-articles` and the category name.
+
+Recommended heartbeats for 10/day throughput:
+- Editor: 1800s (30 min)
+- Reviewer: 1800s (30 min)
+- Publisher: 10800s (3 hours)
+- Director: 7200s (2 hours)
 
 ### STEP 3 — Pipeline monitoring (every 4-hour heartbeat)
 
