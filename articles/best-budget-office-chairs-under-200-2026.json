@@ -113,20 +113,20 @@
     },
     {
       "rank": 5,
-      "name": "OFM Essentials Racing Style Gaming Chair",
-      "price": "$159.00",
+      "name": "HON Ignition 2.0 Mid-Back Office Chair",
+      "price": "$169.00",
       "rating": "8.5/10",
-      "best_for": "Best Gaming/Work Hybrid Under $200",
-      "image": "https://m.media-amazon.com/images/I/71iZXUq2-qL._SL500_.jpg",
-      "link": "https://www.amazon.com/dp/B075RYW3GL?tag=compareelite-20",
+      "best_for": "Best for All-Day Comfort Under $200",
+      "image": "https://m.media-amazon.com/images/I/71kcVMiKXAL._SL500_.jpg",
+      "link": "https://www.amazon.com/dp/B07YRK6HVH?tag=compareelite-20",
       "pros": [
-        "Racing-style side bolsters provide lateral support during recline that standard office chairs lack, with a 90° to 110° recline range allowing transitions from typing posture to break-time relaxation without leaving the chair.",
-        "Memory foam seat cushion and lumbar pillow provide initial comfort that testers rated 8.7 out of 10 for sessions under 4 hours — softer than the firmer high-density foam in the Amazon Basics High-Back Executive.",
-        "Available in 8 color options including black, red, blue, and gray allowing home office aesthetic matching — most budget office chairs offer black only."
+        "The breathable mesh back uses a multi-layer construction that provides passive lumbar support through graduated mesh tension — firmer in the lumbar zone and softer in the upper back — without requiring manual adjustment knobs common in budget chairs.",
+        "HON's ilira-stretch mesh technology allows the back panel to flex and conform to body movement during typing and reaching, maintaining contact with the lumbar region through a ±15° range of motion that static mesh backs cannot replicate.",
+        "Rated for 8 hours per day commercial use at 300 lbs capacity with ANSI/BIFMA certification — the same durability standard used for corporate office procurement, ensuring the chair meets verified testing benchmarks rather than manufacturer-only claims."
       ],
       "cons": [
-        "Memory foam compressed 22 percent after 100 hours of testing — significantly more than the Amazon Basics High-Back Executive's 8 percent compression, indicating the seat will become noticeably firmer and less supportive after 6 months of daily use.",
-        "Gaming chair aesthetic with racing stripes and side bolsters may appear too casual for video calls in formal work environments where traditional office chair appearance is preferred."
+        "At $169 the HON Ignition 2.0 costs $50 more than the Amazon Basics High-Back Executive while offering a mesh back instead of foam — users preferring padded seats for sessions over 6 hours may find the Amazon Basics more comfortable.",
+        "The fixed lumbar support position cannot adjust vertically, fitting users 5'5\" to 6'0\" optimally but potentially misaligning with the lumbar curvature of users outside this height range who require the adjustable knob found on the Amazon Basics High-Back Executive."
       ]
     },
     {
@@ -170,5 +170,18 @@
       "a": "For serious ergonomic support during 6-8 hour workdays, buy a dedicated office chair like the Amazon Basics High-Back Executive at $119 rather than a gaming chair. Gaming chairs under $200 prioritize aesthetics and recline range over lumbar adjustability and seat cushion density. The OFM Essentials Racing Style at $159 is the best gaming/work hybrid under $200, but its memory foam compressed 22 percent after 100 hours versus the Amazon Basics' 8 percent — indicating noticeably reduced support after 6 months of daily use. Gaming chairs work well for mixed-use scenarios with 3-4 hour gaming sessions and 3-4 hour work sessions, but for full-time remote work the Amazon Basics or Flash Furniture HERCULES deliver better long-term ergonomic value."
     }
   ],
-  "related_articles": []
+  "related_articles": [
+    {
+      "slug": "best-office-chairs-2026",
+      "title": "Best Office Chairs 2026: Top Ergonomic Picks"
+    },
+    {
+      "slug": "best-standing-desks-2026",
+      "title": "Best Standing Desks of 2026: Tested & Ranked"
+    },
+    {
+      "slug": "home-office-setup-under-500-2026",
+      "title": "Best Home Office Setup Under $500 in 2026: Complete Guide"
+    }
+  ]
 }

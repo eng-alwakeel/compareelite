@@ -179,5 +179,18 @@
       "a": "RGB lighting is purely aesthetic — it has zero impact on gaming performance. It does, however, help you find keys in dark rooms and can be programmed to highlight keybindings (e.g., WASD in a different color). The main cost of RGB is battery life: wireless keyboards with RGB enabled last 40–100 hours vs 200–400 hours with RGB off. If battery life matters more than aesthetics, choose a board with the option to disable RGB or look for models specifically designed to minimize power consumption."
     }
   ],
-  "related_articles": []
+  "related_articles": [
+    {
+      "slug": "best-mechanical-keyboards-2026",
+      "title": "Best Mechanical Keyboards 2026: Top Picks Tested"
+    },
+    {
+      "slug": "best-ergonomic-keyboards-2026",
+      "title": "Best Ergonomic Keyboards for Home Office 2026"
+    },
+    {
+      "slug": "best-wireless-gaming-mice-2026",
+      "title": "Best Wireless Gaming Mice 2026: Fast, Accurate & No Cable Drag"
+    }
+  ]
 }
