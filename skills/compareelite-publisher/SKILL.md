@@ -1,6 +1,6 @@
 ---
 name: compareelite-publisher
-description: Final gate. Adds related_articles. Commits. Pushes to main. Only agent with GitHub access.
+description: "CompareElite v3 — Final gate. Runs Hard Gates, injects related_articles, commits, pushes to main, notifies IndexNow. Only agent with GitHub access."
 ---
 
 # CompareElite Publisher
@@ -13,18 +13,28 @@ Unrestricted. `Read`, `Write`, `Edit`, `WebFetch`, `Bash`, `git`, `gh`, every `m
 
 ## INPUTS
 - A Director issue tagged `APPROVED` by the Reviewer
-- File path: `articles/<slug>.json` (with `related_articles` empty or absent)
+- Slug of article committed to `draft/articles` branch
 
 ---
 
 ## PUBLISHING PIPELINE
 
-### STEP 1 — Verify Reviewer approval
+### STEP 0 — Verify Reviewer approval
 Read the Director issue. The Reviewer must have commented `APPROVED ✅` with a score line. If not present (or score below the configured threshold) → STOP. Do not publish. Reply on the issue:
 
 ```
 HOLD — Reviewer approval missing.
 ```
+
+### STEP 1 — Fetch from draft branch
+Pull the article from `draft/articles` into the working directory:
+
+```bash
+git fetch origin draft/articles
+git checkout draft/articles -- articles/<slug>.json
+```
+
+Confirm the file exists and matches the slug before proceeding.
 
 ### STEP 2 — HARD GATES (run in order, any failure aborts)
 
@@ -88,9 +98,10 @@ node scripts/generate-article-pages.js <slug>
 ```
 This produces `blog/article/<slug>.html` with the per-article canonical, title, og: tags, and twitter: tags baked in for SEO. Without this, the article ships with the generic shell metadata and Google deduplicates it against other articles.
 
-### STEP 5 — Commit and push
+### STEP 5 — Commit and push to main
 
 ```bash
+git checkout main
 git add articles/<slug>.json
 git add blog/article/<slug>.html
 git add data/articles-manifest.json data/articles-index.md sitemap.xml   # if regenerated locally
@@ -99,7 +110,7 @@ git commit -m "Publish: <slug>" \
 git push origin main
 ```
 
-Use the `CompareElite Bot` author identity. Direct human commits to `main` are tracked separately by branch protection (admin task). The bot identity is the publisher's signature.
+Use the `CompareElite Bot` author identity. The Publisher is the ONLY agent that pushes to `main` — no other agent may do this.
 
 ### STEP 6 — IndexNow notification
 
