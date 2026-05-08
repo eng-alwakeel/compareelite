@@ -44,8 +44,15 @@ const PROBE_CONCURRENCY = 4;
 const FETCH_DELAY_MS = 1500;
 const FETCH_DELAY_JITTER_MS = 500;
 const RATE_LIMIT_BACKOFF_MS = 5000;
+const MAX_FETCH_RETRIES = 3;
+const RETRY_BACKOFF_BASE_MS = 2000;
+const RETRY_BACKOFF_MAX_MS = 30000;
 
-function fetchPage(asin) {
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+function fetchPageOnce(asin) {
   return new Promise((res) => {
     const req = https.request(
       'https://www.amazon.com/dp/' + asin,
@@ -61,6 +68,41 @@ function fetchPage(asin) {
     req.setTimeout(FETCH_TIMEOUT_MS, () => { req.destroy(); res({ asin, err: 'timeout' }); });
     req.end();
   });
+}
+
+async function fetchPage(asin) {
+  let lastResult = null;
+  for (let attempt = 0; attempt <= MAX_FETCH_RETRIES; attempt += 1) {
+    const result = await fetchPageOnce(asin);
+    lastResult = result;
+
+    // Success - don't retry
+    if (result.status === 200 || result.status === 404) {
+      return result;
+    }
+
+    // Retry on transient failures: 503, 429, 5xx, timeout
+    const shouldRetry =
+      result.status >= 500 ||
+      result.status === 429 ||
+      result.err === 'timeout' ||
+      result.err === 'ECONNRESET' ||
+      result.err === 'ETIMEDOUT';
+
+    if (shouldRetry && attempt < MAX_FETCH_RETRIES) {
+      // Exponential backoff with jitter
+      const backoffMs = Math.min(
+        RETRY_BACKOFF_BASE_MS * Math.pow(2, attempt) + Math.random() * 1000,
+        RETRY_BACKOFF_MAX_MS
+      );
+      await sleep(backoffMs);
+      continue;
+    }
+
+    // Non-retryable or max retries reached
+    return result;
+  }
+  return lastResult;
 }
 
 function probeImg(url) {
@@ -174,14 +216,21 @@ async function main() {
   console.log(`Unique ASINs to look up: ${uniqueAsins.length}`);
 
   let extracted = 0, captcha = 0, http5xx = 0, http404 = 0, other = 0;
+  let consecutiveErrors = 0;
+
   for (let i = 0; i < uniqueAsins.length; i++) {
     const asin = uniqueAsins[i];
     process.stdout.write(`[${i + 1}/${uniqueAsins.length}] ${asin} `);
     const r = await fetchPage(asin);
+
+    // Adaptive backoff based on error rate
     let backoff = FETCH_DELAY_MS + Math.random() * FETCH_DELAY_JITTER_MS;
+    let isError = false;
+
     if (r.err) {
       console.log('ERR', r.err);
       other++;
+      isError = true;
       backoff = RATE_LIMIT_BACKOFF_MS;
     } else if (r.status === 404) {
       console.log('HTTP 404 (dead ASIN)');
@@ -189,6 +238,7 @@ async function main() {
     } else if (r.status >= 500) {
       console.log('HTTP', r.status, '(rate-limited)');
       http5xx++;
+      isError = true;
       backoff = RATE_LIMIT_BACKOFF_MS;
     } else if (r.status === 200) {
       const img = extractImageUrl(r.html);
@@ -197,17 +247,29 @@ async function main() {
         asinToNewImage.set(asin, normalized);
         console.log('OK ', normalized.slice(40));
         extracted++;
+        consecutiveErrors = 0; // Reset on success
       } else {
         // HTML 200 but tiny / CAPTCHA-shaped → datacenter IP block
         console.log('CAPTCHA (run from residential IP)');
         captcha++;
+        isError = true;
         backoff = RATE_LIMIT_BACKOFF_MS;
       }
     } else {
       console.log('HTTP', r.status);
       other++;
     }
-    await new Promise((r) => setTimeout(r, backoff));
+
+    // Increase backoff with consecutive errors
+    if (isError) {
+      consecutiveErrors++;
+      if (consecutiveErrors >= 3) {
+        backoff = Math.min(backoff * 2, RETRY_BACKOFF_MAX_MS);
+        console.log(`  ⚠️  Multiple consecutive errors, increasing backoff to ${(backoff/1000).toFixed(1)}s`);
+      }
+    }
+
+    await sleep(backoff);
   }
 
   console.log('');

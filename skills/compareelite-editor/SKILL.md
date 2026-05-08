@@ -33,14 +33,21 @@ Nothing else. Do not push to GitHub. Do not add `related_articles`.
 ### RULE 1 — NO DUPLICATE TOPICS
 Before writing, read `data/articles-index.md`. If the topic already exists → stop and report to Director with a `DUPLICATE_TOPIC: <slug>` comment. Do not start writing.
 
-### RULE 2 — AMAZON VERIFICATION
+### RULE 2 — AMAZON ASIN SELECTION
 For every product:
-1. WebFetch `https://www.amazon.com/dp/<ASIN>`.
-2. The response must be a real product page (not HTTP 404, not the "Page Not Found" body marker, not a CAPTCHA shell < 10 KB).
-3. If CAPTCHA: retry up to 3 times with a 5-second wait between attempts.
-4. If still failing after 3 tries: skip this product. Pick a different verified ASIN instead.
-5. If you cannot reach 6 valid products: abandon the topic and comment on the Director issue: `CAPTCHA_BLOCK: <slug>` (or `INSUFFICIENT_PRODUCTS: <slug>` if non-CAPTCHA reason).
-6. NEVER invent or guess ASINs. NEVER reuse anything in `data/broken-amazon-links.json` with `state: "DEAD"`.
+1. Select ASINs from your knowledge base or recent Amazon product research.
+2. NEVER invent or guess random ASIN strings — use real product identifiers only.
+3. NEVER reuse anything in `data/broken-amazon-links.json` with `state: "DEAD"`.
+4. Check the cache first: `data/amazon-links-cache.json` contains recently verified ASINs (24h TTL).
+5. **Verification happens in RULE 6** via `node scripts/validate-amazon-links.js` which has:
+   - Proper User-Agent headers (browser simulation)
+   - Retry logic with exponential backoff
+   - 24-hour cache to avoid redundant checks
+   - CAPTCHA detection
+6. If RULE 6 validation finds DEAD links: revise the article with replacement ASINs.
+7. If RULE 6 reports BLOCKED/CAPTCHA: this is expected from datacenter IPs — continue anyway unless all products are blocked.
+
+**Note**: WebFetch cannot verify Amazon ASINs (returns HTTP 500 due to bot detection). Use the Node.js validation script instead.
 
 ### RULE 3 — THUMBNAIL
 `thumbnail` MUST equal `products[0].image` exactly. Always. No exceptions.

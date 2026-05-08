@@ -32,6 +32,7 @@ const ROOT = path.resolve(__dirname, '..');
 const ARTICLES_DIR = path.join(ROOT, 'articles');
 const DEFAULT_JSON = path.join(ROOT, 'data', 'broken-amazon-links.json');
 const DEFAULT_MD = path.join(ROOT, 'data', 'broken-amazon-links.md');
+const CACHE_FILE = path.join(ROOT, 'data', 'amazon-links-cache.json');
 
 const USER_AGENT =
   'Mozilla/5.0 (X11; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0';
@@ -45,6 +46,10 @@ const REQUEST_TIMEOUT_MS = 12000;
 const CONCURRENCY = 2;
 const PER_REQUEST_DELAY_MS = 350;
 const MAX_REDIRECTS = 5;
+const MAX_RETRIES = 3;
+const RETRY_BACKOFF_BASE_MS = 2000;
+const RETRY_BACKOFF_MAX_MS = 30000;
+const CACHE_TTL_MS = 24 * 60 * 60 * 1000; // 24 hours
 
 const NOT_FOUND_MARKERS = [
   "Looking for something?",
@@ -53,6 +58,13 @@ const NOT_FOUND_MARKERS = [
   "Page Not Found",
   "doesn't exist anymore",
   "currently unavailable",
+];
+
+const CAPTCHA_MARKERS = [
+  "Click the button below to continue",
+  "validateCaptcha",
+  "opfcaptcha.amazon.com",
+  "Robot Check",
 ];
 
 const ASIN_RE = /\/dp\/([A-Z0-9]{10})/;
@@ -91,6 +103,43 @@ function loadProductLinks(slugFilter) {
 
 function isAsinFormatValid(asin) {
   return typeof asin === 'string' && /^[A-Z0-9]{10}$/.test(asin);
+}
+
+function loadCache() {
+  try {
+    if (fs.existsSync(CACHE_FILE)) {
+      const data = JSON.parse(fs.readFileSync(CACHE_FILE, 'utf8'));
+      return data.cache || {};
+    }
+  } catch (err) {
+    console.warn(`Cache load failed: ${err.message}`);
+  }
+  return {};
+}
+
+function saveCache(cache) {
+  try {
+    fs.mkdirSync(path.dirname(CACHE_FILE), { recursive: true });
+    fs.writeFileSync(
+      CACHE_FILE,
+      JSON.stringify({ updatedAt: new Date().toISOString(), cache }, null, 2),
+      'utf8'
+    );
+  } catch (err) {
+    console.warn(`Cache save failed: ${err.message}`);
+  }
+}
+
+function getCachedResult(cache, asin) {
+  const entry = cache[asin];
+  if (!entry) return null;
+  const age = Date.now() - new Date(entry.checkedAt).getTime();
+  if (age > CACHE_TTL_MS) return null;
+  return entry.result;
+}
+
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 function fetchOnce(urlStr, method) {
@@ -152,7 +201,7 @@ function fetchOnce(urlStr, method) {
   });
 }
 
-async function probe(urlStr) {
+async function probeOnce(urlStr) {
   let current = urlStr;
   for (let hop = 0; hop <= MAX_REDIRECTS; hop += 1) {
     let r = await fetchOnce(current, 'HEAD');
@@ -179,6 +228,41 @@ async function probe(urlStr) {
   return { status: 0, error: 'too many redirects', finalUrl: current, body: '' };
 }
 
+async function probe(urlStr) {
+  let lastResult = null;
+  for (let attempt = 0; attempt <= MAX_RETRIES; attempt += 1) {
+    const result = await probeOnce(urlStr);
+    lastResult = result;
+
+    // Success cases - don't retry
+    if (result.status === 200 || result.status === 404 || result.status === 410) {
+      return result;
+    }
+
+    // Retry on transient failures: 503, 429, timeout, network errors
+    const shouldRetry =
+      result.status === 503 ||
+      result.status === 429 ||
+      result.error === 'timeout' ||
+      result.error === 'ECONNRESET' ||
+      result.error === 'ETIMEDOUT';
+
+    if (shouldRetry && attempt < MAX_RETRIES) {
+      // Exponential backoff with jitter
+      const backoffMs = Math.min(
+        RETRY_BACKOFF_BASE_MS * Math.pow(2, attempt) + Math.random() * 1000,
+        RETRY_BACKOFF_MAX_MS
+      );
+      await sleep(backoffMs);
+      continue;
+    }
+
+    // Non-retryable error or max retries reached
+    return result;
+  }
+  return lastResult;
+}
+
 function classify(asin, probeResult) {
   if (!isAsinFormatValid(asin)) {
     return { state: 'DEAD', reason: 'malformed ASIN (must be 10 alphanumeric chars)' };
@@ -197,6 +281,10 @@ function classify(asin, probeResult) {
     return { state: 'ERROR', reason: `HTTP ${status}` };
   }
   if (status === 200) {
+    // Check for CAPTCHA page first (HTTP 200 but not a real product page)
+    if (body && CAPTCHA_MARKERS.some((m) => body.includes(m))) {
+      return { state: 'BLOCKED', reason: 'CAPTCHA challenge (run from residential IP)' };
+    }
     if (body && NOT_FOUND_MARKERS.some((m) => body.includes(m))) {
       return { state: 'DEAD', reason: 'page rendered with "not found" marker' };
     }
@@ -205,26 +293,55 @@ function classify(asin, probeResult) {
   return { state: 'ERROR', reason: `HTTP ${status}` };
 }
 
-async function checkAll(items, onProgress) {
+async function checkAll(items, onProgress, cache) {
   const results = new Array(items.length);
   let next = 0;
+  let cacheHits = 0;
+  let cacheMisses = 0;
+
   async function worker() {
     while (true) {
       const i = next;
       next += 1;
       if (i >= items.length) return;
       const item = items[i];
+
+      // Check cache first
+      const cached = getCachedResult(cache, item.asin);
+      if (cached) {
+        const verdict = classify(item.asin, cached);
+        results[i] = { ...item, status: cached.status, finalUrl: cached.finalUrl, ...verdict, cached: true };
+        cacheHits += 1;
+        onProgress(i + 1, items.length, results[i]);
+        continue;
+      }
+
+      // Cache miss - probe the link
+      cacheMisses += 1;
       let probed = { status: 0, error: 'no link', body: '', finalUrl: item.link };
       if (item.link) probed = await probe(item.link);
+
       const verdict = classify(item.asin, probed);
-      results[i] = { ...item, status: probed.status, finalUrl: probed.finalUrl, ...verdict };
+
+      // Update cache only for definitive results (OK, DEAD, ERROR)
+      // Don't cache BLOCKED results as they're IP/rate-limit specific
+      if (item.asin && isAsinFormatValid(item.asin) && verdict.state !== 'BLOCKED') {
+        cache[item.asin] = {
+          checkedAt: new Date().toISOString(),
+          result: { status: probed.status, finalUrl: probed.finalUrl, body: probed.body, error: probed.error },
+        };
+      }
+
+      results[i] = { ...item, status: probed.status, finalUrl: probed.finalUrl, ...verdict, cached: false };
       onProgress(i + 1, items.length, results[i]);
-      await new Promise((r) => setTimeout(r, PER_REQUEST_DELAY_MS));
+      await sleep(PER_REQUEST_DELAY_MS);
     }
   }
+
   const workers = Array.from({ length: CONCURRENCY }, () => worker());
   await Promise.all(workers);
-  return results;
+
+  return { results, cacheHits, cacheMisses };
 }
 
 function summarize(results) {
@@ -310,15 +427,23 @@ async function main() {
     console.error('no product links found');
     process.exit(1);
   }
-  console.log(`Probing ${items.length} Amazon links (concurrency=${CONCURRENCY}, delay=${PER_REQUEST_DELAY_MS}ms)...`);
+
+  const cache = loadCache();
+  console.log(`Probing ${items.length} Amazon links (concurrency=${CONCURRENCY}, delay=${PER_REQUEST_DELAY_MS}ms, cache loaded)...`);
+
   const t0 = Date.now();
-  const results = await checkAll(items, (done, total, r) => {
+  const { results, cacheHits, cacheMisses } = await checkAll(items, (done, total, r) => {
     const tag = r.state === 'OK' ? ' ' : r.state === 'DEAD' ? '✗' : r.state === 'BLOCKED' ? '?' : '!';
-    process.stdout.write(`[${done}/${total}] ${tag} ${r.state.padEnd(7)} ${r.slug} #${r.index} ${r.asin || '∅'} ${r.reason ? '— ' + r.reason : ''}\n`);
-  });
+    const cacheTag = r.cached ? '[cached]' : '';
+    process.stdout.write(`[${done}/${total}] ${tag} ${r.state.padEnd(7)} ${cacheTag.padEnd(9)} ${r.slug} #${r.index} ${r.asin || '∅'} ${r.reason ? '— ' + r.reason : ''}\n`);
+  }, cache);
+
+  saveCache(cache);
+
   const summary = summarize(results);
   const elapsed = ((Date.now() - t0) / 1000).toFixed(1);
   console.log(`\nDone in ${elapsed}s — OK ${summary.OK}, DEAD ${summary.DEAD}, BLOCKED ${summary.BLOCKED}, ERROR ${summary.ERROR}`);
+  console.log(`Cache: ${cacheHits} hits, ${cacheMisses} misses`);
 
   const blockedNote =
     summary.BLOCKED > 0 && summary.OK === 0
@@ -350,4 +475,13 @@ if (require.main === module) {
   });
 }
 
-module.exports = { loadProductLinks, classify, probe, isAsinFormatValid };
+module.exports = {
+  loadProductLinks,
+  classify,
+  probe,
+  probeOnce,
+  isAsinFormatValid,
+  loadCache,
+  saveCache,
+  getCachedResult,
+};
