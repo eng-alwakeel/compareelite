@@ -1,0 +1,55 @@
+name: Daily Link & Quality Audit
+on:
+  schedule:
+    - cron: '0 22 * * *'  # 1 AM KSA (UTC+3) = 10 PM UTC
+  workflow_dispatch:      # manual trigger option
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Validate all articles
+        run: |
+          echo "# Daily Article Audit" > data/daily-audit.md
+          echo "Generated: $(date)" >> data/daily-audit.md
+          echo "" >> data/daily-audit.md
+
+          for file in articles/*.json; do
+            if [ -f "$file" ]; then
+              echo "Validating: $file"
+              node scripts/validate-article.js "$file" || true
+              node scripts/validate-amazon-links.js --slug "$(basename $file .json)" || true
+            fi
+          done
+
+      - name: Check broken links
+        run: |
+          echo "## Broken Links Report" >> data/daily-audit.md
+          node scripts/validate-amazon-links.js > data/broken-links-daily.json 2>&1 || true
+          cat data/broken-links-daily.json >> data/daily-audit.md
+
+      - name: Check image health
+        run: |
+          echo "## Image Health Check" >> data/daily-audit.md
+          node scripts/check-images.js >> data/daily-audit.md 2>&1 || true
+
+      - name: Quality metrics
+        run: |
+          echo "## Quality Metrics" >> data/daily-audit.md
+          echo "Total articles: $(ls articles/*.json | wc -l)" >> data/daily-audit.md
+          echo "Last updated: $(date)" >> data/daily-audit.md
+
+      - name: Commit audit results
+        run: |
+          git config user.name "CompareElite Bot"
+          git config user.email "bot@compareelite.com"
+          git add data/daily-audit.md data/broken-links-daily.json
+          git commit -m "chore: daily audit report $(date +%Y-%m-%d)" || true
+          git push
