@@ -7,8 +7,17 @@ on:
 jobs:
   audit:
     runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.CE_AGENTS_TOKEN }}
     steps:
       - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.CE_AGENTS_TOKEN }}
+
+      - name: Configure git
+        run: |
+          git config --global user.name "CompareElite Bot"
+          git config --global user.email "bot@compareelite.com"
 
       - name: Setup Node
         uses: actions/setup-node@v3
@@ -48,8 +57,5 @@ jobs:
 
       - name: Commit audit results
         run: |
-          git config user.name "CompareElite Bot"
-          git config user.email "bot@compareelite.com"
           git add data/daily-audit.md data/broken-links-daily.json
-          git commit -m "chore: daily audit report $(date +%Y-%m-%d)" || true
-          git push
+          git diff --staged --quiet && echo "No changes" || (git commit -m "chore: daily audit report $(date +%Y-%m-%d)" && git push origin main)
