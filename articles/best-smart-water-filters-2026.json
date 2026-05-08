@@ -117,23 +117,23 @@
     },
     {
       "rank": 6,
-      "name": "Waterdrop D6 Countertop RO Water Filter",
-      "price": "$299.99",
+      "name": "Waterdrop N1 Countertop Reverse Osmosis System",
+      "price": "$249.99",
       "rating": "8.6/10",
       "best_for": "Best Renter-Friendly Smart Filter",
-      "image": "https://m.media-amazon.com/images/I/61N6X65sVOL._AC_SL1500_.jpg",
-      "link": "https://www.amazon.com/dp/B09NXGG1ZB?tag=compareelite-20",
+      "image": "https://m.media-amazon.com/images/I/71KQJWG7SQL._SL500_.jpg",
+      "link": "https://www.amazon.com/dp/B0B4T6NQZW?tag=compareelite-20",
       "pros": [
-        "No installation required — connects directly to standard faucet with included adapter",
-        "Real-time TDS display built into the unit shows filtered water quality at all times",
-        "400 GPD output rate with 3-stage filtration removes 90 to 99% of TDS",
-        "Filter life indicator shows remaining capacity as a percentage for both filter stages",
-        "Ideal for renters who cannot modify under-sink plumbing"
+        "No installation required — connects directly to a standard faucet with the included adapter in under 3 minutes",
+        "Real-time TDS display built into the unit shows filtered water quality and confirms 94% TDS reduction at a glance",
+        "400 GPD output rate with 4-stage RO filtration removes 94% of TDS including heavy metals, chlorine, and PFAS",
+        "Dual filter life indicators track remaining capacity for both the composite and RO membrane stages independently",
+        "Compact countertop footprint at 12.2 x 9.4 x 14.2 inches — ideal for renters who cannot modify plumbing"
       ],
       "cons": [
-        "Countertop placement occupies valuable sink-area real estate",
-        "3-stage filtration less comprehensive than full 5 to 7-stage under-sink RO systems",
-        "Faucet adapter fits most standard faucets but may require adapters for pull-out or unusual faucet styles"
+        "Countertop placement occupies roughly one square foot of sink-area counter space",
+        "4-stage filtration removes fewer stages of contaminants than full 6 to 7-stage under-sink systems like the APEC ROES-PH75",
+        "Faucet adapter fits most standard aerator threads but may require an additional adapter for pull-out or non-standard faucet styles"
       ]
     }
   ],
@@ -156,7 +156,7 @@
     },
     {
       "title": "Installation: DIY vs. Professional",
-      "body": "Under-sink water filter installation complexity varies from straightforward DIY projects to tasks that benefit from plumbing experience. Most under-sink systems require connecting to the cold water supply line (typically using a saddle valve), routing tubing to the filter assembly and storage tank, and installing a dedicated filtered water faucet through the sink or countertop. The iSpring RCC7AK's color-coded tubing system is designed for DIY installation with step-by-step instructions and most users complete it in 2 to 3 hours without professional help. The Waterdrop G3P800 requires a power outlet under the sink for the booster pump. Drilling a faucet hole in granite or stone countertops requires a diamond-tipped hole saw and is typically worth hiring a professional for. Renters and buyers who want zero installation complexity should consider the Waterdrop D6 countertop system, which attaches to the existing faucet with a diverter valve in under 5 minutes. Countertop systems sacrifice some filtration capacity for installation simplicity."
+      "body": "Under-sink water filter installation complexity varies from straightforward DIY projects to tasks that benefit from plumbing experience. Most under-sink systems require connecting to the cold water supply line (typically using a saddle valve), routing tubing to the filter assembly and storage tank, and installing a dedicated filtered water faucet through the sink or countertop. The iSpring RCC7AK's color-coded tubing system is designed for DIY installation with step-by-step instructions and most users complete it in 2 to 3 hours without professional help. The Waterdrop G3P800 requires a power outlet under the sink for the booster pump. Drilling a faucet hole in granite or stone countertops requires a diamond-tipped hole saw and is typically worth hiring a professional for. Renters and buyers who want zero installation complexity should consider the Waterdrop N1 countertop system, which attaches to the existing faucet with a diverter valve adapter in under 3 minutes. Countertop systems sacrifice some filtration capacity for installation simplicity."
     },
     {
       "title": "Testing Your Water Before Choosing a Filter",
@@ -166,7 +166,7 @@
   "faq": [
     {
       "q": "How do I know when my water filter needs replacing?",
-      "a": "The most reliable indicator is a TDS meter reading from your filtered water output. RO systems should produce water with TDS near 0 ppm; readings consistently above 50 ppm indicate the membrane is degrading and needs replacement. The Waterdrop G3P800 and D6 display TDS in real time, making degradation monitoring automatic. For carbon filters, flow rate decline (water dripping slowly from the filtered faucet) indicates filter clogging from particle accumulation. Some systems like the ZeroWater pitcher include a handheld TDS meter — test the filtered output regularly and replace the filter when TDS exceeds 6 ppm (ZeroWater's replacement threshold). Brita's filter life indicator counts gallons filtered and illuminates when replacement is due based on usage rather than time. The least reliable method is a fixed calendar schedule — filter life depends heavily on source water quality and household usage, so the same filter cartridge may last 3 months in one home and 8 months in another. App-connected systems remove the guesswork by tracking actual usage and sending replacement alerts automatically."
+      "a": "The most reliable indicator is a TDS meter reading from your filtered water output. RO systems should produce water with TDS near 0 ppm; readings consistently above 50 ppm indicate the membrane is degrading and needs replacement. The Waterdrop G3P800 and N1 display TDS in real time, making degradation monitoring automatic. For carbon filters, flow rate decline (water dripping slowly from the filtered faucet) indicates filter clogging from particle accumulation. Some systems like the ZeroWater pitcher include a handheld TDS meter — test the filtered output regularly and replace the filter when TDS exceeds 6 ppm (ZeroWater's replacement threshold). Brita's filter life indicator counts gallons filtered and illuminates when replacement is due based on usage rather than time. The least reliable method is a fixed calendar schedule — filter life depends heavily on source water quality and household usage, so the same filter cartridge may last 3 months in one home and 8 months in another. App-connected systems remove the guesswork by tracking actual usage and sending replacement alerts automatically."
     },
     {
       "q": "Does reverse osmosis water taste different from tap water?",
@@ -185,6 +185,6 @@
       "a": "TDS (total dissolved solids) measures the total concentration of dissolved substances in water, expressed in parts per million (ppm) or milligrams per liter. TDS includes both harmful substances (heavy metals, nitrates, PFAS) and beneficial minerals (calcium, magnesium, potassium). The EPA's secondary standard for tap water TDS is 500 ppm for taste, not safety. A low TDS reading does not directly mean safer water — it means fewer dissolved solids overall. Distilled water has TDS near 0 ppm but contains no beneficial minerals. A private well reading 400 ppm TDS might contain exclusively benign minerals like calcium carbonate from limestone geology, or it might contain elevated nitrates and arsenic at dangerous concentrations — TDS measurement cannot distinguish. For RO system performance monitoring, TDS is useful: an RO system should reduce TDS by 90 to 99%, so if your source water is 300 ppm and your RO output reads 270 ppm, the membrane has failed regardless of what the TDS represents. For comprehensive safety assessment, a full water quality test from a certified laboratory — not just a TDS reading — is the appropriate tool."
     }
   ],
-  "verdict": "The Waterdrop G3P800 is our top pick for households wanting the best smart RO system — its real-time TDS display, 800 GPD tankless output, and comprehensive PFAS removal make it the most capable under-sink option at $450. Renters who can't modify plumbing should choose the Waterdrop D6 countertop RO with TDS monitoring at $300. Budget buyers wanting smart monitoring in a pitcher should look at the ZeroWater pitcher with included TDS meter at $50.",
+  "verdict": "The Waterdrop G3P800 is our top pick for households wanting the best smart RO system — its real-time TDS display, 800 GPD tankless output, and comprehensive PFAS removal make it the most capable under-sink option at $450. Renters who can't modify plumbing should choose the Waterdrop N1 countertop RO with real-time TDS monitoring at $250. Budget buyers wanting smart monitoring in a pitcher should look at the ZeroWater pitcher with included TDS meter at $50.",
   "related_articles": []
 }
