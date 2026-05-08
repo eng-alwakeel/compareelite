@@ -12,11 +12,18 @@ permissions:
 jobs:
   update-manifest:
     runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.CE_AGENTS_TOKEN }}
     steps:
       - uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.CE_AGENTS_TOKEN }}
           fetch-depth: 0
+
+      - name: Configure git
+        run: |
+          git config --global user.name "CompareElite Bot"
+          git config --global user.email "bot@compareelite.com"
 
       - name: Generate articles manifest
         run: |
@@ -42,12 +49,23 @@ jobs:
       - name: Regenerate articles-index.md
         run: node scripts/generate-articles-index.js
 
-      - name: Configure Git
-        run: |
-          git config user.name "CompareElite Bot"
-          git config user.email "bot@compareelite.com"
+      - name: Regenerate per-article static HTML pages
+        run: node scripts/generate-article-pages.js
 
-      - name: Commit and push manifest + sitemap + index
+      - name: Notify IndexNow of changed articles
         run: |
-          git add data/articles-manifest.json data/articles-index.md sitemap.xml
-          git diff --staged --quiet && echo "No changes" || (git commit -m "chore: update articles manifest + sitemap + index [skip ci]" && git push origin main)
+          NEW=$(git diff-tree --no-commit-id --name-only -r --diff-filter=AM HEAD -- 'articles/*.json' \
+                | xargs -I{} basename {} .json \
+                | grep -v '^TEMPLATE$' \
+                | tr '\n' ' ')
+          if [ -z "$NEW" ]; then
+            echo "No added/modified articles in this commit — skipping IndexNow."
+            exit 0
+          fi
+          echo "Submitting to IndexNow: $NEW"
+          node scripts/notify-indexnow.js $NEW
+
+      - name: Commit and push manifest + sitemap + index + article pages
+        run: |
+          git add data/articles-manifest.json data/articles-index.md sitemap.xml blog/article/
+          git diff --staged --quiet && echo "No changes" || (git commit -m "chore: update articles manifest + sitemap + index + per-article pages [skip ci]" && git push origin main)
