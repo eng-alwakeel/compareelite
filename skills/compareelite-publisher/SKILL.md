@@ -1,15 +1,15 @@
 ---
 name: compareelite-publisher
-description: "CompareElite v3 — Final gate. Runs Hard Gates, injects related_articles, commits, pushes to main, notifies IndexNow. Only agent with GitHub access."
+description: "CompareElite v3 — Final gate. Runs Hard Gates, injects related_articles, publishes via API, notifies IndexNow. Only agent with publish authority."
 ---
 
 # CompareElite Publisher
 
 ## ROLE
-The final quality gate before publishing. The ONLY agent that touches `main`. Re-runs every script independently, injects `related_articles`, commits, pushes, notifies IndexNow.
+The final quality gate before publishing. The ONLY agent that publishes to `main`. Re-runs every script independently, injects `related_articles`, calls the publish API, notifies IndexNow.
 
 ## ALLOWED TOOLS
-Unrestricted. `Read`, `Write`, `Edit`, `WebFetch`, `Bash`, `git`, `gh`, every `mcp__github__*` tool. This is the one role that has GitHub credentials — by design, no other agent does.
+Unrestricted. `Read`, `Write`, `Edit`, `WebFetch`, `Bash`, `git`, `gh`, every `mcp__github__*` tool. This is the one role that has publish authority — by design, no other agent does.
 
 ## INPUTS
 - A Director issue tagged `APPROVED` by the Reviewer
@@ -92,44 +92,51 @@ The Editor and the Reviewer have no read access to `data/articles-manifest.json`
 
 If the manifest has zero eligible siblings (brand-new site, edge case): omit `related_articles` entirely. The renderer skips the section gracefully.
 
-### STEP 4 — Generate the per-article static HTML
+### STEP 4 — Publish to main via API
+
+Call the publishing endpoint. This fetches the article from `draft/articles`, re-validates it, commits it to `main`, and notifies IndexNow — all in one atomic call:
+
+```bash
+curl -s -X POST https://compareelite.com/api/publish-to-main \
+  -H "Content-Type: application/json" \
+  -H "x-api-key: $PUBLISH_API_KEY" \
+  -d "{\"slug\": \"<slug>\", \"reviewer_approved\": true}"
+```
+
+Expected response:
+```json
+{
+  "success": true,
+  "slug": "<slug>",
+  "branch": "main",
+  "indexnow": "HTTP 200",
+  "message": "Published to main successfully"
+}
+```
+
+If `"success":true` → proceed to STEP 5.
+If `"error"` is present → read the failures, fix the issue, and re-run. Do NOT call the endpoint with `reviewer_approved: false`.
+
+**IndexNow** is called automatically by this endpoint. Record the returned `indexnow` value in your STEP 6 report.
+
+### STEP 5 — Generate the per-article static HTML
 ```bash
 node scripts/generate-article-pages.js <slug>
-```
-This produces `blog/article/<slug>.html` with the per-article canonical, title, og: tags, and twitter: tags baked in for SEO. Without this, the article ships with the generic shell metadata and Google deduplicates it against other articles.
-
-### STEP 5 — Commit and push to main
-
-```bash
-git checkout main
-git add articles/<slug>.json
 git add blog/article/<slug>.html
-git add data/articles-manifest.json data/articles-index.md sitemap.xml   # if regenerated locally
-git commit -m "Publish: <slug>" \
-           --author "CompareElite Bot <bot@compareelite.com>"
+git commit -m "chore: generate static HTML for <slug>" --author "CompareElite Bot <bot@compareelite.com>"
 git push origin main
 ```
+This step remains a local git operation because it generates a derived file (`blog/article/<slug>.html`) that is not part of the article JSON published in STEP 4.
 
-Use the `CompareElite Bot` author identity. The Publisher is the ONLY agent that pushes to `main` — no other agent may do this.
-
-### STEP 6 — IndexNow notification
-
-```bash
-node scripts/notify-indexnow.js <slug>
-```
-
-Must end with `IndexNow response: HTTP 200` (or 202). On any non-2xx, comment a `WARN — IndexNow returned <code>` on the issue but do NOT revert the publish; the article is on `main` and the sitemap update will eventually pick it up via Google's crawl.
-
-### STEP 7 — Report on the Director issue
+### STEP 6 — Report on the Director issue
 
 ```
 PUBLISHED ✅
-Commit:    <SHA>
 URL:       https://compareelite.com/blog/article/<slug>
 Related:   <slug-1>, <slug-2>, <slug-3>
 Validator: PASS (schema + images)
 DEAD ASINs: 0
-IndexNow:  HTTP <200|202>
+IndexNow:  <value from API response>
 Live at:   <YYYY-MM-DD HH:MM UTC>
 ```
 

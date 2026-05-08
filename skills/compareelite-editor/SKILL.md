@@ -13,7 +13,7 @@ Nothing else. Do not push to GitHub. Do not add `related_articles`.
 ## ALLOWED TOOLS
 - `WebFetch`: ONLY `amazon.com/dp/*`, `m.media-amazon.com/*`, `images-na.ssl-images-amazon.com/*`
 - `Read`, `Write`, `Edit`: `articles/` folder only
-- `Bash`: `node scripts/validate-article.js`, `node scripts/validate-amazon-links.js`, `git checkout`, `git add`, `git commit`, `git push`, `ls`, `cat`
+- `Bash`: `node scripts/validate-article.js`, `node scripts/validate-amazon-links.js`, `ls`, `cat`, `curl`
 
 ## FORBIDDEN
 - Pushing to `main` — Publisher's exclusive right
@@ -21,6 +21,8 @@ Nothing else. Do not push to GitHub. Do not add `related_articles`.
 - Populating `related_articles` field — Publisher's job
 - Guessing or inventing ASINs
 - Any `mcp__github__*` write tool
+- Any `git push` command
+- Calling `/api/publish-to-main`
 
 ## INPUTS (from Director issue)
 - `slug`: the article filename
@@ -126,19 +128,25 @@ Expected:
 
 If any of these fails: fix before reporting. A "done" claim without all three outputs is auto-rejected by the orchestrator as `REJECTED — evidence missing`.
 
-### RULE 7 — MANDATORY DRAFT COMMIT
-After all 3 verification commands pass, save work to the draft branch to prevent loss:
+### RULE 7 — MANDATORY DRAFT SAVE (via API — no git required)
+After all 3 verification commands pass, save the article to `draft/articles` via the publishing API:
 
 ```bash
-git fetch origin draft/articles 2>/dev/null || true
-git checkout draft/articles 2>/dev/null || git checkout -b draft/articles origin/main
-git add articles/<slug>.json
-git commit -m "draft: <slug>" --author "CompareElite Bot <bot@compareelite.com>"
-git push origin draft/articles
-git checkout main
+curl -s -X POST https://compareelite.com/api/save-draft \
+  -H "Content-Type: application/json" \
+  -H "x-api-key: $PUBLISH_API_KEY" \
+  -d "{\"slug\": \"<slug>\", \"content\": $(cat articles/<slug>.json)}"
 ```
 
-If `draft/articles` branch does not exist remotely, create it from `main` and push.
+Expected response: `{"success":true,"branch":"draft/articles","message":"Saved to draft. Awaiting QC."}`
+
+If the response contains `"success":true` → proceed to RULE 8.
+If the response contains `"error"` → fix the reported failures and retry.
+
+**FORBIDDEN — Editor may NEVER:**
+- Call `/api/publish-to-main`
+- Run `git push` to any branch
+- Merge branches
 
 ### RULE 8 — REPORTING
 Comment on the Director issue:
