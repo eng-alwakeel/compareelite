@@ -3,18 +3,8 @@
   "outputDirectory": ".",
   "framework": null,
   "cleanUrls": true,
-  "redirects": [
-    {
-      "source": "/blog/article",
-      "has": [
-        { "type": "query", "key": "slug", "value": "(?<slug>[a-z0-9-]+)" }
-      ],
-      "destination": "/blog/article/:slug",
-      "permanent": true
-    }
-  ],
   "rewrites": [
-    { "source": "/blog/article", "destination": "/blog/article.html" },
+    { "source": "/blog/article", "destination": "/api/article-meta" },
     { "source": "/dashboard/login", "destination": "/dashboard/login.html" },
     { "source": "/product/:slug*", "destination": "/api/gone" },
     { "source": "/brand/:slug", "destination": "/pages/brand/article.html" },
