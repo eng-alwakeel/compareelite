@@ -179,5 +179,18 @@
       "a": "Smart doorbells require a smartphone for initial setup, but after setup they can operate through smart displays (Amazon Echo Show, Google Nest Hub) and voice assistants without a phone. If someone rings while you're home without your phone, a paired Echo Show will show the live feed. However, for away-from-home operation (seeing who rang while you're at work), you need the mobile app on a smartphone or tablet. Smart doorbells are fundamentally a smartphone-centric product — the mobile app is the primary interaction method for most users."
     }
   ],
-  "related_articles": []
+  "related_articles": [
+    {
+      "slug": "best-smart-home-devices-2026",
+      "title": "Best Smart Home Devices of 2026: Make Your Home Smarter"
+    },
+    {
+      "slug": "best-smart-locks-2026",
+      "title": "Best Smart Locks of 2026: Top 6 Picks Tested & Ranked"
+    },
+    {
+      "slug": "best-smart-security-cameras-2026",
+      "title": "Best Smart Security Cameras 2026: Tested & Ranked"
+    }
+  ]
 }
