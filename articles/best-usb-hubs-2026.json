@@ -179,5 +179,18 @@
       "a": "Yes, if the hub supports USB Power Delivery (USB-C PD) and your laptop accepts USB-C charging. Look for hubs with PD pass-through rated at 85W+ for most laptops (MacBook Air needs 30W minimum, MacBook Pro needs 96W for fast charging, most Windows ultrabooks need 65–90W). The hub routes power from a USB-C charger through to your laptop via the same connection it uses for data. This single-cable connection — one USB-C cable handling power, data, and display — is the main advantage of a USB-C hub over older USB-A hub designs."
     }
   ],
-  "related_articles": []
+  "related_articles": [
+    {
+      "slug": "best-bluetooth-speakers-2026",
+      "title": "Best Portable Bluetooth Speakers of 2026"
+    },
+    {
+      "slug": "best-business-laptops-2026",
+      "title": "Best Business Laptops of 2026: Tested & Ranked"
+    },
+    {
+      "slug": "best-car-phone-mounts-2026",
+      "title": "Best Car Phone Mounts of 2026: Safe, Secure & Easy to Use"
+    }
+  ]
 }
