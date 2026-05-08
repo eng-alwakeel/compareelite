@@ -176,5 +176,18 @@
       "a": "Occupancy sensing delivers 4-9 percentage points higher energy savings than learning automation for most households because it responds to actual presence rather than predicted schedules. The ecobee Smart Thermostat Premium with radar-based occupancy sensing achieved 23-26% savings in testing, while the Google Nest Learning Thermostat with auto-schedule delivered 18-21% in homes with consistent routines but only 10-12% in families with irregular schedules. Occupancy sensing works best for households with unpredictable daily patterns, families where teenagers or remote workers have variable schedules, vacation homes with sporadic use, or multi-unit properties where different zones have different occupancy throughout the day. Learning thermostats excel for single-person households or couples with consistent 9-to-5 weekday routines where departure and arrival times rarely vary by more than 30 minutes daily. The Nest Learning Thermostat builds optimized schedules within one week in these scenarios and maintains 18-21% savings indefinitely. Combining both technologies delivers maximum efficiency: the ecobee Premium uses occupancy sensing as primary logic but also learns typical patterns to pre-heat or pre-cool before expected occupancy, achieving the highest tested savings rate of any thermostat in 2026. For homes with HVAC costs exceeding $2,500 annually, the difference between 12% learning-only savings and 24% occupancy-sensing savings equals $300+ annually, justifying the $100-170 premium for occupancy-equipped models within 4-7 months."
     }
   ],
-  "related_articles": []
+  "related_articles": [
+    {
+      "slug": "best-smart-thermostats-2026",
+      "title": "Best Smart Thermostats 2026: Top 6 Picks Tested & Ranked"
+    },
+    {
+      "slug": "best-smart-home-devices-2026",
+      "title": "Best Smart Home Devices of 2026: Make Your Home Smarter"
+    },
+    {
+      "slug": "best-smart-locks-2026",
+      "title": "Best Smart Locks of 2026: Top 6 Picks Tested & Ranked"
+    }
+  ]
 }
