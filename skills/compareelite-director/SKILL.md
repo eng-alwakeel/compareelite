@@ -86,13 +86,26 @@ Recommended heartbeats for 10/day throughput:
 
 ### STEP 3 — Pipeline monitoring (every 4-hour heartbeat)
 
+#### PIPELINE FLOW (STRICT ORDER)
+1. Director creates GitHub issue → assigns to Editor
+2. Editor writes → commits to `draft/articles` branch
+3. Editor comments `READY FOR REVIEW ✅` on issue
+4. Reviewer fetches from `draft/articles`, runs 80-point checklist
+5. Reviewer comments `APPROVED ✅` or `REJECTED ❌` on issue
+6. If APPROVED → Publisher fetches from `draft/articles`, runs Hard Gates, merges to `main`
+7. If REJECTED → Editor fixes and re-commits to `draft/articles` (max 1 retry)
+8. Publisher comments `PUBLISHED ✅` on issue
+9. Director closes issue with `published` label
+
 Run `node scripts/health-metrics.js --slim` and `node scripts/detect-patterns.js`. Then check every open `daily-articles` issue:
 
-| Age of issue | No agent response yet | Action |
-|--------------|------------------------|--------|
-| < 2 h | normal | log, do nothing |
+| Age of issue | State | Action |
+|--------------|-------|--------|
+| < 2 h | any | log, do nothing |
 | 2 – 4 h | Editor silent | comment `@editor — ping; expected first response by now` |
-| > 4 h | still open, Editor stuck | **INTERVENTION** |
+| > 2 h | Reviewer silent after READY | comment `@reviewer — ping` |
+| > 2 h | Publisher silent after APPROVED | comment `@publisher — ping` |
+| > 4 h | any stage stuck | **INTERVENTION** |
 | any | REJECTED twice without progress | **INTERVENTION** |
 
 ### INTERVENTION TRIGGERS
@@ -105,6 +118,7 @@ Open a separate intervention issue (label: `intervention`) when any of these is 
 4. Editor reported `CAPTCHA_BLOCK: <slug>`
 5. Publisher's Hard Gate failed twice for the same slug
 6. Weekly publish goal < 50 % by Wednesday EOD
+7. Article exists in `draft/articles` but NOT in `main` for > 8 hours (draft rot)
 
 Intervention issue body:
 ```

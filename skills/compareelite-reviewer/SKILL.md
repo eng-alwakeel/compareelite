@@ -25,6 +25,16 @@ You cannot make HTTP calls directly — `WebFetch` and `curl` are not in your al
 - File path: `articles/<slug>.json`
 - The Director issue containing the Editor's evidence block
 
+### STEP 0 — FETCH FROM DRAFT BRANCH
+Before reviewing, pull the article from the draft branch:
+
+```bash
+git fetch origin draft/articles
+git checkout draft/articles -- articles/<slug>.json
+```
+
+Then proceed with the 80-point checklist using the fetched file.
+
 ---
 
 ## HARD RULES

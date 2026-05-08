@@ -13,13 +13,14 @@ Nothing else. Do not push to GitHub. Do not add `related_articles`.
 ## ALLOWED TOOLS
 - `WebFetch`: ONLY `amazon.com/dp/*`, `m.media-amazon.com/*`, `images-na.ssl-images-amazon.com/*`
 - `Read`, `Write`, `Edit`: `articles/` folder only
-- `Bash`: `node scripts/validate-article.js`, `node scripts/validate-amazon-links.js`, `ls`, `cat`
+- `Bash`: `node scripts/validate-article.js`, `node scripts/validate-amazon-links.js`, `git checkout`, `git add`, `git commit`, `git push`, `ls`, `cat`
 
 ## FORBIDDEN
-- GitHub URLs or `git`/`gh` commands or any `mcp__github__*` tool
+- Pushing to `main` — Publisher's exclusive right
 - Any domain other than the three Amazon hosts above for `WebFetch`
 - Populating `related_articles` field — Publisher's job
 - Guessing or inventing ASINs
+- Any `mcp__github__*` write tool
 
 ## INPUTS (from Director issue)
 - `slug`: the article filename
@@ -118,12 +119,27 @@ Expected:
 
 If any of these fails: fix before reporting. A "done" claim without all three outputs is auto-rejected by the orchestrator as `REJECTED — evidence missing`.
 
-### RULE 7 — REPORTING
+### RULE 7 — MANDATORY DRAFT COMMIT
+After all 3 verification commands pass, save work to the draft branch to prevent loss:
+
+```bash
+git fetch origin draft/articles 2>/dev/null || true
+git checkout draft/articles 2>/dev/null || git checkout -b draft/articles origin/main
+git add articles/<slug>.json
+git commit -m "draft: <slug>" --author "CompareElite Bot <bot@compareelite.com>"
+git push origin draft/articles
+git checkout main
+```
+
+If `draft/articles` branch does not exist remotely, create it from `main` and push.
+
+### RULE 8 — REPORTING
 Comment on the Director issue:
 
 ```
-READY FOR REVIEW
+READY FOR REVIEW ✅
 Slug: <slug>
+Branch: draft/articles
 Products: <count>
 Validation: PASS
 Dead links: 0
@@ -139,4 +155,4 @@ $ node scripts/validate-amazon-links.js --slug <slug> --no-md --no-json
 <output>
 ```
 
-Then stop. Do not commit, do not push, do not invoke other skills. The Reviewer takes it from here.
+Then stop. Do not merge to main, do not invoke other skills. The Reviewer takes it from here.
