@@ -7,7 +7,9 @@
   "thumbnail": "https://images-na.ssl-images-amazon.com/images/P/B01D1NMLJU.01._SL500_.jpg",
   "excerpt": "Smart irrigation controllers cut outdoor water use by 20 to 50 percent using weather data. We tested 6 top systems for water savings, app quality, and setup ease.",
   "author": "CompareElite Team",
-  "stats": { "readers": 0 },
+  "stats": {
+    "readers": 0
+  },
   "intro": "Outdoor irrigation accounts for 30 percent of residential water use on average, and over-watering is endemic among homes with traditional time-clock controllers that run regardless of recent rainfall or soil moisture levels. Smart irrigation systems replace or upgrade existing in-ground sprinkler controllers with weather-aware systems that consult real-time forecast data, calculate evapotranspiration rates, and automatically skip or reduce watering cycles when rain has fallen or is imminent. The EPA WaterSense program certifies smart irrigation controllers that demonstrate at least 15 percent water savings; the best systems in our testing delivered 30 to 50 percent reductions in outdoor water use based on multi-year studies.\n\nWe evaluated six smart irrigation controllers across five criteria: setup complexity including compatibility with existing sprinkler wiring, weather intelligence algorithm accuracy over a 90-day growing season, smartphone app usability and scheduling flexibility, smart home platform integration, and customer support quality. Products ranged from $79 for an 8-zone upgrade controller to $299 for a professional-grade 16-zone system with soil sensor support. We paid particular attention to the watering skip rate accuracy during a period that included three rainfall events of varying intensity.\n\nThis guide covers the six best smart irrigation systems available on Amazon for 2026, followed by a buying guide on zone counting, wiring compatibility, sensor types, and how to calculate your expected water savings before purchase. All prices reflect current Amazon listings as of May 2026.",
   "products": [
     {
@@ -48,20 +50,23 @@
     },
     {
       "rank": 3,
-      "name": "Orbit B-Hyve XD Smart Sprinkler Controller 8-Zone",
-      "price": "$129",
+      "name": "Orbit B-hyve XR Smart 8-Zone Sprinkler Controller",
+      "price": "$99.99",
       "rating": "8.7/10",
       "best_for": "Best Value Smart Controller",
-      "image": "https://images-na.ssl-images-amazon.com/images/P/B07C7RJTL3.01._SL500_.jpg",
-      "link": "https://www.amazon.com/dp/B07C7RJTL3?tag=compareelite-20",
+      "image": "https://m.media-amazon.com/images/I/71m6e6tjfcL._AC_SL1500_.jpg",
+      "link": "https://www.amazon.com/dp/B08J2BJSCB?tag=compareelite-20",
       "pros": [
-        "Costs $100 less than the Rachio 3 while offering the same EPA WaterSense certification and 8-zone capacity, making it the best per-zone value for homeowners upgrading a basic time-clock controller.",
-        "Watering-by-weather skip function checks local hourly forecasts and automatically bypasses scheduled cycles when rainfall above 0.1 inches is predicted in the next 24 hours, saving a measurable volume per skipped cycle.",
-        "Physical manual override button on the unit allows zone activation without a smartphone for situations where the app is unavailable or during system troubleshooting and leak detection."
+        "Manages up to 8 irrigation zones with individual scheduling",
+        "WeatherSense automatically adjusts watering based on local forecasts",
+        "Indoor/outdoor rated for flexible installation options",
+        "Works with Alexa and Google Assistant for voice control",
+        "B-hyve app provides remote access and smart watering recommendations"
       ],
       "cons": [
-        "Smart watering algorithm uses a single zip-code weather station rather than hyperlocal sensor data, resulting in less precise skipping decisions compared to the Rachio 3 and occasional over- or under-watering in microclimates that differ from the area weather station.",
-        "Alexa integration supports only on and off commands for individual zones and does not support voice queries for current zone status, schedule information, or water savings reports."
+        "Wi-Fi connectivity can be unreliable in detached garages or sheds",
+        "Advanced scheduling features have a learning curve",
+        "Requires C-wire or transformer for power — not battery operated"
       ]
     },
     {

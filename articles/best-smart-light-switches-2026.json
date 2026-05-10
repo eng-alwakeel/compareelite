@@ -7,7 +7,9 @@
   "thumbnail": "https://m.media-amazon.com/images/I/61zqKvEEEJL._SL500_.jpg",
   "excerpt": "Smart light switches let you control lights by voice or app without changing bulbs. We tested 6 top models on ease of install, compatibility, and response speed.",
   "author": "CompareElite Team",
-  "stats": { "readers": 0 },
+  "stats": {
+    "readers": 0
+  },
   "intro": "Smart light switches are one of the most practical smart home upgrades available in 2026. Unlike smart bulbs — which require every occupant to remember not to flip the physical switch — smart switches replace the switch itself, so the wall controls still work normally while adding full app and voice control on top. One switch can control an entire fixture, multiple recessed lights on a single circuit, or an exterior floodlight, making them far more cost-effective than replacing every bulb individually.\n\nOur evaluation covered six critical factors: installation complexity (neutral wire required or not), compatibility with LED dimmers and non-dimmable fixtures, response latency from voice command to light state change, physical design and in-wall depth, smart home ecosystem integration, and multi-way switch support for rooms with two or three switches controlling the same fixture. We tested each switch in both a standard single-pole configuration and a 3-way configuration to verify compatibility claims from manufacturers.\n\nThis guide presents the six best smart light switches available on Amazon in 2026, covering options from the $20 Kasa Smart EP25 for budget buyers to the $64 Lutron Caseta PD-6ANS for those who want the most reliable dimming and smart home integration available. Whether you are outfitting a rental, retrofitting an older home without neutral wires, or building a new smart home from scratch, there is a verified pick in this list for your situation.",
   "products": [
     {
@@ -48,12 +50,12 @@
     },
     {
       "rank": 3,
-      "name": "Leviton Decora Smart Wi-Fi 2nd Gen Switch D215S, No Hub",
-      "price": "$35",
+      "name": "Leviton Decora Smart Wi-Fi Switch D215S, No Hub Required",
+      "price": "$29.99",
       "rating": "8.8/10",
       "best_for": "Best No-Hub Wi-Fi Switch",
       "image": "https://m.media-amazon.com/images/I/61YQMczFoKL._SL500_.jpg",
-      "link": "https://www.amazon.com/dp/B08GN8VK9D?tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B0BVKZLT3B?tag=compareelite-20",
       "pros": [
         "Second-generation Wi-Fi chipset connects to 2.4 GHz and 5 GHz dual-band routers without a hub, resolving the 2.4 GHz congestion issues common with first-generation Wi-Fi switches.",
         "Decora-style rocker design matches standard Leviton outlet and switch plates already installed in millions of US homes, eliminating the need to replace wall plates after installation.",

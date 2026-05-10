@@ -46,22 +46,23 @@
       ]
     },
     {
-      "name": "Apple TV 4K (3rd Generation, Wi-Fi + Ethernet)",
-      "price": "$129.00",
+      "name": "Apple TV 4K (3rd Generation, Wi-Fi + Ethernet, 128GB)",
+      "price": "$149.00",
       "rating": "9.1/10",
       "best_for": "Best for Apple Users",
-      "image": "https://m.media-amazon.com/images/I/41zHMQxMrXL._AC_SL1000_.jpg",
-      "link": "https://www.amazon.com/dp/B09JKXZCXL?tag=compareelite-20",
+      "image": "https://m.media-amazon.com/images/I/41XLz-FBxAL._AC_SL1500_.jpg",
+      "link": "https://www.amazon.com/dp/B0BJMGB95J?tag=compareelite-20",
       "pros": [
-        "A15 Bionic chip delivers the fastest streaming box performance",
-        "Seamless AirPlay, iCloud Photos, and Apple Fitness+ integration",
-        "Thread and HomeKit hub for comprehensive smart home control",
-        "Siri Remote with clickpad and precision touch surface",
-        "Dolby Atmos, Dolby Vision, and spatial audio support"
+        "A15 Bionic chip delivers smooth 4K Dolby Vision and HDR10+ playback",
+        "Thread and Matter smart home hub built in for connected device control",
+        "Seamless AirPlay integration with iPhone, iPad, and Mac",
+        "Siri Remote with USB-C charging and touch-enabled clickpad",
+        "128GB storage with Ethernet for reliable 4K streaming"
       ],
       "cons": [
-        "Most expensive option by a wide margin",
-        "Full value only realized within the Apple ecosystem"
+        "Premium price compared to Roku and Fire TV alternatives",
+        "Best experience requires full Apple ecosystem commitment",
+        "Limited app selection compared to Android TV platform"
       ]
     },
     {

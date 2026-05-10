@@ -141,19 +141,19 @@
       "rating": "8.5/10",
       "price": "$9.99",
       "best_for": "Best Budget Smart Plug",
-      "image": "https://m.media-amazon.com/images/I/61YhzNWlD1L._AC_SL1500_.jpg",
-      "link": "https://www.amazon.com/dp/B0CMDWZ4ZG?tag=compareelite-20",
+      "image": "https://m.media-amazon.com/images/I/51kgGhKvR4L._AC_SL1500_.jpg",
+      "link": "https://www.amazon.com/dp/B088PMZV7F?tag=compareelite-20",
       "pros": [
-        "Lowest price for Alexa and Google-compatible smart plug",
-        "Compact mini form factor",
-        "Good scheduling features in Smart Life app",
-        "Available in multi-packs for whole-home deployment",
-        "2-year warranty"
+        "Compact mini design occupies only one outlet socket",
+        "Works with Alexa and Google Assistant for voice control",
+        "Schedule and timer features for automated device management",
+        "Remote app control from anywhere with Wi-Fi connection",
+        "Exceptional value at under $10 per plug"
       ],
       "cons": [
-        "No HomeKit support",
-        "No energy monitoring",
-        "Smart Life app requires account — data stored on Chinese servers"
+        "2.4GHz Wi-Fi only — does not support 5GHz networks",
+        "No energy monitoring built into the basic model",
+        "App interface could be more intuitive for first-time users"
       ]
     }
   ],

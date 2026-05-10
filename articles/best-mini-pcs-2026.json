@@ -46,22 +46,23 @@
       ]
     },
     {
-      "name": "Intel NUC 13 Pro Mini PC Kit (i7-1360P)",
-      "price": "$449.99",
+      "name": "Intel NUC 13 Pro Kit Mini PC (i5-1350P)",
+      "price": "$499.99",
       "rating": "8.9/10",
       "best_for": "Best for Business",
-      "image": "https://m.media-amazon.com/images/I/61CjBxYS63L._AC_SL1500_.jpg",
-      "link": "https://www.amazon.com/dp/B0BVLGLTXY?tag=compareelite-20",
+      "image": "https://m.media-amazon.com/images/I/61hTtFdwe3L._AC_SL1500_.jpg",
+      "link": "https://www.amazon.com/dp/B0DG54LD9Z?tag=compareelite-20",
       "pros": [
-        "Intel 13th Gen i7 with vPro for enterprise manageability",
-        "Thunderbolt 4 ports for high-speed peripherals and eGPU",
-        "Intel-backed reliability with enterprise support options",
-        "Dual M.2 slots allow large storage configurations",
-        "Compact 4x4 inch footprint with VESA mount included"
+        "12th/13th Gen Intel Core i5-1350P vPro with 12 cores for business workloads",
+        "Ultra-compact 4.4 x 4.6 x 2 inch form factor saves desk space",
+        "Thunderbolt 4 and USB 3.2 connectivity for modern peripherals",
+        "Intel vPro platform for enterprise management and security",
+        "Wi-Fi 6E and Bluetooth 5.3 for wireless connectivity"
       ],
       "cons": [
-        "Sold as a kit — RAM and storage add to total cost",
-        "Integrated Iris Xe graphics weaker than AMD Radeon alternatives"
+        "RAM and storage sold separately — requires additional investment",
+        "Integrated Iris Xe graphics not suited for demanding creative work",
+        "Limited upgrade path compared to larger desktop systems"
       ]
     },
     {

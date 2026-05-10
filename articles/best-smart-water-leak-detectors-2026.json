@@ -54,22 +54,23 @@
     },
     {
       "rank": 3,
-      "name": "Govee Water Detector with Email and SMS Alerts",
-      "price": "$11.99",
+      "name": "Govee WiFi Water Sensor with App Alerts",
+      "price": "$13.99",
       "rating": "8.9/10",
       "best_for": "Best Budget Pick",
-      "image": "https://m.media-amazon.com/images/I/61xJWEq8BRL._AC_SL1500_.jpg",
-      "link": "https://www.amazon.com/dp/B07N5VDL59?tag=compareelite-20",
+      "image": "https://m.media-amazon.com/images/I/61Ah9wM2noL._AC_SL1500_.jpg",
+      "link": "https://www.amazon.com/dp/B07QP153GT?tag=compareelite-20",
       "pros": [
-        "Lowest price in this roundup at under $12 per sensor with no subscription required",
-        "Sends email and SMS alerts in addition to push notifications for redundant warning coverage",
-        "100 dB audible alarm and flashing LED provide local warning in addition to remote alerts",
-        "Works independently without Wi-Fi — standalone alarm mode functions without any app connectivity",
-        "Waterproof probe attachment allows placement in sumps, crawl spaces, and water heater drip pans"
+        "WiFi-connected sends instant app and email alerts when water detected",
+        "100dB adjustable alarm loud enough to hear from other rooms",
+        "Compact size fits in tight spaces near water heaters, pipes, and appliances",
+        "Connects up to 20 sensors through WiFi gateway for whole-home coverage",
+        "Budget-friendly price makes multi-sensor setups affordable"
       ],
       "cons": [
-        "Wi-Fi model requires 2.4 GHz network — does not support 5 GHz networks",
-        "App interface is functional but less polished compared to first-tier smart home platforms"
+        "Requires 2.4GHz WiFi — does not support 5GHz networks",
+        "Battery-powered sensors need periodic battery replacement",
+        "Gateway must remain plugged in for WiFi alerts to function"
       ]
     },
     {

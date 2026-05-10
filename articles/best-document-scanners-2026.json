@@ -7,7 +7,9 @@
   "thumbnail": "https://m.media-amazon.com/images/I/71HfXeM2ThL._AC_SL1500_.jpg",
   "excerpt": "The best document scanners of 2026 range from portable single-pass units to duplex workhorses. We ranked the top 6 picks for home office users.",
   "author": "CompareElite Team",
-  "stats": { "readers": 0 },
+  "stats": {
+    "readers": 0
+  },
   "intro": "Document scanners have evolved well beyond bulky flatbed units — the best home office scanners in 2026 are compact, wireless, and capable of scanning 25 to 40 pages per minute with automatic duplex handling. Whether you need to digitize client contracts, organize tax receipts, or archive years of paper documents, there is a scanner built for your volume and budget.\n\nFujitsu's ScanSnap line continues to dominate the prosumer space with intuitive one-button scanning and robust software integration. Brother and Canon offer strong value-oriented alternatives with ADF (automatic document feeder) capacities ranging from 20 to 80 sheets. For businesses or heavy users, dedicated workgroup scanners with 50-page ADFs and 4,000-page daily duty cycles are worth the investment.\n\nWe evaluated six document scanners on speed, image quality, software ecosystem, ADF reliability, duplex performance, wireless connectivity, and price-to-performance. Our top picks cover every use case — from the occasional home user to the power digitizer processing hundreds of pages daily.",
   "products": [
     {
@@ -54,12 +56,12 @@
     },
     {
       "rank": 3,
-      "name": "Epson FastFoto FF-680W Photo and Document Scanner",
+      "name": "Epson FastFoto FF-680W Wireless Photo and Document Scanner",
       "price": "$599.99",
       "rating": "9.2/10",
       "best_for": "Best for Photos and Documents",
       "image": "https://m.media-amazon.com/images/I/71L5JgVNg3L._AC_SL1500_.jpg",
-      "link": "https://www.amazon.com/dp/B07GNHTMBF?tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B07DLX26BB?tag=compareelite-20",
       "pros": [
         "Scans photos at 300 dpi up to 1 per second — fastest photo scanner available",
         "Handles photos from wallet-size to 4 x 6 to 5 x 7 up to 8 x 10 inches",

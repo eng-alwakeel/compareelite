@@ -69,18 +69,19 @@
       "price": "$649.95",
       "rating": "8.9/10",
       "best_for": "Best Professional Pen Display",
-      "image": "https://m.media-amazon.com/images/I/71VkX+OvXJL._AC_SL1500_.jpg",
-      "link": "https://www.amazon.com/dp/B07VRY8QJ3?tag=compareelite-20",
+      "image": "https://m.media-amazon.com/images/I/71eN3RNaraL._AC_SL1500_.jpg",
+      "link": "https://www.amazon.com/dp/B0CJMJZTG2?tag=compareelite-20",
       "pros": [
-        "15.6-inch 1920x1080 display with anti-glare etched glass",
-        "Pro Pen 2 with 8192 levels and ±60 degree tilt",
-        "Industry-leading driver quality and compatibility",
-        "Ergonomic design with adjustable stand",
-        "Works with Photoshop, Illustrator, and Clip Studio Paint"
+        "16-inch 2.5K WQXGA display with 100% sRGB color accuracy",
+        "Pro Pen 3 with 8,192 pressure levels and tilt recognition",
+        "Built-in fold-out legs raise display to comfortable 20-degree angle",
+        "Battery-free pen eliminates charging hassles",
+        "75x75 VESA mounts for compatible arm or stand compatibility"
       ],
       "cons": [
-        "Expensive compared to Huion/XP-Pen alternatives",
-        "Requires external GPU for smooth performance"
+        "Premium price at $650 requires serious creative commitment",
+        "Requires external computer — not a standalone tablet",
+        "Fan noise noticeable in quiet rooms during extended sessions"
       ]
     },
     {

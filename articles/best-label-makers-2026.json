@@ -7,7 +7,9 @@
   "thumbnail": "https://m.media-amazon.com/images/I/61hQYYY7RLL._AC_SL1500_.jpg",
   "excerpt": "The best label makers of 2026 range from portable handheld units to wireless thermal printers. We ranked the top 6 picks for home office and professional use.",
   "author": "CompareElite Team",
-  "stats": { "readers": 0 },
+  "stats": {
+    "readers": 0
+  },
   "intro": "Label makers have transformed from clunky tape embossers into sleek wireless printers that connect to your smartphone and produce professional-quality labels in seconds. The best models in 2026 support label widths from 6mm to 108mm, print speeds up to 71mm per second, and work with iOS and Android apps that let you design labels right on your phone before sending them wirelessly to the printer.\n\nThe market splits clearly into two camps: handheld units that use die-cut tape cassettes for portable labeling of cables, folders, and shelves, and desktop thermal label printers designed for shipping labels, barcodes, and inventory management at volumes of 100 or more labels per day. Brands like DYMO, Brother, Brady, Phomemo, and NIIMBOT each occupy distinct niches, with prices ranging from $35 for entry-level portables to over $300 for industrial thermal roll printers.\n\nWe evaluated six label makers on print quality, label width versatility, battery life, wireless connectivity, companion app usability, tape or media cost, and overall build quality. Our top picks cover every scenario — from the home organizer who labels kitchen jars to the warehouse manager printing hundreds of shipping labels before noon.",
   "products": [
     {
@@ -75,12 +77,12 @@
     },
     {
       "rank": 4,
-      "name": "Phomemo M110",
+      "name": "Phomemo M110 Portable Label Maker",
       "price": "$39.99",
       "rating": "8.6/10",
       "best_for": "Best Wireless Portable",
       "image": "https://m.media-amazon.com/images/I/61rW8nkQ3KL._AC_SL1500_.jpg",
-      "link": "https://www.amazon.com/dp/B08NZKFC3D?tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B0BKPWJ97K?tag=compareelite-20",
       "pros": [
         "Bluetooth 4.0 pairs with the Phomemo iOS and Android app in under 10 seconds for wireless label design",
         "Print speed of 25mm per second handles a 40mm label in approximately 1.6 seconds",

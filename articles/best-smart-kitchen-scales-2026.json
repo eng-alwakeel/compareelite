@@ -27,22 +27,23 @@
       ]
     },
     {
-      "name": "Drop Scale Smart Kitchen Scale",
-      "price": "$79.99",
+      "name": "Perfect Bake Pro Smart Kitchen Scale",
+      "price": "$49.99",
       "rating": "9.3/10",
       "best_for": "Best for Guided Baking",
-      "image": "https://m.media-amazon.com/images/I/71GCXHF4UKL._AC_SL1500_.jpg",
-      "link": "https://www.amazon.com/dp/B01M23KWWD?tag=compareelite-20",
+      "image": "https://m.media-amazon.com/images/I/61BVpT+aN7L._AC_SL1300_.jpg",
+      "link": "https://www.amazon.com/dp/B019C4PTSW?tag=compareelite-20",
       "pros": [
-        "Step-by-step guided recipes in the Drop app",
-        "Smart substitution suggestions when you run low",
-        "Bluetooth-connected with auto-tare between ingredients",
-        "Clean low-profile design — easy to store",
-        "5kg capacity with 1g precision"
+        "Companion app measures as you pour and guides step-by-step through recipes",
+        "Visual progress indicators show exactly when to stop adding each ingredient",
+        "Hundreds of built-in recipes from professional bakers",
+        "Bluetooth connectivity syncs seamlessly with iOS and Android devices",
+        "Eliminates measuring cups — everything is weighed for precision"
       ],
       "cons": [
-        "Relies heavily on Drop app ecosystem",
-        "Battery-powered (no USB-C option)"
+        "Requires smartphone or tablet — no standalone recipe display",
+        "Recipe library limited to baking — not a general cooking scale",
+        "Bluetooth range limited to about 10 feet from device"
       ]
     },
     {
@@ -65,22 +66,23 @@
       ]
     },
     {
-      "name": "INEVIFIT Smart Kitchen Scale",
-      "price": "$39.99",
+      "name": "INEVIFIT Digital Kitchen Scale",
+      "price": "$14.99",
       "rating": "8.8/10",
       "best_for": "Best for Meal Prep",
-      "image": "https://m.media-amazon.com/images/I/717NMBM29TL._AC_SL1500_.jpg",
-      "link": "https://www.amazon.com/dp/B07VHQS9D2?tag=compareelite-20",
+      "image": "https://m.media-amazon.com/images/I/71lD7S0hVbL._AC_SL1500_.jpg",
+      "link": "https://www.amazon.com/dp/B01MRT3EGJ?tag=compareelite-20",
       "pros": [
-        "Premium stainless steel platform — no staining",
-        "Smart tare with continuous weighing for recipes",
-        "Bluetooth app tracks nutritional data per item",
-        "11-pound capacity with 0.05-oz precision",
-        "Works without smartphone for basic weighing"
+        "High-accuracy sensors measure in 1g/0.1oz increments for precise meal prep",
+        "Clean modern design with premium stainless steel platform",
+        "13 lb / 6 kg maximum capacity handles large batch cooking",
+        "Tare function makes sequential ingredient weighing effortless",
+        "Batteries included — ready to use out of the box"
       ],
       "cons": [
-        "Bluetooth connection occasionally drops",
-        "App crashes reported on older phones"
+        "No Bluetooth or app connectivity for nutritional tracking",
+        "Auto-off timer can be too aggressive during slow recipe preparation",
+        "Small display can be obscured by large bowls or plates"
       ]
     },
     {
