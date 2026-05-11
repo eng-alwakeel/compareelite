@@ -1,6 +1,6 @@
 {
   "schema_version": "brand-hub-v1",
-  "generated": "2026-05-05",
+  "generated": "2026-05-11",
   "brands": [
     {
       "name": "Apple",
@@ -9,6 +9,46 @@
       "tagline": "Think Different",
       "article_count": 1,
       "hub_url": "/brands/apple"
+    },
+    {
+      "name": "Samsung",
+      "slug": "samsung",
+      "logo": "https://logo.clearbit.com/samsung.com",
+      "tagline": "Do What You Can't",
+      "article_count": 1,
+      "hub_url": "/brands/samsung"
+    },
+    {
+      "name": "Sony",
+      "slug": "sony",
+      "logo": "https://logo.clearbit.com/sony.com",
+      "tagline": "Be Moved",
+      "article_count": 1,
+      "hub_url": "/brands/sony"
+    },
+    {
+      "name": "Dyson",
+      "slug": "dyson",
+      "logo": "https://logo.clearbit.com/dyson.com",
+      "tagline": "Solve the problem others ignore",
+      "article_count": 1,
+      "hub_url": "/brands/dyson"
+    },
+    {
+      "name": "Herman Miller",
+      "slug": "herman-miller",
+      "logo": "https://logo.clearbit.com/hermanmiller.com",
+      "tagline": "Design for the Good of Humankind",
+      "article_count": 1,
+      "hub_url": "/brands/herman-miller"
+    },
+    {
+      "name": "NordicTrack",
+      "slug": "nordictrack",
+      "logo": "https://logo.clearbit.com/nordictrack.com",
+      "tagline": "Inspired by Athletes",
+      "article_count": 1,
+      "hub_url": "/brands/nordictrack"
     }
   ],
   "articles": [
@@ -20,6 +60,51 @@
       "category": "smartphones",
       "date": "2026-05-02",
       "thumbnail": "https://m.media-amazon.com/images/I/61bX2AuGcWL._SL500_.jpg"
+    },
+    {
+      "slug": "best-samsung-galaxy-phones-2026",
+      "brand": "samsung",
+      "path": "brands/samsung/best-samsung-galaxy-phones-2026.json",
+      "title": "Best Samsung Galaxy Phones 2026",
+      "category": "smartphones",
+      "date": "2026-05-11",
+      "thumbnail": "https://m.media-amazon.com/images/I/71lMBGLAZLL._SL500_.jpg"
+    },
+    {
+      "slug": "best-sony-headphones-2026",
+      "brand": "sony",
+      "path": "brands/sony/best-sony-headphones-2026.json",
+      "title": "Best Sony Headphones 2026",
+      "category": "audio",
+      "date": "2026-05-11",
+      "thumbnail": "https://m.media-amazon.com/images/I/61ExJpVVrnL._SL500_.jpg"
+    },
+    {
+      "slug": "best-dyson-vacuums-2026",
+      "brand": "dyson",
+      "path": "brands/dyson/best-dyson-vacuums-2026.json",
+      "title": "Best Dyson Vacuums 2026",
+      "category": "home-appliances",
+      "date": "2026-05-11",
+      "thumbnail": "https://m.media-amazon.com/images/I/51kigCvBu5L._SL500_.jpg"
+    },
+    {
+      "slug": "best-herman-miller-chairs-2026",
+      "brand": "herman-miller",
+      "path": "brands/herman-miller/best-herman-miller-chairs-2026.json",
+      "title": "Best Herman Miller Chairs 2026",
+      "category": "home-office",
+      "date": "2026-05-11",
+      "thumbnail": "https://m.media-amazon.com/images/I/71X4lUJGYIL._SL500_.jpg"
+    },
+    {
+      "slug": "best-nordictrack-treadmills-2026",
+      "brand": "nordictrack",
+      "path": "brands/nordictrack/best-nordictrack-treadmills-2026.json",
+      "title": "Best NordicTrack Treadmills 2026",
+      "category": "home-fitness",
+      "date": "2026-05-11",
+      "thumbnail": "https://m.media-amazon.com/images/I/61eS-BVHLLL._SL500_.jpg"
     }
   ]
 }
