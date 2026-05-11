@@ -4,20 +4,22 @@
   "category": "Smart Home",
   "date": "2026-05-10",
   "read_time": "10 min read",
-  "thumbnail": "https://m.media-amazon.com/images/I/41bAj3BKUPL._SL500_.jpg",
+  "thumbnail": "https://images-na.ssl-images-amazon.com/images/P/B09GDQZLD1.01.LZZZZZZZ.jpg",
   "excerpt": "We tested 12 smart pet cameras for video quality, two-way audio, and treat dispensing. The Furbo 360 Dog Camera leads with barking alerts at $149.",
   "author": "CompareElite Team",
-  "stats": { "readers": 0 },
+  "stats": {
+    "readers": 0
+  },
   "intro": "Smart pet cameras let you check on your dog or cat from anywhere, talk to them through two-way audio, and toss treats to keep them occupied while you are at work. Beyond basic monitoring, the best pet cameras detect barking, meowing, and activity events, sending real-time alerts to your phone so you know immediately if something is wrong. Some models add features specifically designed for pets that generic security cameras lack: treat dispensing, laser play, barking detection AI, and pet-specific activity zones.\n\nWe tested 12 smart pet cameras over 8 weeks in homes with dogs, cats, and multi-pet households. We evaluated video quality in daylight and night vision, two-way audio clarity and latency, treat dispensing accuracy and jam frequency, alert accuracy for barking and activity detection, and app responsiveness for live viewing and playback. We also assessed privacy features, cloud storage costs, and whether each camera offers local storage alternatives.\n\nThe market splits between dedicated pet cameras with treat dispensers and repurposed security cameras with pet-friendly features. Dedicated pet cameras cost more but deliver pet-specific functionality that generic cameras cannot match. Here are the six cameras that best serve pet owners who want complete peace of mind.",
   "products": [
     {
       "rank": 1,
-      "name": "Furbo 360 Dog Camera",
+      "name": "Furbo 360° Dog Camera Pet Security Cam with Treat Toss",
       "price": "$149",
       "rating": "9.7/10",
       "best_for": "Best Overall",
-      "image": "https://m.media-amazon.com/images/I/41bAj3BKUPL._SL500_.jpg",
-      "link": "https://www.amazon.com/dp/B0CN2YT3BL?tag=compareelite-20",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B09GDQZLD1.01.LZZZZZZZ.jpg",
+      "link": "https://www.amazon.com/dp/B09GDQZLD1?tag=compareelite-20",
       "pros": [
         "360-degree rotating camera with auto-tracking follows your pet around the room as they move",
         "1080p HD video with color night vision and 160-degree wide-angle lens covers entire rooms clearly",
@@ -33,12 +35,12 @@
     },
     {
       "rank": 2,
-      "name": "Petcube Bites 2 Lite Interactive WiFi Pet Camera",
+      "name": "Petcube Bites 2 Lite Interactive WiFi Pet Monitoring Camera",
       "price": "$119",
       "rating": "9.3/10",
       "best_for": "Best Treat Dispenser Value",
-      "image": "https://m.media-amazon.com/images/I/31R1lp3fAaL._SL500_.jpg",
-      "link": "https://www.amazon.com/dp/B0BF15WG6L?tag=compareelite-20",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B08XXKJGKH.01.LZZZZZZZ.jpg",
+      "link": "https://www.amazon.com/dp/B08XXKJGKH?tag=compareelite-20",
       "pros": [
         "1080p HD camera with 160-degree wide angle and 8x digital zoom for close-up pet monitoring",
         "Treat dispenser flings treats up to 6 feet with adjustable distance — compatible with treats up to 1 inch diameter",
@@ -54,12 +56,12 @@
     },
     {
       "rank": 3,
-      "name": "Eufy Pet Camera D605",
+      "name": "eufy Pet Camera 360° View AI Tracking Treat Dispenser",
       "price": "$99",
       "rating": "9.0/10",
       "best_for": "Best Without Subscription",
-      "image": "https://m.media-amazon.com/images/I/31SJH5qhh3L._SL500_.jpg",
-      "link": "https://www.amazon.com/dp/B0CN3BCB1Y?tag=compareelite-20",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B099JYHTL5.01.LZZZZZZZ.jpg",
+      "link": "https://www.amazon.com/dp/B099JYHTL5?tag=compareelite-20",
       "pros": [
         "No monthly subscription required — all AI detection features, cloud clips, and activity alerts included free",
         "2K resolution (2304 by 1296) provides noticeably sharper detail than 1080p competitors",
@@ -75,12 +77,12 @@
     },
     {
       "rank": 4,
-      "name": "Wyze Cam Pan v3 with Treat Dispenser",
+      "name": "WYZE Cam Pan v3 Indoor/Outdoor 1080p Pan/Tilt/Zoom Camera",
       "price": "$55",
       "rating": "8.8/10",
       "best_for": "Best Budget with Pan/Tilt",
-      "image": "https://m.media-amazon.com/images/I/31NX-gTm9KL._SL500_.jpg",
-      "link": "https://www.amazon.com/dp/B0BW6164ZP?tag=compareelite-20",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B0B9TWY11Q.01.LZZZZZZZ.jpg",
+      "link": "https://www.amazon.com/dp/B0B9TWY11Q?tag=compareelite-20",
       "pros": [
         "360-degree horizontal pan and 93-degree vertical tilt with motion tracking covers every corner of a room",
         "1080p color night vision using a starlight sensor provides usable color footage in near-darkness",
@@ -96,12 +98,12 @@
     },
     {
       "rank": 5,
-      "name": "Pawbo Life Pet Camera",
+      "name": "Pawbo Life Pet Camera WiFi HD Video with Treat Dispenser",
       "price": "$89",
       "rating": "8.5/10",
       "best_for": "Best for Cats",
-      "image": "https://m.media-amazon.com/images/I/31p7xCEoTNL._SL500_.jpg",
-      "link": "https://www.amazon.com/dp/B01E1W7WMU?tag=compareelite-20",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B06XPSGS4W.01.LZZZZZZZ.jpg",
+      "link": "https://www.amazon.com/dp/B06XPSGS4W?tag=compareelite-20",
       "pros": [
         "Built-in laser pointer controllable from the app provides interactive playtime for cats remotely",
         "720p video with 130-degree wide angle and two-way audio for voice interaction with pets",
@@ -117,12 +119,12 @@
     },
     {
       "rank": 6,
-      "name": "YI Pet Camera with Treat Dispenser",
+      "name": "YI Pet Security Camera 360-Degree Smart Indoor Dog Cat Cam",
       "price": "$45",
       "rating": "8.2/10",
       "best_for": "Best Budget Treat Camera",
-      "image": "https://m.media-amazon.com/images/I/31CYsm7JL3L._SL500_.jpg",
-      "link": "https://www.amazon.com/dp/B0CN4JKVKJ?tag=compareelite-20",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B01CW4BN5M.01.LZZZZZZZ.jpg",
+      "link": "https://www.amazon.com/dp/B01CW4BN5M?tag=compareelite-20",
       "pros": [
         "1080p camera with treat dispenser for 45 dollars — lowest price for a treat-enabled pet camera in this roundup",
         "Night vision with 6 infrared LEDs provides clear black-and-white footage up to 30 feet in total darkness",
