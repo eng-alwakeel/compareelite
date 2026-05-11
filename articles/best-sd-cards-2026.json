@@ -7,9 +7,7 @@
   "thumbnail": "https://m.media-amazon.com/images/I/51CgKGfMelL._SL500_.jpg",
   "excerpt": "We benchmarked 18 SD cards for read/write speed, endurance, and reliability. The Samsung PRO Plus leads with 160MB/s write and 10-year warranty.",
   "author": "CompareElite Team",
-  "stats": {
-    "readers": 0
-  },
+  "stats": { "readers": 0 },
   "intro": "SD cards remain the primary storage medium for cameras, drones, dashcams, Nintendo Switch consoles, and single-board computers like the Raspberry Pi. Choosing the wrong card means dropped frames during 4K video recording, buffer overflows that freeze your camera mid-shot, or premature failure that erases thousands of irreplaceable photos. The speed class ratings printed on every card — UHS-I, UHS-II, V30, V60, V90, A1, A2 — create a confusing alphabet soup that obscures the only question that matters: will this card keep up with your device?\n\nWe benchmarked 18 SD and microSD cards using CrystalDiskMark for sequential and random I/O testing, recorded sustained write performance during continuous 4K 60fps capture on a Sony A7 IV, measured real-world file transfer times for a 64GB photo library, and ran endurance testing with 1000 write-erase cycles to evaluate long-term reliability. We also tested temperature resilience at 140 degrees Fahrenheit and impact resistance by dropping loaded cards onto concrete from 5 feet.\n\nThe best cards combine high sustained write speeds for video recording, fast read speeds for file transfers, and proven reliability backed by meaningful warranty coverage. Here are the six cards that stood out across our testing, ranked by overall performance score.",
   "products": [
     {
@@ -188,18 +186,5 @@
     }
   ],
   "verdict": "The Samsung PRO Plus 256GB at 34 dollars is our top pick — it delivers 160MB/s read and 120MB/s sustained write speeds with V30 rating, a 10-year warranty, and IP-rated durability across water, temperature, X-ray, and magnetic exposure. It handles everything from 4K drone footage to burst photography without compromises. For photographers who want the fastest possible UHS-I speeds, the SanDisk Extreme PRO 256GB at 30 dollars edges ahead on read speed at 200MB/s and includes data recovery software. Budget buyers cannot beat the SanDisk Ultra microSD 256GB at 18 dollars — sufficient speed for phones, Switch, and 1080p dashcams at 7 cents per gigabyte.",
-  "related_articles": [
-    {
-      "slug": "best-drones-2026",
-      "title": "Best Drones 2026: Tested & Ranked"
-    },
-    {
-      "slug": "best-ergonomic-vertical-mice-2026",
-      "title": "Best Ergonomic Vertical Mice 2026: Tested & Ranked"
-    },
-    {
-      "slug": "best-fitness-trackers-2026",
-      "title": "Best Fitness Trackers of 2026: Top Bands Tested & Ranked"
-    }
-  ]
+  "related_articles": []
 }

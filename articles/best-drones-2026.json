@@ -7,9 +7,7 @@
   "thumbnail": "https://m.media-amazon.com/images/I/41VnSAKiTjL._SL500_.jpg",
   "excerpt": "We tested the top consumer drones of 2026 for camera quality, flight time, and obstacle avoidance. The DJI Mini 4 Pro leads with 4K HDR video.",
   "author": "CompareElite Team",
-  "stats": {
-    "readers": 0
-  },
+  "stats": { "readers": 0 },
   "intro": "Consumer drones have evolved from expensive hobbyist gadgets into accessible, feature-packed aerial cameras that nearly anyone can fly. The latest models pack 4K HDR video, omnidirectional obstacle sensing, intelligent flight modes, and 30-plus-minute battery life into packages that weigh under 249 grams. Whether you want cinematic travel footage, real estate photography, or the adrenaline rush of first-person-view racing, there is a drone built for your use case and budget in 2026.\n\nWe spent over 120 hours testing 14 drones across desert, coastal, and urban environments. We measured actual flight times against manufacturer claims, stress-tested obstacle avoidance systems by flying toward trees and buildings at varying speeds, evaluated camera stabilization in 20-mph crosswinds, and compared transmission range in open fields versus signal-dense neighborhoods. We also factored in FAA regulations, since any drone over 249 grams requires registration and Remote ID compliance.\n\nThe results revealed clear winners at every price tier. DJI continues to dominate camera drones with its Mini and Air lines, but competitors like Potensic and Holy Stone now offer surprisingly capable alternatives under 300 dollars. Below are the six drones that earned our recommendation after real-world testing, ranked by overall performance score.",
   "products": [
     {
@@ -188,18 +186,5 @@
     }
   ],
   "verdict": "The DJI Mini 4 Pro earns our top recommendation at 759 dollars — it delivers 4K HDR video, omnidirectional obstacle avoidance, and 34-minute flight time in a 249-gram body that avoids FAA registration. No other drone in this weight class matches its combination of camera quality, safety features, and portability. For photographers and videographers who need maximum image quality and flight endurance, the DJI Air 3 at 1,099 dollars offers a dual-camera system and 46-minute battery life that justifies the premium. Budget buyers should look at the Potensic Atom SE at 239 dollars, which provides a 3-axis gimbal and sub-250-gram weight at roughly one-third the DJI price.",
-  "related_articles": [
-    {
-      "slug": "best-ergonomic-vertical-mice-2026",
-      "title": "Best Ergonomic Vertical Mice 2026: Tested & Ranked"
-    },
-    {
-      "slug": "best-fitness-trackers-2026",
-      "title": "Best Fitness Trackers of 2026: Top Bands Tested & Ranked"
-    },
-    {
-      "slug": "best-gaming-chairs-2026",
-      "title": "Best Gaming Chairs of 2026: Top 6 Picks Tested & Ranked"
-    }
-  ]
+  "related_articles": []
 }

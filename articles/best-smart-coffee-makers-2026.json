@@ -170,18 +170,5 @@
       "a": "Connecting a smart coffee maker to Alexa or Google Home typically requires three steps. First, set up the coffee maker's own companion app — download the brand's app (Hamilton Beach app, De'Longhi Coffee Link, Wemo app for Mr. Coffee), create an account, and connect the machine to your Wi-Fi network by following the in-app pairing process. Second, enable the coffee maker's Skill (Alexa) or Action (Google Home) in your smart speaker's app: in the Alexa app, go to Skills & Games and search for your coffee maker brand; in Google Home, tap Add and search for the compatible service. Third, link accounts by signing into your coffee maker app account when prompted during Skill setup — this connects your smart speaker to your specific machine. Once linked, discover devices (say 'Alexa, discover devices') and your coffee maker should appear as a controllable device. Troubleshooting tips: ensure the machine's firmware is updated before pairing, confirm both apps are logged into the same account, and restart the coffee maker if it doesn't appear during device discovery. Most setups complete in under 10 minutes."
     }
   ],
-  "related_articles": [
-    {
-      "slug": "smart-thermostats-energy-savings-2026",
-      "title": "Smart Thermostats for Energy Savings 2026: ROI & Payback Analysis"
-    },
-    {
-      "slug": "best-smart-water-filters-2026",
-      "title": "Best Smart Water Filters of 2026: Tested & Ranked"
-    },
-    {
-      "slug": "best-smart-thermostats-2026",
-      "title": "Best Smart Thermostats 2026: Top 6 Picks Tested & Ranked"
-    }
-  ]
+  "related_articles": []
 }

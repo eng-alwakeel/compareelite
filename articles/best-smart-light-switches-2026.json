@@ -50,12 +50,12 @@
     },
     {
       "rank": 3,
-      "name": "Leviton Decora Smart Wi-Fi 2nd Gen Switch D215S, No Hub",
-      "price": "$35",
+      "name": "Leviton Decora Smart Wi-Fi Switch D215S, No Hub Required",
+      "price": "$29.99",
       "rating": "8.8/10",
       "best_for": "Best No-Hub Wi-Fi Switch",
       "image": "https://m.media-amazon.com/images/I/61YQMczFoKL._SL500_.jpg",
-      "link": "https://www.amazon.com/dp/B08GN8VK9D?tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B0BVKZLT3B?tag=compareelite-20",
       "pros": [
         "Second-generation Wi-Fi chipset connects to 2.4 GHz and 5 GHz dual-band routers without a hub, resolving the 2.4 GHz congestion issues common with first-generation Wi-Fi switches.",
         "Decora-style rocker design matches standard Leviton outlet and switch plates already installed in millions of US homes, eliminating the need to replace wall plates after installation.",
@@ -111,7 +111,7 @@
       "image": "https://m.media-amazon.com/images/I/61RBNRmBNJL._SL500_.jpg",
       "link": "https://www.amazon.com/dp/B07Z13GNL3?tag=compareelite-20",
       "pros": [
-        "At $18, the Treatlife is the most affordable smart switch in this roundup by $4, and it works without a neutral wire — a rare combination that makes it ideal for budget-conscious buyers in older homes.",
+        "At $18, the Treatlife is the lowest-cost smart switch in this roundup by $4, and it works without a neutral wire — a rare combination that makes it ideal for budget-conscious buyers in older homes.",
         "Pairs with the Smart Life and Tuya apps, which are compatible with Alexa, Google Home, and SmartThings, and also support Home Assistant via the Tuya integration without cloud dependency.",
         "The rocker-style paddle matches standard Decora plates and the switch ships with a matching white wall plate, reducing the out-of-pocket cost for a full swap."
       ],
@@ -169,19 +169,6 @@
       "a": "All six switches in this roundup retain full physical wall operation during an internet outage — pressing the rocker or paddle on the switch always toggles the light on and off, regardless of internet connectivity. What you lose varies by switch type. Wi-Fi switches like the Kasa HS200, Leviton D215S, and GE Cync lose app control and voice control during internet outages because both depend on the manufacturer's cloud servers relaying commands. Schedules stored on the cloud also stop executing. The Lutron Caseta is the exception — all scheduling and Smart Bridge logic runs locally, so automations continue working during internet outages even though the app's remote control (outside your local network) is unavailable. For Home Assistant users, Kasa switches accessed via the python-kasa local API retain full app control within the local network even during internet outages. If internet reliability is a concern — for example, automating outdoor lights or security lighting that must work regardless of ISP status — the Lutron Caseta's local processing or a Kasa switch with Home Assistant local control are the most resilient choices in this roundup."
     }
   ],
-  "verdict": "The Kasa Smart HS200 at $22 is the best overall smart light switch for 2026 — it installs in 15 minutes, needs no hub, and works with Alexa and Google Home out of the box at the lowest price of any reliable switch. For buyers who want true Apple HomeKit support and the fastest, most reliable response times, the Lutron Caseta PD-6ANS at $64 (plus an $80 bridge) is the premium pick with no equal in this category.",
-  "related_articles": [
-    {
-      "slug": "best-smart-light-bulbs-2026",
-      "title": "Best Smart Light Bulbs 2026"
-    },
-    {
-      "slug": "best-smart-air-conditioners-2026",
-      "title": "Best Smart Air Conditioners 2026"
-    },
-    {
-      "slug": "best-smart-baby-monitors-2026",
-      "title": "Best Smart Baby Monitors 2026"
-    }
-  ]
+  "verdict": "The Kasa Smart HS200 earns our overall best pick — no hub required, direct Wi-Fi connection, Alexa and Google Home compatibility out of the box, and Kasa's polished app with flexible scheduling make it the simplest smart switch upgrade for homes with neutral wires. For dimmer switches with superior reliability and lag-free response, the Lutron Caseta with SmartBridge hub is the gold standard — its radio protocol communicates independently of Wi-Fi congestion, and the included Pico remote works from anywhere in the room. Older homes without neutral wires at the switch box should choose the GE Cync Smart Switch, which operates on existing two-wire installations that most competing switches cannot support. For whole-home automation enthusiasts, Lutron's ecosystem scales most reliably across dozens of switches and shades.",
+  "related_articles": []
 }

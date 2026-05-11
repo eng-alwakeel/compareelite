@@ -98,7 +98,7 @@ If your re-run disagrees with the Editor's pasted output → REJECTED with `evid
 
 #### Group 4 — Content Quality (20 points)
 41. No markdown anywhere — no `**`, `__`, `##`, `\* `, list markers, blockquotes
-42. No vague pros/cons. **Banned phrases (auto-fail if any product uses them):** "great value", "works well", "easy to use", "good quality", "highly recommend", "premium feel", "well-built", "feels solid", "long battery", "great sound", "affordable"
+42. No banned phrases anywhere in article text. **Banned phrases (auto-fail if found in any product pros/cons, intro, verdict, FAQ answers, or buying guide bodies):** "great value", "works well", "easy to use", "good quality", "highly recommend", "premium feel", "well-built", "feels solid", "long battery", "great sound", "affordable"
 43. Every pro and every con contains at least one number, spec, or measurable detail
 44. No identical pro/con sentence repeated across two different products
 45. `intro` is plain text only

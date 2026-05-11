@@ -7,9 +7,7 @@
   "thumbnail": "https://m.media-amazon.com/images/I/71S8c8-VxRL._SL500_.jpg",
   "excerpt": "Smart pet feeders dispense meals on your schedule so your pet eats on time every day. We tested 6 top models on portion accuracy, app reliability, and jam rate.",
   "author": "CompareElite Team",
-  "stats": {
-    "readers": 0
-  },
+  "stats": { "readers": 0 },
   "intro": "Smart automatic pet feeders have evolved from simple timed kibble dispensers into genuinely intelligent feeding systems with HD cameras, two-way audio, portion-accurate dispensing, and app control from anywhere in the world. In 2026, the best models can dispense meals as small as 1 teaspoon with accuracy within plus or minus 1 gram, send you a push notification when your pet has eaten, and even alert you if the bowl runs dry or the hopper is nearly empty. For pet owners who travel, work long hours, or need to regulate a pet's diet on veterinary advice, a reliable smart feeder is one of the highest-value smart home investments available.\n\nOur evaluation covered seven criteria: portion accuracy across 30 dispense cycles at three different portion sizes, hopper jam frequency with two kibble types (small 5mm and large 12mm pieces), app reliability on both iOS and Android, camera quality for models with integrated cameras, noise level during dispensing, hopper capacity in cups, and battery backup behavior during power outages. We tested each feeder with Royal Canin medium kibble and Hill's Science Diet large-breed kibble to expose any size-related jamming tendencies.\n\nThis guide covers six of the best smart pet feeders available on Amazon in 2026, ranging from the $60 WOPET Smart Feeder for budget-conscious pet owners to the $170 PETLIBRO Granary Camera Edition for those who want to watch their pet eat from anywhere. Each pick includes real-world performance data, honest limitations, and direct Amazon links.",
   "products": [
     {
@@ -170,18 +168,5 @@
     }
   ],
   "verdict": "The PETLIBRO Granary Camera Edition at $170 is the best overall smart pet feeder for 2026 — its plus or minus 2 gram portion accuracy, 1080p camera, two-way audio, and 15-day battery backup set the standard for this category. For buyers who want reliable scheduled feeding without the camera, the PetSafe Smart Feed at $149 offers the largest 24-cup hopper and a 4.4-star app rating. Budget shoppers should consider the WOPET at $60, which delivers solid scheduling and Alexa control at less than half the price.",
-  "related_articles": [
-    {
-      "slug": "best-smart-pet-cameras-2026",
-      "title": "Best Smart Pet Cameras 2026: Tested & Ranked"
-    },
-    {
-      "slug": "best-smart-air-conditioners-2026",
-      "title": "Best Smart Air Conditioners 2026"
-    },
-    {
-      "slug": "best-smart-baby-monitors-2026",
-      "title": "Best Smart Baby Monitors 2026"
-    }
-  ]
+  "related_articles": []
 }

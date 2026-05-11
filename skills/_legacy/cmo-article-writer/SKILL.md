@@ -530,6 +530,8 @@ AI search engines (ChatGPT, Gemini, Perplexity) cite articles that provide struc
 - Never say "affordable" → say "under $100" or give the exact price
 - Never say "high quality" → name the material, spec, or certification (e.g. "aircraft-grade aluminum", "IPX7 waterproof", "MIL-SPEC drop tested")
 - Never say "easy to use" → say "setup takes under 3 minutes with no app required"
+- Never say "great value" → say "costs 30% less than competitors" or cite a specific price-to-feature comparison
+- Never say "premium feel" → name the material or finish (e.g. "anodized aluminum chassis", "soft-touch silicone grip")
 
 ---
 

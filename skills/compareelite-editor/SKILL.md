@@ -106,7 +106,7 @@ Use this exact JSON structure:
 ```
 
 ### RULE 5 — CONTENT QUALITY
-- Every `pros` / `cons` entry: a complete sentence with a measurable number or spec. Reject your own draft if you used vague phrases like "great value", "works well", "easy to use", "good quality", "highly recommend".
+- Every `pros` / `cons` entry: a complete sentence with a measurable number or spec. **Banned phrases (auto-fail if found in any product pros/cons, intro, verdict, FAQ answers, or buying guide bodies):** "great value", "works well", "easy to use", "good quality", "highly recommend", "premium feel", "well-built", "feels solid", "long battery", "great sound", "affordable". Reject your own draft if you used any of these.
 - Every FAQ answer: ≥ 140 words.
 - Every `buying_guide.body`: ≥ 140 words.
 - NO markdown anywhere — no `**bold**`, no `#headers`, no `*italic*`. Plain text only.

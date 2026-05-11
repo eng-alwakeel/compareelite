@@ -271,7 +271,7 @@ If `related_articles` IS present, run all checks below:
 
 | # | Check | Rule |
 |---|---|---|
-| 72 | No vague language in pros | Reject: "long battery", "great sound", "easy to use", "affordable", "high quality". Require: "70-hour battery", "class-leading ANC", "3-minute setup", "under $100", "aircraft-grade aluminum" |
+| 72 | No banned phrases in pros/cons, intro, verdict, FAQ, or buying guide | Reject: "great value", "works well", "easy to use", "good quality", "highly recommend", "premium feel", "well-built", "feels solid", "long battery", "great sound", "affordable". Require specifics: "70-hour battery", "class-leading ANC", "3-minute setup", "under $100", "aircraft-grade aluminum" |
 | 73 | Word count across all text fields | Count words in: `intro` + all `pros` + all `cons` + all `buying_guide.body` + all `faq.a` + `verdict`. Must be ≥ 2000 words. Target ≥ 2500 words. |
 | 74 | No duplicate product names | All product names in `products` must be unique |
 | 75 | JSON is valid | No syntax errors, no trailing commas, all strings properly quoted |

@@ -31,7 +31,7 @@
       "price": "$59.99",
       "rating": "9.3/10",
       "best_for": "Best for Xbox and PC",
-      "image": "https://m.media-amazon.com/images/I/61YNiiJizXL._SL500_.jpg",
+      "image": "https://m.media-amazon.com/images/I/71ZJsTMRpIL._AC_SL1500_.jpg",
       "link": "https://www.amazon.com/dp/B08DF248LD?tag=compareelite-20",
       "pros": [
         "Universally compatible: Xbox, PC, Android, iOS via Bluetooth",
@@ -170,18 +170,5 @@
       "a": "Fighting game control preference divides between three input devices: traditional controllers, arcade fight sticks, and hitboxes (all-button layouts). For traditional controllers, the DualSense and Xbox Wireless Controller both work well for fighting games, with some players preferring the symmetric DualSense D-pad position for motion input execution. Dedicated fight sticks (Hori Fighting Commander, Mad Catz Tournament Edition) provide arcade-style joystick and button layout that many tournament players prefer for their precision and the muscle memory transfer from arcade cabinets. Hitbox-style all-button controllers (no analog stick — WASD-style buttons for movement) are increasingly popular in competitive scenes because they allow faster input execution than joysticks for certain motion sequences. For casual fighting game play, any quality controller works. For competitive Street Fighter, Tekken, or Mortal Kombat play, fight stick or hitbox controllers are worth exploring — they have significant learning curves but many competitive players find the precision advantages meaningful once the technique is mastered."
     }
   ],
-  "related_articles": [
-    {
-      "slug": "best-gaming-chairs-2026",
-      "title": "Best Gaming Chairs of 2026: Top 6 Picks Tested & Ranked"
-    },
-    {
-      "slug": "best-gaming-headsets-2026",
-      "title": "Best Gaming Headsets of 2026"
-    },
-    {
-      "slug": "best-gaming-keyboards-2026",
-      "title": "Best Gaming Keyboards 2026"
-    }
-  ]
+  "related_articles": []
 }
