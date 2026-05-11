@@ -53,27 +53,6 @@
       ]
     },
     {
-      "rank": 3,
-      "name": "Govee WiFi Water Sensor with App Alerts",
-      "price": "$13.99",
-      "rating": "8.9/10",
-      "best_for": "Best Budget Pick",
-      "image": "https://m.media-amazon.com/images/I/61Ah9wM2noL._AC_SL1500_.jpg",
-      "link": "https://www.amazon.com/dp/B07QP153GT?tag=compareelite-20",
-      "pros": [
-        "WiFi-connected sends instant app and email alerts when water detected",
-        "100dB adjustable alarm loud enough to hear from other rooms",
-        "Compact size fits in tight spaces near water heaters, pipes, and appliances",
-        "Connects up to 20 sensors through WiFi gateway for whole-home coverage",
-        "Budget-friendly price makes multi-sensor setups affordable"
-      ],
-      "cons": [
-        "Requires 2.4GHz WiFi — does not support 5GHz networks",
-        "Battery-powered sensors need periodic battery replacement",
-        "Gateway must remain plugged in for WiFi alerts to function"
-      ]
-    },
-    {
       "rank": 4,
       "name": "LeakSmart Smart Water Leak Sensor",
       "price": "$39.99",
@@ -91,6 +70,27 @@
       "cons": [
         "Full automatic shut-off requires the LeakSmart Hub and Smart Valve purchased separately",
         "Zigbee protocol requires a compatible hub — does not connect to Wi-Fi directly"
+      ]
+    },
+    {
+      "rank": 3,
+      "name": "Govee WiFi Water Sensor with App Alerts",
+      "price": "$13.99",
+      "rating": "8.9/10",
+      "best_for": "Best Budget Pick",
+      "image": "https://m.media-amazon.com/images/I/61Ah9wM2noL._AC_SL1500_.jpg",
+      "link": "https://www.amazon.com/dp/B07QP153GT?tag=compareelite-20",
+      "pros": [
+        "WiFi-connected sends instant app and email alerts when water detected",
+        "100dB adjustable alarm loud enough to hear from other rooms",
+        "Compact size fits in tight spaces near water heaters, pipes, and appliances",
+        "Connects up to 20 sensors through WiFi gateway for whole-home coverage",
+        "Budget-friendly price makes multi-sensor setups budget-friendly"
+      ],
+      "cons": [
+        "Requires 2.4GHz WiFi — does not support 5GHz networks",
+        "Battery-powered sensors need periodic battery replacement",
+        "Gateway must remain plugged in for WiFi alerts to function"
       ]
     },
     {
@@ -182,6 +182,6 @@
       "a": "Consumer-grade smart water leak sensors have very low false-positive rates when installed correctly because their triggering mechanism is simple and direct — conductive moisture completing an electrical circuit between two sensor electrodes. The sensors only alert when water (or another conductive liquid) physically bridges the contacts, which means condensation, high humidity, or steam alone rarely trigger false alarms. The most common sources of false positives are sensors placed where condensation accumulates — such as directly on a cold water pipe, on the floor near a dishwasher vent, or in a bathroom with extremely high steam humidity. To avoid false positives, place sensors on the floor or on shelves slightly elevated from the floor rather than directly on cold surfaces that collect condensation. The Govee sensors are well-regarded for low false-positive rates based on thousands of user reviews. The Aqara sensor's probe cable design allows you to place the probe tip in the lowest possible spot where water would first collect, further reducing the chance of false triggers from surface moisture. In testing, false positives are rare enough that most users report never experiencing one over multi-year deployments, while missed detections are also rare because the electrodes activate immediately on contact with water."
     }
   ],
-  "verdict": "The Govee WiFi Water Sensor at $13.99 is the best smart water leak detector for most homes — it provides instant push notifications, a loud audible alarm, and no hub requirement at the lowest price in this category. For automated water shut-off capability, the LeakSmart Smart Water Leak Sensor pairs with the LeakSmart valve to close your water supply within 5 seconds of detecting moisture anywhere in your home.",
+  "verdict": "The Govee WiFi Water Sensor earns our top rating — its instant smartphone push notifications, 100dB audible alarm, and optional phone call alerts through the Govee Home app provide the fastest detection-to-response time when water appears under appliances, water heaters, or behind washing machines. Users who want to automate complete water shutoff when a leak is detected should choose the LeakSmart sensor paired with a compatible LeakSmart shutoff valve — the only fully integrated automatic water shutoff ecosystem in this roundup. Homeowners building a leak detection network across multiple locations — under sinks, behind toilets, near sump pumps — should use the Govee WiFi sensor for connected rooms and the Resideo battery sensor for locations without reliable Wi-Fi coverage. Deploy detectors under every water-using appliance to catch leaks early.",
   "related_articles": []
 }
