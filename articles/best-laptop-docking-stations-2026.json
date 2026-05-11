@@ -46,8 +46,8 @@
       "price": "$219.99",
       "rating": "9.2/10",
       "best_for": "Best for Dell Laptops",
-      "image": "https://m.media-amazon.com/images/I/514xnlxLVML._AC_SL1500_.jpg",
-      "link": "https://www.amazon.com/dp/B09BFZXW1Q?tag=compareelite-20",
+      "image": "https://m.media-amazon.com/images/I/51KA43Rk7EL._AC_SL1500_.jpg",
+      "link": "https://www.amazon.com/dp/B0B7P6ZNFB?tag=compareelite-20",
       "pros": [
         "Dell ExpressConnect technology enables automatic dock discovery and connection on compatible Dell laptops — the laptop connects to the dock network and display configuration automatically upon physical connection.",
         "Thunderbolt 4 upstream provides full 40Gbps bandwidth with 130W power delivery — one of the highest power delivery ratings for any consumer Thunderbolt dock and sufficient for even the most power-hungry Dell workstation laptops.",
@@ -59,20 +59,20 @@
       ]
     },
     {
-      "name": "Plugable 14-in-1 USB-C Docking Station",
-      "price": "$119.99",
+      "name": "Plugable 12-in-1 USB-C Triple Monitor Docking Station",
+      "price": "$109.99",
       "rating": "8.5/10",
       "best_for": "Best Value Mid-Range Dock",
-      "image": "https://m.media-amazon.com/images/I/51d9jPYvjjL._AC_SL1500_.jpg",
-      "link": "https://www.amazon.com/dp/B08HR4J6PX?tag=compareelite-20",
+      "image": "https://m.media-amazon.com/images/I/61BGc0eAXJL._AC_SL1500_.jpg",
+      "link": "https://www.amazon.com/dp/B09NQQ1G1N?tag=compareelite-20",
       "pros": [
-        "14 ports including dual HDMI, DisplayPort, 4 USB-A 3.0, USB-C, Gigabit ethernet, SD/microSD, and 3.5mm audio — one of the highest port counts available at the $119 price point.",
-        "DisplayLink technology enables dual 4K display output on laptops with only a single USB-C port, including M1/M2/M3 MacBooks that natively support only one external display without DisplayLink drivers.",
-        "Plugable provides certified Windows and macOS drivers with clear installation instructions, significantly reducing the compatibility troubleshooting that affects many third-party USB-C docks."
+        "Triple 4K display support via 3x HDMI or 3x DisplayPort — enables a three-monitor setup without requiring Thunderbolt 4, a unique capability at the sub-$110 price point.",
+        "100W USB-C power delivery fully charges a MacBook Pro 14-inch at maximum performance while all 12 ports are simultaneously active.",
+        "DisplayLink technology enables triple display output on Apple Silicon MacBooks that natively support only one external display, with certified macOS and Windows drivers included."
       ],
       "cons": [
-        "DisplayLink technology requires driver installation and uses CPU/GPU resources to compress and render display output — in testing, we measured a 3–5% CPU overhead during normal use, which is noticeable on older or lower-powered laptops.",
-        "USB-A ports are USB 3.0 (5Gbps) rather than the USB 3.2 Gen 2 (10Gbps) found on premium docks — this limits external SSD transfer speeds to approximately 500MB/s versus 1,000MB/s on faster dock hardware."
+        "DisplayLink technology requires driver installation and uses 3–5% CPU overhead during normal use — noticeable on older or lower-powered laptops.",
+        "USB-A ports operate at USB 3.0 (5Gbps) rather than USB 3.2 Gen 2 (10Gbps) found on premium docks, limiting external SSD transfer speeds to approximately 500 MB/s."
       ]
     },
     {

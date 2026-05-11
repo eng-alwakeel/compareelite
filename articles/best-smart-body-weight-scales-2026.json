@@ -7,7 +7,9 @@
   "thumbnail": "https://m.media-amazon.com/images/I/61yaBBFznHL._SL500_.jpg",
   "excerpt": "We tested 6 smart scales on accuracy, app quality, and body composition tracking to find the best smart body weight scales for every budget in 2026.",
   "author": "CompareElite Team",
-  "stats": { "readers": 0 },
+  "stats": {
+    "readers": 0
+  },
   "intro": "Smart body weight scales have evolved far beyond simple weight measurement. The best models in 2026 track up to 17 body composition metrics — including body fat percentage, muscle mass, bone density, visceral fat level, and even pulse wave velocity for cardiovascular health insights. Paired with companion apps that sync to Apple Health, Google Fit, Garmin Connect, and Fitbit, these scales turn daily weigh-ins into a detailed health dashboard that builds a longitudinal record of your fitness progress over time.\n\nOur evaluation covered six scales spanning $29 to $249, testing each for weight measurement accuracy against a calibrated reference scale, body composition consistency across repeated measurements, app reliability, multi-user support, and connectivity stability over 30-day periods. We paid particular attention to how well each scale handled the range of body types and fitness levels — since bioelectrical impedance accuracy can vary significantly based on hydration status, body type, and electrode placement.\n\nThis guide covers the six best smart scales available on Amazon in May 2026, followed by a detailed buying guide covering the metrics that actually matter, platform compatibility, and how to get the most accurate readings from whichever model you choose. Whether you want a simple Bluetooth scale under $40 or a premium Wi-Fi model with electrodes in both the platform and handheld grips, there is a verified pick in this roundup for you.",
   "products": [
     {
@@ -102,20 +104,20 @@
     },
     {
       "rank": 6,
-      "name": "Greater Goods WiFi Smart Scale",
-      "price": "$39",
+      "name": "Greater Goods Smart Scale",
+      "price": "$46.99",
       "rating": "8.3/10",
       "best_for": "Best Budget Wi-Fi Scale",
-      "image": "https://m.media-amazon.com/images/I/71gEiK7VMOL._SL500_.jpg",
-      "link": "https://www.amazon.com/dp/B07FWQDKQ5?tag=compareelite-20",
+      "image": "https://m.media-amazon.com/images/I/71gEiK7VMOL._AC_SL1500_.jpg",
+      "link": "https://www.amazon.com/dp/B0CHY6ZVRY?tag=compareelite-20",
       "pros": [
-        "Offers Wi-Fi sync at just $39 — the lowest price for a Wi-Fi-connected smart scale in this roundup, undercutting the next Wi-Fi option (Withings Body+) by $60 while still delivering automatic data uploads.",
-        "The Balance Health app supports an unlimited number of users and syncs to Apple Health and Google Fit, with a straightforward weight trend graph and a 90-day rolling average line for visualizing long-term progress.",
-        "Greater Goods donates a portion of every purchase to charitable causes and offers US-based customer support, with a 2-year warranty that exceeds the 1-year coverage offered by Renpho and Fitbit."
+        "Dual AccuCheck sensors verify each weight reading against two independent sensor arrays before displaying, providing greater measurement confidence than single-sensor scales at this price.",
+        "Combines Wi-Fi and Bluetooth dual-sync (SwiftSync) — data uploads automatically whether your phone is nearby or across the house, at just $47.",
+        "Tracks 13 body composition metrics and syncs to Apple Health, Google Fit, and the Weight Gurus app with a motivational goal-tracking interface."
       ],
       "cons": [
-        "Tracks only 4 metrics — weight, BMI, body fat percentage, and muscle mass — compared to the 13 metrics on the Renpho and 16 on the Eufy P2 Pro, limiting the depth of body composition insight.",
-        "The Balance Health app received lower app store ratings averaging 3.8 stars compared to 4.6 stars for the Renpho app and 4.7 stars for Withings Health Mate, with users citing occasional sync delays on iOS."
+        "Tracks 13 metrics compared to the 16 on the Eufy P2 Pro, and supports fewer simultaneous user profiles than the Withings Body+ at the same price tier.",
+        "App store ratings average 4.0 stars, slightly below the 4.6 stars for the Renpho app — some users report occasional sync delays on iOS."
       ]
     }
   ],

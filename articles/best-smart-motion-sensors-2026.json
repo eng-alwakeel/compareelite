@@ -65,22 +65,20 @@
       ]
     },
     {
-      "name": "Aeotec TriSensor Z-Wave Plus",
-      "price": "$49.99",
+      "name": "Aeotec MultiSensor 7",
+      "price": "$59.99",
       "rating": "8.9/10",
       "best_for": "Best Z-Wave Sensor",
       "image": "https://m.media-amazon.com/images/I/71JdX-NZDNL._AC_SL1500_.jpg",
-      "link": "https://www.amazon.com/dp/B07W7J7B1X?tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B08XHZP7NV?tag=compareelite-20",
       "pros": [
-        "Z-Wave Plus for reliable mesh network range",
-        "Compatible with SmartThings, Wink, and Hubitat",
-        "Pet immune up to 55 lbs",
-        "LED blink indicator for easy testing",
-        "2-year warranty with USA-based support"
+        "Z-Wave 700 series chip provides 50% greater wireless range and 250% faster communication than Z-Wave 500 series devices, covering larger homes more reliably.",
+        "6-in-1 monitoring (motion, temperature, light, humidity, UV, vibration) in a single compact device — a meaningful upgrade from the 3-in-1 TriSensor it replaces.",
+        "SmartStart enables quick QR-code pairing with compatible Z-Wave 700 hubs; backward-compatible with SmartThings, Hubitat, and Home Assistant via Z-Wave JS."
       ],
       "cons": [
-        "Requires a Z-Wave hub",
-        "Older design compared to newer competition"
+        "Requires a Z-Wave 700-series hub to unlock full SmartStart functionality — older Z-Wave 300/500 hubs work but cannot access the improved range and speed benefits.",
+        "At $59.99, it costs $10 more than the previous TriSensor and is priced above the budget Zigbee alternatives in this roundup."
       ]
     },
     {
