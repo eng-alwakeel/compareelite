@@ -50,20 +50,23 @@
     },
     {
       "rank": 3,
-      "name": "Orbit B-Hyve XD Smart Sprinkler Controller 8-Zone",
-      "price": "$129",
+      "name": "Orbit B-hyve XR Smart 8-Zone Sprinkler Controller",
+      "price": "$99.99",
       "rating": "8.7/10",
       "best_for": "Best Value Smart Controller",
-      "image": "https://images-na.ssl-images-amazon.com/images/P/B07C7RJTL3.01._SL500_.jpg",
-      "link": "https://www.amazon.com/dp/B07C7RJTL3?tag=compareelite-20",
+      "image": "https://m.media-amazon.com/images/I/71m6e6tjfcL._AC_SL1500_.jpg",
+      "link": "https://www.amazon.com/dp/B08J2BJSCB?tag=compareelite-20",
       "pros": [
-        "Costs $100 less than the Rachio 3 while offering the same EPA WaterSense certification and 8-zone capacity, making it the best per-zone value for homeowners upgrading a basic time-clock controller.",
-        "Watering-by-weather skip function checks local hourly forecasts and automatically bypasses scheduled cycles when rainfall above 0.1 inches is predicted in the next 24 hours, saving a measurable volume per skipped cycle.",
-        "Physical manual override button on the unit allows zone activation without a smartphone for situations where the app is unavailable or during system troubleshooting and leak detection."
+        "Manages up to 8 irrigation zones with individual scheduling",
+        "WeatherSense automatically adjusts watering based on local forecasts",
+        "Indoor/outdoor rated for flexible installation options",
+        "Works with Alexa and Google Assistant for voice control",
+        "B-hyve app provides remote access and smart watering recommendations"
       ],
       "cons": [
-        "Smart watering algorithm uses a single zip-code weather station rather than hyperlocal sensor data, resulting in less precise skipping decisions compared to the Rachio 3 and occasional over- or under-watering in microclimates that differ from the area weather station.",
-        "Alexa integration supports only on and off commands for individual zones and does not support voice queries for current zone status, schedule information, or water savings reports."
+        "Wi-Fi connectivity can be unreliable in detached garages or sheds",
+        "Advanced scheduling features have a learning curve",
+        "Requires C-wire or transformer for power — not battery operated"
       ]
     },
     {
@@ -169,19 +172,6 @@
       "a": "The Rachio 3 Smart Sprinkler Controller offers the most complete Amazon Alexa integration of any smart irrigation system available in 2026. Through the Rachio Alexa skill, you can ask Alexa to water a specific zone for a set number of minutes, ask whether watering is currently active, pause all watering, or ask Rachio to run its next scheduled cycle immediately. You can also ask for a watering summary that tells you how many minutes each zone ran and the total water volume used if you have a Rachio smart flow meter installed. The Rachio-Alexa integration also supports Alexa Routines, allowing you to include irrigation commands in multi-step automations. For example, an Alexa morning routine can announce the day's weather forecast, check whether watering is scheduled for today, and start the garden zone if the forecast is sunny with no rain expected. The Rain Bird ST8I-WIFI offers Alexa integration through a third-party skill that supports basic zone activation and pause commands but does not support water usage queries or schedule status inquiries. The Orbit B-Hyve supports Alexa for on and off commands only. The Wyze Sprinkler Controller has no Alexa integration as of May 2026. For Alexa-centric smart home users, the Rachio 3 is the clear choice despite its higher price compared to budget alternatives."
     }
   ],
-  "verdict": "The Rachio 3 Smart Sprinkler Controller at $229 for 8 zones is the best smart irrigation system for 2026, delivering EPA WaterSense-certified weather intelligence, native integration with Alexa, Google Home, and Apple HomeKit, and the most refined smartphone app in its category. For homeowners on a budget, the Orbit B-Hyve at $129 provides WaterSense certification and weather skipping at nearly half the cost, making it the best value upgrade from a time-clock controller.",
-  "related_articles": [
-    {
-      "slug": "best-smart-garden-systems-2026",
-      "title": "Best Smart Garden Systems 2026: Tested & Ranked"
-    },
-    {
-      "slug": "best-smart-home-security-systems-2026",
-      "title": "Best Smart Home Security Systems 2026"
-    },
-    {
-      "slug": "best-smart-air-conditioners-2026",
-      "title": "Best Smart Air Conditioners 2026"
-    }
-  ]
+  "verdict": "The Rachio 3 is the best smart sprinkler controller for most homes — its 16-zone capacity, Weather Intelligence Plus that cancels scheduled watering based on local forecast data, and the most polished app experience in this category make it worth the premium for anyone with a multi-zone lawn and garden system. Homeowners with 8 or fewer zones who want the same weather-based skip logic at a lower price should consider the Orbit B-hyve XR, which covers most residential irrigation needs reliably. The RainBird ST8I delivers professional-grade scheduling precision favored by landscapers managing strict zone timing. Basic users who want simple timer replacement with smartphone control should look at the Wyze Sprinkler Controller — the lowest-cost smart irrigation option with effective scheduling and weather skip functionality.",
+  "related_articles": []
 }

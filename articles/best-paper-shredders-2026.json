@@ -7,9 +7,7 @@
   "thumbnail": "https://m.media-amazon.com/images/I/81zSq4HpYGL._AC_SL1500_.jpg",
   "excerpt": "The best paper shredders of 2026 offer micro-cut security, jam-proof motors, and capacities from 8 to 100 sheets. We ranked the top 6 picks for home and office.",
   "author": "CompareElite Team",
-  "stats": {
-    "readers": 0
-  },
+  "stats": { "readers": 0 },
   "intro": "Paper shredders have become a home office essential in 2026, with identity theft and document security concerns driving demand for high-capacity, quiet cross-cut and micro-cut models. The best shredders today handle 8 to 100 sheets per pass, operate with jam-proof motor technology, and automatically stop when the bin is full — features that were once exclusive to commercial machines.\n\nFellowes and Bonsaii dominate the consumer and prosumer segments with models that combine continuous-run capability, auto-reverse jam clearing, and P-4 to P-5 security levels. AmazonBasics offers entry-level micro-cut shredding at a price point accessible to any home office, while the Swingline Stack-and-Shred series lets you load a stack and walk away — the shredder runs automatically without hands-on feeding.\n\nWe evaluated six paper shredders on sheet capacity, security level, continuous run time, noise level, bin volume, jam prevention, and price. Our picks cover every scenario — from the student shredding occasional junk mail to the small business owner destroying sensitive client documents daily.",
   "products": [
     {
@@ -192,18 +190,5 @@
     }
   ],
   "verdict": "The Fellowes Powershred 79Ci at $190 is our top pick, delivering 16-sheet capacity, 100% Jam Proof technology, and 20-minute continuous operation for most home offices. For maximum security at the lowest cost, the Bonsaii EverShred C149-C offers P-5 micro-cut shredding with a 60-minute run time for $100. Power users who need to load and walk away should consider the Swingline Stack-and-Shred 80X at $330, while tight-budget buyers will find the Amazon Basics at $50 hard to beat for occasional shredding needs.",
-  "related_articles": [
-    {
-      "slug": "desk-accessories-productivity-2026",
-      "title": "Best Desk Accessories for Productivity 2026: Tested & Ranked"
-    },
-    {
-      "slug": "best-standing-desks-2026",
-      "title": "Best Standing Desks of 2026: Tested & Ranked"
-    },
-    {
-      "slug": "best-monitor-stands-2026",
-      "title": "Best Monitor Stands of 2026: Top 6 Picks Tested & Ranked"
-    }
-  ]
+  "related_articles": []
 }

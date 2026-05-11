@@ -7,9 +7,7 @@
   "thumbnail": "https://m.media-amazon.com/images/I/71qNgEVfFiL._AC_SL1500_.jpg",
   "excerpt": "Finding the best home office printer in 2026 depends on volume, ink cost, and connectivity. We tested 6 top picks to find the right match for you.",
   "author": "CompareElite Team",
-  "stats": {
-    "readers": 0
-  },
+  "stats": { "readers": 0 },
   "intro": "The home office printer market in 2026 splits cleanly into three camps: low-cost laser for high-volume monochrome printing, EcoTank supertank inkjet for long-term ink savings, and all-in-one inkjets for users who need print, scan, and copy in a single footprint. The right choice depends almost entirely on how many pages you print per month — the economics shift dramatically above 100 pages per month.\n\nInkjet printers remain the dominant choice for home offices printing mixed documents and photos, with printer prices ranging from $60 to $300 and per-page costs of $0.03 to $0.20 depending on ink type. Laser printers have higher upfront costs but per-page costs as low as $0.01 for high-volume monochrome printing — the Brother HL-L2350DW, for example, pays back its premium over a standard inkjet within the first 400 pages.\n\nWe tested the six best home office printers across setup ease, print quality, wireless reliability, running costs, and overall value. Our recommendations cover every budget from $60 to $300 and every use case from occasional printing to daily high-volume output.",
   "products": [
     {
@@ -188,18 +186,5 @@
     }
   ],
   "verdict": "The Brother HL-L2350DW at $120 is our top pick for home offices that primarily print text — its 32 ppm speed and $0.01-per-page toner cost make it the most economical long-term choice. For all-in-one flexibility at any budget, the Canon PIXMA TR4720 at $70 is unbeatable value, while the Epson EcoTank ET-3850 at $300 earns its premium through industry-low ink costs that pay back within the first year for regular color users.",
-  "related_articles": [
-    {
-      "slug": "desk-accessories-productivity-2026",
-      "title": "Best Desk Accessories for Productivity 2026: Tested & Ranked"
-    },
-    {
-      "slug": "best-laptop-stands-2026",
-      "title": "Best Laptop Stands for Home Office 2026"
-    },
-    {
-      "slug": "best-desk-organizers-2026",
-      "title": "Best Desk Organizers for Productivity 2026: Tested & Ranked"
-    }
-  ]
+  "related_articles": []
 }

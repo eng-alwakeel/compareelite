@@ -170,18 +170,5 @@
       "a": "Safely ejecting (unmounting) your external drive before physically disconnecting it prevents data corruption and file system errors that can occur when a drive is disconnected while data is still being written. On Windows: look for the 'Safely Remove Hardware' icon in the system tray (bottom right corner), click it, and select your drive to safely eject. Alternatively, right-click the drive in File Explorer and select 'Eject.' On Mac: drag the drive icon from the desktop to the Trash (which becomes an Eject icon), click the eject button next to the drive in Finder's sidebar, or Control-click the drive and select Eject. After ejecting, the drive's activity light should stop flashing — wait until it stops before disconnecting the cable. Disconnecting a drive without ejecting while files are being written risks partial writes that corrupt files and can damage the file system structure, potentially requiring disk repair tools to fix. Modern operating systems buffer writes, meaning the operating system may not have finished writing data even after you've closed a file — always eject before disconnecting."
     }
   ],
-  "related_articles": [
-    {
-      "slug": "best-bluetooth-speakers-2026",
-      "title": "Best Portable Bluetooth Speakers of 2026"
-    },
-    {
-      "slug": "best-business-laptops-2026",
-      "title": "Best Business Laptops 2026"
-    },
-    {
-      "slug": "best-car-phone-mounts-2026",
-      "title": "Best Car Phone Mounts 2026"
-    }
-  ]
+  "related_articles": []
 }

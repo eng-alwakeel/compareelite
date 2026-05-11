@@ -158,18 +158,5 @@
       "a": "Setting up a smart power strip with Amazon Alexa is a straightforward process that typically takes 5–10 minutes. First, download the strip's companion app — Kasa App for Kasa products, Govee Home for Govee, or Meross App for Meross. Create an account and follow the in-app setup to connect the strip to your home Wi-Fi network, which uses the 2.4GHz band on all products in this roundup. Once the strip appears as connected in its companion app, open the Alexa app on your smartphone and navigate to Devices, then the plus sign, and select Add Device. Choose the appropriate device category and follow the prompts to link your Kasa, Govee, or Meross account to Alexa. After successful linking, individual outlets appear as separately named Alexa devices and can be renamed to descriptive names like Printer, Desk Lamp, or Coffee Maker through the Alexa app. You can then control each outlet with voice commands: 'Alexa, turn off the printer' or include them in routines: 'Alexa, good morning' triggers turning on the coffee maker outlet. The Kasa and Meross strips offer the smoothest Alexa integration with the most reliable command execution in our testing."
     }
   ],
-  "related_articles": [
-    {
-      "slug": "best-power-strips-surge-protectors-2026",
-      "title": "Best Power Strips and Surge Protectors 2026: Tested & Ranked"
-    },
-    {
-      "slug": "best-smart-air-conditioners-2026",
-      "title": "Best Smart Air Conditioners 2026"
-    },
-    {
-      "slug": "best-smart-baby-monitors-2026",
-      "title": "Best Smart Baby Monitors 2026"
-    }
-  ]
+  "related_articles": []
 }

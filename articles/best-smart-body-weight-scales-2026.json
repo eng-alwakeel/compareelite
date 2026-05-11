@@ -57,7 +57,7 @@
       "image": "https://m.media-amazon.com/images/I/61eBGFy7UwL._SL500_.jpg",
       "link": "https://www.amazon.com/dp/B07H2LG2HF?tag=compareelite-20",
       "pros": [
-        "Tracks 13 body composition metrics including body fat, BMI, protein, skeletal muscle, and metabolic age for just $29, making it the most affordable full-featured smart scale in this roundup by a $50 margin.",
+        "Tracks 13 body composition metrics including body fat, BMI, protein, skeletal muscle, and metabolic age for just $29, making it the lowest-cost full-featured smart scale in this roundup by a $50 margin.",
         "The Renpho app supports unlimited user profiles and integrates directly with Apple Health, Google Fit, Samsung Health, and Fitbit, covering the four most common health platform ecosystems.",
         "Weighs up to 396 lbs at 0.2 lb resolution on a 11.8-inch tempered glass platform — one of the highest weight capacities in this price range."
       ],
@@ -104,20 +104,20 @@
     },
     {
       "rank": 6,
-      "name": "Greater Goods WiFi Smart Scale",
-      "price": "$39",
+      "name": "Greater Goods Smart Scale",
+      "price": "$46.99",
       "rating": "8.3/10",
       "best_for": "Best Budget Wi-Fi Scale",
-      "image": "https://m.media-amazon.com/images/I/71gEiK7VMOL._SL500_.jpg",
-      "link": "https://www.amazon.com/dp/B07FWQDKQ5?tag=compareelite-20",
+      "image": "https://m.media-amazon.com/images/I/71gEiK7VMOL._AC_SL1500_.jpg",
+      "link": "https://www.amazon.com/dp/B0CHY6ZVRY?tag=compareelite-20",
       "pros": [
-        "Offers Wi-Fi sync at just $39 — the lowest price for a Wi-Fi-connected smart scale in this roundup, undercutting the next Wi-Fi option (Withings Body+) by $60 while still delivering automatic data uploads.",
-        "The Balance Health app supports an unlimited number of users and syncs to Apple Health and Google Fit, with a straightforward weight trend graph and a 90-day rolling average line for visualizing long-term progress.",
-        "Greater Goods donates a portion of every purchase to charitable causes and offers US-based customer support, with a 2-year warranty that exceeds the 1-year coverage offered by Renpho and Fitbit."
+        "Dual AccuCheck sensors verify each weight reading against two independent sensor arrays before displaying, providing greater measurement confidence than single-sensor scales at this price.",
+        "Combines Wi-Fi and Bluetooth dual-sync (SwiftSync) — data uploads automatically whether your phone is nearby or across the house, at just $47.",
+        "Tracks 13 body composition metrics and syncs to Apple Health, Google Fit, and the Weight Gurus app with a motivational goal-tracking interface."
       ],
       "cons": [
-        "Tracks only 4 metrics — weight, BMI, body fat percentage, and muscle mass — compared to the 13 metrics on the Renpho and 16 on the Eufy P2 Pro, limiting the depth of body composition insight.",
-        "The Balance Health app received lower app store ratings averaging 3.8 stars compared to 4.6 stars for the Renpho app and 4.7 stars for Withings Health Mate, with users citing occasional sync delays on iOS."
+        "Tracks 13 metrics compared to the 16 on the Eufy P2 Pro, and supports fewer simultaneous user profiles than the Withings Body+ at the same price tier.",
+        "App store ratings average 4.0 stars, slightly below the 4.6 stars for the Renpho app — some users report occasional sync delays on iOS."
       ]
     }
   ],
@@ -173,19 +173,6 @@
       "a": "All six scales in this roundup sync to Apple Health, but the Withings Body+ at $99 offers the deepest and most reliable Apple Health integration of any scale in this comparison. Withings was one of the first consumer health device makers to support Apple HealthKit and has maintained that integration for over 10 years, consistently updating its Health Mate app alongside each iOS release. When you step on the Withings Body+, your weight, body fat percentage, lean muscle mass, bone mass, and body water percentage all appear as separate data types in the Apple Health app within seconds of the Wi-Fi sync, and they populate the Health app's trend charts and health summaries automatically. The Renpho app and Eufy Life app also support Apple Health sync reliably and are rated 4.6 and 4.7 stars respectively in the App Store. The Fitbit Aria Air syncs weight and BMI to Apple Health, but body composition data stays in the Fitbit ecosystem only. For iPhone users who want all body composition metrics visible in the native Health app with no additional configuration, the Withings Body+ is the strongest choice available at its $99 price point."
     }
   ],
-  "verdict": "The Withings Body+ at $99 is the best smart scale for most people in 2026 — Wi-Fi sync, 8-user support, and a genuinely excellent Health Mate app with over 100 platform integrations. For users wanting the deepest body composition data, the Eufy Smart Scale P2 Pro at $79 delivers 16 metrics via an 8-electrode system including handheld grips, beating pricier competitors on feature depth. Garmin watch owners should choose the Index S2 at $149 for seamless native Garmin Connect integration.",
-  "related_articles": [
-    {
-      "slug": "best-smart-garage-door-openers-2026",
-      "title": "Best Smart Garage Door Openers 2026: Tested & Ranked"
-    },
-    {
-      "slug": "best-smart-garden-systems-2026",
-      "title": "Best Smart Garden Systems 2026: Tested & Ranked"
-    },
-    {
-      "slug": "best-smart-home-hubs-2026",
-      "title": "Best Smart Home Hubs 2026: Tested & Ranked"
-    }
-  ]
+  "verdict": "The Withings Body+ earns our top pick — it measures weight, body fat percentage, water percentage, and muscle and bone mass, syncs automatically to Apple Health, Google Fit, Fitbit, and Strava without manual logging, and stores data for up to eight users including a pregnancy tracking mode. Athletes training with Garmin devices who want scale data in Garmin Connect should choose the Garmin Index S2. Buyers focused on clinical accuracy over app features should look at the Eufy Smart Scale P2 Pro, which measures 16 body composition metrics through dual-frequency impedance for higher measurement precision than single-frequency alternatives. Budget users who want reliable body composition tracking at the lowest price will find the Renpho scale covers 13 metrics including BMI and body fat at under $30 with full app access.",
+  "related_articles": []
 }

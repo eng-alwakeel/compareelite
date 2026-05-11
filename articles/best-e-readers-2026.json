@@ -170,18 +170,5 @@
       "a": "Standard 6-inch e-readers are adequate for PDFs but have real limitations. The challenge: most PDFs are formatted for 8.5x11 inch or A4 paper, and displaying them on a 6-inch screen either makes text very small or requires zooming and panning that interrupts reading flow. Text-only PDFs can be reflowed (reformatted for screen width) with good results. PDFs with complex layouts, columns, tables, figures, or equations don't reflow well and require the original formatting to be comprehensible. For primarily PDF reading — research papers, textbooks, technical documents, manga — a large-screen device (10+ inch) is the practical solution. The Kindle Scribe at 10.2 inches displays most PDFs at near-full-size without uncomfortable scaling. The Kobo Elipsa 2E at 10.3 inches is the competing option with EPUB support. If PDFs are an occasional need rather than your primary content, a 6-inch e-reader with zoom capability is workable. If PDFs are central to your use case, invest in a large-format device."
     }
   ],
-  "related_articles": [
-    {
-      "slug": "best-bluetooth-speakers-2026",
-      "title": "Best Portable Bluetooth Speakers of 2026"
-    },
-    {
-      "slug": "best-business-laptops-2026",
-      "title": "Best Business Laptops 2026"
-    },
-    {
-      "slug": "best-car-phone-mounts-2026",
-      "title": "Best Car Phone Mounts 2026"
-    }
-  ]
+  "related_articles": []
 }

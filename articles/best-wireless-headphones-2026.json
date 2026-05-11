@@ -7,9 +7,7 @@
   "thumbnail": "https://m.media-amazon.com/images/I/71o8Q5XJS5L._SL500_.jpg",
   "excerpt": "We tested 18 wireless headphones to find the best in 2026. The Sony WH-1000XM5 leads with 30-hour battery and top-tier ANC for most listeners.",
   "author": "CompareElite Team",
-  "stats": {
-    "readers": 0
-  },
+  "stats": { "readers": 0 },
   "intro": "Wireless headphones have become an everyday essential, but the market in 2026 is crowded with options ranging from $50 budget buys to $550 premium flagships. Over six weeks, our team put 18 models through rigorous testing covering sound quality, active noise cancellation effectiveness, call clarity, comfort during 4-hour wear sessions, and battery endurance under real-world use.\n\nThe difference between a good pair and a great pair often comes down to specifics: how well ANC handles low-frequency rumble on a commute, whether the earpads stay comfortable past hour two, and whether the companion app gives meaningful EQ control. We measured ANC attenuation using a calibrated sound meter in a 72 dB ambient environment, tracked actual playback hours at 50% volume, and rated call quality via a standardized listening panel.\n\nWhether you need all-day focus in a loud office, a travel companion for 14-hour flights, or studio-grade sound for critical listening, this guide covers the best wireless headphones across every use case and budget in 2026.",
   "products": [
     {
@@ -164,18 +162,5 @@
     }
   ],
   "verdict": "The Sony WH-1000XM5 at $279.99 is the best wireless headphone for most people in 2026, combining 30-hour battery, class-leading 30 dB ANC attenuation, and 3-minute quick charge in a comfortable build. For call-heavy professionals, the Bose Headphones 700 at $229 offers superior microphone performance with its 11-mic beamforming system. Budget-focused buyers who want premium ANC should consider the Sony WH-1000XM4 at $199.99.",
-  "related_articles": [
-    {
-      "slug": "best-noise-cancelling-headphones-2026",
-      "title": "Best Noise-Cancelling Headphones of 2026: Tested & Ranked"
-    },
-    {
-      "slug": "best-wireless-earbuds-2026",
-      "title": "Best Wireless Earbuds of 2026: Tested & Ranked"
-    },
-    {
-      "slug": "best-gaming-chairs-2026",
-      "title": "Best Gaming Chairs of 2026: Top 6 Picks Tested & Ranked"
-    }
-  ]
+  "related_articles": []
 }

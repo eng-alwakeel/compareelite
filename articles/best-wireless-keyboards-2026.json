@@ -101,7 +101,7 @@
       "rating": "9.0/10",
       "price": "$39.99",
       "best_for": "Best Budget Multi-Device",
-      "image": "https://m.media-amazon.com/images/I/61+U9lMboFL._SL500_.jpg",
+      "image": "https://m.media-amazon.com/images/I/61AmDR0BQFL._AC_SL1500_.jpg",
       "link": "https://www.amazon.com/dp/B0148NPH9I?tag=compareelite-20",
       "pros": [
         "Connects to 3 devices — switches with dedicated keys",
@@ -179,18 +179,5 @@
       "a": "Bluetooth wireless keyboards work with tablets and smartphones that support Bluetooth HID (virtually all modern devices). They're excellent for iPad typing (especially with the Logitech K380 or MX Keys Mini). Some keyboards have layouts optimized for iOS/iPadOS with dedicated media controls. Multi-device keyboards let you type on your phone, then switch to your laptop with one button press. 2.4 GHz dongle keyboards typically only work with devices that have a USB-A or USB-C port and support USB HID — most tablets support this with a USB-C adapter."
     }
   ],
-  "related_articles": [
-    {
-      "slug": "best-ergonomic-keyboards-2026",
-      "title": "Best Ergonomic Keyboards for Home Office 2026"
-    },
-    {
-      "slug": "best-acoustic-panels-2026",
-      "title": "Best Acoustic Panels for Home Office 2026"
-    },
-    {
-      "slug": "best-desk-fans-home-office-2026",
-      "title": "Best Desk Fans for Home Office 2026: Tested & Ranked"
-    }
-  ]
+  "related_articles": []
 }

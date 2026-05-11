@@ -99,19 +99,20 @@
     },
     {
       "rank": 6,
-      "name": "Joby Beamo Ring Light",
-      "price": "$60",
+      "name": "Lume Cube Edge LED Desk Lamp",
+      "price": "$79.99",
       "rating": "8.0/10",
-      "best_for": "Best Portable Option",
-      "image": "https://m.media-amazon.com/images/I/71p6GK4LJZL._SL500_.jpg",
-      "link": "https://www.amazon.com/dp/B08NWBJHFP?tag=compareelite-20",
+      "best_for": "Best Monitor-Clip Option",
+      "image": "https://m.media-amazon.com/images/I/61atknptE+L._AC_SL1500_.jpg",
+      "link": "https://www.amazon.com/dp/B09DKF5ST1?tag=compareelite-20",
       "pros": [
-        "Weighs only 5.6 ounces and folds flat to 7 inches, fitting in a laptop bag for portable use, making it the only ring light in our test capable of being used comfortably at a coffee shop or client office.",
-        "Connects via USB-C and is compatible with any USB-C power bank at 5V/1.5A, providing 2 to 4 hours of operation away from a wall outlet and making it a genuinely flexible portable lighting solution."
+        "Clips to a monitor bezel or desk edge with a strong adjustable swing arm — automatically positions the light at eye level without any floor stand or extra desk footprint.",
+        "Covers color temperatures from 2900K to 6500K with stepless dimming via touch controls on the lamp base, requiring no app or separate remote.",
+        "USB-A powered (5V/2A) and compatible with any USB port on a monitor, computer, or standard USB power adapter — no separate wall outlet required."
       ],
       "cons": [
-        "Maximum output is 400 lumens, which is adequate for close-up video calls at 18 to 24 inches but produces noticeably underlit images in rooms with low ambient light when the subject is more than 3 feet from the light.",
-        "The foldable design creates a physical seam across the ring face that becomes a faint shadow line visible in reflective surfaces such as eyeglasses and polished backgrounds at certain output angles."
+        "The swing arm design requires approximately 8 inches of desk-edge clearance and may interfere with monitor risers on tightly configured dual-monitor setups.",
+        "At 1100 lumens maximum output, it is less bright than the Elgato Key Light's 2800 lumens and becomes insufficient in rooms with strong competing ambient light from large windows."
       ]
     }
   ],
@@ -122,7 +123,7 @@
     },
     {
       "title": "Color Temperature: Matching Your Environment",
-      "body": "Color temperature measured in Kelvin determines whether your on-screen appearance looks warm and approachable or cool and clinical. Video calls benefit from a neutral 4500K to 5000K setting that matches standard office lighting and avoids the orange cast of warmer settings or the harsh blue of full daylight color. Most ring lights offer a range from 3000K warm white to 6000K daylight, which is adequate for all office environments. The Elgato Key Light extends to 7000K at the cool end and 2900K at the warm end, giving it the most flexibility for matching different webcam white balance settings automatically. When buying, choose a light with stepless or at minimum 10-step dimming within the color temperature range, since single-click three-mode lights make finding the precise matching temperature difficult in mixed lighting environments."
+      "body": "Color temperature measured in Kelvin determines whether your on-screen appearance looks warm and approachable or cool and clinical. Video calls benefit from a neutral 4500K to 5000K setting that matches standard office lighting and avoids the orange cast of warmer settings or the harsh blue of full daylight color. Most ring lights offer a range from 3000K warm white to 6000K daylight, which is adequate for all office environments. The Elgato Key Light extends to 7000K at the cool end and 2900K at the warm end, giving it the most flexibility for matching different webcam white balance settings automatically. When buying, choose a light with stepless or at minimum 10-step dimming within the color temperature range, since single-click three-mode lights make finding the precise matching temperature difficult in mixed lighting environments. For skin tone accuracy in content creation, 5500K to 6000K daylight-balanced light matches the color temperature of natural window light and produces the most accurate skin rendering on camera without color correction in post-production."
     },
     {
       "title": "CRI: Why Color Accuracy Matters for Skin Tones",
@@ -164,18 +165,5 @@
     }
   ],
   "verdict": "After eight weeks of testing, the Elgato Key Light earns the top overall position for home office video calls at $199, delivering 2800 lumens of diffused output with CRI 92 and Wi-Fi preset control that no other light in our test matches. For users who want smart app control in a smaller form factor, the Elgato Key Light Air at $99 delivers 1400 lumens with the same Wi-Fi integration as the full Key Light. Budget users should look at the Neewer 18-inch Kit at $55 for a complete ring light setup that outperforms all other lights at this price point. All prices are current as of May 2026.",
-  "related_articles": [
-    {
-      "slug": "best-desk-fans-home-office-2026",
-      "title": "Best Desk Fans for Home Office 2026: Tested & Ranked"
-    },
-    {
-      "slug": "best-filing-cabinets-2026",
-      "title": "Best Filing Cabinets for Home Office 2026: Tested & Ranked"
-    },
-    {
-      "slug": "best-printer-for-home-office-2026",
-      "title": "Best Printer for Home Office 2026: Tested & Ranked"
-    }
-  ]
+  "related_articles": []
 }
