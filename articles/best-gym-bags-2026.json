@@ -25,6 +25,23 @@
       ]
     },
     {
+      "name": "Osprey Daylite Duffel 45 Bag",
+      "price": "$130",
+      "rating": "9.2/10",
+      "best_for": "Best Premium Versatile Gym-to-Travel Bag",
+      "image": "https://m.media-amazon.com/images/I/51hTEgXiCDL._SL500_.jpg",
+      "link": "https://www.amazon.com/dp/B09W2GK3LQ?tag=compareelite-20",
+      "pros": [
+        "The Osprey All Mighty Guarantee covers lifetime repair or replacement for any manufacturing defect or damage sustained during normal use — a lifetime warranty that no other bag in this guide matches and that reflects Osprey's 50-year outdoor equipment manufacturing heritage, making the Daylite Duffel 45 the lowest-risk long-term investment in this guide despite its premium price.",
+        "The convertible backpack straps stow in a dedicated rear zip pocket when not in use, transforming the 45-liter duffel into a hiking or trail running daypack in under 30 seconds — the only bag in this guide with genuine backpack functionality that makes it suitable for gym-to-trail transitions without switching bags.",
+        "The bluesign-approved recycled nylon shell with DWR coating delivers water resistance rated at 1,500mm hydrostatic head pressure — the highest water resistance rating in this guide and sufficient for sustained rain exposure during outdoor training transitions that would saturate the water-resistant polyester shells used by Nike, Adidas, and MIER."
+      ],
+      "cons": [
+        "At $130 the Osprey Daylite Duffel 45 is the most expensive bag in this guide and costs nearly three times as much as the Nike Brasilia 9.5 — the lifetime warranty, backpack convertibility, and superior water resistance justify the premium for frequent travelers and outdoor athletes, but gym-only users who train indoors will not use most of the features that explain the price difference.",
+        "The 45-liter capacity with a single main compartment and two external zip pockets provides less organizational granularity than the MIER Large Gym Bag at one-third the price — athletes who require dedicated pockets for wet gear, shoes, and valuables must use packing cubes or dry bags as organizational inserts, adding cost and weight to the setup."
+      ]
+    },
+    {
       "name": "Under Armour Undeniable 5.0 Duffle Bag",
       "price": "$65",
       "rating": "9.1/10",
@@ -73,23 +90,6 @@
       "cons": [
         "There is no dedicated wet-dry shoe compartment — shoes must go into the main compartment or an exterior side pocket that is too small for anything larger than a size 9 shoe, which means larger-footed athletes and those who train in technical footwear like climbing shoes or cycling shoes have no clean separation between shoes and clothing.",
         "The 42-liter capacity is tight for athletes who carry substantial equipment including training shoes, lifting belt, knee sleeves, foam roller, and a 1-liter water bottle alongside standard clothing — the bag is best suited to minimalist training styles and athletes who access locker room amenities rather than carrying personal towels and grooming supplies."
-      ]
-    },
-    {
-      "name": "Osprey Daylite Duffel 45 Bag",
-      "price": "$130",
-      "rating": "9.2/10",
-      "best_for": "Best Premium Versatile Gym-to-Travel Bag",
-      "image": "https://m.media-amazon.com/images/I/51hTEgXiCDL._SL500_.jpg",
-      "link": "https://www.amazon.com/dp/B09W2GK3LQ?tag=compareelite-20",
-      "pros": [
-        "The Osprey All Mighty Guarantee covers lifetime repair or replacement for any manufacturing defect or damage sustained during normal use — a lifetime warranty that no other bag in this guide matches and that reflects Osprey's 50-year outdoor equipment manufacturing heritage, making the Daylite Duffel 45 the lowest-risk long-term investment in this guide despite its premium price.",
-        "The convertible backpack straps stow in a dedicated rear zip pocket when not in use, transforming the 45-liter duffel into a hiking or trail running daypack in under 30 seconds — the only bag in this guide with genuine backpack functionality that makes it suitable for gym-to-trail transitions without switching bags.",
-        "The bluesign-approved recycled nylon shell with DWR coating delivers water resistance rated at 1,500mm hydrostatic head pressure — the highest water resistance rating in this guide and sufficient for sustained rain exposure during outdoor training transitions that would saturate the water-resistant polyester shells used by Nike, Adidas, and MIER."
-      ],
-      "cons": [
-        "At $130 the Osprey Daylite Duffel 45 is the most expensive bag in this guide and costs nearly three times as much as the Nike Brasilia 9.5 — the lifetime warranty, backpack convertibility, and superior water resistance justify the premium for frequent travelers and outdoor athletes, but gym-only users who train indoors will not use most of the features that explain the price difference.",
-        "The 45-liter capacity with a single main compartment and two external zip pockets provides less organizational granularity than the MIER Large Gym Bag at one-third the price — athletes who require dedicated pockets for wet gear, shoes, and valuables must use packing cubes or dry bags as organizational inserts, adding cost and weight to the setup."
       ]
     },
     {
@@ -158,5 +158,6 @@
       "a": "Choosing between a gym duffel and a gym backpack depends on your commute style, the volume of gear you carry, and how you access your bag during the day. Gym duffels are better for athletes who pack and unpack quickly, carry bulky irregular gear like training belts and foam rollers, drive to the gym and do not need hands-free carrying, and train at a facility with lockers where the bag stays in the locker room during the session. Gym backpacks are better for athletes who cycle or walk long distances to the gym and need hands-free carrying throughout the commute, use public transit where one-shoulder duffel carrying for extended periods causes shoulder fatigue, or carry the bag throughout the workday in an office environment where a backpack is more professionally appropriate than a duffel. The Osprey Daylite Duffel 45 is the best compromise for athletes who want both carry styles in one bag, though the convertible backpack function is more ergonomic than purpose-built backpacks for commutes under 20 minutes."
     }
   ],
+  "verdict": "The Nike Brasilia 9.5 at $45 is our top pick for most gym-goers — 60-liter capacity, ventilated shoe compartment, and YKK zippers that passed 500 cycles make it the best value in this guide. The Osprey Daylite Duffel 45 at $130 is the right choice for athletes who need a lifetime warranty and gym-to-travel versatility with convertible backpack straps. Budget buyers who still want a dedicated waterproof wet pocket should choose the MIER Large Gym Bag at $39. For the most compact carry-on compliant gym bag, the Adidas Defender IV at $55 meets every major US airline size restriction.",
   "related_articles": []
 }

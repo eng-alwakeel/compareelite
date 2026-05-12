@@ -8,7 +8,7 @@
   "intro": "Home gym flooring is one of the most impactful but frequently overlooked investments for a home training space. Quality flooring protects your subfloor from dropped weights, dampens vibration and noise for neighbors and family members, provides traction to prevent slipping, and cushions joints during high-impact exercises. The wrong flooring — or no flooring at all — leads to damaged hardwood, cracked concrete, excessive noise complaints, and a higher risk of ankle and knee injuries.\n\nThe home gym flooring market offers several distinct product categories: interlocking foam puzzle mats that provide cushioning at low cost, rolled rubber flooring that mimics commercial gym surfaces, rigid interlocking rubber tiles that handle heavy weight drops, and specialized products for specific activities like yoga and HIIT. Thickness is the primary performance variable — 3/8-inch foam mats suit bodyweight and yoga workouts, while 3/4-inch rubber is the minimum recommended for serious barbell training with heavy drops.\n\nWe evaluated six home gym flooring products across impact absorption, surface traction, noise reduction, durability, ease of installation, and value per square foot to identify the best options for every home gym type and budget. Whether you are outfitting a garage barbell room or adding cushioning to a small apartment workout corner, this guide covers the top picks for 2026.",
   "products": [
     {
-      "rank": 6,
+      "rank": 1,
       "name": "Grytfit Interlocking Rubber Floor Tiles 1/2 Inch",
       "price": "$89.99",
       "rating": "9.5/10",
@@ -29,7 +29,7 @@
       ]
     },
     {
-      "rank": 3,
+      "rank": 2,
       "name": "Rubber Flooring Inc 8mm Interlocking Tiles",
       "price": "$89.99",
       "rating": "9.3/10",
@@ -50,7 +50,7 @@
       ]
     },
     {
-      "rank": 1,
+      "rank": 3,
       "name": "BalanceFrom Puzzle Exercise Mat",
       "price": "$24.99",
       "rating": "9.0/10",
@@ -71,7 +71,7 @@
       ]
     },
     {
-      "rank": 2,
+      "rank": 4,
       "name": "We Sell Mats 3/8 Inch Thick EVA Foam",
       "price": "$34.99",
       "rating": "8.8/10",
@@ -92,7 +92,7 @@
       ]
     },
     {
-      "rank": 4,
+      "rank": 5,
       "name": "CAP Barbell 24-Tile EVA Foam Mat",
       "price": "$39.99",
       "rating": "8.6/10",
@@ -113,7 +113,7 @@
       ]
     },
     {
-      "rank": 5,
+      "rank": 6,
       "name": "PROIRON Interlocking Foam Floor Tiles",
       "price": "$29.99",
       "rating": "8.5/10",
