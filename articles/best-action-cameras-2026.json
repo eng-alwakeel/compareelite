@@ -8,43 +8,43 @@
   "intro": "Action cameras have evolved into incredibly sophisticated imaging devices that fit in the palm of your hand. The 2026 lineup from GoPro, DJI, and Insta360 delivers capabilities that would have required professional cinema equipment a decade ago: 5.3K video with 10-bit color, horizon-lock stabilization that keeps footage smooth through violent movement, and AI-powered editing that automatically turns raw footage into shareable highlight reels. The competition between these three dominant brands has been fierce and the beneficiary is clearly the consumer.\n\nChoosing the right action camera in 2026 depends heavily on your use case. Surfers, mountain bikers, and snowboarders prioritize waterproofing depth, stabilization quality, and ruggedness. Skydivers and FPV drone pilots need ultra-wide field of view and high frame rates. Travel videographers value compact size and good audio. Extreme sports professionals want RAW shooting capability and ProRes support for post-production flexibility. The budget-conscious adventurer needs reliable footage without the flagship price tag.\n\nWe put six action cameras through extended real-world testing across mountain biking, surfing, skiing, and travel scenarios, evaluating video quality at various resolutions, stabilization under realistic movement, waterproofing, battery life, media management, and overall shooting experience. Here are our top picks for every budget, use case, and experience level.",
   "products": [
     {
-      "name": "GoPro HERO12 Black",
-      "price": "$349.99",
+      "name": "GoPro HERO13 Black",
+      "price": "$399.99",
       "rating": "9.7/10",
       "best_for": "Best Overall",
       "image": "https://m.media-amazon.com/images/I/71bhWgQK+TL._AC_SL1500_.jpg",
-      "link": "https://www.amazon.com/dp/B0CD834ZF6?tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B0DCM34GXX?tag=compareelite-20",
       "pros": [
         "5.3K60 and 4K120 video with 10-bit color for cinematic footage",
         "HyperSmooth 6.0 stabilization with Horizon Lock across all modes",
         "10-meter waterproof without a case — industry-leading",
-        "GP-Log for maximum dynamic range in post-production",
-        "Improved audio with wind noise reduction"
+        "GP-Log and HB-Series lens compatibility for maximum creative versatility",
+        "Improved battery life and enhanced wind noise reduction"
       ],
       "cons": [
-        "Premium price at $350",
+        "Premium price at $400",
         "Battery life averages 70 minutes at 4K60",
         "GoPro subscription pushed heavily for Quik editing features"
       ]
     },
     {
-      "name": "DJI Osmo Action 4",
-      "price": "$199.99",
+      "name": "DJI Osmo Action 5 Pro",
+      "price": "$219.99",
       "rating": "9.4/10",
       "best_for": "Best Value Flagship",
       "image": "https://m.media-amazon.com/images/I/71jNT9XKNSL._AC_SL1500_.jpg",
-      "link": "https://www.amazon.com/dp/B0CF8GB9YB?tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B0DBQTC2P7?tag=compareelite-20",
       "pros": [
-        "4K120fps and 10-bit D-Log M color profile",
-        "Excellent RockSteady 3.0 plus HorizonSteady stabilization",
-        "Dual front and rear touchscreen for easy framing",
-        "Up to 18m waterproof without case",
-        "Magnetic quick-release mount system for fast attachment"
+        "4K120fps with larger 1/1.3-inch sensor for superior low-light performance",
+        "360° HorizonSteady stabilization eliminates roll-axis shake",
+        "Dual front and rear OLED touchscreens for easy framing",
+        "47GB built-in storage plus up to 20m waterproof without case",
+        "Up to 4-hour battery life — best in class for action cameras"
       ],
       "cons": [
-        "5.3K limited to 60fps vs GoPro's 60fps at same resolution",
         "DJI Mimo app less polished than GoPro Quik",
-        "Magnetic mount adds bulk vs GoPro's compact design"
+        "Magnetic mount adds slight bulk vs GoPro's compact design",
+        "No interchangeable lens support unlike GoPro HERO13"
       ]
     },
     {
@@ -68,58 +68,58 @@
       ]
     },
     {
-      "name": "GoPro HERO11 Mini",
-      "price": "$199.99",
+      "name": "GoPro Hero",
+      "price": "$149.99",
       "rating": "8.8/10",
       "best_for": "Best Ultra-Compact",
       "image": "https://m.media-amazon.com/images/I/71HnzlRlwOL._AC_SL1500_.jpg",
-      "link": "https://www.amazon.com/dp/B0B87MSXK8?tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B0DCLRRHSP?tag=compareelite-20",
       "pros": [
-        "50% smaller and lighter than standard GoPro HERO11",
-        "Same 1/1.9-inch sensor as full-size HERO11 Black",
-        "HyperSmooth 5.0 stabilization in a tiny body",
-        "5.3K30 and 4K60 video capability",
-        "Ideal for helmet, bike, and body mounts where size matters"
+        "GoPro's smallest and lightest action camera — fraction of the size of HERO13",
+        "4K Ultra HD video with 12MP photos in a truly pocketable body",
+        "HyperSmooth stabilization in an ultra-compact form factor",
+        "Touch screen for intuitive control and easy framing",
+        "Waterproof to 16ft (5m) without any housing"
       ],
       "cons": [
-        "No rear LCD screen — framing requires the GoPro app",
-        "Non-removable battery limits field charging flexibility",
+        "4K resolution cap — no 5.3K or high-fps slow motion like flagship models",
+        "Smaller sensor means lower performance in challenging light",
         "No front display for vlogging or selfie use"
       ]
     },
     {
-      "name": "DJI Action 2",
-      "price": "$249.99",
+      "name": "Insta360 Ace Pro 2",
+      "price": "$329.99",
       "rating": "8.6/10",
-      "best_for": "Best Modular Design",
+      "best_for": "Best AI-Powered Action Camera",
       "image": "https://m.media-amazon.com/images/I/61QZDH4TU4L._AC_SL1500_.jpg",
-      "link": "https://www.amazon.com/dp/B09HFLJRX2?tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B0DKTWPCD4?tag=compareelite-20",
       "pros": [
-        "Unique magnetic modular system — add screens and battery packs",
-        "Ultra-compact cube design at just 56g base unit",
-        "4K120fps and excellent color science",
-        "Front touchscreen on the base unit",
-        "Magnetic mounting is fast and versatile"
+        "Co-engineered with Leica for exceptional color science and optics",
+        "8K30fps and 4K120fps video with 1/1.3-inch sensor",
+        "Dual AI chip delivers best-in-class noise reduction and subject tracking",
+        "2.5-inch flip screen for easy vlogging and self-framing",
+        "Waterproof to 33ft (10m) without a case"
       ],
       "cons": [
-        "Base unit has very short battery life — 70 minutes",
-        "Modular accessories add bulk and cost",
-        "10m waterproof only in base configuration (depth reduced with add-ons)"
+        "Premium price for an action camera in this tier",
+        "Insta360 app and ecosystem less mature than GoPro's",
+        "Larger body size than ultra-compact action cameras"
       ]
     },
     {
-      "name": "Akaso V50X SE Action Camera",
-      "price": "$79.99",
+      "name": "AKASO Brave 8",
+      "price": "$89.99",
       "rating": "8.5/10",
       "best_for": "Best Budget Pick",
       "image": "https://m.media-amazon.com/images/I/61dB7hKIRuL._AC_SL1500_.jpg",
-      "link": "https://www.amazon.com/dp/B07ZDKBL5L?tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B0C4NF32NN?tag=compareelite-20",
       "pros": [
-        "4K30 video at a budget-friendly price point",
-        "Included waterproof case rated to 40 meters",
-        "Electronic image stabilization reduces shake in action shots",
-        "Dual screens (front and rear) for easy vlogging setup",
-        "Extensive accessory bundle included in the box"
+        "4K60fps video and 48MP photos at a budget-friendly price",
+        "Built-in waterproofing to 10m — no separate case required",
+        "SuperSmooth stabilization with 16x slow-motion capability",
+        "Touch screen and remote control included in the box",
+        "Extensive accessory bundle with helmet and sports mounts"
       ],
       "cons": [
         "Video quality noticeably lower than premium brands in low light",
