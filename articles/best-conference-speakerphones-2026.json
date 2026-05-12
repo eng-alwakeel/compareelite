@@ -75,76 +75,76 @@
       "asin": "B08QRD7SJW"
     },
     {
-      "name": "Anker PowerConf S3",
+      "name": "Anker PowerConf S500",
       "rating": "8.9/10",
-      "price": "$79",
+      "price": "$99",
       "best_for": "Best Value",
       "pros": [
-        "Six-microphone array with beamforming captures voice from 5 feet in all directions at a price point that most competing devices only achieve 3-foot pickup, providing better room coverage per dollar than any device in the guide.",
+        "Six-microphone array with beamforming captures voice from 6 feet in all directions with Zoom Rooms and Google Meet certification — supports up to 12 participants in a single unit with wireless pairing of two units for rooms up to 20 people.",
         "USB-C bus-powered connection requires no separate power adapter and no driver installation — recognized as a standard USB audio device by any operating system or video conferencing platform within seconds of plugging in.",
-        "VoiceID technology trains on the meeting host's voice to apply adaptive noise reduction calibrated specifically to that voice profile, reducing false noise suppression on different speakers' voices."
+        "Built-in 5,200mAh battery provides wireless operation for extended meetings away from wall power, with simultaneous USB-C and Bluetooth 5.0 connectivity allowing laptop and smartphone to join the same call concurrently."
       ],
       "cons": [
         "Bluetooth range limited to 33 feet line-of-sight with degraded audio quality through walls — not suitable for large open-plan offices where the speaker may roam more than 20 feet from the speakerphone.",
         "AI noise reduction applies more processing than hardware-only alternatives, introducing occasional clipping on quiet consonants during simultaneous typing and speaking at close range."
       ],
       "image": "https://m.media-amazon.com/images/I/51x9sV0MeSL._SL500_.jpg",
-      "link": "https://www.amazon.com/dp/B08DH3ZKKK?tag=compareelite-20",
-      "asin": "B08DH3ZKKK"
+      "link": "https://www.amazon.com/dp/B08W24YDSC?tag=compareelite-20",
+      "asin": "B08W24YDSC"
     },
     {
-      "name": "EMEET Luna",
+      "name": "EMEET Conference Speakerphone (2025)",
       "rating": "8.6/10",
-      "price": "$59",
+      "price": "$69",
       "best_for": "Best Budget Pro",
       "pros": [
-        "Four-microphone omnidirectional array with AI-powered noise cancellation delivers clear voice pickup at 4 feet for up to four participants at a price accessible to budget-conscious home office users.",
-        "Compatible with Zoom, Teams, Google Meet, Skype, and all USB audio platforms without any software installation — functions as a standard USB HID audio device on any OS.",
+        "Eight-plus-one microphone omnidirectional array with AI-powered noise reduction delivers 360-degree voice pickup for up to 14 participants, with daisy-chain support for rooms of up to 25 people.",
+        "Compatible with Zoom, Teams, Google Meet, Skype, and all USB audio platforms without any software installation — connects via USB, Bluetooth, or dongle as a standard USB HID audio device on any OS.",
         "Touch-sensitive controls for mute, volume, and speakerphone mode respond with LED confirmation lighting, eliminating fumbled button presses during live calls in front of colleagues."
       ],
       "cons": [
         "Software echo cancellation introduces 100–200ms of processing delay compared to hardware AEC in the Jabra and Poly devices, creating a slightly unnatural conversation cadence on low-latency video platforms.",
-        "Mono speaker output at 2W produces adequate voice playback in quiet individual workspaces but distorts at high volume in rooms larger than 8x8 feet with more than two participants."
+        "Larger form factor than compact travel speakerphones — better suited to a fixed conference table than a laptop bag for frequent travel."
       ],
       "image": "https://m.media-amazon.com/images/I/41TvFiSLfxL._SL500_.jpg",
-      "link": "https://www.amazon.com/dp/B089TW8BRC?tag=compareelite-20",
-      "asin": "B089TW8BRC"
+      "link": "https://www.amazon.com/dp/B0C13DCL63?tag=compareelite-20",
+      "asin": "B0C13DCL63"
     },
     {
-      "name": "Yealink CP700",
+      "name": "Yealink CP925",
       "rating": "8.7/10",
-      "price": "$149",
+      "price": "$249",
       "best_for": "Best for Teams Rooms",
       "pros": [
-        "Microsoft Teams certified with a dedicated Teams button and 3.5-inch touchscreen display showing call status, meeting participants, and notification count without opening a laptop during active calls.",
-        "Three-microphone array with 360-degree coverage and 6-foot pickup range handles small conference rooms with up to six participants — adequate for standard small business meeting rooms.",
-        "Bluetooth pairing with Microsoft Teams-certified headsets allows sharing call audio between the room speakerphone and a wireless headset simultaneously for participants joining from an adjacent space."
+        "Touch-sensitive HD IP conference phone with a 4-inch color screen and Wi-Fi plus Bluetooth connectivity — supports 5-way conference calls natively without requiring a connected laptop for SIP or IP-based meetings.",
+        "Three-microphone array with 360-degree coverage and 6-foot pickup range handles small conference rooms with up to six participants, with optional wireless expansion microphones for larger rooms.",
+        "Bluetooth pairing with certified headsets allows sharing call audio between the room speakerphone and a wireless headset simultaneously for participants joining from an adjacent space."
       ],
       "cons": [
-        "Requires Microsoft Teams Rooms license for full device management and meeting room display features — standard Teams user licenses enable basic call functionality only without the advanced room management interface.",
-        "USB-C tethering cable must be connected to a Teams-certified PC or Room System for full functionality — the CP700 does not function as a standalone room device without a connected computer."
+        "Requires SIP or IP phone service configuration for full standalone operation — PC-connected USB audio mode is available but requires separate setup from the primary IP calling functionality.",
+        "Higher price point than comparable USB speakerphones reflects IP phone capabilities that may not be needed in organizations using laptop-based video conferencing exclusively."
       ],
       "image": "https://m.media-amazon.com/images/I/31SQ5zLMiML._SL500_.jpg",
-      "link": "https://www.amazon.com/dp/B09BQ3R4T3?tag=compareelite-20",
-      "asin": "B09BQ3R4T3"
+      "link": "https://www.amazon.com/dp/B09KVJJ6S7?tag=compareelite-20",
+      "asin": "B09KVJJ6S7"
     },
     {
-      "name": "Jabra Speak 510",
+      "name": "Jabra Speak2 55",
       "rating": "8.3/10",
-      "price": "$99",
+      "price": "$149",
       "best_for": "Best for Travel",
       "pros": [
-        "Omnidirectional microphone and 4W speaker in a compact 260g package make the Speak 510 the most travel-portable speakerphone in this guide — fits in a jacket pocket for on-site client meetings.",
-        "Plug-and-play USB connection with no drivers on Windows, macOS, and most Linux distributions allows instant use on borrowed laptops and hotel business center computers without installation access.",
-        "15-hour battery life over Bluetooth covers a full day of meetings without charging, with a USB-A charging port doubling as a basic power bank for topping up a smartphone during multi-hour sessions."
+        "Four beamforming noise-cancelling microphones and a 50mm full-range speaker in a compact IP64-rated package make the Speak2 55 a highly portable speakerphone — includes a protective carrying pouch for on-site client meetings.",
+        "Plug-and-play USB-C and USB-A connection with no drivers on Windows, macOS, and most Linux distributions allows instant use on borrowed laptops and hotel business center computers without installation access.",
+        "12-hour battery life over Bluetooth covers a full day of meetings without charging, with Voice Level Normalization keeping all participants at a consistent volume throughout the call."
       ],
       "cons": [
-        "3-foot microphone pickup range is the shortest in this guide, requiring all participants to sit within arm's reach of the device — not suitable for conference table use with more than three people.",
-        "No hardware noise cancellation or echo suppression algorithms — performs well in quiet environments but transmits significant HVAC and air conditioning noise in standard open-plan offices."
+        "Pickup range of 4–5 feet is shorter than larger speakerphones in this guide, requiring all participants to sit reasonably close to the device — not optimal for conference table use with more than four people.",
+        "At $149, the Speak2 55 costs more than the EMEET and Anker alternatives, with the premium reflecting Jabra's build quality, IP64 rating, and Microsoft Teams/Zoom certification rather than basic call audio."
       ],
       "image": "https://m.media-amazon.com/images/I/51zn3KfkGHL._SL500_.jpg",
-      "link": "https://www.amazon.com/dp/B00DX16VJO?tag=compareelite-20",
-      "asin": "B00DX16VJO"
+      "link": "https://www.amazon.com/dp/B0BWL18N3X?tag=compareelite-20",
+      "asin": "B0BWL18N3X"
     }
   ],
   "faq": [
