@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-05-11T22:37:43.952Z",
+  "generatedAt": "2026-05-12T11:05:39.928Z",
   "summary": {
-    "OK": 53,
-    "DEAD": 38,
-    "BLOCKED": 1035,
+    "OK": 50,
+    "DEAD": 27,
+    "BLOCKED": 1079,
     "ERROR": 0
   },
   "results": [
@@ -231,8 +231,8 @@
       "asin": "B0G6Z84TQM",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B0G6Z84TQM?tag=compareelite-20",
-      "state": "OK",
-      "reason": null,
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -375,8 +375,8 @@
       "asin": "B09BJMY8HL",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B09BJMY8HL?tag=compareelite-20",
-      "state": "OK",
-      "reason": null,
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -411,8 +411,8 @@
       "asin": "B0G19ZCNP9",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B0G19ZCNP9?tag=compareelite-20",
-      "state": "OK",
-      "reason": null,
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -457,10 +457,10 @@
       "name": "IQAir AirVisual Pro Air Quality Monitor",
       "link": "https://www.amazon.com/dp/B07YSP9XSQ?tag=compareelite-20",
       "asin": "B07YSP9XSQ",
-      "status": 200,
+      "status": 404,
       "finalUrl": "https://www.amazon.com/dp/B07YSP9XSQ?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "DEAD",
+      "reason": "HTTP 404",
       "cached": false
     },
     {
@@ -517,10 +517,10 @@
       "name": "Amazon Basics Ankle Weights 10 lb Pair",
       "link": "https://www.amazon.com/dp/B07ZTNTLJJ?tag=compareelite-20",
       "asin": "B07ZTNTLJJ",
-      "status": 404,
+      "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B07ZTNTLJJ?tag=compareelite-20",
-      "state": "DEAD",
-      "reason": "HTTP 404",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -601,10 +601,10 @@
       "name": "Revolution 101 Balance Board",
       "link": "https://www.amazon.com/dp/B001AHYCTC?tag=compareelite-20",
       "asin": "B001AHYCTC",
-      "status": 404,
+      "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B001AHYCTC?tag=compareelite-20",
-      "state": "DEAD",
-      "reason": "HTTP 404",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -747,8 +747,8 @@
       "asin": "B07FDZX6JH",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B07FDZX6JH?tag=compareelite-20",
-      "state": "OK",
-      "reason": null,
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -961,10 +961,10 @@
       "name": "Everlast Pro Style Training Gloves",
       "link": "https://www.amazon.com/dp/B000XKFBZC?tag=compareelite-20",
       "asin": "B000XKFBZC",
-      "status": 200,
+      "status": 404,
       "finalUrl": "https://www.amazon.com/dp/B000XKFBZC?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "DEAD",
+      "reason": "HTTP 404",
       "cached": false
     },
     {
@@ -1107,8 +1107,8 @@
       "asin": "B0D1D5J1J1",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B0D1D5J1J1?tag=compareelite-20",
-      "state": "OK",
-      "reason": null,
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -1167,8 +1167,8 @@
       "asin": "B015HWXG4M",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B015HWXG4M?tag=compareelite-20",
-      "state": "OK",
-      "reason": null,
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -1177,10 +1177,10 @@
       "name": "Alex Tekk Retractable Cable Management Spine",
       "link": "https://www.amazon.com/dp/B07KFPF8DN?tag=compareelite-20",
       "asin": "B07KFPF8DN",
-      "status": 200,
+      "status": 404,
       "finalUrl": "https://www.amazon.com/dp/B07KFPF8DN?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "DEAD",
+      "reason": "HTTP 404",
       "cached": false
     },
     {
@@ -1227,8 +1227,8 @@
       "asin": "B001E1Y5O6",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B001E1Y5O6?tag=compareelite-20",
-      "state": "OK",
-      "reason": null,
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -1251,8 +1251,8 @@
       "asin": "B0B38P9TF8",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B0B38P9TF8?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "OK",
+      "reason": null,
       "cached": false
     },
     {
@@ -1429,10 +1429,10 @@
       "name": "SB SOX Compression Socks (15-20 mmHg, 3 Pairs)",
       "link": "https://www.amazon.com/dp/B07Q8HKBR3?tag=compareelite-20",
       "asin": "B07Q8HKBR3",
-      "status": 404,
+      "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B07Q8HKBR3?tag=compareelite-20",
-      "state": "DEAD",
-      "reason": "HTTP 404",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -1489,10 +1489,10 @@
       "name": "Logitech Z623 Speaker System",
       "link": "https://www.amazon.com/dp/B003BP1JSI?tag=compareelite-20",
       "asin": "B003BP1JSI",
-      "status": 404,
+      "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B003BP1JSI?tag=compareelite-20",
-      "state": "DEAD",
-      "reason": "HTTP 404",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -1561,10 +1561,10 @@
       "name": "EMEET Luna",
       "link": "https://www.amazon.com/dp/B089TW8BRC?tag=compareelite-20",
       "asin": "B089TW8BRC",
-      "status": 200,
+      "status": 404,
       "finalUrl": "https://www.amazon.com/dp/B089TW8BRC?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "DEAD",
+      "reason": "HTTP 404",
       "cached": false
     },
     {
@@ -1659,8 +1659,8 @@
       "asin": "B01LYFAGXI",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B01LYFAGXI?tag=compareelite-20",
-      "state": "OK",
-      "reason": null,
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -1803,8 +1803,8 @@
       "asin": "B06XZS76C7",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B06XZS76C7?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "OK",
+      "reason": null,
       "cached": false
     },
     {
@@ -1983,8 +1983,8 @@
       "asin": "B0BRKXSYJH",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B0BRKXSYJH?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "OK",
+      "reason": null,
       "cached": false
     },
     {
@@ -2007,8 +2007,8 @@
       "asin": "B08GFQV3J3",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B08GFQV3J3?tag=compareelite-20",
-      "state": "OK",
-      "reason": null,
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -2029,10 +2029,10 @@
       "name": "Orbitkey Desk Mat Large",
       "link": "https://www.amazon.com/dp/B08CXNMDG4?tag=compareelite-20",
       "asin": "B08CXNMDG4",
-      "status": 200,
+      "status": 404,
       "finalUrl": "https://www.amazon.com/dp/B08CXNMDG4?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "DEAD",
+      "reason": "HTTP 404",
       "cached": false
     },
     {
@@ -2077,10 +2077,10 @@
       "name": "MROCO Non-Slip Leather Desk Pad",
       "link": "https://www.amazon.com/dp/B08B1FH4M9?tag=compareelite-20",
       "asin": "B08B1FH4M9",
-      "status": 404,
+      "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B08B1FH4M9?tag=compareelite-20",
-      "state": "DEAD",
-      "reason": "HTTP 404",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -2134,11 +2134,11 @@
     {
       "slug": "best-desk-organizers-2026",
       "index": 3,
-      "name": "Marbrasse Mesh Desk Organizer 9 Compartments",
-      "link": "https://www.amazon.com/dp/B08C7VMQH7?tag=compareelite-20",
-      "asin": "B08C7VMQH7",
+      "name": "Greenco Mesh Desk Organizer 5-Piece Set",
+      "link": "https://www.amazon.com/dp/B073J8WRTZ?tag=compareelite-20",
+      "asin": "B073J8WRTZ",
       "status": 200,
-      "finalUrl": "https://www.amazon.com/dp/B08C7VMQH7?tag=compareelite-20",
+      "finalUrl": "https://www.amazon.com/dp/B073J8WRTZ?tag=compareelite-20",
       "state": "BLOCKED",
       "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
@@ -2197,20 +2197,20 @@
       "name": "Mindspace Desk Organizer with Pen Holder",
       "link": "https://www.amazon.com/dp/B0B8ZMX3QJ?tag=compareelite-20",
       "asin": "B0B8ZMX3QJ",
-      "status": 404,
+      "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B0B8ZMX3QJ?tag=compareelite-20",
-      "state": "DEAD",
-      "reason": "HTTP 404",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
       "slug": "best-desk-organizers-2026",
       "index": 9,
-      "name": "Rubbermaid Desk Organizer 7 Compartments",
-      "link": "https://www.amazon.com/dp/B07YKCWJJY?tag=compareelite-20",
-      "asin": "B07YKCWJJY",
+      "name": "Officemate Deluxe Single Drawer Desktop Organizer",
+      "link": "https://www.amazon.com/dp/B002EKD7VK?tag=compareelite-20",
+      "asin": "B002EKD7VK",
       "status": 200,
-      "finalUrl": "https://www.amazon.com/dp/B07YKCWJJY?tag=compareelite-20",
+      "finalUrl": "https://www.amazon.com/dp/B002EKD7VK?tag=compareelite-20",
       "state": "BLOCKED",
       "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
@@ -2245,10 +2245,10 @@
       "name": "SimpleHouseware X-Shape Monitor Stand Riser",
       "link": "https://www.amazon.com/dp/B07HXZ2CG4?tag=compareelite-20",
       "asin": "B07HXZ2CG4",
-      "status": 404,
+      "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B07HXZ2CG4?tag=compareelite-20",
-      "state": "DEAD",
-      "reason": "HTTP 404",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -2509,10 +2509,10 @@
       "name": "Wacom One 13 Touch Creative Pen Display",
       "link": "https://www.amazon.com/dp/B09MMQKKVC?tag=compareelite-20",
       "asin": "B09MMQKKVC",
-      "status": 404,
+      "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B09MMQKKVC?tag=compareelite-20",
-      "state": "DEAD",
-      "reason": "HTTP 404",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -2533,10 +2533,10 @@
       "name": "DJI Air 3",
       "link": "https://www.amazon.com/dp/B0C7GT8873?tag=compareelite-20",
       "asin": "B0C7GT8873",
-      "status": 404,
+      "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B0C7GT8873?tag=compareelite-20",
-      "state": "DEAD",
-      "reason": "HTTP 404",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -2653,10 +2653,10 @@
       "name": "Kindle (Basic, 16 GB)",
       "link": "https://www.amazon.com/dp/B09SWS1R63?tag=compareelite-20",
       "asin": "B09SWS1R63",
-      "status": 404,
+      "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B09SWS1R63?tag=compareelite-20",
-      "state": "DEAD",
-      "reason": "HTTP 404",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -2665,20 +2665,20 @@
       "name": "Schwinn 470 Elliptical Machine",
       "link": "https://www.amazon.com/dp/B00UUWTHVU?tag=compareelite-20",
       "asin": "B00UUWTHVU",
-      "status": 404,
+      "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B00UUWTHVU?tag=compareelite-20",
-      "state": "DEAD",
-      "reason": "HTTP 404",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
       "slug": "best-elliptical-machines-2026",
       "index": 1,
-      "name": "NordicTrack FS14i FreeStride Trainer",
-      "link": "https://www.amazon.com/dp/B07WNXZF93?tag=compareelite-20",
-      "asin": "B07WNXZF93",
+      "name": "NordicTrack FS10i FreeStride Trainer",
+      "link": "https://www.amazon.com/dp/B09RN5B17Y?tag=compareelite-20",
+      "asin": "B09RN5B17Y",
       "status": 200,
-      "finalUrl": "https://www.amazon.com/dp/B07WNXZF93?tag=compareelite-20",
+      "finalUrl": "https://www.amazon.com/dp/B09RN5B17Y?tag=compareelite-20",
       "state": "BLOCKED",
       "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
@@ -2701,10 +2701,10 @@
       "name": "Horizon Fitness EX-59 Elliptical",
       "link": "https://www.amazon.com/dp/B07SSJXFMQ?tag=compareelite-20",
       "asin": "B07SSJXFMQ",
-      "status": 404,
+      "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B07SSJXFMQ?tag=compareelite-20",
-      "state": "DEAD",
-      "reason": "HTTP 404",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -2785,10 +2785,10 @@
       "name": "FEZIBO Seat Cushion with Lumbar Support",
       "link": "https://www.amazon.com/dp/B08NJHWVFH?tag=compareelite-20",
       "asin": "B08NJHWVFH",
-      "status": 404,
+      "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B08NJHWVFH?tag=compareelite-20",
-      "state": "DEAD",
-      "reason": "HTTP 404",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -2905,10 +2905,10 @@
       "name": "KLIM Chroma Extended Gaming Mouse Pad with Wrist Rest",
       "link": "https://www.amazon.com/dp/B083VXLH4L?tag=compareelite-20",
       "asin": "B083VXLH4L",
-      "status": 404,
+      "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B083VXLH4L?tag=compareelite-20",
-      "state": "DEAD",
-      "reason": "HTTP 404",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -2962,11 +2962,11 @@
     {
       "slug": "best-ergonomic-vertical-mice-2026",
       "index": 1,
-      "name": "Anker Ergonomic Vertical Wireless Mouse",
-      "link": "https://www.amazon.com/dp/B00BIFNTMC?tag=compareelite-20",
-      "asin": "B00BIFNTMC",
+      "name": "Kensington Pro Fit Ergo Wireless Mouse",
+      "link": "https://www.amazon.com/dp/B003H0Q0D4?tag=compareelite-20",
+      "asin": "B003H0Q0D4",
       "status": 200,
-      "finalUrl": "https://www.amazon.com/dp/B00BIFNTMC?tag=compareelite-20",
+      "finalUrl": "https://www.amazon.com/dp/B003H0Q0D4?tag=compareelite-20",
       "state": "BLOCKED",
       "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
@@ -2974,13 +2974,13 @@
     {
       "slug": "best-ergonomic-vertical-mice-2026",
       "index": 2,
-      "name": "Kensington Pro Fit Ergo Wireless Mouse",
-      "link": "https://www.amazon.com/dp/B003H0Q0D4?tag=compareelite-20",
-      "asin": "B003H0Q0D4",
-      "status": 404,
-      "finalUrl": "https://www.amazon.com/dp/B003H0Q0D4?tag=compareelite-20",
-      "state": "DEAD",
-      "reason": "HTTP 404",
+      "name": "Anker Ergonomic Vertical Wireless Mouse",
+      "link": "https://www.amazon.com/dp/B00BIFNTMC?tag=compareelite-20",
+      "asin": "B00BIFNTMC",
+      "status": 200,
+      "finalUrl": "https://www.amazon.com/dp/B00BIFNTMC?tag=compareelite-20",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -3013,10 +3013,10 @@
       "name": "TECKNET Ergonomic Vertical Wireless Mouse",
       "link": "https://www.amazon.com/dp/B07DXGW5YS?tag=compareelite-20",
       "asin": "B07DXGW5YS",
-      "status": 404,
+      "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B07DXGW5YS?tag=compareelite-20",
-      "state": "DEAD",
-      "reason": "HTTP 404",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -3051,8 +3051,8 @@
       "asin": "B09KTJYLRQ",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B09KTJYLRQ?tag=compareelite-20",
-      "state": "OK",
-      "reason": null,
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -3075,8 +3075,8 @@
       "asin": "B00XMHI866",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B00XMHI866?tag=compareelite-20",
-      "state": "OK",
-      "reason": null,
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -3094,11 +3094,11 @@
     {
       "slug": "best-external-hard-drives-2026",
       "index": 0,
-      "name": "Seagate Backup Plus Portable 2TB",
-      "link": "https://www.amazon.com/dp/B00FRHTSK4?tag=compareelite-20",
-      "asin": "B00FRHTSK4",
+      "name": "Samsung T7 Portable SSD 2TB",
+      "link": "https://www.amazon.com/dp/B0874YJP92?tag=compareelite-20",
+      "asin": "B0874YJP92",
       "status": 200,
-      "finalUrl": "https://www.amazon.com/dp/B00FRHTSK4?tag=compareelite-20",
+      "finalUrl": "https://www.amazon.com/dp/B0874YJP92?tag=compareelite-20",
       "state": "BLOCKED",
       "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
@@ -3106,11 +3106,11 @@
     {
       "slug": "best-external-hard-drives-2026",
       "index": 1,
-      "name": "Samsung T7 Portable SSD 2TB",
-      "link": "https://www.amazon.com/dp/B0874YJP92?tag=compareelite-20",
-      "asin": "B0874YJP92",
+      "name": "Seagate Backup Plus Portable 2TB",
+      "link": "https://www.amazon.com/dp/B00FRHTSK4?tag=compareelite-20",
+      "asin": "B00FRHTSK4",
       "status": 200,
-      "finalUrl": "https://www.amazon.com/dp/B0874YJP92?tag=compareelite-20",
+      "finalUrl": "https://www.amazon.com/dp/B00FRHTSK4?tag=compareelite-20",
       "state": "BLOCKED",
       "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
@@ -3205,10 +3205,10 @@
       "name": "YITAHOME 2-Drawer Wood File Cabinet",
       "link": "https://www.amazon.com/dp/B09BHRLS38?tag=compareelite-20",
       "asin": "B09BHRLS38",
-      "status": 404,
+      "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B09BHRLS38?tag=compareelite-20",
-      "state": "DEAD",
-      "reason": "HTTP 404",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -3418,11 +3418,11 @@
     {
       "slug": "best-footrests-for-under-desk-2026",
       "index": 3,
-      "name": "Mind Reader Adjustable Foot Rest",
-      "link": "https://www.amazon.com/dp/B019NY3K7M?tag=compareelite-20",
-      "asin": "B019NY3K7M",
+      "name": "ErgoFoam Adjustable Foot Rest Under Desk",
+      "link": "https://www.amazon.com/dp/B07BDRZF9D?tag=compareelite-20",
+      "asin": "B07BDRZF9D",
       "status": 200,
-      "finalUrl": "https://www.amazon.com/dp/B019NY3K7M?tag=compareelite-20",
+      "finalUrl": "https://www.amazon.com/dp/B07BDRZF9D?tag=compareelite-20",
       "state": "BLOCKED",
       "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
@@ -3430,11 +3430,11 @@
     {
       "slug": "best-footrests-for-under-desk-2026",
       "index": 4,
-      "name": "ErgoFoam Adjustable Foot Rest Under Desk",
-      "link": "https://www.amazon.com/dp/B07BDRZF9D?tag=compareelite-20",
-      "asin": "B07BDRZF9D",
+      "name": "Mind Reader Adjustable Foot Rest",
+      "link": "https://www.amazon.com/dp/B019NY3K7M?tag=compareelite-20",
+      "asin": "B019NY3K7M",
       "status": 200,
-      "finalUrl": "https://www.amazon.com/dp/B07BDRZF9D?tag=compareelite-20",
+      "finalUrl": "https://www.amazon.com/dp/B019NY3K7M?tag=compareelite-20",
       "state": "BLOCKED",
       "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
@@ -3495,8 +3495,8 @@
       "asin": "B00FWJOYOW",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B00FWJOYOW?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "OK",
+      "reason": null,
       "cached": false
     },
     {
@@ -3507,8 +3507,8 @@
       "asin": "B0B1GRC6VW",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B0B1GRC6VW?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "OK",
+      "reason": null,
       "cached": false
     },
     {
@@ -3519,8 +3519,8 @@
       "asin": "B076J2BGWJ",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B076J2BGWJ?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "OK",
+      "reason": null,
       "cached": false
     },
     {
@@ -3553,10 +3553,10 @@
       "name": "8BitDo Pro 2 Wired Controller",
       "link": "https://www.amazon.com/dp/B08XJND9BL?tag=compareelite-20",
       "asin": "B08XJND9BL",
-      "status": 404,
+      "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B08XJND9BL?tag=compareelite-20",
-      "state": "DEAD",
-      "reason": "HTTP 404",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -3831,8 +3831,8 @@
       "asin": "B088HJ4VQK",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B088HJ4VQK?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "OK",
+      "reason": null,
       "cached": false
     },
     {
@@ -3867,8 +3867,8 @@
       "asin": "B095V23PTM",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B095V23PTM?tag=compareelite-20",
-      "state": "OK",
-      "reason": null,
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -3956,6 +3956,150 @@
       "cached": false
     },
     {
+      "slug": "best-graphic-tablets-2026",
+      "index": 0,
+      "name": "Wacom Intuos Small Graphics Drawing Tablet",
+      "link": "https://www.amazon.com/dp/B079HL9YSF?tag=compareelite-20",
+      "asin": "B079HL9YSF",
+      "status": 200,
+      "finalUrl": "https://www.amazon.com/dp/B079HL9YSF?tag=compareelite-20",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
+      "cached": false
+    },
+    {
+      "slug": "best-graphic-tablets-2026",
+      "index": 1,
+      "name": "XPPen Deco 01 V3 Drawing Tablet",
+      "link": "https://www.amazon.com/dp/B077P6BQP7?tag=compareelite-20",
+      "asin": "B077P6BQP7",
+      "status": 200,
+      "finalUrl": "https://www.amazon.com/dp/B077P6BQP7?tag=compareelite-20",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
+      "cached": false
+    },
+    {
+      "slug": "best-graphic-tablets-2026",
+      "index": 2,
+      "name": "XPPen Artist 12 2nd Generation Pen Display",
+      "link": "https://www.amazon.com/dp/B09H71P7QK?tag=compareelite-20",
+      "asin": "B09H71P7QK",
+      "status": 200,
+      "finalUrl": "https://www.amazon.com/dp/B09H71P7QK?tag=compareelite-20",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
+      "cached": false
+    },
+    {
+      "slug": "best-graphic-tablets-2026",
+      "index": 3,
+      "name": "Huion Inspiroy H640P Drawing Tablet",
+      "link": "https://www.amazon.com/dp/B075T6MTJX?tag=compareelite-20",
+      "asin": "B075T6MTJX",
+      "status": 200,
+      "finalUrl": "https://www.amazon.com/dp/B075T6MTJX?tag=compareelite-20",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
+      "cached": false
+    },
+    {
+      "slug": "best-graphic-tablets-2026",
+      "index": 4,
+      "name": "UGEE M708 Graphics Drawing Tablet",
+      "link": "https://www.amazon.com/dp/B07P82FSFW?tag=compareelite-20",
+      "asin": "B07P82FSFW",
+      "status": 200,
+      "finalUrl": "https://www.amazon.com/dp/B07P82FSFW?tag=compareelite-20",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
+      "cached": false
+    },
+    {
+      "slug": "best-graphic-tablets-2026",
+      "index": 5,
+      "name": "HUION Kamvas Slate 10 Standalone Drawing Tablet",
+      "link": "https://www.amazon.com/dp/B0CWPBL5M8?tag=compareelite-20",
+      "asin": "B0CWPBL5M8",
+      "status": 200,
+      "finalUrl": "https://www.amazon.com/dp/B0CWPBL5M8?tag=compareelite-20",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
+      "cached": false
+    },
+    {
+      "slug": "best-grip-strengtheners-2026",
+      "index": 0,
+      "name": "FitBeast Hand Grip Strengthener Kit 5-Pack",
+      "link": "https://www.amazon.com/dp/B07XM63SBR?tag=compareelite-20",
+      "asin": "B07XM63SBR",
+      "status": 200,
+      "finalUrl": "https://www.amazon.com/dp/B07XM63SBR?tag=compareelite-20",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
+      "cached": false
+    },
+    {
+      "slug": "best-grip-strengtheners-2026",
+      "index": 1,
+      "name": "IronMind Captains of Crush Hand Gripper",
+      "link": "https://www.amazon.com/dp/B00938JOO8?tag=compareelite-20",
+      "asin": "B00938JOO8",
+      "status": 200,
+      "finalUrl": "https://www.amazon.com/dp/B00938JOO8?tag=compareelite-20",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
+      "cached": false
+    },
+    {
+      "slug": "best-grip-strengtheners-2026",
+      "index": 2,
+      "name": "NIYIKOW Adjustable Hand Grip Strengthener",
+      "link": "https://www.amazon.com/dp/B0DB5ZYVXN?tag=compareelite-20",
+      "asin": "B0DB5ZYVXN",
+      "status": 200,
+      "finalUrl": "https://www.amazon.com/dp/B0DB5ZYVXN?tag=compareelite-20",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
+      "cached": false
+    },
+    {
+      "slug": "best-grip-strengtheners-2026",
+      "index": 3,
+      "name": "Pnrskter Hand Grip Strengthener 6-Piece Set",
+      "link": "https://www.amazon.com/dp/B078L1KZBZ?tag=compareelite-20",
+      "asin": "B078L1KZBZ",
+      "status": 200,
+      "finalUrl": "https://www.amazon.com/dp/B078L1KZBZ?tag=compareelite-20",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
+      "cached": false
+    },
+    {
+      "slug": "best-grip-strengtheners-2026",
+      "index": 4,
+      "name": "IronMind Two-Way CoC Gripper",
+      "link": "https://www.amazon.com/dp/B09ZHL9XSM?tag=compareelite-20",
+      "asin": "B09ZHL9XSM",
+      "status": 200,
+      "finalUrl": "https://www.amazon.com/dp/B09ZHL9XSM?tag=compareelite-20",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
+      "cached": false
+    },
+    {
+      "slug": "best-grip-strengtheners-2026",
+      "index": 5,
+      "name": "Silicone Hand Grip Trainer Egg-Style",
+      "link": "https://www.amazon.com/dp/B0DW8WW53S?tag=compareelite-20",
+      "asin": "B0DW8WW53S",
+      "status": 200,
+      "finalUrl": "https://www.amazon.com/dp/B0DW8WW53S?tag=compareelite-20",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
+      "cached": false
+    },
+    {
       "slug": "best-gym-bags-2026",
       "index": 0,
       "name": "Nike Brasilia 9.5 Training Duffel Bag",
@@ -3970,6 +4114,18 @@
     {
       "slug": "best-gym-bags-2026",
       "index": 1,
+      "name": "Osprey Daylite Duffel 45 Bag",
+      "link": "https://www.amazon.com/dp/B09W2GK3LQ?tag=compareelite-20",
+      "asin": "B09W2GK3LQ",
+      "status": 200,
+      "finalUrl": "https://www.amazon.com/dp/B09W2GK3LQ?tag=compareelite-20",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
+      "cached": false
+    },
+    {
+      "slug": "best-gym-bags-2026",
+      "index": 2,
       "name": "Under Armour Undeniable 5.0 Duffle Bag",
       "link": "https://www.amazon.com/dp/B0897NBSLJ?tag=compareelite-20",
       "asin": "B0897NBSLJ",
@@ -3981,7 +4137,7 @@
     },
     {
       "slug": "best-gym-bags-2026",
-      "index": 2,
+      "index": 3,
       "name": "MIER Large Gym Bag with Wet Pocket",
       "link": "https://www.amazon.com/dp/B07QTXMVBG?tag=compareelite-20",
       "asin": "B07QTXMVBG",
@@ -3993,24 +4149,12 @@
     },
     {
       "slug": "best-gym-bags-2026",
-      "index": 3,
+      "index": 4,
       "name": "Adidas Defender IV Medium Duffel Bag",
       "link": "https://www.amazon.com/dp/B08KKW8YYB?tag=compareelite-20",
       "asin": "B08KKW8YYB",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B08KKW8YYB?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
-      "cached": false
-    },
-    {
-      "slug": "best-gym-bags-2026",
-      "index": 4,
-      "name": "Osprey Daylite Duffel 45 Bag",
-      "link": "https://www.amazon.com/dp/B09W2GK3LQ?tag=compareelite-20",
-      "asin": "B09W2GK3LQ",
-      "status": 200,
-      "finalUrl": "https://www.amazon.com/dp/B09W2GK3LQ?tag=compareelite-20",
       "state": "BLOCKED",
       "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
@@ -4100,6 +4244,150 @@
       "cached": false
     },
     {
+      "slug": "best-hdmi-cables-2026",
+      "index": 0,
+      "name": "Belkin Ultra HD High Speed HDMI 2.1 Cable 6ft",
+      "link": "https://www.amazon.com/dp/B097PGJNWT?tag=compareelite-20",
+      "asin": "B097PGJNWT",
+      "status": 200,
+      "finalUrl": "https://www.amazon.com/dp/B097PGJNWT?tag=compareelite-20",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
+      "cached": false
+    },
+    {
+      "slug": "best-hdmi-cables-2026",
+      "index": 1,
+      "name": "Zeskit Maya Ultra High Speed HDMI 2.1 Cable 13ft",
+      "link": "https://www.amazon.com/dp/B091Y3DNXS?tag=compareelite-20",
+      "asin": "B091Y3DNXS",
+      "status": 200,
+      "finalUrl": "https://www.amazon.com/dp/B091Y3DNXS?tag=compareelite-20",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
+      "cached": false
+    },
+    {
+      "slug": "best-hdmi-cables-2026",
+      "index": 2,
+      "name": "Amazon Basics High Speed HDMI 2.1 Cable 6ft",
+      "link": "https://www.amazon.com/dp/B08BS29VG4?tag=compareelite-20",
+      "asin": "B08BS29VG4",
+      "status": 200,
+      "finalUrl": "https://www.amazon.com/dp/B08BS29VG4?tag=compareelite-20",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
+      "cached": false
+    },
+    {
+      "slug": "best-hdmi-cables-2026",
+      "index": 3,
+      "name": "Belkin High Speed HDMI Cable Braided 10ft",
+      "link": "https://www.amazon.com/dp/B07GVVJPLM?tag=compareelite-20",
+      "asin": "B07GVVJPLM",
+      "status": 200,
+      "finalUrl": "https://www.amazon.com/dp/B07GVVJPLM?tag=compareelite-20",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
+      "cached": false
+    },
+    {
+      "slug": "best-hdmi-cables-2026",
+      "index": 4,
+      "name": "Belkin Standard HDMI Cable 1M",
+      "link": "https://www.amazon.com/dp/B07GVQKJ9W?tag=compareelite-20",
+      "asin": "B07GVQKJ9W",
+      "status": 200,
+      "finalUrl": "https://www.amazon.com/dp/B07GVQKJ9W?tag=compareelite-20",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
+      "cached": false
+    },
+    {
+      "slug": "best-hdmi-cables-2026",
+      "index": 5,
+      "name": "Zeskit Maya Ultra High Speed HDMI 2.1 Cable 6.5ft",
+      "link": "https://www.amazon.com/dp/B07S1CGQ9Z?tag=compareelite-20",
+      "asin": "B07S1CGQ9Z",
+      "status": 200,
+      "finalUrl": "https://www.amazon.com/dp/B07S1CGQ9Z?tag=compareelite-20",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
+      "cached": false
+    },
+    {
+      "slug": "best-headphone-stands-2026",
+      "index": 0,
+      "name": "Brainwavz Hengja Headphone Desk Stand",
+      "link": "https://www.amazon.com/dp/B012VIWG28?tag=compareelite-20",
+      "asin": "B012VIWG28",
+      "status": 200,
+      "finalUrl": "https://www.amazon.com/dp/B012VIWG28?tag=compareelite-20",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
+      "cached": false
+    },
+    {
+      "slug": "best-headphone-stands-2026",
+      "index": 1,
+      "name": "Satechi Aluminum Headphone Stand with USB Hub",
+      "link": "https://www.amazon.com/dp/B019PI9QG6?tag=compareelite-20",
+      "asin": "B019PI9QG6",
+      "status": 200,
+      "finalUrl": "https://www.amazon.com/dp/B019PI9QG6?tag=compareelite-20",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
+      "cached": false
+    },
+    {
+      "slug": "best-headphone-stands-2026",
+      "index": 2,
+      "name": "Brainwavz Zirconia Headphone Stand",
+      "link": "https://www.amazon.com/dp/B009326J6U?tag=compareelite-20",
+      "asin": "B009326J6U",
+      "status": 200,
+      "finalUrl": "https://www.amazon.com/dp/B009326J6U?tag=compareelite-20",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
+      "cached": false
+    },
+    {
+      "slug": "best-headphone-stands-2026",
+      "index": 3,
+      "name": "Brainwavz Icon Dual Headphone Stand",
+      "link": "https://www.amazon.com/dp/B0CTJY6KH6?tag=compareelite-20",
+      "asin": "B0CTJY6KH6",
+      "status": 200,
+      "finalUrl": "https://www.amazon.com/dp/B0CTJY6KH6?tag=compareelite-20",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
+      "cached": false
+    },
+    {
+      "slug": "best-headphone-stands-2026",
+      "index": 4,
+      "name": "Brainwavz Hooka Headphone Wall Mount",
+      "link": "https://www.amazon.com/dp/B01DNLLTIE?tag=compareelite-20",
+      "asin": "B01DNLLTIE",
+      "status": 200,
+      "finalUrl": "https://www.amazon.com/dp/B01DNLLTIE?tag=compareelite-20",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
+      "cached": false
+    },
+    {
+      "slug": "best-headphone-stands-2026",
+      "index": 5,
+      "name": "Brainwavz CSTAND Headphone Stand",
+      "link": "https://www.amazon.com/dp/B0CTQP8NCZ?tag=compareelite-20",
+      "asin": "B0CTQP8NCZ",
+      "status": 200,
+      "finalUrl": "https://www.amazon.com/dp/B0CTQP8NCZ?tag=compareelite-20",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
+      "cached": false
+    },
+    {
       "slug": "best-home-gym-equipment-small-spaces-2026",
       "index": 0,
       "name": "Bowflex SelectTech 552 Adjustable Dumbbells (Pair)",
@@ -4107,9 +4395,9 @@
       "asin": "B0G6Z84TQM",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B0G6Z84TQM?tag=compareelite-20",
-      "state": "OK",
-      "reason": null,
-      "cached": true
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
+      "cached": false
     },
     {
       "slug": "best-home-gym-equipment-small-spaces-2026",
@@ -4131,8 +4419,8 @@
       "asin": "B001EJMS6K",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B001EJMS6K?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "OK",
+      "reason": null,
       "cached": false
     },
     {
@@ -4155,8 +4443,8 @@
       "asin": "B078VJ81M2",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B078VJ81M2?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "OK",
+      "reason": null,
       "cached": false
     },
     {
@@ -4388,6 +4676,78 @@
       "cached": false
     },
     {
+      "slug": "best-jump-ropes-2026",
+      "index": 0,
+      "name": "Crossrope Speed Performance Jump Rope Set",
+      "link": "https://www.amazon.com/dp/B0BSNZY3MB?tag=compareelite-20",
+      "asin": "B0BSNZY3MB",
+      "status": 200,
+      "finalUrl": "https://www.amazon.com/dp/B0BSNZY3MB?tag=compareelite-20",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
+      "cached": false
+    },
+    {
+      "slug": "best-jump-ropes-2026",
+      "index": 1,
+      "name": "WOD Nation Attack Speed Jump Rope",
+      "link": "https://www.amazon.com/dp/B06XPH9TCZ?tag=compareelite-20",
+      "asin": "B06XPH9TCZ",
+      "status": 200,
+      "finalUrl": "https://www.amazon.com/dp/B06XPH9TCZ?tag=compareelite-20",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
+      "cached": false
+    },
+    {
+      "slug": "best-jump-ropes-2026",
+      "index": 2,
+      "name": "BOOMIBOO Adjustable Jump Rope",
+      "link": "https://www.amazon.com/dp/B0C2GQ48P1?tag=compareelite-20",
+      "asin": "B0C2GQ48P1",
+      "status": 200,
+      "finalUrl": "https://www.amazon.com/dp/B0C2GQ48P1?tag=compareelite-20",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
+      "cached": false
+    },
+    {
+      "slug": "best-jump-ropes-2026",
+      "index": 3,
+      "name": "High Speed Weighted Jump Rope 2026 Version",
+      "link": "https://www.amazon.com/dp/B0BHXRMX31?tag=compareelite-20",
+      "asin": "B0BHXRMX31",
+      "status": 200,
+      "finalUrl": "https://www.amazon.com/dp/B0BHXRMX31?tag=compareelite-20",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
+      "cached": false
+    },
+    {
+      "slug": "best-jump-ropes-2026",
+      "index": 4,
+      "name": "DEGOL Skipping Rope with Memory Foam Handles",
+      "link": "https://www.amazon.com/dp/B07P2F2YHT?tag=compareelite-20",
+      "asin": "B07P2F2YHT",
+      "status": 200,
+      "finalUrl": "https://www.amazon.com/dp/B07P2F2YHT?tag=compareelite-20",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
+      "cached": false
+    },
+    {
+      "slug": "best-jump-ropes-2026",
+      "index": 5,
+      "name": "multifun Digital Counting Jump Rope",
+      "link": "https://www.amazon.com/dp/B08FBY78HP?tag=compareelite-20",
+      "asin": "B08FBY78HP",
+      "status": 200,
+      "finalUrl": "https://www.amazon.com/dp/B08FBY78HP?tag=compareelite-20",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
+      "cached": false
+    },
+    {
       "slug": "best-jump-ropes-for-fitness-2026",
       "index": 0,
       "name": "WOD Nation Speed Jump Rope",
@@ -4417,10 +4777,10 @@
       "name": "Survival and Cross Speed Rope",
       "link": "https://www.amazon.com/dp/B00UL1DQIK?tag=compareelite-20",
       "asin": "B00UL1DQIK",
-      "status": 200,
+      "status": 404,
       "finalUrl": "https://www.amazon.com/dp/B00UL1DQIK?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "DEAD",
+      "reason": "HTTP 404",
       "cached": false
     },
     {
@@ -4621,10 +4981,10 @@
       "name": "Varier Variable Balans Original Kneeling Chair",
       "link": "https://www.amazon.com/dp/B01N47HDPJ?tag=compareelite-20",
       "asin": "B01N47HDPJ",
-      "status": 200,
+      "status": 404,
       "finalUrl": "https://www.amazon.com/dp/B01N47HDPJ?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "DEAD",
+      "reason": "HTTP 404",
       "cached": false
     },
     {
@@ -4633,10 +4993,10 @@
       "name": "Boss Office Products B248-BK Ergonomic Kneeling Chair",
       "link": "https://www.amazon.com/dp/B09B49GJF3?tag=compareelite-20",
       "asin": "B09B49GJF3",
-      "status": 200,
+      "status": 404,
       "finalUrl": "https://www.amazon.com/dp/B09B49GJF3?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "DEAD",
+      "reason": "HTTP 404",
       "cached": false
     },
     {
@@ -4813,10 +5173,10 @@
       "name": "NIIMBOT B21",
       "link": "https://www.amazon.com/dp/B09YBJ2FCQ?tag=compareelite-20",
       "asin": "B09YBJ2FCQ",
-      "status": 200,
+      "status": 404,
       "finalUrl": "https://www.amazon.com/dp/B09YBJ2FCQ?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "DEAD",
+      "reason": "HTTP 404",
       "cached": false
     },
     {
@@ -4983,8 +5343,8 @@
       "asin": "B0B7P6ZNFB",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B0B7P6ZNFB?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "OK",
+      "reason": null,
       "cached": false
     },
     {
@@ -5317,10 +5677,10 @@
       "name": "CAP Barbell Medicine Ball 8 lb",
       "link": "https://www.amazon.com/dp/B001Q3LDJO?tag=compareelite-20",
       "asin": "B001Q3LDJO",
-      "status": 404,
+      "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B001Q3LDJO?tag=compareelite-20",
-      "state": "DEAD",
-      "reason": "HTTP 404",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -5509,10 +5869,10 @@
       "name": "MaXimus Pro Rebounder",
       "link": "https://www.amazon.com/dp/B07DJ3V4K8?tag=compareelite-20",
       "asin": "B07DJ3V4K8",
-      "status": 404,
+      "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B07DJ3V4K8?tag=compareelite-20",
-      "state": "DEAD",
-      "reason": "HTTP 404",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -5578,11 +5938,11 @@
     {
       "slug": "best-monitor-arms-2026",
       "index": 3,
-      "name": "AmazonBasics Premium Single Monitor Stand",
-      "link": "https://www.amazon.com/dp/B07FPHNX26?tag=compareelite-20",
-      "asin": "B07FPHNX26",
+      "name": "MOUNTUP Single Monitor Stand Arm",
+      "link": "https://www.amazon.com/dp/B08W5YRFWM?tag=compareelite-20",
+      "asin": "B08W5YRFWM",
       "status": 200,
-      "finalUrl": "https://www.amazon.com/dp/B07FPHNX26?tag=compareelite-20",
+      "finalUrl": "https://www.amazon.com/dp/B08W5YRFWM?tag=compareelite-20",
       "state": "BLOCKED",
       "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
@@ -5677,10 +6037,10 @@
       "name": "X-Rite ColorMunki Photo Spectrophotometer",
       "link": "https://www.amazon.com/dp/B003KR28V6?tag=compareelite-20",
       "asin": "B003KR28V6",
-      "status": 200,
+      "status": 404,
       "finalUrl": "https://www.amazon.com/dp/B003KR28V6?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "DEAD",
+      "reason": "HTTP 404",
       "cached": false
     },
     {
@@ -5737,10 +6097,10 @@
       "name": "Xiaomi Mi Computer Monitor Light Bar",
       "link": "https://www.amazon.com/dp/B09JMLPKZS?tag=compareelite-20",
       "asin": "B09JMLPKZS",
-      "status": 404,
+      "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B09JMLPKZS?tag=compareelite-20",
-      "state": "DEAD",
-      "reason": "HTTP 404",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -5785,10 +6145,10 @@
       "name": "Fellowes PrivaScreen Blackout Privacy Filter 24-Inch",
       "link": "https://www.amazon.com/dp/B0BT6K4NLQ?tag=compareelite-20",
       "asin": "B0BT6K4NLQ",
-      "status": 404,
+      "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B0BT6K4NLQ?tag=compareelite-20",
-      "state": "DEAD",
-      "reason": "HTTP 404",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -5809,10 +6169,10 @@
       "name": "3M Gold Privacy Filter for 27-Inch Widescreen Monitor (GF270W9B)",
       "link": "https://www.amazon.com/dp/B07TG5R2SB?tag=compareelite-20",
       "asin": "B07TG5R2SB",
-      "status": 404,
+      "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B07TG5R2SB?tag=compareelite-20",
-      "state": "DEAD",
-      "reason": "HTTP 404",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -5893,10 +6253,10 @@
       "name": "HUANUO Dual Monitor Stand Arm",
       "link": "https://www.amazon.com/dp/B07QDR68FC?tag=compareelite-20",
       "asin": "B07QDR68FC",
-      "status": 200,
+      "status": 404,
       "finalUrl": "https://www.amazon.com/dp/B07QDR68FC?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "DEAD",
+      "reason": "HTTP 404",
       "cached": false
     },
     {
@@ -5967,8 +6327,8 @@
       "asin": "B0148NNKTC",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B0148NNKTC?tag=compareelite-20",
-      "state": "OK",
-      "reason": null,
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -6121,10 +6481,10 @@
       "name": "Cisco SG350-10 10-Port Gigabit Managed Switch",
       "link": "https://www.amazon.com/dp/B004BQCKXO?tag=compareelite-20",
       "asin": "B004BQCKXO",
-      "status": 200,
+      "status": 404,
       "finalUrl": "https://www.amazon.com/dp/B004BQCKXO?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "DEAD",
+      "reason": "HTTP 404",
       "cached": false
     },
     {
@@ -6171,8 +6531,8 @@
       "asin": "B0B6GHW1SX",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B0B6GHW1SX?tag=compareelite-20",
-      "state": "OK",
-      "reason": null,
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -6411,8 +6771,8 @@
       "asin": "B09HJH1S41",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B09HJH1S41?tag=compareelite-20",
-      "state": "OK",
-      "reason": null,
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -6495,8 +6855,8 @@
       "asin": "B09VPHVT2Z",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B09VPHVT2Z?tag=compareelite-20",
-      "state": "OK",
-      "reason": null,
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -6939,9 +7299,9 @@
       "asin": "B076J2BGWJ",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B076J2BGWJ?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
-      "cached": false
+      "state": "OK",
+      "reason": null,
+      "cached": true
     },
     {
       "slug": "best-pre-workout-supplements-2026",
@@ -6961,10 +7321,10 @@
       "name": "NITROSURGE Pre-Workout by Jacked Factory (Cherry Limeade)",
       "link": "https://www.amazon.com/dp/B07PP6GCDS?tag=compareelite-20",
       "asin": "B07PP6GCDS",
-      "status": 200,
+      "status": 404,
       "finalUrl": "https://www.amazon.com/dp/B07PP6GCDS?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "DEAD",
+      "reason": "HTTP 404",
       "cached": false
     },
     {
@@ -6973,10 +7333,10 @@
       "name": "Pre Lab Pro Pre-Workout (Berry)",
       "link": "https://www.amazon.com/dp/B00LHI2TSQ?tag=compareelite-20",
       "asin": "B00LHI2TSQ",
-      "status": 200,
+      "status": 404,
       "finalUrl": "https://www.amazon.com/dp/B00LHI2TSQ?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "DEAD",
+      "reason": "HTTP 404",
       "cached": false
     },
     {
@@ -6997,10 +7357,10 @@
       "name": "Brother HL-L2350DW Wireless Monochrome Laser Printer",
       "link": "https://www.amazon.com/dp/B07DFPJYDF?tag=compareelite-20",
       "asin": "B07DFPJYDF",
-      "status": 200,
+      "status": 404,
       "finalUrl": "https://www.amazon.com/dp/B07DFPJYDF?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "DEAD",
+      "reason": "HTTP 404",
       "cached": false
     },
     {
@@ -7033,11 +7393,11 @@
       "name": "HP ENVY 6455e All-in-One Printer",
       "link": "https://www.amazon.com/dp/B09JMLPKZS?tag=compareelite-20",
       "asin": "B09JMLPKZS",
-      "status": 404,
+      "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B09JMLPKZS?tag=compareelite-20",
-      "state": "DEAD",
-      "reason": "HTTP 404",
-      "cached": true
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
+      "cached": false
     },
     {
       "slug": "best-printer-for-home-office-2026",
@@ -7071,9 +7431,9 @@
       "asin": "B001EJMS6K",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B001EJMS6K?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
-      "cached": false
+      "state": "OK",
+      "reason": null,
+      "cached": true
     },
     {
       "slug": "best-pull-up-bars-for-doorways-2026",
@@ -7081,10 +7441,10 @@
       "name": "Garren Excel Fitness Multi-Grip Doorway Pullup Bar",
       "link": "https://www.amazon.com/dp/B002YQUP7U?tag=compareelite-20",
       "asin": "B002YQUP7U",
-      "status": 404,
+      "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B002YQUP7U?tag=compareelite-20",
-      "state": "DEAD",
-      "reason": "HTTP 404",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -7105,11 +7465,11 @@
       "name": "ProSource Multi-Use Doorway Chin Up Bar",
       "link": "https://www.amazon.com/dp/B002YQUP7U?tag=compareelite-20",
       "asin": "B002YQUP7U",
-      "status": 404,
+      "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B002YQUP7U?tag=compareelite-20",
-      "state": "DEAD",
-      "reason": "HTTP 404",
-      "cached": true
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
+      "cached": false
     },
     {
       "slug": "best-pull-up-bars-for-doorways-2026",
@@ -7155,8 +7515,8 @@
       "asin": "B09JDS9W9X",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B09JDS9W9X?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "OK",
+      "reason": null,
       "cached": false
     },
     {
@@ -7167,8 +7527,8 @@
       "asin": "B0CQ34M24X",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B0CQ34M24X?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "OK",
+      "reason": null,
       "cached": false
     },
     {
@@ -7203,9 +7563,9 @@
       "asin": "B006K412ES",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B006K412ES?tag=compareelite-20",
-      "state": "OK",
-      "reason": null,
-      "cached": true
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
+      "cached": false
     },
     {
       "slug": "best-resistance-bands-2026",
@@ -7369,10 +7729,10 @@
       "name": "Narwal Freo Robot Vacuum and Mop, Self-Cleaning Base",
       "link": "https://www.amazon.com/dp/B0BGSDBW5M?tag=compareelite-20",
       "asin": "B0BGSDBW5M",
-      "status": 404,
+      "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B0BGSDBW5M?tag=compareelite-20",
-      "state": "DEAD",
-      "reason": "HTTP 404",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -7393,10 +7753,10 @@
       "name": "ECOVACS DEEBOT T20 OMNI Robot Vacuum and Mop, Auto-Empty",
       "link": "https://www.amazon.com/dp/B0BRSF22JM?tag=compareelite-20",
       "asin": "B0BRSF22JM",
-      "status": 404,
+      "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B0BRSF22JM?tag=compareelite-20",
-      "state": "DEAD",
-      "reason": "HTTP 404",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -7491,8 +7851,8 @@
       "asin": "B09NM56KJM",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B09NM56KJM?tag=compareelite-20",
-      "state": "OK",
-      "reason": null,
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -7789,10 +8149,10 @@
       "name": "SwitchBot Blind Tilt Motorized Blind Controller",
       "link": "https://www.amazon.com/dp/B0BYMJBNVJ?tag=compareelite-20",
       "asin": "B0BYMJBNVJ",
-      "status": 404,
+      "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B0BYMJBNVJ?tag=compareelite-20",
-      "state": "DEAD",
-      "reason": "HTTP 404",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -7945,10 +8305,10 @@
       "name": "Emerson Electric CF252BS Aira Eco Ceiling Fan",
       "link": "https://www.amazon.com/dp/B08CX7FHSP?tag=compareelite-20",
       "asin": "B08CX7FHSP",
-      "status": 200,
+      "status": 404,
       "finalUrl": "https://www.amazon.com/dp/B08CX7FHSP?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "DEAD",
+      "reason": "HTTP 404",
       "cached": false
     },
     {
@@ -7993,10 +8353,10 @@
       "name": "Westinghouse Lighting Bendan LED Indoor Ceiling Fan",
       "link": "https://www.amazon.com/dp/B08WQ8T8J7?tag=compareelite-20",
       "asin": "B08WQ8T8J7",
-      "status": 404,
+      "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B08WQ8T8J7?tag=compareelite-20",
-      "state": "DEAD",
-      "reason": "HTTP 404",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -8017,10 +8377,10 @@
       "name": "De'Longhi TrueBrew Drip Coffee Machine",
       "link": "https://www.amazon.com/dp/B093VQCSWX?tag=compareelite-20",
       "asin": "B093VQCSWX",
-      "status": 200,
+      "status": 404,
       "finalUrl": "https://www.amazon.com/dp/B093VQCSWX?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "DEAD",
+      "reason": "HTTP 404",
       "cached": false
     },
     {
@@ -8377,10 +8737,10 @@
       "name": "Meross Smart Garage Door Opener",
       "link": "https://www.amazon.com/dp/B085T1LVD2?tag=compareelite-20",
       "asin": "B085T1LVD2",
-      "status": 200,
+      "status": 404,
       "finalUrl": "https://www.amazon.com/dp/B085T1LVD2?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "DEAD",
+      "reason": "HTTP 404",
       "cached": false
     },
     {
@@ -8389,10 +8749,10 @@
       "name": "Genie Aladdin Connect Smart Device",
       "link": "https://www.amazon.com/dp/B00EL9OSZ4?tag=compareelite-20",
       "asin": "B00EL9OSZ4",
-      "status": 404,
+      "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B00EL9OSZ4?tag=compareelite-20",
-      "state": "DEAD",
-      "reason": "HTTP 404",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -8473,11 +8833,11 @@
       "name": "Aerogarden Harvest Elite Indoor Garden",
       "link": "https://www.amazon.com/dp/B08NJHWVFH?tag=compareelite-20",
       "asin": "B08NJHWVFH",
-      "status": 404,
+      "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B08NJHWVFH?tag=compareelite-20",
-      "state": "DEAD",
-      "reason": "HTTP 404",
-      "cached": true
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
+      "cached": false
     },
     {
       "slug": "best-smart-garden-systems-2026",
@@ -8535,8 +8895,8 @@
       "asin": "B0B14C719T",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B0B14C719T?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "OK",
+      "reason": null,
       "cached": false
     },
     {
@@ -8857,10 +9217,10 @@
       "name": "Instant Pot Duo Crisp + Air Fryer (8 Qt)",
       "link": "https://www.amazon.com/dp/B09NJLSSM9?tag=compareelite-20",
       "asin": "B09NJLSSM9",
-      "status": 200,
+      "status": 404,
       "finalUrl": "https://www.amazon.com/dp/B09NJLSSM9?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "DEAD",
+      "reason": "HTTP 404",
       "cached": false
     },
     {
@@ -8989,10 +9349,10 @@
       "name": "OXO Good Grips 11-Pound Stainless Steel Food Scale",
       "link": "https://www.amazon.com/dp/B0776YC33S?tag=compareelite-20",
       "asin": "B0776YC33S",
-      "status": 200,
+      "status": 404,
       "finalUrl": "https://www.amazon.com/dp/B0776YC33S?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "DEAD",
+      "reason": "HTTP 404",
       "cached": false
     },
     {
@@ -9217,10 +9577,10 @@
       "name": "Treatlife Smart Light Switch, No Neutral Wire, 2.4 GHz Wi-Fi",
       "link": "https://www.amazon.com/dp/B07Z13GNL3?tag=compareelite-20",
       "asin": "B07Z13GNL3",
-      "status": 404,
+      "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B07Z13GNL3?tag=compareelite-20",
-      "state": "DEAD",
-      "reason": "HTTP 404",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -9231,8 +9591,8 @@
       "asin": "B07HX9GSJM",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B07HX9GSJM?tag=compareelite-20",
-      "state": "OK",
-      "reason": null,
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -9457,10 +9817,10 @@
       "name": "Philips Hue Lily Outdoor Spot Light 3-Pack",
       "link": "https://www.amazon.com/dp/B07ZB4JM6X?tag=compareelite-20",
       "asin": "B07ZB4JM6X",
-      "status": 404,
+      "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B07ZB4JM6X?tag=compareelite-20",
-      "state": "DEAD",
-      "reason": "HTTP 404",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -9589,10 +9949,10 @@
       "name": "PETLIBRO Granary Wi-Fi Automatic Pet Feeder with Camera",
       "link": "https://www.amazon.com/dp/B09KDJZ5G4?tag=compareelite-20",
       "asin": "B09KDJZ5G4",
-      "status": 404,
+      "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B09KDJZ5G4?tag=compareelite-20",
-      "state": "DEAD",
-      "reason": "HTTP 404",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -10455,9 +10815,9 @@
       "asin": "B0987FCQQW",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B0987FCQQW?tag=compareelite-20",
-      "state": "OK",
-      "reason": null,
-      "cached": true
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
+      "cached": false
     },
     {
       "slug": "best-smart-water-filters-2026",
@@ -10825,10 +11185,10 @@
       "name": "BANTI Electric Standing Desk 55x24",
       "link": "https://www.amazon.com/dp/B0DFDK3JGH?tag=compareelite-20",
       "asin": "B0DFDK3JGH",
-      "status": 200,
+      "status": 404,
       "finalUrl": "https://www.amazon.com/dp/B0DFDK3JGH?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "DEAD",
+      "reason": "HTTP 404",
       "cached": false
     },
     {
@@ -11089,10 +11449,10 @@
       "name": "Logitech M575 Wireless Trackball Mouse",
       "link": "https://www.amazon.com/dp/B08B6GCNF3?tag=compareelite-20",
       "asin": "B08B6GCNF3",
-      "status": 200,
+      "status": 404,
       "finalUrl": "https://www.amazon.com/dp/B08B6GCNF3?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "DEAD",
+      "reason": "HTTP 404",
       "cached": false
     },
     {
@@ -11257,10 +11617,10 @@
       "name": "Jungle Gym XT Suspension Trainer by Lifeline",
       "link": "https://www.amazon.com/dp/B088GQG1H7?tag=compareelite-20",
       "asin": "B088GQG1H7",
-      "status": 404,
+      "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B088GQG1H7?tag=compareelite-20",
-      "state": "DEAD",
-      "reason": "HTTP 404",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -11665,11 +12025,11 @@
       "name": "CalDigit TS4 Thunderbolt 4 Dock",
       "link": "https://www.amazon.com/dp/B09GV6NZLX?tag=compareelite-20",
       "asin": "B09GV6NZLX",
-      "status": 200,
+      "status": 404,
       "finalUrl": "https://www.amazon.com/dp/B09GV6NZLX?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
-      "cached": false
+      "state": "DEAD",
+      "reason": "HTTP 404",
+      "cached": true
     },
     {
       "slug": "best-usb-hubs-2026",
@@ -11739,8 +12099,8 @@
       "asin": "B00N1YPXW2",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B00N1YPXW2?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "OK",
+      "reason": null,
       "cached": false
     },
     {
@@ -12147,8 +12507,8 @@
       "asin": "B088TSR6YJ",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B088TSR6YJ?tag=compareelite-20",
-      "state": "OK",
-      "reason": null,
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -12265,10 +12625,10 @@
       "name": "Harbinger Padded Leather Contour Belt",
       "link": "https://www.amazon.com/dp/B0001PA9HE?tag=compareelite-20",
       "asin": "B0001PA9HE",
-      "status": 200,
+      "status": 404,
       "finalUrl": "https://www.amazon.com/dp/B0001PA9HE?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "DEAD",
+      "reason": "HTTP 404",
       "cached": false
     },
     {
@@ -12289,10 +12649,10 @@
       "name": "Gymreapers 10mm Lever Belt",
       "link": "https://www.amazon.com/dp/B07QKFGR5L?tag=compareelite-20",
       "asin": "B07QKFGR5L",
-      "status": 404,
+      "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B07QKFGR5L?tag=compareelite-20",
-      "state": "DEAD",
-      "reason": "HTTP 404",
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -12435,8 +12795,8 @@
       "asin": "B07VPKSD15",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B07VPKSD15?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "OK",
+      "reason": null,
       "cached": false
     },
     {
@@ -12637,10 +12997,10 @@
       "name": "Samsung 15W Super Fast Wireless Charger Duo",
       "link": "https://www.amazon.com/dp/B09WZR8HNJ?tag=compareelite-20",
       "asin": "B09WZR8HNJ",
-      "status": 200,
+      "status": 404,
       "finalUrl": "https://www.amazon.com/dp/B09WZR8HNJ?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "DEAD",
+      "reason": "HTTP 404",
       "cached": false
     },
     {
@@ -12675,8 +13035,8 @@
       "asin": "B0C33XXS56",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B0C33XXS56?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "OK",
+      "reason": null,
       "cached": false
     },
     {
@@ -12711,8 +13071,8 @@
       "asin": "B0BZV4QFP8",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B0BZV4QFP8?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "OK",
+      "reason": null,
       "cached": false
     },
     {
@@ -12850,11 +13210,11 @@
     {
       "slug": "best-wireless-gaming-mice-2026",
       "index": 4,
-      "name": "SteelSeries Rival 3 Wireless",
-      "link": "https://www.amazon.com/dp/B08MVKVVYR?tag=compareelite-20",
-      "asin": "B08MVKVVYR",
+      "name": "Razer Basilisk V3 Wired Gaming Mouse",
+      "link": "https://www.amazon.com/dp/B08WDTMNQP?tag=compareelite-20",
+      "asin": "B08WDTMNQP",
       "status": 200,
-      "finalUrl": "https://www.amazon.com/dp/B08MVKVVYR?tag=compareelite-20",
+      "finalUrl": "https://www.amazon.com/dp/B08WDTMNQP?tag=compareelite-20",
       "state": "BLOCKED",
       "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
@@ -13071,9 +13431,9 @@
       "asin": "B012FB0VM8",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B012FB0VM8?tag=compareelite-20",
-      "state": "OK",
-      "reason": null,
-      "cached": true
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
+      "cached": false
     },
     {
       "slug": "best-wireless-presentation-clickers-2026",
@@ -13083,8 +13443,8 @@
       "asin": "B0B7KT4T8S",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B0B7KT4T8S?tag=compareelite-20",
-      "state": "OK",
-      "reason": null,
+      "state": "BLOCKED",
+      "reason": "CAPTCHA challenge (run from residential IP)",
       "cached": false
     },
     {
@@ -13201,10 +13561,10 @@
       "name": "Liforme Yoga Block",
       "link": "https://www.amazon.com/dp/B08PRQD5RZ?tag=compareelite-20",
       "asin": "B08PRQD5RZ",
-      "status": 200,
+      "status": 404,
       "finalUrl": "https://www.amazon.com/dp/B08PRQD5RZ?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "DEAD",
+      "reason": "HTTP 404",
       "cached": false
     },
     {
@@ -13253,7 +13613,7 @@
       "finalUrl": "https://www.amazon.com/dp/B078VJ81M2?tag=compareelite-20",
       "state": "OK",
       "reason": null,
-      "cached": false
+      "cached": true
     },
     {
       "slug": "best-yoga-mats-2026",
@@ -13299,8 +13659,8 @@
       "asin": "B0C4ZPTV5Q",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B0C4ZPTV5Q?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "OK",
+      "reason": null,
       "cached": false
     },
     {
@@ -13419,8 +13779,8 @@
       "asin": "B0DGK8TG51",
       "status": 200,
       "finalUrl": "https://www.amazon.com/dp/B0DGK8TG51?tag=compareelite-20",
-      "state": "BLOCKED",
-      "reason": "CAPTCHA challenge (run from residential IP)",
+      "state": "OK",
+      "reason": null,
       "cached": false
     },
     {

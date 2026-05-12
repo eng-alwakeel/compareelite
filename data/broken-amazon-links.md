@@ -1,61 +1,50 @@
 # Broken Amazon Links — Liveness Report
 
-Generated: 2026-05-11T22:37:43.952Z
+Generated: 2026-05-12T11:05:39.928Z
 
 ## Summary
 
 | State | Count |
 |---|---:|
-| OK (200, valid product) | 53 |
-| DEAD (404/410 or "not found" page) | 38 |
-| BLOCKED (503/429 — could not verify) | 1035 |
+| OK (200, valid product) | 50 |
+| DEAD (404/410 or "not found" page) | 27 |
+| BLOCKED (503/429 — could not verify) | 1079 |
 | ERROR (timeout / network failure) | 0 |
-| **Total** | **1126** |
+| **Total** | **1156** |
 
-## DEAD links (38)
+## DEAD links (27)
 
 | Article | Product | ASIN | Status | Reason | Suggested action |
 |---|---|---|---:|---|---|
-| `best-ankle-weights-2026` | Amazon Basics Ankle Weights 10 lb Pair | `B07ZTNTLJJ` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
-| `best-balance-boards-2026` | Revolution 101 Balance Board | `B001AHYCTC` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
-| `best-compression-socks-sleeves-2026` | SB SOX Compression Socks (15-20 mmHg, 3 Pairs) | `B07Q8HKBR3` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
-| `best-computer-speakers-2026` | Logitech Z623 Speaker System | `B003BP1JSI` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
-| `best-desk-mats-2026` | MROCO Non-Slip Leather Desk Pad | `B08B1FH4M9` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
-| `best-desk-organizers-2026` | Mindspace Desk Organizer with Pen Holder | `B0B8ZMX3QJ` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
-| `best-desk-risers-2026` | SimpleHouseware X-Shape Monitor Stand Riser | `B07HXZ2CG4` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
-| `best-drawing-tablets-2026` | Wacom One 13 Touch Creative Pen Display | `B09MMQKKVC` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
-| `best-drones-2026` | DJI Air 3 | `B0C7GT8873` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
-| `best-e-readers-2026` | Kindle (Basic, 16 GB) | `B09SWS1R63` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
-| `best-elliptical-machines-2026` | Schwinn 470 Elliptical Machine | `B00UUWTHVU` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
-| `best-elliptical-machines-2026` | Horizon Fitness EX-59 Elliptical | `B07SSJXFMQ` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
-| `best-ergonomic-chair-cushions-2026` | FEZIBO Seat Cushion with Lumbar Support | `B08NJHWVFH` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
-| `best-ergonomic-mouse-pads-2026` | KLIM Chroma Extended Gaming Mouse Pad with Wrist Rest | `B083VXLH4L` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
-| `best-ergonomic-vertical-mice-2026` | Kensington Pro Fit Ergo Wireless Mouse | `B003H0Q0D4` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
-| `best-ergonomic-vertical-mice-2026` | TECKNET Ergonomic Vertical Wireless Mouse | `B07DXGW5YS` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
-| `best-filing-cabinets-2026` | YITAHOME 2-Drawer Wood File Cabinet | `B09BHRLS38` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
-| `best-gaming-controllers-2026` | 8BitDo Pro 2 Wired Controller | `B08XJND9BL` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
+| `best-air-quality-monitors-2026` | IQAir AirVisual Pro Air Quality Monitor | `B07YSP9XSQ` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
+| `best-boxing-gloves-2026` | Everlast Pro Style Training Gloves | `B000XKFBZC` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
+| `best-cable-management-solutions-2026` | Alex Tekk Retractable Cable Management Spine | `B07KFPF8DN` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
+| `best-conference-speakerphones-2026` | EMEET Luna | `B089TW8BRC` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
+| `best-desk-mats-2026` | Orbitkey Desk Mat Large | `B08CXNMDG4` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
 | `best-gymnastics-rings-2026` | Yes4All Gymnastic Rings | `B074W7XR1C` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
-| `best-medicine-balls-2026` | CAP Barbell Medicine Ball 8 lb | `B001Q3LDJO` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
-| `best-mini-trampolines-rebounders-2026` | MaXimus Pro Rebounder | `B07DJ3V4K8` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
-| `best-monitor-light-bars-2026` | Xiaomi Mi Computer Monitor Light Bar | `B09JMLPKZS` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
-| `best-monitor-privacy-screens-2026` | Fellowes PrivaScreen Blackout Privacy Filter 24-Inch | `B0BT6K4NLQ` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
-| `best-monitor-privacy-screens-2026` | 3M Gold Privacy Filter for 27-Inch Widescreen Monitor (GF270W9B) | `B07TG5R2SB` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
-| `best-printer-for-home-office-2026` | HP ENVY 6455e All-in-One Printer | `B09JMLPKZS` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
-| `best-pull-up-bars-for-doorways-2026` | Garren Excel Fitness Multi-Grip Doorway Pullup Bar | `B002YQUP7U` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
-| `best-pull-up-bars-for-doorways-2026` | ProSource Multi-Use Doorway Chin Up Bar | `B002YQUP7U` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
-| `best-robot-mops-2026` | Narwal Freo Robot Vacuum and Mop, Self-Cleaning Base | `B0BGSDBW5M` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
-| `best-robot-mops-2026` | ECOVACS DEEBOT T20 OMNI Robot Vacuum and Mop, Auto-Empty | `B0BRSF22JM` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
-| `best-smart-blinds-2026` | SwitchBot Blind Tilt Motorized Blind Controller | `B0BYMJBNVJ` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
-| `best-smart-ceiling-fans-2026` | Westinghouse Lighting Bendan LED Indoor Ceiling Fan | `B08WQ8T8J7` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
-| `best-smart-garage-door-openers-2026` | Genie Aladdin Connect Smart Device | `B00EL9OSZ4` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
-| `best-smart-garden-systems-2026` | Aerogarden Harvest Elite Indoor Garden | `B08NJHWVFH` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
-| `best-smart-light-switches-2026` | Treatlife Smart Light Switch, No Neutral Wire, 2.4 GHz Wi-Fi | `B07Z13GNL3` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
-| `best-smart-outdoor-lights-2026` | Philips Hue Lily Outdoor Spot Light 3-Pack | `B07ZB4JM6X` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
-| `best-smart-pet-feeders-2026` | PETLIBRO Granary Wi-Fi Automatic Pet Feeder with Camera | `B09KDJZ5G4` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
-| `best-trx-suspension-trainers-2026` | Jungle Gym XT Suspension Trainer by Lifeline | `B088GQG1H7` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
-| `best-weight-lifting-belts-2026` | Gymreapers 10mm Lever Belt | `B07QKFGR5L` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
+| `best-jump-ropes-for-fitness-2026` | Survival and Cross Speed Rope | `B00UL1DQIK` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
+| `best-kneeling-chairs-2026` | Varier Variable Balans Original Kneeling Chair | `B01N47HDPJ` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
+| `best-kneeling-chairs-2026` | Boss Office Products B248-BK Ergonomic Kneeling Chair | `B09B49GJF3` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
+| `best-label-makers-2026` | NIIMBOT B21 | `B09YBJ2FCQ` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
+| `best-monitor-calibrators-2026` | X-Rite ColorMunki Photo Spectrophotometer | `B003KR28V6` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
+| `best-monitor-stands-2026` | HUANUO Dual Monitor Stand Arm | `B07QDR68FC` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
+| `best-network-switches-home-2026` | Cisco SG350-10 10-Port Gigabit Managed Switch | `B004BQCKXO` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
+| `best-pre-workout-supplements-2026` | NITROSURGE Pre-Workout by Jacked Factory (Cherry Limeade) | `B07PP6GCDS` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
+| `best-pre-workout-supplements-2026` | Pre Lab Pro Pre-Workout (Berry) | `B00LHI2TSQ` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
+| `best-printer-for-home-office-2026` | Brother HL-L2350DW Wireless Monochrome Laser Printer | `B07DFPJYDF` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
+| `best-smart-ceiling-fans-2026` | Emerson Electric CF252BS Aira Eco Ceiling Fan | `B08CX7FHSP` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
+| `best-smart-coffee-makers-2026` | De'Longhi TrueBrew Drip Coffee Machine | `B093VQCSWX` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
+| `best-smart-garage-door-openers-2026` | Meross Smart Garage Door Opener | `B085T1LVD2` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
+| `best-smart-instant-pots-2026` | Instant Pot Duo Crisp + Air Fryer (8 Qt) | `B09NJLSSM9` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
+| `best-smart-kitchen-scales-2026` | OXO Good Grips 11-Pound Stainless Steel Food Scale | `B0776YC33S` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
+| `best-standing-desks-2026` | BANTI Electric Standing Desk 55x24 | `B0DFDK3JGH` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
+| `best-trackball-mice-2026` | Logitech M575 Wireless Trackball Mouse | `B08B6GCNF3` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
+| `best-usb-hubs-2026` | CalDigit TS4 Thunderbolt 4 Dock | `B09GV6NZLX` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
+| `best-weight-lifting-belts-2026` | Harbinger Padded Leather Contour Belt | `B0001PA9HE` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
+| `best-wireless-charging-pads-for-desk-2026` | Samsung 15W Super Fast Wireless Charger Duo | `B09WZR8HNJ` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
+| `best-yoga-blocks-straps-2026` | Liforme Yoga Block | `B08PRQD5RZ` | 404 | HTTP 404 | Replace the product with a verified ASIN from Amazon, or remove it. |
 
-## BLOCKED (could not verify) (1035)
+## BLOCKED (could not verify) (1079)
 
 | Article | Product | ASIN | Status | Reason | Suggested action |
 |---|---|---|---:|---|---|
@@ -77,6 +66,7 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-action-cameras-2026` | GoPro HERO11 Mini | `B0B87MSXK8` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-action-cameras-2026` | DJI Action 2 | `B09HFLJRX2` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-action-cameras-2026` | Akaso V50X SE Action Camera | `B07ZDKBL5L` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-adjustable-dumbbells-2026` | Bowflex SelectTech 552 (5-52.5 lbs) | `B0G6Z84TQM` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-adjustable-dumbbells-2026` | PowerBlock Elite EXP (5-50 lbs) | `B00A21NRNO` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-adjustable-dumbbells-2026` | ATIVAFIT Adjustable Dumbbell (71.5 lbs) | `B08TH8CTZM` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-adjustable-dumbbells-2026` | PowerBlock Sport 24 (3-24 lbs) | `B0CR4BMTD9` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -88,22 +78,25 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-air-fryers-2026` | Ninja Foodi 6-in-1 DualZone Air Fryer XL (DZ550) | `B0B15Q3HCQ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-air-fryers-2026` | Instant Vortex Plus 6-Quart Air Fryer | `B096N28SZP` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-air-fryers-2026` | Philips Dual Basket Air Fryer 3000 Series 9.5-Qt | `B0D8QM24ZT` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-air-purifiers-2026` | Levoit Core 600S Pro | `B09BJMY8HL` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-air-purifiers-2026` | Winix 5500-2 | `B0DJG1731C` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-air-purifiers-2026` | Coway Airmega AP-1512HH | `B00BTKAPUU` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-air-purifiers-2026` | Levoit Core 300S | `B0G19ZCNP9` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-air-purifiers-2026` | Blueair Blue Pure 211i Max | `B0BN2MGV5H` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-air-purifiers-2026` | Blueair ComfortPure 3-in-1 Air Purifier | `B08KQJYZ2S` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-air-quality-monitors-2026` | Airthings Wave Plus Smart Radon and Air Quality Monitor | `B07JB8QWH6` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-air-quality-monitors-2026` | IQAir AirVisual Pro Air Quality Monitor | `B07YSP9XSQ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-air-quality-monitors-2026` | Temtop M2000C 2nd Generation Air Quality Detector | `B08RJXCFL3` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-air-quality-monitors-2026` | INKBIRD IAM-T1 Smart Air Quality Monitor | `B09GXF94FW` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-air-quality-monitors-2026` | Govee WiFi Indoor Air Quality Monitor | `B08VH9MLQD` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-air-quality-monitors-2026` | uHoo 9-in-1 Smart Air Quality Sensor | `B07PJN6HF5` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-ankle-weights-2026` | Amazon Basics Ankle Weights 10 lb Pair | `B07ZTNTLJJ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-ankle-weights-2026` | ALL PRO Adjustable Ankle Weights 5 lb Pair | `B001JN9X3U` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-ankle-weights-2026` | Sportneer Adjustable Ankle Weights 0.5-3 lb | `B07XV7R5GX` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-ankle-weights-2026` | Yes4All Ankle Weights with Pockets | `B07L8F5BL4` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-ankle-weights-2026` | Nordic Lifting Wrist and Ankle Weights | `B078SQ9QPG` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-ankle-weights-2026` | CAP Barbell 20 lb Ankle Weight Set | `B001LMRPDK` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-balance-boards-2026` | StrongBoard Balance Board | `B07R5GQJYZ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-balance-boards-2026` | Revolution 101 Balance Board | `B001AHYCTC` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-balance-boards-2026` | Yes4All Wooden Wobble Balance Board | `B005L50BO2` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-balance-boards-2026` | Bosu Balance Trainer Pro | `B001I2XCZO` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-balance-boards-2026` | Gaiam Evolve Balance Board | `B019PKXKDS` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -115,6 +108,7 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-barbell-weight-sets-2026` | Yes4All Solid Cast Iron Weight Plates (255 lbs Set) | `B076M39V7H` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-barbell-weight-sets-2026` | Synergee Games Bar | `B07S2GXQXS` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-battle-ropes-2026` | Titan Fitness Battle Rope 1.5" x 40' | `B01FNBINKO` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-battle-ropes-2026` | Power Guidance Battle Rope 2" x 50' | `B07FDZX6JH` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-battle-ropes-2026` | F2C Battle Rope 1.5" x 30' | `B01AWB89N6` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-battle-ropes-2026` | BalanceFrom Battle Rope 1.5" x 40' | `B094BWKQ11` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-battle-ropes-2026` | Onnit Battle Ropes 1.5" x 40' | `B012XCI9AK` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -127,22 +121,22 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-bluetooth-speakers-2026` | Marshall Emberton II Portable Bluetooth Speaker | `B09XXW54QG` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-bluetooth-speakers-2026` | Anker Soundcore 2 | `B01MTB55WH` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-boxing-gloves-2026` | Hayabusa T3 Boxing Gloves | `B00Y8CW9EO` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-boxing-gloves-2026` | Everlast Pro Style Training Gloves | `B000XKFBZC` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-boxing-gloves-2026` | Venum Contender Boxing Gloves | `B00CHD3P8U` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-boxing-gloves-2026` | RDX Boxing Gloves EGO | `B012GBJBEQ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-boxing-gloves-2026` | Cleto Reyes Training Gloves | `B000W7GGJ8` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-boxing-gloves-2026` | Title Boxing GEL World Bag Gloves | `B004LQ07IY` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-business-laptops-2026` | Apple MacBook Pro 14-inch M3 Pro | `B0CM5JV268` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-business-laptops-2026` | Lenovo ThinkPad X1 Carbon Gen 11 | `B0D1D5J1J1` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-business-laptops-2026` | Dell XPS 15 9530 | `B0CC2566C5` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-business-laptops-2026` | Microsoft Surface Laptop 5 13.5-inch | `B0C5MSNKRK` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-business-laptops-2026` | HP Spectre x360 14-inch | `B0DM576K21` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-business-laptops-2026` | ASUS ZenBook 14 OLED | `B0FK5HMZQQ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-cable-management-solutions-2026` | Alex Tekk Retractable Cable Management Spine | `B07KFPF8DN` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-cable-management-solutions-2026` | JOTO Under Desk Cable Management Tray | `B015HWXG4M` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-cable-management-solutions-2026` | Delamu Cable Raceway Wall Cord Cover | `B07GPFDL1K` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-cable-management-solutions-2026` | D-Line Cable Management Box | `B07RWLKVNR` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-cable-management-solutions-2026` | Kable Kontrol Cable Sleeve with Zipper | `B07HRTWV8P` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-cable-management-solutions-2026` | UtechSmart Cable Clips Adhesive | `B001E1Y5O6` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-car-phone-mounts-2026` | iOttie Easy One Touch 5 Dashboard Mount | `B08G3R5B7N` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-car-phone-mounts-2026` | ESR HaloLock MagSafe Car Mount | `B0B38P9TF8` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-car-phone-mounts-2026` | Lamicall Gooseneck Phone Holder | `B088R8YMBP` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-car-phone-mounts-2026` | Spigen OneTap Pro MagSafe Vent Mount | `B08Y2CXKG5` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-car-phone-mounts-2026` | Anker Prime MagSafe Car Mount Charger Qi2 25W | `B0CQZLRYHR` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -154,16 +148,17 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-compression-socks-sleeves-2026` | Physix Gear Sport Compression Socks (20-30 mmHg) | `B0CSQZP4CR` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-compression-socks-sleeves-2026` | Compression Care Calf Compression Sleeve (15-20 mmHg) | `B01CJD9D82` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-compression-socks-sleeves-2026` | DANISH ENDURANCE Compression Socks (20-30 mmHg) 3-Pack | `B07J9MXWJK` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-compression-socks-sleeves-2026` | SB SOX Compression Socks (15-20 mmHg, 3 Pairs) | `B07Q8HKBR3` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-compression-socks-sleeves-2026` | Crucial Compression Socks (20-30 mmHg, 2 Pairs) | `B07X3FDWQ7` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-computer-speakers-2026` | Logitech Z407 Bluetooth Computer Speakers | `B08HWBF4NG` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-computer-speakers-2026` | Edifier R1280T Powered Bookshelf Speakers | `B016PATXSI` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-computer-speakers-2026` | Creative Pebble V3 Desktop Speakers | `B09KM1G9NN` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-computer-speakers-2026` | Logitech Z623 Speaker System | `B003BP1JSI` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-computer-speakers-2026` | Edifier MR4 Studio Monitor Speakers | `B09FBQWY44` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-computer-speakers-2026` | Anker Soundcore A3300 Desktop Speaker | `B08ZNMF66W` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-conference-speakerphones-2026` | Jabra Speak 750 | `B083FGVV8D` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-conference-speakerphones-2026` | Poly Sync 20 | `B08KGLJW9C` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-conference-speakerphones-2026` | Anker PowerConf S3 | `B08DH3ZKKK` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-conference-speakerphones-2026` | EMEET Luna | `B089TW8BRC` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-conference-speakerphones-2026` | Yealink CP700 | `B09BQ3R4T3` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-conference-speakerphones-2026` | Jabra Speak 510 | `B00DX16VJO` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-creatine-supplements-2026` | Optimum Nutrition Micronized Creatine (1.32 lbs) | `B002DYIZEO` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -171,6 +166,7 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-creatine-supplements-2026` | BulkSupplements Creatine (1kg) | `B00E9M4XEE` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-creatine-supplements-2026` | Nutricost Creatine (500g) | `B00GL2HMES` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-creatine-supplements-2026` | Transparent Labs Creatine HMB | `B0B1V1TBYF` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-creatine-supplements-2026` | Klean Athlete Klean Creatine | `B01LYFAGXI` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-dash-cams-2026` | Vantrue E1 Pro 4K Dash Cam | `B0DSKXJV3H` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-dash-cams-2026` | Nextbase 622GW | `B08CVN4CVD` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-dash-cams-2026` | Garmin Dash Cam Mini 2 | `B0931YZ82P` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -182,7 +178,6 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-desk-converters-sit-stand-2026` | VARIDESK Pro Plus 36 Standing Desk Converter | `B00JVCFHRY` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-desk-converters-sit-stand-2026` | VIVO Desk Converter Standing Workstation | `B07K5KPFMD` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-desk-converters-sit-stand-2026` | Mount-It! Standing Desk Converter | `B07HWML24R` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-desk-converters-sit-stand-2026` | FEZIBO Standing Desk Converter 36 Inch | `B06XZS76C7` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-desk-fans-home-office-2026` | Vornado 630 Medium Air Circulator Fan | `B00B4DRP1A` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-desk-fans-home-office-2026` | Dyson Pure Cool DP04 Air Purifier + Fan | `B07JDL11VK` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-desk-fans-home-office-2026` | Lasko 2535 52-Inch Wind Curve Tower Fan | `B000ARTTK2` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -197,25 +192,27 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-desk-humidifiers-2026` | AquaOasis Cool Mist Humidifier | `B07RWTRLNZ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-desk-lamps-2026` | BenQ ScreenBar Monitor Light | `B076VNFZJG` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-desk-lamps-2026` | Elgato Key Light | `B07L755X9G` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-desk-lamps-2026` | TaoTronics TT-DL13 LED Desk Lamp | `B0BRKXSYJH` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-desk-lamps-2026` | BenQ e-Reading LED Desk Lamp | `B0785D93KD` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-desk-lamps-2026` | Govee Smart LED Desk Lamp | `B08GFQV3J3` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-desk-lamps-2026` | Quntis LED Monitor Light Bar | `B08DKQ3JG1` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-desk-mats-2026` | Orbitkey Desk Mat Large | `B08CXNMDG4` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-desk-mats-2026` | SteelSeries QcK XXL Desk Pad | `B0BJHF6RBW` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-desk-mats-2026` | Grovemade Wool Felt Desk Pad | `B07WNCQBMQ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-desk-mats-2026` | Ktrio Extended Gaming Mouse Pad | `B07CXDN8VH` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-desk-mats-2026` | MROCO Non-Slip Leather Desk Pad | `B08B1FH4M9` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-desk-mats-2026` | Logitech Desk Mat Studio Series | `B09DQC5SM8` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-desk-organizers-2026` | SimpleHouseware Mesh Desk Organizer with Sliding Drawer | `B01LYBQXUN` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-desk-organizers-2026` | SimpleHouseware 5-Tier Desktop Document Organizer | `B079K45QDP` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-desk-organizers-2026` | CAXXA Clear Acrylic Desk Organizer with Drawers | `B07JGFPFN3` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-desk-organizers-2026` | Marbrasse Mesh Desk Organizer 9 Compartments | `B08C7VMQH7` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-desk-organizers-2026` | Greenco Mesh Desk Organizer 5-Piece Set | `B073J8WRTZ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-desk-organizers-2026` | DecoBros Mesh Desk Organizer with Double Tray | `B07H4FFLQT` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-desk-organizers-2026` | mDesign Plastic Desk Organizer with Drawer | `B07NV76FHX` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-desk-organizers-2026` | Amazon Basics Mesh Desk Organizer 6 Compartments | `B0D5SWVL8C` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-desk-organizers-2026` | Designa Bamboo Desk Organizer with Drawers | `B08FTDBPJG` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-desk-organizers-2026` | Rubbermaid Desk Organizer 7 Compartments | `B07YKCWJJY` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-desk-organizers-2026` | Mindspace Desk Organizer with Pen Holder | `B0B8ZMX3QJ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-desk-organizers-2026` | Officemate Deluxe Single Drawer Desktop Organizer | `B002EKD7VK` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-desk-organizers-2026` | Simple Trending Stackable Desk Organizer Set | `B0CJW2H1V4` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-desk-risers-2026` | VIVO Dual Monitor Ergonomic Desktop Riser | `B01MQJ4T1T` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-desk-risers-2026` | SimpleHouseware X-Shape Monitor Stand Riser | `B07HXZ2CG4` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-desk-risers-2026` | Mount-It! Dual Monitor Desk Riser | `B07JTZ6TBM` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-desk-risers-2026` | WALI Adjustable Monitor Stand Riser | `B07XC2K5TJ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-desk-risers-2026` | Flexispot M7MB Monitor Desk Riser | `B08P6JN6LT` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -237,7 +234,9 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-drawing-tablets-2026` | XP-Pen Deco 01 V2 Drawing Tablet | `B08DHYZ3T2` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-drawing-tablets-2026` | Wacom Cintiq 16 Creative Pen Display | `B0CJMJZTG2` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-drawing-tablets-2026` | Huion Inspiroy H640P Drawing Tablet | `B01MG37JVJ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-drawing-tablets-2026` | Wacom One 13 Touch Creative Pen Display | `B09MMQKKVC` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-drones-2026` | DJI Mini 4 Pro | `B0CGQNB8TM` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-drones-2026` | DJI Air 3 | `B0C7GT8873` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-drones-2026` | DJI Avata 2 | `B0D1CLQBKW` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-drones-2026` | Potensic Atom SE GPS Drone | `B0CN12KNGT` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-drones-2026` | Holy Stone HS175D GPS Drone | `B0BJLHXNGG` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -247,14 +246,18 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-e-readers-2026` | Kindle Scribe (16 GB) | `B09BS26B8B` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-e-readers-2026` | Kobo Clara 2E | `B0BJQK77LQ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-e-readers-2026` | Kobo Libra 2 | `B09HSRGP5Q` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-elliptical-machines-2026` | NordicTrack FS14i FreeStride Trainer | `B07WNXZF93` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-e-readers-2026` | Kindle (Basic, 16 GB) | `B09SWS1R63` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-elliptical-machines-2026` | Schwinn 470 Elliptical Machine | `B00UUWTHVU` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-elliptical-machines-2026` | NordicTrack FS10i FreeStride Trainer | `B09RN5B17Y` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-elliptical-machines-2026` | Bowflex Max Trainer M9 | `B07VHKBR4B` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-elliptical-machines-2026` | Horizon Fitness EX-59 Elliptical | `B07SSJXFMQ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-elliptical-machines-2026` | ProForm PFEL55920 Carbon EL Elliptical | `B0876DC7JX` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-elliptical-machines-2026` | Nautilus E616 Elliptical | `B00NPQVJTE` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-ergonomic-chair-cushions-2026` | Everlasting Comfort Memory Foam Seat Cushion | `B01EBDV9BU` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-ergonomic-chair-cushions-2026` | ComfiLife Gel Enhanced Seat Cushion | `B014F18ZGU` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-ergonomic-chair-cushions-2026` | Purple Simply Seat Cushion | `B07V4G4TRD` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-ergonomic-chair-cushions-2026` | Aylio Coccyx Orthopedic Comfort Foam Seat Cushion | `B00GA7CZCA` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-ergonomic-chair-cushions-2026` | FEZIBO Seat Cushion with Lumbar Support | `B08NJHWVFH` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-ergonomic-chair-cushions-2026` | Tektrum Orthopedic Seat Cushion for Office Chair | `B07Q33QDNW` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-ergonomic-keyboards-2026` | Logitech Ergo K860 Wireless Keyboard | `B07ZWK2TQT` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-ergonomic-keyboards-2026` | Microsoft Sculpt Ergonomic Keyboard | `B00CYX54C0` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -264,19 +267,24 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-ergonomic-keyboards-2026` | Logitech Wave Keys Wireless Keyboard | `B0BTNY72VD` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-ergonomic-mouse-pads-2026` | FELLOWES Memory Foam Mouse Pad with Wrist Rest | `B00006IDBI` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-ergonomic-mouse-pads-2026` | Kensington Duo Gel Wave Mouse Pad with Wrist Rest | `B00006IDCO` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-ergonomic-mouse-pads-2026` | KLIM Chroma Extended Gaming Mouse Pad with Wrist Rest | `B083VXLH4L` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-ergonomic-mouse-pads-2026` | 3M Precise Mouse Pad with Gel Wrist Rest | `B003X56XMA` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-ergonomic-mouse-pads-2026` | Ergear Extended Desk Pad with Wrist Rest | `B08XFXJ3PT` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-ergonomic-mouse-pads-2026` | Gimars XL Thick Non-Slip Memory Foam Wrist Rest | `B0773GY8F4` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-ergonomic-vertical-mice-2026` | Logitech MX Vertical Advanced Ergonomic Mouse | `B07FNJB8TT` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-ergonomic-vertical-mice-2026` | Kensington Pro Fit Ergo Wireless Mouse | `B003H0Q0D4` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-ergonomic-vertical-mice-2026` | Anker Ergonomic Vertical Wireless Mouse | `B00BIFNTMC` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-ergonomic-vertical-mice-2026` | J-Tech Digital Wireless Scroll Endurance Mouse | `B00GGVWMPA` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-ergonomic-vertical-mice-2026` | Jelly Comb Wireless Vertical Ergonomic Mouse | `B07FS82CJG` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-ergonomic-vertical-mice-2026` | TECKNET Ergonomic Vertical Wireless Mouse | `B07DXGW5YS` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-exercise-bikes-2026` | NordicTrack Commercial S22i Studio Cycle | `B08NTV6FSN` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-exercise-bikes-2026` | Schwinn IC4 Indoor Cycling Bike | `B07WZXSDKW` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-exercise-bikes-2026` | Echelon EX-5s Connect Bike | `B09KTJYLRQ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-exercise-bikes-2026` | Bowflex VeloCore 16-inch Bike | `B08P9QNW5K` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-exercise-bikes-2026` | Sunny Health & Fitness SF-B901B Pro Bike | `B00XMHI866` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-exercise-bikes-2026` | Marcy Magnetic Recumbent Bike NS-40502R | `B07SQB68Z3` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-external-hard-drives-2026` | Seagate Backup Plus Portable 2TB | `B00FRHTSK4` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-external-hard-drives-2026` | Samsung T7 Portable SSD 2TB | `B0874YJP92` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-external-hard-drives-2026` | Seagate Backup Plus Portable 2TB | `B00FRHTSK4` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-external-hard-drives-2026` | WD Elements Desktop 8TB | `B07X3Q83K5` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-external-hard-drives-2026` | LaCie Rugged Mini 4TB | `B07H364HBH` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-external-hard-drives-2026` | Crucial X8 Portable SSD 4TB | `B0CGJ4MWSH` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -284,6 +292,7 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-filing-cabinets-2026` | DEVAISE 3-Drawer Wood File Cabinet | `B07R4QWYZ7` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-filing-cabinets-2026` | Hirsh Industries 2-Drawer Vertical File Cabinet | `B0007UJCP8` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-filing-cabinets-2026` | Lorell Fortress Series 2-Drawer Mobile File Pedestal | `B00006IG54` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-filing-cabinets-2026` | YITAHOME 2-Drawer Wood File Cabinet | `B09BHRLS38` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-filing-cabinets-2026` | Bush Business Furniture Easy Office 2-Drawer File Cabinet | `B001KTTQV2` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-filing-cabinets-2026` | Amazon Basics Classic 3-Drawer Filing Cabinet | `B01LYXLF2R` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-fitness-trackers-2026` | Fitbit Charge 6 | `B0CCX47Y2M` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -301,17 +310,15 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-footrests-for-under-desk-2026` | Kensington SoleMate Comfort Footrest | `B00006IDSZ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-footrests-for-under-desk-2026` | Everlasting Comfort Office Foot Rest Pillow | `B07Q3K93G8` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-footrests-for-under-desk-2026` | HUANUO Adjustable Under Desk Footrest | `B07T3MBJL1` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-footrests-for-under-desk-2026` | Mind Reader Adjustable Foot Rest | `B019NY3K7M` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-footrests-for-under-desk-2026` | ErgoFoam Adjustable Foot Rest Under Desk | `B07BDRZF9D` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-footrests-for-under-desk-2026` | Mind Reader Adjustable Foot Rest | `B019NY3K7M` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-footrests-for-under-desk-2026` | VIVO Height Adjustable Foot Rest Stand | `B0CR4BMTD9` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-gaming-chairs-2026` | Secretlab TITAN Evo 2022 Series | `B0BC9Z44BC` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-gaming-chairs-2026` | Herman Miller x Logitech G Embody Gaming Chair | `B08W47HTFK` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-gaming-chairs-2026` | Razer Iskur V2 | `B0CPH72BMN` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-gaming-chairs-2026` | DXRacer Formula Series OH/FH08/N | `B00FWJOYOW` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-gaming-chairs-2026` | AndaSeat Kaiser 3 Series Large | `B0B1GRC6VW` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-gaming-chairs-2026` | RESPAWN 110 Racing Style Gaming Chair | `B076J2BGWJ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-gaming-controllers-2026` | Sony DualSense Wireless Controller | `B08FC6C75Y` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-gaming-controllers-2026` | Xbox Wireless Controller | `B08DF248LD` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-gaming-controllers-2026` | 8BitDo Pro 2 Wired Controller | `B08XJND9BL` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-gaming-controllers-2026` | Razer Wolverine V2 Pro | `B0BCMHJ4H9` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-gaming-controllers-2026` | PowerA Enhanced Wired Controller for Xbox | `B07W748KKC` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-gaming-controllers-2026` | Nintendo Switch Pro Controller | `B01NAWKPOF` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -334,9 +341,9 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-gaming-laptops-2026` | HP OMEN 16 Gaming Laptop (2024) | `B0CS6HC9Q8` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-gaming-laptops-2026` | MSI Katana A15 AI Gaming Laptop | `B0CXVGSY2H` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-gaming-monitors-2026` | LG 27GP850-B UltraGear 27" Nano IPS | `B093MTSTKD` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-gaming-monitors-2026` | Samsung Odyssey G7 C27G75TQSR 27" QLED | `B088HJ4VQK` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-gaming-monitors-2026` | ASUS ROG Swift PG279QM 27" Fast IPS | `B08LCNWQWL` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-gaming-monitors-2026` | Alienware AW2723DF 27" IPS Gaming Monitor | `B0BCXJ7XXM` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-gaming-monitors-2026` | Dell S2722DGM 27" VA Gaming Monitor | `B095V23PTM` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-gaming-monitors-2026` | Acer Nitro XV272U KVbmiiprzx 27" IPS | `B08XMZZMW1` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-gaming-mousepads-2026` | SteelSeries QcK Heavy XXL | `B0BJHQ3B9G` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-gaming-mousepads-2026` | Logitech G640 Large Cloth Gaming Mousepad | `B01LDOKOQQ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -344,21 +351,44 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-gaming-mousepads-2026` | Corsair MM300 PRO Premium Anti-Fray Cloth | `B081SN3JCQ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-gaming-mousepads-2026` | HyperX Fury S Pro Gaming Mouse Pad XL | `B08MKZBL5P` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-gaming-mousepads-2026` | ASUS ROG Sheath Extended Gaming Mouse Pad | `B01N4863RD` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-graphic-tablets-2026` | Wacom Intuos Small Graphics Drawing Tablet | `B079HL9YSF` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-graphic-tablets-2026` | XPPen Deco 01 V3 Drawing Tablet | `B077P6BQP7` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-graphic-tablets-2026` | XPPen Artist 12 2nd Generation Pen Display | `B09H71P7QK` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-graphic-tablets-2026` | Huion Inspiroy H640P Drawing Tablet | `B075T6MTJX` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-graphic-tablets-2026` | UGEE M708 Graphics Drawing Tablet | `B07P82FSFW` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-graphic-tablets-2026` | HUION Kamvas Slate 10 Standalone Drawing Tablet | `B0CWPBL5M8` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-grip-strengtheners-2026` | FitBeast Hand Grip Strengthener Kit 5-Pack | `B07XM63SBR` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-grip-strengtheners-2026` | IronMind Captains of Crush Hand Gripper | `B00938JOO8` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-grip-strengtheners-2026` | NIYIKOW Adjustable Hand Grip Strengthener | `B0DB5ZYVXN` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-grip-strengtheners-2026` | Pnrskter Hand Grip Strengthener 6-Piece Set | `B078L1KZBZ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-grip-strengtheners-2026` | IronMind Two-Way CoC Gripper | `B09ZHL9XSM` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-grip-strengtheners-2026` | Silicone Hand Grip Trainer Egg-Style | `B0DW8WW53S` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-gym-bags-2026` | Nike Brasilia 9.5 Training Duffel Bag | `B09XVRDTXZ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-gym-bags-2026` | Osprey Daylite Duffel 45 Bag | `B09W2GK3LQ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-gym-bags-2026` | Under Armour Undeniable 5.0 Duffle Bag | `B0897NBSLJ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-gym-bags-2026` | MIER Large Gym Bag with Wet Pocket | `B07QTXMVBG` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-gym-bags-2026` | Adidas Defender IV Medium Duffel Bag | `B08KKW8YYB` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-gym-bags-2026` | Osprey Daylite Duffel 45 Bag | `B09W2GK3LQ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-gym-bags-2026` | Gonex Expandable Travel Duffle Bag | `B07T8KXR3T` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-gymnastics-rings-2026` | PACEARTH Wooden Gymnastics Rings | `B07T7FB3NY` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-gymnastics-rings-2026` | Nayoya Gymnastics Rings | `B00F4M7GNO` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-gymnastics-rings-2026` | Titan Fitness Gymnastics Rings | `B01N4EE3T1` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-gymnastics-rings-2026` | Rogue Wood Rings | `B00NLYALNS` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-gymnastics-rings-2026` | FringeSport Wooden Rings | `B07LG71F3Q` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-hdmi-cables-2026` | Belkin Ultra HD High Speed HDMI 2.1 Cable 6ft | `B097PGJNWT` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-hdmi-cables-2026` | Zeskit Maya Ultra High Speed HDMI 2.1 Cable 13ft | `B091Y3DNXS` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-hdmi-cables-2026` | Amazon Basics High Speed HDMI 2.1 Cable 6ft | `B08BS29VG4` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-hdmi-cables-2026` | Belkin High Speed HDMI Cable Braided 10ft | `B07GVVJPLM` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-hdmi-cables-2026` | Belkin Standard HDMI Cable 1M | `B07GVQKJ9W` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-hdmi-cables-2026` | Zeskit Maya Ultra High Speed HDMI 2.1 Cable 6.5ft | `B07S1CGQ9Z` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-headphone-stands-2026` | Brainwavz Hengja Headphone Desk Stand | `B012VIWG28` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-headphone-stands-2026` | Satechi Aluminum Headphone Stand with USB Hub | `B019PI9QG6` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-headphone-stands-2026` | Brainwavz Zirconia Headphone Stand | `B009326J6U` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-headphone-stands-2026` | Brainwavz Icon Dual Headphone Stand | `B0CTJY6KH6` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-headphone-stands-2026` | Brainwavz Hooka Headphone Wall Mount | `B01DNLLTIE` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-headphone-stands-2026` | Brainwavz CSTAND Headphone Stand | `B0CTQP8NCZ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-home-gym-equipment-small-spaces-2026` | Bowflex SelectTech 552 Adjustable Dumbbells (Pair) | `B0G6Z84TQM` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-home-gym-equipment-small-spaces-2026` | Flybird WB5 Adjustable Weight Bench | `B07DNYSJ8W` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-home-gym-equipment-small-spaces-2026` | Iron Gym Total Upper Body Pull-Up Bar | `B001EJMS6K` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-home-gym-equipment-small-spaces-2026` | WalkingPad C2 Folding Under Desk Treadmill | `B0983LJV6K` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-home-gym-equipment-small-spaces-2026` | Manduka PRO Yoga Mat 68-Inch | `B078VJ81M2` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-home-gym-equipment-small-spaces-2026` | Undersun Fitness Resistance Bands Set (5 Bands) | `B07R5G21SH` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-home-gym-flooring-2026` | Grytfit Interlocking Rubber Floor Tiles 1/2 Inch | `B0FK7LDKD8` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-home-gym-flooring-2026` | Rubber Flooring Inc 8mm Interlocking Tiles | `B01N2KMQWH` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -378,9 +408,14 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-insulated-water-bottles-2026` | YETI Rambler (36oz) | `B0842BNR1D` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-insulated-water-bottles-2026` | Klean Kanteen TKWide 32oz | `B09JWP6KDB` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-insulated-water-bottles-2026` | Corkcicle Sport Canteen 32oz | `B09SB5M3M6` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-jump-ropes-2026` | Crossrope Speed Performance Jump Rope Set | `B0BSNZY3MB` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-jump-ropes-2026` | WOD Nation Attack Speed Jump Rope | `B06XPH9TCZ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-jump-ropes-2026` | BOOMIBOO Adjustable Jump Rope | `B0C2GQ48P1` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-jump-ropes-2026` | High Speed Weighted Jump Rope 2026 Version | `B0BHXRMX31` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-jump-ropes-2026` | DEGOL Skipping Rope with Memory Foam Handles | `B07P2F2YHT` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-jump-ropes-2026` | multifun Digital Counting Jump Rope | `B08FBY78HP` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-jump-ropes-for-fitness-2026` | WOD Nation Speed Jump Rope | `B01ANCXS24` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-jump-ropes-for-fitness-2026` | Crossrope Get Lean Jump Rope Set | `B07YN1SR63` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-jump-ropes-for-fitness-2026` | Survival and Cross Speed Rope | `B00UL1DQIK` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-jump-ropes-for-fitness-2026` | Rogue SR-1 Speed Rope | `B00WXBGXHY` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-jump-ropes-for-fitness-2026` | Buddy Lee Aero Speed Jump Rope | `B001VQUIIO` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-jump-ropes-for-fitness-2026` | DEGOL Skipping Rope with Counter | `B075TGYCJY` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -397,8 +432,6 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-keyboard-wrist-rests-2026` | SteelSeries QcK Keyboard Wrist Rest | `B09DVNT7FB` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-keyboard-wrist-rests-2026` | Gimars Ergonomic Memory Foam Wrist Rest | `B0773GY8F4` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-kneeling-chairs-2026` | Sleekform Austin Kneeling Chair Ergonomic Posture Correction | `B00YX5YCUY` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-kneeling-chairs-2026` | Varier Variable Balans Original Kneeling Chair | `B01N47HDPJ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-kneeling-chairs-2026` | Boss Office Products B248-BK Ergonomic Kneeling Chair | `B09B49GJF3` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-kneeling-chairs-2026` | Flash Furniture Ergonomic Kneeling Chair with Black Mesh Back | `B07BYT8TH5` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-kneeling-chairs-2026` | Sleekform Kneeling Chair with Thick Seat Cushion Ergonomic | `B00YX5YCTM` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-kneeling-chairs-2026` | Dragonn by VIVO Ergonomic Kneeling Chair Height Adjustable | `B08VF8G7JV` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -413,7 +446,6 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-label-makers-2026` | Brady M210 | `B004AAAXHG` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-label-makers-2026` | Brother P-Touch PTD210 | `B00K6D3PD0` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-label-makers-2026` | Phomemo M110 Portable Label Maker | `B0BKPWJ97K` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-label-makers-2026` | NIIMBOT B21 | `B09YBJ2FCQ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-laptop-backpacks-2026` | Matein Travel Laptop Backpack | `B06XZTZ7GB` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-laptop-backpacks-2026` | Targus Drifter II Laptop Backpack | `B002DPJQH0` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-laptop-backpacks-2026` | SwissGear 1900 ScanSmart Laptop Backpack | `B006HFJA08` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -427,7 +459,6 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-laptop-cooling-pads-2026` | Targus Chill Mat Lap Desk with Fans | `B075XZZK3P` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-laptop-cooling-pads-2026` | IETS GT300 Ultra Slim Laptop Cooling Pad | `B08CM8R3Q4` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-laptop-docking-stations-2026` | CalDigit TS4 Thunderbolt 4 Dock | `B09GK8LBWS` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-laptop-docking-stations-2026` | Dell WD22TB4 Thunderbolt 4 Dock | `B0B7P6ZNFB` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-laptop-docking-stations-2026` | Kensington SD5750T Thunderbolt 4 Dock | `B09FMLSZSQ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-laptop-docking-stations-2026` | Anker 13-in-1 USB-C Docking Station | `B07CZPKJX3` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-laptop-docking-stations-2026` | OWC Thunderbolt Hub | `B094MB3RFN` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -455,6 +486,7 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-medicine-balls-2026` | Yes4All Rubber Medicine Ball 20 lb | `B00BHNKXF4` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-medicine-balls-2026` | SPRI Xerball Medicine Ball 15 lb | `B006SEQYOS` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-medicine-balls-2026` | Champion Sports Rhino Leather Medicine Ball 12 lb | `B00112XOTW` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-medicine-balls-2026` | CAP Barbell Medicine Ball 8 lb | `B001Q3LDJO` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-mesh-wifi-systems-2026` | Amazon Eero Pro 6E (3-Pack) | `B09HJD4NKG` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-mesh-wifi-systems-2026` | Google Nest WiFi Pro (3-Pack) | `B0BFCK8V46` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-mesh-wifi-systems-2026` | TP-Link Deco XE75 Pro WiFi 6E (2-Pack) | `B09VQHQHL4` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -470,12 +502,13 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-mini-trampolines-rebounders-2026` | JumpSport 250 Fitness Trampoline | `B07GJSNVV2` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-mini-trampolines-rebounders-2026` | BCAN 450 lbs Foldable Mini Trampoline | `B07ZFP5XKS` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-mini-trampolines-rebounders-2026` | Stamina 36-Inch Folding Trampoline | `B00P4BLGNI` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-mini-trampolines-rebounders-2026` | MaXimus Pro Rebounder | `B07DJ3V4K8` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-mini-trampolines-rebounders-2026` | Acon Air 16 Sport HD Trampoline | `B07Z7G1KWQ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-mini-trampolines-rebounders-2026` | Pure Fun 40-Inch Mini Trampoline | `B00IOPZH02` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-monitor-arms-2026` | Ergotron LX Desk Monitor Arm | `B00358RIRC` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-monitor-arms-2026` | Ergotron HX Desk Monitor Arm | `B07B3XF1KY` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-monitor-arms-2026` | VIVO Single Monitor Desk Mount | `B00B21TLQU` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-monitor-arms-2026` | AmazonBasics Premium Single Monitor Stand | `B07FPHNX26` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-monitor-arms-2026` | MOUNTUP Single Monitor Stand Arm | `B08W5YRFWM` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-monitor-arms-2026` | Flexispot Monitor Arm MA01 | `B07DWXV1FT` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-monitor-arms-2026` | WALI Single Monitor Arm | `B018MT6ZEK` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-monitor-calibrators-2026` | X-Rite i1Display Pro Plus Colorimeter | `B085WFXRFH` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -483,27 +516,29 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-monitor-calibrators-2026` | Datacolor SpyderX Elite Colorimeter | `B083YTHZP2` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-monitor-calibrators-2026` | Calibrite Display Plus HL Colorimeter | `B09GQ3HKQF` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-monitor-calibrators-2026` | Calibrite Display SL Colorimeter | `B09LHSGXKR` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-monitor-calibrators-2026` | X-Rite ColorMunki Photo Spectrophotometer | `B003KR28V6` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-monitor-light-bars-2026` | BenQ ScreenBar Plus | `B097993WFB` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-monitor-light-bars-2026` | BenQ ScreenBar | `B076VNFZJG` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-monitor-light-bars-2026` | Quntis Monitor Light Bar LED | `B08W2HMZDR` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-monitor-light-bars-2026` | Lume Cube Edge LED Light Bar | `B09XS3HKGP` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-monitor-light-bars-2026` | Xiaomi Mi Computer Monitor Light Bar | `B09JMLPKZS` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-monitor-light-bars-2026` | ELEKIN Monitor Light Bar with Remote | `B08R6GXCD7` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-monitor-privacy-screens-2026` | 3M Privacy Filter for 24-Inch Widescreen Monitor (PF240W9E) | `B07F7TLZQS` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-monitor-privacy-screens-2026` | Kensington MagPro 27-Inch Monitor Privacy Screen (K58359WW) | `B07CNJT3RY` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-monitor-privacy-screens-2026` | Fellowes PrivaScreen Blackout Privacy Filter 24-Inch | `B0BT6K4NLQ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-monitor-privacy-screens-2026` | Targus 4Vu 24-Inch Widescreen Privacy Screen (ASF240W9USZ) | `B0756NWMTB` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-monitor-privacy-screens-2026` | 3M Gold Privacy Filter for 27-Inch Widescreen Monitor (GF270W9B) | `B07TG5R2SB` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-monitor-privacy-screens-2026` | HP 3-Way Privacy Filter for 24-Inch Widescreen Monitors | `B07NWZBXHJ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-monitor-stands-2026` | Ergotron LX Desk Monitor Arm | `B00MIBN71I` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-monitor-stands-2026` | Amazon Basics Premium Single Monitor Stand | `B00MIBN16O` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-monitor-stands-2026` | VIVO Black Single Monitor Desk Mount | `B00B21TLQU` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-monitor-stands-2026` | Ergotron LX Dual Stacking Monitor Arm | `B07Q1NJ15Q` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-monitor-stands-2026` | North Bayou Full Motion Monitor Arm | `B01AI2YGK4` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-monitor-stands-2026` | HUANUO Dual Monitor Stand Arm | `B07QDR68FC` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-monitors-programmers-2026` | LG 27UK850-W | `B078GVTD9N` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-monitors-programmers-2026` | Dell S2721QS | `B08DQWG3JG` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-monitors-programmers-2026` | LG 34WN80C-B | `B07YGZ7C1K` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-monitors-programmers-2026` | BenQ EW2790U | `B078HWBGH5` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-monitors-programmers-2026` | Samsung Odyssey G5 | `B08FF3F5HR` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-monitors-programmers-2026` | Acer R240HY | `B0148NNKTC` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-monitors-programmers-2026` | Sceptre E248W | `B0773ZY26F` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-nas-devices-2026` | Synology DS223 2-Bay NAS | `B0BHXGNVJY` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-nas-devices-2026` | Synology DS423+ 4-Bay NAS | `B0C1BQKD3K` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -516,10 +551,10 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-network-switches-home-2026` | TP-Link TL-SG1016D 16-Port Gigabit Desktop Switch | `B003CFATNI` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-network-switches-home-2026` | NETGEAR 8-Port PoE Gigabit Ethernet Plus Switch (GS308EP) | `B08LR7TLKQ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-network-switches-home-2026` | TP-Link TL-SG105-M2 5-Port 2.5G Multi-Gigabit Switch | `B08ZHGT2ZP` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-network-switches-home-2026` | Cisco SG350-10 10-Port Gigabit Managed Switch | `B004BQCKXO` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-noise-cancelling-headphones-2026` | Sony WH-1000XM5 | `B09XS7JWHH` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-noise-cancelling-headphones-2026` | Bose QuietComfort 45 | `B098FKXT8L` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-noise-cancelling-headphones-2026` | Apple AirPods Max | `B08PZHYWJS` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-noise-cancelling-headphones-2026` | Sennheiser Momentum 4 Wireless | `B0B6GHW1SX` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-noise-cancelling-headphones-2026` | Sony WH-1000XM4 | `B0863TXGM3` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-noise-cancelling-headphones-2026` | Bose QuietComfort 35 II | `B0756CYWWD` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-office-chairs-2026` | Herman Miller Aeron Chair (Remastered) | `B01N0ZUN15` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -539,12 +574,14 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-portable-jump-starters-2026` | HULKMAN Alpha85 (2000A) | `B08M41FX48` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-portable-jump-starters-2026` | Antigravity Micro-Start XP-10 | `B0CH1L89N2` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-portable-jump-starters-2026` | NOCO Boost Pro GB150 (3000A) | `B015TKSSB8` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-portable-jump-starters-2026` | GOOLOO GP4000 Jump Starter (4000A) | `B09HJH1S41` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-portable-monitors-2026` | ASUS ZenScreen MB16QHD | `B0B44BPKSS` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-portable-monitors-2026` | LG 16MQ70W 16-Inch WQXGA IPS Portable Monitor with USB-C | `B0B9DCXPWY` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-portable-monitors-2026` | ASUS ROG XG17AHPE | `B0D4S27N1R` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-portable-monitors-2026` | Lepow Z1 Gamut | `B08HHXMWZ3` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-portable-monitors-2026` | ViewSonic VG1655 | `B096G4KRDX` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-portable-monitors-2026` | Arzopa 15.6-Inch Portable Monitor Full HD IPS Ultraslim | `B09QLQTXMW` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-portable-power-banks-2026` | Anker 737 Power Bank (PowerCore 24K) | `B09VPHVT2Z` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-portable-power-banks-2026` | Anker Nano Power Bank 10K | `B0C9CJKCH3` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-portable-power-banks-2026` | Baseus 65W Power Bank 20K | `B08THFDRSZ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-portable-power-banks-2026` | INIU Power Bank 22.5W 10K | `B09176JCKZ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -577,24 +614,21 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-power-strips-surge-protectors-2026` | APC Surge Protector Power Strip P12U2 12 Outlet 4320 Joule | `B079BTBMS2` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-power-strips-surge-protectors-2026` | Anker GaNPrime 65W Charging Station 615 USB-C Power Strip | `B09SG3R8R2` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-pre-workout-supplements-2026` | Legion Pulse Pre-Workout Supplement (Strawberry Kiwi) | `B00WNLU9F0` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-pre-workout-supplements-2026` | Transparent Labs BULK Black Pre-Workout (Blue Raspberry) | `B076J2BGWJ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-pre-workout-supplements-2026` | Cellucor C4 Sport Pre-Workout Powder (Fruit Punch, 30 Servings) | `B08PS6JNNB` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-pre-workout-supplements-2026` | NITROSURGE Pre-Workout by Jacked Factory (Cherry Limeade) | `B07PP6GCDS` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-pre-workout-supplements-2026` | Pre Lab Pro Pre-Workout (Berry) | `B00LHI2TSQ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-pre-workout-supplements-2026` | Optimum Nutrition Gold Standard Pre-Workout (Fruit Punch) | `B08TNHYLYG` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-printer-for-home-office-2026` | Brother HL-L2350DW Wireless Monochrome Laser Printer | `B07DFPJYDF` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-printer-for-home-office-2026` | Canon PIXMA TR4720 All-in-One Inkjet Printer | `B0BQNHX6YL` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-printer-for-home-office-2026` | Epson EcoTank ET-3850 All-in-One Supertank Printer | `B09H2RGZQB` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-printer-for-home-office-2026` | HP ENVY 6455e All-in-One Printer | `B09JMLPKZS` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-printer-for-home-office-2026` | Brother MFC-J805DW INKvestment Tank All-in-One Printer | `B07VQN9BGZ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-printer-for-home-office-2026` | HP DeskJet 2755e All-in-One Printer | `B09B3DGGH5` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-pull-up-bars-for-doorways-2026` | Iron Gym Total Upper Body Workout Bar | `B001EJMS6K` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-pull-up-bars-for-doorways-2026` | Garren Excel Fitness Multi-Grip Doorway Pullup Bar | `B002YQUP7U` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-pull-up-bars-for-doorways-2026` | Sunny Health & Fitness Doorway Chin Up Bar | `B003P6AZUK` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-pull-up-bars-for-doorways-2026` | ProSource Multi-Use Doorway Chin Up Bar | `B002YQUP7U` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-pull-up-bars-for-doorways-2026` | Ultimate Body Press Doorway Pull Up Bar | `B009KGN3BW` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-pull-up-bars-for-doorways-2026` | Gronk Fitness Doorway Pull-Up Bar | `B07NHKKJLR` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-punching-bags-2026` | Everlast 70-Pound MMA Heavy Bag Kit | `B002UKHEZC` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-punching-bags-2026` | Century BOB XL Body Bag and Base Unit | `B09JDS9W9X` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-punching-bags-2026` | Everlast Powercore P00002200 Free Standing Heavy Bag | `B0CQ34M24X` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-punching-bags-2026` | Outslayer 80 Pound Filled Punching Bag Made in USA | `B0BP74NF26` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-punching-bags-2026` | Ringside 100-Pound Soft-Filled Leather Heavy Bag | `B006K412ES` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-resistance-bands-2026` | Fit Simplify Resistance Loop Bands (5-Pack) | `B01AVDVHTI` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-resistance-bands-2026` | Serious Steel Fitness Assisted Pull-Up Bands | `B07W7ZGGZS` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-resistance-bands-2026` | Undersun Resistance Bands (5-Pack) | `B07R5G21SH` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -608,7 +642,9 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-ring-lights-2026` | Diva Ring Light Super Nova | `B00H01BFYA` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-ring-lights-2026` | Lume Cube Edge LED Desk Lamp | `B09DKF5ST1` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-robot-mops-2026` | Roborock S8 Pro Ultra Robot Vacuum and Mop with Auto-Wash | `B0BVZQS3HN` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-robot-mops-2026` | Narwal Freo Robot Vacuum and Mop, Self-Cleaning Base | `B0BGSDBW5M` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-robot-mops-2026` | iRobot Braava Jet m6 Robot Mop, Wi-Fi, Precision Jet Spray | `B07KXRX8H9` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-robot-mops-2026` | ECOVACS DEEBOT T20 OMNI Robot Vacuum and Mop, Auto-Empty | `B0BRSF22JM` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-robot-mops-2026` | Roborock Q Revo Robot Vacuum and Mop, Self-Washing | `B0C4HLMBM5` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-robot-mops-2026` | ECOVACS DEEBOT N8 Pro+ Robot Vacuum and Mop, Auto-Empty | `B094JFNHBF` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-robot-vacuums-2026` | Roborock S8 MaxV Ultra | `B0D9QPKX2K` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -616,6 +652,7 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-robot-vacuums-2026` | Shark Matrix Plus 2-in-1 | `B0B8B6N2G4` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-robot-vacuums-2026` | Eufy RoboVac 11S Max | `B07R295MLS` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-robot-vacuums-2026` | Dreame L20 Ultra Robot Vacuum & Mop | `B0CC236CLT` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-robot-vacuums-2026` | Roborock Q5+ Robot Vacuum with Self-Empty Dock | `B09NM56KJM` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-rowing-machines-2026` | Concept2 Model D Indoor Rowing Machine | `B00N4OBFAQ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-rowing-machines-2026` | Hydrow Wave Rowing Machine | `B09TBZFFTQ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-rowing-machines-2026` | WaterRower Club Rowing Machine in Ash Wood | `B002NE8CS8` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -640,6 +677,7 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-smart-baby-monitors-2026` | Eufy SpaceView S Baby Monitor | `B07FDNDL7D` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-baby-monitors-2026` | Owlet Dream Duo Smart Baby Monitor | `B09C6MJXJX` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-baby-monitors-2026` | VTech VM5261 Audio Baby Monitor | `B07MBKBGPT` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-smart-blinds-2026` | SwitchBot Blind Tilt Motorized Blind Controller | `B0BYMJBNVJ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-blinds-2026` | Lutron Serena Smart Shade, Battery-Powered Roller | `B07RV7DNVN` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-blinds-2026` | IKEA FYRTUR Blackout Roller Blind with Smart Control | `B07BKMH1M8` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-blinds-2026` | SwitchBot Roller Shade Motorized Blind, Wi-Fi Hub Required | `B09NQFMYG5` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -652,12 +690,11 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-smart-body-weight-scales-2026` | Fitbit Aria Air Smart Scale | `B07TWMDHX2` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-body-weight-scales-2026` | Greater Goods Smart Scale | `B0CHY6ZVRY` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-ceiling-fans-2026` | Hunter Fan Company Cassius 52-Inch Smart Ceiling Fan | `B07RQZP6SW` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-smart-ceiling-fans-2026` | Emerson Electric CF252BS Aira Eco Ceiling Fan | `B08CX7FHSP` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-ceiling-fans-2026` | Minka-Aire F844L-BNW Slipstream Smart Fan | `B086L9JBFX` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-ceiling-fans-2026` | Carro Elira Smart Ceiling Fan 52 Inch | `B07TSDFHS8` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-ceiling-fans-2026` | Carro Aviator 52-Inch Smart Ceiling Fan with Light | `B081J8FQ3P` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-smart-ceiling-fans-2026` | Westinghouse Lighting Bendan LED Indoor Ceiling Fan | `B08WQ8T8J7` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-coffee-makers-2026` | Hamilton Beach Smart Coffee Maker 49350 | `B07GVTCR96` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-smart-coffee-makers-2026` | De'Longhi TrueBrew Drip Coffee Machine | `B093VQCSWX` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-coffee-makers-2026` | Breville Precision Brewer Thermal | `B07JQQM15S` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-coffee-makers-2026` | Cuisinart DCC-3200P1 PerfecTemp 14-Cup Coffeemaker | `B074TGTM7Z` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-coffee-makers-2026` | Ninja Specialty Coffee Maker CF097 | `B07CJMR1H5` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -687,18 +724,18 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-smart-flood-lights-2026` | Wyze Outdoor Cam Pro with Floodlight | `B09JY6P49M` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-flood-lights-2026` | Feit Electric Smart LED Flood Light Bulbs | `B07S25LKJM` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-garage-door-openers-2026` | Chamberlain myQ Smart Garage Control | `B00QFXGSIY` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-smart-garage-door-openers-2026` | Meross Smart Garage Door Opener | `B085T1LVD2` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-smart-garage-door-openers-2026` | Genie Aladdin Connect Smart Device | `B00EL9OSZ4` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-garage-door-openers-2026` | Chamberlain myQ Smart Garage Hub | `B07N4MWS4H` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-garage-door-openers-2026` | Garageio Smart Garage Controller | `B08XBX8FGW` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-garage-door-openers-2026` | Nexx Garage NXG-300 Smart Controller | `B07NHHB3NB` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-garden-systems-2026` | Rachio 3 Smart Sprinkler Controller (8-Zone) | `B07J4NZT7N` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-garden-systems-2026` | Click and Grow Smart Garden 9 Indoor Garden | `B07BN14VBP` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-garden-systems-2026` | Govee Smart Plant Moisture Sensor (4-Pack) | `B07VDPQZNL` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-smart-garden-systems-2026` | Aerogarden Harvest Elite Indoor Garden | `B08NJHWVFH` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-garden-systems-2026` | Rachio 3 Smart Sprinkler Controller (4-Zone) | `B07BZRL94P` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-garden-systems-2026` | Ecowitt WH51 Soil Moisture Sensor | `B07CFRQYP3` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-home-devices-2026` | Amazon Echo Dot (5th Gen) | `B09B8X9RGM` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-home-devices-2026` | Ring Video Doorbell 4 | `B08CKHPP52` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-smart-home-devices-2026` | Kasa Smart Plug EP25 (2-Pack) | `B0B14C719T` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-home-devices-2026` | Govee RGBIC LED Strip Lights | `B0991Q94KP` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-home-devices-2026` | Amazon Echo Show 8 (3rd Gen) | `B0BLS3Y632` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-home-devices-2026` | Google Nest Learning Thermostat (3rd Gen) | `B0DZDB98JG` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -725,7 +762,6 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-smart-instant-pots-2026` | Instant Pot Pro Plus Wi-Fi Smart Multi-Cooker (6 Qt) | `B08GCKJK3H` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-instant-pots-2026` | Ninja Foodi 14-in-1 8-Qt Pressure Cooker & Steam Fryer | `B08JH83KXM` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-instant-pots-2026` | Crock-Pot Express Easy Release Multi-Cooker (6 Qt) | `B081KYQRL1` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-smart-instant-pots-2026` | Instant Pot Duo Crisp + Air Fryer (8 Qt) | `B09NJLSSM9` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-irrigation-systems-2026` | Rachio 3 Smart Sprinkler Controller 8-Zone | `B01D1NMLJU` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-irrigation-systems-2026` | RainBird ST8I-WIFI Smart WiFi Irrigation Controller 8-Zone | `B08CHF6MKJ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-irrigation-systems-2026` | Orbit B-hyve XR Smart 8-Zone Sprinkler Controller | `B08J2BJSCB` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -736,7 +772,6 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-smart-kitchen-scales-2026` | Perfect Bake Pro Smart Kitchen Scale | `B019C4PTSW` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-kitchen-scales-2026` | Etekcity Smart Nutrition Scale ESN00 | `B09KZSJXFY` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-kitchen-scales-2026` | INEVIFIT Digital Kitchen Scale | `B01MRT3EGJ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-smart-kitchen-scales-2026` | OXO Good Grips 11-Pound Stainless Steel Food Scale | `B0776YC33S` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-kitchen-scales-2026` | Escali Primo Digital Food Scale | `B000WFUASI` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-led-strip-lights-2026` | Govee RGBIC Pro LED Strip Lights 32.8ft Color Changing | `B098PBWZLL` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-led-strip-lights-2026` | Wyze Lifestyle Light Strip Pro 32.8ft WiFi LED Strip Lights | `B0CS5X4GFC` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -753,6 +788,8 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-smart-light-switches-2026` | Leviton Decora Smart Wi-Fi Switch D215S, No Hub Required | `B0BVKZLT3B` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-light-switches-2026` | GE Cync Smart Switch, No Neutral Wire Required, Wi-Fi | `B09JV98TS4` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-light-switches-2026` | Kasa Smart 3-Way Switch Kit HS210 KIT, Wi-Fi, 2-Pack | `B07B96CJQX` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-smart-light-switches-2026` | Treatlife Smart Light Switch, No Neutral Wire, 2.4 GHz Wi-Fi | `B07Z13GNL3` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-smart-locks-2026` | Schlage Encode Smart WiFi Deadbolt | `B07HX9GSJM` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-locks-2026` | August Wi-Fi Smart Lock (4th Generation) | `B082HYGSWN` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-locks-2026` | Schlage Encode Plus Smart WiFi Deadbolt | `B09TCGRH9T` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-locks-2026` | Kwikset SmartCode 888 Smart Lock | `B07BLJ38SJ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -771,6 +808,7 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-smart-outdoor-cameras-2026` | Blink Outdoor 4 (4th Gen) Smart Security Camera | `B0B1N5HW22` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-outdoor-cameras-2026` | Wyze Cam Outdoor v2 Smart Home Security Camera | `B09XR7HDZS` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-outdoor-lights-2026` | Govee Outdoor String Lights H137A | `B0B6D8Y32F` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-smart-outdoor-lights-2026` | Philips Hue Lily Outdoor Spot Light 3-Pack | `B07ZB4JM6X` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-outdoor-lights-2026` | Ring PAR38 Smart LED Bulb | `B08Y8NTTJB` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-outdoor-lights-2026` | Kasa Smart Outdoor Plug KP400 | `B07CZN4N2F` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-outdoor-lights-2026` | LITOM 24 LED Solar Lights | `B071J2WV14` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -780,6 +818,7 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-smart-pet-cameras-2026` | eufy Pet Camera 360° View AI Tracking Treat Dispenser | `B099JYHTL5` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-pet-cameras-2026` | WYZE Cam Pan v3 Indoor/Outdoor 1080p Pan/Tilt/Zoom Camera | `B0B9TWY11Q` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-pet-cameras-2026` | Pawbo Life Pet Camera WiFi HD Video with Treat Dispenser | `B06XPSGS4W` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-smart-pet-feeders-2026` | PETLIBRO Granary Wi-Fi Automatic Pet Feeder with Camera | `B09KDJZ5G4` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-pet-feeders-2026` | PetSafe Smart Feed Automatic Dog and Cat Feeder, Wi-Fi | `B01HJVQ4TM` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-pet-feeders-2026` | WOPET Smart Automatic Pet Feeder, 7L, Wi-Fi, Works with Alexa | `B08F8WDSS8` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-pet-feeders-2026` | PETLIBRO Air Automatic Cat Feeder, 5G Wi-Fi, 5L Hopper | `B0B4XLRKCX` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -848,6 +887,7 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-smart-watches-2026` | Fitbit Sense 2 | `B0B4MRWNQF` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-watches-2026` | Amazfit GTR 4 | `B0B8Y8NDMC` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-watches-2026` | Apple Watch Ultra 2 | `B0CHX8CZQH` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-smart-water-filters-2026` | Waterdrop G3P800 Reverse Osmosis System 800 GPD | `B0987FCQQW` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-water-filters-2026` | Brita Hub Instant Powerful Countertop Water Filter System | `B0BLHX4JN1` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-water-filters-2026` | ZeroWater 10-Cup Ready-Pour 5-Stage Water Filter Pitcher | `B0073PZ6O0` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-smart-water-filters-2026` | Waterdrop N1 Countertop Reverse Osmosis System | `B092ZNLQ5N` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -876,7 +916,6 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-standing-desks-2026` | FEZIBO Crank Adjustable Standing Desk 48x24 | `B092JPD43C` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-standing-desks-2026` | MAIDeSITe Electric Standing Desk 55x28 | `B0CY7HQYJP` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-standing-desks-2026` | VIVO Electric Height Adjustable Standing Desk 60x24 | `B07V6ZSHF4` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-standing-desks-2026` | BANTI Electric Standing Desk 55x24 | `B0DFDK3JGH` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-standing-desks-2026` | ODK Electric Standing Desk 55x24 | `B0CTHQ8LQG` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-standing-desks-2026` | SMUG Standing Desk Converter 32x23 | `B0B3Y7XQKM` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-standing-mats-anti-fatigue-2026` | Topo Comfort Mat by Ergodriven | `B00V3TO9EK` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -898,7 +937,6 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-tablets-2026` | Amazon Fire HD 10 (2023) | `B0BL5ND534` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-tablets-2026` | Samsung Galaxy Tab A9+ | `B0CGLWL17X` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-trackball-mice-2026` | Logitech MX Ergo Wireless Trackball Mouse | `B0753P1GTS` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-trackball-mice-2026` | Logitech M575 Wireless Trackball Mouse | `B08B6GCNF3` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-trackball-mice-2026` | Kensington Expert Wireless Trackball Mouse | `B01K81JWJM` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-trackball-mice-2026` | Kensington Orbit Fusion Wireless Trackball | `B0779CGVGC` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-trackball-mice-2026` | Elecom M-HT1DRBK Wireless Trackball Mouse | `B075RMXCK6` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -912,6 +950,7 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-trx-suspension-trainers-2026` | TRX ALL-IN-ONE Suspension Training System | `B07PS9GRVL` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-trx-suspension-trainers-2026` | TRX PRO4 Suspension Training System | `B07YWKH4VV` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-trx-suspension-trainers-2026` | Gorilla Bow Resistance Band System with Suspension Straps | `B00F5EXLFE` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-trx-suspension-trainers-2026` | Jungle Gym XT Suspension Trainer by Lifeline | `B088GQG1H7` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-trx-suspension-trainers-2026` | WOSS Xtreme Bodyweight Trainer Suspension System | `B009BVTLCE` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-trx-suspension-trainers-2026` | FITINDEX Suspension Trainer Kit with Adjustable Straps | `B07XHT41MY` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-ultrawide-monitors-2026` | LG 34WN80C-B UltraWide Monitor | `B07YGZ7C1K` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -945,13 +984,11 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-usb-c-hubs-macbook-pro-2026` | Plugable 13-in-1 USB-C Docking Station Triple Monitor | `B0779K9DG2` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-usb-c-hubs-macbook-pro-2026` | Anker 7-in-1 USB-C Hub Adapter | `B087219P5J` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-usb-hubs-2026` | Anker 555 USB-C Hub (8-in-1) | `B08L6LXMQH` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-usb-hubs-2026` | CalDigit TS4 Thunderbolt 4 Dock | `B09GV6NZLX` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-usb-hubs-2026` | Anker 332 USB-C Hub (5-in-1) | `B0BQNYL27Q` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-usb-hubs-2026` | SABRENT 60W 7-Port USB-C Hub | `B08WM2WV1C` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-usb-hubs-2026` | Hiearcool USB-C Hub 11-in-1 | `B092P2NNND` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-usb-hubs-2026` | Plugable 7-in-1 USB-C Hub with 2.5G Ethernet | `B09DT7X7HG` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-usb-microphones-2026` | Shure MV7 USB Podcast Microphone | `B08G7RG9ML` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-usb-microphones-2026` | Blue Yeti USB Microphone | `B00N1YPXW2` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-usb-microphones-2026` | HyperX QuadCast S | `B08H9T3BRS` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-usb-microphones-2026` | Audio-Technica AT2020USB+ | `B00B5ZX9FM` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-usb-microphones-2026` | Elgato Wave:3 USB Microphone | `B097BTNR4G` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -985,6 +1022,7 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-webcams-2026` | Elgato Facecam | `B097RN6L6P` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-webcams-2026` | Razer Kiyo Pro Webcam | `B08H3LKFMZ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-webcams-2026` | Anker PowerConf C300 Webcam | `B09CGXX4X9` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-webcams-2026` | NexiGo N60 1080P Webcam | `B088TSR6YJ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-weight-benches-2026` | REP Fitness AB-3000 Adjustable Weight Bench | `B07YGKK85B` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-weight-benches-2026` | Bowflex 5.1S Adjustable Weight Bench | `B07WNZR5GN` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-weight-benches-2026` | Flybird Adjustable Weight Bench | `B07VKJMNG5` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -994,8 +1032,8 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-weight-lifting-belts-2026` | SBD 13mm Lever Belt | `B0FRN7YQLK` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-weight-lifting-belts-2026` | Rogue Ohio Lifting Belt | `B0742WJP8X` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-weight-lifting-belts-2026` | Inzer Forever Lever Belt | `B000VDPLIM` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-weight-lifting-belts-2026` | Harbinger Padded Leather Contour Belt | `B0001PA9HE` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-weight-lifting-belts-2026` | Dark Iron Fitness Lever Belt | `B075C3MBG8` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-weight-lifting-belts-2026` | Gymreapers 10mm Lever Belt | `B07QKFGR5L` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-weighted-vests-2026` | Titan Fitness Weight Vest | `B07C5GZS2R` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-weighted-vests-2026` | Hyperwear Hyper Vest PRO | `B0091KFHPU` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-weighted-vests-2026` | CAP Barbell Adjustable Weighted Vest | `B002C50FSQ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -1007,7 +1045,6 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-whey-protein-2026` | MuscleTech Nitro-Tech (4 lbs) | `B008JC26E4` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-whey-protein-2026` | Isopure Zero Carb (3 lbs) | `B000E95HP0` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-whey-protein-2026` | Transparent Labs Grass-Fed Whey Isolate | `B0CQ32D39X` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-whey-protein-2026` | GHOST Whey Protein (Chips Ahoy!, 2lb) | `B07VPKSD15` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-whiteboards-dry-erase-2026` | Quartet Standard Magnetic Whiteboard 48x36 | `B00H2XPFU8` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-whiteboards-dry-erase-2026` | VIZ-PRO 72x40 Magnetic Dry Erase Whiteboard | `B07D8XSTDT` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-whiteboards-dry-erase-2026` | U Brands Magnetic Dry Erase Board 35x23 | `B00MRSV1G4` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -1024,13 +1061,10 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-wireless-charging-pads-for-desk-2026` | Belkin BoostCharge Pro 3-in-1 Wireless Charger | `B09DRTD9T8` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-wireless-charging-pads-for-desk-2026` | TOZO W1 Wireless Charger Charging Pad | `B07PGT7LSR` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-wireless-charging-pads-for-desk-2026` | Anker 737 MagGo 3-in-1 Charging Station | `B0BNPH9377` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-wireless-charging-pads-for-desk-2026` | Samsung 15W Super Fast Wireless Charger Duo | `B09WZR8HNJ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-wireless-charging-pads-for-desk-2026` | Yootech Wireless Charging Pad X20 | `B075KZQN56` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-wireless-earbuds-2026` | Apple AirPods Pro 3 | `B0FQFB8FMG` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-wireless-earbuds-2026` | Sony WF-1000XM5 | `B0C33XXS56` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-wireless-earbuds-2026` | Samsung Galaxy Buds3 Pro | `B0D9YZJ3V7` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-wireless-earbuds-2026` | Jabra Elite 10 Gen 2 | `B0D5DLF39S` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-wireless-earbuds-2026` | Soundcore Liberty 4 NC | `B0BZV4QFP8` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-wireless-earbuds-2026` | Bose QuietComfort Earbuds II | `B0B4PSQHD5` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-wireless-gaming-headsets-2026` | SteelSeries Arctis Nova Pro Wireless | `B09ZXGV8WF` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-wireless-gaming-headsets-2026` | Logitech G PRO X 2 Lightspeed | `B0B3F8V4JG` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -1042,7 +1076,7 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-wireless-gaming-mice-2026` | Razer DeathAdder V3 Pro | `B0BLZXCZSL` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-wireless-gaming-mice-2026` | Glorious Model O 2 Wireless | `B0BVZ2SC8N` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-wireless-gaming-mice-2026` | Razer Naga V2 Pro | `B0BJVSF33X` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-wireless-gaming-mice-2026` | SteelSeries Rival 3 Wireless | `B08MVKVVYR` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-wireless-gaming-mice-2026` | Razer Basilisk V3 Wired Gaming Mouse | `B08WDTMNQP` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-wireless-gaming-mice-2026` | Corsair Harpoon RGB Wireless | `B07ZGCWKV6` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-wireless-headphones-2026` | Sony WH-1000XM5 | `B09XS7JWHH` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-wireless-headphones-2026` | Bose QuietComfort 45 | `B098FKXT8L` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -1059,6 +1093,8 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-wireless-presentation-clickers-2026` | Logitech R500s Laser Presentation Remote Dual Connectivity | `B0BV8R8JMC` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-wireless-presentation-clickers-2026` | Kensington Expert Wireless Presenter Green Laser K72427AMA | `B009K1PYFG` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-wireless-presentation-clickers-2026` | Canon PR100-R Wireless Presentation Remote Black | `B01CEAYXUQ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-wireless-presentation-clickers-2026` | DinoFire Wireless Presenter Remote 100FT PowerPoint Clicker | `B012FB0VM8` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
+| `best-wireless-presentation-clickers-2026` | Targus Dual Mode Wireless Laser Presenter with Timer | `B0B7KT4T8S` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-workout-mats-for-home-gym-2026` | Liforme Original Yoga Mat | `B01N5I2E5R` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-workout-mats-for-home-gym-2026` | Manduka PRO Yoga Mat | `B0017LMIXI` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-workout-mats-for-home-gym-2026` | ProSource Fit Extra Thick Yoga and Pilates Mat | `B003WJDM3I` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -1068,14 +1104,12 @@ Generated: 2026-05-11T22:37:43.952Z
 | `best-yoga-blocks-straps-2026` | Manduka Cork Yoga Block 2-Pack | `B0756QVXH1` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-yoga-blocks-straps-2026` | Gaiam Yoga Block 2-Pack | `B003YJPG7W` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-yoga-blocks-straps-2026` | REEHUT Yoga Block 2-Pack | `B01CSLBZ12` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-yoga-blocks-straps-2026` | Liforme Yoga Block | `B08PRQD5RZ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-yoga-blocks-straps-2026` | Gaiam Yoga Strap | `B002I7KWIO` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-yoga-blocks-straps-2026` | Hugger Mugger Yoga Strap | `B003EVHRT4` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-yoga-mats-2026` | Liforme Original Yoga Mat | `B06XDNL1BL` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-yoga-mats-2026` | JadeYoga Harmony Mat | `B0DB61LRVV` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-yoga-mats-2026` | Gaiam Classic Solid Color Yoga Mat | `B07J9WSQFZ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `best-yoga-mats-2026` | Lululemon The Reversible Mat 5mm | `B09GKMZNMN` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `best-yoga-mats-2026` | Alo Yoga Warrior Mat | `B0C4ZPTV5Q` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `desk-accessories-productivity-2026` | LectroFan EVO White Noise Machine | `B07SDMJMW3` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `desk-accessories-productivity-2026` | Anker PowerWave Wireless Charging Pad | `B07THHQMHM` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `desk-accessories-productivity-2026` | TaoTronics LED Desk Lamp TT-DL16 | `B00APAQSP6` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
@@ -1085,7 +1119,6 @@ Generated: 2026-05-11T22:37:43.952Z
 | `home-office-setup-under-500-2026` | BenQ ScreenBar LED Monitor Light Bar | `B076VNFZJG` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `home-office-setup-under-500-2026` | Rain Design mStand Laptop Stand | `B000OOYECC` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `home-office-setup-under-500-2026` | Soundcore Anker Life Q20 Headphones | `B07NM3RSRQ` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
-| `home-office-setup-under-500-2026` | Ergonomic High Back Mesh Office Chair | `B0DGK8TG51` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `home-office-setup-under-500-2026` | Philips 24 Inch FHD 100Hz Monitor | `B0C8ZKV5R9` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `home-office-setup-under-500-2026` | Logitech MK270 Wireless Keyboard and Mouse Combo | `B079JLY5M5` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
 | `smart-thermostats-energy-savings-2026` | ecobee Smart Thermostat Premium | `B09XXS48P8` | 200 | CAPTCHA challenge (run from residential IP) | Re-run the script from a non-datacenter IP (laptop or GitHub-hosted runner). |
