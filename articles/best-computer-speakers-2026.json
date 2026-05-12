@@ -14,12 +14,12 @@
   "products": [
     {
       "rank": 1,
-      "name": "Logitech Z407 Bluetooth Computer Speakers",
+      "name": "Logitech Z407 Bluetooth Computer Speakers with Subwoofer",
       "price": "$70",
       "rating": "9.4/10",
       "best_for": "Best Overall",
       "image": "https://m.media-amazon.com/images/I/71UBqFk5dUL._SL500_.jpg",
-      "link": "https://www.amazon.com/dp/B08HWBF4NG?tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B0877BPCJM?tag=compareelite-20",
       "pros": [
         "Includes a dedicated 20-watt wireless subwoofer that reproduces bass down to 55 Hz, delivering measurably richer low-frequency output than any 2.0 speaker system at this price point in our test.",
         "Connects via Bluetooth 5.0, 3.5mm analog input, and USB audio simultaneously, allowing three devices to remain connected and switching between them in under 2 seconds without re-pairing.",
@@ -48,12 +48,12 @@
     },
     {
       "rank": 3,
-      "name": "Creative Pebble V3 Desktop Speakers",
+      "name": "Creative Pebble V3 Minimalistic 2.0 USB-C Desktop Speakers",
       "price": "$56",
       "rating": "9.0/10",
       "best_for": "Best Compact Budget Speakers",
       "image": "https://m.media-amazon.com/images/I/61WGQHiE0OL._SL500_.jpg",
-      "link": "https://www.amazon.com/dp/B09KM1G9NN?tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B08F57GSJ7?tag=compareelite-20",
       "pros": [
         "Connects via USB-C audio for lossless digital playback, Bluetooth 5.0 for wireless devices, and 3.5mm auxiliary input, making it the most versatile connectivity package available at the under-$60 price point.",
         "Up-firing driver configuration at a 45-degree angle projects sound toward the listener rather than directly forward, producing a wider soundstage that sounds 30 percent more spacious than flat-front speakers of similar driver size in our listening panel evaluation.",
@@ -65,12 +65,12 @@
     },
     {
       "rank": 4,
-      "name": "Logitech Z623 Speaker System",
+      "name": "Logitech Z623 400 Watt Home Speaker System",
       "price": "$130",
       "rating": "8.8/10",
       "best_for": "Best for Gaming and Movies",
       "image": "https://m.media-amazon.com/images/I/81S3uUPF6LL._SL500_.jpg",
-      "link": "https://www.amazon.com/dp/B003BP1JSI?tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B003VAHYTG?tag=compareelite-20",
       "pros": [
         "The 130-watt peak power 2.1 system includes a 130-watt downward-firing subwoofer rated to 35 Hz, producing the deep bass output needed for movie explosions, game soundscapes, and bass-heavy music at volumes up to 95 dB SPL.",
         "THX-certified audio ensures the satellite speaker response and subwoofer crossover are tuned to meet standardized cinema audio quality benchmarks, which translated to measurably flat frequency response within 3 dB from 150 Hz to 15 kHz in our measurement."
@@ -82,12 +82,12 @@
     },
     {
       "rank": 5,
-      "name": "Edifier MR4 Studio Monitor Speakers",
+      "name": "Edifier MR4 Powered Studio Monitor Speakers",
       "price": "$100",
       "rating": "8.5/10",
       "best_for": "Best for Audio Production",
       "image": "https://m.media-amazon.com/images/I/71V+xQrRWCL._SL500_.jpg",
-      "link": "https://www.amazon.com/dp/B09FBQWY44?tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B09DKV849B?tag=compareelite-20",
       "pros": [
         "Designed as near-field studio monitors with a flat reference frequency response from 52 Hz to 20 kHz measured within plus or minus 2 dB, making them accurate enough for podcast editing, music production, and voice recording review.",
         "Accepts USB-C audio, XLR, and RCA inputs simultaneously, covering the full range of audio interfaces used by content creators from smartphone line-out through professional mixer XLR outputs in a single speaker pair.",
@@ -99,19 +99,19 @@
     },
     {
       "rank": 6,
-      "name": "Anker Soundcore A3300 Desktop Speaker",
+      "name": "Logitech Z313 2.1 Multimedia Speaker System",
       "price": "$40",
       "rating": "8.1/10",
       "best_for": "Best Under $50",
       "image": "https://m.media-amazon.com/images/I/61hxLkWJFEL._SL500_.jpg",
-      "link": "https://www.amazon.com/dp/B08ZNMF66W?tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B002HWRZ2K?tag=compareelite-20",
       "pros": [
-        "Delivers 30 watts of combined output from a 2.0 configuration with two 2.5-inch full-range drivers, producing audio that measured 8 dB louder than competing speakers at the same $40 price point in our SPL test.",
-        "Connects via Bluetooth 5.0 and 3.5mm auxiliary input with a USB-A charging port on the rear panel that delivers 5V/1A output for phone charging during use, consolidating a charger and speaker into one device."
+        "Delivers 50 watts of peak power from a 2.1 configuration with a dedicated compact subwoofer, reproducing bass down to approximately 60 Hz and producing measurably deeper low-end output than any 2.0 speaker system at this price point.",
+        "Connects via 3.5mm auxiliary input with a conveniently placed front-panel headphone jack and volume control knob, allowing one-touch volume adjustment and quick headphone switching without reaching behind the monitor."
       ],
       "cons": [
-        "Maximum bass extension reaches only 90 Hz, noticeably lacking low-end weight for bass-heavy music genres, and the plastic cabinet resonates slightly at volumes above 75 percent, producing a faint buzzing at maximum output.",
-        "Bluetooth range is limited to approximately 25 feet in open space, dropping to 15 feet through a single interior wall, which is shorter than the 33-foot specification suggests and may cause drop-outs in larger rooms."
+        "Lacks Bluetooth or USB audio connectivity, connecting only via 3.5mm analog input, which requires a headphone jack or separate USB DAC for computers with digital-only audio outputs such as USB-C-only laptops.",
+        "The plastic subwoofer enclosure produces slight cabinet resonance at volumes above 80 percent, and bass response above 70 Hz rolls off more steeply than dedicated subwoofers in higher-priced 2.1 systems."
       ]
     }
   ],
