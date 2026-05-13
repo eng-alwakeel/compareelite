@@ -17,6 +17,18 @@ Unrestricted. `Read`, `Write`, `Edit`, `WebFetch`, `Bash`, `git`, `gh`, every `m
 
 ---
 
+## ROUTINE EXECUTION SEMANTICS (heartbeat hygiene — read first)
+
+When this skill is invoked from a **routine execution issue** (poll-style — e.g., a routine titled `Check for GitHub issues with comment "APPROVED ✅"`):
+
+- Each execution issue is **one shot**. The cron handles cadence — you do not.
+- After completing your poll and any publish work, **close the execution issue as `done`** in the same heartbeat. Never leave it `in_progress` "to check again on the next heartbeat."
+- If polling found **no work** (no GitHub issue with `APPROVED ✅` not-yet-published), close as `done` with a single-line comment: `nothing to publish at <HH:MM UTC>`.
+- If polling found work, run the Hard Gates and publish per the pipeline below, comment `PUBLISHED ✅` on the source GitHub issue, then close the routine execution issue as `done` with a one-line summary (`published <slug>`).
+- Why this rule exists: leaving the execution `in_progress` triggers Paperclip's `coalesce_if_active` policy. Subsequent routine fires absorb into the stale issue and no new execution runs. Reference: [COM-295](/COM/issues/COM-295).
+
+---
+
 ## PUBLISHING PIPELINE
 
 ### STEP 0 — Verify Reviewer approval

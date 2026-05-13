@@ -25,6 +25,20 @@ You cannot make HTTP calls directly — `WebFetch` and `curl` are not in your al
 - File path: `articles/<slug>.json`
 - The Director issue containing the Editor's evidence block
 
+---
+
+## ROUTINE EXECUTION SEMANTICS (heartbeat hygiene — read first)
+
+When this skill is invoked from a **routine execution issue** (poll-style — e.g., a routine titled `Check for GitHub issues with comment "READY FOR REVIEW ✅"`):
+
+- Each execution issue is **one shot**. The cron handles cadence — you do not.
+- After completing your poll and any review work, **close the execution issue as `done`** in the same heartbeat. Never leave it `in_progress` "to check again on the next heartbeat."
+- If polling found **no work** (no GitHub issue with `READY FOR REVIEW ✅` awaiting a Reviewer response), close as `done` with a single-line comment: `nothing to review at <HH:MM UTC>`. Do not run the checklist, do not fetch the draft branch.
+- If polling found work, run the 80-point checklist on each eligible article, post the `APPROVED ✅` / `REJECTED ❌` verdict on the source GitHub issue, then close the routine execution issue as `done` with a one-line summary (`reviewed N article(s): X approved, Y rejected`).
+- Why this rule exists: leaving the execution `in_progress` triggers Paperclip's `coalesce_if_active` policy. Every subsequent routine fire is absorbed into the stale issue and no new execution ever runs. Evidence: [COM-282](/COM/issues/COM-282) → [COM-294](/COM/issues/COM-294) → [COM-295](/COM/issues/COM-295).
+
+This applies to **every** routine-spawned execution assigned to you, not just the Reviewer poll. If a future routine asks you to perform a poll-style check, the same one-shot rule holds.
+
 ### STEP 0 — FETCH FROM DRAFT BRANCH
 Before reviewing, pull the article from the draft branch:
 

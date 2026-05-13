@@ -28,6 +28,18 @@ Nothing else. Do not push to GitHub. Do not add `related_articles`.
 
 ---
 
+## ROUTINE EXECUTION SEMANTICS (heartbeat hygiene — read first)
+
+When this skill is invoked from a **routine execution issue** (poll-style — e.g., a routine titled `Check for open GitHub issues assigned to you`):
+
+- Each execution issue is **one shot**. The cron handles cadence — you do not.
+- After completing your poll and any write work, **close the execution issue as `done`** in the same heartbeat. Never leave it `in_progress` "to check again on the next heartbeat."
+- If polling found **no work** (no open GitHub issue with label `daily-articles` assigned to you), close as `done` with a single-line comment: `nothing to write at <HH:MM UTC>`. Do not start an article.
+- If polling found work, pick the oldest unstarted issue, write the article per the rules below, comment `READY FOR REVIEW ✅` on the source GitHub issue, then close the routine execution issue as `done` with a one-line summary (`wrote <slug>`).
+- Why this rule exists: leaving the execution `in_progress` triggers Paperclip's `coalesce_if_active` policy. Subsequent routine fires absorb into the stale issue and no new execution runs. Reference: [COM-295](/COM/issues/COM-295).
+
+---
+
 ## STRICT RULES
 
 ### RULE 1 — NO DUPLICATE TOPICS

@@ -27,19 +27,27 @@ Strategic oversight only. Creates tasks with evidence requirements. Monitors pip
 ## DAILY ROUTINE (8:00 AM KSA)
 
 ### STEP 1 - TOPIC SELECTION (10 topics daily)
-Read `data/articles-index.md`
-Choose 10 NEW topics not in index:
-- 6 Tech (highest commission)
-- 2 Home Office
-- 1 Home Fitness
-- 1 Smart Home
 
-Batch distribution:
+**Authoritative source: `data/target-keywords.json`** (regenerated weekly by the keyword-research Action, Monday 9 AM KSA). Topics are no longer chosen by free-form niche quota.
+
+Procedure:
+1. Read `data/target-keywords.json` → `top_30` array (ordered by score, then priority).
+2. Read `data/articles-index.md` for already-published slugs.
+3. Iterate `top_30` in order and pick the first 10 whose `slug` is **not** present in the index.
+   - Use the `keyword` field as the article topic phrase (e.g. `best standing desk for under 200`).
+   - Use the `slug` field verbatim — never invent slugs.
+   - Use the `niche` field (`tech` / `home-office` / `home-fitness` / `smart-home`) as the issue category tag.
+4. If fewer than 10 unpublished slugs remain in `top_30`, continue into the `all` array (same JSON file) using the same order rule.
+5. If both `top_30` and `all` are exhausted, halt topic creation and open an INTERVENTION issue titled `keyword pool exhausted — regenerate target-keywords.json`.
+
+Batch distribution (unchanged):
 - Batch 1 (8 AM): 4 topics → create 4 issues
 - Batch 2 (12 PM): 3 topics → create 3 issues
 - Batch 3 (6 PM): 3 topics → create 3 issues
 
-Hard rule: never pick a slug already present in the index. If you do, the Editor will refuse with `DUPLICATE_TOPIC` — that's a wasted run.
+Hard rules:
+- Never pick a slug already present in `data/articles-index.md`. The Editor will refuse with `DUPLICATE_TOPIC` — wasted run.
+- Never invent a topic outside `target-keywords.json`. The keyword file is the only allowed source.
 
 ### STEP 2 - CREATE ISSUES
 
