@@ -858,5 +858,702 @@
         "ERROR": 16
       }
     }
+  },
+  {
+    "timestamp": "2026-05-13T13:34:32.845Z",
+    "articles": {
+      "total": 186,
+      "jsonValid": 186,
+      "jsonBroken": [],
+      "byCategory": {
+        "Tech": 61,
+        "Home Office": 41,
+        "Smart Home": 45,
+        "Home Fitness": 39
+      },
+      "addedToday": 0
+    },
+    "validator": {
+      "pass": 154,
+      "fail": 32,
+      "failReasons": {
+        "products[N].link ASIN <X> is in the broken-links report (HTTP 404) — replace with a verified ASIN": 50,
+        "thumbnail must equal products[N].image (the Best Overall product)": 1
+      },
+      "passRate": 82.8
+    },
+    "asins": {
+      "totalProducts": 1126,
+      "dead": [
+        {
+          "slug": "best-ab-rollers-2026",
+          "asin": "B07BNBK7D4",
+          "category": "Home Fitness"
+        },
+        {
+          "slug": "best-ab-rollers-2026",
+          "asin": "B00DF2LZSI",
+          "category": "Home Fitness"
+        },
+        {
+          "slug": "best-acoustic-panels-2026",
+          "asin": "B09NQWY5PL",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-air-quality-monitors-2026",
+          "asin": "B07YSP9XSQ",
+          "category": "Smart Home"
+        },
+        {
+          "slug": "best-air-quality-monitors-2026",
+          "asin": "B08RJXCFL3",
+          "category": "Smart Home"
+        },
+        {
+          "slug": "best-air-quality-monitors-2026",
+          "asin": "B08VH9MLQD",
+          "category": "Smart Home"
+        },
+        {
+          "slug": "best-air-quality-monitors-2026",
+          "asin": "B07PJN6HF5",
+          "category": "Smart Home"
+        },
+        {
+          "slug": "best-boxing-gloves-2026",
+          "asin": "B00Y8CW9EO",
+          "category": "Home Fitness"
+        },
+        {
+          "slug": "best-boxing-gloves-2026",
+          "asin": "B000XKFBZC",
+          "category": "Home Fitness"
+        },
+        {
+          "slug": "best-boxing-gloves-2026",
+          "asin": "B00CHD3P8U",
+          "category": "Home Fitness"
+        },
+        {
+          "slug": "best-boxing-gloves-2026",
+          "asin": "B000W7GGJ8",
+          "category": "Home Fitness"
+        },
+        {
+          "slug": "best-cable-management-solutions-2026",
+          "asin": "B07KFPF8DN",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-cable-management-solutions-2026",
+          "asin": "B07RWLKVNR",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-cable-management-solutions-2026",
+          "asin": "B07HRTWV8P",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-cold-plunge-ice-baths-2026",
+          "asin": "B0DS966YKR",
+          "category": "Home Fitness"
+        },
+        {
+          "slug": "best-compression-socks-sleeves-2026",
+          "asin": "B01CJD9D82",
+          "category": "Home Fitness"
+        },
+        {
+          "slug": "best-compression-socks-sleeves-2026",
+          "asin": "B07J9MXWJK",
+          "category": "Home Fitness"
+        },
+        {
+          "slug": "best-compression-socks-sleeves-2026",
+          "asin": "B07Q8HKBR3",
+          "category": "Home Fitness"
+        },
+        {
+          "slug": "best-compression-socks-sleeves-2026",
+          "asin": "B07X3FDWQ7",
+          "category": "Home Fitness"
+        },
+        {
+          "slug": "best-desk-converters-sit-stand-2026",
+          "asin": "B07HWML24R",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-desk-fans-home-office-2026",
+          "asin": "B00B4DRP1A",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-desk-fans-home-office-2026",
+          "asin": "B07JDL11VK",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-desk-fans-home-office-2026",
+          "asin": "B07ZP1SDML",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-desk-mats-2026",
+          "asin": "B0BJHF6RBW",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-desk-mats-2026",
+          "asin": "B07WNCQBMQ",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-desk-mats-2026",
+          "asin": "B07CXDN8VH",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-desk-organizers-2026",
+          "asin": "B07NV76FHX",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-desk-risers-2026",
+          "asin": "B08NJG4H98",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-dip-bars-for-home-gym-2026",
+          "asin": "B07XCZX9BJ",
+          "category": "Home Fitness"
+        },
+        {
+          "slug": "best-dip-bars-for-home-gym-2026",
+          "asin": "B07RMKWW8H",
+          "category": "Home Fitness"
+        },
+        {
+          "slug": "best-document-scanners-2026",
+          "asin": "B09KBP2QM4",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-elliptical-machines-2026",
+          "asin": "B00UUWTHVU",
+          "category": "Home Fitness"
+        },
+        {
+          "slug": "best-ergonomic-mouse-pads-2026",
+          "asin": "B003X56XMA",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-gaming-keyboards-2026",
+          "asin": "B09MFWJ7Q8",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-jump-ropes-for-fitness-2026",
+          "asin": "B075TGYCJY",
+          "category": "Home Fitness"
+        },
+        {
+          "slug": "best-kneeling-chairs-2026",
+          "asin": "B00YX5YCUY",
+          "category": "Home Office"
+        },
+        {
+          "slug": "best-medicine-balls-2026",
+          "asin": "B00112XOTW",
+          "category": "Home Fitness"
+        },
+        {
+          "slug": "best-mini-pcs-2026",
+          "asin": "B0B7QCBR34",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-mini-trampolines-rebounders-2026",
+          "asin": "B00IOPZH02",
+          "category": "Home Fitness"
+        },
+        {
+          "slug": "best-monitor-calibrators-2026",
+          "asin": "B08NCN4W33",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-portable-power-stations-2026",
+          "asin": "B0BX2M76LN",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-portable-power-stations-2026",
+          "asin": "B0C9M7SZ2K",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-smart-coffee-makers-2026",
+          "asin": "B07CJMR1H5",
+          "category": "Smart Home"
+        },
+        {
+          "slug": "best-smart-home-security-systems-2026",
+          "asin": "B0BVYWML9W",
+          "category": "Smart Home"
+        },
+        {
+          "slug": "best-smart-humidifiers-2026",
+          "asin": "B0014DHXLS",
+          "category": "Smart Home"
+        },
+        {
+          "slug": "best-smart-power-strips-2026",
+          "asin": "B09DHYLM3R",
+          "category": "Smart Home"
+        },
+        {
+          "slug": "best-smart-slow-cookers-2026",
+          "asin": "B004QKND9K",
+          "category": "Smart Home"
+        },
+        {
+          "slug": "best-weighted-vests-2026",
+          "asin": "B0091KFHPU",
+          "category": "Home Fitness"
+        },
+        {
+          "slug": "best-wifi-routers-2026",
+          "asin": "B09MFC7VBX",
+          "category": "Tech"
+        },
+        {
+          "slug": "best-workout-mats-for-home-gym-2026",
+          "asin": "B003WJDM3I",
+          "category": "Home Fitness"
+        }
+      ],
+      "deadByCategory": {
+        "Tech": 6,
+        "Home Office": 16,
+        "Smart Home": 9,
+        "Home Fitness": 19
+      },
+      "deadByArticle": {
+        "best-ab-rollers-2026": 2,
+        "best-acoustic-panels-2026": 1,
+        "best-air-quality-monitors-2026": 4,
+        "best-boxing-gloves-2026": 4,
+        "best-cable-management-solutions-2026": 3,
+        "best-cold-plunge-ice-baths-2026": 1,
+        "best-compression-socks-sleeves-2026": 4,
+        "best-desk-converters-sit-stand-2026": 1,
+        "best-desk-fans-home-office-2026": 3,
+        "best-desk-mats-2026": 3,
+        "best-desk-organizers-2026": 1,
+        "best-desk-risers-2026": 1,
+        "best-dip-bars-for-home-gym-2026": 2,
+        "best-document-scanners-2026": 1,
+        "best-elliptical-machines-2026": 1,
+        "best-ergonomic-mouse-pads-2026": 1,
+        "best-gaming-keyboards-2026": 1,
+        "best-jump-ropes-for-fitness-2026": 1,
+        "best-kneeling-chairs-2026": 1,
+        "best-medicine-balls-2026": 1,
+        "best-mini-pcs-2026": 1,
+        "best-mini-trampolines-rebounders-2026": 1,
+        "best-monitor-calibrators-2026": 1,
+        "best-portable-power-stations-2026": 2,
+        "best-smart-coffee-makers-2026": 1,
+        "best-smart-home-security-systems-2026": 1,
+        "best-smart-humidifiers-2026": 1,
+        "best-smart-power-strips-2026": 1,
+        "best-smart-slow-cookers-2026": 1,
+        "best-weighted-vests-2026": 1,
+        "best-wifi-routers-2026": 1,
+        "best-workout-mats-for-home-gym-2026": 1
+      },
+      "deadRate": 4.4
+    },
+    "images": {
+      "productsWithBadCdn": [],
+      "productsWithBadCdnByCategory": {
+        "Tech": 0,
+        "Home Office": 0,
+        "Smart Home": 0,
+        "Home Fitness": 0
+      },
+      "thumbnailsNotMatchingProduct0": [
+        "best-desk-organizers-2026"
+      ]
+    },
+    "excerpts": {
+      "offRange": [
+        {
+          "slug": "best-action-cameras-2026",
+          "length": 142
+        },
+        {
+          "slug": "best-air-quality-monitors-2026",
+          "length": 163
+        },
+        {
+          "slug": "best-barbell-weight-sets-2026",
+          "length": 144
+        },
+        {
+          "slug": "best-blue-light-glasses-2026",
+          "length": 167
+        },
+        {
+          "slug": "best-budget-office-chairs-under-200-2026",
+          "length": 146
+        },
+        {
+          "slug": "best-cable-management-solutions-2026",
+          "length": 167
+        },
+        {
+          "slug": "best-cold-plunge-ice-baths-2026",
+          "length": 141
+        },
+        {
+          "slug": "best-compression-socks-sleeves-2026",
+          "length": 166
+        },
+        {
+          "slug": "best-desk-humidifiers-2026",
+          "length": 143
+        },
+        {
+          "slug": "best-desk-organizers-2026",
+          "length": 147
+        },
+        {
+          "slug": "best-document-scanners-2026",
+          "length": 143
+        },
+        {
+          "slug": "best-drawing-tablets-2026",
+          "length": 166
+        },
+        {
+          "slug": "best-drones-2026",
+          "length": 142
+        },
+        {
+          "slug": "best-elliptical-machines-2026",
+          "length": 149
+        },
+        {
+          "slug": "best-ergonomic-chair-cushions-2026",
+          "length": 165
+        },
+        {
+          "slug": "best-ergonomic-mouse-pads-2026",
+          "length": 164
+        },
+        {
+          "slug": "best-ergonomic-vertical-mice-2026",
+          "length": 163
+        },
+        {
+          "slug": "best-filing-cabinets-2026",
+          "length": 163
+        },
+        {
+          "slug": "best-gaming-mousepads-2026",
+          "length": 149
+        },
+        {
+          "slug": "best-gym-bags-2026",
+          "length": 165
+        },
+        {
+          "slug": "best-gymnastics-rings-2026",
+          "length": 165
+        },
+        {
+          "slug": "best-home-gym-equipment-small-spaces-2026",
+          "length": 142
+        },
+        {
+          "slug": "best-kettlebells-home-workouts-2026",
+          "length": 170
+        },
+        {
+          "slug": "best-keyboard-wrist-rests-2026",
+          "length": 166
+        },
+        {
+          "slug": "best-laptop-docking-stations-2026",
+          "length": 166
+        },
+        {
+          "slug": "best-massage-guns-2026",
+          "length": 167
+        },
+        {
+          "slug": "best-medicine-balls-2026",
+          "length": 164
+        },
+        {
+          "slug": "best-mesh-wifi-systems-2026",
+          "length": 164
+        },
+        {
+          "slug": "best-mini-pcs-2026",
+          "length": 162
+        },
+        {
+          "slug": "best-monitor-calibrators-2026",
+          "length": 161
+        },
+        {
+          "slug": "best-monitor-light-bars-2026",
+          "length": 169
+        },
+        {
+          "slug": "best-monitor-privacy-screens-2026",
+          "length": 164
+        },
+        {
+          "slug": "best-nas-devices-2026",
+          "length": 164
+        },
+        {
+          "slug": "best-network-switches-home-2026",
+          "length": 167
+        },
+        {
+          "slug": "best-portable-monitors-2026",
+          "length": 163
+        },
+        {
+          "slug": "best-portable-power-stations-2026",
+          "length": 149
+        },
+        {
+          "slug": "best-portable-ssd-drives-2026",
+          "length": 146
+        },
+        {
+          "slug": "best-power-strips-surge-protectors-2026",
+          "length": 141
+        },
+        {
+          "slug": "best-pre-workout-supplements-2026",
+          "length": 163
+        },
+        {
+          "slug": "best-printer-for-home-office-2026",
+          "length": 146
+        },
+        {
+          "slug": "best-punching-bags-2026",
+          "length": 143
+        },
+        {
+          "slug": "best-ring-lights-2026",
+          "length": 163
+        },
+        {
+          "slug": "best-robot-mops-2026",
+          "length": 164
+        },
+        {
+          "slug": "best-rowing-machines-2026",
+          "length": 166
+        },
+        {
+          "slug": "best-sd-cards-2026",
+          "length": 144
+        },
+        {
+          "slug": "best-smart-baby-monitors-2026",
+          "length": 168
+        },
+        {
+          "slug": "best-smart-body-weight-scales-2026",
+          "length": 148
+        },
+        {
+          "slug": "best-smart-ceiling-fans-2026",
+          "length": 163
+        },
+        {
+          "slug": "best-smart-coffee-makers-2026",
+          "length": 141
+        },
+        {
+          "slug": "best-smart-dehumidifiers-2026",
+          "length": 162
+        },
+        {
+          "slug": "best-smart-doorbells-2026",
+          "length": 169
+        },
+        {
+          "slug": "best-smart-flood-lights-2026",
+          "length": 161
+        },
+        {
+          "slug": "best-smart-garden-systems-2026",
+          "length": 149
+        },
+        {
+          "slug": "best-smart-humidifiers-2026",
+          "length": 163
+        },
+        {
+          "slug": "best-smart-irrigation-systems-2026",
+          "length": 162
+        },
+        {
+          "slug": "best-smart-kitchen-scales-2026",
+          "length": 166
+        },
+        {
+          "slug": "best-smart-led-strip-lights-2026",
+          "length": 145
+        },
+        {
+          "slug": "best-smart-light-bulbs-2026",
+          "length": 162
+        },
+        {
+          "slug": "best-smart-light-switches-2026",
+          "length": 161
+        },
+        {
+          "slug": "best-smart-motion-sensors-2026",
+          "length": 163
+        },
+        {
+          "slug": "best-smart-outdoor-lights-2026",
+          "length": 161
+        },
+        {
+          "slug": "best-smart-pet-cameras-2026",
+          "length": 146
+        },
+        {
+          "slug": "best-smart-plugs-2026",
+          "length": 164
+        },
+        {
+          "slug": "best-smart-power-strips-2026",
+          "length": 165
+        },
+        {
+          "slug": "best-smart-robot-lawn-mowers-2026",
+          "length": 140
+        },
+        {
+          "slug": "best-smart-slow-cookers-2026",
+          "length": 168
+        },
+        {
+          "slug": "best-smart-smoke-detectors-2026",
+          "length": 162
+        },
+        {
+          "slug": "best-smart-water-filters-2026",
+          "length": 148
+        },
+        {
+          "slug": "best-smart-water-leak-detectors-2026",
+          "length": 161
+        },
+        {
+          "slug": "best-smart-weather-stations-2026",
+          "length": 169
+        },
+        {
+          "slug": "best-standing-desks-2026",
+          "length": 170
+        },
+        {
+          "slug": "best-tablets-2026",
+          "length": 148
+        },
+        {
+          "slug": "best-trx-suspension-trainers-2026",
+          "length": 163
+        },
+        {
+          "slug": "best-usb-hubs-2026",
+          "length": 168
+        },
+        {
+          "slug": "best-usb-microphones-2026",
+          "length": 148
+        },
+        {
+          "slug": "best-vr-headsets-2026",
+          "length": 148
+        },
+        {
+          "slug": "best-weight-lifting-belts-2026",
+          "length": 162
+        },
+        {
+          "slug": "best-whiteboards-dry-erase-2026",
+          "length": 165
+        },
+        {
+          "slug": "best-wireless-charging-pads-for-desk-2026",
+          "length": 162
+        },
+        {
+          "slug": "best-wireless-gaming-headsets-2026",
+          "length": 163
+        },
+        {
+          "slug": "best-wireless-headphones-2026",
+          "length": 142
+        },
+        {
+          "slug": "best-wireless-keyboards-2026",
+          "length": 140
+        },
+        {
+          "slug": "best-wireless-presentation-clickers-2026",
+          "length": 147
+        },
+        {
+          "slug": "best-workout-mats-for-home-gym-2026",
+          "length": 167
+        },
+        {
+          "slug": "best-yoga-blocks-straps-2026",
+          "length": 162
+        },
+        {
+          "slug": "desk-accessories-productivity-2026",
+          "length": 149
+        },
+        {
+          "slug": "home-office-setup-under-500-2026",
+          "length": 148
+        }
+      ]
+    },
+    "faq": {
+      "shortAnswers": 724,
+      "missingNumber": 75
+    },
+    "brokenLinksReport": {
+      "generatedAt": "2026-05-12T14:58:09.343Z",
+      "summary": {
+        "OK": 243,
+        "DEAD": 99,
+        "BLOCKED": 449,
+        "ERROR": 335
+      }
+    }
   }
 ]
