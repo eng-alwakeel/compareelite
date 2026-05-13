@@ -31,12 +31,12 @@
     },
     {
       "rank": 2,
-      "name": "XL Cold Plunge Tub with 1HP Water Chiller 150 Gallon",
+      "name": "Ice Plunge Tub with 1HP Hot and Cold Water Chiller",
       "price": "$4,990.00",
       "rating": "9.4/10",
       "best_for": "Best Premium Chiller System",
-      "image": "https://images-na.ssl-images-amazon.com/images/P/B0DS966YKR.01.LZZZZZZZ.jpg",
-      "link": "https://www.amazon.com/dp/B0DS966YKR?tag=compareelite-20",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B0DNV3QQ1B.01.LZZZZZZZ.jpg",
+      "link": "https://www.amazon.com/dp/B0DNV3QQ1B?tag=compareelite-20",
       "pros": [
         "Built-in chiller maintains temperatures from 37°F to 75°F automatically without any ice",
         "Ozone-based filtration system runs 24/7 and eliminates the need for chemical sanitizers, extending water life to 4 to 8 weeks between changes",
@@ -184,5 +184,18 @@
     }
   ],
   "verdict": "The Ice Barrel 300 at $1,199 is our top pick for most home users — its compact 24-inch diameter footprint, UV-stabilized LLDPE insulation, and durable construction rated for outdoor year-round use make daily cold plunging practical without recurring chiller costs. It holds 105 gallons and reaches 39°F with 40 to 60 pounds of ice. For daily practitioners who want automatic temperature control without ice logistics, the INERGIZE cold plunge with its 1/3 HP chiller delivers precision cooling to 37°F at $2,500, maintaining set temperatures within 1°F. Budget-conscious beginners should start with the Zivigo Foldable Tub at $250 — it holds 75 gallons and folds flat for storage, letting you test cold plunge commitment before investing in a permanent setup.",
-  "related_articles": []
+  "related_articles": [
+    {
+      "slug": "best-ab-rollers-2026",
+      "title": "Best Ab Rollers 2026: Tested & Ranked"
+    },
+    {
+      "slug": "best-ankle-weights-2026",
+      "title": "Best Ankle Weights 2026: Tested & Ranked"
+    },
+    {
+      "slug": "best-balance-boards-2026",
+      "title": "Best Balance Boards 2026"
+    }
+  ]
 }

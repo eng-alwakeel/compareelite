@@ -18,7 +18,7 @@
     },
     {
       "title": "Cable Capacity and Organization",
-      "body": "Match the cable management solution's capacity to your actual cable volume. Count the number of cables you need to manage: a typical home office has 8–15 cables (monitor, computer power, keyboard, mouse, USB hub, phone charger, headset, lamp, external drives). Under-desk trays rated for 8–10 cables accommodate most setups; larger configurations with dual monitors, audio interfaces, and multiple peripherals benefit from wider trays. For cable sleeves, measure the total cable diameter to ensure the sleeve diameter is appropriate — too tight and cables won't fit, too loose and the sleeve looks sloppy. Expandable sleeves with flexible sizing are more forgiving than fixed-diameter rigid tubes. The Kable Kontrol sleeve at $15 expands from 1 to 3 inches in diameter, covering bundles of 3 to 15 cables without compression. For future-proofing, select a tray or sleeve with 20 percent more capacity than your current cable count — adding a second monitor or upgrading to a USB-C dock typically introduces 2 to 4 additional cables that need routing space."
+      "body": "Match the cable management solution's capacity to your actual cable volume. Count the number of cables you need to manage: a typical home office has 8–15 cables (monitor, computer power, keyboard, mouse, USB hub, phone charger, headset, lamp, external drives). Under-desk trays rated for 8–10 cables accommodate most setups; larger configurations with dual monitors, audio interfaces, and multiple peripherals benefit from wider trays. For cable sleeves, measure the total cable diameter to ensure the sleeve diameter is appropriate — too tight and cables won't fit, too loose and the sleeve looks sloppy. Expandable sleeves with flexible sizing are more forgiving than fixed-diameter rigid tubes. The Alex Tech sleeve at $15 expands from 0.5 to 1.5 inches in diameter across the standard 19-inch section, covering bundles of 2 to 10 cables without compression. For future-proofing, select a tray or sleeve with 20 percent more capacity than your current cable count — adding a second monitor or upgrading to a USB-C dock typically introduces 2 to 4 additional cables that need routing space."
     },
     {
       "title": "Adhesive Strength and Surface Compatibility",
@@ -116,23 +116,23 @@
       ]
     },
     {
-      "name": "Kable Kontrol Cable Sleeve with Zipper",
+      "name": "Alex Tech Expandable Braided Cable Sleeve",
       "rating": "8.8/10",
       "price": "$14.99",
       "best_for": "Best Cable Sleeve",
-      "image": "https://m.media-amazon.com/images/I/61xJRsXLjBL._AC_SL1500_.jpg",
-      "link": "https://www.amazon.com/dp/B07HRTWV8P?tag=compareelite-20",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B07DJLJBMB.01.LZZZZZZZ.jpg",
+      "link": "https://www.amazon.com/dp/B07DJLJBMB?tag=compareelite-20",
       "pros": [
         "Full-length 19-inch zipper opens flat for 5-second cable insertion without threading from the end",
-        "Expandable neoprene stretches from 1 to 3 inches in diameter to accommodate 3 to 15 cables",
-        "Cuts to any length with standard scissors for custom sizing from 6 to 19 inches per section",
-        "Heat resistant up to 200 degrees Fahrenheit — safe for use around power cables carrying up to 15 amps",
-        "Available in 5 diameter options from 0.75 inch to 3 inches for cable bundles of all sizes"
+        "Expandable braided polyester stretches from 0.5 to 1.5 inches in diameter to accommodate 2 to 10 cables",
+        "Cuts to any length with standard scissors for custom sizing from 1 to 19 inches per section",
+        "Heat-resistant braided polyester rated safe for use near power cables carrying up to 15 amps without melting or deforming",
+        "Available in 10-plus color options including black, white, gray, and brown to match any desk or office aesthetic"
       ],
       "cons": [
         "Zipper teeth can catch on cables thinner than 3 millimeters — requires careful closing for USB and audio cables",
-        "Neoprene sleeve is 30 percent less flexible than spiral wrap alternatives at bending angles below 45 degrees",
-        "Available in 1 color (black) only — no white, gray, or custom options for the 40 percent of desk setups using light-colored finishes"
+        "Maximum 19-inch section length means runs longer than 19 inches require multiple joined sections with visible seams",
+        "Braided mesh construction is 20 percent less flexible than spiral wrap alternatives at bending angles below 45 degrees"
       ]
     },
     {
@@ -178,5 +178,18 @@
       "a": "Gaming setups have unique cable management challenges due to multiple display cables, gaming peripherals, and often RGB lighting. Start with an under-desk tray for the power strip and main cable runs. Use cable raceways or PVC pipe to create a clean vertical run from desk to power outlet. Under-desk pegboards are popular in gaming setups for organizing accessories and routing cables cleanly. RGB lighting cables can be routed through the monitor/PC cable runs. Wireless peripherals (mouse, keyboard, headset) dramatically simplify gaming cable management — the cost of $50 to $150 for wireless versions is often worth the 3 to 5 cable reduction alone. The D-Line Cable Management Box at $35 is particularly useful for gaming setups because it houses a full 6-outlet power strip plus 4 to 6 feet of excess cable length inside a ventilated enclosure, keeping power brick heat away from components. For multi-monitor setups with 3-plus displays, add a wall-mounted Delamu raceway at $20 to route HDMI and DisplayPort cables cleanly from GPU to monitors along the wall."
     }
   ],
-  "related_articles": []
+  "related_articles": [
+    {
+      "slug": "best-desk-humidifiers-2026",
+      "title": "Best Desk Humidifiers 2026: Tested & Ranked"
+    },
+    {
+      "slug": "best-power-strips-surge-protectors-2026",
+      "title": "Best Power Strips and Surge Protectors 2026: Tested & Ranked"
+    },
+    {
+      "slug": "best-wireless-presentation-clickers-2026",
+      "title": "Best Wireless Presentation Clickers 2026: Tested & Ranked"
+    }
+  ]
 }
