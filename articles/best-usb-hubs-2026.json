@@ -179,5 +179,18 @@
       "a": "Yes, if the hub supports USB Power Delivery pass-through and your laptop accepts USB-C charging. Virtually every USB-C hub released after 2020 includes some level of PD pass-through, but the wattage varies widely and matters significantly for different laptops.\n\nA MacBook Air needs at least 30W to charge at all and 67W or more for fast charging. A MacBook Pro 16-inch requires 96W for full-speed charging; anything below that charges the battery more slowly while the laptop is under active load, and during heavy processing tasks the battery may actually drain even while plugged in on insufficient wattage. Most Windows ultrabooks need between 65W and 90W for normal-use charging.\n\nLook for hubs with 85W or higher PD pass-through as a safe baseline for laptop charging use. Remember that many hubs deduct 15W to 30W from their rated PD output for the hub's own internal power needs. Check independent reviews for actual measured laptop charging wattage, not just the specification sheet number. The Anker 555 in this list delivers 85W PD pass-through, sufficient for charging most laptops at full speed during typical use.\n\nThe single-cable advantage of USB-C PD pass-through is significant for desk setups: one USB-C cable from the hub connects your laptop to power, drives an external monitor, and connects all your peripherals simultaneously, replacing three or more separate cables. The Anker 555 at $49.99 delivers exactly this workflow reliably for most laptops."
     }
   ],
-  "related_articles": []
+  "related_articles": [
+    {
+      "slug": "best-usb-c-hubs-macbook-pro-2026",
+      "title": "Best USB-C Hubs for MacBook Pro 2026: Tested & Ranked"
+    },
+    {
+      "slug": "best-business-laptops-2026",
+      "title": "Best Business Laptops 2026"
+    },
+    {
+      "slug": "best-ergonomic-keyboards-2026",
+      "title": "Best Ergonomic Keyboards for Home Office 2026"
+    }
+  ]
 }
