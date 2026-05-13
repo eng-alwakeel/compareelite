@@ -77,23 +77,23 @@
     },
     {
       "rank": 4,
-      "name": "Canon imageFORMULA R40 Office Document Scanner",
-      "price": "$349.99",
+      "name": "Canon imageFORMULA R30 Office Document Scanner",
+      "price": "$299.99",
       "rating": "9.0/10",
       "best_for": "Best Value Duplex Scanner",
       "image": "https://m.media-amazon.com/images/I/61IeP5x7A7L._AC_SL1500_.jpg",
-      "link": "https://www.amazon.com/dp/B09KBP2QM4?tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B0BWNTNGN5?tag=compareelite-20",
       "pros": [
-        "Scans at 40 pages per minute (80 images per minute) duplex",
-        "60-sheet ADF with ultrasonic double-feed detection",
-        "Bundled CaptureOnTouch software handles OCR and searchable PDF creation",
-        "USB bus-powered — no separate power adapter required",
-        "Compact footprint at 11.9 x 5.3 x 5.8 inches when closed"
+        "Scans at 25 pages per minute (50 images per minute) duplex — adequate throughput for daily home office document batches",
+        "60-sheet ADF handles letter and legal size documents in mixed batches without manual adjustment",
+        "Plug-and-scan capability requires no software installation — connects via USB and begins scanning immediately",
+        "Bundled CaptureOnTouch software handles OCR and searchable PDF creation for document archiving",
+        "Compact footprint suits home office desks with limited available surface area"
       ],
       "cons": [
-        "No Wi-Fi — USB connection only",
-        "CaptureOnTouch software less polished than Fujitsu's ScanSnap Home",
-        "ADF paper feed can misalign on mixed-weight paper stacks"
+        "No Wi-Fi — USB connection only limits placement to cable distance from workstation",
+        "25 ppm speed is slower than the Fujitsu iX1600 at 40 ppm — noticeable when processing large daily batches",
+        "CaptureOnTouch software is less polished than Fujitsu's ScanSnap Home for automatic document sorting"
       ]
     },
     {

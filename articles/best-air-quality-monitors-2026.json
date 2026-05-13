@@ -35,12 +35,12 @@
     },
     {
       "rank": 2,
-      "name": "IQAir AirVisual Pro Air Quality Monitor",
+      "name": "IQAir Air Quality Monitor Indoor (AirVisual Pro)",
       "price": "$269.99",
       "rating": "9.5/10",
       "best_for": "Best Display and Outdoor Integration",
       "image": "https://m.media-amazon.com/images/I/61gRX8OcMQL._AC_SL1500_.jpg",
-      "link": "https://www.amazon.com/dp/B07YSP9XSQ?tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B0784TZFRW?tag=compareelite-20",
       "pros": [
         "Color 2.4-inch touchscreen shows PM2.5, CO2, AQI, temperature, and humidity",
         "Integrates real-time outdoor AQI data from nearest monitoring station",
@@ -56,22 +56,22 @@
     },
     {
       "rank": 3,
-      "name": "Temtop M2000C 2nd Generation Air Quality Detector",
+      "name": "Temtop M2000C Air Quality Meter with CO2 PM2.5 Detection",
       "price": "$169.99",
       "rating": "9.2/10",
       "best_for": "Best Professional Grade",
       "image": "https://m.media-amazon.com/images/I/61M9MlvZFGL._AC_SL1500_.jpg",
-      "link": "https://www.amazon.com/dp/B08RJXCFL3?tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B0BRSLQKLD?tag=compareelite-20",
       "pros": [
         "Measures PM2.5, PM10, CO2, HCHO (formaldehyde), TVOC, temperature, and humidity",
         "Professional-grade NDIR CO2 sensor accurate within 50 ppm up to 5000 ppm",
-        "Color touchscreen with 7-day data history stored internally",
+        "Color display with data history stored internally and audio alarm for threshold alerts",
         "Data export via USB to spreadsheet for professional documentation",
-        "Rechargeable battery with 4-hour runtime for portable spot testing"
+        "Rechargeable battery with portable runtime for spot testing across multiple rooms"
       ],
       "cons": [
         "No Wi-Fi or Bluetooth — USB export only for data retrieval",
-        "Formaldehyde sensor requires 2-minute warm-up for accurate readings",
+        "Formaldehyde sensor requires warm-up period for accurate readings",
         "Larger device not suited for permanent wall mounting"
       ]
     },
@@ -98,33 +98,33 @@
     },
     {
       "rank": 5,
-      "name": "Govee WiFi Indoor Air Quality Monitor",
-      "price": "$79.99",
+      "name": "GoveeLife Smart Air Quality Monitor with PM2.5 and WiFi",
+      "price": "$59.99",
       "rating": "8.7/10",
       "best_for": "Best Budget Wi-Fi Monitor",
       "image": "https://m.media-amazon.com/images/I/61VGHqJoUgL._AC_SL1500_.jpg",
-      "link": "https://www.amazon.com/dp/B08VH9MLQD?tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B0BZV1XG6Y?tag=compareelite-20",
       "pros": [
-        "Tracks PM2.5, PM10, TVOC, CO2 equivalent, humidity, and temperature",
-        "Wi-Fi with Govee Home app shows 2 years of historical data",
+        "Tracks PM2.5, temperature, and humidity with 2-second refresh rate for real-time data",
+        "Wi-Fi with GoveeLife Home app shows 2 years of historical data in cloud storage",
         "Works with Alexa and Google Assistant for voice status queries",
-        "Color LCD screen with user-configurable display modes",
-        "Free cloud data storage with no subscription required"
+        "LED display with user-configurable display modes and threshold alerts",
+        "Free 2-year cloud data storage with no subscription required"
       ],
       "cons": [
-        "CO2 reading is calculated equivalent — not a direct NDIR CO2 measurement",
+        "Does not include a direct CO2 sensor — PM2.5, temperature, and humidity focus only",
         "PM2.5 accuracy on lower end compared to IQAir AirVisual Pro",
         "App notifications can be slow to trigger after threshold breach"
       ]
     },
     {
       "rank": 6,
-      "name": "uHoo 9-in-1 Smart Air Quality Sensor",
+      "name": "uHoo 9-in-1 Smart Air Quality Monitor Indoor",
       "price": "$329.00",
       "rating": "9.3/10",
       "best_for": "Best Comprehensive Coverage",
       "image": "https://m.media-amazon.com/images/I/61UGTVkw78L._AC_SL1500_.jpg",
-      "link": "https://www.amazon.com/dp/B07PJN6HF5?tag=compareelite-20",
+      "link": "https://www.amazon.com/dp/B076PV9X99?tag=compareelite-20",
       "pros": [
         "9 sensors: CO, CO2, NO2, ozone, PM2.5, TVOC, temperature, humidity, and air pressure",
         "Most comprehensive pollutant coverage of any consumer monitor",
