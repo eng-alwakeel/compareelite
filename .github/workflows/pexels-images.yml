@@ -1,0 +1,60 @@
+name: Fetch Pexels Images
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'articles/*.json'
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-pexels:
+    runs-on: ubuntu-latest
+    # Skip if this push was made by the bot itself (prevents infinite loop)
+    if: "!contains(github.event.head_commit.message, '[skip ci]') && github.actor != 'compareelite-bot'"
+
+    env:
+      PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+      GITHUB_TOKEN: ${{ secrets.CE_AGENTS_TOKEN }}
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.CE_AGENTS_TOKEN }}
+          fetch-depth: 0
+
+      - name: Configure git
+        run: |
+          git config --global user.name "CompareElite Bot"
+          git config --global user.email "bot@compareelite.com"
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Check PEXELS_API_KEY
+        run: |
+          if [ -z "$PEXELS_API_KEY" ]; then
+            echo "WARN: PEXELS_API_KEY secret not set — skipping Pexels fetch."
+            exit 0
+          fi
+          echo "PEXELS_API_KEY is set."
+
+      - name: Fetch Pexels images for new articles
+        run: node scripts/fetch-pexels-images.js --new
+        continue-on-error: true
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet articles/ || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit updated articles
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git add articles/
+          git commit -m "chore: add Pexels hero images to new articles [skip ci]"
+          git push origin main

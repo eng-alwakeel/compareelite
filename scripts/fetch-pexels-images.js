@@ -3,16 +3,18 @@
  * fetch-pexels-images.js
  *
  * Fetches hero + section images from the Pexels API and injects them into
- * an article JSON as `pexels_hero` and `pexels_sections`.
+ * article JSON files as `pexels_hero` and `pexels_sections`.
  *
  * Usage:
- *   node scripts/fetch-pexels-images.js --slug <slug>
+ *   node scripts/fetch-pexels-images.js --slug <slug>   # single article
+ *   node scripts/fetch-pexels-images.js --new           # articles missing pexels_hero
+ *   node scripts/fetch-pexels-images.js                 # all 186 articles
  *
  * Requires env var:
  *   PEXELS_API_KEY=<your_key>
  *
- * Adds/updates these fields in the article JSON:
- *   pexels_hero: { id, url, photographer, photographer_url, alt }
+ * Adds/updates these fields in each article JSON:
+ *   pexels_hero:     { id, url, photographer, photographer_url, alt }
  *   pexels_sections: [{ section, id, url, photographer, photographer_url, alt }, ...]
  */
 
@@ -26,23 +28,20 @@ if (!API_KEY) {
   process.exit(1);
 }
 
+const ARTICLES_DIR = path.join(__dirname, '..', 'articles');
 const args = process.argv.slice(2);
-const slugIdx = args.indexOf('--slug');
-if (slugIdx === -1 || !args[slugIdx + 1]) {
+const modeNew  = args.includes('--new');
+const slugIdx  = args.indexOf('--slug');
+const singleSlug = slugIdx !== -1 ? args[slugIdx + 1] : null;
+
+if (singleSlug && !singleSlug) {
   console.error('Usage: node scripts/fetch-pexels-images.js --slug <slug>');
   process.exit(1);
 }
-const slug = args[slugIdx + 1];
-const articlePath = path.join(__dirname, '..', 'articles', `${slug}.json`);
 
-if (!fs.existsSync(articlePath)) {
-  console.error(`ERROR: Article not found: ${articlePath}`);
-  process.exit(1);
-}
+// ------- Helpers -------
 
-const article = JSON.parse(fs.readFileSync(articlePath, 'utf8'));
-
-function pexelsSearch(query, perPage = 1) {
+function pexelsSearch(query, perPage = 3) {
   return new Promise((resolve, reject) => {
     const q = encodeURIComponent(query);
     const options = {
@@ -54,15 +53,16 @@ function pexelsSearch(query, perPage = 1) {
       let body = '';
       res.on('data', (chunk) => (body += chunk));
       res.on('end', () => {
-        if (res.statusCode !== 200) {
-          reject(new Error(`Pexels API returned HTTP ${res.statusCode}: ${body}`));
+        if (res.statusCode === 429) {
+          reject(new Error('RATE_LIMITED'));
           return;
         }
-        try {
-          resolve(JSON.parse(body));
-        } catch (e) {
-          reject(new Error(`Failed to parse Pexels response: ${e.message}`));
+        if (res.statusCode !== 200) {
+          reject(new Error(`HTTP ${res.statusCode}: ${body.slice(0, 120)}`));
+          return;
         }
+        try { resolve(JSON.parse(body)); }
+        catch (e) { reject(new Error(`Parse error: ${e.message}`)); }
       });
     }).on('error', reject);
   });
@@ -80,80 +80,116 @@ function pickPhoto(data) {
   };
 }
 
-// Derive search queries from article content
 function buildQueries(article) {
-  // Hero: use article title stripped of "best" and year
   const heroQuery = article.title
     .replace(/\b(best|top|for|the|of|in|2025|2026)\b/gi, '')
+    .replace(/\s+/g, ' ')
     .trim();
 
-  // Sections: use buying_guide section titles if available
   const sections = [];
   if (Array.isArray(article.buying_guide)) {
     for (const section of article.buying_guide.slice(0, 4)) {
       const title = section.title || section.heading || '';
-      if (title) {
-        sections.push({
-          section: title,
-          query: `${heroQuery} ${title}`.trim(),
-        });
-      }
+      if (title) sections.push({ section: title, query: `${heroQuery} ${title}`.trim() });
     }
   }
-  // Fallback if no buying_guide
   if (sections.length === 0) {
     sections.push({ section: 'lifestyle', query: heroQuery });
   }
-
   return { heroQuery, sections };
 }
 
-async function main() {
-  console.log(`Fetching Pexels images for: ${slug}`);
+function delay(ms) { return new Promise((r) => setTimeout(r, ms)); }
+
+async function processArticle(slug) {
+  const articlePath = path.join(ARTICLES_DIR, `${slug}.json`);
+  if (!fs.existsSync(articlePath)) {
+    console.error(`  ERROR: Not found — ${articlePath}`);
+    return false;
+  }
+
+  const article = JSON.parse(fs.readFileSync(articlePath, 'utf8'));
   const { heroQuery, sections } = buildQueries(article);
 
-  // Hero image
-  console.log(`  Hero query: "${heroQuery}"`);
   let heroData;
   try {
-    heroData = await pexelsSearch(heroQuery, 3);
+    heroData = await pexelsSearch(heroQuery);
   } catch (e) {
-    console.error(`  ERROR fetching hero: ${e.message}`);
-    process.exit(1);
+    if (e.message === 'RATE_LIMITED') {
+      console.warn(`  RATE_LIMITED on hero — waiting 30s...`);
+      await delay(30000);
+      heroData = await pexelsSearch(heroQuery);
+    } else {
+      console.error(`  ERROR hero fetch: ${e.message}`);
+      return false;
+    }
   }
+
   const hero = pickPhoto(heroData);
   if (!hero) {
-    console.error(`  No hero photo found for query: "${heroQuery}"`);
-    process.exit(1);
+    console.warn(`  No hero photo for "${heroQuery}" — skipping.`);
+    return false;
   }
-  console.log(`  Hero: ${hero.url} (by ${hero.photographer})`);
 
-  // Section images
   const pexelsSections = [];
   for (const sec of sections) {
-    console.log(`  Section "${sec.section}" query: "${sec.query}"`);
+    await delay(250); // respect 200 req/hour free-tier rate limit
     try {
       const data = await pexelsSearch(sec.query, 2);
       const photo = pickPhoto(data);
-      if (photo) {
-        pexelsSections.push({ section: sec.section, ...photo });
-        console.log(`    → ${photo.url} (by ${photo.photographer})`);
-      } else {
-        console.warn(`    → No photo found, skipping.`);
-      }
+      if (photo) pexelsSections.push({ section: sec.section, ...photo });
     } catch (e) {
-      console.warn(`    → ERROR: ${e.message} — skipping section.`);
+      if (e.message === 'RATE_LIMITED') {
+        console.warn(`  RATE_LIMITED on section "${sec.section}" — skipping.`);
+      } else {
+        console.warn(`  Section "${sec.section}" error: ${e.message}`);
+      }
     }
-    // Small delay to respect Pexels rate limit (200 req/hour on free tier)
-    await new Promise((r) => setTimeout(r, 200));
   }
 
-  // Inject into article
   article.pexels_hero = hero;
   article.pexels_sections = pexelsSections;
-
   fs.writeFileSync(articlePath, JSON.stringify(article, null, 2) + '\n');
-  console.log(`\nDone. Injected pexels_hero + ${pexelsSections.length} pexels_sections into ${slug}.json`);
+  console.log(`  ✓ hero=${hero.id}  sections=${pexelsSections.length}`);
+  return true;
+}
+
+// ------- Entry -------
+
+async function main() {
+  let slugs;
+
+  if (singleSlug) {
+    slugs = [singleSlug];
+  } else {
+    const files = fs.readdirSync(ARTICLES_DIR).filter((f) => f.endsWith('.json'));
+    slugs = files.map((f) => f.replace('.json', ''));
+
+    if (modeNew) {
+      // Only articles that don't yet have pexels_hero
+      slugs = slugs.filter((slug) => {
+        const articlePath = path.join(ARTICLES_DIR, `${slug}.json`);
+        try {
+          const a = JSON.parse(fs.readFileSync(articlePath, 'utf8'));
+          return !a.pexels_hero;
+        } catch { return true; }
+      });
+      console.log(`Mode: --new  (${slugs.length} articles without pexels_hero)`);
+    } else {
+      console.log(`Mode: all  (${slugs.length} articles)`);
+    }
+  }
+
+  let ok = 0, fail = 0;
+  for (const slug of slugs) {
+    console.log(`[${ok + fail + 1}/${slugs.length}] ${slug}`);
+    const success = await processArticle(slug);
+    if (success) ok++; else fail++;
+    await delay(300); // extra buffer between articles
+  }
+
+  console.log(`\nDone — OK: ${ok}  Failed: ${fail}`);
+  if (fail > 0) process.exit(1);
 }
 
 main().catch((e) => {

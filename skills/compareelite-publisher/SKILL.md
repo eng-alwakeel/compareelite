@@ -44,6 +44,14 @@ node scripts/fix-product-images.js --slug <slug>
 ```
 This script auto-replaces 43-byte placeholders and HTTP 404 images with real Amazon CDN IDs scraped from the product page. If it reports `captcha` for any image and cannot fix it, do NOT publish — comment `CAPTCHA_BLOCK on image scrape; retry from residential IP`.
 
+**Gate 1b — Pexels hero + section images (non-blocking)**
+```bash
+PEXELS_API_KEY=$PEXELS_API_KEY node scripts/fetch-pexels-images.js --slug <slug>
+```
+Fetches a hero image and up to 4 section images from the Pexels API and injects `pexels_hero` and `pexels_sections` into the article JSON. These fields power the article hero banner and in-body editorial photos on the frontend.
+- If `PEXELS_API_KEY` is not set in the environment → log `WARN — PEXELS_API_KEY missing, skipping` and continue.
+- If the script exits non-zero (no photos found, API error) → log the error and continue. Pexels images are enhancement-only and do not block publishing.
+
 **Gate 2 — ASIN liveness**
 ```bash
 node scripts/validate-amazon-links.js --slug <slug> --no-md --no-json
