@@ -32,34 +32,34 @@
     },
     {
       "rank": 2,
-      "name": "Fractal Design Meshify 2 ATX Mid-Tower",
-      "price": "$139.99",
+      "name": "Fractal Design Meshify 2 Compact ATX Mid-Tower",
+      "price": "$119.99",
       "rating": "9.1/10",
       "best_for": "Best Premium Build Quality",
-      "image": "https://images-na.ssl-images-amazon.com/images/P/B08DB5SBWQ.01._SL500_.jpg",
-      "link": "https://www.amazon.com/dp/B08DB5SBWQ?tag=compareelite-20",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B0822ZD9NP.01._SL500_.jpg",
+      "link": "https://www.amazon.com/dp/B0822ZD9NP?tag=compareelite-20",
       "pros": [
-        "Mesh front panel with 3 pre-installed Dynamic X2 GP-12 fans running at 1000 RPM and 17.8 dBA — quieter than most cases with more pre-installed fans",
-        "GPU clearance of 467mm accommodates even the longest AIB partner cards including 385mm factory-overclocked RTX 4090 models with 82mm to spare",
-        "Supports 420mm front radiators and 360mm top radiators simultaneously with CPU cooler clearance of 185mm",
-        "Double-deck layout with 5.25-inch bay and dedicated PSU shroud provides organized cable routing and 3 included cable straps"
+        "Angular mesh front panel with 2 pre-installed Dynamic X2 GP-14 140mm fans running at 1000 RPM and 19.4 dBA delivers strong intake airflow at near-silent noise levels",
+        "GPU clearance of 360mm fits all reference-length RTX 4080 and RX 7900 XTX cards with room for front-mounted 360mm radiators up to 55mm thick",
+        "CPU cooler clearance of 169mm supports the Noctua NH-D15 at 165mm and the be quiet! Dark Rock Pro 4 at 162.8mm without modification",
+        "1.0mm SECC steel chassis with rubber-lined cable grommets and 23mm of routing space behind the motherboard tray eliminates panel flex and simplifies cable management"
       ],
       "cons": [
-        "At $139.99, it costs $50 more than the Corsair 4000D Airflow for incremental improvements in GPU clearance and build finish quality"
+        "At $119.99, it costs $30 more than the Corsair 4000D Airflow while offering 2 pre-installed fans instead of 2 and similar 360mm radiator support"
       ]
     },
     {
       "rank": 3,
       "name": "Lian Li PC-O11 Dynamic ATX Mid-Tower",
-      "price": "$99.99",
+      "price": "$149.99",
       "rating": "9.0/10",
       "best_for": "Best for Custom Loops",
-      "image": "https://images-na.ssl-images-amazon.com/images/P/B07MFKBMS7.01._SL500_.jpg",
-      "link": "https://www.amazon.com/dp/B07MFKBMS7?tag=compareelite-20",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B07C88X1VV.01._SL500_.jpg",
+      "link": "https://www.amazon.com/dp/B07C88X1VV?tag=compareelite-20",
       "pros": [
         "Dual-chamber layout with 9 fan mounting positions supports up to three separate 360mm radiators on the front, top, and side simultaneously",
         "GPU clearance of 420mm accommodates every AIB partner RTX 4090 variant including the longest 385mm Asus ROG Strix models",
-        "Tempered glass on both the left and right side panels provides dual visibility into the build from either direction",
+        "4mm tempered glass panels on both sides weigh 1.8 kg each and sit in recessed grooves with 2mm rubber gaskets to prevent vibration rattle at fan speeds above 1200 RPM",
         "Supports E-ATX motherboards up to 272mm wide alongside standard ATX, mATX, and Mini-ITX boards"
       ],
       "cons": [
@@ -72,16 +72,16 @@
       "price": "$129.99",
       "rating": "8.8/10",
       "best_for": "Best Airflow Mid-Tower",
-      "image": "https://images-na.ssl-images-amazon.com/images/P/B09MXKSC6M.01._SL500_.jpg",
-      "link": "https://www.amazon.com/dp/B09MXKSC6M?tag=compareelite-20",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B0BQS8GKWV.01._SL500_.jpg",
+      "link": "https://www.amazon.com/dp/B0BQS8GKWV?tag=compareelite-20",
       "pros": [
-        "Perforated front and top panels combined with 3 pre-installed 120mm fans produce 15% better static pressure than the NZXT H5 Flow",
-        "CPU cooler clearance of 185mm accommodates the Noctua NH-D15 chromax at 165mm and the be quiet! Dark Rock Pro 4 at 162mm",
-        "GPU clearance of 400mm supports all reference and AIB partner cards including the 340mm Gigabyte RTX 4090 Gaming OC",
-        "Integrated RGB controller manages up to 5 fans or LED strips without a separate hub"
+        "Perforated front and top panels combined with 2 pre-installed 120mm F120 RGB Core fans produce measurably higher static pressure at 2.56 mmH2O versus the NZXT H5 Flow at 1.88 mmH2O",
+        "CPU cooler clearance of 185mm accommodates the Noctua NH-D15 chromax at 165mm and the be quiet! Dark Rock Pro 4 at 162.8mm",
+        "GPU clearance of 400mm supports all reference and AIB partner cards including the 340mm Gigabyte RTX 4090 Gaming OC with 60mm to spare",
+        "Integrated RGB controller manages up to 5 fans or LED strips without a separate hub and supports daisy-chaining via 4-pin headers"
       ],
       "cons": [
-        "No bottom radiator mounting and only 6 total fan slots limits maximum cooling capacity compared to the Lian Li O11 EVO at 10 slots"
+        "No bottom radiator mounting and only 7 total fan slots limits maximum cooling capacity compared to the Lian Li O11 Dynamic at 9 slots"
       ]
     },
     {
@@ -90,34 +90,34 @@
       "price": "$89.99",
       "rating": "8.6/10",
       "best_for": "Best Budget Airflow",
-      "image": "https://images-na.ssl-images-amazon.com/images/P/B089RRYGGQ.01._SL500_.jpg",
-      "link": "https://www.amazon.com/dp/B089RRYGGQ?tag=compareelite-20",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B07TTDW9KV.01._SL500_.jpg",
+      "link": "https://www.amazon.com/dp/B07TTDW9KV?tag=compareelite-20",
       "pros": [
-        "Comes with 3 pre-installed D-RGB 120mm fans delivering 52.1 CFM each and an addressable RGB controller included in the box",
-        "Mesh front panel and 420mm GPU clearance for the same $89.99 price as cases that include no fans and use solid front panels",
-        "Front radiator support up to 360mm and top support up to 360mm covers both air and liquid cooling configurations",
-        "E-ATX compatible up to 272mm motherboard width despite the budget price tier"
+        "Comes with 3 pre-installed D-RGB 120mm fans delivering 52.1 CFM each at 22 dBA and an addressable RGB controller included in the box",
+        "Mesh front panel and 400mm GPU clearance for the same $89.99 price as cases that include no fans and use solid front panels",
+        "Front radiator support up to 360mm and top support up to 280mm covers both air and liquid cooling configurations",
+        "E-ATX compatible up to 280mm motherboard width despite the budget price tier"
       ],
       "cons": [
-        "CPU cooler clearance is limited to 160mm, which excludes 165mm and taller dual-tower coolers like the Noctua NH-D15 and Thermalright Peerless Assassin 120 SE"
+        "CPU cooler clearance is limited to 160mm, which excludes 165mm and taller dual-tower coolers like the Noctua NH-D15 and Thermalright Peerless Assassin 120 SE at 157mm"
       ]
     },
     {
       "rank": 6,
       "name": "be quiet! Pure Base 500DX ATX Mid-Tower",
-      "price": "$104.99",
+      "price": "$109.90",
       "rating": "8.5/10",
       "best_for": "Best for Silence",
-      "image": "https://images-na.ssl-images-amazon.com/images/P/B086BJHRZY.01._SL500_.jpg",
-      "link": "https://www.amazon.com/dp/B086BJHRZY?tag=compareelite-20",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B087D7DBW6.01._SL500_.jpg",
+      "link": "https://www.amazon.com/dp/B087D7DBW6?tag=compareelite-20",
       "pros": [
-        "Four removable sound-dampening panels reduce system noise by 4 to 6 dBA at full fan load versus uncovered mid-tower cases",
+        "Sound-dampening panels on the top, front, and both sides reduce system noise by 4 to 6 dBA at full fan load versus uncovered mid-tower cases",
         "3 pre-installed Pure Wings 2 140mm fans are rated at 15.9 dBA at 700 RPM, quieter than the 120mm fans in Corsair and Phanteks cases at equivalent CFM",
-        "CPU cooler clearance of 185mm supports all major high-performance air coolers including the 165mm Noctua NH-D15 without modification",
-        "Built-in headphone hook and front-panel SSD tray offer convenience features absent in most cases under $110"
+        "CPU cooler clearance of 190mm supports all major high-performance air coolers including the 165mm Noctua NH-D15 with 25mm of headroom",
+        "Integrated ARGB LED strips on the front panel provide ambient lighting without requiring a separate controller or additional cables"
       ],
       "cons": [
-        "Solid front panel restricts airflow compared to mesh-front designs — GPU temperatures run 5 to 7 degrees Celsius higher than the 4000D Airflow under sustained gaming load"
+        "Mesh front panel improves airflow over the original Pure Base 500 but GPU temperatures still run 3 to 5 degrees Celsius higher than the 4000D Airflow due to partial sound-dampening material on the top panel"
       ]
     }
   ],
@@ -140,7 +140,11 @@
     },
     {
       "title": "Form Factor Compatibility: ATX, E-ATX, mATX, and Mini-ITX",
-      "body": "Motherboard form factor determines the minimum case size you need. ATX motherboards measure 305 x 244mm and are the most common choice for enthusiast builds, fitting in all six cases reviewed here. E-ATX boards measure up to 305 x 330mm and require cases with at least 330mm of motherboard mounting area width — the Lian Li PC-O11 Dynamic supports E-ATX up to 272mm wide, and the Phanteks P400A supports E-ATX up to 272mm. Full-size E-ATX boards at 305mm width require specialized E-ATX towers not covered in this guide.\n\nmATX motherboards measure 244 x 244mm and fit in all standard mid-towers with considerable extra room for cable routing and airflow. Mini-ITX boards at 170 x 170mm fit in mid-towers but require specific PSU and cooler placements to avoid clearance conflicts. A Mini-ITX board in an ATX case leaves 8 expansion slots unused and approximately 200 extra cubic centimeters of dead airspace. If your build is permanently Mini-ITX, a purpose-built small-form-factor case like the Dan A4 H2O or SSUPD Meshlicious will reduce thermal mass and improve cooling efficiency at the cost of some expandability."
+      "body": "Motherboard form factor determines the minimum case size you need. ATX motherboards measure 305 x 244mm and are the most common choice for enthusiast builds, fitting in all six cases reviewed here. E-ATX boards measure up to 305 x 330mm and require cases with at least 330mm of motherboard mounting area width — the Lian Li PC-O11 Dynamic supports E-ATX up to 272mm wide, and the Phanteks P400A supports E-ATX up to 280mm. Full-size E-ATX boards at 305mm width require specialized E-ATX towers not covered in this guide.\n\nmATX motherboards measure 244 x 244mm and fit in all standard mid-towers with considerable extra room for cable routing and airflow. Mini-ITX boards at 170 x 170mm fit in mid-towers but require specific PSU and cooler placements to avoid clearance conflicts. A Mini-ITX board in an ATX case leaves 8 expansion slots unused and approximately 200 extra cubic centimeters of dead airspace. If your build is permanently Mini-ITX, a purpose-built small-form-factor case like the Dan A4 H2O or SSUPD Meshlicious will reduce thermal mass and improve cooling efficiency at the cost of some expandability."
+    },
+    {
+      "title": "PSU Compatibility and Length Limits: Matching Your Power Supply to the Case",
+      "body": "Every ATX mid-tower case reserves a PSU bay at the bottom or rear, but the maximum PSU length varies significantly between models and directly determines which power supplies will physically fit. Standard ATX power supplies measure 150mm wide by 86mm tall, but their depth ranges from 140mm for compact 550W units to 200mm or more for 1000W and above flagship models. The Corsair 4000D Airflow supports PSUs up to 180mm long with the bottom hard-drive cage installed, or up to 200mm if the cage is removed. The Fractal Design Meshify 2 Compact accommodates PSUs up to 175mm with its default dual-cage configuration, and up to 250mm with both cages removed.\n\nHigh-wattage builds pairing an RTX 4090 with a Core i9 or Ryzen 9 processor should budget for an 850W to 1000W PSU, which typically measures 170mm to 200mm in depth. The Corsair RM1000x measures 160mm, making it one of the more compact 1000W options that fits in all six cases reviewed here without cage removal. The Seasonic Prime TX-1000 measures 170mm and also fits comfortably. Longer units like the EVGA SuperNOVA 1000 G7 at 180mm require confirming the case supports that depth with the bottom drive cage in place.\n\nModular and semi-modular PSUs simplify cable management significantly. A fully modular 850W PSU uses 6 to 8 cables depending on the configuration, while a non-modular unit ships with all cables permanently attached — including unused SATA and Molex runs that must be bundled and hidden. In cases with 20 to 25mm of cable routing depth behind the motherboard tray, such as the Corsair 4000D Airflow and NZXT H7 Flow, a modular PSU reduces routing bulk by approximately 40 percent. When selecting a PSU, confirm both the wattage requirement for your GPU and CPU combination and the physical depth clearance in your chosen case before purchasing."
     }
   ],
   "faq": [
