@@ -1,0 +1,31 @@
+name: Index New Articles
+
+on:
+  workflow_dispatch:
+
+jobs:
+  index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - run: npm install
+      - name: Run Google Indexing
+        env:
+          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+          GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
+        run: |
+          node scripts/google-indexing.js --urls \
+            "https://compareelite.com/blog/article/best-conference-room-cameras-2026" \
+            "https://compareelite.com/blog/article/best-headphones-for-music-production-under-200-2026" \
+            "https://compareelite.com/blog/article/best-lavalier-microphones-2026" \
+            "https://compareelite.com/blog/article/best-midi-keyboards-2026" \
+            "https://compareelite.com/blog/article/best-pc-cases-2026" \
+            "https://compareelite.com/blog/article/best-robot-vacuum-for-under-200-2026" \
+            "https://compareelite.com/blog/article/best-smart-aroma-diffusers-2026" \
+            "https://compareelite.com/blog/article/best-standing-desk-for-under-200-2026" \
+            "https://compareelite.com/blog/article/best-standing-desk-for-under-300-2026" \
+            "https://compareelite.com/blog/article/best-studio-monitor-speakers-2026"
