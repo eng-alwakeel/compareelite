@@ -1,0 +1,19 @@
+{
+  "generatedAt": "2026-05-20T13:05:22.684Z",
+  "dryRun": false,
+  "articles": {
+    "best-weight-benches-2026": [
+      {
+        "asin": "B07VKJMNG5",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ]
+  },
+  "summary": {
+    "totalDead": 1,
+    "replaced": 0,
+    "stillBroken": 1
+  }
+}
