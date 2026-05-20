@@ -1,7 +1,792 @@
 {
-  "generatedAt": "2026-05-20T13:05:22.684Z",
+  "generatedAt": "2026-05-20T14:27:01.421Z",
   "dryRun": false,
   "articles": {
+    "best-cable-management-solutions-2026": [
+      {
+        "asin": "B07KFPF8DN",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B07RWLKVNR",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-compression-socks-sleeves-2026": [
+      {
+        "asin": "B07X3FDWQ7",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-desk-fans-home-office-2026": [
+      {
+        "asin": "B00B4DRP1A",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B07JDL11VK",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B0009OOPE4",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B07ZP1SDML",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-desk-humidifiers-2026": [
+      {
+        "asin": "B0BL4FQKJ2",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B07RWTRLNZ",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-desk-mats-2026": [
+      {
+        "asin": "B08CXNMDG4",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B0BJHF6RBW",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B07WNCQBMQ",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B07CXDN8VH",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B08B1FH4M9",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-desk-organizers-2026": [
+      {
+        "asin": "B0D5SWVL8C",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B0B8ZMX3QJ",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B0CJW2H1V4",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-desk-risers-2026": [
+      {
+        "asin": "B01MQJ4T1T",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B07JTZ6TBM",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B07XC2K5TJ",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-document-scanners-2026": [
+      {
+        "asin": "B08XK1H8Q6",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B09F48XNWM",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B07Q3T7GS4",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-drawing-tablets-2026": [
+      {
+        "asin": "B01MG37JVJ",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-drones-2026": [
+      {
+        "asin": "B0D1CLQBKW",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B0CN12KNGT",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B09Y57J4VG",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-e-readers-2026": [
+      {
+        "asin": "B09HSRGP5Q",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B09SWS1R63",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-elliptical-machines-2026": [
+      {
+        "asin": "B00UUWTHVU",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B07WNXZF93",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B00NPQVJTE",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-ergonomic-mouse-pads-2026": [
+      {
+        "asin": "B08XFXJ3PT",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-ergonomic-vertical-mice-2026": [
+      {
+        "asin": "B003H0Q0D4",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B07FS82CJG",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-external-hard-drives-2026": [
+      {
+        "asin": "B07X3Q83K5",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B07H364HBH",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-filing-cabinets-2026": [
+      {
+        "asin": "B0007UJCP8",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B00006IG54",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B001KTTQV2",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B01LYXLF2R",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-fitness-trackers-2026": [
+      {
+        "asin": "B0CWT232YB",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B0CPHB9LNQ",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-gaming-controllers-2026": [
+      {
+        "asin": "B08FC6C75Y",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B08XJND9BL",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B0BCMHJ4H9",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B07W748KKC",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B01NAWKPOF",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-gaming-keyboards-2026": [
+      {
+        "asin": "B0CMDWV3PK",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B09MFWJ7Q8",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-gaming-mousepads-2026": [
+      {
+        "asin": "B0BJHQ3B9G",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B08G4LGXFP",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B01N4863RD",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-gym-bags-2026": [
+      {
+        "asin": "B09XVRDTXZ",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B07QTXMVBG",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B07T8KXR3T",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-gymnastics-rings-2026": [
+      {
+        "asin": "B01N4EE3T1",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B00NLYALNS",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B07LG71F3Q",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-home-gym-flooring-2026": [
+      {
+        "asin": "B003VHXMGC",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B079BVZR58",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-home-theater-projectors-2026": [
+      {
+        "asin": "B0BJ3WB8YG",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B08DFN7K6Z",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-jump-ropes-for-fitness-2026": [
+      {
+        "asin": "B01ANCXS24",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B07YN1SR63",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B00UL1DQIK",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B00WXBGXHY",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B075TGYCJY",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-kettlebells-home-workouts-2026": [
+      {
+        "asin": "B07MYTNNQP",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B00I5T6NMU",
+        "status": "DEAD",
+        "replaced": true,
+        "newAsin": "B0DNNT8RXY",
+        "candidateLiveness": "BLOCKED"
+      },
+      {
+        "asin": "B07MYTNNQP",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B0BNXDRGZH",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B0BQ86DPB7",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B087T81N7S",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-keyboard-wrist-rests-2026": [
+      {
+        "asin": "B07P5B7YVP",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-kneeling-chairs-2026": [
+      {
+        "asin": "B01N47HDPJ",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B00YX5YCTM",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B08VF8G7JV",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-label-makers-2026": [
+      {
+        "asin": "B004AAAXHG",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B00K6D3PD0",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-laptop-cooling-pads-2026": [
+      {
+        "asin": "B071ZRDR7R",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B075XZZK3P",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B08CM8R3Q4",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-laptop-docking-stations-2026": [
+      {
+        "asin": "B09FMLSZSQ",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-massage-guns-2026": [
+      {
+        "asin": "B08H5ZPQKX",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-medicine-balls-2026": [
+      {
+        "asin": "B07M8MRW1X",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-mesh-wifi-systems-2026": [
+      {
+        "asin": "B0BFCK8V46",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B091G5VBWV",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B07KAX5WVJ",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-mini-pcs-2026": [
+      {
+        "asin": "B0B7QCBR34",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-mini-trampolines-rebounders-2026": [
+      {
+        "asin": "B07ZFP5XKS",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B00P4BLGNI",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-monitor-arms-2026": [
+      {
+        "asin": "B08W5YRFWM",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-monitor-calibrators-2026": [
+      {
+        "asin": "B08NCN4W33",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B09GQ3HKQF",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B09LHSGXKR",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B003KR28V6",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-monitor-light-bars-2026": [
+      {
+        "asin": "B08R6GXCD7",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-monitor-privacy-screens-2026": [
+      {
+        "asin": "B07NWZBXHJ",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-nas-devices-2026": [
+      {
+        "asin": "B07FM62VCC",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-portable-monitors-2026": [
+      {
+        "asin": "B08HHXMWZ3",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-portable-power-stations-2026": [
+      {
+        "asin": "B0BX2M76LN",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B0C9M7SZ2K",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-printer-for-home-office-2026": [
+      {
+        "asin": "B09B3DGGH5",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-smart-light-bulbs-2026": [
+      {
+        "asin": "B08C7HJ9WQ",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-smart-slow-cookers-2026": [
+      {
+        "asin": "B004QKND9K",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-soundbars-2026": [
+      {
+        "asin": "B09B7N65S3",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-standing-desks-2026": [
+      {
+        "asin": "B0DFDK3JGH",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-ultrawide-monitors-2026": [
+      {
+        "asin": "B083XJR98R",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-under-desk-bikes-2026": [
+      {
+        "asin": "B01MXGKU6O",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-usb-c-docking-stations-2026": [
+      {
+        "asin": "B08C9HXL3W",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-usb-microphones-2026": [
+      {
+        "asin": "B085DPCP1G",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
+    "best-webcams-2026": [
+      {
+        "asin": "B08H3LKFMZ",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
+    ],
     "best-weight-benches-2026": [
       {
         "asin": "B07VKJMNG5",
@@ -9,11 +794,25 @@
         "replaced": false,
         "reason": "no_candidate"
       }
+    ],
+    "best-wifi-routers-2026": [
+      {
+        "asin": "B091G4YQT1",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      },
+      {
+        "asin": "B09MFC7VBX",
+        "status": "DEAD",
+        "replaced": false,
+        "reason": "no_candidate"
+      }
     ]
   },
   "summary": {
-    "totalDead": 1,
-    "replaced": 0,
-    "stillBroken": 1
+    "totalDead": 116,
+    "replaced": 1,
+    "stillBroken": 115
   }
 }

@@ -81,6 +81,21 @@ function get(url, redirects = 0) {
 
 function sleep(ms) { return new Promise((r) => setTimeout(r, ms)); }
 
+async function getWithRetry(url, retries = 3) {
+  for (let attempt = 1; attempt <= retries; attempt++) {
+    try {
+      const res = await get(url);
+      if (res.status === 500 || res.status === 503) {
+        if (attempt < retries) { await sleep(2000 * attempt); continue; }
+      }
+      return res;
+    } catch (e) {
+      if (attempt < retries) { await sleep(2000 * attempt); continue; }
+      throw e;
+    }
+  }
+}
+
 // ── Classify a live probe ─────────────────────────────────────────────────────
 
 function classify(status, body) {
@@ -93,7 +108,7 @@ function classify(status, body) {
 
 async function probeAsin(asin) {
   try {
-    const { status, body } = await get(`https://www.amazon.com/dp/${asin}`);
+    const { status, body } = await getWithRetry(`https://www.amazon.com/dp/${asin}`);
     return classify(status, body);
   } catch (e) {
     return 'BLOCKED';
@@ -105,7 +120,7 @@ async function probeAsin(asin) {
 
 async function getRelatedAsins(seedAsin, excludeAsins = new Set()) {
   try {
-    const { status, body } = await get(`https://www.amazon.com/dp/${seedAsin}`);
+    const { status, body } = await getWithRetry(`https://www.amazon.com/dp/${seedAsin}`);
     if (status !== 200) return [];
     const seen = new Set();
     const candidates = [];
@@ -121,11 +136,13 @@ async function getRelatedAsins(seedAsin, excludeAsins = new Set()) {
   }
 }
 
-async function findReplacement(deadAsin, siblingsAlive, allDeadSet) {
-  // Strategy 1: use working siblings as seeds
-  const seeds = siblingsAlive.filter((a) => a !== deadAsin).slice(0, 3);
+async function findReplacement(deadAsin, siblingsAlive, allDeadSet, crossCategorySeeds = []) {
+  // Strategy 1: use alive siblings from same article as seeds
+  // Strategy 2: cross-article seeds from same category (when all siblings dead)
+  // Strategy 3: load dead ASIN page (may still show "also viewed" links)
+  const allSeeds = [...siblingsAlive.filter((a) => a !== deadAsin), ...crossCategorySeeds];
 
-  for (const seed of seeds) {
+  for (const seed of allSeeds) {
     await sleep(DELAY_MS);
     const candidates = await getRelatedAsins(seed, allDeadSet);
     for (const candidate of candidates) {
@@ -137,8 +154,7 @@ async function findReplacement(deadAsin, siblingsAlive, allDeadSet) {
     }
   }
 
-  // Strategy 2: load the dead ASIN's cached page for any related ASINs
-  // (Amazon caches the page; the ASIN itself is dead but may show alternatives)
+  // Strategy 3: the dead ASIN's page may still show alternatives (cached/archived)
   await sleep(DELAY_MS);
   const altCandidates = await getRelatedAsins(deadAsin, allDeadSet);
   for (const candidate of altCandidates) {
@@ -209,11 +225,25 @@ async function main() {
 
   if (dryRun) console.log('DRY RUN — no files will be modified\n');
 
-  const deadSet  = loadDeadAsins();
-  const articles = loadArticles(single);
+  const deadSet     = loadDeadAsins();
+  const allArticles = loadArticles(null);  // always load all for cross-article seeds
+  const articles    = single ? allArticles.filter((a) => a.slug === single) : allArticles;
 
   console.log(`Dead ASINs in cache: ${deadSet.size}`);
   console.log(`Articles to scan:    ${articles.length}\n`);
+
+  // Build category → alive ASINs map for cross-article seeding
+  const categorySeeds = {};
+  for (const { data } of allArticles) {
+    const cat = data.category || 'Unknown';
+    if (!categorySeeds[cat]) categorySeeds[cat] = [];
+    for (const p of data.products || []) {
+      const a = getAsin(p);
+      if (a && !deadSet.has(a) && categorySeeds[cat].length < 10) {
+        categorySeeds[cat].push(a);
+      }
+    }
+  }
 
   const report = {
     generatedAt: new Date().toISOString(),
@@ -232,19 +262,33 @@ async function main() {
     console.log(`[${i + 1}/${articles.length}] ${slug} — ${deadProducts.length} dead ASIN(s)`);
     const articleResults = [];
 
-    // Collect alive sibling ASINs to use as seeds for finding replacements
+    // Collect alive sibling ASINs (same article), then cross-article seeds (same category)
     const siblingsAlive = products
       .map((p) => getAsin(p))
       .filter((a) => a && !deadSet.has(a));
+
+    const category = data.category || 'Unknown';
+    const crossSeeds = siblingsAlive.length === 0
+      ? (categorySeeds[category] || []).slice(0, 5)
+      : [];
+
+    if (crossSeeds.length > 0) {
+      console.log(`  (all siblings dead — using ${crossSeeds.length} cross-article seeds from "${category}")`);
+    }
+
+    const usedReplacements = new Set();
 
     for (const product of deadProducts) {
       const oldAsin = getAsin(product);
       report.summary.totalDead++;
 
-      process.stdout.write(`  ↳ ${oldAsin} → finding replacement via related products ... `);
+      process.stdout.write(`  ↳ ${oldAsin} → finding replacement ... `);
+
+      // Extend dead set with already-used replacements to avoid duplicates
+      const exclusions = new Set([...deadSet, ...usedReplacements]);
 
       await sleep(DELAY_MS);
-      const candidate = await findReplacement(oldAsin, siblingsAlive, deadSet);
+      const candidate = await findReplacement(oldAsin, siblingsAlive, exclusions, crossSeeds);
 
       if (!candidate) {
         console.log('no replacement found');
@@ -260,6 +304,7 @@ async function main() {
         setAsin(product, candidate.asin, null, null);
       }
 
+      usedReplacements.add(candidate.asin);
       report.summary.replaced++;
       articleResults.push({
         asin: oldAsin, status: 'DEAD', replaced: !dryRun,
