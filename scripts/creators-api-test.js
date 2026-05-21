@@ -3,83 +3,139 @@
 
 require('dotenv').config();
 
-const { ApiClient, DefaultApi, SearchItemsRequestContent } = require('creatorsapi-nodejs-sdk');
+const https = require('https');
 
 const CLIENT_ID     = process.env.AMAZON_CLIENT_ID;
 const CLIENT_SECRET = process.env.AMAZON_CLIENT_SECRET;
 const PARTNER_TAG   = process.env.AMAZON_PARTNER_TAG || 'compareelite-20';
 const MARKETPLACE   = 'www.amazon.com';
-const VERSION       = '3.1';
+const SCOPE         = 'creatorsapi::default';
+const API_HOST      = 'creatorsapi.amazon';
 
 if (!CLIENT_ID || !CLIENT_SECRET) {
   console.error('❌ Missing AMAZON_CLIENT_ID or AMAZON_CLIENT_SECRET in .env');
   process.exit(1);
 }
 
-async function test() {
-  console.log('🔄 Testing Amazon Creators API v3.1...');
-  console.log('   Client ID:   ', CLIENT_ID.slice(0, 35) + '...');
-  console.log('   Partner Tag: ', PARTNER_TAG);
-  console.log('   Version:     ', VERSION);
-  console.log('   Marketplace: ', MARKETPLACE);
-  console.log('');
-
-  try {
-    const apiClient = new ApiClient();
-    apiClient.credentialId     = CLIENT_ID;
-    apiClient.credentialSecret = CLIENT_SECRET;
-    apiClient.version          = VERSION;
-    apiClient.marketplace      = MARKETPLACE;
-
-    const api = new DefaultApi(apiClient);
-
-    const requestContent = new SearchItemsRequestContent();
-    requestContent.keywords   = 'standing desk';
-    requestContent.partnerTag = PARTNER_TAG;
-    requestContent.resources  = [
-      'Images.Primary.Large',
-      'ItemInfo.Title',
-      'Offers.Listings.Price',
-    ];
-
-    console.log('[1/1] Searching for "standing desk"...');
-    const result = await api.searchItems(MARKETPLACE, {
-      searchItemsRequestContent: requestContent,
+function post(hostname, path, body, extraHeaders = {}) {
+  return new Promise((resolve, reject) => {
+    const bodyBuf = Buffer.from(body);
+    const req = https.request({
+      hostname,
+      path,
+      method: 'POST',
+      headers: {
+        'Content-Type':   'application/x-www-form-urlencoded',
+        'Content-Length': bodyBuf.length,
+        ...extraHeaders,
+      },
+    }, (res) => {
+      let raw = '';
+      res.on('data', (c) => raw += c);
+      res.on('end', () => {
+        try { resolve({ status: res.statusCode, data: JSON.parse(raw), raw }); }
+        catch { resolve({ status: res.statusCode, data: null, raw }); }
+      });
     });
-
-    const items = result?.SearchResult?.Items || result?.searchResult?.items || [];
-
-    if (!items.length) {
-      console.log('⚠️  Connected but no items returned. Raw response:');
-      console.log(JSON.stringify(result, null, 2).slice(0, 500));
-      process.exit(0);
-    }
-
-    console.log(`\n✅ Creators API connection successful!`);
-    console.log(`   Found ${items.length} item(s)\n`);
-
-    items.slice(0, 3).forEach((item, i) => {
-      const title = item?.ItemInfo?.Title?.DisplayValue || item?.title || 'N/A';
-      const asin  = item?.ASIN || item?.asin || 'N/A';
-      const price = item?.Offers?.Listings?.[0]?.Price?.DisplayAmount || 'N/A';
-      const image = item?.Images?.Primary?.Large?.URL ? '✓' : '✗';
-      console.log(`   [${i + 1}] ${title}`);
-      console.log(`       ASIN:  ${asin}`);
-      console.log(`       Price: ${price}`);
-      console.log(`       Image: ${image}`);
-    });
-
-    console.log('\n📦 First item (full):');
-    console.log(JSON.stringify(items[0], null, 2));
-
-  } catch (err) {
-    console.error('\n❌ Error:', err.message);
-    if (err.response) {
-      console.error('   Status:', err.status || err.response?.status);
-      console.error('   Body:  ', JSON.stringify(err.response?.body || err.response?.text || '').slice(0, 300));
-    }
-    process.exit(1);
-  }
+    req.on('error', reject);
+    req.write(bodyBuf);
+    req.end();
+  });
 }
 
-test();
+async function getToken() {
+  const body = new URLSearchParams({
+    grant_type:    'client_credentials',
+    client_id:     CLIENT_ID,
+    client_secret: CLIENT_SECRET,
+    scope:         SCOPE,
+  }).toString();
+
+  return post('api.amazon.com', '/auth/o2/token', body);
+}
+
+async function searchItems(token, keywords) {
+  const payload = JSON.stringify({
+    keywords,
+    partnerTag: PARTNER_TAG,
+    resources: [
+      'Images.Primary.Large',
+      'ItemInfo.Title',
+      'ItemInfo.ByLineInfo',
+      'OffersV2.Listings.Price',
+      'CustomerReviews.StarRating',
+      'CustomerReviews.Count',
+    ],
+    itemCount: 3,
+  });
+
+  return post(API_HOST, '/catalog/v1/searchItems', payload, {
+    'Authorization': 'Bearer ' + token,
+    'Content-Type':  'application/json',
+    'x-marketplace': MARKETPLACE,
+  });
+}
+
+async function main() {
+  console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+  console.log('  Amazon Creators API v3.1 — Connection Test');
+  console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+  console.log('  Client ID:   ', CLIENT_ID.slice(0, 40) + '...');
+  console.log('  Partner Tag: ', PARTNER_TAG);
+  console.log('  Scope:       ', SCOPE);
+  console.log('');
+
+  // ── Step 1: Get token ──────────────────────────────────────────────────────
+  process.stdout.write('[1/2] Getting access token ... ');
+  let token;
+  try {
+    const { status, data, raw } = await getToken();
+    if (status === 200 && data?.access_token) {
+      token = data.access_token;
+      console.log('✅ OK (expires in', data.expires_in, 's)');
+      console.log('     Token:', token.slice(0, 30) + '...');
+    } else {
+      console.log('❌ FAILED');
+      console.log('   Status:', status);
+      console.log('   Error: ', data?.error || '—');
+      console.log('   Desc:  ', data?.error_description || raw?.slice(0, 200));
+      process.exit(1);
+    }
+  } catch (e) {
+    console.log('❌ NETWORK ERROR:', e.message);
+    process.exit(1);
+  }
+
+  // ── Step 2: Search items ───────────────────────────────────────────────────
+  console.log('');
+  process.stdout.write('[2/2] Searching "standing desk" ... ');
+  try {
+    const { status, data, raw } = await searchItems(token, 'standing desk');
+    if (status === 200) {
+      const items = data?.SearchResult?.Items || data?.searchResult?.items || [];
+      console.log(`✅ OK — ${items.length} item(s) returned`);
+
+      if (items.length > 0) {
+        console.log('\n📦 First item (full JSON):');
+        console.log(JSON.stringify(items[0], null, 2));
+      } else {
+        console.log('\n⚠️  Connected but no items returned. Full response:');
+        console.log(JSON.stringify(data, null, 2).slice(0, 800));
+      }
+    } else {
+      console.log('❌ FAILED');
+      console.log('   Status:', status);
+      console.log('   Body:  ', raw?.slice(0, 500) || JSON.stringify(data).slice(0, 500));
+      process.exit(1);
+    }
+  } catch (e) {
+    console.log('❌ NETWORK ERROR:', e.message);
+    process.exit(1);
+  }
+
+  console.log('\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+  console.log('  All tests passed ✅');
+  console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+}
+
+main().catch((e) => { console.error('Fatal:', e.message); process.exit(1); });
