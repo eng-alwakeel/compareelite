@@ -59,12 +59,12 @@ async function searchItems(token, keywords) {
     keywords,
     partnerTag: PARTNER_TAG,
     resources: [
-      'Images.Primary.Large',
-      'ItemInfo.Title',
-      'ItemInfo.ByLineInfo',
-      'OffersV2.Listings.Price',
-      'CustomerReviews.StarRating',
-      'CustomerReviews.Count',
+      'images.primary.large',
+      'itemInfo.title',
+      'itemInfo.byLineInfo',
+      'offersV2.listings.price',
+      'customerReviews.starRating',
+      'customerReviews.count',
     ],
     itemCount: 3,
   });
