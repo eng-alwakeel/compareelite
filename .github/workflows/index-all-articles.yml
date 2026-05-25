@@ -1,0 +1,121 @@
+name: Index All Articles (Google)
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Which URLs to submit'
+        required: true
+        default: 'all'
+        type: choice
+        options:
+          - all        # all 208 articles from manifest
+          - new        # articles added in last 7 days
+  schedule:
+    - cron: '0 6 * * 1'   # every Monday 06:00 UTC (weekly refresh)
+
+jobs:
+  google-index:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci --prefer-offline || npm install
+
+      - name: Verify secrets are set
+        run: |
+          if [ -z "$GOOGLE_CLIENT_ID" ]; then
+            echo "❌ GOOGLE_CLIENT_ID secret is not set"
+            exit 1
+          fi
+          if [ -z "$GOOGLE_CLIENT_SECRET" ]; then
+            echo "❌ GOOGLE_CLIENT_SECRET secret is not set"
+            exit 1
+          fi
+          if [ -z "$GOOGLE_REFRESH_TOKEN" ]; then
+            echo "❌ GOOGLE_REFRESH_TOKEN secret is not set"
+            exit 1
+          fi
+          echo "✅ All secrets present"
+        env:
+          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+          GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
+
+      - name: Submit to Google Indexing API
+        id: indexing
+        continue-on-error: true
+        env:
+          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+          GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
+        run: |
+          MODE="${{ github.event.inputs.mode || 'all' }}"
+          if [ "$MODE" = "new" ]; then
+            echo "📤 Submitting NEW articles (last 7 days)..."
+            node scripts/google-indexing.js --new
+          else
+            echo "📤 Submitting ALL articles from manifest..."
+            node scripts/google-indexing.js
+          fi
+
+      - name: Upload indexing report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: google-indexing-report-${{ github.run_id }}
+          path: data/google-indexing-report.json
+          if-no-files-found: warn
+          retention-days: 30
+
+      - name: Print report summary
+        if: always()
+        run: |
+          if [ -f data/google-indexing-report.json ]; then
+            echo "📊 Indexing Report:"
+            cat data/google-indexing-report.json | python3 -c "
+          import json, sys
+          r = json.load(sys.stdin)
+          print(f'  Submitted at: {r.get(\"submittedAt\",\"unknown\")}')
+          print(f'  Total:        {r.get(\"total\",0)}')
+          print(f'  ✅ Accepted:  {r.get(\"ok\",0)}')
+          print(f'  ❌ Failed:    {r.get(\"failed\",0)}')
+          failures = r.get('failures', [])
+          if failures:
+              print(f'  Failures:')
+              for f in failures[:10]:
+                  status = f.get('status','?')
+                  url = f.get('url','?').split('/')[-1]
+                  try:
+                      msg = json.loads(f.get('body','{}'))
+                      msg = msg.get('error',{}).get('message','')[:60]
+                  except:
+                      msg = str(f.get('body',''))[:60]
+                  print(f'    [{status}] {url} — {msg}')
+          "
+          else
+            echo "⚠️  No report file generated"
+          fi
+
+      - name: Fail if indexing had errors (not quota)
+        if: steps.indexing.outcome == 'failure'
+        run: |
+          echo "❌ Indexing step failed. Check report above."
+          echo "   Note: 429 Quota Exceeded is expected if running daily."
+          echo "   Google Indexing API allows 200 URLs/day per property."
+          if [ -f data/google-indexing-report.json ]; then
+            FAILED=$(cat data/google-indexing-report.json | python3 -c "import json,sys; r=json.load(sys.stdin); print(r.get('failed',0))")
+            OK=$(cat data/google-indexing-report.json | python3 -c "import json,sys; r=json.load(sys.stdin); print(r.get('ok',0))")
+            echo "   Accepted: $OK | Failed: $FAILED"
+          fi
+          exit 1
