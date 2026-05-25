@@ -170,5 +170,8 @@
       "a": "The 2.4 GHz and 5 GHz bands offer different tradeoffs between range and speed that make each suited for different devices and use cases. The 2.4 GHz band transmits at lower frequencies that penetrate walls and travel farther distances better than higher frequencies — useful for devices at the edge of your Wi-Fi coverage and for smart home devices (thermostats, smart plugs, bulbs) that are spread throughout the home and don't need high bandwidth. Its limitation is speed — theoretical maximum of ~600 Mbps (Wi-Fi 6) in practice — and heavy congestion because every neighboring Wi-Fi network and many other devices (microwaves, baby monitors) share this spectrum. The 5 GHz band provides much higher throughput (up to ~4.8 Gbps theoretically) with less interference, but has shorter range and worse wall penetration than 2.4 GHz. For best performance: connect high-bandwidth devices (computers, gaming consoles, streaming sticks) to 5 GHz at close range, and leave 2.4 GHz for smart home devices and devices at the network's edge. Wi-Fi 6E adds 6 GHz for even faster but shorter-range connections."
     }
   ],
-  "related_articles": []
+  "related_articles": [],
+  "author": "CompareElite Editorial Team",
+  "author_bio": "Our editorial team researches and tests products across Tech, Home Office, Smart Home, and Fitness categories to deliver honest, unbiased buying guides.",
+  "author_url": "https://compareelite.com/about"
 }

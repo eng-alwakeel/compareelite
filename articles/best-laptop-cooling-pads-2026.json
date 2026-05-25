@@ -170,5 +170,8 @@
       "a": "Signs of laptop overheating include: the fan running loudly and constantly at high speed, the laptop feeling uncomfortably hot to the touch (particularly near the exhaust vents), sudden performance drops during gaming or rendering (thermal throttling), unexpected shutdowns during intensive tasks, and lag or stuttering that wasn't present when the laptop was new. You can monitor temperatures directly using free software: HWiNFO or MSI Afterburner on Windows, or iStatMenus on Mac. CPU temperatures above 90°C under sustained load indicate thermal stress. GPU temperatures above 85°C are concerning. A cooling pad, cleaning the laptop's internal fans and vents, and reapplying thermal paste (for older laptops) are the main remedies for chronic overheating."
     }
   ],
-  "related_articles": []
+  "related_articles": [],
+  "author": "CompareElite Editorial Team",
+  "author_bio": "Our editorial team researches and tests products across Tech, Home Office, Smart Home, and Fitness categories to deliver honest, unbiased buying guides.",
+  "author_url": "https://compareelite.com/about"
 }

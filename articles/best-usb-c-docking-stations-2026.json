@@ -170,5 +170,8 @@
       "a": "The number of monitors a docking station can support depends on both the dock's video output ports and your laptop's display output capability. Most mid-range Thunderbolt 4 docks support two external displays simultaneously — one through HDMI and one through DisplayPort or Thunderbolt. Premium docks like the CalDigit TS4 can drive dual 4K monitors simultaneously with full 60Hz refresh rates. Docks using DisplayLink technology can add additional displays beyond the laptop's native capability through software-based display rendering, enabling three or even four monitor setups from a single laptop. However, DisplayLink-driven monitors have slightly higher CPU usage and introduce a small amount of latency compared to native display output — imperceptible for productivity work but noticeable for video editing or gaming. For triple-monitor setups, specifically look for docks that advertise 'triple display support' or 'DisplayLink included' rather than assuming a dock with three video ports will drive all three simultaneously."
     }
   ],
-  "related_articles": []
+  "related_articles": [],
+  "author": "CompareElite Editorial Team",
+  "author_bio": "Our editorial team researches and tests products across Tech, Home Office, Smart Home, and Fitness categories to deliver honest, unbiased buying guides.",
+  "author_url": "https://compareelite.com/about"
 }
