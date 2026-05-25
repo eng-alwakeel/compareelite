@@ -82,12 +82,27 @@ function slugsFromManifest(newOnly = false) {
 
 // ── Indexing API call ─────────────────────────────────────────────────────────
 
-async function notifyURL(url, token) {
-  return httpsPost(
-    'https://indexing.googleapis.com/v3/urlNotifications:publish',
-    { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
-    JSON.stringify({ url, type: 'URL_UPDATED' }),
-  );
+function notifyURL(url, token) {
+  return new Promise((resolve, reject) => {
+    const bodyBuf = Buffer.from(JSON.stringify({ url, type: 'URL_UPDATED' }));
+    const req = https.request({
+      hostname: 'indexing.googleapis.com',
+      path:     '/v3/urlNotifications:publish',
+      method:   'POST',
+      headers: {
+        'Authorization': `Bearer ${token}`,
+        'Content-Type':  'application/json',
+        'Content-Length': bodyBuf.length,
+      },
+    }, (res) => {
+      let body = '';
+      res.on('data', (c) => (body += c));
+      res.on('end', () => resolve({ status: res.statusCode, body }));
+    });
+    req.on('error', reject);
+    req.write(bodyBuf);
+    req.end();
+  });
 }
 
 function sleep(ms) { return new Promise((r) => setTimeout(r, ms)); }
