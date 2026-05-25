@@ -7,7 +7,9 @@
   "thumbnail": "https://m.media-amazon.com/images/I/71o8Q5XJS5L._SL500_.jpg",
   "excerpt": "We tested 18 wireless headphones to find the best in 2026. The Sony WH-1000XM5 leads with 30-hour battery and top-tier ANC for most listeners.",
   "author": "CompareElite Team",
-  "stats": { "readers": 0 },
+  "stats": {
+    "readers": 0
+  },
   "intro": "Wireless headphones have become an everyday essential, but the market in 2026 is crowded with options ranging from $50 budget buys to $550 premium flagships. Over six weeks, our team put 18 models through rigorous testing covering sound quality, active noise cancellation effectiveness, call clarity, comfort during 4-hour wear sessions, and battery endurance under real-world use.\n\nThe difference between a good pair and a great pair often comes down to specifics: how well ANC handles low-frequency rumble on a commute, whether the earpads stay comfortable past hour two, and whether the companion app gives meaningful EQ control. We measured ANC attenuation using a calibrated sound meter in a 72 dB ambient environment, tracked actual playback hours at 50% volume, and rated call quality via a standardized listening panel.\n\nWhether you need all-day focus in a loud office, a travel companion for 14-hour flights, or studio-grade sound for critical listening, this guide covers the best wireless headphones across every use case and budget in 2026.",
   "products": [
     {
@@ -33,7 +35,7 @@
       "price": "$249.00",
       "rating": "9.2/10",
       "best_for": "Best for Comfort",
-      "image": "https://images-na.ssl-images-amazon.com/images/P/B098FKXT8L.01._SL500_.jpg",
+      "image": "https://m.media-amazon.com/images/P/B098FKXT8L.01._SL500_.jpg",
       "link": "https://www.amazon.com/dp/B098FKXT8L?tag=compareelite-20",
       "pros": [
         "22-hour battery life with ANC on, measured from 100% charge at 50% volume in our endurance test",
@@ -50,7 +52,7 @@
       "price": "$449.00",
       "rating": "9.0/10",
       "best_for": "Best for Apple Users",
-      "image": "https://images-na.ssl-images-amazon.com/images/P/B08PZHYWJS.01._SL500_.jpg",
+      "image": "https://m.media-amazon.com/images/P/B08PZHYWJS.01._SL500_.jpg",
       "link": "https://www.amazon.com/dp/B08PZHYWJS?tag=compareelite-20",
       "pros": [
         "Personalized Spatial Audio with head tracking delivers convincing surround imaging within a 1-meter radius of supported Apple devices",
@@ -67,7 +69,7 @@
       "price": "$229.00",
       "rating": "8.8/10",
       "best_for": "Best for Calls",
-      "image": "https://images-na.ssl-images-amazon.com/images/P/B07Q9MJKBV.01._SL500_.jpg",
+      "image": "https://m.media-amazon.com/images/P/B07Q9MJKBV.01._SL500_.jpg",
       "link": "https://www.amazon.com/dp/B07Q9MJKBV?tag=compareelite-20",
       "pros": [
         "11-microphone call system with beamforming reduces wind noise by 25 dB on outdoor calls versus the QC45",
@@ -84,7 +86,7 @@
       "price": "$199.99",
       "rating": "8.6/10",
       "best_for": "Best Value Premium",
-      "image": "https://images-na.ssl-images-amazon.com/images/P/B0863TXGM3.01._SL500_.jpg",
+      "image": "https://m.media-amazon.com/images/P/B0863TXGM3.01._SL500_.jpg",
       "link": "https://www.amazon.com/dp/B0863TXGM3?tag=compareelite-20",
       "pros": [
         "30-hour battery at 50% volume, matching the XM5 endurance at a price $80 lower",
@@ -101,7 +103,7 @@
       "price": "$179.00",
       "rating": "8.3/10",
       "best_for": "Best Budget Premium",
-      "image": "https://images-na.ssl-images-amazon.com/images/P/B0756CYWWD.01._SL500_.jpg",
+      "image": "https://m.media-amazon.com/images/P/B0756CYWWD.01._SL500_.jpg",
       "link": "https://www.amazon.com/dp/B0756CYWWD?tag=compareelite-20",
       "pros": [
         "20-hour battery life at 50% volume with ANC enabled, verified over 15 charge cycles in our endurance testing",
