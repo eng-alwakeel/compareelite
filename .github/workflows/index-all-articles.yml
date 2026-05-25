@@ -34,31 +34,19 @@ jobs:
 
       - name: Verify secrets are set
         run: |
-          if [ -z "$GOOGLE_CLIENT_ID" ]; then
-            echo "❌ GOOGLE_CLIENT_ID secret is not set"
+          if [ -z "$GOOGLE_SERVICE_ACCOUNT_JSON" ]; then
+            echo "❌ GOOGLE_SERVICE_ACCOUNT_JSON secret is not set"
             exit 1
           fi
-          if [ -z "$GOOGLE_CLIENT_SECRET" ]; then
-            echo "❌ GOOGLE_CLIENT_SECRET secret is not set"
-            exit 1
-          fi
-          if [ -z "$GOOGLE_REFRESH_TOKEN" ]; then
-            echo "❌ GOOGLE_REFRESH_TOKEN secret is not set"
-            exit 1
-          fi
-          echo "✅ All secrets present"
+          echo "✅ GOOGLE_SERVICE_ACCOUNT_JSON present"
         env:
-          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
-          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
-          GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
 
       - name: Submit to Google Indexing API
         id: indexing
         continue-on-error: true
         env:
-          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
-          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
-          GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
         run: |
           MODE="${{ github.event.inputs.mode || 'all' }}"
           if [ "$MODE" = "new" ]; then

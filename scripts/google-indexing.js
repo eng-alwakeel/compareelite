@@ -7,71 +7,51 @@
  *   node scripts/google-indexing.js          # reads all slugs from data/articles-manifest.json
  *   node scripts/google-indexing.js --new    # articles added in last 7 days
  *
- * Requires env vars:
- *   GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, GOOGLE_REFRESH_TOKEN
+ * Requires env var:
+ *   GOOGLE_SERVICE_ACCOUNT_JSON  (full JSON string of the service account key file)
  *
  * Exit code: 0 if all OK, 1 if any failures
  */
 
 'use strict';
 
-const fs    = require('fs');
-const path  = require('path');
+const fs   = require('fs');
+const path = require('path');
 const https = require('https');
+const { GoogleAuth } = require('google-auth-library');
 
-const ROOT         = path.resolve(__dirname, '..');
-const MANIFEST     = path.join(ROOT, 'data', 'articles-manifest.json');
-const SITE_URL     = 'https://compareelite.com';
-const DELAY_MS     = 200;
+const ROOT      = path.resolve(__dirname, '..');
+const MANIFEST  = path.join(ROOT, 'data', 'articles-manifest.json');
+const SITE_URL  = 'https://compareelite.com';
+const DELAY_MS  = 200;
+const SCOPE     = 'https://www.googleapis.com/auth/indexing';
 
-// ── OAuth ─────────────────────────────────────────────────────────────────────
-
-function httpsPost(url, headers, body) {
-  return new Promise((resolve, reject) => {
-    const bodyStr = typeof body === 'string' ? body : JSON.stringify(body);
-    const u = new URL(url);
-    const req = https.request({
-      hostname: u.hostname,
-      path:     u.pathname + u.search,
-      method:   'POST',
-      headers:  { 'Content-Length': Buffer.byteLength(bodyStr), ...headers },
-    }, (res) => {
-      let data = '';
-      res.on('data', (c) => (data += c));
-      res.on('end', () => resolve({ status: res.statusCode, body: data }));
-    });
-    req.on('error', reject);
-    req.write(bodyStr);
-    req.end();
-  });
-}
+// ── Auth (Service Account) ────────────────────────────────────────────────────
 
 async function getAccessToken() {
-  const refreshToken  = process.env.GOOGLE_REFRESH_TOKEN;
-  const clientId      = process.env.GOOGLE_CLIENT_ID;
-  const clientSecret  = process.env.GOOGLE_CLIENT_SECRET;
-
-  if (!refreshToken || !clientId || !clientSecret) {
-    console.error('❌ Missing env vars: GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, GOOGLE_REFRESH_TOKEN');
+  const raw = process.env.GOOGLE_SERVICE_ACCOUNT_JSON;
+  if (!raw) {
+    console.error('❌ Missing env var: GOOGLE_SERVICE_ACCOUNT_JSON');
     process.exit(1);
   }
 
-  const body = [
-    'grant_type=refresh_token',
-    `refresh_token=${encodeURIComponent(refreshToken)}`,
-    `client_id=${encodeURIComponent(clientId)}`,
-    `client_secret=${encodeURIComponent(clientSecret)}`,
-  ].join('&');
-
-  const res  = await httpsPost('https://oauth2.googleapis.com/token',
-    { 'Content-Type': 'application/x-www-form-urlencoded' }, body);
-  const data = JSON.parse(res.body);
-
-  if (!data.access_token) {
-    console.error('❌ Failed to get access token:', res.body);
+  let credentials;
+  try {
+    credentials = JSON.parse(raw);
+  } catch {
+    console.error('❌ GOOGLE_SERVICE_ACCOUNT_JSON is not valid JSON');
     process.exit(1);
   }
-  return data.access_token;
+
+  const auth   = new GoogleAuth({ credentials, scopes: [SCOPE] });
+  const client = await auth.getClient();
+  const token  = await client.getAccessToken();
+
+  if (!token.token) {
+    console.error('❌ Failed to obtain access token from service account');
+    process.exit(1);
+  }
+  return token.token;
 }
 
 // ── URL resolution ────────────────────────────────────────────────────────────
