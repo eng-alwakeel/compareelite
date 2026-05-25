@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+require('dotenv').config();
 /**
  * google-indexing.js — Request indexing via Search Console URL Inspection API
  *
