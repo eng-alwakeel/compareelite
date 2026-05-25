@@ -34,19 +34,28 @@ jobs:
 
       - name: Verify secrets are set
         run: |
-          if [ -z "$GOOGLE_SERVICE_ACCOUNT_JSON" ]; then
-            echo "❌ GOOGLE_SERVICE_ACCOUNT_JSON secret is not set"
-            exit 1
+          if [ -z "$GOOGLE_CLIENT_ID" ]; then
+            echo "❌ GOOGLE_CLIENT_ID secret is not set"; exit 1
           fi
-          echo "✅ GOOGLE_SERVICE_ACCOUNT_JSON present"
+          if [ -z "$GOOGLE_CLIENT_SECRET" ]; then
+            echo "❌ GOOGLE_CLIENT_SECRET secret is not set"; exit 1
+          fi
+          if [ -z "$GOOGLE_REFRESH_TOKEN" ]; then
+            echo "❌ GOOGLE_REFRESH_TOKEN secret is not set"; exit 1
+          fi
+          echo "✅ All secrets present"
         env:
-          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          GOOGLE_CLIENT_ID:     ${{ secrets.GOOGLE_CLIENT_ID }}
+          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+          GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
 
-      - name: Submit to Google Indexing API
+      - name: Submit to Search Console URL Inspection API
         id: indexing
         continue-on-error: true
         env:
-          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          GOOGLE_CLIENT_ID:     ${{ secrets.GOOGLE_CLIENT_ID }}
+          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+          GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
         run: |
           MODE="${{ github.event.inputs.mode || 'all' }}"
           if [ "$MODE" = "new" ]; then

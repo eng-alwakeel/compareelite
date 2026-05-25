@@ -1,57 +1,84 @@
 #!/usr/bin/env node
 /**
- * google-indexing.js — Submit URLs to Google Indexing API
+ * google-indexing.js — Request indexing via Search Console URL Inspection API
  *
  * Usage:
  *   node scripts/google-indexing.js --urls <url1> <url2> ...
  *   node scripts/google-indexing.js          # reads all slugs from data/articles-manifest.json
  *   node scripts/google-indexing.js --new    # articles added in last 7 days
  *
- * Requires env var:
- *   GOOGLE_SERVICE_ACCOUNT_JSON  (full JSON string of the service account key file)
+ * Requires env vars:
+ *   GOOGLE_CLIENT_ID
+ *   GOOGLE_CLIENT_SECRET
+ *   GOOGLE_REFRESH_TOKEN
+ *
+ * Prerequisites in Google Cloud Console (project that owns the OAuth client):
+ *   - Google Search Console API enabled
+ *   - OAuth consent screen configured with scope: webmasters
  *
  * Exit code: 0 if all OK, 1 if any failures
  */
 
 'use strict';
 
-const fs   = require('fs');
-const path = require('path');
+const fs    = require('fs');
+const path  = require('path');
 const https = require('https');
-const { GoogleAuth } = require('google-auth-library');
 
-const ROOT      = path.resolve(__dirname, '..');
-const MANIFEST  = path.join(ROOT, 'data', 'articles-manifest.json');
-const SITE_URL  = 'https://compareelite.com';
-const DELAY_MS  = 200;
-const SCOPE     = 'https://www.googleapis.com/auth/indexing';
+const ROOT     = path.resolve(__dirname, '..');
+const MANIFEST = path.join(ROOT, 'data', 'articles-manifest.json');
+const SITE_URL = 'https://compareelite.com';
+const DELAY_MS = 500;
 
-// ── Auth (Service Account) ────────────────────────────────────────────────────
+// ── Auth (OAuth2 refresh token) ───────────────────────────────────────────────
 
 async function getAccessToken() {
-  const raw = process.env.GOOGLE_SERVICE_ACCOUNT_JSON;
-  if (!raw) {
-    console.error('❌ Missing env var: GOOGLE_SERVICE_ACCOUNT_JSON');
+  const clientId     = process.env.GOOGLE_CLIENT_ID;
+  const clientSecret = process.env.GOOGLE_CLIENT_SECRET;
+  const refreshToken = process.env.GOOGLE_REFRESH_TOKEN;
+
+  if (!clientId || !clientSecret || !refreshToken) {
+    console.error('❌ Missing env vars: GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, GOOGLE_REFRESH_TOKEN');
     process.exit(1);
   }
 
-  let credentials;
-  try {
-    credentials = JSON.parse(raw);
-  } catch {
-    console.error('❌ GOOGLE_SERVICE_ACCOUNT_JSON is not valid JSON');
+  const body = [
+    'grant_type=refresh_token',
+    `refresh_token=${encodeURIComponent(refreshToken)}`,
+    `client_id=${encodeURIComponent(clientId)}`,
+    `client_secret=${encodeURIComponent(clientSecret)}`,
+  ].join('&');
+
+  const bodyBuf = Buffer.from(body);
+  const { status, data } = await new Promise((resolve, reject) => {
+    const req = https.request({
+      hostname: 'oauth2.googleapis.com',
+      path:     '/token',
+      method:   'POST',
+      headers: {
+        'Content-Type':   'application/x-www-form-urlencoded',
+        'Content-Length': bodyBuf.length,
+      },
+    }, (res) => {
+      let raw = '';
+      res.on('data', (c) => (raw += c));
+      res.on('end', () => {
+        try { resolve({ status: res.statusCode, data: JSON.parse(raw) }); }
+        catch { resolve({ status: res.statusCode, data: raw }); }
+      });
+    });
+    req.on('error', reject);
+    req.write(bodyBuf);
+    req.end();
+  });
+
+  if (status !== 200 || !data.access_token) {
+    console.error('❌ Failed to get access token:');
+    console.error('   Status:', status);
+    console.error('   Error: ', data.error || data);
     process.exit(1);
   }
-
-  const auth   = new GoogleAuth({ credentials, scopes: [SCOPE] });
-  const client = await auth.getClient();
-  const token  = await client.getAccessToken();
-
-  if (!token.token) {
-    console.error('❌ Failed to obtain access token from service account');
-    process.exit(1);
-  }
-  return token.token;
+  return data.access_token;
 }
 
 // ── URL resolution ────────────────────────────────────────────────────────────
@@ -80,18 +107,21 @@ function slugsFromManifest(newOnly = false) {
   });
 }
 
-// ── Indexing API call ─────────────────────────────────────────────────────────
+// ── Search Console URL Inspection API ────────────────────────────────────────
 
 function notifyURL(url, token) {
   return new Promise((resolve, reject) => {
-    const bodyBuf = Buffer.from(JSON.stringify({ url, type: 'URL_UPDATED' }));
+    const bodyBuf = Buffer.from(JSON.stringify({
+      inspectionUrl: url,
+      siteUrl:       SITE_URL + '/',
+    }));
     const req = https.request({
-      hostname: 'indexing.googleapis.com',
-      path:     '/v3/urlNotifications:publish',
+      hostname: 'searchconsole.googleapis.com',
+      path:     '/v1/urlInspection/index:inspect',
       method:   'POST',
       headers: {
-        'Authorization': `Bearer ${token}`,
-        'Content-Type':  'application/json',
+        'Authorization':  `Bearer ${token}`,
+        'Content-Type':   'application/json',
         'Content-Length': bodyBuf.length,
       },
     }, (res) => {
