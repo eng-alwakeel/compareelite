@@ -107,17 +107,14 @@ function slugsFromManifest(newOnly = false) {
   });
 }
 
-// ── Search Console URL Inspection API ────────────────────────────────────────
+// ── Google Indexing API ───────────────────────────────────────────────────────
 
 function notifyURL(url, token) {
   return new Promise((resolve, reject) => {
-    const bodyBuf = Buffer.from(JSON.stringify({
-      inspectionUrl: url,
-      siteUrl:       SITE_URL + '/',
-    }));
+    const bodyBuf = Buffer.from(JSON.stringify({ url, type: 'URL_UPDATED' }));
     const req = https.request({
-      hostname: 'searchconsole.googleapis.com',
-      path:     '/v1/urlInspection/index:inspect',
+      hostname: 'indexing.googleapis.com',
+      path:     '/v3/urlNotifications:publish',
       method:   'POST',
       headers: {
         'Authorization':  `Bearer ${token}`,
