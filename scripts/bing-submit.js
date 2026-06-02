@@ -4,14 +4,16 @@ require('dotenv').config();
  * bing-submit.js — Submit URLs to Bing Webmaster URL Submission API
  *
  * Usage:
- *   node scripts/bing-submit.js           # all 208 articles + static pages
+ *   node scripts/bing-submit.js           # resume: submit next 90 unsubmitted URLs
  *   node scripts/bing-submit.js --new     # articles updated in last 7 days
+ *   node scripts/bing-submit.js --reset   # clear tracker and resubmit all
  *   node scripts/bing-submit.js --urls <url1> <url2> ...
  *
- * Requires env var:
- *   BING_API_KEY=<your_key>
+ * Resume behaviour:
+ *   - Submitted URLs are tracked in data/bing-indexed-urls.json
+ *   - Each run skips already-submitted URLs and submits next BATCH_SIZE
  *
- * Bing allows 10,000 URLs/day — no batching needed.
+ * Requires env var: BING_API_KEY
  * Saves report to data/bing-submit-report.json
  */
 
@@ -21,14 +23,36 @@ const fs    = require('fs');
 const path  = require('path');
 const https = require('https');
 
-const ROOT      = path.resolve(__dirname, '..');
-const MANIFEST  = path.join(ROOT, 'data', 'articles-manifest.json');
-const SITE_URL  = 'https://compareelite.com';
-const API_KEY   = process.env.BING_API_KEY;
+const ROOT         = path.resolve(__dirname, '..');
+const MANIFEST     = path.join(ROOT, 'data', 'articles-manifest.json');
+const INDEXED_FILE = path.join(ROOT, 'data', 'bing-indexed-urls.json');
+const SITE_URL     = 'https://compareelite.com';
+const BATCH_SIZE   = 90;
+const API_KEY      = process.env.BING_API_KEY;
 
 if (!API_KEY) {
   console.error('❌ BING_API_KEY env var is not set');
   process.exit(1);
+}
+
+// ── Tracker ───────────────────────────────────────────────────────────────────
+
+function loadSubmitted() {
+  try {
+    const raw = JSON.parse(fs.readFileSync(INDEXED_FILE, 'utf8'));
+    return new Set(Array.isArray(raw.urls) ? raw.urls : []);
+  } catch {
+    return new Set();
+  }
+}
+
+function saveSubmitted(submitted) {
+  fs.mkdirSync(path.dirname(INDEXED_FILE), { recursive: true });
+  fs.writeFileSync(INDEXED_FILE, JSON.stringify({
+    updatedAt: new Date().toISOString(),
+    total: submitted.size,
+    urls: [...submitted].sort(),
+  }, null, 2) + '\n');
 }
 
 // ── URL resolution ────────────────────────────────────────────────────────────
@@ -86,14 +110,21 @@ function submitBatch(urlList) {
 async function main() {
   const args    = process.argv.slice(2);
   const newOnly = args.includes('--new');
+  const reset   = args.includes('--reset');
 
-  let urls;
+  if (reset) {
+    fs.rmSync(INDEXED_FILE, { force: true });
+    console.log('🗑  Cleared bing-indexed-urls.json — all URLs will be resubmitted\n');
+  }
+
+  // Build full URL list
+  let allUrls;
   const urlsIdx = args.indexOf('--urls');
   if (urlsIdx !== -1) {
-    urls = args.slice(urlsIdx + 1).filter((a) => a.startsWith('http'));
+    allUrls = args.slice(urlsIdx + 1).filter((a) => a.startsWith('http'));
   } else {
     const slugs = slugsFromManifest(newOnly);
-    urls = [
+    allUrls = [
       `${SITE_URL}/`,
       `${SITE_URL}/about`,
       `${SITE_URL}/contact`,
@@ -101,20 +132,27 @@ async function main() {
     ];
   }
 
-  if (urls.length === 0) {
-    console.log('No URLs to submit.');
+  // Filter already-submitted
+  const submitted = loadSubmitted();
+  const pending   = allUrls.filter((u) => !submitted.has(u));
+  const batch     = pending.slice(0, BATCH_SIZE);
+
+  console.log(`📋 Total URLs:       ${allUrls.length}`);
+  console.log(`✅ Already submitted: ${submitted.size}`);
+  console.log(`⏳ Pending:          ${pending.length}`);
+  console.log(`📦 Submitting now:   ${batch.length}  (limit ${BATCH_SIZE}/run)\n`);
+
+  if (batch.length === 0) {
+    console.log('🎉 All URLs already submitted to Bing. Nothing to do.');
     process.exit(0);
   }
 
-  console.log(`📤 Submitting ${urls.length} URL(s) to Bing Webmaster API...\n`);
-
-  const { status, body } = await submitBatch(urls);
+  const { status, body } = await submitBatch(batch);
 
   let ok = false;
   let message = '';
   try {
     const parsed = JSON.parse(body);
-    // Bing returns {"d":null} on success
     ok = status === 200 && (parsed.d === null || parsed.d === undefined || parsed.d === '');
     message = JSON.stringify(parsed);
   } catch {
@@ -122,20 +160,32 @@ async function main() {
   }
 
   if (ok) {
-    console.log(`✅ Bing accepted ${urls.length} URL(s)  (HTTP ${status})`);
+    batch.forEach((u) => submitted.add(u));
+    saveSubmitted(submitted);
+    console.log(`✅ Bing accepted ${batch.length} URL(s)  (HTTP ${status})`);
   } else {
     console.log(`❌ Bing returned HTTP ${status}`);
     console.log(`   Response: ${message}`);
   }
 
+  const remaining = pending.length - (ok ? batch.length : 0);
   console.log('\n──────────────────────────────────────');
-  console.log(`  ${ok ? '✅' : '❌'} Status: HTTP ${status}`);
-  console.log(`  URLs submitted: ${urls.length}`);
+  console.log(`  ${ok ? '✅' : '❌'} Status:          HTTP ${status}`);
+  console.log(`  📤 Submitted today: ${ok ? batch.length : 0}`);
+  console.log(`  📋 Total remaining: ${remaining}`);
+  if (remaining > 0) {
+    const runs = Math.ceil(remaining / BATCH_SIZE);
+    console.log(`  📅 Runs to finish:  ~${runs}`);
+  }
   console.log('──────────────────────────────────────\n');
 
   const report = {
     submittedAt: new Date().toISOString(),
-    total: urls.length,
+    batchSize: BATCH_SIZE,
+    total: allUrls.length,
+    alreadySubmitted: submitted.size - (ok ? batch.length : 0),
+    submittedThisRun: ok ? batch.length : 0,
+    remaining,
     status,
     ok,
     message,
