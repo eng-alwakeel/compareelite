@@ -6,13 +6,15 @@ on:
       mode:
         description: 'Which URLs to submit'
         required: true
-        default: 'all'
+        default: 'resume'
         type: choice
         options:
+          - resume     # skip already-indexed, submit next 190 (default)
           - all        # all 208 articles from manifest
           - new        # articles added in last 7 days
+          - reset      # clear indexed-urls.json and resubmit everything
   schedule:
-    - cron: '0 6 * * 1'   # every Monday 06:00 UTC (weekly refresh)
+    - cron: '0 6 * * *'   # daily 06:00 UTC — drains 190 URLs/day until all indexed
 
 jobs:
   google-index:
@@ -49,21 +51,44 @@ jobs:
           GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
           GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
 
-      - name: Submit to Search Console URL Inspection API
+      - name: Configure Git for commit-back
+        run: |
+          git config user.name "CompareElite Bot"
+          git config user.email "bot@compareelite.com"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+
+      - name: Submit URLs to Google Indexing API
         id: indexing
-        continue-on-error: true
         env:
           GOOGLE_CLIENT_ID:     ${{ secrets.GOOGLE_CLIENT_ID }}
           GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
           GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
         run: |
-          MODE="${{ github.event.inputs.mode || 'all' }}"
-          if [ "$MODE" = "new" ]; then
+          MODE="${{ github.event.inputs.mode || 'resume' }}"
+          if [ "$MODE" = "reset" ]; then
+            echo "🗑  Reset mode — clearing indexed-urls.json"
+            node scripts/google-indexing.js --reset
+          elif [ "$MODE" = "new" ]; then
             echo "📤 Submitting NEW articles (last 7 days)..."
             node scripts/google-indexing.js --new
+          elif [ "$MODE" = "all" ]; then
+            echo "📤 Submitting ALL articles (no resume filter)..."
+            node scripts/google-indexing.js --reset && node scripts/google-indexing.js
           else
-            echo "📤 Submitting ALL articles from manifest..."
+            echo "📤 Resuming — submitting next batch of unindexed URLs..."
             node scripts/google-indexing.js
+          fi
+
+      - name: Commit updated indexed-urls.json
+        if: always()
+        run: |
+          git pull --rebase origin main || true
+          git add data/indexed-urls.json data/google-indexing-report.json || true
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update indexed-urls.json [$(date -u +%Y-%m-%d)]"
+            git push origin main || true
           fi
 
       - name: Upload indexing report
@@ -80,16 +105,20 @@ jobs:
         run: |
           if [ -f data/google-indexing-report.json ]; then
             echo "📊 Indexing Report:"
-            cat data/google-indexing-report.json | python3 -c "
+            python3 -c "
           import json, sys
-          r = json.load(sys.stdin)
-          print(f'  Submitted at: {r.get(\"submittedAt\",\"unknown\")}')
-          print(f'  Total:        {r.get(\"total\",0)}')
-          print(f'  ✅ Accepted:  {r.get(\"ok\",0)}')
-          print(f'  ❌ Failed:    {r.get(\"failed\",0)}')
+          r = json.load(open('data/google-indexing-report.json'))
+          print(f'  Submitted at:    {r.get(\"submittedAt\",\"unknown\")}')
+          print(f'  Total URLs:      {r.get(\"total\",0)}')
+          print(f'  Already indexed: {r.get(\"alreadyIndexed\",0)}')
+          print(f'  This batch:      {r.get(\"submitted\",0)}')
+          print(f'  ✅ Accepted:     {r.get(\"ok\",0)}')
+          print(f'  ❌ Errors:       {r.get(\"failed\",0)}')
+          print(f'  ⚠️  Quota hit:   {r.get(\"quotaHit\",False)}')
+          print(f'  📋 Still pending:{r.get(\"remaining\",0)}')
           failures = r.get('failures', [])
           if failures:
-              print(f'  Failures:')
+              print('  Failures:')
               for f in failures[:10]:
                   status = f.get('status','?')
                   url = f.get('url','?').split('/')[-1]
@@ -104,15 +133,12 @@ jobs:
             echo "⚠️  No report file generated"
           fi
 
-      - name: Fail if indexing had errors (not quota)
+      - name: Fail only on hard errors (not quota)
         if: steps.indexing.outcome == 'failure'
         run: |
-          echo "❌ Indexing step failed. Check report above."
-          echo "   Note: 429 Quota Exceeded is expected if running daily."
-          echo "   Google Indexing API allows 200 URLs/day per property."
-          if [ -f data/google-indexing-report.json ]; then
-            FAILED=$(cat data/google-indexing-report.json | python3 -c "import json,sys; r=json.load(sys.stdin); print(r.get('failed',0))")
-            OK=$(cat data/google-indexing-report.json | python3 -c "import json,sys; r=json.load(sys.stdin); print(r.get('ok',0))")
-            echo "   Accepted: $OK | Failed: $FAILED"
+          FAILED=$(python3 -c "import json; r=json.load(open('data/google-indexing-report.json')); print(r.get('failed',0))" 2>/dev/null || echo "0")
+          if [ "$FAILED" -gt "0" ]; then
+            echo "❌ Hard errors encountered: $FAILED URLs failed with non-quota errors"
+            exit 1
           fi
-          exit 1
+          echo "ℹ️  Step exited non-zero but no hard errors — likely quota. OK."
