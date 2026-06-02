@@ -44,6 +44,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="msvalidate.01" content="18885438C4B70484BC11EC7E838E69BB" />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-QEREG8GBQF"
           strategy="afterInteractive"
