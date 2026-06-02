@@ -22,7 +22,8 @@
       "cons": [
         "Does not include per-outlet energy monitoring \u2014 total strip power consumption is visible but individual device wattage tracking requires upgrading to Kasa's energy monitoring smart plug products.",
         "USB charging ports are always-on and cannot be individually controlled or scheduled through the app \u2014 charging continues even when the smart AC outlets are powered off, which is convenient for overnight phone charging but not ideal for strict power management."
-      ]
+      ],
+      "asin": "B083MFNDVR"
     },
     {
       "name": "Amazon Smart Plug with Power Strip (B082YD9KNN)",
@@ -39,7 +40,8 @@
       "cons": [
         "Google Home and Apple HomeKit compatibility is not supported \u2014 this strip is an Amazon-ecosystem-only device that will not integrate with non-Alexa voice assistants or non-Amazon smart home platforms.",
         "Individual outlet control is not available \u2014 the strip operates as a single on/off unit rather than providing individual smart control of each outlet socket, limiting its usefulness for mixed-device setups."
-      ]
+      ],
+      "asin": "B082YD9KNN"
     },
     {
       "name": "Govee Smart Power Strip with RGB Lighting",
@@ -56,7 +58,8 @@
       "cons": [
         "The RGB lighting feature adds a visual distraction in bedrooms and professional home office environments where ambient lighting from a power strip is unwanted \u2014 there is no option to disable the lights while keeping smart outlet functions active.",
         "Govee Home app requires account creation and has had intermittent connectivity reports from users in apartment buildings with high Wi-Fi network density \u2014 occasional 2\u20133 second command latency in congested 2.4GHz environments."
-      ]
+      ],
+      "asin": "B09QQLZB3D"
     },
     {
       "name": "TP-Link Kasa Smart Wi-Fi Power Strip EP40A",
@@ -73,7 +76,8 @@
       "cons": [
         "At $39.99, it is priced above the basic Kasa EP40 \u2014 the energy monitoring feature justifies the $12 premium for users who actively review consumption data, but buyers who only want scheduling can save with the base model.",
         "The USB-C port delivers 15W, insufficient for fast charging larger tablets (iPad Pro requires 20W+) and flagship smartphones (Pixel and iPhone Pro models charge fastest at 20\u201327W) \u2014 a secondary charger is needed for full-speed top-up."
-      ]
+      ],
+      "asin": "B09ZY29CG6"
     },
     {
       "name": "meross Smart Plug Power Strip WiFi Flat Outlet with HomeKit",
@@ -90,7 +94,8 @@
       "cons": [
         "Apple HomeKit pairing occasionally requires a Home Hub (Apple TV, HomePod, or iPad set as Home Hub) for remote access features \u2014 users without a home hub device will have limited smart functionality when away from home.",
         "The Meross app interface is functional but less polished than the Kasa app \u2014 scheduling is available but lacks the usage history graphs and energy visualization features that the Kasa EP40A provides."
-      ]
+      ],
+      "asin": "B0BC1B7H4D"
     },
     {
       "name": "Belkin Surge Protector 12-Outlet with USB",
@@ -107,7 +112,8 @@
       "cons": [
         "Does not include Wi-Fi connectivity, app control, or smart home integration \u2014 this is a traditional surge-protected power strip without any smart functionality despite being included in this comparison for its surge protection performance.",
         "No USB-C port \u2014 the two USB-A ports output 2.4A combined, which is slow by current standards and cannot fast-charge modern smartphones or tablets that rely on USB-C Power Delivery protocols."
-      ]
+      ],
+      "asin": "B00ATZJ5YS"
     }
   ],
   "buying_guide": [

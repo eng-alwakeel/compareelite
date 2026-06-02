@@ -25,7 +25,8 @@
         "Premium price at $500 for a portable projector",
         "300 lumens requires dimmed room for best picture quality",
         "Fan noise audible in very quiet viewing environments"
-      ]
+      ],
+      "asin": "B0BCWNQPQ7"
     },
     {
       "name": "Samsung The Freestyle 2nd Gen",
@@ -45,7 +46,8 @@
         "550 ISO lumens \u2014 struggles in bright rooms",
         "No built-in battery \u2014 requires USB-C power source",
         "Smart TV platform less open than Android TV"
-      ]
+      ],
+      "asin": "B0BMJBP5ML"
     },
     {
       "name": "Anker Nebula Capsule 3",
@@ -65,7 +67,8 @@
         "200 ANSI lumens \u2014 best in dark environments only",
         "Small lens limits maximum image size to practical ~80-inch viewing",
         "Gets warm during extended use"
-      ]
+      ],
+      "asin": "B0CB74M2HK"
     },
     {
       "name": "BenQ GP20 Portable Projector",
@@ -85,7 +88,8 @@
         "1080p resolution \u2014 not 4K",
         "Color accuracy not as strong as home-focused competitors",
         "Limited gaming performance due to higher input lag"
-      ]
+      ],
+      "asin": "B0B1QKR9S6"
     },
     {
       "name": "LG CineBeam HU710PW 4K",
@@ -105,7 +109,8 @@
         "Premium price \u2014 significantly more expensive than the competition",
         "Heavier at 2.4kg \u2014 portable but not pocketable",
         "No built-in battery \u2014 requires AC power"
-      ]
+      ],
+      "asin": "B0B56MVMTL"
     },
     {
       "name": "ViewSonic M2e Portable 1080p Projector",
@@ -125,7 +130,8 @@
         "No built-in battery \u2014 requires wall power for operation",
         "Smart features require a separate streaming dongle",
         "Limited brightness for outdoor or well-lit room use"
-      ]
+      ],
+      "asin": "B08TKPKCWD"
     }
   ],
   "buying_guide": [

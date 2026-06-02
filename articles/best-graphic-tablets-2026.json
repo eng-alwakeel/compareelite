@@ -54,7 +54,8 @@
         "Smaller active area (6x3.7 inches) than comparably priced competitors",
         "4096 pressure levels vs 8192+ on XPPen and HUION competitors",
         "Higher price than non-Wacom alternatives with similar specs"
-      ]
+      ],
+      "asin": "B079HL9YSF"
     },
     {
       "name": "XPPen Deco 01 V3 Drawing Tablet",
@@ -74,7 +75,8 @@
         "Driver installation more involved than Wacom for some applications",
         "Large size requires desk space \u2014 not ideal for small setups",
         "Active area-to-tablet-size ratio means a large physical footprint"
-      ]
+      ],
+      "asin": "B077P6BQP7"
     },
     {
       "name": "XPPen Artist 12 2nd Generation Pen Display",
@@ -94,7 +96,8 @@
         "Significantly heavier than screenless tablets \u2014 less portable",
         "Requires external power and separate display connection",
         "Higher cost than any screenless tablet in this guide"
-      ]
+      ],
+      "asin": "B09H71P7QK"
     },
     {
       "name": "Huion Inspiroy H640P Drawing Tablet",
@@ -114,7 +117,8 @@
         "6x3.9 inch active area is small for large monitor setups",
         "Driver quality behind Wacom in compatibility with older software",
         "Tablet surface texture less refined than Wacom Intuos paper feel"
-      ]
+      ],
+      "asin": "B075T6MTJX"
     },
     {
       "name": "UGEE M708 Graphics Drawing Tablet",
@@ -134,7 +138,8 @@
         "Less established brand than Wacom, XPPen, or HUION",
         "Driver updates less frequent than tier-one manufacturers",
         "Touch ring responsiveness inconsistent in some user reports"
-      ]
+      ],
+      "asin": "B07P82FSFW"
     },
     {
       "name": "HUION Kamvas Slate 10 Standalone Drawing Tablet",
@@ -154,7 +159,8 @@
         "Highest price in this guide at $349.00",
         "Android app ecosystem less complete than desktop software",
         "Heavier than a standard screenless tablet for portable use"
-      ]
+      ],
+      "asin": "B0CWPBL5M8"
     }
   ],
   "faq": [

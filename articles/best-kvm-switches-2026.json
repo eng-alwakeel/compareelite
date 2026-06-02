@@ -27,7 +27,8 @@
       ],
       "cons": [
         "At $99, it costs nearly three times more than the SGEYR at $36 and adds unnecessary expense for users who only need single-monitor switching at 4K@60Hz"
-      ]
+      ],
+      "asin": "B0G34NJ11Y"
     },
     {
       "rank": 2,
@@ -44,7 +45,8 @@
       ],
       "cons": [
         "Limited to 2 computers and 2 HDMI monitors; users who need three monitors or DisplayPort connectivity must step up to the UGREEN 8K model at $99"
-      ]
+      ],
+      "asin": "B0DXF66SWR"
     },
     {
       "rank": 3,
@@ -61,7 +63,8 @@
       ],
       "cons": [
         "At $70, it costs $7 more than the UGREEN dual-HDMI model and is worth the premium only if your two computers have different video output connectors that cannot be standardized with a short adapter"
-      ]
+      ],
+      "asin": "B0DBYMBMKN"
     },
     {
       "rank": 4,
@@ -78,7 +81,8 @@
       ],
       "cons": [
         "Provides only 2 USB passthrough ports compared to 4 USB ports on the UGREEN dual-monitor model, limiting shared peripherals to a keyboard, mouse, and no more than one additional device"
-      ]
+      ],
+      "asin": "B0D5D4SM8F"
     },
     {
       "rank": 5,
@@ -95,7 +99,8 @@
       ],
       "cons": [
         "Pure DisplayPort design is incompatible with computers that only output HDMI or Thunderbolt, requiring a DisplayPort adapter that can introduce compatibility issues at 4K@60Hz on some GPU and monitor combinations"
-      ]
+      ],
+      "asin": "B0FT2H4933"
     },
     {
       "rank": 6,
@@ -112,7 +117,8 @@
       ],
       "cons": [
         "SGEYR is a newer brand compared to UGREEN and Unitek and does not publish detailed specifications for EDID emulation support, input impedance, or maximum recommended cable lengths in the product listing"
-      ]
+      ],
+      "asin": "B0CZMQ4W86"
     }
   ],
   "buying_guide": [

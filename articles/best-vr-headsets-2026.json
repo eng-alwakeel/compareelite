@@ -25,7 +25,8 @@
         "2\u20133 hour battery life with the headset",
         "Standalone graphics limited compared to PC VR",
         "Higher price than Quest 2 at launch"
-      ]
+      ],
+      "asin": "B0C8VKH1ZH"
     },
     {
       "name": "PlayStation VR2",
@@ -45,7 +46,8 @@
         "Requires PlayStation 5 \u2014 no standalone or PC mode",
         "VR library smaller than Meta Quest store",
         "Wired connection to PS5 limits play area"
-      ]
+      ],
+      "asin": "B0BPTH7ZGC"
     },
     {
       "name": "Meta Quest 2",
@@ -65,7 +67,8 @@
         "LCD screen with lower contrast ratio than OLED alternatives",
         "Older processor than Quest 3 limits graphics in demanding games",
         "Fresnel lenses have visible god rays in high-contrast scenes"
-      ]
+      ],
+      "asin": "B099VMT8VZ"
     },
     {
       "name": "Valve Index VR Kit",
@@ -85,7 +88,8 @@
         "Requires powerful PC (RTX 3080+ recommended for best experience)",
         "Complex base station setup process",
         "Premium price at $999 for full kit"
-      ]
+      ],
+      "asin": "B07ZNPR5CX"
     },
     {
       "name": "HTC VIVE XR Elite",
@@ -105,7 +109,8 @@
         "Very high price for the performance level delivered",
         "Standalone performance limited compared to Meta Quest 3",
         "Consumer game library smaller than Quest platform"
-      ]
+      ],
+      "asin": "B0BSNZ3YV5"
     },
     {
       "name": "Pimax Crystal Light",
@@ -125,7 +130,8 @@
         "Requires high-end PC \u2014 minimum RTX 3090 for 90Hz at full resolution",
         "Pimax software and firmware historically buggy",
         "Heavy headset at 850g causes neck fatigue in extended sessions"
-      ]
+      ],
+      "asin": "B0CBQKTND5"
     }
   ],
   "buying_guide": [

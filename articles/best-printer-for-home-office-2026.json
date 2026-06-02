@@ -31,7 +31,8 @@
         "Monochrome only \u2014 no color printing capability",
         "250-sheet paper tray is standard; no optional tray expansion on this model",
         "Toner drum requires separate replacement every 12,000 pages"
-      ]
+      ],
+      "asin": "B07DFPJYDF"
     },
     {
       "rank": 2,
@@ -52,7 +53,8 @@
         "Slower at 8.8 ppm color and 13 ppm monochrome",
         "Ink cartridges are standard yield \u2014 higher per-page cost without XL cartridges",
         "No automatic duplex printing"
-      ]
+      ],
+      "asin": "B0BQNHX6YL"
     },
     {
       "rank": 3,
@@ -73,7 +75,8 @@
         "High upfront cost at $300",
         "Ink bottle refilling process takes 3 to 5 minutes per color",
         "Larger footprint than standard inkjets at 14.8 x 13.7 x 8.4 inches"
-      ]
+      ],
+      "asin": "B09H2RGZQB"
     },
     {
       "rank": 4,
@@ -94,7 +97,8 @@
         "HP+ service requires HP Original cartridges \u2014 third-party ink void eligibility",
         "Monthly ink subscription required for best per-page pricing",
         "No fax capability unlike competing all-in-ones"
-      ]
+      ],
+      "asin": "B09JMLPKZS"
     },
     {
       "rank": 5,
@@ -115,7 +119,8 @@
         "Print speed of 12 ppm color is modest compared to laser alternatives",
         "Larger than other models in this roundup at 15.8 x 13.5 x 9.5 inches",
         "No touchscreen \u2014 relies on basic LCD and button navigation"
-      ]
+      ],
+      "asin": "B07VQN9BGZ"
     },
     {
       "rank": 6,
@@ -136,7 +141,8 @@
         "Slow at 7.5 ppm black and 5.5 ppm color",
         "No ADF \u2014 flatbed only means manual page placement for multi-page documents",
         "Standard cartridge yields only 120 pages black, increasing per-page costs"
-      ]
+      ],
+      "asin": "B09B3DGGH5"
     }
   ],
   "buying_guide": [

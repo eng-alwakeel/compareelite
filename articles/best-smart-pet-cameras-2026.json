@@ -4,7 +4,7 @@
   "category": "Smart Home",
   "date": "2026-05-10",
   "read_time": "10 min read",
-  "thumbnail": "https://images-na.ssl-images-amazon.com/images/P/B09GDQZLD1.01.LZZZZZZZ.jpg",
+  "thumbnail": "https://m.media-amazon.com/images/P/B09GDQZLD1.01.LZZZZZZZ.jpg",
   "excerpt": "We tested 12 smart pet cameras for video quality, two-way audio, and treat dispensing. The Furbo 360 Dog Camera leads with barking alerts at $149.",
   "author": "Alex Rivera",
   "stats": {
@@ -31,7 +31,8 @@
         "Furbo Dog Nanny subscription (6.99 dollars per month) required for bark alerts, activity zones, and cloud recording",
         "149 dollar base price is premium \u2014 basic treat cameras are available for under 50 dollars",
         "Treat hopper holds approximately 100 small treats (0.4-inch diameter max) \u2014 larger treats jam the mechanism"
-      ]
+      ],
+      "asin": "B09GDQZLD1"
     },
     {
       "rank": 2,
@@ -52,7 +53,8 @@
         "Night vision is infrared black-and-white only \u2014 no color night vision like the Furbo 360",
         "No auto-tracking or pan/tilt \u2014 fixed wide-angle view only, limiting coverage to where the camera points",
         "Treat mechanism can jam with irregularly shaped treats \u2014 round treats up to 0.8 inches work most reliably"
-      ]
+      ],
+      "asin": "B08XXKJGKH"
     },
     {
       "rank": 3,
@@ -73,7 +75,8 @@
         "Fixed camera with no pan, tilt, or auto-tracking \u2014 covers only the area directly in front of the lens",
         "Two-way audio has 1 to 2 second latency \u2014 noticeable delay when trying to issue real-time commands to pets",
         "Treat dispensing sound is louder than Furbo's, which startled one cat in our multi-pet household test"
-      ]
+      ],
+      "asin": "B099JYHTL5"
     },
     {
       "rank": 4,
@@ -94,7 +97,8 @@
         "No built-in treat dispenser \u2014 requires the separate Wyze treat dispenser accessory at 30 dollars additional",
         "Pan/tilt motor produces audible clicking and whirring that can wake light-sleeping pets at 3 feet distance",
         "Wyze app requires account creation with cloud-based authentication even for local-storage-only use"
-      ]
+      ],
+      "asin": "B0B9TWY11Q"
     },
     {
       "rank": 5,
@@ -115,7 +119,8 @@
         "720p resolution is noticeably lower than 1080p and 2K competitors \u2014 fine for monitoring but poor for detail",
         "No night vision of any kind \u2014 camera is effectively blind in dark rooms",
         "89 dollars for 720p without night vision is overpriced compared to 55-dollar alternatives with better specs"
-      ]
+      ],
+      "asin": "B06XPSGS4W"
     },
     {
       "rank": 6,
@@ -136,7 +141,8 @@
         "Treat hopper capacity of approximately 50 small treats requires frequent refilling",
         "No AI pet detection \u2014 motion alerts trigger on any movement including curtains, shadows, and ceiling fans",
         "YI Home app requires cloud account and periodic authentication, with limited offline functionality"
-      ]
+      ],
+      "asin": "B01CW4BN5M"
     }
   ],
   "buying_guide": [

@@ -31,7 +31,8 @@
         "20-minute continuous run limit may interrupt long shredding sessions for high-volume users",
         "Cross-cut particles (P-4) are less secure than micro-cut (P-5) for highly sensitive documents",
         "Bin door requires full removal to empty, which can scatter loose particles"
-      ]
+      ],
+      "asin": "B01M0X7UPZ"
     },
     {
       "rank": 2,
@@ -52,7 +53,8 @@
         "At $280, it costs significantly more than entry-level shredders with similar sheet capacity",
         "Weighs 20 pounds \u2014 not easily moved between rooms or floors",
         "P-4 cross-cut security level falls short of P-5 micro-cut for financial or legal documents"
-      ]
+      ],
+      "asin": "B001NLW9US"
     },
     {
       "rank": 3,
@@ -73,7 +75,8 @@
         "4.5-gallon bin is smaller than Fellowes models, requiring more frequent emptying",
         "Handles up to 14 sheets versus 16 to 18 on higher-end Fellowes models",
         "No SafeSense hand-detection safety feature found on Fellowes competitors"
-      ]
+      ],
+      "asin": "B07B44XGPJ"
     },
     {
       "rank": 4,
@@ -94,7 +97,8 @@
         "Highest price in this roundup at $330 \u2014 premium over manual-feed alternatives",
         "Auto-feed mechanism requires documents to be free of staples and paper clips",
         "Auto-feed drawer must be loaded carefully to prevent multi-sheet misfeed jams"
-      ]
+      ],
+      "asin": "B005DPN02S"
     },
     {
       "rank": 5,
@@ -115,7 +119,8 @@
         "12-sheet capacity is the lowest in this roundup \u2014 slower throughput for larger shredding jobs",
         "3-gallon bin requires emptying after approximately 180 sheets \u2014 more often than larger models",
         "No jam-proof motor \u2014 overfed stacks require manual reverse to clear"
-      ]
+      ],
+      "asin": "B009CJUORS"
     },
     {
       "rank": 6,
@@ -136,7 +141,8 @@
         "8-sheet capacity is the smallest in this roundup \u2014 only suitable for light, occasional shredding",
         "2.1-gallon bin fills after approximately 125 sheets \u2014 fine for weekly shredding, not daily",
         "No continuous run specification published \u2014 thermal protection likely limits to under 10 minutes"
-      ]
+      ],
+      "asin": "B01G9ZWIS8"
     }
   ],
   "buying_guide": [

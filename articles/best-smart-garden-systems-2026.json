@@ -30,7 +30,8 @@
       "cons": [
         "Requires a working multi-zone sprinkler system \u2014 does not include any irrigation hardware",
         "8-zone model at $150 may be more than needed for small gardens with 1 to 3 zones"
-      ]
+      ],
+      "asin": "B07J4NZT7N"
     },
     {
       "rank": 2,
@@ -50,7 +51,8 @@
       "cons": [
         "Proprietary plant pods cost $5 to $7 each and cannot be replaced with standard seeds without a refillable pod kit",
         "LED light arm adjusts manually and must be raised as plants grow \u2014 not motorized"
-      ]
+      ],
+      "asin": "B07BN14VBP"
     },
     {
       "rank": 3,
@@ -70,7 +72,8 @@
       "cons": [
         "Bluetooth-only connectivity limits range to approximately 100 feet from your phone or Govee hub",
         "Does not integrate with Alexa, Google Home, or HomeKit \u2014 Govee app required for all monitoring"
-      ]
+      ],
+      "asin": "B07VDPQZNL"
     },
     {
       "rank": 4,
@@ -90,7 +93,8 @@
       "cons": [
         "Pod kits cost $15 to $30 and cannot be reused \u2014 ongoing consumable cost adds up over time",
         "Maximum plant height of 12 inches limits what you can grow to compact herbs and greens"
-      ]
+      ],
+      "asin": "B08NJHWVFH"
     },
     {
       "rank": 5,
@@ -110,7 +114,8 @@
       "cons": [
         "Fixed at 4 zones \u2014 upgrading to more zones requires purchasing the 8-zone model separately",
         "No built-in flow sensor \u2014 requires optional Rachio Flow Meter accessory to detect leaks automatically"
-      ]
+      ],
+      "asin": "B07BZRL94P"
     },
     {
       "rank": 6,
@@ -130,7 +135,8 @@
       "cons": [
         "Requires an Ecowitt gateway hub sold separately at $24.99 for Wi-Fi connectivity and app access",
         "Does not natively integrate with Rachio, Alexa, or Google Home without IFTTT bridging"
-      ]
+      ],
+      "asin": "B07CFRQYP3"
     }
   ],
   "buying_guide": [

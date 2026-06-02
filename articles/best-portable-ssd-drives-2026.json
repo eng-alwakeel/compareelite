@@ -25,7 +25,8 @@
         "Full speed requires USB 3.2 Gen 2x2 host \u2014 many laptops only support Gen 2",
         "Runs warm during sustained high-speed transfers",
         "Premium price compared to Gen 2 single-lane alternatives"
-      ]
+      ],
+      "asin": "B0C4BXRL12"
     },
     {
       "name": "WD My Passport SSD 2TB",
@@ -45,7 +46,8 @@
         "Write speeds trail Samsung T9 significantly",
         "No rugged rating \u2014 less drop protection than purpose-built rugged models",
         "Included software requires account creation for cloud backup features"
-      ]
+      ],
+      "asin": "B08RX4PBQP"
     },
     {
       "name": "SanDisk Extreme Pro Portable SSD 2TB",
@@ -65,7 +67,8 @@
         "Heavier than plastic competitors at 75g",
         "Gets quite hot during sustained 4K video transfers",
         "Higher price than the standard Extreme model"
-      ]
+      ],
+      "asin": "B08GV4YC71"
     },
     {
       "name": "Crucial X8 Portable SSD 2TB",
@@ -85,7 +88,8 @@
         "Write speeds around 900 MB/s \u2014 below premium alternatives",
         "No IP water resistance rating",
         "No hardware encryption support"
-      ]
+      ],
+      "asin": "B0874YJP92"
     },
     {
       "name": "Sabrent Rocket NANO 2TB",
@@ -105,7 +109,8 @@
         "Very small size makes it easy to misplace",
         "Enclosure gets hot without vents \u2014 can throttle on long transfers",
         "No included USB-A adapter cable"
-      ]
+      ],
+      "asin": "B08FTBLN34"
     },
     {
       "name": "Kingston XS2000 Portable SSD 2TB",
@@ -125,7 +130,8 @@
         "Requires USB 3.2 Gen 2x2 for peak speeds",
         "Included sleeve feels flimsy",
         "Software ecosystem not as polished as Samsung or WD"
-      ]
+      ],
+      "asin": "B09RNL8Y4C"
     }
   ],
   "buying_guide": [

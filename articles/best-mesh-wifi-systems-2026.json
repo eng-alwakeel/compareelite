@@ -24,7 +24,8 @@
       "cons": [
         "Advanced features like ad blocking require Eero Plus subscription",
         "Lacks multi-gig WAN port \u2014 limited to 1 Gbps internet connections"
-      ]
+      ],
+      "asin": "B09HJD4NKG"
     },
     {
       "name": "Google Nest WiFi Pro (3-Pack)",
@@ -43,7 +44,8 @@
       "cons": [
         "No built-in speaker unlike previous Nest WiFi nodes",
         "Advanced security and analytics features thin compared to competitors"
-      ]
+      ],
+      "asin": "B0BFCK8V46"
     },
     {
       "name": "TP-Link Deco XE75 Pro WiFi 6E (2-Pack)",
@@ -62,7 +64,8 @@
       "cons": [
         "App can feel complex for users who want plug-and-play simplicity",
         "2-pack may need a third node for very large or multi-story homes"
-      ]
+      ],
+      "asin": "B09VQHQHL4"
     },
     {
       "name": "Netgear Orbi 760 WiFi 6E (2-Pack)",
@@ -81,7 +84,8 @@
       "cons": [
         "Tall tower form factor is more noticeable than compact competitors",
         "Full Orbi app features and VPN require Netgear Armor subscription"
-      ]
+      ],
+      "asin": "B09W92TPVS"
     },
     {
       "name": "Amazon Eero 6+ (3-Pack)",
@@ -100,7 +104,8 @@
       "cons": [
         "Dual-band WiFi 6 not WiFi 6E \u2014 no 6 GHz band for backhaul or clients",
         "Only 1 Gbps Ethernet ports \u2014 won't benefit from multi-gig internet plans"
-      ]
+      ],
+      "asin": "B091G5VBWV"
     },
     {
       "name": "TP-Link Deco S4 AC1200 Mesh (3-Pack)",
@@ -119,7 +124,8 @@
       "cons": [
         "AC1200 WiFi 5 is significantly slower than WiFi 6 alternatives in 2026",
         "Dual-band only \u2014 no dedicated backhaul means speeds drop with more hops"
-      ]
+      ],
+      "asin": "B07KAX5WVJ"
     }
   ],
   "buying_guide": [

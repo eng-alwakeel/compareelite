@@ -25,7 +25,8 @@
         "Premium price at $400",
         "Battery life averages 70 minutes at 4K60",
         "GoPro subscription pushed heavily for Quik editing features"
-      ]
+      ],
+      "asin": "B0DCM34GXX"
     },
     {
       "name": "DJI Osmo Action 5 Pro",
@@ -45,7 +46,8 @@
         "DJI Mimo app less polished than GoPro Quik",
         "Magnetic mount adds slight bulk vs GoPro's compact design",
         "No interchangeable lens support unlike GoPro HERO13"
-      ]
+      ],
+      "asin": "B0DBQTC2P7"
     },
     {
       "name": "Insta360 X4",
@@ -65,7 +67,8 @@
         "Protruding dual lenses are vulnerable to scratching",
         "360 video requires significant processing and editing learning curve",
         "Premium price at $500 for a 360-degree camera"
-      ]
+      ],
+      "asin": "B0CXPWMZQS"
     },
     {
       "name": "GoPro Hero",
@@ -85,7 +88,8 @@
         "4K resolution cap \u2014 no 5.3K or high-fps slow motion like flagship models",
         "Smaller sensor means lower performance in challenging light",
         "No front display for vlogging or selfie use"
-      ]
+      ],
+      "asin": "B0DCLRRHSP"
     },
     {
       "name": "Insta360 Ace Pro 2",
@@ -105,7 +109,8 @@
         "Premium price for an action camera in this tier",
         "Insta360 app and ecosystem less mature than GoPro's",
         "Larger body size than ultra-compact action cameras"
-      ]
+      ],
+      "asin": "B0DKTWPCD4"
     },
     {
       "name": "AKASO Brave 8",
@@ -125,7 +130,8 @@
         "Video quality noticeably lower than premium brands in low light",
         "EIS reduces field of view significantly",
         "Build quality less refined than GoPro or DJI"
-      ]
+      ],
+      "asin": "B0C4NF32NN"
     }
   ],
   "buying_guide": [

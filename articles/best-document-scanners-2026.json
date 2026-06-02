@@ -31,7 +31,8 @@
         "Premium price at $500 puts it beyond budget home users",
         "ScanSnap software requires Windows 10/macOS 10.15 or newer",
         "No manual feed slot for thick cards or multi-page booklets"
-      ]
+      ],
+      "asin": "B08NCSPBD9"
     },
     {
       "rank": 2,
@@ -52,7 +53,8 @@
         "Highest price in this roundup at $550",
         "Large footprint at 13.4 x 6.3 x 6.9 inches when closed",
         "Software setup is more complex than Fujitsu ScanSnap"
-      ]
+      ],
+      "asin": "B08XK1H8Q6"
     },
     {
       "rank": 3,
@@ -73,7 +75,8 @@
         "Most expensive option at $600",
         "Dedicated photo scanning is niche \u2014 overkill for pure document users",
         "ADF capacity limited to 36 sheets for mixed media"
-      ]
+      ],
+      "asin": "B07DLX26BB"
     },
     {
       "rank": 4,
@@ -94,7 +97,8 @@
         "No Wi-Fi \u2014 USB connection only limits placement to cable distance from workstation",
         "25 ppm speed is slower than the Fujitsu iX1600 at 40 ppm \u2014 noticeable when processing large daily batches",
         "CaptureOnTouch software is less polished than Fujitsu's ScanSnap Home for automatic document sorting"
-      ]
+      ],
+      "asin": "B0BWNTNGN5"
     },
     {
       "rank": 5,
@@ -115,7 +119,8 @@
         "20-sheet ADF limits single batch scans compared to larger models",
         "No touchscreen \u2014 relies entirely on app or single button",
         "1,000-page daily duty cycle limits heavy-volume use"
-      ]
+      ],
+      "asin": "B09F48XNWM"
     },
     {
       "rank": 6,
@@ -136,7 +141,8 @@
         "Single-sheet manual feed only \u2014 no ADF for batch scanning",
         "16 ppm scan speed is slow compared to ADF models",
         "No wireless connectivity \u2014 USB only"
-      ]
+      ],
+      "asin": "B07Q3T7GS4"
     }
   ],
   "buying_guide": [

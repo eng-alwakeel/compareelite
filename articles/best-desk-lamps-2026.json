@@ -4,7 +4,7 @@
   "category": "Home Office",
   "date": "2026-04-27",
   "excerpt": "Best desk lamps for home office in 2026, tested for brightness, color accuracy, and eye comfort. Top picks from BenQ, Elgato, and TaoTronics for every budget.",
-  "thumbnail": "https://images-na.ssl-images-amazon.com/images/P/B076VNFZJG.01._SL500_.jpg",
+  "thumbnail": "https://m.media-amazon.com/images/P/B076VNFZJG.01._SL500_.jpg",
   "author": "Sarah Mitchell",
   "stats": {
     "readers": 0
@@ -25,7 +25,8 @@
       ],
       "cons": [
         "At $109 it is priced above traditional desk lamps, though the screen glare elimination and automatic dimming features justify the premium for anyone who does 4 or more hours of screen work daily."
-      ]
+      ],
+      "asin": "B076VNFZJG"
     },
     {
       "name": "Elgato Key Light",
@@ -41,7 +42,8 @@
       ],
       "cons": [
         "At $199 it is the most expensive lamp in our test and primarily designed for content creation and video calls rather than general desk task lighting, so general office users should consider the BenQ ScreenBar instead."
-      ]
+      ],
+      "asin": "B07L755X9G"
     },
     {
       "name": "TaoTronics TT-DL13 LED Desk Lamp",
@@ -58,7 +60,8 @@
       "cons": [
         "The touch controls lack tactile feedback, making it easy to accidentally advance past your preferred brightness level and requiring multiple taps to cycle back to the desired setting.",
         "Maximum brightness of 450 lux at 50 centimeters is sufficient for most tasks but falls short of the BenQ ScreenBar's 500 lux output, making it less suitable for large desk surfaces or drafting work."
-      ]
+      ],
+      "asin": "B0BRKXSYJH"
     },
     {
       "name": "BenQ e-Reading LED Desk Lamp",
@@ -74,7 +77,8 @@
       ],
       "cons": [
         "The fixed arm design limits repositioning flexibility compared to lamps with full articulating arms, making it less practical for setups where the lamp needs to serve multiple desk zones."
-      ]
+      ],
+      "asin": "B0785D93KD"
     },
     {
       "name": "Govee Smart LED Desk Lamp",
@@ -91,7 +95,8 @@
       "cons": [
         "Smart features require a stable 2.4GHz Wi-Fi connection for app control, and occasional app disconnection requires manual re-pairing that takes 2 to 3 minutes to resolve.",
         "Maximum brightness of 400 lux is the lowest in our test at this price, making it better suited as an accent or secondary light source than as a sole desk task lamp."
-      ]
+      ],
+      "asin": "B08GFQV3J3"
     },
     {
       "name": "Quntis LED Monitor Light Bar",
@@ -107,7 +112,8 @@
       "cons": [
         "Lacks the automatic ambient sensing feature of the BenQ ScreenBar, requiring manual brightness adjustment as room lighting changes throughout the day.",
         "The color temperature range covers only 4000K to 6500K, omitting the warmer 2700K to 3500K range that makes evening use more comfortable and reduces blue light exposure before sleep."
-      ]
+      ],
+      "asin": "B08DKQ3JG1"
     }
   ],
   "buying_guide": [

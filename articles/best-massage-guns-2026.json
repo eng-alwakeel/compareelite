@@ -22,7 +22,8 @@
       "cons": [
         "At $599 the Theragun PRO is the most expensive massage gun in this guide and costs more than 10 times the Bob and Brad Q2 Mini at $50 \u2014 the amplitude and stall force advantages are real and measurable, but recreational athletes who train 3 to 4 days per week and require only basic recovery will receive 80 percent of the Theragun's therapeutic benefit from the Hypervolt 2 Pro at half the price.",
         "The two-hour battery life per charge is the shortest in this guide for a premium device \u2014 the Ekrin B37 provides 8 hours of battery life at a similar amplitude, which is a meaningful advantage for athletes who travel frequently and cannot reliably access charging between training sessions and recovery work."
-      ]
+      ],
+      "asin": "B09BNLQY3C"
     },
     {
       "name": "Hypervolt 2 Pro Percussion Massage Gun",
@@ -39,7 +40,8 @@
       "cons": [
         "The fixed-angle handle requires more wrist rotation than the Theragun PRO's rotating arm when treating the upper back, lumbar region, and posterior shoulder \u2014 athletes who regularly self-treat these areas will find the fixed handle uncomfortable for sessions longer than 5 minutes at full arm extension behind the body.",
         "The battery indicator shows only three charge levels \u2014 full, half, and empty \u2014 without percentage display, making it difficult to predict remaining runtime when the battery is between indicators and planning whether it will last through a full recovery session after a long training day."
-      ]
+      ],
+      "asin": "B09L6YB49L"
     },
     {
       "name": "Bob and Brad D6 Pro Massage Gun",
@@ -56,7 +58,8 @@
       "cons": [
         "The 30-pound stall force means the motor stalls and the unit stops under firm therapeutic pressure on dense muscle groups including the gluteus maximus and upper trapezius \u2014 users who apply significant force during self-massage will need to use the highest speed setting to maintain RPM under load, which generates more noise than mid-range speed operation.",
         "The motor housing generates noticeable warmth during continuous 15-minute sessions at high speed \u2014 our thermal testing measured 108 degrees Fahrenheit at the motor casing after extended use, which is within safe operating range but warmer than the Theragun PRO and Hypervolt 2 Pro at equivalent session length."
-      ]
+      ],
+      "asin": "B08VSVGPMN"
     },
     {
       "name": "Ekrin Athletics B37 Massage Gun",
@@ -73,7 +76,8 @@
       "cons": [
         "The five speed settings top out at 2,800 strokes per minute \u2014 400 RPM below the Hypervolt 2 Pro and 1,200 RPM below the Theragun PRO's maximum \u2014 which provides slightly less surface vibration during the warm-up and flushing phases of recovery where high-frequency low-amplitude strokes are used before transitioning to deep tissue work.",
         "Ekrin Athletics is a newer brand with shorter product history than Theragun, Hypervolt, and Therabody \u2014 the 2-year warranty with customer service response times of 24 to 48 hours compares favorably to the industry standard but the brand lacks the established repair network and physical service centers that Theragun maintains in major US cities."
-      ]
+      ],
+      "asin": "B08BWDZ71P"
     },
     {
       "name": "Bob and Brad Q2 Mini Massage Gun",
@@ -90,7 +94,8 @@
       "cons": [
         "The 10mm amplitude and limited motor power mean the Q2 Mini provides effective surface-level flushing and light myofascial release but cannot penetrate dense large muscle groups like the quadriceps and gluteus maximus at therapeutic depth \u2014 athletes who need deep tissue work after heavy strength training sessions require a full-size massage gun with 12 to 16mm amplitude.",
         "The two included head attachments \u2014 ball and bullet \u2014 cover basic applications but lack the fork attachment needed for spinal erector and Achilles tendon work and the flat head used for large muscle group flushing \u2014 users who want full treatment versatility must purchase additional heads separately or choose the Bob and Brad D6 Pro at $120 with eight attachments included."
-      ]
+      ],
+      "asin": "B08H5ZPQKX"
     },
     {
       "name": "Achedaway Pro Massage Gun",
@@ -107,7 +112,8 @@
       "cons": [
         "The Achedaway Pro generates 65 to 75 decibels at high speed \u2014 the loudest among the mid-range guns in this guide \u2014 limiting its use in shared environments and making it unsuitable for treatment during video calls, remote work sessions, or after household members have gone to sleep.",
         "Customer service responsiveness and US-based warranty support infrastructure for Achedaway are weaker than for Theragun and Hypervolt \u2014 the brand lacks physical service centers in the United States, and warranty replacement requires international shipping with processing times of 2 to 4 weeks, which is a meaningful gap for athletes who depend on their massage gun daily."
-      ]
+      ],
+      "asin": "B08N6CQN8D"
     }
   ],
   "buying_guide": [

@@ -24,7 +24,8 @@
       "cons": [
         "App occasionally slow to reflect fan state changes",
         "Only available in limited finish options"
-      ]
+      ],
+      "asin": "B07RQZP6SW"
     },
     {
       "name": "Emerson Electric CF252BS Aira Eco Ceiling Fan",
@@ -43,7 +44,8 @@
       "cons": [
         "Setup can be complex for first-time smart home users",
         "Light kit sold separately"
-      ]
+      ],
+      "asin": "B08CX7FHSP"
     },
     {
       "name": "Minka-Aire F844L-BNW Slipstream Smart Fan",
@@ -62,7 +64,8 @@
       "cons": [
         "Premium price point",
         "Requires neutral wire for installation"
-      ]
+      ],
+      "asin": "B086L9JBFX"
     },
     {
       "name": "Carro Elira Smart Ceiling Fan 52 Inch",
@@ -81,7 +84,8 @@
       "cons": [
         "Plastic blade tips less durable than premium models",
         "App interface not as polished"
-      ]
+      ],
+      "asin": "B07TSDFHS8"
     },
     {
       "name": "Carro Aviator 52-Inch Smart Ceiling Fan with Light",
@@ -100,7 +104,8 @@
       "cons": [
         "Heavier than budget models \u2014 requires solid ceiling box",
         "Limited finish color options"
-      ]
+      ],
+      "asin": "B081J8FQ3P"
     },
     {
       "name": "Westinghouse Lighting Bendan LED Indoor Ceiling Fan",
@@ -119,7 +124,8 @@
       "cons": [
         "Only 3 speed settings on base remote",
         "App control requires separate smart module"
-      ]
+      ],
+      "asin": "B08WQ8T8J7"
     }
   ],
   "buying_guide": [

@@ -4,7 +4,7 @@
   "category": "Home Office",
   "date": "2026-05-08",
   "read_time": "9 min read",
-  "thumbnail": "https://images-na.ssl-images-amazon.com/images/P/B07SDMJMW3.01._SL500_.jpg",
+  "thumbnail": "https://m.media-amazon.com/images/P/B07SDMJMW3.01._SL500_.jpg",
   "excerpt": "Six rigorously tested desk accessories that measurably cut distractions and wasted time in 2026, led by the LectroFan EVO white noise machine at $50.",
   "author": "Sarah Mitchell",
   "stats": {
@@ -27,7 +27,8 @@
       ],
       "cons": [
         "Requires a constant USB or wall-adapter power connection with no internal battery, meaning it cannot be used in locations more than 6 feet from an outlet without an extension cord."
-      ]
+      ],
+      "asin": "B07SDMJMW3"
     },
     {
       "rank": 2,
@@ -44,7 +45,8 @@
       ],
       "cons": [
         "Charging speed drops to 5W for older Qi-compatible devices released before 2018, which may add 25 to 40 minutes to a full charge cycle compared to the rated 10W maximum output."
-      ]
+      ],
+      "asin": "B07THHQMHM"
     },
     {
       "rank": 3,
@@ -61,7 +63,8 @@
       ],
       "cons": [
         "The articulating arm has three fixed hinge points rather than continuous gas-spring adjustment, so finding the exact beam angle for a specific task requires repositioning two separate joints manually."
-      ]
+      ],
+      "asin": "B00APAQSP6"
     },
     {
       "rank": 4,
@@ -78,7 +81,8 @@
       ],
       "cons": [
         "Maximum countdown interval is 60 minutes, requiring manual reset for work blocks longer than one hour such as 90-minute deep work sessions common in time-blocking methodologies."
-      ]
+      ],
+      "asin": "B07T94PKR5"
     },
     {
       "rank": 5,
@@ -95,7 +99,8 @@
       ],
       "cons": [
         "Waterproof PU leather surface requires 48 hours of flat unrolling time after removal from shipping tube before edges lie flat, and residual curl can reappear if the pad is repositioned against a wall for more than one week."
-      ]
+      ],
+      "asin": "B0794W2MY2"
     },
     {
       "rank": 6,
@@ -112,7 +117,8 @@
       ],
       "cons": [
         "Lid sits flush without a latch mechanism, so the box can be opened by cables under tension if pulled at an angle steeper than 45 degrees, requiring cable slack management inside the box to prevent accidental opening."
-      ]
+      ],
+      "asin": "B07QQBBC34"
     }
   ],
   "buying_guide": [

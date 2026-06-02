@@ -4,7 +4,7 @@
   "category": "Smart Home",
   "date": "2026-04-27",
   "excerpt": "Best smart locks of 2026 tested for security, app reliability, and installation ease. Top picks from Schlage, August & Yale for every home and budget.",
-  "thumbnail": "https://images-na.ssl-images-amazon.com/images/P/B07HX9GSJM.01._SL500_.jpg",
+  "thumbnail": "https://m.media-amazon.com/images/P/B07HX9GSJM.01._SL500_.jpg",
   "author": "Alex Rivera",
   "stats": {
     "readers": 0
@@ -26,7 +26,8 @@
       "cons": [
         "At $249 it is the most expensive lock in this guide, though the combination of built-in WiFi, Grade 1 security certification, and 100-code capacity justifies the premium for security-conscious homeowners.",
         "The keypad backlight can be slightly dim in bright direct sunlight, requiring users to shade the keypad briefly when entering codes outdoors on sunny afternoons."
-      ]
+      ],
+      "asin": "B07HX9GSJM"
     },
     {
       "name": "August Wi-Fi Smart Lock (4th Generation)",
@@ -43,7 +44,8 @@
       "cons": [
         "Because the August 4th Gen replaces only the interior thumbturn and adds no exterior keypad, guests without the August app cannot enter without a physical key \u2014 limiting keyless access for visitors compared to keypad-equipped alternatives.",
         "The cylindrical form factor extending from the interior of the door is more visually prominent than a standard thumbturn, which some apartment renters find aesthetically intrusive in smaller entryways."
-      ]
+      ],
+      "asin": "B082HYGSWN"
     },
     {
       "name": "Schlage Encode Plus Smart WiFi Deadbolt",
@@ -60,7 +62,8 @@
       "cons": [
         "Apple Home Key functionality is exclusively for Apple device users \u2014 Android users can use the Schlage Home app and keypad but miss the primary feature that justifies the $40 premium over the standard Encode model.",
         "Matter hub setup requires an Apple TV 4K, HomePod mini, or equivalent hub already in the home \u2014 buyers without existing Apple HomeKit infrastructure need to purchase a hub separately to access full remote control features."
-      ]
+      ],
+      "asin": "B09TCGRH9T"
     },
     {
       "name": "Kwikset SmartCode 888 Smart Lock",
@@ -77,7 +80,8 @@
       "cons": [
         "Requires a separate Z-Wave hub for remote smartphone control \u2014 without a hub the lock operates as a keypad-only smart lock with no app features, limiting its smart home value for users who do not already own compatible hub hardware.",
         "BHMA Grade 2 security rating is lower than the Grade 1 standard achieved by both Schlage Encode models, which is an important consideration for homeowners in higher-crime areas where physical security is the top priority."
-      ]
+      ],
+      "asin": "B07BLJ38SJ"
     },
     {
       "name": "Ultraloq U-Bolt Pro WiFi Smart Lock",
@@ -94,7 +98,8 @@
       "cons": [
         "The lock body is bulkier than the Schlage and August alternatives, measuring 3.5 inches in diameter, which requires more interior door clearance and can feel oversized on standard residential doors.",
         "Fingerprint recognition accuracy decreases with wet or dirty fingers, which is a frequent occurrence for users returning from outdoor work \u2014 carrying a backup PIN code is recommended as a reliable fallback method."
-      ]
+      ],
+      "asin": "B0943LFZM7"
     },
     {
       "name": "Yale Assure Lock SL",
@@ -111,7 +116,8 @@
       "cons": [
         "Requires either a Yale Z-Wave module or Yale WiFi module added separately for remote smartphone control, which adds $30 to $50 to the effective purchase price and means the base $149 version has no internet connectivity out of the box.",
         "The keyhole-free design means there is absolutely no physical key backup \u2014 if the battery dies completely and no charging path is available, entry requires a 9V battery held against the bottom contacts as a temporary power source."
-      ]
+      ],
+      "asin": "B07RBLNRKQ"
     }
   ],
   "buying_guide": [

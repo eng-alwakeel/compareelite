@@ -24,7 +24,8 @@
       "cons": [
         "App interface is basic compared to premium competitors",
         "Brew temperature not adjustable \u2014 fixed at 205\u00b0F"
-      ]
+      ],
+      "asin": "B07GVTCR96"
     },
     {
       "name": "De'Longhi TrueBrew Drip Coffee Machine",
@@ -43,7 +44,8 @@
       "cons": [
         "Premium price for a drip machine",
         "Grinder requires cleaning more frequently than pod systems"
-      ]
+      ],
+      "asin": "B093VQCSWX"
     },
     {
       "name": "Breville Precision Brewer Thermal",
@@ -62,7 +64,8 @@
       "cons": [
         "No built-in grinder \u2014 requires separate grinder investment",
         "Smart scheduling via app, not full IoT integration"
-      ]
+      ],
+      "asin": "B07JQQM15S"
     },
     {
       "name": "Cuisinart DCC-3200P1 PerfecTemp 14-Cup Coffeemaker",
@@ -81,7 +84,8 @@
       "cons": [
         "No Wi-Fi \u2014 wired timer scheduling only",
         "Hot plate can burn coffee if left on extended periods"
-      ]
+      ],
+      "asin": "B074TGTM7Z"
     },
     {
       "name": "Ninja Specialty Coffee Maker CM401",
@@ -100,7 +104,8 @@
       "cons": [
         "No Wi-Fi or app control \u2014 manual programming only",
         "Frother requires separate cleaning from main machine"
-      ]
+      ],
+      "asin": "B07PFLM2LK"
     },
     {
       "name": "Mr. Coffee Smart Coffee Maker with WeMo",
@@ -119,7 +124,8 @@
       "cons": [
         "WeMo app is less polished than dedicated coffee apps",
         "Warming plate degrades coffee quality over time"
-      ]
+      ],
+      "asin": "B06XZFXS7V"
     }
   ],
   "buying_guide": [

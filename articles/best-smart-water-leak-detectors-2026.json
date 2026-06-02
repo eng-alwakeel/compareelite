@@ -30,7 +30,8 @@
       "cons": [
         "Govee Home app does not integrate natively with Alexa, Google Home, or HomeKit",
         "No physical sensor probe \u2014 requires water to contact the base of the unit directly"
-      ]
+      ],
+      "asin": "B07JNRXK7Y"
     },
     {
       "rank": 2,
@@ -50,7 +51,8 @@
       "cons": [
         "Requires the Resideo or Total Connect Comfort account setup \u2014 more steps than plug-and-alert Govee",
         "App experience is less polished than newer dedicated water sensor platforms"
-      ]
+      ],
+      "asin": "B00IWBHQ26"
     },
     {
       "rank": 4,
@@ -70,7 +72,8 @@
       "cons": [
         "Full automatic shut-off requires the LeakSmart Hub and Smart Valve purchased separately",
         "Zigbee protocol requires a compatible hub \u2014 does not connect to Wi-Fi directly"
-      ]
+      ],
+      "asin": "B08Y65S2YM"
     },
     {
       "rank": 3,
@@ -91,7 +94,8 @@
         "Requires 2.4GHz WiFi \u2014 does not support 5GHz networks",
         "Battery-powered sensors need periodic battery replacement",
         "Gateway must remain plugged in for WiFi alerts to function"
-      ]
+      ],
+      "asin": "B07QP153GT"
     },
     {
       "rank": 5,
@@ -111,7 +115,8 @@
       "cons": [
         "Requires a compatible Honeywell or Resideo security panel \u2014 not standalone or Wi-Fi capable",
         "Professional monitoring adds monthly cost to realize the full benefit of this sensor"
-      ]
+      ],
+      "asin": "B08J1RNWTK"
     },
     {
       "rank": 6,
@@ -131,7 +136,8 @@
       "cons": [
         "D-Link app and cloud service are less polished and responsive than Govee or Aqara alternatives",
         "Does not support Apple HomeKit \u2014 Alexa and Google Assistant integration only"
-      ]
+      ],
+      "asin": "B09FKFMQF7"
     }
   ],
   "buying_guide": [

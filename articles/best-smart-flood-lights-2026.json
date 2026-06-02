@@ -24,7 +24,8 @@
       "cons": [
         "Requires Ring Protect subscription for video history",
         "Hardwired installation requires electrician for some setups"
-      ]
+      ],
+      "asin": "B08FCPDPQB"
     },
     {
       "name": "Govee Smart Flood Light H6054",
@@ -43,7 +44,8 @@
       "cons": [
         "No integrated camera",
         "App required for color control"
-      ]
+      ],
+      "asin": "B09JZPG2TH"
     },
     {
       "name": "Kasa Smart Outdoor Kite Light KL430",
@@ -62,7 +64,8 @@
       "cons": [
         "No motion detection built in",
         "No color changing \u2014 white light only"
-      ]
+      ],
+      "asin": "B093Q2VK28"
     },
     {
       "name": "Arlo Pro 3 Floodlight Camera",
@@ -81,7 +84,8 @@
       "cons": [
         "Battery life shorter with heavy motion",
         "Full features require Arlo Secure subscription"
-      ]
+      ],
+      "asin": "B08FW5H5YD"
     },
     {
       "name": "Wyze Outdoor Cam Pro with Floodlight",
@@ -100,7 +104,8 @@
       "cons": [
         "Some features require Wyze Cam Plus subscription",
         "App can be slow to load live view"
-      ]
+      ],
+      "asin": "B09JY6P49M"
     },
     {
       "name": "Feit Electric Smart LED Flood Light Bulbs",
@@ -119,7 +124,8 @@
       "cons": [
         "Only white light \u2014 no color changing",
         "Wi-Fi connectivity can be less reliable than Zigbee"
-      ]
+      ],
+      "asin": "B07S25LKJM"
     }
   ],
   "buying_guide": [

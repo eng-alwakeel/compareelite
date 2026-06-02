@@ -24,7 +24,8 @@
       "cons": [
         "No stand option \u2014 horizontal pad only",
         "USB-A cable included \u2014 no USB-C"
-      ]
+      ],
+      "asin": "B07TG1FMLL"
     },
     {
       "name": "Belkin BoostCharge Pro 3-in-1 Wireless Charger",
@@ -43,7 +44,8 @@
       "cons": [
         "Premium price \u2014 primarily for Apple ecosystem users",
         "Apple Watch charging limited to 5W (not fast charging)"
-      ]
+      ],
+      "asin": "B09DRTD9T8"
     },
     {
       "name": "TOZO W1 Wireless Charger Charging Pad",
@@ -62,7 +64,8 @@
       "cons": [
         "LED can be distracting at night",
         "Charging speed lower than premium options"
-      ]
+      ],
+      "asin": "B07PGT7LSR"
     },
     {
       "name": "Anker 737 MagGo 3-in-1 Charging Station",
@@ -82,7 +85,8 @@
         "Only works with MagSafe-compatible iPhones (12 and later)",
         "Not compatible with non-Apple devices for the magnetic charger",
         "Premium price at $90 for a charging station"
-      ]
+      ],
+      "asin": "B0BNPH9377"
     },
     {
       "name": "Samsung 15W Super Fast Wireless Charger Duo",
@@ -101,7 +105,8 @@
       "cons": [
         "Fastest speeds only for compatible Samsung Galaxy phones",
         "Requires separate power adapter for full speed"
-      ]
+      ],
+      "asin": "B09WZR8HNJ"
     },
     {
       "name": "Yootech Wireless Charging Pad X20",
@@ -120,7 +125,8 @@
       "cons": [
         "Basic design with no premium features",
         "Older USB-A cable only"
-      ]
+      ],
+      "asin": "B075KZQN56"
     }
   ],
   "buying_guide": [

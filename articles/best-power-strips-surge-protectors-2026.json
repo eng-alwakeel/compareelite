@@ -31,7 +31,8 @@
         "No USB charging ports \u2014 all 12 outlets are standard 3-prong AC only",
         "Weighs 2.2 pounds and measures 15.7 inches long, requiring significant desk or floor space",
         "Diagnostic LEDs are small and positioned on the end, making protection status hard to check from above"
-      ]
+      ],
+      "asin": "B0035PQGKU"
     },
     {
       "rank": 2,
@@ -52,7 +53,8 @@
         "USB ports are USB-A only at 5V 2.4A \u2014 no USB-C and no fast charging above 12W",
         "6-foot cord is 2 feet shorter than the Tripp Lite and may not reach behind deep desks",
         "36 dollar price is identical to the Tripp Lite but with fewer transformer-spaced outlets"
-      ]
+      ],
+      "asin": "B079BTBMS2"
     },
     {
       "rank": 3,
@@ -73,7 +75,8 @@
         "Pivoting outlet design makes the strip 4.2 inches wide when outlets are rotated \u2014 wider than standard strips",
         "No USB ports of any kind \u2014 requires a separate USB charger plugged into one of the 12 outlets",
         "Protection status LED is a single amber light with no differentiation between grounded and protected"
-      ]
+      ],
+      "asin": "B000JE9LD4"
     },
     {
       "rank": 4,
@@ -94,7 +97,8 @@
         "600-joule rating is insufficient for protecting expensive desktop monitors or gaming PCs",
         "Only 3 AC outlets limits use to small travel or bedside setups, not full desk deployments",
         "65W output is shared across USB ports \u2014 plugging 3 devices simultaneously drops per-port wattage to 20W each"
-      ]
+      ],
+      "asin": "B09SG3R8R2"
     },
     {
       "rank": 5,
@@ -115,7 +119,8 @@
         "790-joule rating provides basic protection only \u2014 not recommended for equipment valued above 500 dollars",
         "No USB ports, no telephone/coax protection, and no transformer-spaced outlets",
         "2-foot cord is too short for reaching outlets behind deep furniture or across a room"
-      ]
+      ],
+      "asin": "B00TP1C51M"
     },
     {
       "rank": 6,
@@ -136,7 +141,8 @@
         "Desk clamp adds 3 inches of depth below the desk edge, which may interfere with drawer clearance",
         "USB-A ports deliver only 10.5W total \u2014 insufficient for fast charging modern smartphones",
         "6 outlets may be inadequate for complex setups with monitor, laptop charger, speakers, lamp, and phone charger"
-      ]
+      ],
+      "asin": "B00EUB7C8I"
     }
   ],
   "buying_guide": [

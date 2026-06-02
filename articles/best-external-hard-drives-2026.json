@@ -24,7 +24,8 @@
       "cons": [
         "Higher cost per terabyte than HDD alternatives",
         "Gets warm during sustained large file transfers"
-      ]
+      ],
+      "asin": "B0874YJP92"
     },
     {
       "name": "Seagate Backup Plus Portable 2TB",
@@ -43,7 +44,8 @@
       "cons": [
         "Slower HDD speeds \u2014 not suitable for real-time video editing",
         "Not drop-rated \u2014 handle carefully despite compact design"
-      ]
+      ],
+      "asin": "B00FRHTSK4"
     },
     {
       "name": "WD Elements Desktop 8TB",
@@ -62,7 +64,8 @@
       "cons": [
         "Requires AC power adapter \u2014 not portable",
         "Plain design with no LED activity indicator"
-      ]
+      ],
+      "asin": "B07X3Q83K5"
     },
     {
       "name": "LaCie Rugged Mini 4TB",
@@ -81,7 +84,8 @@
       "cons": [
         "Higher price than non-rugged alternatives at same capacity",
         "HDD inside \u2014 slower than SSDs for large transfers"
-      ]
+      ],
+      "asin": "B07H364HBH"
     },
     {
       "name": "Crucial X8 Portable SSD 4TB",
@@ -100,7 +104,8 @@
       "cons": [
         "Write speeds slower than read \u2014 around 800 MB/s",
         "Plastic housing feels less premium than Samsung T7"
-      ]
+      ],
+      "asin": "B0CGJ4MWSH"
     },
     {
       "name": "Toshiba Canvio Advance 4TB",
@@ -119,7 +124,8 @@
       "cons": [
         "Slower USB 3.0 speeds than premium models",
         "Plastic housing less polished than metal alternatives"
-      ]
+      ],
+      "asin": "B07THHQMHM"
     }
   ],
   "buying_guide": [

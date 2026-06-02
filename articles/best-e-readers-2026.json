@@ -24,7 +24,8 @@
       "cons": [
         "Kindle ecosystem locks you into Amazon ebook purchases",
         "No physical page turn buttons on base model"
-      ]
+      ],
+      "asin": "B09TMF6742"
     },
     {
       "name": "Kindle Paperwhite Signature Edition",
@@ -43,7 +44,8 @@
       "cons": [
         "Premium price over standard Paperwhite for incremental upgrades",
         "Auto-brightness doesn't always match preferred reading level"
-      ]
+      ],
+      "asin": "B08B495MZS"
     },
     {
       "name": "Kindle Scribe (16 GB)",
@@ -62,7 +64,8 @@
       "cons": [
         "Very high price for an e-reader",
         "Large size less pocketable than standard Kindles"
-      ]
+      ],
+      "asin": "B09BS26B8B"
     },
     {
       "name": "Kobo Clara 2E",
@@ -81,7 +84,8 @@
       "cons": [
         "Smaller 16 GB storage than competing Kindles",
         "Kobo store smaller than Amazon's ebook catalog"
-      ]
+      ],
+      "asin": "B0BJQK77LQ"
     },
     {
       "name": "Kobo Libra 2",
@@ -100,7 +104,8 @@
       "cons": [
         "Slightly heavier than 6-inch e-readers at 215g",
         "No wireless charging"
-      ]
+      ],
+      "asin": "B09HSRGP5Q"
     },
     {
       "name": "Kindle (Basic, 16 GB)",
@@ -119,7 +124,8 @@
       "cons": [
         "No waterproofing \u2014 keep away from liquids",
         "Cool white light only \u2014 no warm tone adjustment"
-      ]
+      ],
+      "asin": "B09SWS1R63"
     }
   ],
   "buying_guide": [

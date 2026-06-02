@@ -24,7 +24,8 @@
       "cons": [
         "Requires Hue Bridge for full functionality",
         "Higher price than basic motion sensors"
-      ]
+      ],
+      "asin": "B076MGK21S"
     },
     {
       "name": "Aqara Motion Sensor (Zigbee)",
@@ -43,7 +44,8 @@
       "cons": [
         "Requires compatible Zigbee hub",
         "Limited native cloud automation without hub"
-      ]
+      ],
+      "asin": "B07G9FWZX1"
     },
     {
       "name": "Ring Motion Detector (2nd Gen)",
@@ -62,7 +64,8 @@
       "cons": [
         "Best suited for Ring ecosystem users only",
         "Limited cross-platform integration"
-      ]
+      ],
+      "asin": "B07ZB3G8B2"
     },
     {
       "name": "Aeotec MultiSensor 7",
@@ -79,7 +82,8 @@
       "cons": [
         "Requires a Z-Wave 700-series hub to unlock full SmartStart functionality \u2014 older Z-Wave 300/500 hubs work but cannot access the improved range and speed benefits.",
         "At $59.99, it costs $10 more than the previous TriSensor and is priced above the budget Zigbee alternatives in this roundup."
-      ]
+      ],
+      "asin": "B08XHZP7NV"
     },
     {
       "name": "SONOFF Zigbee Motion Sensor SNZB-03",
@@ -98,7 +102,8 @@
       "cons": [
         "No temperature or light sensor",
         "Requires Zigbee hub or USB dongle"
-      ]
+      ],
+      "asin": "B09RJCTKSM"
     },
     {
       "name": "Samsung SmartThings Motion Sensor",
@@ -117,7 +122,8 @@
       "cons": [
         "Best suited for SmartThings ecosystem",
         "Smaller detection range than Hue"
-      ]
+      ],
+      "asin": "B01IE35PCC"
     }
   ],
   "buying_guide": [

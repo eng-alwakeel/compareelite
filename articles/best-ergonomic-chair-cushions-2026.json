@@ -25,7 +25,8 @@
         "Memory foam retains heat in warmer environments",
         "May feel too firm initially before breaking in",
         "Large size may not fit all chair types"
-      ]
+      ],
+      "asin": "B01EBDV9BU"
     },
     {
       "name": "ComfiLife Gel Enhanced Seat Cushion",
@@ -45,7 +46,8 @@
         "Gel layer adds weight compared to foam-only cushions",
         "May compress with heavy daily use over time",
         "Cover fabric can feel slippery on some chair surfaces"
-      ]
+      ],
+      "asin": "B014F18ZGU"
     },
     {
       "name": "Purple Simply Seat Cushion",
@@ -64,7 +66,8 @@
       "cons": [
         "Higher price point than foam options",
         "Grid texture feels unusual to some users at first"
-      ]
+      ],
+      "asin": "B07V4G4TRD"
     },
     {
       "name": "Aylio Coccyx Orthopedic Comfort Foam Seat Cushion",
@@ -83,7 +86,8 @@
       "cons": [
         "Less cushioning than thicker premium options",
         "Cover shows wear more quickly than others"
-      ]
+      ],
+      "asin": "B00GA7CZCA"
     },
     {
       "name": "FEZIBO Seat Cushion with Lumbar Support",
@@ -102,7 +106,8 @@
       "cons": [
         "Lumbar support requires adjustment for different chairs",
         "Heavier than seat-only cushions"
-      ]
+      ],
+      "asin": "B08NJHWVFH"
     },
     {
       "name": "Tektrum Orthopedic Seat Cushion for Office Chair",
@@ -121,7 +126,8 @@
       "cons": [
         "Firm feel may not suit users preferring softer cushions",
         "Cover wrinkles with extended use"
-      ]
+      ],
+      "asin": "B07Q33QDNW"
     }
   ],
   "buying_guide": [

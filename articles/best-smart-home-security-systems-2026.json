@@ -24,7 +24,8 @@
       "cons": [
         "Interactive features require paid monitoring plan",
         "Camera integration separate from core system"
-      ]
+      ],
+      "asin": "B07GKC8S8K"
     },
     {
       "name": "Ring Alarm 8-Piece Kit (2nd Gen)",
@@ -43,7 +44,8 @@
       "cons": [
         "Full features require Ring Protect plan",
         "Locked into Ring/Amazon ecosystem"
-      ]
+      ],
+      "asin": "B07ZB3G8B2"
     },
     {
       "name": "Arlo Essential Indoor Security Camera",
@@ -62,7 +64,8 @@
       "cons": [
         "Limited sensor ecosystem compared to full alarm systems",
         "Full video history requires Arlo Secure plan"
-      ]
+      ],
+      "asin": "B08P2T5GTR"
     },
     {
       "name": "Wyze Home Security Core Kit with Hub, Keypad, Motion and Entry Sensors",
@@ -81,7 +84,8 @@
       "cons": [
         "Smaller sensor ecosystem than Ring or SimpliSafe",
         "App less polished than premium competitors"
-      ]
+      ],
+      "asin": "B092RL8CHP"
     },
     {
       "name": "abode iota All-In-One Home Security Kit",
@@ -100,7 +104,8 @@
       "cons": [
         "More complex setup than Ring or SimpliSafe",
         "Camera resolution lower than dedicated camera systems"
-      ]
+      ],
+      "asin": "B083CHM1QN"
     },
     {
       "name": "Kangaroo Home Security Motion Camera",
@@ -119,7 +124,8 @@
       "cons": [
         "Simpler ecosystem than Ring or SimpliSafe",
         "Camera resolution lower than competitors"
-      ]
+      ],
+      "asin": "B08HXBQP1H"
     }
   ],
   "buying_guide": [

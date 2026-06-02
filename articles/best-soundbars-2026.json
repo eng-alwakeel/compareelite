@@ -24,7 +24,8 @@
       "cons": [
         "No HDMI ARC \u2014 optical only limits compatibility",
         "No Dolby Atmos \u2014 better alternatives for cinema audio"
-      ]
+      ],
+      "asin": "B09Y7W6RBN"
     },
     {
       "name": "Samsung HW-Q600C",
@@ -43,7 +44,8 @@
       "cons": [
         "Q-Symphony only benefits Samsung TV owners",
         "Virtual Atmos less convincing than bar with upfiring drivers"
-      ]
+      ],
+      "asin": "B0BTFKSMHV"
     },
     {
       "name": "Vizio M-Series M512a-H6",
@@ -62,7 +64,8 @@
       "cons": [
         "Rear satellite placement requires cable management",
         "App control less polished than premium brands"
-      ]
+      ],
+      "asin": "B09B9W9MDJ"
     },
     {
       "name": "LG SP7Y",
@@ -81,7 +84,8 @@
       "cons": [
         "No HDMI eARC for lossless Atmos \u2014 compressed only",
         "Subwoofer can't keep up at high volumes"
-      ]
+      ],
+      "asin": "B09B7N65S3"
     },
     {
       "name": "Bose Smart Soundbar 300",
@@ -100,7 +104,8 @@
       "cons": [
         "No HDMI ARC \u2014 optical/WiFi only",
         "Pricey for the feature set without included subwoofer"
-      ]
+      ],
+      "asin": "B09JM8KYKG"
     },
     {
       "name": "Roku Streambar",
@@ -119,7 +124,8 @@
       "cons": [
         "Audio quality can't match dedicated soundbar competitors",
         "No Dolby Atmos support"
-      ]
+      ],
+      "asin": "B084DG9CGC"
     }
   ],
   "buying_guide": [

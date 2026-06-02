@@ -24,7 +24,8 @@
       "cons": [
         "Premium price reflects premium capability",
         "Large footprint requires dedicated desk space"
-      ]
+      ],
+      "asin": "B09GK8LBWS"
     },
     {
       "name": "Anker 777 Thunderbolt Docking Station",
@@ -43,7 +44,8 @@
       "cons": [
         "Single HDMI out limits triple-monitor configurations",
         "Gets warm under sustained load \u2014 not hot, but noticeable"
-      ]
+      ],
+      "asin": "B09Q3JQKZG"
     },
     {
       "name": "Plugable 14-in-1 USB-C Triple Display Dock",
@@ -62,7 +64,8 @@
       "cons": [
         "DisplayLink requires driver installation on host computer",
         "USB-C 3.2 host (not Thunderbolt) limits peak bandwidth"
-      ]
+      ],
+      "asin": "B09VY1GXL7"
     },
     {
       "name": "OWC Thunderbolt 4 Dock",
@@ -81,7 +84,8 @@
       "cons": [
         "Thunderbolt cable sold separately",
         "Less value for Windows-only users vs. competing options"
-      ]
+      ],
+      "asin": "B09P3XKPHN"
     },
     {
       "name": "Belkin Connect Pro 12-in-1 Thunderbolt 4 Dock",
@@ -100,7 +104,8 @@
       "cons": [
         "Fewer total ports than full-size dock competitors",
         "No 2.5G ethernet \u2014 standard gigabit only"
-      ]
+      ],
+      "asin": "B09Y6GHMN3"
     },
     {
       "name": "Anker 552 USB-C Hub 9-in-1",
@@ -119,7 +124,8 @@
       "cons": [
         "USB-C 3.2 Gen 1 host limits bandwidth vs. Thunderbolt",
         "Dual HDMI limited to 1080p at 60Hz on both outputs"
-      ]
+      ],
+      "asin": "B08C9HXL3W"
     }
   ],
   "buying_guide": [

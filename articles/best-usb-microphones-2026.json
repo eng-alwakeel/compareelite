@@ -25,7 +25,8 @@
         "No gain or pattern controls on the microphone body itself",
         "Dynamic element requires closer mic placement than condensers",
         "Heavier and bulkier than most competitors"
-      ]
+      ],
+      "asin": "B08G7RG9ML"
     },
     {
       "name": "Blue Yeti USB Microphone",
@@ -45,7 +46,8 @@
         "Large condenser capsule picks up room reflections and background noise",
         "Heavy and large \u2014 needs solid desk stand or boom arm",
         "Sensitive to plosives without a pop filter"
-      ]
+      ],
+      "asin": "B00N1YPXW2"
     },
     {
       "name": "HyperX QuadCast S",
@@ -65,7 +67,8 @@
         "RGB draws extra USB power \u2014 some hubs may cause instability",
         "Software required for full RGB customization",
         "Condenser element picks up mechanical keyboard and fan noise"
-      ]
+      ],
+      "asin": "B08H9T3BRS"
     },
     {
       "name": "Audio-Technica AT2020USB+",
@@ -85,7 +88,8 @@
         "Cardioid only \u2014 no pattern switching",
         "Older USB-A connector vs newer USB-C on competitors",
         "Stand not as sturdy as premium alternatives"
-      ]
+      ],
+      "asin": "B00B5ZX9FM"
     },
     {
       "name": "Elgato Wave:3 USB Microphone",
@@ -105,7 +109,8 @@
         "Cardioid only \u2014 no pattern options",
         "Wave Link software is Windows/Mac only (no mobile)",
         "Slightly reduced low-frequency warmth compared to Shure MV7"
-      ]
+      ],
+      "asin": "B097BTNR4G"
     },
     {
       "name": "Rode NT-USB Mini",
@@ -125,7 +130,8 @@
         "No polar pattern switching \u2014 cardioid only",
         "Limited onboard controls \u2014 volume only, no EQ or presets",
         "Smaller capsule than NT-USB \u2014 slightly less low-end warmth"
-      ]
+      ],
+      "asin": "B085DPCP1G"
     }
   ],
   "buying_guide": [

@@ -27,7 +27,8 @@
       ],
       "cons": [
         "Requires a permanent power connection via USB-C; no battery backup option included"
-      ]
+      ],
+      "asin": "B0BCR7M9KX"
     },
     {
       "rank": 2,
@@ -44,7 +45,8 @@
       ],
       "cons": [
         "Automation editor requires 5+ taps to create basic routines compared to 2 taps on competing apps"
-      ]
+      ],
+      "asin": "B07FJGGWJL"
     },
     {
       "rank": 3,
@@ -61,7 +63,8 @@
       ],
       "cons": [
         "Limited to Philips Hue and a small subset of third-party Zigbee devices; not a general-purpose hub"
-      ]
+      ],
+      "asin": "B016H0QZ7I"
     },
     {
       "rank": 4,
@@ -78,7 +81,8 @@
       ],
       "cons": [
         "Setup requires 45\u201360 minutes for new users due to the advanced configuration interface"
-      ]
+      ],
+      "asin": "B0BZRGSSD5"
     },
     {
       "rank": 5,
@@ -95,7 +99,8 @@
       ],
       "cons": [
         "Motor-driven rotating base adds 35mm of depth compared to standard Echo Show, limiting placement options"
-      ]
+      ],
+      "asin": "B07VHZ41L8"
     },
     {
       "rank": 6,
@@ -112,7 +117,8 @@
       ],
       "cons": [
         "No camera means video calling requires a separate device; competitors at this price point include cameras"
-      ]
+      ],
+      "asin": "B08HPPFNMN"
     }
   ],
   "buying_guide": [

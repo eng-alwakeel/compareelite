@@ -54,7 +54,8 @@
         "No second display output \u2014 single HDMI only",
         "Bus-powered limits peak output to connected devices",
         "USB 3.0 limited to 5 Gbps (not 10 Gbps)"
-      ]
+      ],
+      "asin": "B08L6LXMQH"
     },
     {
       "name": "CalDigit TS4 Thunderbolt 4 Dock",
@@ -74,7 +75,8 @@
         "Requires Thunderbolt 4 laptop \u2014 provides no bandwidth advantage on USB-C only machines",
         "Premium price of $250 is significantly higher than standard USB-C hubs",
         "Large aluminum desktop footprint requires dedicated desk space"
-      ]
+      ],
+      "asin": "B09GK8LBWS"
     },
     {
       "name": "Anker 332 USB-C Hub (5-in-1)",
@@ -94,7 +96,8 @@
         "Only 5 ports \u2014 not ideal for fixed desk setups",
         "No Ethernet or SD card slots",
         "USB 3.0 limited to 5 Gbps"
-      ]
+      ],
+      "asin": "B0BQNYL27Q"
     },
     {
       "name": "SABRENT 60W 7-Port USB-C Hub",
@@ -114,7 +117,8 @@
         "Requires external power adapter \u2014 less portable",
         "No HDMI or video output",
         "Larger form factor than bus-powered competitors"
-      ]
+      ],
+      "asin": "B08WM2WV1C"
     },
     {
       "name": "Hiearcool USB-C Hub 11-in-1",
@@ -134,7 +138,8 @@
         "HDMI outputs share bandwidth \u2014 both limited to 1080p simultaneously",
         "Runs hotter than competitors under full load",
         "Build quality below premium hubs at this price"
-      ]
+      ],
+      "asin": "B092P2NNND"
     },
     {
       "name": "Plugable 7-in-1 USB-C Hub with 2.5G Ethernet",
@@ -154,7 +159,8 @@
         "Only 7 ports \u2014 fewer than similarly-priced competitors",
         "2.5G Ethernet requires a 2.5G router/switch to benefit",
         "No SD card slots"
-      ]
+      ],
+      "asin": "B09DT7X7HG"
     }
   ],
   "faq": [

@@ -24,7 +24,8 @@
       "cons": [
         "Drives sold separately \u2014 total cost includes NAS enclosure plus hard drives",
         "2 bays limit maximum storage capacity compared to 4-bay alternatives"
-      ]
+      ],
+      "asin": "B0BHXGNVJY"
     },
     {
       "name": "Synology DS423+ 4-Bay NAS",
@@ -43,7 +44,8 @@
       "cons": [
         "Significantly higher price than entry-level 2-bay alternatives",
         "Still requires purchasing NAS drives separately for total cost consideration"
-      ]
+      ],
+      "asin": "B0C1BQKD3K"
     },
     {
       "name": "QNAP TS-233 2-Bay NAS",
@@ -62,7 +64,8 @@
       "cons": [
         "ARM processor cannot hardware-transcode 4K video \u2014 Plex transcoding is CPU-bound",
         "QTS interface less polished and intuitive than Synology DSM"
-      ]
+      ],
+      "asin": "B0BNWPVWWB"
     },
     {
       "name": "WD My Cloud EX2 Ultra 2-Bay NAS",
@@ -81,7 +84,8 @@
       "cons": [
         "Feature set notably less extensive than Synology or QNAP alternatives",
         "App ecosystem and Docker support significantly more limited"
-      ]
+      ],
+      "asin": "B07FM62VCC"
     },
     {
       "name": "Synology DS220+ 2-Bay NAS",
@@ -100,7 +104,8 @@
       "cons": [
         "2 bays still limit total raw capacity unless expansion unit purchased",
         "Price premium over DS223 is significant given similar bay count"
-      ]
+      ],
+      "asin": "B086P5XYMY"
     },
     {
       "name": "QNAP TS-464 4-Bay NAS",
@@ -119,7 +124,8 @@
       "cons": [
         "QTS interface steeper learning curve than Synology for first-time NAS users",
         "Competitor Synology DSM package library is larger and more refined"
-      ]
+      ],
+      "asin": "B09W3MWQZR"
     }
   ],
   "buying_guide": [

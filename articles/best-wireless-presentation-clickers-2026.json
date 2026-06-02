@@ -4,7 +4,7 @@
   "category": "Home Office",
   "date": "2026-05-10",
   "read_time": "10 min read",
-  "thumbnail": "https://images-na.ssl-images-amazon.com/images/P/B0BV8R8JMC.01.LZZZZZZZ.jpg",
+  "thumbnail": "https://m.media-amazon.com/images/P/B0BV8R8JMC.01.LZZZZZZZ.jpg",
   "excerpt": "We tested 12 wireless presentation clickers for range, ergonomics, and laser visibility. The Logitech R500s leads with 65-foot range and Bluetooth.",
   "author": "Sarah Mitchell",
   "stats": {
@@ -31,7 +31,8 @@
         "Red laser is less visible than green lasers in large, brightly lit auditoriums beyond 40 feet",
         "No built-in timer or vibration alert for presentation pacing \u2014 requires the Logitech Presentation app",
         "USB-A receiver does not include a USB-C adapter for newer laptops without USB-A ports"
-      ]
+      ],
+      "asin": "B0BV8R8JMC"
     },
     {
       "rank": 2,
@@ -52,7 +53,8 @@
         "79 dollars is double the price of the R500s and 4x budget alternatives",
         "No physical laser pointer \u2014 digital highlighting only works when your screen is visible to the audience",
         "Logitech Presentation software required for advanced features and is not available on Linux"
-      ]
+      ],
+      "asin": "B01N9X3DBQ"
     },
     {
       "rank": 3,
@@ -73,7 +75,8 @@
         "Green laser draws significantly more battery power \u2014 2 AAA batteries last approximately 20 hours of laser use",
         "No Bluetooth connectivity \u2014 requires the USB-A receiver, which occupies a port on the laptop",
         "42 dollars is premium pricing for a single-function presenter without digital highlighting"
-      ]
+      ],
+      "asin": "B009K1PYFG"
     },
     {
       "rank": 4,
@@ -94,7 +97,8 @@
         "49 dollars is mid-premium pricing for a USB-A-only presenter without Bluetooth option",
         "Requires 1 AAA battery with approximately 15 hours of laser use before replacement",
         "Driver software for hyperlink mode is Windows-only \u2014 macOS supports basic slide control only"
-      ]
+      ],
+      "asin": "B01CEAYXUQ"
     },
     {
       "rank": 5,
@@ -115,7 +119,8 @@
         "Red laser is dim in brightly lit rooms \u2014 visibility drops noticeably beyond 25 feet under fluorescent lights",
         "Plastic body feels lightweight and lacks the premium texture of Logitech and Kensington competitors",
         "No Bluetooth option, no rechargeable battery, and no presentation timer functionality"
-      ]
+      ],
+      "asin": "B012FB0VM8"
     },
     {
       "rank": 6,
@@ -136,7 +141,8 @@
         "50-foot range is shorter than all competitors except the DinoFire at 75 feet measured",
         "No Bluetooth \u2014 requires USB-A receiver occupying a laptop port during presentations",
         "2 AAA batteries add weight to the slim pen-style body and require periodic replacement"
-      ]
+      ],
+      "asin": "B0B7KT4T8S"
     }
   ],
   "buying_guide": [

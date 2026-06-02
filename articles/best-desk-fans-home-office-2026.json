@@ -24,7 +24,8 @@
       "cons": [
         "Directional airflow rather than oscillating \u2014 must manually aim at preferred angle",
         "At highest setting, 55dB noise level may be noticeable on sensitive microphones"
-      ]
+      ],
+      "asin": "B00B4DRP1A"
     },
     {
       "name": "Dyson Pure Cool DP04 Air Purifier + Fan",
@@ -43,7 +44,8 @@
       "cons": [
         "Premium price at $449 is significantly higher than comparable fans without air purification",
         "Replacement HEPA filters cost $49.99 and require annual replacement in typical use"
-      ]
+      ],
+      "asin": "B07JDL11VK"
     },
     {
       "name": "Lasko 2535 52-Inch Wind Curve Tower Fan",
@@ -62,7 +64,8 @@
       "cons": [
         "Assembly required \u2014 takes approximately 15 minutes from box to operation",
         "Tall footprint (4-inch base) requires dedicated floor space beside the desk"
-      ]
+      ],
+      "asin": "B000ARTTK2"
     },
     {
       "name": "Honeywell HT-900 TurboForce Fan",
@@ -81,7 +84,8 @@
       "cons": [
         "Personal cooling only \u2014 6-inch blade diameter doesn't circulate air across an entire room",
         "No timer or remote \u2014 all controls require reaching the unit directly"
-      ]
+      ],
+      "asin": "B0009OOPE4"
     },
     {
       "name": "PELONIS DC Tower Fan with Remote Control",
@@ -100,7 +104,8 @@
       "cons": [
         "DC motor adds $20-30 to cost compared to AC motor alternatives with similar airflow",
         "Remote requires line-of-sight to the fan \u2014 works best when fan is on the same side as your chair"
-      ]
+      ],
+      "asin": "B07ZP1SDML"
     },
     {
       "name": "ARCTIC Breeze Color USB Desktop Fan",
@@ -119,7 +124,8 @@
       "cons": [
         "USB power limits airflow to personal cooling only \u2014 insufficient for room circulation",
         "Single speed \u2014 no adjustment between maximum and off"
-      ]
+      ],
+      "asin": "B003XN24GY"
     }
   ],
   "buying_guide": [

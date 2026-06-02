@@ -4,7 +4,7 @@
   "category": "Smart Home",
   "date": "2026-05-08",
   "read_time": "10 min read",
-  "thumbnail": "https://images-na.ssl-images-amazon.com/images/P/B01D1NMLJU.01._SL500_.jpg",
+  "thumbnail": "https://m.media-amazon.com/images/P/B01D1NMLJU.01._SL500_.jpg",
   "excerpt": "Smart irrigation controllers cut outdoor water use by 20 to 50 percent using weather data. We tested 6 top systems for water savings, app quality, and setup ease.",
   "author": "Alex Rivera",
   "stats": {
@@ -28,7 +28,8 @@
       "cons": [
         "At $229 for the 8-zone version and $279 for 16-zone, the Rachio 3 is the most expensive controller in this roundup; the total cost including a wire-in smart flow meter adds another $79 to the investment.",
         "Initial setup requires at least 15 minutes of zone mapping including entering soil type, plant type, sun exposure, and sprinkler head type per zone; users who skip this step see significantly reduced water savings performance."
-      ]
+      ],
+      "asin": "B01D1NMLJU"
     },
     {
       "rank": 2,
@@ -46,7 +47,8 @@
       "cons": [
         "Amazon Alexa and Google Home integration requires enabling a third-party skill rather than a native integration, adding setup steps and introducing occasional voice command recognition delays of 2 to 4 seconds.",
         "The Rain Bird app's scheduling interface is less intuitive than the Rachio app, with a steeper learning curve particularly for users setting up seasonal adjust schedules across multiple zones with different plant types."
-      ]
+      ],
+      "asin": "B08CHF6MKJ"
     },
     {
       "rank": 3,
@@ -67,7 +69,8 @@
         "Wi-Fi connectivity can be unreliable in detached garages or sheds",
         "Advanced scheduling features have a learning curve",
         "Requires C-wire or transformer for power \u2014 not battery operated"
-      ]
+      ],
+      "asin": "B08J2BJSCB"
     },
     {
       "rank": 4,
@@ -85,7 +88,8 @@
       "cons": [
         "No Apple HomeKit support and limited IFTTT trigger options compared to Rachio; automation capabilities are restricted to the Netro app and basic Alexa on and off commands.",
         "Adaptive Watering calibration requires 14 to 28 days of observation before it begins delivering personalized schedules, during which watering is based on generic zone type defaults that may over- or under-water specific plant types."
-      ]
+      ],
+      "asin": "B07SVNMM8L"
     },
     {
       "rank": 5,
@@ -103,7 +107,8 @@
       "cons": [
         "Weather skip function relies on a single area forecast rather than evapotranspiration calculation, resulting in more conservative skip decisions that save less water than ET-based competitors by an estimated 10 to 20 percentage points.",
         "No Amazon Alexa or Google Home integration as of May 2026; the Wyze controller is app-only and not compatible with voice assistant smart home ecosystems, limiting its usefulness in Alexa-centric home setups."
-      ]
+      ],
+      "asin": "B08M9HYPMW"
     },
     {
       "rank": 6,
@@ -121,7 +126,8 @@
       "cons": [
         "Battery-powered with 2 AA batteries lasting 4 to 6 months; battery depletion mid-season can cause scheduling failures that go undetected if the smartphone app notification is dismissed or missed.",
         "No smart home platform integration beyond basic WiFi app control; Alexa, Google Home, and IFTTT are not supported, making it the least connected option in this roundup for smart home ecosystem users."
-      ]
+      ],
+      "asin": "B08BHYXPVG"
     }
   ],
   "buying_guide": [

@@ -53,7 +53,8 @@
       "cons": [
         "At $249 it is the most expensive thermostat in this roundup \u2014 the air quality monitoring and multi-assistant features add cost beyond what basic users need.",
         "Requires an ecobee cloud account \u2014 full functionality depends on internet connectivity and the ecobee servers remaining active."
-      ]
+      ],
+      "asin": "B09XXS48P8"
     },
     {
       "name": "Google Nest Learning Thermostat (4th Gen)",
@@ -70,7 +71,8 @@
       "cons": [
         "At $279 it is the highest-priced thermostat tested \u2014 the learning features add real value only for households with consistent daily routines.",
         "Deep features require familiarity with the Google Home app \u2014 initial configuration takes 30-45 minutes for non-technical users."
-      ]
+      ],
+      "asin": "B0D5BGST5N"
     },
     {
       "name": "Emerson Sensi Touch 2 Smart Thermostat",
@@ -87,7 +89,8 @@
       "cons": [
         "Requires a C-wire \u2014 not compatible with 2-wire heating-only systems found in older homes built before 1990.",
         "No room sensor support and no learning capability \u2014 all scheduling must be set manually through the Sensi app."
-      ]
+      ],
+      "asin": "B0BKH83KF9"
     },
     {
       "name": "Google Nest Thermostat",
@@ -104,7 +107,8 @@
       "cons": [
         "No built-in learning capability \u2014 temperature schedule must be programmed manually unlike the Nest Learning model.",
         "No Apple HomeKit support and limited Alexa integration \u2014 best suited for Google Home ecosystem households."
-      ]
+      ],
+      "asin": "B08HRPDYTP"
     },
     {
       "name": "Honeywell Home T9 WiFi Smart Thermostat",
@@ -121,7 +125,8 @@
       "cons": [
         "Additional Smart Room Sensors are sold separately at $39 each \u2014 multi-zone comfort requires extra investment beyond the base thermostat price.",
         "Resideo app interface feels dated compared to ecobee and Nest apps \u2014 navigation takes time to learn."
-      ]
+      ],
+      "asin": "B07N849J21"
     },
     {
       "name": "Amazon Smart Thermostat",
@@ -138,7 +143,8 @@
       "cons": [
         "Fully Alexa-dependent \u2014 significantly limited without Amazon Echo devices, and lacks Google Home and Apple HomeKit support entirely.",
         "Basic monochrome display with minimal physical controls \u2014 no touchscreen or color interface at this price point."
-      ]
+      ],
+      "asin": "B08J4C8871"
     }
   ],
   "faq": [

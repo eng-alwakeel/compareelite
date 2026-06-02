@@ -4,7 +4,7 @@
   "category": "Tech",
   "date": "2026-05-15",
   "read_time": "12 min read",
-  "thumbnail": "https://images-na.ssl-images-amazon.com/images/P/B0C5JSHP7M.01.LZZZZZZZ.jpg",
+  "thumbnail": "https://m.media-amazon.com/images/P/B0C5JSHP7M.01.LZZZZZZZ.jpg",
   "excerpt": "The Focusrite Scarlett Solo 4th Gen leads our 2026 audio interface rankings with 120 dB dynamic range and studio-grade converters at an entry-level price point.",
   "author": "Sarah Mitchell",
   "stats": {
@@ -27,7 +27,8 @@
       ],
       "cons": [
         "Single combo input limits you to recording one microphone or instrument at a time, with no option for stereo mic techniques or simultaneous vocal-and-guitar tracking"
-      ]
+      ],
+      "asin": "B0C5JSHP7M"
     },
     {
       "rank": 2,
@@ -44,7 +45,8 @@
       ],
       "cons": [
         "At 180 dollars it costs 50 dollars more than the Solo, and both preamps share identical specifications, so the premium is purely for the second input channel"
-      ]
+      ],
+      "asin": "B0C5JRTS3Y"
     },
     {
       "rank": 3,
@@ -61,7 +63,8 @@
       ],
       "cons": [
         "Plastic chassis flexes noticeably under pressure compared to the all-metal housings on the Focusrite Scarlett and Audient iD4 at similar price points"
-      ]
+      ],
+      "asin": "B0812B26TN"
     },
     {
       "rank": 4,
@@ -78,7 +81,8 @@
       ],
       "cons": [
         "Only one microphone preamp input and one DI instrument input, so recording two microphones simultaneously requires stepping up to the Audient iD14 at 300 dollars"
-      ]
+      ],
+      "asin": "B08SBSN88X"
     },
     {
       "rank": 5,
@@ -95,7 +99,8 @@
       ],
       "cons": [
         "Maximum sample rate of 96 kHz and measured dynamic range of 105 dB falls 15 dB short of the Focusrite Scarlett and MOTU M2 converters at double the price"
-      ]
+      ],
+      "asin": "B08D8R6VFC"
     },
     {
       "rank": 6,
@@ -112,7 +117,8 @@
       ],
       "cons": [
         "Driver support on macOS can lag behind OS updates by 2 to 4 weeks after major releases, occasionally requiring users to stay on older system versions until patches arrive"
-      ]
+      ],
+      "asin": "B00SAV0VP0"
     }
   ],
   "buying_guide": [

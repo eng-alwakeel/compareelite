@@ -53,7 +53,8 @@
       "cons": [
         "At $159 it is pricier than competing 75% wireless boards, though the gasket mount and OLED display justify the cost.",
         "OLED screen adds complexity \u2014 some users prefer a simpler, lighter board for travel."
-      ]
+      ],
+      "asin": "B0BSKX8W3B"
     },
     {
       "name": "Logitech G915 TKL",
@@ -70,7 +71,8 @@
       "cons": [
         "Low-profile switches feel different from standard mechanical travel \u2014 takes 2-3 days to fully adjust typing technique.",
         "No USB passthrough or onboard macro storage without Logitech G HUB software installed."
-      ]
+      ],
+      "asin": "B085RMD5TP"
     },
     {
       "name": "Keychron K2 Pro",
@@ -87,7 +89,8 @@
       "cons": [
         "Plastic case transmits some typing vibration \u2014 adding a desk mat noticeably improves the sound profile.",
         "No included keycap puller or switch puller in the box despite advertising the hot-swap feature prominently."
-      ]
+      ],
+      "asin": "B09MQ36PT7"
     },
     {
       "name": "Das Keyboard 4 Professional",
@@ -104,7 +107,8 @@
       "cons": [
         "Cherry MX Blue switches are loud enough to be disruptive in shared office spaces \u2014 consider the Brown switch variant for quieter environments.",
         "No wireless option and no RGB backlighting \u2014 purely a productivity-focused board without gaming features."
-      ]
+      ],
+      "asin": "B00JG01QTY"
     },
     {
       "name": "SteelSeries Apex Pro TKL Wireless Gen 3",

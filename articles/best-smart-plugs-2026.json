@@ -54,7 +54,8 @@
         "Requires 2.4 GHz Wi-Fi \u2014 not compatible with 5 GHz only networks",
         "Energy monitoring only visible in Kasa app, not third-party apps",
         "Single outlet only \u2014 no dual version"
-      ]
+      ],
+      "asin": "B09WB5YJZV"
     },
     {
       "name": "TP-Link Tapo P110 Smart Plug with Energy Monitoring",
@@ -74,7 +75,8 @@
         "No Apple HomeKit support",
         "Energy data in Tapo app only",
         "Cloud-dependent (no local control fallback)"
-      ]
+      ],
+      "asin": "B0BL2SRQMR"
     },
     {
       "name": "Amazon Smart Plug",
@@ -94,7 +96,8 @@
         "Alexa only \u2014 no Google Home or HomeKit support",
         "No energy monitoring",
         "Limited to Amazon ecosystem"
-      ]
+      ],
+      "asin": "B089DR29T6"
     },
     {
       "name": "Kasa Smart Plug Mini with Energy Monitoring",
@@ -114,7 +117,8 @@
         "No Matter/Thread protocol \u2014 uses standard Wi-Fi only",
         "No Apple HomeKit support",
         "Single outlet \u2014 no dual-outlet version in mini form factor"
-      ]
+      ],
+      "asin": "B08LN3C7WK"
     },
     {
       "name": "Wemo Insight Smart Plug",
@@ -134,7 +138,8 @@
         "Higher price than competitors",
         "Wemo app less polished than Kasa/Tapo",
         "Larger physical footprint"
-      ]
+      ],
+      "asin": "B07RCNB2L3"
     },
     {
       "name": "TREATLIFE Smart Plug Mini",
@@ -154,7 +159,8 @@
         "2.4GHz Wi-Fi only \u2014 does not support 5GHz networks",
         "No energy monitoring built into the basic model",
         "App interface could be more intuitive for first-time users"
-      ]
+      ],
+      "asin": "B088PMZV7F"
     }
   ],
   "faq": [

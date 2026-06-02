@@ -25,7 +25,8 @@
         "Requires a power outlet \u2014 no battery or solar option",
         "Govee ecosystem not compatible with Apple HomeKit natively",
         "App can feel cluttered with extensive feature menus"
-      ]
+      ],
+      "asin": "B0B6D8Y32F"
     },
     {
       "name": "Philips Hue Lily Outdoor Spot Light 3-Pack",
@@ -45,7 +46,8 @@
         "Requires a Philips Hue Bridge hub \u2014 adds cost if starting fresh",
         "Premium pricing compared to Wi-Fi competitors",
         "Lower maximum lumen output per bulb than dedicated floodlights"
-      ]
+      ],
+      "asin": "B07ZB4JM6X"
     },
     {
       "name": "Ring PAR38 Smart LED Bulb",
@@ -65,7 +67,8 @@
         "Ring and Alexa ecosystem only \u2014 no Google Home or HomeKit",
         "Requires Ring Bridge for full feature access including schedules",
         "White light only \u2014 no color changing capability"
-      ]
+      ],
+      "asin": "B08Y8NTTJB"
     },
     {
       "name": "Kasa Smart Outdoor Plug KP400",
@@ -85,7 +88,8 @@
         "Controls power only \u2014 no dimming or color control for connected lights",
         "Does not support Apple HomeKit",
         "Bulky form factor may obstruct access to other nearby outlets"
-      ]
+      ],
+      "asin": "B07CZN4N2F"
     },
     {
       "name": "LITOM 24 LED Solar Lights",
@@ -105,7 +109,8 @@
         "No app control or voice assistant integration \u2014 light modes set via physical switch",
         "Performance degrades significantly with limited daily sunlight",
         "Lower maximum brightness than hardwired smart lights"
-      ]
+      ],
+      "asin": "B071J2WV14"
     },
     {
       "name": "Meross Smart Outdoor Plug MSS620",
@@ -125,7 +130,8 @@
         "IP44 rating is lower than competitors \u2014 not suitable for exposed rain-facing locations",
         "Single outlet only \u2014 no dual-outlet version",
         "Meross app has fewer advanced features than Kasa or Govee"
-      ]
+      ],
+      "asin": "B07P9KPJQG"
     }
   ],
   "buying_guide": [

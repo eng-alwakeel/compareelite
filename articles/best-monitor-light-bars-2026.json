@@ -54,7 +54,8 @@
         "Premium price at $110",
         "Dial controller takes up desk space",
         "No app control \u2014 adjustments only via physical dial"
-      ]
+      ],
+      "asin": "B097993WFB"
     },
     {
       "name": "BenQ ScreenBar",
@@ -74,7 +75,8 @@
         "Touch controls on bar less convenient than desktop dial",
         "No USB-C option \u2014 USB-A only",
         "Only works for flat monitors, not curved"
-      ]
+      ],
+      "asin": "B076VNFZJG"
     },
     {
       "name": "Quntis Monitor Light Bar LED",
@@ -94,7 +96,8 @@
         "Lower maximum brightness than premium options",
         "No auto-dimming sensor",
         "Touch controls less responsive than BenQ"
-      ]
+      ],
+      "asin": "B08W2HMZDR"
     },
     {
       "name": "Lume Cube Edge LED Light Bar",
@@ -114,7 +117,8 @@
         "Limited color temperature range vs competitors",
         "No auto-dimming or smart features",
         "Best for 24-inch or smaller monitors"
-      ]
+      ],
+      "asin": "B09XS3HKGP"
     },
     {
       "name": "Yeelight Monitor Light Bar Pro",
@@ -134,7 +138,8 @@
         "Remote controller requires two AAA batteries that are not included in the box",
         "No built-in ambient light sensor for automatic brightness adjustment, requiring manual changes as room lighting shifts",
         "Aluminum housing finish shows fingerprints more visibly than BenQ's matte surface coating"
-      ]
+      ],
+      "asin": "B09JQ57J9G"
     },
     {
       "name": "ELEKIN Monitor Light Bar with Remote",
@@ -154,7 +159,8 @@
         "Lower maximum brightness (350 lux vs premium 500 lux)",
         "Glare suppression not as thorough as BenQ",
         "Remote feel is plasticky"
-      ]
+      ],
+      "asin": "B08R6GXCD7"
     }
   ],
   "faq": [

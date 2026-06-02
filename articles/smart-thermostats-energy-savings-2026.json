@@ -56,7 +56,8 @@
       "cons": [
         "At $249 it has the longest payback period of 18-24 months for small homes under 1,200 sq ft or mild climates with under $1,200 annual HVAC costs.",
         "SmartSensors sold separately at $79 per 2-pack add upfront cost, though they deliver 6.6-month payback in homes over 2,500 sq ft."
-      ]
+      ],
+      "asin": "B09XXS48P8"
     },
     {
       "rank": 2,
@@ -75,7 +76,8 @@
       "cons": [
         "At $279 it is the most expensive thermostat tested, extending payback to 24-38 months for homes under 1,500 sq ft or annual HVAC costs below $1,500.",
         "Learning algorithms struggle in households with irregular schedules, reducing savings to 10-12% when occupancy patterns vary daily."
-      ]
+      ],
+      "asin": "B0D5BGST5N"
     },
     {
       "rank": 3,
@@ -94,7 +96,8 @@
       "cons": [
         "Additional Smart Room Sensors cost $39 each, adding $78-117 upfront for 2-3 sensor setups needed in larger homes.",
         "Achieves only 12-14% savings in single-story homes under 2,000 sq ft where multi-zone benefits are minimal."
-      ]
+      ],
+      "asin": "B07N849J21"
     },
     {
       "rank": 4,
@@ -113,7 +116,8 @@
       "cons": [
         "Lacks occupancy sensing and learning automation, requiring manual schedule programming that reduces savings by 3-7% if not optimized properly.",
         "No room sensor support limits multi-zone efficiency gains in larger homes where ecobee and Honeywell deliver superior ROI."
-      ]
+      ],
+      "asin": "B08HRPDYTP"
     },
     {
       "rank": 5,
@@ -132,7 +136,8 @@
       "cons": [
         "Requires existing C-wire with no adapter included, adding $100-300 electrician cost for homes without C-wire and extending total payback by 4-8 months.",
         "No room sensors or occupancy detection limits savings to schedule-based automation only, missing 5-12% additional efficiency from presence sensing."
-      ]
+      ],
+      "asin": "B0BKH83KF9"
     },
     {
       "rank": 6,
@@ -151,7 +156,8 @@
       "cons": [
         "Lowest percentage savings of 8-11% means smaller homes under 1,200 sq ft save only $96-165 annually, limiting long-term ROI.",
         "No occupancy sensing, learning automation, or room sensors leaves 7-15% additional efficiency potential unrealized compared to premium models."
-      ]
+      ],
+      "asin": "B08J4C8871"
     }
   ],
   "faq": [

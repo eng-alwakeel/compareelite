@@ -28,7 +28,8 @@
       "cons": [
         "Not compatible with 3-way switch configurations \u2014 you cannot use two HS200 switches to control the same light from two wall locations without purchasing the separate HS210 kit.",
         "No dimming capability \u2014 only full on/off \u2014 so it cannot be used with fixtures that benefit from adjustable brightness such as dining room or bedroom ceiling lights."
-      ]
+      ],
+      "asin": "B01EZV35QU"
     },
     {
       "rank": 2,
@@ -46,7 +47,8 @@
       "cons": [
         "Requires the Lutron Caseta Smart Bridge ($80, sold separately) for voice control and app access, raising total cost for the first switch to approximately $144.",
         "Maximum dimming load of 150W is lower than competing dimmers \u2014 insufficient for fixtures with 6 or more 25W bulbs, which exceeds capacity and causes flicker."
-      ]
+      ],
+      "asin": "B07SJJB9T5"
     },
     {
       "rank": 3,
@@ -64,7 +66,8 @@
       "cons": [
         "Requires a neutral wire for operation \u2014 not compatible with older 2-wire switch loops common in homes built before 1985 without adding a neutral wire to the box.",
         "3-way support requires a matching Leviton D215S as the remote switch, adding $35 per additional switch location compared to single-switch setups."
-      ]
+      ],
+      "asin": "B0BVKZLT3B"
     },
     {
       "rank": 4,
@@ -82,7 +85,8 @@
       "cons": [
         "No-neutral operation requires a minimum LED load of 3W to maintain the switch's internal power supply \u2014 fixtures with a single low-wattage LED may exhibit ghost glow or flicker.",
         "CYNC app lacks advanced automation features compared to competitors \u2014 no geofencing, no IFTTT support, and no local API for Home Assistant integration without third-party workarounds."
-      ]
+      ],
+      "asin": "B09JV98TS4"
     },
     {
       "rank": 5,
@@ -100,7 +104,8 @@
       "cons": [
         "Both switches require a neutral wire \u2014 if either switch box lacks a neutral, the entire 3-way configuration is incompatible without running new wiring.",
         "No dimming capability in any HS210 configuration \u2014 compatible only with on/off fixtures, not LED fixtures that require a trailing-edge dimmer for smooth control."
-      ]
+      ],
+      "asin": "B07B96CJQX"
     },
     {
       "rank": 6,
@@ -118,7 +123,8 @@
       "cons": [
         "App reliability is below the Kasa and Leviton apps \u2014 users report occasional disconnections after router firmware updates, typically requiring a manual re-pair in the Tuya app.",
         "Build quality feels noticeably lighter than premium switches \u2014 the rocker mechanism has more travel and less tactile resistance, which some users find less satisfying than Kasa or Leviton."
-      ]
+      ],
+      "asin": "B07Z13GNL3"
     }
   ],
   "buying_guide": [

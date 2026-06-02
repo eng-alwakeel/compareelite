@@ -54,7 +54,8 @@
         "Premium price point",
         "Limited to 60Hz refresh rate",
         "No HDMI port \u2014 USB-C only"
-      ]
+      ],
+      "asin": "B0B44BPKSS"
     },
     {
       "name": "LG 16MQ70W 16-Inch WQXGA IPS Portable Monitor with USB-C",
@@ -73,7 +74,8 @@
       "cons": [
         "Premium price positions it above most competing portable monitors",
         "No built-in battery \u2014 requires host USB-C power output to operate"
-      ]
+      ],
+      "asin": "B0B9DCXPWY"
     },
     {
       "name": "ASUS ROG XG17AHPE",
@@ -93,7 +95,8 @@
         "Heavy for a portable at 1.1kg",
         "1080p resolution only",
         "Premium gaming tax on price"
-      ]
+      ],
+      "asin": "B0D4S27N1R"
     },
     {
       "name": "Lepow Z1 Gamut",
@@ -113,7 +116,8 @@
         "No built-in battery",
         "Kickstand angles limited",
         "60Hz only \u2014 not suited for gaming"
-      ]
+      ],
+      "asin": "B08HHXMWZ3"
     },
     {
       "name": "ViewSonic VG1655",
@@ -133,7 +137,8 @@
         "Only 1080p resolution",
         "No battery \u2014 requires power source",
         "Design is utilitarian rather than stylish"
-      ]
+      ],
+      "asin": "B096G4KRDX"
     },
     {
       "name": "Arzopa 15.6-Inch Portable Monitor Full HD IPS Ultraslim",
@@ -152,7 +157,8 @@
       "cons": [
         "No built-in battery \u2014 power must come from host device or USB-C charger",
         "250-nit brightness can appear washed out in very bright lighting conditions"
-      ]
+      ],
+      "asin": "B09QLQTXMW"
     }
   ],
   "faq": [

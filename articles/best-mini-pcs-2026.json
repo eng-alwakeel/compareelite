@@ -24,7 +24,8 @@
       "cons": [
         "DDR4 memory is previous generation versus newer DDR5 models",
         "No Thunderbolt 4 port limits eGPU expansion options"
-      ]
+      ],
+      "asin": "B0GSX7V7MK"
     },
     {
       "name": "MINISFORUM UM690 Mini PC (Ryzen 9 6900HX)",
@@ -43,7 +44,8 @@
       "cons": [
         "Higher price point requires justification for typical office use",
         "Fan noise noticeable during sustained heavy computational tasks"
-      ]
+      ],
+      "asin": "B0B7QCBR34"
     },
     {
       "name": "Intel NUC 13 Pro Kit Mini PC (i5-1350P)",
@@ -63,7 +65,8 @@
         "RAM and storage sold separately \u2014 requires additional investment",
         "Integrated Iris Xe graphics not suited for demanding creative work",
         "Limited upgrade path compared to larger desktop systems"
-      ]
+      ],
+      "asin": "B0DG54LD9Z"
     },
     {
       "name": "ASUS NUC 14 Pro Mini PC (Core Ultra 5 125H)",
@@ -82,7 +85,8 @@
       "cons": [
         "Premium pricing versus comparable Chinese-brand mini PCs",
         "Core Ultra integrated graphics still lags behind AMD Radeon 780M"
-      ]
+      ],
+      "asin": "B0CTQS2G22"
     },
     {
       "name": "Beelink EQ12 Mini PC (Intel N100)",
@@ -101,7 +105,8 @@
       "cons": [
         "N100 is not suitable for video editing or creative workloads",
         "No USB4 or Thunderbolt \u2014 limits high-speed peripheral options"
-      ]
+      ],
+      "asin": "B0GSX7V7MK"
     },
     {
       "name": "MINISFORUM EliteMini HM90 Mini PC (Ryzen 9 4900H)",
@@ -120,7 +125,8 @@
       "cons": [
         "Older Zen 2 architecture versus current Zen 4 alternatives",
         "Runs warmer than newer-generation mini PCs under load"
-      ]
+      ],
+      "asin": "B08R5DNTJY"
     }
   ],
   "buying_guide": [

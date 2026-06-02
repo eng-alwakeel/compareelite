@@ -24,7 +24,8 @@
       "cons": [
         "No management features \u2014 cannot configure VLANs or QoS",
         "No PoE ports for powering access points or IP cameras"
-      ]
+      ],
+      "asin": "B00A121WN6"
     },
     {
       "name": "NETGEAR 8-Port Gigabit Ethernet Unmanaged Switch (GS308)",
@@ -43,7 +44,8 @@
       "cons": [
         "No PoE \u2014 requires external power adapters for PoE devices",
         "No management capabilities for advanced network configurations"
-      ]
+      ],
+      "asin": "B07PFYM5MZ"
     },
     {
       "name": "TP-Link TL-SG1016D 16-Port Gigabit Desktop Switch",
@@ -62,7 +64,8 @@
       "cons": [
         "No PoE support across any port",
         "Unmanaged design limits VLAN and segmentation options"
-      ]
+      ],
+      "asin": "B003CFATNI"
     },
     {
       "name": "NETGEAR 8-Port PoE Gigabit Ethernet Plus Switch (GS308EP)",
@@ -81,7 +84,8 @@
       "cons": [
         "PoE budget may be insufficient for multiple high-power devices simultaneously",
         "Plus management interface less capable than full managed switches"
-      ]
+      ],
+      "asin": "B08LR7TLKQ"
     },
     {
       "name": "TP-Link TL-SG105-M2 5-Port 2.5G Multi-Gigabit Switch",
@@ -100,7 +104,8 @@
       "cons": [
         "Only 5 ports \u2014 may require additional switch for larger setups",
         "2.5G benefits only realized with compatible routers and NIC cards"
-      ]
+      ],
+      "asin": "B08ZHGT2ZP"
     },
     {
       "name": "Cisco SG350-10 10-Port Gigabit Managed Switch",
@@ -119,7 +124,8 @@
       "cons": [
         "Significant price premium over unmanaged alternatives",
         "Fan produces audible noise \u2014 not ideal for quiet living spaces"
-      ]
+      ],
+      "asin": "B004BQCKXO"
     }
   ],
   "buying_guide": [

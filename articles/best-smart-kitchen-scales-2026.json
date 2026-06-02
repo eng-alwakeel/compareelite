@@ -24,7 +24,8 @@
       "cons": [
         "Bluetooth range limited to about 30 feet",
         "Food database less comprehensive than premium options"
-      ]
+      ],
+      "asin": "B07W1ZXBF5"
     },
     {
       "name": "Perfect Bake Pro Smart Kitchen Scale",
@@ -44,7 +45,8 @@
         "Requires smartphone or tablet \u2014 no standalone recipe display",
         "Recipe library limited to baking \u2014 not a general cooking scale",
         "Bluetooth range limited to about 10 feet from device"
-      ]
+      ],
+      "asin": "B019C4PTSW"
     },
     {
       "name": "Etekcity Smart Nutrition Scale ESN00",
@@ -63,7 +65,8 @@
       "cons": [
         "App not as polished as competitors",
         "Smaller food database than Greater Goods"
-      ]
+      ],
+      "asin": "B09KZSJXFY"
     },
     {
       "name": "INEVIFIT Digital Kitchen Scale",
@@ -83,7 +86,8 @@
         "No Bluetooth or app connectivity for nutritional tracking",
         "Auto-off timer can be too aggressive during slow recipe preparation",
         "Small display can be obscured by large bowls or plates"
-      ]
+      ],
+      "asin": "B01MRT3EGJ"
     },
     {
       "name": "OXO Good Grips 11-Pound Stainless Steel Food Scale",
@@ -102,7 +106,8 @@
       "cons": [
         "No smart app integration",
         "Batteries (not USB) \u2014 no charging"
-      ]
+      ],
+      "asin": "B0776YC33S"
     },
     {
       "name": "Escali Primo Digital Food Scale",
@@ -121,7 +126,8 @@
       "cons": [
         "No Bluetooth or app integration",
         "Simple design without advanced features"
-      ]
+      ],
+      "asin": "B000WFUASI"
     }
   ],
   "buying_guide": [

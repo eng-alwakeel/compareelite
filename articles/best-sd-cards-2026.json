@@ -31,7 +31,8 @@
         "UHS-I bus limits maximum theoretical speed to 104MB/s \u2014 real-world reads reached 95MB/s on UHS-I readers",
         "Does not support UHS-II devices that can achieve 300MB/s with compatible readers",
         "34 dollar price is 2x the cost of comparable SanDisk Ultra cards at the same capacity"
-      ]
+      ],
+      "asin": "B09V43DLWT"
     },
     {
       "rank": 2,
@@ -52,7 +53,8 @@
         "200MB/s read speed requires a UHS-I compatible reader \u2014 older readers max out at 25MB/s",
         "Sustained write speed dropped to 90MB/s after 180GB of continuous writing in our endurance test",
         "Counterfeit SanDisk cards are common on third-party marketplaces \u2014 buy only from authorized sellers"
-      ]
+      ],
+      "asin": "B09X7FXHVJ"
     },
     {
       "rank": 3,
@@ -73,7 +75,8 @@
         "88 dollars for 128GB is 4x the per-gigabyte cost of Samsung PRO Plus",
         "UHS-II speeds require a UHS-II reader \u2014 falls back to UHS-I speeds in standard readers",
         "128GB capacity fills in approximately 40 minutes of 8K 30fps recording"
-      ]
+      ],
+      "asin": "B07H48412Q"
     },
     {
       "rank": 4,
@@ -94,7 +97,8 @@
         "A2 random I/O performance measured at 3,800 IOPS read, below the A2 minimum spec of 4,000 in our testing",
         "microSD form factor is easier to lose and harder to label than full-size SD cards",
         "Write speed throttles to 45MB/s after the SLC cache fills at approximately 30GB of continuous writing"
-      ]
+      ],
+      "asin": "B0CWDNRHVK"
     },
     {
       "rank": 5,
@@ -115,7 +119,8 @@
         "Write speed of 120MB/s is adequate for 4K but insufficient for 8K video recording",
         "Limited lifetime warranty \u2014 Lexar's warranty process requires online registration within 60 days of purchase",
         "V60 rating means minimum 60MB/s guaranteed write, not the 90MB/s minimum that V90 professional cards offer"
-      ]
+      ],
+      "asin": "B08918BW4M"
     },
     {
       "rank": 6,
@@ -136,7 +141,8 @@
         "Write speed measured at 30MB/s in our testing \u2014 4x slower than Samsung PRO Plus writes",
         "Not V30 rated \u2014 cannot sustain 30MB/s writes for 4K video recording without frame drops",
         "A1 (not A2) app performance means slower random read/write for phone app execution"
-      ]
+      ],
+      "asin": "B0B7NTY2S6"
     }
   ],
   "buying_guide": [

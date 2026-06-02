@@ -29,7 +29,8 @@
       "cons": [
         "The AirTag requires an iPhone 6s or later running iOS 14.5 or above \u2014 Android users receive no app support and must use a separate NFC-based lost mode scan.",
         "At $99 for a 4-pack ($25 per unit), the AirTag costs 25 percent more per unit than the Samsung SmartTag2 without offering cross-platform Android compatibility."
-      ]
+      ],
+      "asin": "B0933BVK6T"
     },
     {
       "rank": 2,
@@ -48,7 +49,8 @@
       "cons": [
         "The SmartTag2 requires a Samsung Galaxy smartphone running the SmartThings app to access crowd-finding, directional search, and automation features \u2014 non-Samsung Android phones get limited functionality.",
         "The tag measures 39.1 x 39.1 x 9.9 mm, making it bulkier than the round AirTag (31.9 mm diameter, 8 mm thick) and harder to fit on thin key rings."
-      ]
+      ],
+      "asin": "B0CHN2D8KM"
     },
     {
       "rank": 3,
@@ -67,7 +69,8 @@
       "cons": [
         "The Tile network has approximately 35 million active users \u2014 significantly smaller than Apple's 2 billion device Find My network, meaning crowd-sourced location updates are less frequent in rural and suburban areas.",
         "A Tile Premium subscription ($2.99 per month or $29.99 per year) is required to unlock the 30-day location history, smart alerts, and unlimited sharing \u2014 core features that are free with AirTag and SmartTag2."
-      ]
+      ],
+      "asin": "B0D634ZR1Y"
     },
     {
       "rank": 4,
@@ -85,7 +88,8 @@
       "cons": [
         "The 45-meter Bluetooth range is the shortest of any tracker in this guide by a significant margin \u2014 the Tile Pro 2022 reaches 120 meters, giving it nearly 3 times the effective tracking radius.",
         "The speaker produces 82 dB at 1 meter \u2014 audible in a quiet room but easily masked by ambient noise above 65 dB, making it harder to locate in busy environments like airports or shopping centers."
-      ]
+      ],
+      "asin": "B09RG31GKT"
     },
     {
       "rank": 5,
@@ -103,7 +107,8 @@
       "cons": [
         "The built-in 2-year non-replaceable battery cannot be swapped when depleted \u2014 the entire Card Spot must be replaced at full price rather than swapping in a $1 CR2032 as with the AirTag or Tile Pro.",
         "Compatibility is limited to Apple devices running iOS 14.5 or later \u2014 Android users get no app support from the Chipolo Card Spot and must instead choose the non-Spot Chipolo CARD Point variant."
-      ]
+      ],
+      "asin": "B09ZTZ47K4"
     },
     {
       "rank": 6,
@@ -121,7 +126,8 @@
       "cons": [
         "The Chipolo POP's standalone network covers only the Chipolo user base \u2014 a fraction of the 35 million Tile users and far smaller than either Apple's 2 billion device Find My or Samsung's SmartThings Find network.",
         "Without UWB hardware, the Chipolo POP provides no precision directional guidance \u2014 location accuracy depends entirely on Bluetooth signal strength, which is accurate to within 3 to 5 meters rather than 4 inches."
-      ]
+      ],
+      "asin": "B0DZXTLD38"
     }
   ],
   "buying_guide": [

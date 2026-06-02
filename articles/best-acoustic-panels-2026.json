@@ -4,7 +4,7 @@
   "category": "Home Office",
   "date": "2026-05-08",
   "read_time": "9 min read",
-  "thumbnail": "https://images-na.ssl-images-amazon.com/images/P/B010GPFY0Y.01._SL500_.jpg",
+  "thumbnail": "https://m.media-amazon.com/images/P/B010GPFY0Y.01._SL500_.jpg",
   "excerpt": "Cut echo and background noise in your home office with the best acoustic panels of 2026. We tested 12 products for NRC rating, coverage, and install ease.",
   "author": "Sarah Mitchell",
   "stats": {
@@ -28,7 +28,8 @@
       "cons": [
         "1-inch foam depth provides limited low-frequency absorption below 200 Hz, so bass rumble from HVAC systems or street traffic requires supplemental treatment.",
         "Charcoal color is the only standard option; custom color matching requires a separate order and adds 7 to 10 business days to delivery."
-      ]
+      ],
+      "asin": "B010GPFY0Y"
     },
     {
       "name": "Auralex Acoustics Studiofoam Wedgies 2\" x 12\" x 12\" Acoustic Foam (24-Pack, Charcoal)",
@@ -47,7 +48,8 @@
       "cons": [
         "More expensive per square foot than budget foam alternatives",
         "Foam-based rather than fabric-wrapped \u2014 some prefer fabric for aesthetics"
-      ]
+      ],
+      "asin": "B0002D05KA"
     },
     {
       "name": "JBER 12 Pack Acoustic Foam Panels 1\" X 12\" X 12\" Fire Resistant Soundproofing Wedges (Black)",
@@ -66,7 +68,8 @@
       "cons": [
         "1-inch thickness provides less low-frequency absorption than 2-inch alternatives",
         "Adhesive backing can damage painted walls on removal"
-      ]
+      ],
+      "asin": "B08R1JFZCF"
     },
     {
       "name": "Acoustimac Sound Absorbing Acoustic Panel DMD 4' x 2' x 2\" Black",
@@ -85,7 +88,8 @@
       "cons": [
         "Premium price reflects professional-grade construction",
         "Large size requires two-person installation for ceiling mounting"
-      ]
+      ],
+      "asin": "B00BJMWZOW"
     },
     {
       "rank": 5,
@@ -103,7 +107,8 @@
       "cons": [
         "At 12 panels per pack covering 12 square feet, a typical home office wall requires two packs ($98 total) to achieve the recommended 20 to 25 percent wall coverage ratio.",
         "Fabric surface collects dust and pet hair more readily than foam surfaces and requires quarterly vacuuming with a brush attachment to maintain consistent sound absorption."
-      ]
+      ],
+      "asin": "B099RLFQJ1"
     },
     {
       "rank": 6,
@@ -121,7 +126,8 @@
       "cons": [
         "Single-panel format at 1-by-4 feet covers only 4 square feet per unit, making full room treatment require multiple purchases that add up to three to four times the cost of budget foam alternatives per square foot of coverage.",
         "White fabric color suits bright or neutral office aesthetics but may not blend well with dark-themed workspaces; additional color variants are available separately but require individual orders."
-      ]
+      ],
+      "asin": "B087T4KKGG"
     }
   ],
   "buying_guide": [

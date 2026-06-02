@@ -54,7 +54,8 @@
         "Premium pricing at $200",
         "Proprietary switches \u2014 no hot-swap for third-party switches",
         "Analog features require Logitech software to configure"
-      ]
+      ],
+      "asin": "B0CMDWV3PK"
     },
     {
       "name": "Keychron Q3 Max",
@@ -74,7 +75,8 @@
         "Heavy at 1.3kg \u2014 not for portability",
         "South-facing RGB LEDs reduce glow on some keycaps",
         "TKL only \u2014 no numpad option in wireless"
-      ]
+      ],
+      "asin": "B0CF82BQRQ"
     },
     {
       "name": "Razer BlackWidow V4 Pro",
@@ -94,7 +96,8 @@
         "Full-size layout takes significant desk real estate",
         "Synapse software can be bloated",
         "Heavy for a keyboard at 1.4kg"
-      ]
+      ],
+      "asin": "B0BXG35V6R"
     },
     {
       "name": "SteelSeries Apex Pro TKL (2023)",
@@ -114,7 +117,8 @@
         "Wired only (no wireless option)",
         "Switch adjustment requires SteelSeries Engine software",
         "Higher price than comparable wired TKL boards"
-      ]
+      ],
+      "asin": "B0BPSKCTPF"
     },
     {
       "name": "Corsair K70 RGB PRO Mini",
@@ -134,7 +138,8 @@
         "No wireless option \u2014 wired only",
         "Function-layer required for navigation and media keys",
         "Limited software compared to full-size siblings"
-      ]
+      ],
+      "asin": "B09MFWJ7Q8"
     },
     {
       "name": "Redragon K628 Pro",
@@ -154,7 +159,8 @@
         "Louder switch sounds than premium alternatives",
         "Software is basic compared to major brands",
         "Stabilizers need lubing out of box for best feel"
-      ]
+      ],
+      "asin": "B09VDMK4MR"
     }
   ],
   "faq": [

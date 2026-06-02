@@ -22,7 +22,8 @@
       "cons": [
         "At $249.99, it is the most expensive dock in this roundup and requires the host laptop to support Thunderbolt 4 or USB4 \u2014 standard USB-C laptops will not achieve full bandwidth or display output capability.",
         "The vertical stand form factor occupies a 3.2-by-6-inch desk footprint \u2014 smaller than horizontal docks but requires a stable surface; the dock wobbles slightly when heavy Thunderbolt cables are connected at multiple ports simultaneously."
-      ]
+      ],
+      "asin": "B09GK8LBWS"
     },
     {
       "name": "Dell WD22TB4 Thunderbolt 4 Dock",
@@ -39,7 +40,8 @@
       "cons": [
         "Dell ExpressConnect automatic features only function with Dell-brand laptops \u2014 on MacBook Pro, HP, or Lenovo systems, the dock operates as a standard Thunderbolt 4 dock without auto-configuration benefits.",
         "The rectangular horizontal form factor measures 9.3 by 2.6 inches, occupying more desk width than vertical-stand docks \u2014 a space consideration for tightly configured dual-monitor workstations."
-      ]
+      ],
+      "asin": "B0B7P6ZNFB"
     },
     {
       "name": "Kensington SD5750T Thunderbolt 4 Dock",
@@ -56,7 +58,8 @@
       "cons": [
         "At $199.99, it is priced between the Plugable and CalDigit options without offering the port count of the CalDigit TS4 \u2014 users who prioritize maximum port density over enterprise features are better served by the TS4.",
         "The upstream Thunderbolt 4 cable is a short 0.8-meter length \u2014 for desk configurations where the dock sits more than 2 feet from the laptop, a separately purchased longer Thunderbolt 4 cable is required."
-      ]
+      ],
+      "asin": "B09FMLSZSQ"
     },
     {
       "name": "Anker 13-in-1 USB-C Docking Station",
@@ -73,7 +76,8 @@
       "cons": [
         "Dual 4K display output is limited to 30Hz each when both HDMI ports are used simultaneously \u2014 users requiring 4K/60Hz on two displays need a Thunderbolt dock instead of this USB-C solution.",
         "Does not support the 96W+ power delivery required by high-performance laptops like the MacBook Pro 16-inch and Dell XPS 15 \u2014 these machines will charge slowly or drain the battery during intensive workloads."
-      ]
+      ],
+      "asin": "B07CZPKJX3"
     },
     {
       "name": "OWC Thunderbolt Hub",
@@ -90,7 +94,8 @@
       "cons": [
         "Port selection is intentionally minimal \u2014 four Thunderbolt 4 ports with no USB-A, ethernet, HDMI, or SD card slots. Requires additional adapters for users who need legacy USB peripherals alongside Thunderbolt devices.",
         "60W power delivery via the upstream port is insufficient for 16-inch MacBook Pros and high-performance Windows laptops \u2014 these systems will not achieve full charge speed or may slowly discharge during intensive workloads."
-      ]
+      ],
+      "asin": "B094MB3RFN"
     },
     {
       "name": "Plugable 12-in-1 USB-C Triple Monitor Docking Station",
@@ -107,7 +112,8 @@
       "cons": [
         "DisplayLink technology requires driver installation and uses 3\u20135% CPU overhead during normal use \u2014 noticeable on older or lower-powered laptops.",
         "USB-A ports operate at USB 3.0 (5Gbps) rather than USB 3.2 Gen 2 (10Gbps) found on premium docks, limiting external SSD transfer speeds to approximately 500 MB/s."
-      ]
+      ],
+      "asin": "B09NQQ1G1N"
     }
   ],
   "buying_guide": [

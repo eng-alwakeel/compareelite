@@ -24,7 +24,8 @@
       "cons": [
         "Full features require Arlo Secure subscription",
         "Battery life shorter with heavy motion activity"
-      ]
+      ],
+      "asin": "B0BQHQ4JGX"
     },
     {
       "name": "Ring Spotlight Cam Plus, Battery",
@@ -42,7 +43,8 @@
       "cons": [
         "Video history requires Ring Protect subscription ($10/month per camera or $20/month unlimited) \u2014 without it, only live view and real-time motion notifications are available.",
         "1080p HD resolution does not match the 2K and 3K resolution offered by the Arlo Pro 5S and Eufy SoloCam S340 at comparable or lower price points."
-      ]
+      ],
+      "asin": "B09JZ5BG26"
     },
     {
       "name": "Google Nest Cam Outdoor (Battery)",
@@ -61,7 +63,8 @@
       "cons": [
         "Continuous recording requires Nest Aware Plus subscription",
         "App less feature-rich than Arlo"
-      ]
+      ],
+      "asin": "B09NXKTDXM"
     },
     {
       "name": "Eufy Security SoloCam S340 Solar Camera",
@@ -80,7 +83,8 @@
       "cons": [
         "Solar charging requires at least 3 hours of direct sun",
         "Requires HomeBase for some advanced features"
-      ]
+      ],
+      "asin": "B0BFLZ3ZQF"
     },
     {
       "name": "Blink Outdoor 4 (4th Gen) Smart Security Camera",
@@ -99,7 +103,8 @@
       "cons": [
         "No color night vision",
         "Full features require Blink subscription"
-      ]
+      ],
+      "asin": "B0B1N5HW22"
     },
     {
       "name": "Wyze Cam Outdoor v2 Smart Home Security Camera",
@@ -118,7 +123,8 @@
       "cons": [
         "1080p \u2014 lower resolution than premium options",
         "Battery life shorter than Blink"
-      ]
+      ],
+      "asin": "B09XR7HDZS"
     }
   ],
   "buying_guide": [

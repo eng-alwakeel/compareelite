@@ -25,7 +25,8 @@
         "Higher upfront cost than comparable non-smart units",
         "Installation requires a standard double-hung window \u2014 not compatible with casement windows",
         "ThinQ app setup can be finicky with some router configurations"
-      ]
+      ],
+      "asin": "B07SFDNNJM"
     },
     {
       "name": "Midea U Inverter Window Air Conditioner MAW08V1QWT",
@@ -45,7 +46,8 @@
         "U-shaped design requires specific window dimensions \u2014 measure carefully before buying",
         "Maximum BTU (8,000) may be insufficient for spaces over 350 square feet in extreme heat",
         "MSmartHome app has occasional connectivity drops requiring re-pairing"
-      ]
+      ],
+      "asin": "B0876FQL7M"
     },
     {
       "name": "GE Profile PHC06LY Smart Ultra Quiet Window Air Conditioner",
@@ -65,7 +67,8 @@
         "Premium price is the highest in this category",
         "6,150 BTU effective cooling capacity is on the lower side for large rooms",
         "SmartHQ app is less polished than competitor apps from LG and Midea"
-      ]
+      ],
+      "asin": "B09W2JF7WT"
     },
     {
       "name": "Frigidaire FHWW083WBE Cool Connect Smart Window Air Conditioner",
@@ -85,7 +88,8 @@
         "Does not support Apple HomeKit",
         "App notifications can be delayed compared to premium competitors",
         "Slightly louder than LG counterpart at maximum cooling setting"
-      ]
+      ],
+      "asin": "B07GQJK26L"
     },
     {
       "name": "Windmill AC Smart Window Air Conditioner",
@@ -105,7 +109,8 @@
         "Higher price per BTU than functional competitors",
         "Limited to Amazon and Google ecosystems \u2014 no Apple HomeKit support",
         "Windmill app has fewer advanced automation features than LG ThinQ"
-      ]
+      ],
+      "asin": "B09FH2L6DZ"
     },
     {
       "name": "hOmeLabs 10000 BTU Smart Window Air Conditioner",
@@ -125,7 +130,8 @@
         "App is basic compared to LG and Midea \u2014 scheduling features are limited",
         "Heavier unit requires two people for safe installation",
         "Louder than premium competitors at comparable BTU output"
-      ]
+      ],
+      "asin": "B0B6Q34CCQ"
     }
   ],
   "buying_guide": [

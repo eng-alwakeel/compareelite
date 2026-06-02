@@ -27,7 +27,8 @@
       ],
       "cons": [
         "Companion app is required to unlock advanced EQ and limiter settings, adding a mandatory smartphone dependency for professionals"
-      ]
+      ],
+      "asin": "B0DDLCLFFX"
     },
     {
       "rank": 2,
@@ -44,7 +45,8 @@
       ],
       "cons": [
         "Sensitivity drops approximately 6dB in high-interference RF environments such as crowded convention halls, requiring the speakers to stay within 30m of the receiver"
-      ]
+      ],
+      "asin": "B0CP7QXWPN"
     },
     {
       "rank": 3,
@@ -61,7 +63,8 @@
       ],
       "cons": [
         "Fixed 1.2m cable length is too short for mounting the transmitter at the hip, requiring a separate 1m extension cable ($14.99) for that placement"
-      ]
+      ],
+      "asin": "B07WM65GTF"
     },
     {
       "rank": 4,
@@ -78,7 +81,8 @@
       ],
       "cons": [
         "High-pass filter rolls off below 200Hz, which can thin out deeper voices in reverberant spaces; a separate high-pass defeat adapter is not included"
-      ]
+      ],
+      "asin": "B09MJ1N2D9"
     },
     {
       "rank": 5,
@@ -95,7 +99,8 @@
       ],
       "cons": [
         "Tuned specifically for DJI transmitters; connecting to non-DJI wireless systems requires a separate TRS-to-TRRS adapter and results in a 2dB sensitivity drop"
-      ]
+      ],
+      "asin": "B0CJXR9YZF"
     },
     {
       "rank": 6,
@@ -112,7 +117,8 @@
       ],
       "cons": [
         "Hard-wired 6.1m USB-A cable cannot be shortened or replaced; presenters who need to move more than 6m from their computer require a powered USB extension hub"
-      ]
+      ],
+      "asin": "B0176NRE1G"
     }
   ],
   "buying_guide": [

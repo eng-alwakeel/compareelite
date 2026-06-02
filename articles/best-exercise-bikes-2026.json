@@ -26,7 +26,8 @@
       "cons": [
         "iFIT subscription is required at $39 per month or $396 per year to access the full library of trainer-led classes, scenic rides, and automatic resistance features \u2014 without it the S22i functions as a manual resistance bike with basic metric display only, significantly limiting its $1,999 value.",
         "At 203 pounds assembled the S22i is the heaviest bike in this guide and requires two people to move between rooms \u2014 integrated transport wheels require tipping the bike to a 45-degree angle before rolling, which can be difficult for one person to manage safely."
-      ]
+      ],
+      "asin": "B08NTV6FSN"
     },
     {
       "name": "Schwinn IC4 Indoor Cycling Bike",
@@ -43,7 +44,8 @@
       "cons": [
         "The IC4 does not include an integrated screen \u2014 riders must mount their own tablet or phone using the included holder bracket and run their preferred app, which creates a dependency on a separate device and the physical stability of the tablet mount during high-intensity intervals.",
         "Maximum rider weight capacity of 330 pounds is lower than the NordicTrack S22i's 350 pounds \u2014 riders near the capacity limit should verify their weight against the maximum before purchase, as exceeding stated capacity voids the 10-year frame warranty."
-      ]
+      ],
+      "asin": "B07WZXSDKW"
     },
     {
       "name": "Echelon EX-5s Connect Bike",
@@ -60,7 +62,8 @@
       "cons": [
         "Echelon's proprietary app platform limits class access to Echelon-produced content \u2014 the rotating touchscreen does not run third-party apps natively, so Zwift and Peloton require mounting a separate tablet and using the bike in unconnected mode.",
         "The bike requires Echelon Premier subscription at $34.99 per month to access class history, leaderboard, and live scheduling features \u2014 without subscription the display shows only basic ride metrics, making the $1,239 investment less valuable than the Schwinn IC4 for app-agnostic buyers."
-      ]
+      ],
+      "asin": "B09KTJYLRQ"
     },
     {
       "name": "Bowflex VeloCore 16-inch Bike",
@@ -77,7 +80,8 @@
       "cons": [
         "LeanMode disengages automatically above resistance level 10, limiting the lateral movement feature to moderate intensity \u2014 the feature that differentiates the VeloCore from standard bikes is not available during the high-intensity intervals where core engagement would be most beneficial.",
         "JRNY subscription is required at $19.99 per month after the included first year \u2014 without it, the 16-inch display reverts to basic metric display and the AI adaptive training features are disabled, reducing the bike's practical value after year one significantly."
-      ]
+      ],
+      "asin": "B08P9QNW5K"
     },
     {
       "name": "Sunny Health & Fitness SF-B901B Pro Bike",
@@ -94,7 +98,8 @@
       "cons": [
         "Friction-based resistance generates heat and wear on the brake pad that requires replacement every 12 to 18 months at an approximate cost of $25 \u2014 magnetic resistance alternatives like the Schwinn IC4 have no consumable components other than pedal bearings.",
         "No Bluetooth connectivity, no screen, and no app integration means heart rate monitoring, watt output, and training data must be tracked manually or via a separate cycling computer \u2014 a significant limitation for data-driven cyclists who use training zones."
-      ]
+      ],
+      "asin": "B00XMHI866"
     },
     {
       "name": "Marcy Magnetic Recumbent Bike NS-40502R",
@@ -111,7 +116,8 @@
       "cons": [
         "The eight magnetic resistance levels provide limited intensity range \u2014 experienced cyclists and users targeting cardiovascular improvements above 60% maximum heart rate will exhaust the highest resistance level within 4 to 6 weeks of regular training and require upgrading to a higher-resistance bike.",
         "Maximum rider height of 5 feet 10 inches limits ergonomic fit for taller users \u2014 riders above 6 feet will find that even maximum seat rail extension leaves the knees slightly bent at the top of the pedal stroke, which reduces pedaling efficiency and increases knee strain during longer sessions."
-      ]
+      ],
+      "asin": "B07SQB68Z3"
     }
   ],
   "buying_guide": [

@@ -24,7 +24,8 @@
       "cons": [
         "iPhone exclusive \u2014 incompatible with Android phones",
         "18-hour battery life requires daily charging"
-      ]
+      ],
+      "asin": "B0CHX9N594"
     },
     {
       "name": "Samsung Galaxy Watch 6 Classic (47mm)",
@@ -43,7 +44,8 @@
       "cons": [
         "Best features require Samsung Galaxy smartphone",
         "Rotating bezel design adds thickness to profile"
-      ]
+      ],
+      "asin": "B0C79HHKQS"
     },
     {
       "name": "Garmin Forerunner 265",
@@ -62,7 +64,8 @@
       "cons": [
         "App ecosystem thinner than Apple Watch or Galaxy Watch",
         "Sports-focused design less suited for formal occasions"
-      ]
+      ],
+      "asin": "B0BS8MG7PT"
     },
     {
       "name": "Fitbit Sense 2",
@@ -81,7 +84,8 @@
       "cons": [
         "Best health features require Fitbit Premium subscription",
         "App ecosystem more limited than Apple Watch or Galaxy"
-      ]
+      ],
+      "asin": "B0B4MRWNQF"
     },
     {
       "name": "Amazfit GTR 4",
@@ -100,7 +104,8 @@
       "cons": [
         "Zepp OS app library much smaller than WearOS or watchOS",
         "Third-party app support limited compared to premium options"
-      ]
+      ],
+      "asin": "B0B8Y8NDMC"
     },
     {
       "name": "Apple Watch Ultra 2",
@@ -119,7 +124,8 @@
       "cons": [
         "Very high price targets serious outdoor athletes only",
         "49mm size too large for smaller wrists"
-      ]
+      ],
+      "asin": "B0CHX8CZQH"
     }
   ],
   "buying_guide": [

@@ -31,7 +31,8 @@
         "Premium price at $230",
         "No real-time PM2.5 particulate sensor \u2014 radon and CO2 focus",
         "Full air quality data requires smartphone app \u2014 no standalone display"
-      ]
+      ],
+      "asin": "B07JB8QWH6"
     },
     {
       "rank": 2,
@@ -52,7 +53,8 @@
         "Highest price in this roundup at $270",
         "Larger footprint at 3.3 x 3.3 x 3.8 inches compared to compact alternatives",
         "No radon measurement capability"
-      ]
+      ],
+      "asin": "B0784TZFRW"
     },
     {
       "rank": 3,
@@ -73,7 +75,8 @@
         "No Wi-Fi or Bluetooth \u2014 USB export only for data retrieval",
         "Formaldehyde sensor requires warm-up period for accurate readings",
         "Larger device not suited for permanent wall mounting"
-      ]
+      ],
+      "asin": "B0BRSLQKLD"
     },
     {
       "rank": 4,
@@ -94,7 +97,8 @@
         "No NDIR CO2 sensor \u2014 electrochemical sensor less accurate than NDIR above 2000 ppm",
         "App requires account registration for data access",
         "No radon measurement"
-      ]
+      ],
+      "asin": "B09GXF94FW"
     },
     {
       "rank": 5,
@@ -115,7 +119,8 @@
         "Does not include a direct CO2 sensor \u2014 PM2.5, temperature, and humidity focus only",
         "PM2.5 accuracy on lower end compared to IQAir AirVisual Pro",
         "App notifications can be slow to trigger after threshold breach"
-      ]
+      ],
+      "asin": "B0BZV1XG6Y"
     },
     {
       "rank": 6,
@@ -136,7 +141,8 @@
         "Highest price in this roundup at $329",
         "Requires AC power \u2014 no battery backup mode",
         "Overkill for standard residential use without specific pollutant concerns"
-      ]
+      ],
+      "asin": "B076PV9X99"
     }
   ],
   "buying_guide": [

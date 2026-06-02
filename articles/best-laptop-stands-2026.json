@@ -25,7 +25,8 @@
       ],
       "cons": [
         "At $43 it is not the cheapest option, and the fixed-height design means you cannot adjust the elevation for non-standard desk or chair heights, which may not suit very tall or short users."
-      ]
+      ],
+      "asin": "B000OOYECC"
     },
     {
       "name": "Twelve South Curve Laptop Stand",
@@ -41,7 +42,8 @@
       ],
       "cons": [
         "At $59 it is the most expensive fixed-height stand in our test, and the media shelf under the arch reduces airflow slightly compared to open-frame designs, though surface temperatures remained within acceptable limits in testing."
-      ]
+      ],
+      "asin": "B0BZ55VHVP"
     },
     {
       "name": "Lamicall Adjustable Laptop Stand",
@@ -57,7 +59,8 @@
       ],
       "cons": [
         "The locking mechanism requires two hands to release for height adjustment, making single-handed position changes mid-meeting impossible unlike the smooth tool-free adjustment on premium stands."
-      ]
+      ],
+      "asin": "B08M94BTYC"
     },
     {
       "name": "Nexstand K2 Laptop Stand",
@@ -73,7 +76,8 @@
       ],
       "cons": [
         "The plastic frame flexes noticeably under laptops heavier than 5 pounds when positioned at the maximum 12.6-inch height, requiring users to keep their hand off the keyboard during video calls to prevent wobble."
-      ]
+      ],
+      "asin": "B07L88BDPP"
     },
     {
       "name": "Nulaxy Laptop Stand",
@@ -90,7 +94,8 @@
       "cons": [
         "The silver aluminum finish shows fingerprints prominently and requires frequent wiping to maintain a clean appearance, which may be a concern for users who prioritize aesthetics alongside function.",
         "Height increments jump in 0.8-inch steps rather than continuous adjustment, meaning some users cannot achieve their precise preferred ergonomic height without supplementing with a chair adjustment."
-      ]
+      ],
+      "asin": "B07P54RSPY"
     },
     {
       "name": "Satechi Aluminum Laptop Stand",
@@ -106,7 +111,8 @@
       "cons": [
         "At $60 the fixed design at a single 6-inch height offers less flexibility than the Lamicall adjustable stand at $36, making it a purely aesthetic choice for users whose chair and desk heights happen to align with it.",
         "The hard aluminum frame does not include padding on the contact points, requiring users to attach the included adhesive rubber pads carefully during setup to prevent scratching the laptop chassis."
-      ]
+      ],
+      "asin": "B01I407FXW"
     }
   ],
   "buying_guide": [

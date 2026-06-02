@@ -28,7 +28,8 @@
       "cons": [
         "At $99, it is the third most expensive option in this roundup, and the body fat measurement accuracy depends heavily on hydration status \u2014 readings can vary by up to 3 percentage points between morning and evening.",
         "The scale uses 4 AA batteries with an estimated 18-month life, but there is no rechargeable option and no battery level indicator until the low battery warning appears on the display."
-      ]
+      ],
+      "asin": "B01N3G8YQP"
     },
     {
       "rank": 2,
@@ -46,7 +47,8 @@
       "cons": [
         "The handheld grip measurement requires you to hold the electrodes out at a 90-degree angle for 10 seconds during each weigh-in, adding roughly 30 seconds to the process compared to step-on-only scales.",
         "The EufyLife app does not natively integrate with Garmin Connect, so Garmin users need a third-party sync bridge like Health Sync to get data into their Garmin ecosystem."
-      ]
+      ],
+      "asin": "B08HGMQNKK"
     },
     {
       "rank": 3,
@@ -64,7 +66,8 @@
       "cons": [
         "Bluetooth-only connectivity means you must have your phone within 33 feet and the Renpho app open during each weigh-in \u2014 there is no Wi-Fi auto-sync like on the Withings Body+ or Greater Goods model.",
         "The bioelectrical impedance electrodes are platform-only with no handheld component, which limits upper body measurement accuracy compared to the Eufy P2 Pro's 8-electrode system."
-      ]
+      ],
+      "asin": "B07H2LG2HF"
     },
     {
       "rank": 4,
@@ -82,7 +85,8 @@
       "cons": [
         "At $149, the Index S2 is the second most expensive option in this roundup, and its body composition tracking is not meaningfully more accurate than the $99 Withings Body+ \u2014 you are paying primarily for Garmin Connect integration.",
         "The Garmin Connect app's body composition graphs are less intuitive than Withings Health Mate or Eufy's 3D body model, which may make trend visualization harder for casual users."
-      ]
+      ],
+      "asin": "B08DZGT6MG"
     },
     {
       "rank": 5,
@@ -100,7 +104,8 @@
       "cons": [
         "The Aria Air measures only weight and BMI \u2014 it does not measure body fat percentage, muscle mass, or any other body composition metric, making it the least feature-rich scale in this roundup.",
         "Bluetooth-only with no Wi-Fi sync, requiring the Fitbit app to be active on your phone within pairing range during every weigh-in to successfully record your data."
-      ]
+      ],
+      "asin": "B07TWMDHX2"
     },
     {
       "rank": 6,
@@ -118,7 +123,8 @@
       "cons": [
         "Tracks 13 metrics compared to the 16 on the Eufy P2 Pro, and supports fewer simultaneous user profiles than the Withings Body+ at the same price tier.",
         "App store ratings average 4.0 stars, slightly below the 4.6 stars for the Renpho app \u2014 some users report occasional sync delays on iOS."
-      ]
+      ],
+      "asin": "B0CHY6ZVRY"
     }
   ],
   "buying_guide": [

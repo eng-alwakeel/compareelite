@@ -26,7 +26,8 @@
       "cons": [
         "The ear cups do not fold flat for compact storage, only rotating to lie semi-flat, which makes the included carrying case bulkier than those for the Bose QC45 and Sennheiser Momentum 4.",
         "Touch controls on the right ear cup are highly responsive but occasionally trigger unintentionally when adjusting fit, which can skip tracks or adjust volume during active use."
-      ]
+      ],
+      "asin": "B09XS7JWHH"
     },
     {
       "name": "Bose QuietComfort 45",
@@ -43,7 +44,8 @@
       "cons": [
         "Does not support Hi-Res codecs like LDAC or aptX HD \u2014 audio transmission is limited to SBC and AAC, which means audiophile listeners will notice a quality ceiling compared to the Sony WH-1000XM5.",
         "The app offers fewer EQ customization options than Sony's companion app, limiting fine-tuning for users who want precise bass, midrange, or treble adjustments beyond the three preset profiles."
-      ]
+      ],
+      "asin": "B098FKXT8L"
     },
     {
       "name": "Apple AirPods Max",
@@ -60,7 +62,8 @@
       "cons": [
         "At $549 they are the most expensive pair in this guide and best justified only for users deeply embedded in the Apple ecosystem \u2014 Android users lose all smart features beyond basic ANC and Bluetooth playback.",
         "The Smart Case only covers the ear cups and does not protect the headband, leaving the most visible part of the headphone exposed during travel inside a bag."
-      ]
+      ],
+      "asin": "B08PZHYWJS"
     },
     {
       "name": "Sennheiser Momentum 4 Wireless",
@@ -77,7 +80,8 @@
       "cons": [
         "ANC performance, while effective in low-frequency environments like trains and aircraft engines, is slightly less aggressive than the Sony WH-1000XM5 at blocking mid-range sounds like voices in an open-plan office.",
         "The companion app requires an account login before enabling EQ customization, which adds unnecessary friction for users who simply want to adjust the sound profile without creating a Sennheiser account."
-      ]
+      ],
+      "asin": "B0B6GHW1SX"
     },
     {
       "name": "Sony WH-1000XM4",
@@ -94,7 +98,8 @@
       "cons": [
         "The ear pad material on the XM4 retains heat slightly more than the XM5's updated softer protein leather, which becomes noticeable during extended listening sessions in warm environments above 75 degrees Fahrenheit.",
         "Speakeasy conversation awareness detection, while useful, occasionally activates unintentionally in noisy environments when it misidentifies ambient sounds as the user beginning to speak."
-      ]
+      ],
+      "asin": "B0863TXGM3"
     },
     {
       "name": "Bose QuietComfort 35 II",
@@ -111,7 +116,8 @@
       "cons": [
         "Released in 2017, the QC35 II lacks modern features including multipoint Bluetooth pairing, LDAC support, and the Aware transparency mode found in Bose's newer QC45, limiting its utility as a daily driver in 2026.",
         "Maximum ANC level generates a slight pressure sensation in the ear canal that some users find fatiguing after 2 to 3 hours \u2014 a characteristic that Bose addressed in the redesigned QC45 but is still present in the older model."
-      ]
+      ],
+      "asin": "B0756CYWWD"
     }
   ],
   "buying_guide": [

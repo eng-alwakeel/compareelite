@@ -54,7 +54,8 @@
         "Most expensive option \u2014 $50 per bulb",
         "Requires Hue Bridge ($60) for full functionality",
         "App can feel complex for casual users"
-      ]
+      ],
+      "asin": "B0BWT7XHPM"
     },
     {
       "name": "Kasa Smart KL130 Multicolor",
@@ -74,7 +75,8 @@
         "Cloud-dependent (requires internet for remote access)",
         "Maximum brightness 800 lumens \u2014 less than premium options",
         "No HomeKit support without workarounds"
-      ]
+      ],
+      "asin": "B07T3KRMZT"
     },
     {
       "name": "LIFX Color A19 Wi-Fi LED",
@@ -94,7 +96,8 @@
         "Higher price than Wi-Fi competitors without hub benefits",
         "Heavy Wi-Fi usage \u2014 can crowd networks with many bulbs",
         "App has occasional reliability issues"
-      ]
+      ],
+      "asin": "B01KY02MS4"
     },
     {
       "name": "Govee Smart Light Bulb H6008",
@@ -114,7 +117,8 @@
         "No HomeKit support",
         "Cloud-dependent with data privacy considerations",
         "Build quality below premium alternatives"
-      ]
+      ],
+      "asin": "B09B7DHT96"
     },
     {
       "name": "Sengled Smart LED Soft White A19",
@@ -134,7 +138,8 @@
         "Requires Zigbee hub (Echo Plus, SmartThings, or similar)",
         "White only \u2014 no color or tunable white",
         "Limited to basic on/off/dim functionality"
-      ]
+      ],
+      "asin": "B08C7HJ9WQ"
     },
     {
       "name": "Nanoleaf Essentials Matter A19",
@@ -154,7 +159,8 @@
         "Requires a Thread border router (HomePod mini, Apple TV 4K)",
         "App is less feature-rich than Hue or Govee",
         "Color saturation below Philips Hue at same price"
-      ]
+      ],
+      "asin": "B0BH7Y3Q8Q"
     }
   ],
   "faq": [

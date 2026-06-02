@@ -30,7 +30,8 @@
       "cons": [
         "Amazon Key In-Garage Delivery requires an active Amazon Prime membership to use",
         "No built-in camera \u2014 requires separate purchase of compatible camera for video verification"
-      ]
+      ],
+      "asin": "B00QFXGSIY"
     },
     {
       "rank": 2,
@@ -50,7 +51,8 @@
       "cons": [
         "App interface is less polished than Chamberlain myQ and occasionally slow to reflect status updates",
         "Requires existing opener to be compatible \u2014 does not work with all openers older than 2000"
-      ]
+      ],
+      "asin": "B085T1LVD2"
     },
     {
       "rank": 3,
@@ -70,7 +72,8 @@
       "cons": [
         "Higher price at $65 compared to Meross and Chamberlain retrofit alternatives",
         "Vehicle detection feature requires optional Aladdin Connect Wireless Keypad accessory"
-      ]
+      ],
+      "asin": "B00EL9OSZ4"
     },
     {
       "rank": 4,
@@ -90,7 +93,8 @@
       "cons": [
         "Hub model costs $20 more than the base myQ Smart Garage Control for the same single-door functionality",
         "Amazon Key In-Garage Delivery is unavailable with the hub version in some regions"
-      ]
+      ],
+      "asin": "B07N4MWS4H"
     },
     {
       "rank": 5,
@@ -110,7 +114,8 @@
       "cons": [
         "At $79 it is the most expensive retrofit option in this roundup without the full opener hardware",
         "Geofencing accuracy depends on phone GPS precision and can vary in dense urban areas"
-      ]
+      ],
+      "asin": "B08XBX8FGW"
     },
     {
       "rank": 6,
@@ -130,7 +135,8 @@
       "cons": [
         "Local processing mode requires a dedicated home server setup for full offline capability",
         "App design is functional but less visually polished than Chamberlain myQ counterpart"
-      ]
+      ],
+      "asin": "B07NHHB3NB"
     }
   ],
   "buying_guide": [

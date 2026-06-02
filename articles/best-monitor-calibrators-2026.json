@@ -31,7 +31,8 @@
         "Premium price at $249",
         "i1Profiler software has a steeper learning curve than consumer alternatives",
         "Requires USB-A port \u2014 USB-C adapter needed for modern MacBooks"
-      ]
+      ],
+      "asin": "B085WFXRFH"
     },
     {
       "rank": 2,
@@ -51,7 +52,8 @@
       "cons": [
         "Does not profile printers \u2014 display colorimeter only, no print workflow support",
         "Advanced features require Pro software tier \u2014 basic calibration uses a simplified mode"
-      ]
+      ],
+      "asin": "B08NCN4W33"
     },
     {
       "rank": 3,
@@ -71,7 +73,8 @@
       "cons": [
         "At $260 it costs $70 more than the SpyderX Pro for most of the same core measurement accuracy",
         "Advanced Studio Match multi-monitor sync requires all monitors to support hardware LUTs"
-      ]
+      ],
+      "asin": "B083YTHZP2"
     },
     {
       "rank": 4,
@@ -92,7 +95,8 @@
         "Less accurate on very high-end wide-gamut displays compared to i1Display Pro",
         "Software includes fewer custom target options than i1Profiler",
         "USB-A only connection"
-      ]
+      ],
+      "asin": "B09GQ3HKQF"
     },
     {
       "rank": 5,
@@ -111,7 +115,8 @@
       "cons": [
         "Limited to SDR calibration \u2014 no HDR10 or Dolby Vision workflow support",
         "Less accurate than Pro-tier devices on wide-gamut monitors beyond DCI-P3"
-      ]
+      ],
+      "asin": "B09LHSGXKR"
     },
     {
       "rank": 6,
@@ -132,7 +137,8 @@
         "Highest price in this roundup at $399",
         "Overkill for display-only calibration without a print workflow",
         "Calibration takes 15 to 20 minutes versus 5 to 8 for colorimeters"
-      ]
+      ],
+      "asin": "B003KR28V6"
     }
   ],
   "buying_guide": [

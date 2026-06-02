@@ -54,7 +54,8 @@
         "Premium price at $110 puts it above budget alternatives",
         "No mechanical switch option for users who prefer tactile feedback",
         "Numpad included adds width \u2014 larger footprint than TKL alternatives"
-      ]
+      ],
+      "asin": "B0BWRMJVK7"
     },
     {
       "name": "Keychron K2 Wireless Mechanical Keyboard",
@@ -74,7 +75,8 @@
         "Heavier than slim keyboards at 820g due to aluminum frame",
         "No touchpad or integrated numpad in 75% layout",
         "RGB backlight reduces battery life significantly when enabled"
-      ]
+      ],
+      "asin": "B07ZF9CVX9"
     },
     {
       "name": "Apple Magic Keyboard with Touch ID (2021)",
@@ -94,7 +96,8 @@
         "macOS only \u2014 poor Windows compatibility",
         "No Windows/Linux function keys or layout",
         "No backlighting on standard version"
-      ]
+      ],
+      "asin": "B09BR29P92"
     },
     {
       "name": "Logitech K380 Multi-Device Bluetooth Keyboard",
@@ -114,7 +117,8 @@
         "No backlight",
         "Compact layout \u2014 shorter key travel than full-size",
         "AA batteries rather than rechargeable"
-      ]
+      ],
+      "asin": "B0148NPH9I"
     },
     {
       "name": "Microsoft Ergonomic Keyboard",
@@ -134,7 +138,8 @@
         "Split layout has a learning curve of 1\u20132 weeks for adjustment",
         "No backlight for low-light typing environments",
         "Large footprint at 46cm wide requires dedicated desk space"
-      ]
+      ],
+      "asin": "B07WX3YJDL"
     },
     {
       "name": "Corsair K65 RGB Mini Wireless Mechanical Keyboard",
@@ -154,7 +159,8 @@
         "60% layout omits function row and arrow keys \u2014 requires Fn layer use",
         "Premium price at $110 for compact form factor",
         "iCUE software required for full customization \u2014 Windows/macOS only"
-      ]
+      ],
+      "asin": "B09JHVZSTB"
     }
   ],
   "faq": [

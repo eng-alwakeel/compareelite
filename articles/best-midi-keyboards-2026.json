@@ -4,7 +4,7 @@
   "category": "Tech",
   "date": "2026-05-14",
   "read_time": "9 min read",
-  "thumbnail": "https://images-na.ssl-images-amazon.com/images/P/B0886ZPWC8.01._SL500_.jpg",
+  "thumbnail": "https://m.media-amazon.com/images/P/B0886ZPWC8.01._SL500_.jpg",
   "excerpt": "The best MIDI keyboards in 2026 rank the Akai MPK Mini MK3 at the top with 25 keys, 8 backlit pads, and a $99 price point that no rival matches.",
   "author": "Sarah Mitchell",
   "stats": {
@@ -27,7 +27,8 @@
       ],
       "cons": [
         "Mini keys measure 12 mm narrower than full-size keys, requiring 2 to 4 weeks of adjustment for players accustomed to standard piano spacing"
-      ]
+      ],
+      "asin": "B0886ZPWC8"
     },
     {
       "rank": 2,
@@ -44,7 +45,8 @@
       ],
       "cons": [
         "Synth-action keys have 4 mm shallower travel than semi-weighted alternatives, making sustained classical piano practice feel less realistic after 45-minute sessions"
-      ]
+      ],
+      "asin": "B0C325NVBQ"
     },
     {
       "rank": 3,
@@ -61,7 +63,8 @@
       ],
       "cons": [
         "No drum pads or fader strip included, requiring a separate pad controller for beat-programming workflows that involve more than 2 simultaneous MIDI output channels"
-      ]
+      ],
+      "asin": "B07GY8D3KW"
     },
     {
       "rank": 4,
@@ -78,7 +81,8 @@
       ],
       "cons": [
         "Unit weighs 5.3 lbs, making it 1.8 lbs heavier than the Nektar Impact GX49 and reducing portability for producers who move between studios more than once per week"
-      ]
+      ],
+      "asin": "B08MVD4YVJ"
     },
     {
       "rank": 5,
@@ -95,7 +99,8 @@
       ],
       "cons": [
         "No drum pads or dedicated encoder knobs included, meaning beat-production and parameter-sweep workflows require pairing this unit with a second controller"
-      ]
+      ],
+      "asin": "B01LXF9OAD"
     },
     {
       "rank": 6,
@@ -112,7 +117,8 @@
       ],
       "cons": [
         "1.5 mm key travel is 7 mm shallower than semi-weighted controllers, requiring 3 to 4 weeks of muscle-memory adjustment for pianists used to deeper key action"
-      ]
+      ],
+      "asin": "B004M8UZS8"
     }
   ],
   "buying_guide": [

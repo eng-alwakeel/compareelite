@@ -24,7 +24,8 @@
       "cons": [
         "Roku OS interface includes ads on the home screen",
         "No local storage for offline media playback"
-      ]
+      ],
+      "asin": "B09BKCDXB9"
     },
     {
       "name": "Amazon Fire TV Stick 4K Max (2nd Gen)",
@@ -43,7 +44,8 @@
       "cons": [
         "Amazon content and ads prominently featured in UI",
         "Best value only if already invested in Amazon ecosystem"
-      ]
+      ],
+      "asin": "B0BP9SNVH9"
     },
     {
       "name": "Apple TV 4K (3rd Generation, Wi-Fi + Ethernet, 128GB)",
@@ -63,7 +65,8 @@
         "Premium price compared to Roku and Fire TV alternatives",
         "Best experience requires full Apple ecosystem commitment",
         "Limited app selection compared to Android TV platform"
-      ]
+      ],
+      "asin": "B0BJMGB95J"
     },
     {
       "name": "Google Chromecast with Google TV (4K)",
@@ -82,7 +85,8 @@
       "cons": [
         "Only 8 GB storage limits installed app count",
         "Google Assistant occasionally requires repeated commands"
-      ]
+      ],
+      "asin": "B08KRV7NRD"
     },
     {
       "name": "Roku Express 4K+",
@@ -101,7 +105,8 @@
       "cons": [
         "Box form factor requires HDMI cable (included) and power outlet",
         "Less powerful than Streaming Stick 4K in app load times"
-      ]
+      ],
+      "asin": "B09ZBKDGSP"
     },
     {
       "name": "NVIDIA SHIELD TV Pro Streaming Media Player",
@@ -120,7 +125,8 @@
       "cons": [
         "Premium price hard to justify for casual streaming use",
         "Larger box form factor requires shelf or cabinet placement"
-      ]
+      ],
+      "asin": "B07YPG74ZR"
     }
   ],
   "buying_guide": [

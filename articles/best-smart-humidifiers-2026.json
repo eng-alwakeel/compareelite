@@ -22,7 +22,8 @@
       "cons": [
         "At $849.99, it is the most expensive product in this roundup by a significant margin \u2014 the premium is justified only for buyers who genuinely need simultaneous purification, humidification, and cooling in a single device.",
         "The HEPA filter and formaldehyde cartridge both require annual replacement at approximately $60\u2013$80 total \u2014 ongoing consumable costs that must be factored into the total cost of ownership."
-      ]
+      ],
+      "asin": "B09X97BSVL"
     },
     {
       "name": "Levoit Classic 300S Ultrasonic Smart Humidifier",
@@ -39,7 +40,8 @@
       "cons": [
         "Ultrasonic technology can produce white dust mineral deposits on nearby surfaces when used with hard tap water \u2014 using distilled or demineralized water eliminates this issue but adds a minor ongoing water cost.",
         "The 300-square-foot coverage area is sufficient for a bedroom or home office but does not cover open-plan living spaces \u2014 users with large rooms need to position the unit strategically or choose a higher-output model."
-      ]
+      ],
+      "asin": "B08L76BBXS"
     },
     {
       "name": "AIRCARE Digital Whole-House Evaporative Humidifier (MA1201)",
@@ -56,7 +58,8 @@
       "cons": [
         "The AIRCARE MA1201 does not include Wi-Fi connectivity or smartphone app control \u2014 it is a high-performance traditional evaporative humidifier without the smart home integration features of Levoit or Dyson models.",
         "Evaporative wicks require replacement every 1\u20133 months depending on water hardness, adding approximately $20\u2013$40 per year in filter replacement costs that ultrasonic models without filters do not incur."
-      ]
+      ],
+      "asin": "B0014DHXGE"
     },
     {
       "name": "Honeywell HEV685W Top Fill Console Humidifier",
@@ -73,7 +76,8 @@
       "cons": [
         "Does not include Wi-Fi app connectivity or voice assistant integration \u2014 all controls are physical buttons on the unit itself, placing it in the traditional rather than smart category despite strong performance.",
         "Coverage area rated at up to 600 square feet \u2014 smaller than whole-home evaporative models \u2014 making it best suited for single-room applications rather than open-plan spaces."
-      ]
+      ],
+      "asin": "B07FXYHZCF"
     },
     {
       "name": "TaoTronics Cool Mist Ultrasonic Humidifier (TT-AH001)",
@@ -90,7 +94,8 @@
       "cons": [
         "Does not support Alexa, Google Home, or Apple HomeKit integration \u2014 smart features are limited to the TaoTronics app without third-party voice assistant or home automation compatibility.",
         "Coverage area is rated for rooms up to 320 square feet \u2014 adequate for a standard bedroom but insufficient for living rooms, dining areas, or open-plan kitchen spaces above this size."
-      ]
+      ],
+      "asin": "B07CNJNR6T"
     },
     {
       "name": "Vicks Warm Mist Humidifier Filter-Free 1-Gallon Tank (V745A)",
@@ -107,7 +112,8 @@
       "cons": [
         "No Wi-Fi connectivity, app control, or smart home platform integration \u2014 operates entirely via physical controls on the unit body, making it a value-focused traditional humidifier rather than a smart device.",
         "Warm mist technology uses a heating element \u2014 not recommended for households with young children due to hot water burn risk; position out of reach of children."
-      ]
+      ],
+      "asin": "B001FWXKTA"
     }
   ],
   "buying_guide": [

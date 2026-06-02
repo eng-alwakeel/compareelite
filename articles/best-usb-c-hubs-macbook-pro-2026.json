@@ -30,7 +30,8 @@
       "cons": [
         "At $400, the price is only justified for permanent desk setups with heavy daily use",
         "Large 7-inch by 4-inch footprint makes it impractical for travel or shared workspaces"
-      ]
+      ],
+      "asin": "B09GK8LBWS"
     },
     {
       "rank": 2,
@@ -49,7 +50,8 @@
       "cons": [
         "HDMI output is capped at 4K at 60Hz with no support for 4K at 120Hz or 8K resolutions",
         "SD card reader is limited to UHS-I at 104 MB/s, which slows large RAW photo imports compared to UHS-II hubs"
-      ]
+      ],
+      "asin": "B087QZVQJX"
     },
     {
       "rank": 3,
@@ -68,7 +70,8 @@
       "cons": [
         "90W charging may slow-charge or fail to sustain battery on 16-inch MacBook Pro during maximum CPU and GPU load",
         "At $250, the price is high for users who do not need Thunderbolt 4 downstream speeds"
-      ]
+      ],
+      "asin": "B09MG5GJQL"
     },
     {
       "rank": 4,
@@ -87,7 +90,8 @@
       "cons": [
         "60W charging is insufficient for 14-inch and 16-inch MacBook Pro under heavy load, causing slow charge or battery drain",
         "Only 2 USB-A ports compared to 3 or 4 on competing hubs at a similar price point"
-      ]
+      ],
+      "asin": "B075FW7H5J"
     },
     {
       "rank": 5,
@@ -105,7 +109,8 @@
       "cons": [
         "DisplayLink technology adds 5 to 10ms of display latency that is noticeable during video editing and gaming workflows",
         "Requires software installation on each Mac, making it less portable than plug-and-play hardware-based hubs"
-      ]
+      ],
+      "asin": "B0779K9DG2"
     },
     {
       "rank": 6,
@@ -123,7 +128,8 @@
       "cons": [
         "No Ethernet port, a significant limitation for desk setups that rely on stable wired network connections",
         "Only 2 USB-A ports limits simultaneous peripheral connections compared to 3-port competitors"
-      ]
+      ],
+      "asin": "B087219P5J"
     }
   ],
   "buying_guide": [

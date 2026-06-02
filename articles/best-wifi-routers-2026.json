@@ -24,7 +24,8 @@
       "cons": [
         "Best for homes under 2,500 sq ft",
         "No parental controls without TP-Link HomeCare subscription"
-      ]
+      ],
+      "asin": "B08H8ZLKKK"
     },
     {
       "name": "ASUS RT-AX86U Pro Wi-Fi 6 Gaming Router",
@@ -43,7 +44,8 @@
       "cons": [
         "Premium price for most non-gaming households",
         "ASUSWRT interface has a learning curve for new users"
-      ]
+      ],
+      "asin": "B09RX5BTVC"
     },
     {
       "name": "Eero Pro 6E Mesh System (3-Pack)",
@@ -62,7 +64,8 @@
       "cons": [
         "Advanced features require eero Plus subscription ($9.99/mo)",
         "Less control than traditional routers for power users"
-      ]
+      ],
+      "asin": "B091G4YQT1"
     },
     {
       "name": "Netgear Orbi AX4200 Wi-Fi 6 Mesh (3-Pack)",
@@ -81,7 +84,8 @@
       "cons": [
         "Very high price \u2014 premium for the coverage and specs",
         "Orbi app less polished than eero or Google Nest"
-      ]
+      ],
+      "asin": "B08FRR52V4"
     },
     {
       "name": "Google Nest WiFi Pro (3-Pack)",
@@ -100,7 +104,8 @@
       "cons": [
         "Privacy considerations with Google hardware in home",
         "No ethernet backhaul option \u2014 wireless-only mesh"
-      ]
+      ],
+      "asin": "B09MFC7VBX"
     },
     {
       "name": "TP-Link Deco XE75 Pro Wi-Fi 6E Mesh (2-Pack)",
@@ -119,7 +124,8 @@
       "cons": [
         "6 GHz range shorter than 5 GHz \u2014 nodes need closer spacing",
         "2-pack may not cover very large or multi-floor homes"
-      ]
+      ],
+      "asin": "B09T9HMHQF"
     }
   ],
   "buying_guide": [

@@ -22,7 +22,8 @@
       "cons": [
         "macOS compatibility gaps with Windows-only enterprise software \u2014 roughly 15 to 20 percent of Fortune 500 ERP systems, legacy VPN clients, and specialized industry tools \u2014 require IT assessment before deployment in organizations standardized on Windows.",
         "The starting configuration at $1,999 includes 18GB unified memory and 512GB SSD, and upgrading to 36GB memory and 1TB storage adds $600 \u2014 making fully configured MacBook Pros among the most expensive laptops in this guide."
-      ]
+      ],
+      "asin": "B0CM5JV268"
     },
     {
       "name": "Lenovo ThinkPad X1 Carbon Gen 11",
@@ -39,7 +40,8 @@
       "cons": [
         "Intel Core Ultra 7 performance under sustained CPU workloads like video rendering and large data compilation throttles more aggressively than the Apple M3 Pro due to the X1 Carbon's slim thermal design, limiting it relative to thicker competitors for processor-intensive tasks.",
         "The IPS display, while accurate and bright at 400 nits, lacks the OLED contrast depth of the Dell XPS 15 and does not support the 120Hz ProMotion smoothness of the MacBook Pro, which becomes noticeable during scrolling in long documents."
-      ]
+      ],
+      "asin": "B0D1D5J1J1"
     },
     {
       "name": "Dell XPS 15 9530",
@@ -56,7 +58,8 @@
       "cons": [
         "Real-world battery life under mixed workloads with the OLED display at 200 nits reaches 7 to 8 hours \u2014 significantly shorter than the MacBook Pro's 22 hours and the ThinkPad X1 Carbon's 14 hours, making it less suitable for all-day travel use without a power source.",
         "At 4.23 pounds the XPS 15 is the heaviest laptop in this guide, and the narrow port selection \u2014 two Thunderbolt 4 ports and a single SD card reader \u2014 requires users to carry a hub for standard USB-A and HDMI connections."
-      ]
+      ],
+      "asin": "B0CC2566C5"
     },
     {
       "name": "Microsoft Surface Laptop 5 13.5-inch",
@@ -73,7 +76,8 @@
       "cons": [
         "Port selection is limited to one USB-C, one USB-A 3.1, and one Surface Connect magnetic charging port \u2014 users who need HDMI or Thunderbolt connectivity require Microsoft's Surface Dock 2 at an additional $199, bringing the effective cost to $1,498.",
         "The alcantara fabric keyboard deck on 2 of 4 finishes attracts oils and stains from daily hand contact within 3 to 6 months, and Microsoft does not offer a $50 to $100 keyboard replacement service \u2014 users should select the metal finish option for long-term appearance maintenance."
-      ]
+      ],
+      "asin": "B0C5MSNKRK"
     },
     {
       "name": "HP Spectre x360 14-inch",
@@ -90,7 +94,8 @@
       "cons": [
         "The 360-degree hinge mechanism adds weight \u2014 the Spectre x360 14 weighs 3.01 pounds, heavier than the ThinkPad X1 Carbon's 2.48 pounds \u2014 and the hinge stiffness varies over time, with some units becoming either too loose or too stiff after 12 months of daily rotation.",
         "HP's bloatware installation includes 7 pre-installed applications totaling 1.2 GB including McAfee antivirus trial, HP Support Assistant, and HP Instant Ink \u2014 requiring a 20 to 30 minute clean uninstall session before deploying in a professional environment."
-      ]
+      ],
+      "asin": "B0DM576K21"
     },
     {
       "name": "ASUS ZenBook 14 OLED",
@@ -107,7 +112,8 @@
       "cons": [
         "The port selection \u2014 two USB-C (one with DisplayPort), one USB-A 3.2, one HDMI 2.0, and a MicroSD slot \u2014 lacks Thunderbolt 4, meaning external GPU enclosures and high-bandwidth Thunderbolt docks are not supported, limiting workstation expansion options.",
         "The keyboard key travel at 1.2mm is shallower than the ThinkPad X1 Carbon's 1.5mm and lacks dedicated arrow keys of standard size, which touch typists who frequently navigate spreadsheets find less comfortable during extended data entry sessions."
-      ]
+      ],
+      "asin": "B0FK5HMZQQ"
     }
   ],
   "buying_guide": [

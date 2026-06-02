@@ -28,7 +28,8 @@
       "cons": [
         "Clamping force out of the box measures approximately 4.5 newtons, which can cause fatigue around the jaw during mixing sessions exceeding 3 hours until the headband stretches after roughly 2 weeks of daily use.",
         "The circumaural ear pads use synthetic leather that traps heat, raising ear temperature by about 2 degrees Celsius after 90 minutes of continuous wear in a room at 22 degrees Celsius."
-      ]
+      ],
+      "asin": "B00HVLUR86"
     },
     {
       "rank": 2,
@@ -46,7 +47,8 @@
       "cons": [
         "The 3-meter coiled cable is hardwired and non-detachable, so a cable failure requires either a soldering repair or a full replacement \u2014 unlike the ATH-M50x where you simply swap the cable.",
         "At 80 ohms impedance the DT 770 PRO draws more current than 32-ohm headphones, and budget interfaces with headphone outputs under 50 mW may not reach adequate monitoring volume for loud genres like metal or EDM production."
-      ]
+      ],
+      "asin": "B0006NL5SM"
     },
     {
       "rank": 3,
@@ -64,7 +66,8 @@
       "cons": [
         "Open-back construction provides zero isolation, so any sound playing through the headphones at monitoring levels above 70 dB SPL will be audible to a microphone positioned within 1 meter, making these unsuitable for tracking sessions.",
         "The 250-ohm impedance requires a headphone amplifier or an audio interface with at least 100 mW of output power into 250 ohms to reach 85 dB SPL reference monitoring level, which excludes many laptop headphone jacks and phone outputs."
-      ]
+      ],
+      "asin": "B0011UB9CQ"
     },
     {
       "rank": 4,
@@ -82,7 +85,8 @@
       "cons": [
         "The ear pads are slightly thinner than those on the ATH-M50x, with approximately 18mm of cushion depth versus 22mm, which means the driver sits closer to the ear and can cause contact discomfort for users with larger outer ears after 2 hours.",
         "Maximum input power handling is rated at 1,600 mW compared to 1,600 mW on the M50x, but the lower sensitivity of 98 dB/mW means you need about 1 dB more gain from your interface to reach the same monitoring volume."
-      ]
+      ],
+      "asin": "B00HVLUR54"
     },
     {
       "rank": 5,
@@ -100,7 +104,8 @@
       "cons": [
         "Weighs 400 grams without cable, making it 150 grams heavier than the beyerdynamic DT 990 PRO and the heaviest headphone in this guide \u2014 extended sessions beyond 3 hours can produce noticeable neck fatigue without breaks.",
         "The 50-ohm impedance combined with 96 dB/mW sensitivity means these need more amplifier current than typical dynamic headphones, and underpowered sources will compress bass dynamics and lose the tight low-end control that justifies the planar magnetic investment."
-      ]
+      ],
+      "asin": "B01N32N5DD"
     },
     {
       "rank": 6,
@@ -118,7 +123,8 @@
       "cons": [
         "The self-adjusting headband wing system uses a thin metal strip that can develop a permanent bend after 6 to 12 months of daily use, causing uneven pressure distribution that favors one ear over the other.",
         "Ear pads are made of a thin vinyl material that begins to crack and flake after approximately 8 months of regular use in environments above 40% relative humidity, and replacement pads from Superlux cost about $12 per pair."
-      ]
+      ],
+      "asin": "B003JOETX8"
     }
   ],
   "buying_guide": [

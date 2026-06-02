@@ -26,7 +26,8 @@
       "cons": [
         "At $159 it is the most expensive single-monitor solution in this guide \u2014 though the build quality and Constant Force adjustment mechanism justify the premium for users who adjust their monitor position frequently.",
         "Initial tension calibration requires a hex key and can take 10 to 15 minutes to dial in precisely for lighter monitors under 10 pounds, which may be frustrating for first-time monitor arm users."
-      ]
+      ],
+      "asin": "B00MIBN71I"
     },
     {
       "name": "Amazon Basics Premium Single Monitor Stand",
@@ -43,7 +44,8 @@
       "cons": [
         "The desk clamp maximum thickness is 2.75 inches, which excludes some thicker hardwood or glass desks \u2014 users with non-standard desk materials should verify compatibility before purchasing.",
         "Maximum load rating of 19.8 pounds limits compatibility with larger ultrawide monitors above 32 inches, which frequently exceed 20 pounds without the stand attached."
-      ]
+      ],
+      "asin": "B00MIBN16O"
     },
     {
       "name": "VIVO Black Single Monitor Desk Mount",
@@ -60,7 +62,8 @@
       "cons": [
         "Height adjustment requires a wrench and the loosening of a locking bolt rather than a tool-free mechanism, making on-the-fly height changes between sitting and standing desk positions impractical in daily use.",
         "The spring tension is fixed and cannot be calibrated for different monitor weights, which means lighter monitors under 10 pounds may exhibit minor forward drift after several months of use in warm environments."
-      ]
+      ],
+      "asin": "B00B21TLQU"
     },
     {
       "name": "Ergotron LX Dual Stacking Monitor Arm",
@@ -77,7 +80,8 @@
       "cons": [
         "At $269 the dual stacking arm is the most expensive solution in this guide \u2014 users who prefer side-by-side monitor layouts will find two individual LX arms more flexible, though at a higher total cost.",
         "Installation requires careful counterweight calibration for each arm independently, and the process can take 30 to 45 minutes on first setup when both monitors differ in weight by more than 4 pounds."
-      ]
+      ],
+      "asin": "B07Q1NJ15Q"
     },
     {
       "name": "North Bayou Full Motion Monitor Arm",
@@ -94,7 +98,8 @@
       "cons": [
         "Maximum load rating of 17.6 pounds is lower than the Ergotron LX and Amazon Basics alternatives, excluding heavier 32-inch monitors that frequently weigh 18 to 22 pounds without their original stand.",
         "Cable management routing is less refined than premium arms \u2014 cables must be wrapped around the exterior of the arm joints rather than routed through an internal channel, creating a less organized appearance."
-      ]
+      ],
+      "asin": "B01AI2YGK4"
     },
     {
       "name": "HUANUO Dual Monitor Stand Arm",
@@ -111,7 +116,8 @@
       "cons": [
         "At maximum horizontal extension both arms can develop a slow downward drift after 3 to 4 months with heavier monitors, requiring periodic re-tightening of the tension adjustment bolt at the base of each arm.",
         "The included hex wrench for tension adjustment is a generic size that can be difficult to locate replacements for if lost \u2014 the manufacturer does not include a spare in the packaging."
-      ]
+      ],
+      "asin": "B07QDR68FC"
     }
   ],
   "buying_guide": [

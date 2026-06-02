@@ -54,7 +54,8 @@
         "Requires existing doorbell wiring",
         "Ring Protect plan required for video history ($10/month)",
         "Limited Google/Apple ecosystem integration"
-      ]
+      ],
+      "asin": "B086Q54K53"
     },
     {
       "name": "Eufy Security Video Doorbell Dual Camera",
@@ -74,7 +75,8 @@
         "Requires Eufy HomeBase hub for local storage",
         "App quality below Ring and Nest",
         "Limited third-party integrations beyond HomeKit/Alexa/Google"
-      ]
+      ],
+      "asin": "B0BW34LCB8"
     },
     {
       "name": "Google Nest Doorbell (Battery)",
@@ -94,7 +96,8 @@
         "Battery needs recharging every few months depending on activity",
         "Requires Google Home app \u2014 not compatible with legacy Nest app",
         "Some advanced features require Nest Aware subscription"
-      ]
+      ],
+      "asin": "B09GZQ1MHC"
     },
     {
       "name": "Arlo Essential Video Doorbell Wire-Free",
@@ -114,7 +117,8 @@
         "Arlo Secure subscription required for recording history ($3/month)",
         "Recording delays can be 1\u20132 seconds on battery",
         "Night vision in infrared only \u2014 no color night vision"
-      ]
+      ],
+      "asin": "B09B8JGSC2"
     },
     {
       "name": "Ring Video Doorbell (4th Gen)",
@@ -134,7 +138,8 @@
         "1080p standard resolution \u2014 lower than Pro 2",
         "No 3D motion detection or bird's eye view",
         "Ring Protect plan required for video storage ($4.99/month)"
-      ]
+      ],
+      "asin": "B08N5NQ869"
     },
     {
       "name": "Reolink Video Doorbell PoE",
@@ -154,7 +159,8 @@
         "Requires PoE power source (PoE switch or injector)",
         "Limited smart home ecosystem integration",
         "App is functional but not as polished as Ring/Nest"
-      ]
+      ],
+      "asin": "B0BW34LCB8"
     }
   ],
   "faq": [

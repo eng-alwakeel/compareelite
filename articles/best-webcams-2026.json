@@ -25,7 +25,8 @@
       ],
       "cons": [
         "Maxes out at 1080p at 30fps and does not support 60fps recording or 4K output, which limits its usefulness for content creators who need smooth motion video for streaming or YouTube production."
-      ]
+      ],
+      "asin": "B006JH8T3S"
     },
     {
       "name": "Logitech C922 Pro Stream Webcam",
@@ -41,7 +42,8 @@
       ],
       "cons": [
         "Low-light performance at 30 lux produces slightly more grain than the C920 due to the larger aperture requirement for the 60fps mode, making it the marginally weaker choice for dark home office environments without supplemental lighting."
-      ]
+      ],
+      "asin": "B01LXCDPPK"
     },
     {
       "name": "Elgato Facecam",
@@ -57,7 +59,8 @@
       ],
       "cons": [
         "At $149 it is more than twice the price of the Logitech C920, and the fixed-focus prime lens at 90cm requires users to sit at a precise distance from the camera for optimal sharpness, unlike autofocus alternatives."
-      ]
+      ],
+      "asin": "B097RN6L6P"
     },
     {
       "name": "Razer Kiyo Pro Webcam",
@@ -73,7 +76,8 @@
       ],
       "cons": [
         "The autofocus system refocuses when the subject moves more than 12 inches during a call, causing a 0.8-second blurring period that is noticeable during video calls with active hand gestures or body movement."
-      ]
+      ],
+      "asin": "B096N1VMVC"
     },
     {
       "name": "Anker PowerConf C300 Webcam",
@@ -89,7 +93,8 @@
       ],
       "cons": [
         "The fixed 65-degree field of view is narrower than the 78-degree or wider lenses on Logitech and Razer cameras, occasionally cropping out background elements that meeting participants use for spatial context."
-      ]
+      ],
+      "asin": "B09CGXX4X9"
     },
     {
       "name": "NexiGo N60 1080P Webcam",
@@ -105,7 +110,8 @@
       "cons": [
         "Low-light performance degrades significantly below 100 lux, producing video with visible grain and color noise in home offices without supplemental desk lighting, making it unsuitable for dimly lit rooms.",
         "The built-in microphone captures background room noise at a level that meeting participants will notice, making an external microphone or headset with boom mic necessary for professional-quality audio."
-      ]
+      ],
+      "asin": "B088TSR6YJ"
     }
   ],
   "buying_guide": [

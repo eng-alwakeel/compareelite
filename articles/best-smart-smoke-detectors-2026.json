@@ -54,7 +54,8 @@
         "Premium price at $119 per unit \u2014 whole-home coverage is expensive",
         "No Alexa integration (Google/Nest ecosystem)",
         "Requires smartphone for full smart feature access"
-      ]
+      ],
+      "asin": "B00XV1RD0K"
     },
     {
       "name": "Kidde Smart Combination Detector",
@@ -74,7 +75,8 @@
         "App is functional but less polished than Nest",
         "No early warning feature like Nest Heads Up",
         "Standard 1-year warranty"
-      ]
+      ],
+      "asin": "B09VN6HJVT"
     },
     {
       "name": "First Alert Z-Wave Combination Alarm",
@@ -94,7 +96,8 @@
         "Requires Z-Wave hub (not standalone)",
         "No standalone mobile app \u2014 hub-dependent",
         "Setup more complex than Wi-Fi alternatives"
-      ]
+      ],
+      "asin": "B08J4C8871"
     },
     {
       "name": "Roost Smart Battery (Upgrade for Existing Detectors)",
@@ -114,7 +117,8 @@
         "No CO detection capability",
         "Relies on existing detector's sensor quality",
         "Only compatible with 9V battery detectors"
-      ]
+      ],
+      "asin": "B08CKHPP52"
     },
     {
       "name": "X-Sense Smart Smoke and CO Alarm",
@@ -134,7 +138,8 @@
         "X-Sense ecosystem only \u2014 no major platform integration",
         "Photoelectric only (no ionization sensor)",
         "App has fewer features than Nest or Kidde"
-      ]
+      ],
+      "asin": "B0991Q94KP"
     },
     {
       "name": "Lutron Caseta Smart Smoke Detector",
@@ -154,7 +159,8 @@
         "Requires Lutron Smart Bridge (additional cost)",
         "Limited value without existing Lutron ecosystem",
         "Higher price relative to standalone smart detectors"
-      ]
+      ],
+      "asin": "B0BLS3Y632"
     }
   ],
   "faq": [

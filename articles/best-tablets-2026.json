@@ -24,7 +24,8 @@
       "cons": [
         "USB-C port limited to USB 3 speeds (Pro gets Thunderbolt/USB 4)",
         "No OLED display \u2014 iPad Pro gets the premium panel"
-      ]
+      ],
+      "asin": "B0CTFKXLY4"
     },
     {
       "name": "Apple iPad Pro 11\" (M4, 2024)",
@@ -43,7 +44,8 @@
       "cons": [
         "Price escalates significantly with storage upgrades",
         "iPadOS app selection still behind macOS for professional desktop workflows"
-      ]
+      ],
+      "asin": "B0D3J7H5BH"
     },
     {
       "name": "Samsung Galaxy Tab S9 FE+ 12.4\"",
@@ -62,7 +64,8 @@
       "cons": [
         "Exynos processor lags behind Apple M-series in benchmark performance",
         "Android tablet app ecosystem still smaller than iPadOS equivalents"
-      ]
+      ],
+      "asin": "B0CJK9DPVJ"
     },
     {
       "name": "Apple iPad (10th Generation)",
@@ -81,7 +84,8 @@
       "cons": [
         "Only compatible with Apple Pencil 1st generation (sold separately)",
         "Magic Keyboard Folio is required separately for productive use"
-      ]
+      ],
+      "asin": "B0BJLXMVMV"
     },
     {
       "name": "Amazon Fire HD 10 (2023)",
@@ -100,7 +104,8 @@
       "cons": [
         "Fire OS lacks Google Play Store \u2014 side-loading apps required for many popular apps",
         "Octa-core processor struggles with demanding applications"
-      ]
+      ],
+      "asin": "B0BL5ND534"
     },
     {
       "name": "Samsung Galaxy Tab A9+",
@@ -119,7 +124,8 @@
       "cons": [
         "No S Pen support limits creative and precision input tasks",
         "Display brightness lower than premium alternatives in direct sunlight"
-      ]
+      ],
+      "asin": "B0CGLWL17X"
     }
   ],
   "buying_guide": [

@@ -24,7 +24,8 @@
       "cons": [
         "No real-time coaching \u2014 just historical data",
         "Works best on firm mattresses (not memory foam toppers)"
-      ]
+      ],
+      "asin": "B07NQKG1TR"
     },
     {
       "name": "Garmin vivosmart 5 Sleep Tracker",
@@ -43,7 +44,8 @@
       "cons": [
         "No built-in GPS \u2014 requires phone for route tracking",
         "Display small for frequent notification checking"
-      ]
+      ],
+      "asin": "B09X8WFMZ2"
     },
     {
       "name": "Beautyrest Sleeptracker AI Monitor",
@@ -62,7 +64,8 @@
       "cons": [
         "Requires Wi-Fi and paired app for analysis",
         "Some users find coaching tips repetitive over time"
-      ]
+      ],
+      "asin": "B09BQMWCSP"
     },
     {
       "name": "Fitbit Inspire 3 Health and Fitness Tracker",
@@ -81,7 +84,8 @@
       "cons": [
         "Premium sleep analysis requires Fitbit Premium subscription",
         "Less accurate than dedicated medical-grade trackers"
-      ]
+      ],
+      "asin": "B0B4MRWNQF"
     },
     {
       "name": "Muse S Brain-Sensing Headband",
@@ -100,7 +104,8 @@
       "cons": [
         "Expensive compared to band-style trackers",
         "Requires wearing headband \u2014 takes adjustment"
-      ]
+      ],
+      "asin": "B07NKBRYL5"
     },
     {
       "name": "Emfit QS Sleep Tracker",
@@ -119,7 +124,8 @@
       "cons": [
         "No Alexa or Google integration",
         "Higher price for a specialized audience"
-      ]
+      ],
+      "asin": "B01FU8EB0Y"
     }
   ],
   "buying_guide": [

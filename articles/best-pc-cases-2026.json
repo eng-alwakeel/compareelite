@@ -4,7 +4,7 @@
   "category": "Tech",
   "date": "2026-05-14",
   "read_time": "10 min read",
-  "thumbnail": "https://images-na.ssl-images-amazon.com/images/P/B08C7BGV3D.01._SL500_.jpg",
+  "thumbnail": "https://m.media-amazon.com/images/P/B08C7BGV3D.01._SL500_.jpg",
   "excerpt": "The Corsair 4000D Airflow leads our 2026 PC case rankings with 8 to 10 degree cooler GPU temps under gaming load. Here are the 6 best cases.",
   "author": "Sarah Mitchell",
   "stats": {
@@ -28,7 +28,8 @@
       ],
       "cons": [
         "No pre-installed top or rear fan \u2014 requires at least one additional 120mm fan purchase ($8 to $15) for balanced exhaust"
-      ]
+      ],
+      "asin": "B08C7BGV3D"
     },
     {
       "rank": 2,
@@ -46,7 +47,8 @@
       ],
       "cons": [
         "At $119.99, it costs $30 more than the Corsair 4000D Airflow while offering 2 pre-installed fans instead of 2 and similar 360mm radiator support"
-      ]
+      ],
+      "asin": "B0822ZD9NP"
     },
     {
       "rank": 3,
@@ -64,7 +66,8 @@
       ],
       "cons": [
         "Ships with zero pre-installed fans \u2014 a full three-radiator configuration requires 9 fans adding $75 to $135 to the total build cost"
-      ]
+      ],
+      "asin": "B07C88X1VV"
     },
     {
       "rank": 4,
@@ -82,7 +85,8 @@
       ],
       "cons": [
         "No bottom radiator mounting and only 7 total fan slots limits maximum cooling capacity compared to the Lian Li O11 Dynamic at 9 slots"
-      ]
+      ],
+      "asin": "B0BQS8GKWV"
     },
     {
       "rank": 5,
@@ -100,7 +104,8 @@
       ],
       "cons": [
         "CPU cooler clearance is limited to 160mm, which excludes 165mm and taller dual-tower coolers like the Noctua NH-D15 and Thermalright Peerless Assassin 120 SE at 157mm"
-      ]
+      ],
+      "asin": "B07TTDW9KV"
     },
     {
       "rank": 6,
@@ -118,7 +123,8 @@
       ],
       "cons": [
         "Mesh front panel improves airflow over the original Pure Base 500 but GPU temperatures still run 3 to 5 degrees Celsius higher than the 4000D Airflow due to partial sound-dampening material on the top panel"
-      ]
+      ],
+      "asin": "B087D7DBW6"
     }
   ],
   "buying_guide": [

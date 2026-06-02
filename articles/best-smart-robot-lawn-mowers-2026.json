@@ -4,7 +4,7 @@
   "category": "Smart Home",
   "date": "2026-05-10",
   "read_time": "12 min read",
-  "thumbnail": "https://images-na.ssl-images-amazon.com/images/P/B09WNDLXJL.01.LZZZZZZZ.jpg",
+  "thumbnail": "https://m.media-amazon.com/images/P/B09WNDLXJL.01.LZZZZZZZ.jpg",
   "excerpt": "We tested 10 smart robot lawn mowers for cutting quality, navigation, and setup. The Husqvarna Automower 415X leads with GPS RTK navigation.",
   "author": "Alex Rivera",
   "stats": {
@@ -31,7 +31,8 @@
         "2,499 dollar price is the highest in this roundup \u2014 professional installation adds 300 to 500 dollars",
         "Requires boundary wire installation (included) buried 1 to 3 inches underground around the lawn perimeter",
         "Battery provides 60-minute runtime per charge with 60-minute recharge \u2014 cycles 3 to 4 times daily for full coverage"
-      ]
+      ],
+      "asin": "B09WNDLXJL"
     },
     {
       "rank": 2,
@@ -52,7 +53,8 @@
         "Boundary wire installation takes 2 to 4 hours for a 4,000-square-foot yard \u2014 tedious initial setup",
         "35 percent maximum slope handling is lower than the Husqvarna at 40 percent \u2014 struggles on steep grades",
         "90-minute runtime covers approximately 1,500 square feet per charge \u2014 needs 3 cycles for full 4,500-foot yard"
-      ]
+      ],
+      "asin": "B09Z2V3XH3"
     },
     {
       "rank": 3,
@@ -73,7 +75,8 @@
         "RTK base station must be mounted outdoors with clear sky view \u2014 placement options are limited in tree-heavy yards",
         "1,599 dollars for RTK technology is expensive compared to boundary-wire models of similar coverage",
         "GPS accuracy can drift 2 to 4 inches in heavy tree canopy, causing uneven edge cutting near wooded areas"
-      ]
+      ],
+      "asin": "B0D3M987CW"
     },
     {
       "rank": 4,
@@ -94,7 +97,8 @@
         "Bluetooth-only connectivity limits remote access \u2014 must be within 30 feet for app control",
         "No GPS tracking or anti-theft features \u2014 relies on a PIN code and lift sensor alarm only",
         "25 percent maximum slope handling is the lowest in this roundup \u2014 not suitable for hilly terrain"
-      ]
+      ],
+      "asin": "B076XS6QWD"
     },
     {
       "rank": 5,
@@ -115,7 +119,8 @@
         "Bluetooth-only connectivity limits remote access to within 30 feet \u2014 no Wi-Fi or cellular GPS tracking",
         "No GPS navigation \u2014 uses random bounce pattern rather than systematic parallel mowing paths",
         "Boundary wire installation required with 500 feet of wire included for medium-sized yards"
-      ]
+      ],
+      "asin": "B07W6B8BQF"
     },
     {
       "rank": 6,
@@ -136,7 +141,8 @@
         "Random navigation pattern means some areas receive multiple passes while corners may be missed \u2014 less efficient than GPS models",
         "Boundary wire installation required for the full 10,800-square-foot perimeter takes 4 to 6 hours",
         "35 percent maximum slope handling and 60-minute runtime limit efficiency on complex yard layouts"
-      ]
+      ],
+      "asin": "B0BY41PXRG"
     }
   ],
   "buying_guide": [

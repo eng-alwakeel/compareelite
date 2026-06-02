@@ -25,7 +25,8 @@
       ],
       "cons": [
         "At $129 it is a premium investment, and the fixed split angle cannot be adjusted for users who prefer a more aggressively tented or separated layout than the built-in 10-degree curve provides."
-      ]
+      ],
+      "asin": "B07ZWK2TQT"
     },
     {
       "name": "Microsoft Sculpt Ergonomic Keyboard",
@@ -41,7 +42,8 @@
       ],
       "cons": [
         "The proprietary USB dongle cannot be paired with Logitech's Unifying Receiver or Bluetooth, requiring a dedicated USB-A port on the computer or hub, which may be a constraint on laptops with limited port availability."
-      ]
+      ],
+      "asin": "B00CYX54C0"
     },
     {
       "name": "Logitech MX Keys Advanced Wireless Keyboard",
@@ -57,7 +59,8 @@
       ],
       "cons": [
         "The flat layout provides mild ergonomic benefit compared to the Logitech K860's curved split design, making it a productivity keyboard with ergonomic features rather than a true ergonomic keyboard for users with existing wrist conditions."
-      ]
+      ],
+      "asin": "B07S92QBCJ"
     },
     {
       "name": "Keychron K8 Tenkeyless Mechanical Keyboard",
@@ -73,7 +76,8 @@
       ],
       "cons": [
         "The standard flat layout without a tent angle or negative tilt does not address wrist pronation, making it the least ergonomically specialized keyboard in our test despite its compact and comfortable mechanical switch design."
-      ]
+      ],
+      "asin": "B09MNF2HLQ"
     },
     {
       "name": "Microsoft Natural Ergonomic Keyboard 4000",
@@ -90,7 +94,8 @@
       "cons": [
         "The wired USB-A connection limits desk arrangement flexibility and requires users to route a cable across the desk to their computer, which may conflict with minimalist cable management setups.",
         "Membrane key switches with 65g actuation force require noticeably more finger pressure than the 45g switches on the Keychron K8, leading to greater finger fatigue during sustained high-speed typing sessions."
-      ]
+      ],
+      "asin": "B000A6PPOK"
     },
     {
       "name": "Logitech Wave Keys Wireless Keyboard",
@@ -106,7 +111,8 @@
       "cons": [
         "The Wave key profile provides ergonomic benefit primarily to the finger extension angle rather than wrist rotation or ulnar deviation, making it a transition keyboard for users new to ergonomics rather than a solution for established wrist conditions.",
         "Battery life of 36 months on 2 AAA batteries is rated using the manufacturer's duty cycle rather than continuous use, and heavy typists with backlit keyboards may see significantly shorter real-world battery duration."
-      ]
+      ],
+      "asin": "B0BTNY72VD"
     }
   ],
   "buying_guide": [

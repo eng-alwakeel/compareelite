@@ -22,7 +22,8 @@
       "cons": [
         "20-pint capacity is suitable for spaces up to 1,500 square feet in moderately humid conditions \u2014 buyers with large basements over 2,000 square feet or very high humidity levels should consider the 35-pint or 50-pint variants.",
         "The folding cube design, while clever for storage, makes the water tank slightly less accessible than front-panel tanks on traditional upright dehumidifiers \u2014 the tank slides out from the bottom with a slight awkward angle."
-      ]
+      ],
+      "asin": "B0B4NRJQZ3"
     },
     {
       "name": "hOmeLabs 4,500 Sq. Ft Energy Star Dehumidifier",
@@ -39,7 +40,8 @@
       "cons": [
         "Does not include Wi-Fi or app connectivity \u2014 all controls are via the front panel digital display only, making it a traditional dehumidifier rather than a true smart home device despite strong performance.",
         "At high fan speed, noise measures 55 dB \u2014 noticeable in finished basement living spaces but acceptable for utility areas, mechanical rooms, and unfinished storage basements."
-      ]
+      ],
+      "asin": "B07DKQ2ZJL"
     },
     {
       "name": "Frigidaire FFAD7033R1 70-Pint Dehumidifier",
@@ -56,7 +58,8 @@
       "cons": [
         "Does not include Wi-Fi smart app connectivity \u2014 operation is controlled entirely through the front digital panel, placing it in the traditional category rather than the smart dehumidifier segment.",
         "The 70-pint capacity comes with a 700-watt power draw \u2014 higher operating cost than 20\u201335 pint models, but the faster moisture removal typically reduces total run hours and partially offsets the wattage difference."
-      ]
+      ],
+      "asin": "B085G5J2Y5"
     },
     {
       "name": "Waykar 4,500 Sq Ft Smart Dehumidifier",
@@ -73,7 +76,8 @@
       "cons": [
         "The Waykar Home app lacks integration with Amazon Alexa, Google Home, or Apple HomeKit \u2014 smart control is limited to the brand's proprietary app without third-party home automation system compatibility.",
         "Fan motor at high speed registers 58 dB \u2014 slightly louder than premium competitors \u2014 and the unit operates with a minor mechanical vibration on hardwood floors that is eliminated by placing it on carpet or a rubber mat."
-      ]
+      ],
+      "asin": "B09Y5YXDXW"
     },
     {
       "name": "Honeywell TP70WKN Smart Wi-Fi Dehumidifier",
@@ -90,7 +94,8 @@
       "cons": [
         "At $299, it is the most expensive model in this roundup, and the premium is driven primarily by smart connectivity and the Honeywell brand name rather than superior moisture removal hardware versus the Frigidaire at $260.",
         "The top-mounted air discharge can direct slightly humid air toward ceiling structures in low-clearance basements \u2014 for spaces with ceilings below 7 feet, a front-discharge model is preferable to avoid moisture accumulation at ceiling level."
-      ]
+      ],
+      "asin": "B08D3LSMFW"
     },
     {
       "name": "Tosot 8,000 BTU Smart Dehumidifier",
@@ -107,7 +112,8 @@
       "cons": [
         "GE SmartHQ app compatibility means users already invested in the GE home ecosystem benefit most \u2014 users preferring Samsung SmartThings or other platforms will not find native integration beyond Alexa and Google Assistant.",
         "The 35-pint tank requires emptying every 18\u201324 hours in very high humidity conditions without a continuous drain hose connected \u2014 more frequent than 50-pint competitors in severe moisture environments."
-      ]
+      ],
+      "asin": "B09QYRTMKV"
     }
   ],
   "buying_guide": [

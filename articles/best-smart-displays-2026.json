@@ -24,7 +24,8 @@
       "cons": [
         "Amazon ads and shopping suggestions appear on home screen",
         "Google services like Google Calendar not natively supported"
-      ]
+      ],
+      "asin": "B0BLS3Y632"
     },
     {
       "name": "Google Nest Hub (2nd Gen)",
@@ -43,7 +44,8 @@
       "cons": [
         "No camera \u2014 cannot make or receive video calls",
         "Google Assistant less capable for shopping and home automation than Alexa"
-      ]
+      ],
+      "asin": "B08XDTP465"
     },
     {
       "name": "Amazon Echo Show 5 (3rd Gen)",
@@ -62,7 +64,8 @@
       "cons": [
         "Small speaker not satisfying for music playback",
         "Display too small for recipe reading from across the kitchen"
-      ]
+      ],
+      "asin": "B09B2SBHQK"
     },
     {
       "name": "Amazon Echo Show 15",
@@ -81,7 +84,8 @@
       "cons": [
         "Requires professional or careful wall mounting for best experience",
         "More expensive than other smart displays in its category"
-      ]
+      ],
+      "asin": "B08MQLDFF6"
     },
     {
       "name": "Google Nest Hub Max",
@@ -100,7 +104,8 @@
       "cons": [
         "Google Assistant shopping integration less comprehensive than Alexa",
         "No sleep tracking (Nest Hub 2nd Gen has it; Max does not)"
-      ]
+      ],
+      "asin": "B07YBFNQ8P"
     },
     {
       "name": "Amazon Echo Show 10 (3rd Gen)",
@@ -119,7 +124,8 @@
       "cons": [
         "Motor mechanism adds bulk and failure point versus static displays",
         "Rotating feature draws noticeable power and may be distracting"
-      ]
+      ],
+      "asin": "B07VHZ41L8"
     }
   ],
   "buying_guide": [

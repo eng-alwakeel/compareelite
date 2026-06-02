@@ -25,7 +25,8 @@
         "Large footprint requires significant counter or storage space",
         "No Wi-Fi or app control \u2014 smart features are limited to preset programs",
         "Glass lid is not dishwasher safe"
-      ]
+      ],
+      "asin": "B0CTWG87J5"
     },
     {
       "name": "Instant Pot Duo 7-in-1 Electric Pressure Cooker 6-Quart",
@@ -45,7 +46,8 @@
         "Learning curve for pressure cooking features and steam release procedures",
         "App connectivity is recipe-focused \u2014 does not support full remote monitoring or control",
         "Larger capacity versions can be bulky for small kitchens"
-      ]
+      ],
+      "asin": "B00FLYWNYQ"
     },
     {
       "name": "Crock-Pot 7-Quart Programmable Slow Cooker SCV700SS",
@@ -65,7 +67,8 @@
         "No app connectivity or Wi-Fi \u2014 programmable timer only",
         "Heating is fixed at low, high, or warm \u2014 no precise temperature control",
         "Heavy unit at 10 lbs \u2014 not convenient to move frequently"
-      ]
+      ],
+      "asin": "B00004SUM0"
     },
     {
       "name": "GreenLife Ceramic Non-Stick 6-Quart Slow Cooker CC003827-001",
@@ -85,7 +88,8 @@
         "Ceramic coating can chip if dropped or subjected to thermal shock",
         "No app or Wi-Fi connectivity",
         "Limited to 6 quarts \u2014 not ideal for very large families or batch cooking"
-      ]
+      ],
+      "asin": "B08FJP8DR6"
     },
     {
       "name": "Hamilton Beach Portable 6-Quart Set and Forget Slow Cooker 33967",
@@ -105,7 +109,8 @@
         "No app connectivity or voice control",
         "No precise temperature control beyond low and high settings",
         "Fewer advanced features than premium multi-cooker alternatives"
-      ]
+      ],
+      "asin": "B004QKND9K"
     },
     {
       "name": "Crock-Pot 6-Quart Cook and Carry SCCPVL610-S",
@@ -125,7 +130,8 @@
         "No programmable timer \u2014 manual settings only",
         "No app or smart home connectivity",
         "Older design with less visual appeal than newer competitors"
-      ]
+      ],
+      "asin": "B007NN6TUC"
     }
   ],
   "buying_guide": [

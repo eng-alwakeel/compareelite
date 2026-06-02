@@ -24,7 +24,8 @@
       "cons": [
         "Not smartphone compatible",
         "No cloud storage or advanced sleep analytics"
-      ]
+      ],
+      "asin": "B083DLZ1W2"
     },
     {
       "name": "Nanit Pro Smart Baby Monitor and Stand",
@@ -43,7 +44,8 @@
       "cons": [
         "Subscription required for full analytics features",
         "Premium price point"
-      ]
+      ],
+      "asin": "B07BKGKQNZ"
     },
     {
       "name": "Motorola VM55 Video Baby Monitor",
@@ -62,7 +64,8 @@
       "cons": [
         "No smartphone app connectivity",
         "Pan and tilt only \u2014 no zoom"
-      ]
+      ],
+      "asin": "B08B18GFPQ"
     },
     {
       "name": "Eufy SpaceView S Baby Monitor",
@@ -81,7 +84,8 @@
       "cons": [
         "No smartphone connectivity",
         "Battery on parent unit only lasts 6 hours"
-      ]
+      ],
+      "asin": "B07FDNDL7D"
     },
     {
       "name": "Owlet Dream Duo Smart Baby Monitor",
@@ -100,7 +104,8 @@
       "cons": [
         "Most expensive option on the market",
         "Subscription needed for advanced alerts"
-      ]
+      ],
+      "asin": "B09C6MJXJX"
     },
     {
       "name": "VTech VM5261 Audio Baby Monitor",
@@ -119,7 +124,8 @@
       "cons": [
         "Audio only \u2014 no video",
         "No smartphone connectivity"
-      ]
+      ],
+      "asin": "B07MBKBGPT"
     }
   ],
   "buying_guide": [

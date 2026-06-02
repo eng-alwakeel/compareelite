@@ -4,7 +4,7 @@
   "category": "Tech",
   "date": "2026-05-12",
   "read_time": "9 min read",
-  "thumbnail": "https://images-na.ssl-images-amazon.com/images/P/B0DGJ4QQ5W.01.LZZZZZZZ.jpg",
+  "thumbnail": "https://m.media-amazon.com/images/P/B0DGJ4QQ5W.01.LZZZZZZZ.jpg",
   "excerpt": "The best MagSafe chargers of 2026, ranked by real-world charging speed, design, and value \u2014 starting with Apple's own 25W Qi2.2 MagSafe puck at $39.",
   "author": "Sarah Mitchell",
   "stats": {
@@ -27,7 +27,8 @@
       ],
       "cons": [
         "Does not include a USB-C power adapter in the box, requiring a separate purchase of at least a 30W adapter (approximately $29) to reach the full 25W charging speed."
-      ]
+      ],
+      "asin": "B0DGJ4QQ5W"
     },
     {
       "rank": 2,
@@ -44,7 +45,8 @@
       ],
       "cons": [
         "Maximum iPhone charging speed is capped at 15W Qi2, not the newer 25W Qi2.2 standard, which adds roughly 8 minutes to a 0 to 50 percent charge compared to the Apple MagSafe Charger."
-      ]
+      ],
+      "asin": "B0CF54FWFL"
     },
     {
       "rank": 3,
@@ -61,7 +63,8 @@
       ],
       "cons": [
         "Charges only iPhone and one Qi device simultaneously, requiring a separate Apple Watch charger or a full 3-in-1 station for households that own an Apple Watch and AirPods."
-      ]
+      ],
+      "asin": "B0FMBTB5Y7"
     },
     {
       "rank": 4,
@@ -78,7 +81,8 @@
       ],
       "cons": [
         "At $149, it is the most expensive single-device category option here, and it does not support the 25W Qi2.2 standard, so iPhone 17 users leave roughly 10W of potential charging speed unused."
-      ]
+      ],
+      "asin": "B0B5XYX7BP"
     },
     {
       "rank": 5,
@@ -95,7 +99,8 @@
       ],
       "cons": [
         "The included USB-C power adapter is rated at only 20W, which limits the iPhone charging speed to approximately 12W in practice rather than the full 15W Qi2 output the stand is rated for."
-      ]
+      ],
+      "asin": "B0CYMQ61XN"
     },
     {
       "rank": 6,
@@ -112,7 +117,8 @@
       ],
       "cons": [
         "Weighs 14 ounces, which is heavier than a standard power bank of similar dimensions and noticeably adds to a travel bag compared to the 6.5-ounce Anker MagGo Foldable that costs $40 less."
-      ]
+      ],
+      "asin": "B09TT8GZK9"
     }
   ],
   "buying_guide": [

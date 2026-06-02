@@ -31,7 +31,8 @@
         "Requires USB connection to a computer \u2014 no standalone operation or wireless printing",
         "Thermal labels can fade if stored in direct sunlight or temperatures exceeding 77 degrees Fahrenheit",
         "Higher upfront cost at $220 versus portable tape-based label makers in the $30-$80 range"
-      ]
+      ],
+      "asin": "B0091MVERY"
     },
     {
       "rank": 1,
@@ -52,7 +53,8 @@
         "Tape cassettes cost $8-$18 each and yield roughly 23 feet, making per-label cost higher than thermal roll printers",
         "Maximum label width limited to 19mm, which cannot produce large shipping or asset labels",
         "No wireless connectivity \u2014 relies entirely on USB or standalone keyboard input"
-      ]
+      ],
+      "asin": "B001EMKP0C"
     },
     {
       "rank": 6,
@@ -73,7 +75,8 @@
         "Brady M21 cartridges are proprietary and cost $20-$45 each, with each roll yielding 15-17 feet of label material",
         "Unit weighs 453 grams with batteries installed, making it the heaviest portable option in this roundup",
         "Software and PC connectivity require Brady Workstation software ($0-$299 depending on tier)"
-      ]
+      ],
+      "asin": "B004AAAXHG"
     },
     {
       "rank": 2,
@@ -94,7 +97,8 @@
         "6 AA batteries are not rechargeable; frequent use can cost $15-$20 per month in batteries",
         "ABC keyboard layout requires more keystrokes than QWERTY for longer label text",
         "No Bluetooth or Wi-Fi; must be operated directly from the device keypad only"
-      ]
+      ],
+      "asin": "B00K6D3PD0"
     },
     {
       "rank": 4,
@@ -115,7 +119,8 @@
         "Maximum label width of 15mm is narrower than competitors, limiting text length per line to roughly 10 characters at size 12",
         "Thermal labels are not laminated and may smear in humid or wet environments within 6 months",
         "App requires account registration before you can print, adding friction during initial setup"
-      ]
+      ],
+      "asin": "B0BKPWJ97K"
     },
     {
       "rank": 5,
@@ -136,7 +141,8 @@
         "NIIMBOT proprietary label rolls cost 20-30% more than generic alternatives; third-party rolls are not officially supported",
         "App-only operation means you cannot print without a smartphone nearby",
         "Battery drains from 100% to 0% in approximately 3 hours of continuous printing"
-      ]
+      ],
+      "asin": "B09YBJ2FCQ"
     }
   ],
   "buying_guide": [

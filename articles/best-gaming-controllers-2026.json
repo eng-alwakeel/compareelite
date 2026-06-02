@@ -24,7 +24,8 @@
       "cons": [
         "Adaptive trigger features only fully utilized by PS5 games",
         "Slightly larger grip than PS4 controller \u2014 may feel big for small hands"
-      ]
+      ],
+      "asin": "B08FC6C75Y"
     },
     {
       "name": "Xbox Wireless Controller",
@@ -43,7 +44,8 @@
       "cons": [
         "AA batteries are old-fashioned \u2014 rechargeable kit sold separately",
         "No built-in rechargeable battery without additional purchase"
-      ]
+      ],
+      "asin": "B08DF248LD"
     },
     {
       "name": "8BitDo Pro 2 Wired Controller",
@@ -62,7 +64,8 @@
       "cons": [
         "Wired only \u2014 no wireless on this version",
         "Switch and PC only \u2014 not Xbox or PlayStation compatible"
-      ]
+      ],
+      "asin": "B08XJND9BL"
     },
     {
       "name": "Razer Wolverine V2 Pro",
@@ -81,7 +84,8 @@
       "cons": [
         "Very high price point for a controller",
         "No DualSense adaptive trigger support"
-      ]
+      ],
+      "asin": "B0BCMHJ4H9"
     },
     {
       "name": "PowerA Enhanced Wired Controller for Xbox",
@@ -100,7 +104,8 @@
       "cons": [
         "Wired only \u2014 no wireless option at this price",
         "Build quality noticeably lighter than Microsoft's own controller"
-      ]
+      ],
+      "asin": "B07W748KKC"
     },
     {
       "name": "Nintendo Switch Pro Controller",
@@ -119,7 +124,8 @@
       "cons": [
         "High price for Switch controller without advanced features",
         "No back paddles or extra programmable buttons"
-      ]
+      ],
+      "asin": "B01NAWKPOF"
     }
   ],
   "buying_guide": [

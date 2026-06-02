@@ -54,7 +54,8 @@
         "Premium price of $350",
         "Requires base station that takes up desk space",
         "Software required for full feature access"
-      ]
+      ],
+      "asin": "B09ZXGV8WF"
     },
     {
       "name": "Logitech G PRO X 2 Lightspeed",
@@ -74,7 +75,8 @@
         "No active noise cancellation at this price point",
         "Bluetooth mode reduces battery life to approximately 35 hours",
         "PC-centric design with limited console support compared to flagship rivals"
-      ]
+      ],
+      "asin": "B0B3F8V4JG"
     },
     {
       "name": "Sony INZONE H9 Wireless",
@@ -94,7 +96,8 @@
         "PC software is less polished than competitors",
         "Heavy at 325g for extended wear",
         "Premium price for PS5-centric features"
-      ]
+      ],
+      "asin": "B0B1JCC2G7"
     },
     {
       "name": "Razer BlackShark V2 HyperSpeed",
@@ -114,7 +117,8 @@
         "No Bluetooth connectivity \u2014 2.4 GHz dongle only",
         "No active noise cancellation for use outside gaming",
         "USB-A dongle only; no USB-C option for newer devices"
-      ]
+      ],
+      "asin": "B0CF3LHQSM"
     },
     {
       "name": "Corsair HS55 Wireless Core",
@@ -134,7 +138,8 @@
         "No Bluetooth",
         "No ANC or advanced audio features",
         "Mic quality is adequate but not impressive"
-      ]
+      ],
+      "asin": "B0BQNHX6YL"
     },
     {
       "name": "HyperX Cloud III Wireless",
@@ -154,7 +159,8 @@
         "No Bluetooth (2.4 GHz only)",
         "No ANC",
         "Sound can feel bass-heavy for competitive play"
-      ]
+      ],
+      "asin": "B0BZTM6SCL"
     }
   ],
   "faq": [

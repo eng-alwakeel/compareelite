@@ -24,7 +24,8 @@
       "cons": [
         "Small active area \u2014 may not suit larger hand movements",
         "No screen \u2014 requires looking at monitor while drawing"
-      ]
+      ],
+      "asin": "B079KM22JD"
     },
     {
       "name": "Huion Kamvas 13 Pen Display Tablet",
@@ -43,7 +44,8 @@
       "cons": [
         "Glossy screen shows reflections in bright environments",
         "Stand sold separately"
-      ]
+      ],
+      "asin": "B08B4F8MG4"
     },
     {
       "name": "XP-Pen Deco 01 V2 Drawing Tablet",
@@ -62,7 +64,8 @@
       "cons": [
         "USB-A cable only \u2014 no USB-C",
         "Driver installation required on some systems"
-      ]
+      ],
+      "asin": "B08DHYZ3T2"
     },
     {
       "name": "Wacom Cintiq 16 Creative Pen Display",
@@ -82,7 +85,8 @@
         "Premium price at $650 requires serious creative commitment",
         "Requires external computer \u2014 not a standalone tablet",
         "Fan noise noticeable in quiet rooms during extended sessions"
-      ]
+      ],
+      "asin": "B0CJMJZTG2"
     },
     {
       "name": "Huion Inspiroy H640P Drawing Tablet",
@@ -101,7 +105,8 @@
       "cons": [
         "Smaller active area than similarly priced XP-Pen",
         "No tilt support at this price point"
-      ]
+      ],
+      "asin": "B01MG37JVJ"
     },
     {
       "name": "Wacom One 13 Touch Creative Pen Display",
@@ -120,7 +125,8 @@
       "cons": [
         "4096 pressure levels (not 8192 of Pro models)",
         "Only 72% NTSC color coverage"
-      ]
+      ],
+      "asin": "B09MMQKKVC"
     }
   ],
   "buying_guide": [

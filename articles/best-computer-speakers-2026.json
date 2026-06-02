@@ -27,7 +27,8 @@
       ],
       "cons": [
         "Bluetooth connection occasionally drops for 0.5 to 1 second when the connected device screen turns off during standby, a brief interruption that affects only wireless connections and does not occur on USB or 3.5mm input."
-      ]
+      ],
+      "asin": "B0877BPCJM"
     },
     {
       "rank": 2,
@@ -44,7 +45,8 @@
       ],
       "cons": [
         "Lacks Bluetooth or USB audio connectivity, requiring either a 3.5mm adapter for phones or a dedicated DAC for computers with digital-only audio outputs such as USB-C-only laptops without a headphone jack."
-      ]
+      ],
+      "asin": "B016PATXSI"
     },
     {
       "rank": 3,
@@ -61,7 +63,8 @@
       ],
       "cons": [
         "The 2.0 configuration without a subwoofer limits bass reproduction to approximately 80 Hz, making bass-heavy music like hip-hop and EDM sound thin compared to 2.1 systems with dedicated subwoofers at similar or lower price points."
-      ]
+      ],
+      "asin": "B08F57GSJ7"
     },
     {
       "rank": 4,
@@ -78,7 +81,8 @@
       "cons": [
         "At 5.5 pounds for the subwoofer alone and a total system footprint requiring 18 inches of clearance under the desk, it is the largest and heaviest system in our test and unsuitable for compact or portable desktop setups.",
         "Lacks Bluetooth or USB audio input, connecting only via dual 3.5mm inputs and a single RCA input, which requires a separate USB DAC or soundcard for computers with only digital USB-C audio output."
-      ]
+      ],
+      "asin": "B003VAHYTG"
     },
     {
       "rank": 5,
@@ -95,7 +99,8 @@
       ],
       "cons": [
         "The flat reference tuning produces less perceived bass impact than consumer-oriented speakers at the same volume level, which makes them sound less exciting for casual music listening but more accurate for critical listening tasks."
-      ]
+      ],
+      "asin": "B09FXG9BLR"
     },
     {
       "rank": 6,
@@ -112,7 +117,8 @@
       "cons": [
         "Lacks Bluetooth or USB audio connectivity, connecting only via 3.5mm analog input, which requires a headphone jack or separate USB DAC for computers with digital-only audio outputs such as USB-C-only laptops.",
         "The plastic subwoofer enclosure produces slight cabinet resonance at volumes above 80 percent, and bass response above 70 Hz rolls off more steeply than dedicated subwoofers in higher-priced 2.1 systems."
-      ]
+      ],
+      "asin": "B002HWRZ2K"
     }
   ],
   "buying_guide": [

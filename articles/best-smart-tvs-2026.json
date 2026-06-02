@@ -24,7 +24,8 @@
       "cons": [
         "Premium pricing compared to OLED alternatives at similar screen sizes",
         "Bloatware ads on home screen require manual removal in settings"
-      ]
+      ],
+      "asin": "B0BT76BN7Y"
     },
     {
       "name": "LG 55\" C3 OLED 4K Smart TV",
@@ -43,7 +44,8 @@
       "cons": [
         "OLED panels can experience burn-in with static content over many years",
         "Peak brightness lower than top Mini LED panels in very bright rooms"
-      ]
+      ],
+      "asin": "B0BVQ1NGKQ"
     },
     {
       "name": "Sony 65\" BRAVIA XR X90L Full Array LED 4K TV",
@@ -62,7 +64,8 @@
       "cons": [
         "Google TV interface can feel cluttered compared to simpler Roku or Tizen",
         "Full array LED blacks not as deep as OLED alternatives"
-      ]
+      ],
+      "asin": "B0BW2Y3MDM"
     },
     {
       "name": "TCL 65\" S5 5-Series 4K QLED Google TV",
@@ -81,7 +84,8 @@
       "cons": [
         "Audio quality requires external soundbar for best results",
         "Local dimming less refined than premium Mini LED competitors"
-      ]
+      ],
+      "asin": "B0C7YJRXGR"
     },
     {
       "name": "Amazon Fire TV 55\" Omni QLED Series 4K",
@@ -100,7 +104,8 @@
       "cons": [
         "Amazon ecosystem bias means non-Amazon apps sometimes load slower",
         "Gaming features less developed than Samsung or LG equivalents"
-      ]
+      ],
+      "asin": "B09N6Y5BTL"
     },
     {
       "name": "Hisense 65\" U8K Mini-LED ULED 4K Smart TV",
@@ -119,7 +124,8 @@
       "cons": [
         "Hisense brand carries less prestige resale value than Samsung or Sony",
         "Menu UI slightly less polished than first-party Google TV implementations"
-      ]
+      ],
+      "asin": "B0C1JXN9R5"
     }
   ],
   "buying_guide": [

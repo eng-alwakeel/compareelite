@@ -4,7 +4,7 @@
   "category": "Smart Home",
   "date": "2026-05-08",
   "read_time": "10 min read",
-  "thumbnail": "https://images-na.ssl-images-amazon.com/images/P/B01N5TEHLI.01._SL500_.jpg",
+  "thumbnail": "https://m.media-amazon.com/images/P/B01N5TEHLI.01._SL500_.jpg",
   "excerpt": "Smart weather stations give you hyperlocal forecasts accurate to your exact address. We tested 6 top models for sensor accuracy, app quality, and smart home integration.",
   "author": "Alex Rivera",
   "stats": {
@@ -28,7 +28,8 @@
       "cons": [
         "Setup requires connecting to a 2.4 GHz WiFi network specifically; 5 GHz-only routers are incompatible, and switching router bands is required for users with 5 GHz-only mesh networks.",
         "The included mounting pole is 8.5 inches tall, which is too short for rooftop mounting without a separately purchased extension pole, adding $15 to $30 to the total installation cost."
-      ]
+      ],
+      "asin": "B01N5TEHLI"
     },
     {
       "rank": 2,
@@ -46,7 +47,8 @@
       "cons": [
         "At $329, the Tempest costs 74 percent more than the Ambient Weather WS-2902C while providing a narrower set of sensors; it lacks a separate UV index sensor and soil moisture integration.",
         "The Tempest app requires a premium subscription at $4.99 per month or $49.99 per year to access historical data older than 24 hours and extended AI forecast features beyond basic current conditions."
-      ]
+      ],
+      "asin": "B08VCL8GGN"
     },
     {
       "rank": 3,
@@ -64,7 +66,8 @@
       "cons": [
         "The Ecowitt app's historical data display is limited to 7-day rolling graphs in the free tier; accessing 30-day trends requires upgrading to the $3.99 per month Ecowitt+ subscription.",
         "Alexa integration requires a third-party skill and does not support voice queries for rainfall totals or wind speed, limiting it to temperature and humidity voice responses only."
-      ]
+      ],
+      "asin": "B07JN3D5YB"
     },
     {
       "name": "AcuRite Pro Color Weather Station with 5-in-1 Sensor (01036M)",
@@ -83,7 +86,8 @@
       "cons": [
         "No Wi-Fi connectivity \u2014 data stays on display only",
         "Console requires AC power adapter \u2014 not battery-only operation"
-      ]
+      ],
+      "asin": "B00SIJ40IE"
     },
     {
       "rank": 5,
@@ -101,7 +105,8 @@
       "cons": [
         "No WiFi connectivity or smartphone app support in the base configuration; data is display-only with no logging, no cloud backup, and no remote access when you are away from the console.",
         "The outdoor sensor only measures temperature and humidity and does not include a wind anemometer or rain gauge, limiting it to basic condition monitoring rather than full weather station capability."
-      ]
+      ],
+      "asin": "B01MFBDI13"
     },
     {
       "rank": 6,
@@ -119,7 +124,8 @@
       "cons": [
         "Measures only temperature and humidity; no wind, rainfall, UV, or barometric pressure sensors are available, making it a smart thermometer rather than a full weather station.",
         "Outdoor probe battery life is 3 to 4 months on two AAA batteries rather than the AA batteries used by most competing probes, and AAA batteries are less widely available in premium alkaline brands."
-      ]
+      ],
+      "asin": "B07YZVDWWB"
     }
   ],
   "buying_guide": [

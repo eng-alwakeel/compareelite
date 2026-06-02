@@ -28,7 +28,8 @@
       "cons": [
         "At $170, the PETLIBRO Granary is the most expensive feeder in this roundup \u2014 roughly 2.8 times the cost of the WOPET at $60, though the camera integration justifies the gap for owners who travel.",
         "The camera requires a continuous Wi-Fi connection and uses approximately 1.5 GB of cloud storage per month for motion-clip history, which is included free for 7 days and then requires a $3.99 per month subscription for 30-day history."
-      ]
+      ],
+      "asin": "B09KDJZ5G4"
     },
     {
       "rank": 2,
@@ -46,7 +47,8 @@
       "cons": [
         "The dispenser wheel mechanism can jam with kibble larger than 10mm in diameter \u2014 tested with Hill's Science Diet Large Breed (12mm pieces) and produced 3 jams per 30 dispense cycles.",
         "No integrated camera or two-way audio \u2014 if remote monitoring of feeding behavior is important, this feeder requires pairing with a separate smart camera pointed at the bowl."
-      ]
+      ],
+      "asin": "B01HJVQ4TM"
     },
     {
       "rank": 3,
@@ -64,7 +66,8 @@
       "cons": [
         "Portion accuracy is plus or minus 8 grams across 30 cycles at the 10g setting \u2014 acceptable for calorie-flexible pets but too imprecise for cats on strict veterinary weight-management diets.",
         "The Wi-Fi module only supports 2.4 GHz networks and has a limited range of approximately 30 feet \u2014 feeders placed in back rooms or basements may have unreliable connectivity."
-      ]
+      ],
+      "asin": "B08F8WDSS8"
     },
     {
       "rank": 4,
@@ -82,7 +85,8 @@
       "cons": [
         "The 5-liter hopper holds approximately 20 cups of kibble \u2014 adequate for a single cat for 10 to 14 days but insufficient for multi-cat households or large dogs requiring 3 cups per day.",
         "The PETLIBRO app requires account creation and does not support local-only operation \u2014 if PETLIBRO's cloud servers experience downtime, scheduled meals revert to manual dispensing only."
-      ]
+      ],
+      "asin": "B0B4XLRKCX"
     },
     {
       "rank": 5,
@@ -100,7 +104,8 @@
       "cons": [
         "The Arf Pets app is iOS and Android compatible but lacks Alexa and Google Home integration \u2014 voice control is not supported, limiting automation options compared to WOPET and PETLIBRO feeders.",
         "Camera video history is stored locally on a microSD card (not included, up to 32GB) rather than in the cloud, which means footage is lost if the card is full or the feeder is stolen."
-      ]
+      ],
+      "asin": "B07RDPV1WV"
     },
     {
       "rank": 6,
@@ -118,7 +123,8 @@
       "cons": [
         "Portion accuracy is plus or minus 12 grams at the 10g setting \u2014 the least accurate in this roundup \u2014 making it unsuitable for pets requiring precise meal portions for medical or weight reasons.",
         "Customer reviews report a higher-than-average jam rate with round kibble shapes (spherical pieces above 8mm diameter), with roughly 1 jam per 20 dispense cycles during our testing."
-      ]
+      ],
+      "asin": "B09B1B4VGN"
     }
   ],
   "buying_guide": [
