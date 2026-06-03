@@ -2,24 +2,15 @@
 /**
  * Generate per-article static HTML pages.
  *
- * Why: blog/article.html is a single SPA shell — the JS in js/main.js fills
- * in title, canonical, og: tags, and content from the JSON after page load.
- * Google sees the shell first; every article therefore reports the same
- * <title>"Article | CompareElite"</title> and <link rel="canonical">
- * pointing at /blog/article. Result: 51 articles look like duplicates of
- * one URL and Google indexes none of them individually.
+ * Each generated file has two layers:
+ *   1. Full article content pre-rendered as static HTML inside
+ *      id="article-header" and id="article-content" — readable by
+ *      Googlebot without executing JavaScript.
+ *   2. js/main.js still runs client-side and replaces/enhances the
+ *      static content with the full interactive UI.
  *
- * This script reads the shell as a template and emits one HTML file per
- * article into blog/article/<slug>.html, with the per-article metadata
- * baked into the HTML the crawler receives. The canonical URL pattern
- * is now /blog/article/<slug> (clean URL); the legacy ?slug=<X> form is
- * 308-redirected to it via vercel.json so old inbound links still
- * resolve. Vercel's cleanUrls strips the .html extension, so visitors
- * see /blog/article/<slug> in the address bar.
- *
- * The body of each generated file is identical to the shell — js/main.js
- * still does the actual content rendering on the client. We only fix the
- * metadata that Google reads before JS runs.
+ * The data-ssg="true" attribute on id="article-content" tells main.js
+ * that pre-rendered content exists and it can skip skeleton animations.
  *
  * Usage:
  *   node scripts/generate-article-pages.js              # all articles
@@ -54,6 +45,127 @@ function escapeHtmlText(s) {
     .replace(/>/g, '&gt;');
 }
 
+// ── Pre-rendered body content (SSG) ──────────────────────────────────────────
+// Googlebot reads this directly; JS replaces it with the full UI after load.
+
+function esc(s) {
+  return String(s || '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+function buildPrerenderedHeader(article) {
+  const category = esc(article.category || 'Buying Guide');
+  const title    = esc(article.title || '');
+  const excerpt  = esc(article.excerpt || '');
+  const author   = esc(article.author || 'CompareElite Team');
+  const date     = article.date ? new Date(article.date).toLocaleDateString('en-US', { year:'numeric', month:'long', day:'numeric' }) : '';
+  const readTime = article.read_time || '';
+  const image    = esc(article.thumbnail || '');
+
+  return `
+        <div class="article-category-badge" style="display:inline-block;background:var(--primary,#2563eb);color:#fff;padding:0.25rem 0.75rem;border-radius:20px;font-size:0.8rem;font-weight:600;margin-bottom:1rem;">${category}</div>
+        <h1 style="font-size:clamp(1.5rem,4vw,2.5rem);font-weight:800;line-height:1.2;margin-bottom:1rem;">${title}</h1>
+        <p style="font-size:1.1rem;color:var(--text-secondary,#64748b);margin-bottom:1.5rem;">${excerpt}</p>
+        <div style="display:flex;gap:1rem;justify-content:center;font-size:0.875rem;color:var(--text-secondary,#64748b);margin-bottom:2rem;">
+          <span>By <strong>${author}</strong></span>
+          ${date ? `<span>·</span><span>${esc(date)}</span>` : ''}
+          ${readTime ? `<span>·</span><span>${esc(readTime)}</span>` : ''}
+        </div>
+        ${image ? `<img src="${image}" alt="${title}" style="width:100%;max-height:400px;object-fit:cover;border-radius:12px;margin-bottom:2rem;" loading="eager" />` : ''}`;
+}
+
+function buildPrerenderedContent(article) {
+  const lines = [];
+
+  // Intro
+  if (article.intro) {
+    lines.push(`<p style="font-size:1.05rem;line-height:1.7;margin-bottom:1.5rem;">${esc(article.intro)}</p>`);
+  }
+
+  // Key takeaways
+  if (Array.isArray(article.key_takeaways) && article.key_takeaways.length) {
+    lines.push(`<div style="background:var(--bg-secondary,#f8fafc);border-left:4px solid var(--primary,#2563eb);padding:1rem 1.25rem;border-radius:0 8px 8px 0;margin-bottom:2rem;">`);
+    lines.push(`<h2 style="font-size:1rem;font-weight:700;margin-bottom:0.5rem;">Key Takeaways</h2><ul style="margin:0;padding-left:1.2rem;">`);
+    for (const kt of article.key_takeaways) {
+      lines.push(`<li style="margin-bottom:0.25rem;">${esc(kt)}</li>`);
+    }
+    lines.push(`</ul></div>`);
+  }
+
+  // Products
+  if (Array.isArray(article.products) && article.products.length) {
+    lines.push(`<h2 style="font-size:1.4rem;font-weight:700;margin:2rem 0 1rem;">Top Picks</h2>`);
+    for (const p of article.products) {
+      const name    = esc(p.name || '');
+      const bestFor = esc(p.best_for || '');
+      const price   = esc(p.price || '');
+      const rating  = esc(p.rating || '');
+      const link    = esc(p.link || `https://www.amazon.com/dp/${p.asin}?tag=compareelite-20`);
+      const image   = esc(p.image || '');
+      const pros    = Array.isArray(p.pros) ? p.pros.slice(0, 3) : [];
+
+      lines.push(`<div style="border:1px solid var(--border,#e2e8f0);border-radius:12px;padding:1.25rem;margin-bottom:1.25rem;">`);
+      if (bestFor) lines.push(`<div style="font-size:0.75rem;font-weight:700;color:var(--primary,#2563eb);text-transform:uppercase;margin-bottom:0.5rem;">${bestFor}</div>`);
+      lines.push(`<h3 style="font-size:1.1rem;font-weight:700;margin:0 0 0.5rem;"><a href="${link}" rel="nofollow sponsored" target="_blank" style="color:inherit;text-decoration:none;">${name}</a></h3>`);
+      if (image) lines.push(`<img src="${image}" alt="${name}" style="width:120px;height:120px;object-fit:contain;float:right;margin:0 0 0.5rem 1rem;" loading="lazy" />`);
+      if (rating || price) {
+        lines.push(`<div style="font-size:0.875rem;margin-bottom:0.5rem;">`);
+        if (rating) lines.push(`<strong>Rating:</strong> ${rating}  `);
+        if (price)  lines.push(`<strong>Price:</strong> ${price}`);
+        lines.push(`</div>`);
+      }
+      if (pros.length) {
+        lines.push(`<ul style="margin:0.5rem 0 0;padding-left:1.2rem;font-size:0.875rem;">`);
+        for (const pro of pros) lines.push(`<li>${esc(pro)}</li>`);
+        lines.push(`</ul>`);
+      }
+      lines.push(`<div style="clear:both;"></div></div>`);
+    }
+  }
+
+  // Testing narrative
+  if (article.testing_narrative) {
+    lines.push(`<div style="background:var(--bg-secondary,#f8fafc);padding:1rem 1.25rem;border-radius:8px;margin:2rem 0;font-style:italic;">`);
+    lines.push(`<p style="margin:0;">${esc(article.testing_narrative)}</p></div>`);
+  }
+
+  // Buying guide
+  if (Array.isArray(article.buying_guide) && article.buying_guide.length) {
+    lines.push(`<h2 style="font-size:1.4rem;font-weight:700;margin:2rem 0 1rem;">Buying Guide</h2>`);
+    for (const section of article.buying_guide) {
+      const heading = esc(section.title || section.heading || '');
+      const body    = esc(section.body || section.content || '');
+      if (heading) lines.push(`<h3 style="font-size:1.1rem;font-weight:700;margin:1.25rem 0 0.5rem;">${heading}</h3>`);
+      if (body)    lines.push(`<p style="line-height:1.7;margin-bottom:1rem;">${body}</p>`);
+    }
+  }
+
+  // FAQ
+  if (Array.isArray(article.faq) && article.faq.length) {
+    lines.push(`<h2 style="font-size:1.4rem;font-weight:700;margin:2rem 0 1rem;">Frequently Asked Questions</h2>`);
+    for (const item of article.faq) {
+      const q = esc(item.question || item.q || '');
+      const a = esc(item.answer   || item.a || '');
+      if (q) lines.push(`<h3 style="font-size:1rem;font-weight:700;margin:1rem 0 0.25rem;">${q}</h3>`);
+      if (a) lines.push(`<p style="line-height:1.7;margin-bottom:0.75rem;">${a}</p>`);
+    }
+  }
+
+  // Verdict
+  if (article.verdict) {
+    lines.push(`<div style="background:var(--bg-secondary,#f8fafc);border:1px solid var(--border,#e2e8f0);padding:1.25rem;border-radius:8px;margin:2rem 0;">`);
+    lines.push(`<h2 style="font-size:1.1rem;font-weight:700;margin:0 0 0.5rem;">Our Verdict</h2>`);
+    lines.push(`<p style="margin:0;line-height:1.7;">${esc(article.verdict)}</p></div>`);
+  }
+
+  return lines.join('\n');
+}
+
+// ── Meta helpers ──────────────────────────────────────────────────────────────
+
 function articleMeta(article) {
   const title = `${article.title} | CompareElite`;
   const description = article.excerpt || 'Expert product comparison and buying guide.';
@@ -70,6 +182,20 @@ function articleMeta(article) {
 
 function applyMeta(template, m, article) {
   let out = template;
+
+  // Inject pre-rendered static content for SEO (replaces skeleton loaders).
+  const preHeader  = buildPrerenderedHeader(article);
+  const preContent = buildPrerenderedContent(article);
+
+  out = out.replace(
+    /<div id="article-header"[^>]*>[\s\S]*?<\/div>/,
+    `<div id="article-header" style="text-align: center; margin-bottom: 2rem;">${preHeader}\n        </div>`
+  );
+
+  out = out.replace(
+    /<article id="article-content">[\s\S]*?<\/article>/,
+    `<article id="article-content" data-ssg="true">${preContent}\n        </article>`
+  );
 
   // <title>...</title>
   out = out.replace(
