@@ -1,11 +1,11 @@
 {
-  "submittedAt": "2026-06-03T10:59:07.841Z",
+  "submittedAt": "2026-06-03T11:06:04.577Z",
   "batchSize": 90,
   "total": 211,
-  "alreadySubmitted": 90,
-  "submittedThisRun": 90,
+  "alreadySubmitted": 180,
+  "submittedThisRun": 0,
   "remaining": 31,
-  "status": 200,
-  "ok": true,
-  "message": "{\"d\":null}"
+  "status": 400,
+  "ok": false,
+  "message": "{\"ErrorCode\":2,\"Message\":\"ERROR!!! Quota remaining for today: 10, Submitted: 31\"}"
 }

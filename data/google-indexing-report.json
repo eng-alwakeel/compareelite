@@ -1,10 +1,10 @@
 {
-  "submittedAt": "2026-06-03T10:59:06.194Z",
+  "submittedAt": "2026-06-03T11:06:05.844Z",
   "batchSize": 190,
   "total": 211,
-  "alreadyIndexed": 3,
+  "alreadyIndexed": 20,
   "submitted": 190,
-  "ok": 17,
+  "ok": 0,
   "failed": 0,
   "quotaHit": true,
   "remaining": 191,
