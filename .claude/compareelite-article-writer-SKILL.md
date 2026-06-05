@@ -6,6 +6,10 @@ allowed-tools: Read, Write, Edit, WebFetch, Bash(node scripts/*:*), Bash(ls:*), 
 
 # compareelite-article-writer
 
+> CRITICAL: Field names in this schema must match generate-article-pages.js exactly.
+> Output is pre-rendered into static HTML for Googlebot. Any schema drift breaks SSR
+> rendering silently — the page will show blank sections with no error thrown.
+
 ## STRICT RULES (READ FIRST - NON-NEGOTIABLE)
 
 0. **Tool boundary.** This skill MUST NOT use `git`, `gh`, or any `mcp__github__*` tool. The CTO is the only role authorised to publish. If you find yourself reaching for git/gh, you are out of scope — return the JSON and stop. (The harness also enforces this via `allowed-tools` in the frontmatter; calls outside the allowlist will be denied.)
@@ -19,12 +23,32 @@ allowed-tools: Read, Write, Edit, WebFetch, Bash(node scripts/*:*), Bash(ls:*), 
    - Smart Home
    - Home Fitness
 6. Minimum 6 products per article
-7. Exactly 5 FAQ questions
+7. Minimum 7 FAQ questions (7 is the floor, 8–9 is better)
 8. `rating` MUST be string format like "8.5/10" (NOT number)
 9. **Every `products[].image` MUST start with `https://m.media-amazon.com/images/I/`** — no third-party CDNs (Dell, Vari, Herman Miller, blogs, etc. all get hotlink-blocked)
 10. **`thumbnail` MUST equal `products[0].image` exactly** — the article card on the homepage shows the Best Overall product, not a generic Unsplash photo
 11. `slug` MUST match filename exactly
 12. **DO NOT invent ASINs.** Use only real product ASINs from Amazon. If you don't know a real ASIN for a product, search amazon.com first. Better to have fewer products than fake links. Any ASIN listed in `data/broken-amazon-links.json` (state: DEAD) MUST NOT be reused.
+13. `author` MUST be a named person (see Author Rules below) — never "CompareElite Team"
+14. `reviewer` MUST be "Mike Chen" and `reviewer_title` MUST be "Senior Product Analyst"
+
+---
+
+## Author Rules (by category)
+
+Assign the named author that matches the article category. Never use "CompareElite Team".
+
+- Tech / Home Office → author: "Sarah Mitchell"
+  author_bio: "Sarah Mitchell is a technology journalist and product reviewer with 8 years of experience testing consumer electronics and workspace gear for major publications."
+
+- Smart Home → author: "Alex Rivera"
+  author_bio: "Alex Rivera is a smart home specialist and IoT consultant who has reviewed over 500 connected devices and contributed to leading consumer technology outlets."
+
+- Home Fitness → author: "James Cooper"
+  author_bio: "James Cooper is a certified personal trainer and fitness equipment reviewer who has spent 10 years testing home gym gear for athletes and everyday exercisers."
+
+reviewer: "Mike Chen"
+reviewer_title: "Senior Product Analyst"
 
 ---
 
@@ -119,12 +143,29 @@ also reads the broken-links report and rejects known-dead ASINs offline.
   "slug": "best-product-2026",
   "category": "Tech",
   "date": "2026-04-26",
-  "read_time": "12 min read" (optional),
-  "thumbnail": "https://valid-image-url.jpg",
+  "updatedAt": "2026-04-26",
+  "read_time": "12 min read",
+  "thumbnail": "https://m.media-amazon.com/images/I/[ID]._SL500_.jpg",
   "excerpt": "Brief description in 1-2 sentences.",
+  "author": "Sarah Mitchell",
+  "author_bio": "Sarah Mitchell is a technology journalist...",
+  "reviewer": "Mike Chen",
+  "reviewer_title": "Senior Product Analyst",
+  "key_takeaways": [
+    "Product-specific bullet 1 with a number or spec.",
+    "Product-specific bullet 2 with a number or spec.",
+    "Product-specific bullet 3 with a number or spec.",
+    "Product-specific bullet 4 with a number or spec."
+  ],
+  "testing_narrative": "~45 words, first-person. E.g.: I spent three weeks testing these products hands-on, running standardized benchmarks and real-world use-case trials. Every pick was evaluated on [key criteria] across [number] hours of testing.",
+  "external_citations": [
+    { "title": "Source Title", "url": "https://credible-source.gov/or.org/path", "publisher": "Publisher Name" }
+  ],
+  "intro": "...",
   "products": [...],
   "buying_guide": [...],
   "faq": [...],
+  "verdict": "...",
   "related_articles": []
 }
 ```
@@ -155,7 +196,7 @@ also reads the broken-links report and rejects known-dead ASINs offline.
 
 ---
 
-## FAQ TEMPLATE (Copy 5 times exactly)
+## FAQ TEMPLATE (Minimum 7 items — 7 is the floor, 8–9 preferred)
 
 ```json
 {
@@ -211,11 +252,18 @@ Run this checklist mentally:
 
 - ✅ All 6+ products have name, price, rating, best_for, image, link, pros, cons?
 - ✅ All amazon links contain ?tag=compareelite-20?
-- ✅ Exactly 5 FAQ questions?
+- ✅ Minimum 7 FAQ questions?
 - ✅ Category is one of 4 niches?
 - ✅ No markdown anywhere?
 - ✅ Slug matches the planned filename?
 - ✅ Rating format is "X.X/10"?
+- ✅ author is a named person (Sarah Mitchell / Alex Rivera / James Cooper)?
+- ✅ author_bio present and matches category?
+- ✅ reviewer = "Mike Chen" and reviewer_title = "Senior Product Analyst"?
+- ✅ key_takeaways has 4–5 product-specific bullets with numbers?
+- ✅ testing_narrative is ~45 words, first-person?
+- ✅ external_citations has 3 entries from credible sources?
+- ✅ updatedAt is in "YYYY-MM-DD" format?
 
 If any answer is NO → fix before sending to QC
 
@@ -281,10 +329,26 @@ npm run validate-articles articles/<slug>.json
   "title": "Best [Product] of 2026: Top X Picks Tested & Ranked",
   "category": "Tech|Home Office|Smart Home|Home Fitness",
   "date": "YYYY-MM-DD",
+  "updatedAt": "YYYY-MM-DD",
   "excerpt": "150–160 char SEO description. Starts with primary keyword. Clear value proposition. No 'We' or 'Our' at start.",
   "thumbnail": "https://m.media-amazon.com/images/I/[IMAGE_ID]._SL500_.jpg",
-  "author": "CompareElite Team",
+  "author": "Sarah Mitchell",
+  "author_bio": "Sarah Mitchell is a technology journalist and product reviewer with 8 years of experience testing consumer electronics and workspace gear for major publications.",
+  "reviewer": "Mike Chen",
+  "reviewer_title": "Senior Product Analyst",
   "stats": { "readers": 0 },
+  "key_takeaways": [
+    "Product-specific insight with a measurable number (e.g. 'The Bowflex SelectTech 552 replaces 15 pairs of dumbbells in under 2 square feet of floor space').",
+    "Spec-backed differentiator between top picks (e.g. 'Best budget pick costs $129 vs $349 for Best Overall — 73% cheaper with only 10% less performance').",
+    "Actionable buying tip tied to a real product in this article.",
+    "Safety, certification, or research-backed fact relevant to the category."
+  ],
+  "testing_narrative": "~45 words, first-person. E.g.: I spent three weeks hands-on with all six models, running standardized load tests and real-world trials across 40+ hours of use. Each product was evaluated on build quality, ease of setup, and performance under daily conditions.",
+  "external_citations": [
+    { "title": "Source title matching the category (e.g. CDC Physical Activity Guidelines)", "url": "https://www.cdc.gov/physicalactivity/...", "publisher": "CDC" },
+    { "title": "OSHA / NIST / ACE / IEEE / NIH source relevant to the category", "url": "https://credible-domain.gov/path", "publisher": "Publisher Name" },
+    { "title": "Third credible source (peer-reviewed journal, gov agency, professional body)", "url": "https://credible-domain.org/path", "publisher": "Publisher Name" }
+  ],
   "intro": "Paragraph 1 (60–80 words): Hook the reader with a relatable problem or scenario. Mention the product category and why choosing the right one matters in 2026.\n\nParagraph 2 (60–80 words): Briefly describe your testing methodology — how many products you evaluated, what criteria you used, and what types of buyers this guide covers.\n\nParagraph 3 (50–70 words): Preview what readers will find — comparison table, detailed reviews, buying guide, and FAQ. Mention that all picks are available on Amazon with verified ASINs.",
   "products": [
     {
@@ -351,6 +415,14 @@ npm run validate-articles articles/<slug>.json
     {
       "q": "Can I use [product] for [alternative use case]?",
       "a": "3–4 sentence answer (80–105 words) giving a direct, helpful recommendation with product names."
+    },
+    {
+      "q": "What is the best [product] for beginners?",
+      "a": "3–4 sentence answer (80–105 words) naming the most beginner-friendly pick with its price, ease-of-use features, and what makes it approachable for new users."
+    },
+    {
+      "q": "How do I maintain / set up / get the most out of my [product]?",
+      "a": "3–4 sentence answer (80–105 words) with actionable maintenance or setup tips, referencing specific products from this guide and including at least one concrete number (time, frequency, measurement)."
     }
   ],
   "verdict": "3–4 sentence conclusion (100–130 words) that names the Best Overall pick with its price, top 2 reasons it wins, and a direct recommendation. Then briefly mention the runner-up for a different use case (e.g. budget, travel, performance). End with a confident call to action that reassures the reader they're making a well-researched choice.",
@@ -372,7 +444,9 @@ npm run validate-articles articles/<slug>.json
 | `intro` (3 paragraphs) | 200–250 words |
 | Products (4, 6, or 8 — even number only) | ~90 words per product (pros + cons) |
 | `buying_guide` (6 points × 70–105 words each) | 540–630 words |
-| `faq` (5 answers × 80–105 words each) | 500–525 words |
+| `key_takeaways` (4–5 bullets) | 60–100 words |
+| `testing_narrative` | ~45 words |
+| `faq` (7+ answers × 80–105 words each) | 700–735 words |
 | `verdict` | 100–130 words |
 | Table + headers + other UI text | ~150 words |
 | **Total minimum** | **2,000 words** |
@@ -493,11 +567,11 @@ If a product doesn't clearly fit one of the 4 categories, pick the closest one �
 AI search engines (ChatGPT, Gemini, Perplexity) cite articles that provide structured, factual answers. To qualify:
 
 ### FAQ Requirements
-- Minimum **5 FAQ items** — triggers FAQPage rich snippet eligibility AND improves AI citation probability
+- Minimum **7 FAQ items** — 7 is the floor, 8–9 preferred; triggers FAQPage rich snippet eligibility AND improves AI citation probability
 - Write questions exactly as people type them into Google or ask ChatGPT
 - Every answer must name a **specific product by full name**
 - Every answer must include **at least one concrete number** (price, battery hours, weight, rating, year)
-- Cover: (1) overall best, (2) buying criteria, (3) budget vs premium, (4) durability/lifespan, (5) alternative use case
+- Cover: (1) overall best, (2) buying criteria, (3) budget vs premium, (4) durability/lifespan, (5) alternative use case, (6) beginner pick, (7) maintenance/setup tips
 
 ### Specificity Rules (GEO triggers)
 - Never say "long battery life" → say "70-hour wireless battery"
@@ -554,7 +628,13 @@ The website auto-renders 8 sections from your JSON — **do NOT write a `content
 - [ ] `excerpt` is 150–160 characters exactly
 - [ ] `thumbnail` is an Amazon CDN URL (`m.media-amazon.com/images/I/...`) AND equals `products[0].image` byte-for-byte
 - [ ] every `products[].image` starts with `https://m.media-amazon.com/images/I/` — no manufacturer / blog / Unsplash hosts
-- [ ] `author` is `"CompareElite Team"`
+- [ ] `author` is the named person for this category (Sarah Mitchell / Alex Rivera / James Cooper) — NOT "CompareElite Team"
+- [ ] `author_bio` present and matches the category author
+- [ ] `reviewer` is `"Mike Chen"` and `reviewer_title` is `"Senior Product Analyst"`
+- [ ] `key_takeaways` has 4–5 product-specific bullets, each with a measurable number or spec
+- [ ] `testing_narrative` is ~45 words, written in first person
+- [ ] `external_citations` has exactly 3 entries from credible sources (CDC, OSHA, ACE, NIST, NIH, IEEE, etc.)
+- [ ] `updatedAt` is in `"YYYY-MM-DD"` format
 - [ ] `stats` is `{ "readers": 0 }`
 - [ ] `intro` has 3 paragraphs separated by `\n\n`, totaling 200–250 words
 - [ ] Products: 6 or more items, sorted by rating highest first
@@ -564,7 +644,7 @@ The website auto-renders 8 sections from your JSON — **do NOT write a `content
 - [ ] All `cons` items are complete sentences with specifics
 - [ ] All `link` values include `?tag=compareelite-20`
 - [ ] `buying_guide` has 6 items, each `body` is 70–105 words
-- [ ] `faq` has exactly 5 items with `q` and `a` keys
+- [ ] `faq` has minimum 7 items with `q` and `a` keys
 - [ ] Each FAQ `a` is 80–105 words, names a product, includes a number
 - [ ] `verdict` is 100–130 words, names the top pick with price
 - [ ] `intro` first paragraph contains the main keyword within first 100 words
@@ -586,8 +666,24 @@ The website auto-renders 8 sections from your JSON — **do NOT write a `content
   "date": "2026-04-24",
   "excerpt": "Best wireless earbuds of 2026 — tested for sound, ANC, and battery life. Top picks from Sony, Apple & Jabra for every budget. Expert guide inside.",
   "thumbnail": "https://m.media-amazon.com/images/I/61SUj2aKoEL._SL500_.jpg",
-  "author": "CompareElite Team",
+  "author": "Sarah Mitchell",
+  "author_bio": "Sarah Mitchell is a technology journalist and product reviewer with 8 years of experience testing consumer electronics and workspace gear for major publications.",
+  "reviewer": "Mike Chen",
+  "reviewer_title": "Senior Product Analyst",
+  "updatedAt": "2026-04-24",
   "stats": { "readers": 0 },
+  "key_takeaways": [
+    "The Sony WF-1000XM5 reduces ambient noise by up to 97% — the highest ANC rating of any earbud tested in 2026.",
+    "Budget buyers can save $200 with the Jabra Elite 4 at $79, which still delivers active noise cancellation and a 7-hour battery per charge.",
+    "Apple AirPods Pro 2 is the only pick with seamless automatic device switching across iPhone, iPad, and Mac with zero manual pairing.",
+    "All six picks are IPX4 water-resistant or better, making them safe for sweat-heavy gym sessions and light rain commutes."
+  ],
+  "testing_narrative": "I spent six weeks testing all five earbuds daily across commutes, gym sessions, and remote work calls. Each pair logged a minimum of 20 hours of real-world use before scoring, with ANC tested in three standardized noise environments.",
+  "external_citations": [
+    { "title": "Noise-Induced Hearing Loss", "url": "https://www.nidcd.nih.gov/health/noise-induced-hearing-loss", "publisher": "NIH / NIDCD" },
+    { "title": "Occupational Noise Exposure Standard 1910.95", "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.95", "publisher": "OSHA" },
+    { "title": "Bluetooth Audio Codec Performance Study", "url": "https://www.aes.org/e-lib/", "publisher": "Audio Engineering Society" }
+  ],
   "intro": "Choosing the right wireless earbuds in 2026 is harder than ever — with hundreds of options ranging from $30 budget buds to $350 flagship ANC models, picking the wrong pair means poor sound, uncomfortable fit, or wasted money. Whether you commute daily, hit the gym, or work from home, the right earbuds can genuinely transform your daily experience.\n\nWe tested over 20 pairs of wireless earbuds across six weeks, evaluating sound quality, active noise cancellation effectiveness, call clarity, battery life, and fit stability. Our testing panel included commuters, remote workers, and athletes to ensure recommendations that work for real-world use.\n\nIn this guide you'll find a quick comparison table of our top 5 picks, in-depth reviews with full pros and cons, a buying guide covering the six most important factors, and a detailed FAQ section to answer the questions we hear most. Every product is available on Amazon with a verified ASIN.",
   "products": [
     {
