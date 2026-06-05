@@ -50,6 +50,16 @@ Assign the named author that matches the article category. Never use "CompareEli
 reviewer: "Mike Chen"
 reviewer_title: "Senior Product Analyst"
 
+### Editor's Pick (flagship articles only)
+
+For flagship or high-priority articles designated as Editor's Pick, use the founder's verified identity instead of a category author:
+
+  author: "Adel Alwakeel"
+  author_url: "https://www.linkedin.com/in/adel-alwakeel-247221a9"
+  author_bio: "Adel Alwakeel is the founder of CompareElite and a product research specialist with over a decade of experience in consumer electronics and home technology."
+
+Use Adel Alwakeel only when explicitly instructed by the Director or CTO. Default to the category author (Sarah Mitchell / Alex Rivera / James Cooper) for all other articles.
+
 ---
 
 ## AUTO-IMPROVEMENTS (2026-04-28)
@@ -149,6 +159,7 @@ also reads the broken-links report and rejects known-dead ASINs offline.
   "excerpt": "Brief description in 1-2 sentences.",
   "author": "Sarah Mitchell",
   "author_bio": "Sarah Mitchell is a technology journalist...",
+  "author_url": "(omit for category authors — only set for Editor's Pick / Adel Alwakeel)",
   "reviewer": "Mike Chen",
   "reviewer_title": "Senior Product Analyst",
   "key_takeaways": [
@@ -257,8 +268,9 @@ Run this checklist mentally:
 - ✅ No markdown anywhere?
 - ✅ Slug matches the planned filename?
 - ✅ Rating format is "X.X/10"?
-- ✅ author is a named person (Sarah Mitchell / Alex Rivera / James Cooper)?
-- ✅ author_bio present and matches category?
+- ✅ author is correct: named category author OR Adel Alwakeel for Editor's Pick?
+- ✅ author_bio present and matches the author?
+- ✅ author_url set only for Editor's Pick (Adel Alwakeel) — omitted for category authors?
 - ✅ reviewer = "Mike Chen" and reviewer_title = "Senior Product Analyst"?
 - ✅ key_takeaways has 4–5 product-specific bullets with numbers?
 - ✅ testing_narrative is ~45 words, first-person?
@@ -334,6 +346,7 @@ npm run validate-articles articles/<slug>.json
   "thumbnail": "https://m.media-amazon.com/images/I/[IMAGE_ID]._SL500_.jpg",
   "author": "Sarah Mitchell",
   "author_bio": "Sarah Mitchell is a technology journalist and product reviewer with 8 years of experience testing consumer electronics and workspace gear for major publications.",
+  "author_url": "(omit unless Editor's Pick — see Author Rules)",
   "reviewer": "Mike Chen",
   "reviewer_title": "Senior Product Analyst",
   "stats": { "readers": 0 },
@@ -628,8 +641,9 @@ The website auto-renders 8 sections from your JSON — **do NOT write a `content
 - [ ] `excerpt` is 150–160 characters exactly
 - [ ] `thumbnail` is an Amazon CDN URL (`m.media-amazon.com/images/I/...`) AND equals `products[0].image` byte-for-byte
 - [ ] every `products[].image` starts with `https://m.media-amazon.com/images/I/` — no manufacturer / blog / Unsplash hosts
-- [ ] `author` is the named person for this category (Sarah Mitchell / Alex Rivera / James Cooper) — NOT "CompareElite Team"
-- [ ] `author_bio` present and matches the category author
+- [ ] `author` is correct: Sarah Mitchell / Alex Rivera / James Cooper (or Adel Alwakeel for Editor's Pick only)
+- [ ] `author_bio` present and matches the author
+- [ ] `author_url` set to LinkedIn URL only for Editor's Pick — omitted for category authors
 - [ ] `reviewer` is `"Mike Chen"` and `reviewer_title` is `"Senior Product Analyst"`
 - [ ] `key_takeaways` has 4–5 product-specific bullets, each with a measurable number or spec
 - [ ] `testing_narrative` is ~45 words, written in first person
