@@ -119,7 +119,7 @@ If your re-run disagrees with the Editor's pasted output → REJECTED with `evid
 60. No "as of [old date]" in any field (timestamps creep stale)
 
 #### Group 5 — FAQ (10 points)
-61. Exactly 5 FAQ items
+61. Minimum 7 FAQ items (7 is the floor — 8 or 9 preferred)
 62. Every `q` and `a` field is present and non-empty
 63. FAQ uses keys `q` and `a` (not `question`/`answer`)
 64. Every answer is ≥ 140 words

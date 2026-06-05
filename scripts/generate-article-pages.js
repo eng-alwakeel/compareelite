@@ -57,23 +57,39 @@ function esc(s) {
 }
 
 function buildPrerenderedHeader(article) {
-  const category = esc(article.category || 'Buying Guide');
-  const title    = esc(article.title || '');
-  const excerpt  = esc(article.excerpt || '');
-  const author   = esc(article.author || 'CompareElite Team');
-  const date     = article.date ? new Date(article.date).toLocaleDateString('en-US', { year:'numeric', month:'long', day:'numeric' }) : '';
-  const readTime = article.read_time || '';
-  const image    = esc(article.thumbnail || '');
+  const category      = esc(article.category || 'Buying Guide');
+  const title         = esc(article.title || '');
+  const excerpt       = esc(article.excerpt || '');
+  const authorName    = esc(article.author || 'CompareElite Team');
+  const authorUrl     = article.author_url || '';
+  const authorBio     = esc(article.author_bio || '');
+  const reviewer      = esc(article.reviewer || '');
+  const reviewerTitle = esc(article.reviewer_title || '');
+  const date          = article.date
+    ? new Date(article.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+    : '';
+  const updatedAt     = article.updatedAt
+    ? new Date(article.updatedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+    : '';
+  const readTime      = article.read_time || '';
+  const image         = esc(article.thumbnail || '');
+
+  const authorDisplay = authorUrl
+    ? `<a href="${esc(authorUrl)}" rel="author" target="_blank" style="color:inherit;text-decoration:underline;">${authorName}</a>`
+    : `<strong>${authorName}</strong>`;
 
   return `
         <div class="article-category-badge" style="display:inline-block;background:var(--primary,#2563eb);color:#fff;padding:0.25rem 0.75rem;border-radius:20px;font-size:0.8rem;font-weight:600;margin-bottom:1rem;">${category}</div>
         <h1 style="font-size:clamp(1.5rem,4vw,2.5rem);font-weight:800;line-height:1.2;margin-bottom:1rem;">${title}</h1>
         <p style="font-size:1.1rem;color:var(--text-secondary,#64748b);margin-bottom:1.5rem;">${excerpt}</p>
-        <div style="display:flex;gap:1rem;justify-content:center;font-size:0.875rem;color:var(--text-secondary,#64748b);margin-bottom:2rem;">
-          <span>By <strong>${author}</strong></span>
+        <div style="display:flex;flex-wrap:wrap;gap:0.5rem 1rem;justify-content:center;font-size:0.875rem;color:var(--text-secondary,#64748b);margin-bottom:${authorBio || reviewer ? '0.75rem' : '2rem'};">
+          <span>By ${authorDisplay}</span>
           ${date ? `<span>·</span><span>${esc(date)}</span>` : ''}
           ${readTime ? `<span>·</span><span>${esc(readTime)}</span>` : ''}
+          ${updatedAt && updatedAt !== date ? `<span>·</span><span>Updated ${esc(updatedAt)}</span>` : ''}
         </div>
+        ${authorBio ? `<p style="font-size:0.8rem;color:var(--text-secondary,#64748b);margin-bottom:0.5rem;font-style:italic;">${authorBio}</p>` : ''}
+        ${reviewer ? `<p style="font-size:0.8rem;color:var(--text-secondary,#64748b);margin-bottom:1.75rem;">Reviewed by <strong>${reviewer}</strong>${reviewerTitle ? `, ${reviewerTitle}` : ''}</p>` : ''}
         ${image ? `<img src="${image}" alt="${title}" style="width:100%;max-height:400px;object-fit:cover;border-radius:12px;margin-bottom:2rem;" loading="eager" />` : ''}`;
 }
 
@@ -161,23 +177,45 @@ function buildPrerenderedContent(article) {
     lines.push(`<p style="margin:0;line-height:1.7;">${esc(article.verdict)}</p></div>`);
   }
 
+  // External citations / sources (E-E-A-T signal — Googlebot must see these)
+  if (Array.isArray(article.external_citations) && article.external_citations.length) {
+    lines.push(`<div style="margin:2rem 0;padding-top:1.5rem;border-top:1px solid var(--border,#e2e8f0);">`);
+    lines.push(`<h2 style="font-size:1rem;font-weight:700;margin-bottom:0.75rem;">Sources</h2>`);
+    lines.push(`<ul style="margin:0;padding-left:1.2rem;font-size:0.875rem;color:var(--text-secondary,#64748b);">`);
+    for (const cite of article.external_citations) {
+      const citeTitle     = esc(cite.title || '');
+      const citeUrl       = esc(cite.url || '');
+      const citePublisher = esc(cite.publisher || '');
+      lines.push(`<li style="margin-bottom:0.5rem;">`);
+      if (citeUrl) {
+        lines.push(`<a href="${citeUrl}" rel="nofollow noopener" target="_blank" style="color:var(--primary,#2563eb);">${citeTitle || citeUrl}</a>`);
+      } else {
+        lines.push(citeTitle);
+      }
+      if (citePublisher) lines.push(` — <em>${citePublisher}</em>`);
+      lines.push(`</li>`);
+    }
+    lines.push(`</ul></div>`);
+  }
+
   return lines.join('\n');
 }
 
 // ── Meta helpers ──────────────────────────────────────────────────────────────
 
 function articleMeta(article) {
-  const title = `${article.title} | CompareElite`;
+  const title       = `${article.title} | CompareElite`;
   const description = article.excerpt || 'Expert product comparison and buying guide.';
-  const url = `${SITE_URL}/blog/article/${article.slug}`;
-  const image = article.thumbnail || FALLBACK_OG;
-  const dateIso = article.date ? `${article.date}T00:00:00Z` : '';
-  const section = article.category || 'Buying Guides';
-  const author = article.author || 'CompareElite Team';
-  const keywords = [article.title, article.category, 'buying guide', 'product comparison', '2026']
+  const url         = `${SITE_URL}/blog/article/${article.slug}`;
+  const image       = article.thumbnail || FALLBACK_OG;
+  const dateIso     = article.date ? `${article.date}T00:00:00Z` : '';
+  const modifiedIso = article.updatedAt ? `${article.updatedAt}T00:00:00Z` : dateIso;
+  const section     = article.category || 'Buying Guides';
+  const author      = article.author || 'CompareElite Team';
+  const keywords    = [article.title, article.category, 'buying guide', 'product comparison', '2026']
     .filter(Boolean)
     .join(', ');
-  return { title, description, url, image, dateIso, section, author, keywords };
+  return { title, description, url, image, dateIso, modifiedIso, section, author, keywords };
 }
 
 function applyMeta(template, m, article) {
@@ -215,7 +253,7 @@ function applyMeta(template, m, article) {
     [/(<meta property="og:description" content=")[^"]*(" id="og-description")/,   m.description],
     [/(<meta property="og:image" content=")[^"]*(" id="og-image")/,               m.image],
     [/(<meta property="article:published_time" content=")[^"]*(" id="og-published")/, m.dateIso],
-    [/(<meta property="article:modified_time" content=")[^"]*(" id="og-modified")/,   m.dateIso],
+    [/(<meta property="article:modified_time" content=")[^"]*(" id="og-modified")/,   m.modifiedIso],
     [/(<meta property="article:section" content=")[^"]*(" id="og-section")/,      m.section],
     [/(<meta name="twitter:title" content=")[^"]*(" id="tw-title")/,              m.title],
     [/(<meta name="twitter:description" content=")[^"]*(" id="tw-description")/,  m.description],
