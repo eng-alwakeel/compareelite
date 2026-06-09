@@ -29,7 +29,7 @@ function isAmazonCdnImage(url) {
   return url.startsWith(AMAZON_CDN_PREFIX) || url.startsWith(AMAZON_CDN_NA_PREFIX);
 }
 const MIN_PRODUCTS = 6;
-const FAQ_COUNT = 5;
+const FAQ_MIN = 5;
 const RATING_PATTERN = /^\d+(?:\.\d+)?\/10$/;
 const ASIN_PATH_RE = /\/dp\/([A-Z0-9]{10})(?:[/?]|$)/;
 const BROKEN_LINKS_PATH = path.resolve(__dirname, '..', 'data', 'broken-amazon-links.json');
@@ -248,8 +248,8 @@ function validateArticle(article, filePath) {
   if (!Array.isArray(article.faq)) {
     errors.push('faq must be an array');
   } else {
-    if (article.faq.length !== FAQ_COUNT) {
-      errors.push(`faq must have exactly ${FAQ_COUNT} items (found ${article.faq.length})`);
+    if (article.faq.length < FAQ_MIN) {
+      errors.push(`faq must have at least ${FAQ_MIN} items (found ${article.faq.length})`);
     }
     article.faq.forEach((item, i) => {
       const tag = `faq[${i}]`;
