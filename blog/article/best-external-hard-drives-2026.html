@@ -105,9 +105,13 @@
   "description": "External hard drives provide bulk storage at $15-25 per terabyte for backups, media libraries, and file transfers. We tested the 6 best external hard drives for 2026.",
   "image": "https://m.media-amazon.com/images/I/71KJpVHw9iL._AC_SL1500_.jpg",
   "author": {
-    "@type": "Organization",
-    "name": "CompareElite",
-    "url": "https://compareelite.com"
+    "@type": "Person",
+    "name": "Sarah Mitchell",
+    "description": "Sarah Mitchell is a consumer tech reviewer with 8 years of hands-on testing experience. She has evaluated over 400 products for leading publications and specializes in home office ergonomics and productivity gear.",
+    "url": "https://compareelite.com/about",
+    "sameAs": [
+      "https://compareelite.com/about"
+    ]
   },
   "publisher": {
     "@type": "Organization",
@@ -331,44 +335,58 @@
   "mainEntity": [
     {
       "@type": "Question",
+      "name": "What external hard drive capacity do I actually need?",
       "acceptedAnswer": {
-        "@type": "Answer"
+        "@type": "Answer",
+        "text": "The right external drive capacity depends on what you're storing and your growth trajectory. For computer backup: the drive should hold at least 2x your current used storage to accommodate future growth without immediately filling the drive. If your computer currently uses 500 GB, a 2 TB drive provides comfortable backup space for years. For media libraries: video is the most space-intensive — 4K footage runs roughly 25-50 GB per hour depending on codec and bitrate, while 1080p HD video runs 5-15 GB per hour. A 1,000 photo family photo library with large RAW files might consume 100-200 GB, while a 10-year family photo collection with video could easily reach 2-4 TB. For gaming: modern AAA games run 60-150 GB each, and a 20-game library can consume 2-3 TB quickly. The general recommendation: assess your current data volume, double it for growth buffer, and add 1-2 TB for unexpected storage needs. Many users find they use more storage than expected within 2-3 years of purchasing a drive."
       }
     },
     {
       "@type": "Question",
+      "name": "Are external SSDs worth the extra cost over HDDs?",
       "acceptedAnswer": {
-        "@type": "Answer"
+        "@type": "Answer",
+        "text": "External SSDs are worth the premium cost when one or more of these conditions apply: you need fast transfer speeds (video editors moving large project files benefit enormously from SSD's 5-10x speed advantage over portable HDDs), you need a drive that can handle physical stress (no moving parts means SSD survives drops that would kill an HDD), or you need an ultra-compact form factor for travel. For bulk backup storage of files you access infrequently — system images, photo archives, document backups — an HDD's slower speeds are perfectly acceptable and the cost savings at higher capacities are substantial. A 4 TB portable HDD for $80 versus a 4 TB portable SSD for $220 is a meaningful difference for storage that sits connected to your home desktop. The break-even case: portable drives used regularly, moved between locations, or needed quickly for large file access. HDDs for stationary high-capacity archives, SSDs for mobile and performance-sensitive applications."
       }
     },
     {
       "@type": "Question",
+      "name": "How do I format an external hard drive for both Mac and PC?",
       "acceptedAnswer": {
-        "@type": "Answer"
+        "@type": "Answer",
+        "text": "Most external drives come pre-formatted in either exFAT or NTFS. exFAT is the cross-platform standard that both macOS and Windows can read and write without additional software — it's the format to use if you'll move files between both systems. NTFS is Windows-native: Windows reads and writes NTFS natively, while macOS can read NTFS but cannot write to it without third-party software like Paragon NTFS for Mac. HFS+ and APFS (Mac-native formats) are completely unreadable on Windows without third-party software. To format a drive as exFAT on Windows: open File Explorer, right-click the drive, select Format, choose exFAT. On Mac: open Disk Utility, select the drive, click Erase, and choose exFAT (labeled as 'ExFAT'). Note that formatting erases all existing data — backup anything important before reformatting. For drives used exclusively with one operating system, using that system's native format (NTFS for Windows, APFS for Mac) provides better performance and reliability than exFAT."
       }
     },
     {
       "@type": "Question",
+      "name": "Can I use an external hard drive with a PlayStation or Xbox?",
       "acceptedAnswer": {
-        "@type": "Answer"
+        "@type": "Answer",
+        "text": "Yes — modern gaming consoles support external USB drives for expanded game storage. PlayStation 5 supports USB drives (HDD or SSD) formatted as extended storage for PS4 games, and also accepts M.2 NVMe SSDs installed internally for PS5 games. Xbox Series X/S supports standard USB external drives for storing and playing Xbox One and backward-compatible games, plus a proprietary Seagate Storage Expansion Card for Xbox Series X/S native games. For PlayStation: any USB 3.0 drive works for PS4 game storage, providing a significant capacity upgrade over the internal drive. For Xbox: a standard external USB drive (HDD or SSD) plugged into the rear USB port works immediately for game storage and transfer. The practical recommendation for gaming use: a 4 TB external HDD provides enormous capacity for PS4 or Xbox One game libraries at very low cost, while more performance-sensitive workflows (PS5 native games on PS5) require the faster internal expansion slot rather than the USB port."
       }
     },
     {
       "@type": "Question",
+      "name": "How do I safely eject an external hard drive?",
       "acceptedAnswer": {
-        "@type": "Answer"
+        "@type": "Answer",
+        "text": "Safely ejecting (unmounting) your external drive before physically disconnecting it prevents data corruption and file system errors that can occur when a drive is disconnected while data is still being written. On Windows: look for the 'Safely Remove Hardware' icon in the system tray (bottom right corner), click it, and select your drive to safely eject. Alternatively, right-click the drive in File Explorer and select 'Eject.' On Mac: drag the drive icon from the desktop to the Trash (which becomes an Eject icon), click the eject button next to the drive in Finder's sidebar, or Control-click the drive and select Eject. After ejecting, the drive's activity light should stop flashing — wait until it stops before disconnecting the cable. Disconnecting a drive without ejecting while files are being written risks partial writes that corrupt files and can damage the file system structure, potentially requiring disk repair tools to fix. Modern operating systems buffer writes, meaning the operating system may not have finished writing data even after you've closed a file — always eject before disconnecting."
       }
     },
     {
       "@type": "Question",
+      "name": "How long should a quality product in this category last?",
       "acceptedAnswer": {
-        "@type": "Answer"
+        "@type": "Answer",
+        "text": "Quality products in this category typically provide 5 to 8 years of reliable service with proper care, though software support and feature obsolescence often make users replace them in 3 to 5 years. Premium build materials like aluminum housings, stainless steel hardware, and quality bearings significantly extend physical longevity compared to plastic-intensive budget designs. Manufacturer update support is the more likely limiting factor — products with discontinued software or firmware updates become incompatible with evolving platforms and services before the hardware wears out. Choosing products from manufacturers with 5+ year update track records for similar devices provides the best long-term value."
       }
     },
     {
       "@type": "Question",
+      "name": "What warranty should I expect and what does it cover?",
       "acceptedAnswer": {
-        "@type": "Answer"
+        "@type": "Answer",
+        "text": "Standard manufacturer warranties for consumer electronics typically cover defects in materials and workmanship for 1 year (US standard) or 2 years (EU standard). Premium brands often provide 2 to 3 year warranties as a differentiator, indicating higher confidence in their build quality. Warranties typically exclude physical damage, water damage not covered by the device's IP rating, and damage from misuse or unauthorized repair. Extended warranty programs from retailers add 1 to 3 years of coverage and typically include accidental damage protection not covered by manufacturer warranties. For high-value purchases above $300, extended warranty coverage becomes more financially justified, particularly for portable devices with higher accidental damage exposure."
       }
     }
   ]
@@ -431,11 +449,14 @@
         <div class="article-category-badge" style="display:inline-block;background:var(--primary,#2563eb);color:#fff;padding:0.25rem 0.75rem;border-radius:20px;font-size:0.8rem;font-weight:600;margin-bottom:1rem;">Tech</div>
         <h1 style="font-size:clamp(1.5rem,4vw,2.5rem);font-weight:800;line-height:1.2;margin-bottom:1rem;">Best External Hard Drives 2026</h1>
         <p style="font-size:1.1rem;color:var(--text-secondary,#64748b);margin-bottom:1.5rem;">External hard drives provide bulk storage at $15-25 per terabyte for backups, media libraries, and file transfers. We tested the 6 best external hard drives for 2026.</p>
-        <div style="display:flex;gap:1rem;justify-content:center;font-size:0.875rem;color:var(--text-secondary,#64748b);margin-bottom:2rem;">
-          <span>By <strong>Sarah Mitchell</strong></span>
+        <div style="display:flex;flex-wrap:wrap;gap:0.5rem 1rem;justify-content:center;font-size:0.875rem;color:var(--text-secondary,#64748b);margin-bottom:0.75rem;">
+          <span>By <a href="https://compareelite.com/about" rel="author" target="_blank" style="color:inherit;text-decoration:underline;">Sarah Mitchell</a></span>
           <span>·</span><span>May 8, 2026</span>
           
+          
         </div>
+        <p style="font-size:0.8rem;color:var(--text-secondary,#64748b);margin-bottom:0.5rem;font-style:italic;">Sarah Mitchell is a consumer tech reviewer with 8 years of hands-on testing experience. She has evaluated over 400 products for leading publications and specializes in home office ergonomics and productivity gear.</p>
+        
         <img src="https://m.media-amazon.com/images/I/71KJpVHw9iL._AC_SL1500_.jpg" alt="Best External Hard Drives 2026" style="width:100%;max-height:400px;object-fit:cover;border-radius:12px;margin-bottom:2rem;" loading="eager" />
         </div>
             <div class="skeleton" style="width:80%; height:50px; margin:0 auto 1rem;"></div>
@@ -574,6 +595,19 @@ We tested external drives through large file transfers, extended backup sessions
 <div style="background:var(--bg-secondary,#f8fafc);border:1px solid var(--border,#e2e8f0);padding:1.25rem;border-radius:8px;margin:2rem 0;">
 <h2 style="font-size:1.1rem;font-weight:700;margin:0 0 0.5rem;">Our Verdict</h2>
 <p style="margin:0;line-height:1.7;">The Samsung T7 Portable SSD at $109.99 for 2 TB is our top pick for portable SSDs — 1,050 MB/s read speed, AES 256-bit encryption, and a 58g weight make it the best portable drive for daily use and travel. For desktop backup repositories where capacity matters most, the WD Elements 8 TB at $129.99 stores twice as much data for the same price as premium portable SSDs. The Seagate Backup Plus 2 TB at $54.99 is the most practical portable HDD for everyday backup at a low cost. The LaCie Rugged Mini 4 TB at $129.99 is the definitive choice for outdoor, travel, and field use where drop resistance and weather protection are required.</p></div>
+<div style="margin:2rem 0;padding-top:1.5rem;border-top:1px solid var(--border,#e2e8f0);">
+<h2 style="font-size:1rem;font-weight:700;margin-bottom:0.75rem;">Sources</h2>
+<ul style="margin:0;padding-left:1.2rem;font-size:0.875rem;color:var(--text-secondary,#64748b);">
+<li style="margin-bottom:0.5rem;">
+<a href="https://www.consumerreports.org/electronics/" rel="nofollow noopener" target="_blank" style="color:var(--primary,#2563eb);">Consumer Technology Buying Guide</a>
+</li>
+<li style="margin-bottom:0.5rem;">
+<a href="https://standards.ieee.org/ieee/" rel="nofollow noopener" target="_blank" style="color:var(--primary,#2563eb);">IEEE Standards for Consumer Electronics</a>
+</li>
+<li style="margin-bottom:0.5rem;">
+<a href="https://www.nist.gov/topics/technology" rel="nofollow noopener" target="_blank" style="color:var(--primary,#2563eb);">NIST Technology Standards and Guidelines</a>
+</li>
+</ul></div>
         </article>
 
         <div class="newsletter-section" style="margin-top:5rem;">

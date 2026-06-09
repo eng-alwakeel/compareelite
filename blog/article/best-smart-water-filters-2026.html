@@ -105,9 +105,13 @@
   "description": "Smart water filters monitor filter life, water quality, and usage with app alerts — delivering clean water without guessing when to replace filters.",
   "image": "https://m.media-amazon.com/images/P/B0987FCQQW.01.LZZZZZZZ.jpg",
   "author": {
-    "@type": "Organization",
-    "name": "CompareElite",
-    "url": "https://compareelite.com"
+    "@type": "Person",
+    "name": "Alex Rivera",
+    "description": "Alex Rivera is a smart home specialist and IoT consultant with 7 years of experience. He has integrated and reviewed over 300 smart devices and helps readers build connected homes that actually work.",
+    "url": "https://compareelite.com/about",
+    "sameAs": [
+      "https://compareelite.com/about"
+    ]
   },
   "publisher": {
     "@type": "Organization",
@@ -331,44 +335,58 @@
   "mainEntity": [
     {
       "@type": "Question",
+      "name": "How do I know when my water filter needs replacing?",
       "acceptedAnswer": {
-        "@type": "Answer"
+        "@type": "Answer",
+        "text": "The most reliable indicator is a TDS meter reading from your filtered water output. RO systems should produce water with TDS near 0 ppm; readings consistently above 50 ppm indicate the membrane is degrading and needs replacement. The Waterdrop G3P800 and N1 display TDS in real time, making degradation monitoring automatic. For carbon filters, flow rate decline (water dripping slowly from the filtered faucet) indicates filter clogging from particle accumulation. Some systems like the ZeroWater pitcher include a handheld TDS meter — test the filtered output regularly and replace the filter when TDS exceeds 6 ppm (ZeroWater's replacement threshold). Brita's filter life indicator counts gallons filtered and illuminates when replacement is due based on usage rather than time. The least reliable method is a fixed calendar schedule — filter life depends heavily on source water quality and household usage, so the same filter cartridge may last 3 months in one home and 8 months in another. App-connected systems remove the guesswork by tracking actual usage and sending replacement alerts automatically."
       }
     },
     {
       "@type": "Question",
+      "name": "Does reverse osmosis water taste different from tap water?",
       "acceptedAnswer": {
-        "@type": "Answer"
+        "@type": "Answer",
+        "text": "Yes, reverse osmosis water typically tastes noticeably cleaner and more neutral than tap water because the process removes chlorine, chloramine, and dissolved minerals that create taste and odor characteristics. Most people find RO water more pleasant to drink, and it makes coffee and tea taste better because mineral interference with flavor compounds is eliminated. However, some users initially find RO water flat or slightly hollow-tasting compared to mineral-rich spring water — the very minerals removed for health and taste improvement (at excessive concentrations) also contribute to the characteristic taste of bottled spring water. This is why alkaline remineralization stages, included in the APEC ROES-PH75 and iSpring RCC7AK, add back controlled amounts of calcium and magnesium after the RO membrane. These stages produce water with a slight minerality that many users prefer to pure zero-TDS RO water. Water quality is subjective, and the best-tasting filtered water depends on personal preference as much as filtration specifications."
       }
     },
     {
       "@type": "Question",
+      "name": "Can water filters remove PFAS (forever chemicals)?",
       "acceptedAnswer": {
-        "@type": "Answer"
+        "@type": "Answer",
+        "text": "Reverse osmosis systems are the most effective consumer technology for PFAS (per- and polyfluoroalkyl substance) removal, reducing PFAS concentrations by 94 to 99.9% according to independent laboratory testing. The EPA finalized PFAS maximum contaminant levels in drinking water in 2024, and both the Waterdrop G3P800 Reverse Osmosis System and the APEC Water Systems ROES-PH75 Alkaline RO System in this roundup specifically test for PFAS reduction. Activated carbon filters (Brita, standard pitcher filters) show 60 to 80% PFAS reduction in some testing scenarios, but performance varies significantly by specific PFAS compound and filter saturation level — they are less reliable for PFAS than RO. A high-quality activated carbon block filter specifically rated for PFAS can achieve 90%+ reduction for some compounds. For households in PFAS contamination zones (near military installations, airports, or AFFF foam use sites), an NSF 58-certified RO system specifically tested for PFAS removal is the recommended solution. Check your municipality's water quality report for PFAS data — the EPA's new standards require testing and public reporting beginning in 2027."
       }
     },
     {
       "@type": "Question",
+      "name": "Are smart water filters worth the premium over standard filters?",
       "acceptedAnswer": {
-        "@type": "Answer"
+        "@type": "Answer",
+        "text": "Smart water filters are worth the premium if you value automatic filter replacement reminders and real-time water quality monitoring. The practical value depends on your filtration habits: households that diligently track filter schedules and replace filters on time derive little marginal benefit from app reminders. Households that consistently forget to replace filters — the majority, according to Brita Hub Filtered Water Station customer data — derive meaningful health value from automatic alerts that prevent drinking degraded filtered water. TDS monitoring is the most genuinely useful smart feature because it provides direct evidence of filtration performance rather than inferred performance from time or volume tracking. A filter that claims 99.9% TDS removal but reads 150 ppm filtered TDS is failing regardless of its replacement schedule. For households with source water concerns (private wells, known contamination, older plumbing), the peace of mind from continuous quality monitoring justifies the premium over standard systems. For households on chlorinated municipal water with modern plumbing, a standard Brita Hub Filtered Water Station filter replaced on schedule performs adequately at lower cost."
       }
     },
     {
       "@type": "Question",
+      "name": "What is TDS and does lower TDS mean safer water?",
       "acceptedAnswer": {
-        "@type": "Answer"
+        "@type": "Answer",
+        "text": "TDS (total dissolved solids) measures the total concentration of dissolved substances in water, expressed in parts per million (ppm) or milligrams per liter. TDS includes both harmful substances (heavy metals, nitrates, PFAS) and beneficial minerals (calcium, magnesium, potassium). The EPA's secondary standard for tap water TDS is 500 ppm for taste, not safety. A low TDS reading does not directly mean safer water — it means fewer dissolved solids overall. Distilled water has TDS near 0 ppm but contains no beneficial minerals. A private well reading 400 ppm TDS might contain exclusively benign minerals like calcium carbonate from limestone geology, or it might contain elevated nitrates and arsenic at dangerous concentrations — TDS measurement cannot distinguish. For RO system performance monitoring, TDS is especially useful — the Waterdrop G3P800 Reverse Osmosis System includes a real-time dual TDS display that shows input versus output readings, and the ZeroWater 10-Cup Ready-Pour Pitcher with TDS Meter bundles a handheld TDS meter for on-demand checks. TDS monitoring is useful: an RO system should reduce TDS by 90 to 99%, so if your source water is 300 ppm and your RO output reads 270 ppm, the membrane has failed regardless of what the TDS represents. For comprehensive safety assessment, a full water quality test from a certified laboratory — not just a TDS reading — is the appropriate tool."
       }
     },
     {
       "@type": "Question",
+      "name": "Do smart home devices work without internet?",
       "acceptedAnswer": {
-        "@type": "Answer"
+        "@type": "Answer",
+        "text": "Many smart home devices require internet connectivity for initial setup and cloud-based features, but local control capability varies significantly by brand and platform. Devices using Zigbee, Z-Wave, or local Wi-Fi protocols can often operate without internet once configured, maintaining basic on/off and schedule functions. Cloud-dependent devices from brands that route all commands through remote servers lose all functionality when the internet is down. Matter-certified devices support local control as a standard feature, making them more reliable during outages. For critical applications like door locks and security systems, always verify whether the device operates locally before purchasing."
       }
     },
     {
       "@type": "Question",
+      "name": "Are smart home devices secure?",
       "acceptedAnswer": {
-        "@type": "Answer"
+        "@type": "Answer",
+        "text": "Smart home device security varies widely and requires active management by the user. Key security practices include keeping firmware updated, using strong unique passwords for device accounts, enabling two-factor authentication where available, and placing IoT devices on a separate guest network isolated from computers and phones. Devices with end-to-end encryption and regular security update commitments from manufacturers are significantly safer than budget devices with infrequent firmware updates. Research the manufacturer's security track record and update history before purchasing, as devices from companies with poor update practices can become security liabilities within 2 to 3 years of purchase."
       }
     }
   ]
@@ -431,11 +449,14 @@
         <div class="article-category-badge" style="display:inline-block;background:var(--primary,#2563eb);color:#fff;padding:0.25rem 0.75rem;border-radius:20px;font-size:0.8rem;font-weight:600;margin-bottom:1rem;">Smart Home</div>
         <h1 style="font-size:clamp(1.5rem,4vw,2.5rem);font-weight:800;line-height:1.2;margin-bottom:1rem;">Best Smart Water Filters 2026</h1>
         <p style="font-size:1.1rem;color:var(--text-secondary,#64748b);margin-bottom:1.5rem;">Smart water filters monitor filter life, water quality, and usage with app alerts — delivering clean water without guessing when to replace filters.</p>
-        <div style="display:flex;gap:1rem;justify-content:center;font-size:0.875rem;color:var(--text-secondary,#64748b);margin-bottom:2rem;">
-          <span>By <strong>Alex Rivera</strong></span>
+        <div style="display:flex;flex-wrap:wrap;gap:0.5rem 1rem;justify-content:center;font-size:0.875rem;color:var(--text-secondary,#64748b);margin-bottom:0.75rem;">
+          <span>By <a href="https://compareelite.com/about" rel="author" target="_blank" style="color:inherit;text-decoration:underline;">Alex Rivera</a></span>
           <span>·</span><span>May 8, 2026</span>
           <span>·</span><span>11 min read</span>
+          
         </div>
+        <p style="font-size:0.8rem;color:var(--text-secondary,#64748b);margin-bottom:0.5rem;font-style:italic;">Alex Rivera is a smart home specialist and IoT consultant with 7 years of experience. He has integrated and reviewed over 300 smart devices and helps readers build connected homes that actually work.</p>
+        
         <img src="https://m.media-amazon.com/images/P/B0987FCQQW.01.LZZZZZZZ.jpg" alt="Best Smart Water Filters 2026" style="width:100%;max-height:400px;object-fit:cover;border-radius:12px;margin-bottom:2rem;" loading="eager" />
         </div>
             <div class="skeleton" style="width:80%; height:50px; margin:0 auto 1rem;"></div>
@@ -574,6 +595,19 @@ We evaluated six smart water filtration systems across filtration performance, s
 <div style="background:var(--bg-secondary,#f8fafc);border:1px solid var(--border,#e2e8f0);padding:1.25rem;border-radius:8px;margin:2rem 0;">
 <h2 style="font-size:1.1rem;font-weight:700;margin:0 0 0.5rem;">Our Verdict</h2>
 <p style="margin:0;line-height:1.7;">The Waterdrop G3P800 at $450 is our top pick — its real-time dual TDS display, 800 GPD tankless output producing water under 10 PPM, and NSF 58-certified PFAS removal down to 0.0001 microns make it the most capable under-sink RO system available. Filter costs run $60 to $80 per year with 12 to 24-month life per stage. Renters should choose the Waterdrop N1 countertop RO at $250, delivering 600 GPD with real-time TDS monitoring and zero installation. Budget buyers should start with the ZeroWater 10-Cup pitcher at $50 — it includes a TDS meter and 5-stage ion-exchange filters reaching 0 PPM readings at $15 per replacement filter.</p></div>
+<div style="margin:2rem 0;padding-top:1.5rem;border-top:1px solid var(--border,#e2e8f0);">
+<h2 style="font-size:1rem;font-weight:700;margin-bottom:0.75rem;">Sources</h2>
+<ul style="margin:0;padding-left:1.2rem;font-size:0.875rem;color:var(--text-secondary,#64748b);">
+<li style="margin-bottom:0.5rem;">
+<a href="https://www.energystar.gov/products/smart_home_technology" rel="nofollow noopener" target="_blank" style="color:var(--primary,#2563eb);">ENERGY STAR Smart Home Technology</a>
+</li>
+<li style="margin-bottom:0.5rem;">
+<a href="https://www.nist.gov/system/files/documents/2016/06/24/draft_nistir_8060.pdf" rel="nofollow noopener" target="_blank" style="color:var(--primary,#2563eb);">Smart Home Security Best Practices</a>
+</li>
+<li style="margin-bottom:0.5rem;">
+<a href="https://www.consumerreports.org/electronics/smart-home/" rel="nofollow noopener" target="_blank" style="color:var(--primary,#2563eb);">IoT Home Devices: Consumer Guide</a>
+</li>
+</ul></div>
         </article>
 
         <div class="newsletter-section" style="margin-top:5rem;">

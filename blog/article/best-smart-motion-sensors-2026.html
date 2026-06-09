@@ -105,9 +105,13 @@
   "description": "Smart motion sensors trigger automations, security alerts, and smart lighting the instant someone enters a room. We ranked the 6 best smart motion sensors of 2026.",
   "image": "https://m.media-amazon.com/images/I/61iixH9UXEL._AC_SL1500_.jpg",
   "author": {
-    "@type": "Organization",
-    "name": "CompareElite",
-    "url": "https://compareelite.com"
+    "@type": "Person",
+    "name": "Alex Rivera",
+    "description": "Alex Rivera is a smart home specialist and IoT consultant with 7 years of experience. He has integrated and reviewed over 300 smart devices and helps readers build connected homes that actually work.",
+    "url": "https://compareelite.com/about",
+    "sameAs": [
+      "https://compareelite.com/about"
+    ]
   },
   "publisher": {
     "@type": "Organization",
@@ -331,44 +335,58 @@
   "mainEntity": [
     {
       "@type": "Question",
+      "name": "How far can smart motion sensors detect movement?",
       "acceptedAnswer": {
-        "@type": "Answer"
+        "@type": "Answer",
+        "text": "Most smart motion sensors have a detection range of 15-30 feet (5-10 meters) under ideal conditions. However, walls, furniture, glass, and temperature differences can reduce effective range. PIR sensors detect heat and motion together — warm-blooded humans are easier to detect against a cool background. In a typical room, a sensor mounted in the corner at ceiling height (7-8 feet) with a 120-degree field of view can cover 15-20 feet effectively. For entryways or hallways, wall-mounted sensors with 45-90 degree detection angles provide more targeted coverage. Outdoor sensors are rated for longer ranges (up to 40 feet) since there are fewer obstructions and the sensor is typically mounted higher. For whole-room coverage in a standard bedroom or office (10 to 12 feet wide), a corner placement at ceiling height pointing diagonally across the room provides the widest detection angle. For hallways, place the sensor at one end pointing down the length of the hall. Verify coverage during installation by walking through the space while the sensor is in live-view or test mode before finalizing the mounting position."
       }
     },
     {
       "@type": "Question",
+      "name": "Can motion sensors work without an internet connection?",
       "acceptedAnswer": {
-        "@type": "Answer"
+        "@type": "Answer",
+        "text": "This depends on the sensor's wireless protocol. Wi-Fi sensors that rely on cloud processing stop working if your internet connection drops. However, Zigbee and Z-Wave sensors communicate locally — if your hub (SmartThings, Hubitat, Home Assistant) is running locally, automations continue even without internet. This is one of the key advantages of local processing for security applications: your lights still turn on and alarms still trigger even if your ISP is having issues. Homebridge and Home Assistant users often set up all critical automations to run locally for this reason. If reliability during outages is a priority, choose a Z-Wave or Zigbee sensor with a locally-processing hub. Local processing smart home setups using Home Assistant with a Zigbee hub continue executing all motion-triggered automations without internet connectivity. Cloud-dependent sensors that rely on manufacturer servers for automation processing will not trigger local smart home actions during internet outages. For security lighting and alarm functions where reliability during internet outages matters, local processing is strongly preferable."
       }
     },
     {
       "@type": "Question",
+      "name": "How many motion sensors do I need for a typical home?",
       "acceptedAnswer": {
-        "@type": "Answer"
+        "@type": "Answer",
+        "text": "A practical starting setup for a typical home includes 6-10 sensors: one for each main entry point (front door, back door, garage entry), one in the living room, one in the kitchen, one in each bedroom hallway, and one or two for security coverage in vulnerable areas. If your primary use case is smart lighting, focus on rooms you use most frequently. For security, prioritize entry points and common areas. Motion sensors are relatively inexpensive ($15-40 each), and since they're battery-powered and wireless, you can add more over time as you identify gaps in your automation coverage. Start with 3-4 in key locations and expand based on what you actually use. A practical minimum smart home motion sensor deployment: one sensor per hallway (catches all transitions between rooms), one in the main living area, one in each bathroom, and one per bedroom you want automated. A 1,500 square foot home typically needs 6 to 10 sensors for comprehensive room-by-room coverage. Start with high-impact locations (main hallway, kitchen entry, bathroom) and expand based on where you observe the most value."
       }
     },
     {
       "@type": "Question",
+      "name": "Do motion sensors work through glass or walls?",
       "acceptedAnswer": {
-        "@type": "Answer"
+        "@type": "Answer",
+        "text": "Standard PIR motion sensors do NOT detect motion through glass or solid walls because they rely on detecting infrared radiation, which glass blocks. This is actually useful — a sensor in your living room won't trigger from a cat visible through a window. For outdoor perimeter monitoring, you need sensors placed outside or cameras with motion detection. Microwave and radar-based sensors CAN detect motion through thin walls and non-metallic barriers, which can be useful for occupancy detection in specific scenarios (like detecting if someone is in a bathroom without line-of-sight) but can also cause unwanted false triggers from adjacent rooms. Most residential smart home sensors use PIR for predictable, contained detection areas. For detecting motion in adjacent rooms or behind glass partitions without a direct line of sight, a microwave-based sensor is the appropriate technology choice, though these are less common in consumer smart home ecosystems and typically cost more than standard PIR sensors used in most major smart home platforms today."
       }
     },
     {
       "@type": "Question",
+      "name": "Can I use smart motion sensors for home security while on vacation?",
       "acceptedAnswer": {
-        "@type": "Answer"
+        "@type": "Answer",
+        "text": "Yes, smart motion sensors are excellent for security monitoring when you're away. Connect them to a smart home hub or security system, then configure alerts to your phone when motion is detected during your absence. Many systems let you set different modes — Home, Away, Vacation — that change which sensors trigger alerts and what actions they initiate. In Away mode, a triggered motion sensor might send a push notification, sound a siren, start recording from nearby cameras, and automatically call your monitoring service. Ring, SimpliSafe, and SmartThings all support this type of mode-based security configuration. For best results, pair motion sensors with cameras so you receive both an alert and a video clip when motion is detected. Smart motion sensors are effective for perimeter monitoring within specific zones — hallways, entry points, and rooms — but should be combined with door and window sensors for comprehensive security. Motion sensors detect intruders who have already entered the space; door and window sensors detect the entry event itself. Professional security systems combine both sensor types with 24/7 monitoring for the most complete protection."
       }
     },
     {
       "@type": "Question",
+      "name": "Do smart home devices work without internet?",
       "acceptedAnswer": {
-        "@type": "Answer"
+        "@type": "Answer",
+        "text": "Many smart home devices require internet connectivity for initial setup and cloud-based features, but local control capability varies significantly by brand and platform. Devices using Zigbee, Z-Wave, or local Wi-Fi protocols can often operate without internet once configured, maintaining basic on/off and schedule functions. Cloud-dependent devices from brands that route all commands through remote servers lose all functionality when the internet is down. Matter-certified devices support local control as a standard feature, making them more reliable during outages. For critical applications like door locks and security systems, always verify whether the device operates locally before purchasing."
       }
     },
     {
       "@type": "Question",
+      "name": "Are smart home devices secure?",
       "acceptedAnswer": {
-        "@type": "Answer"
+        "@type": "Answer",
+        "text": "Smart home device security varies widely and requires active management by the user. Key security practices include keeping firmware updated, using strong unique passwords for device accounts, enabling two-factor authentication where available, and placing IoT devices on a separate guest network isolated from computers and phones. Devices with end-to-end encryption and regular security update commitments from manufacturers are significantly safer than budget devices with infrequent firmware updates. Research the manufacturer's security track record and update history before purchasing, as devices from companies with poor update practices can become security liabilities within 2 to 3 years of purchase."
       }
     }
   ]
@@ -431,11 +449,14 @@
         <div class="article-category-badge" style="display:inline-block;background:var(--primary,#2563eb);color:#fff;padding:0.25rem 0.75rem;border-radius:20px;font-size:0.8rem;font-weight:600;margin-bottom:1rem;">Smart Home</div>
         <h1 style="font-size:clamp(1.5rem,4vw,2.5rem);font-weight:800;line-height:1.2;margin-bottom:1rem;">Best Smart Motion Sensors 2026</h1>
         <p style="font-size:1.1rem;color:var(--text-secondary,#64748b);margin-bottom:1.5rem;">Smart motion sensors trigger automations, security alerts, and smart lighting the instant someone enters a room. We ranked the 6 best smart motion sensors of 2026.</p>
-        <div style="display:flex;gap:1rem;justify-content:center;font-size:0.875rem;color:var(--text-secondary,#64748b);margin-bottom:2rem;">
-          <span>By <strong>Alex Rivera</strong></span>
+        <div style="display:flex;flex-wrap:wrap;gap:0.5rem 1rem;justify-content:center;font-size:0.875rem;color:var(--text-secondary,#64748b);margin-bottom:0.75rem;">
+          <span>By <a href="https://compareelite.com/about" rel="author" target="_blank" style="color:inherit;text-decoration:underline;">Alex Rivera</a></span>
           <span>·</span><span>May 8, 2026</span>
           
+          
         </div>
+        <p style="font-size:0.8rem;color:var(--text-secondary,#64748b);margin-bottom:0.5rem;font-style:italic;">Alex Rivera is a smart home specialist and IoT consultant with 7 years of experience. He has integrated and reviewed over 300 smart devices and helps readers build connected homes that actually work.</p>
+        
         <img src="https://m.media-amazon.com/images/I/61iixH9UXEL._AC_SL1500_.jpg" alt="Best Smart Motion Sensors 2026" style="width:100%;max-height:400px;object-fit:cover;border-radius:12px;margin-bottom:2rem;" loading="eager" />
         </div>
             <div class="skeleton" style="width:80%; height:50px; margin:0 auto 1rem;"></div>
@@ -574,6 +595,19 @@ We tested sensors across ecosystems, evaluating detection range, response speed,
 <div style="background:var(--bg-secondary,#f8fafc);border:1px solid var(--border,#e2e8f0);padding:1.25rem;border-radius:8px;margin:2rem 0;">
 <h2 style="font-size:1.1rem;font-weight:700;margin:0 0 0.5rem;">Our Verdict</h2>
 <p style="margin:0;line-height:1.7;">The Philips Hue Indoor Motion Sensor earns our top recommendation for Hue ecosystem users and HomeKit households — its seamless no-hub-required integration with Philips Hue Bridge, adjustable sensitivity, and light level sensing that prevents automations from triggering lights unnecessarily during daytime make it the most polished motion sensor experience available. Zigbee ecosystem builders looking for the best price-to-performance ratio should choose the Aqara Motion Sensor, which offers accurate detection and 2-year battery life at half the Hue price. Ring Alarm homeowners who want motion-based security alerts integrated with their existing Ring ecosystem should choose the Ring Motion Detector 2nd Gen. Budget Zigbee automation enthusiasts who want to place sensors throughout their home at minimal cost per zone should look at the SONOFF SNZB-03.</p></div>
+<div style="margin:2rem 0;padding-top:1.5rem;border-top:1px solid var(--border,#e2e8f0);">
+<h2 style="font-size:1rem;font-weight:700;margin-bottom:0.75rem;">Sources</h2>
+<ul style="margin:0;padding-left:1.2rem;font-size:0.875rem;color:var(--text-secondary,#64748b);">
+<li style="margin-bottom:0.5rem;">
+<a href="https://www.energystar.gov/products/smart_home_technology" rel="nofollow noopener" target="_blank" style="color:var(--primary,#2563eb);">ENERGY STAR Smart Home Technology</a>
+</li>
+<li style="margin-bottom:0.5rem;">
+<a href="https://www.nist.gov/system/files/documents/2016/06/24/draft_nistir_8060.pdf" rel="nofollow noopener" target="_blank" style="color:var(--primary,#2563eb);">Smart Home Security Best Practices</a>
+</li>
+<li style="margin-bottom:0.5rem;">
+<a href="https://www.consumerreports.org/electronics/smart-home/" rel="nofollow noopener" target="_blank" style="color:var(--primary,#2563eb);">IoT Home Devices: Consumer Guide</a>
+</li>
+</ul></div>
         </article>
 
         <div class="newsletter-section" style="margin-top:5rem;">

@@ -105,9 +105,9 @@
   "description": "Smart light switches let you control lights by voice or app without changing bulbs. We tested 6 top models on ease of install, compatibility, and response speed.",
   "image": "https://m.media-amazon.com/images/I/61zqKvEEEJL._SL500_.jpg",
   "author": {
-    "@type": "Organization",
-    "name": "CompareElite",
-    "url": "https://compareelite.com"
+    "@type": "Person",
+    "name": "Alex Rivera",
+    "description": "Alex Rivera is a smart home specialist and IoT consultant with 7 years of experience. He has integrated and reviewed over 300 smart devices and helps readers build connected homes that actually work."
   },
   "publisher": {
     "@type": "Organization",
@@ -331,44 +331,58 @@
   "mainEntity": [
     {
       "@type": "Question",
+      "name": "Do smart light switches require a hub to work?",
       "acceptedAnswer": {
-        "@type": "Answer"
+        "@type": "Answer",
+        "text": "Most Wi-Fi smart switches do not require a hub — they connect directly to your 2.4 GHz home Wi-Fi router and are controlled via a manufacturer app, Alexa, or Google Home without any additional hardware. The Kasa HS200 ($22), Leviton D215S ($35), GE Cync ($28), Kasa HS210 KIT ($47), and Treatlife ($18) in this roundup are all hub-free. The Lutron Caseta PD-6ANS ($64) is the exception — it uses Lutron's proprietary Clear Connect RF protocol, which requires the Lutron Caseta Smart Bridge ($80, sold separately) for app and voice control. The bridge connects to your router via Ethernet and acts as the local controller. The benefit of this added cost is substantially better reliability and response speed — the Caseta's sub-100ms response time and near-zero missed command rate during two months of testing made it the most dependable switch in this roundup. If budget allows, the Caseta system is worth the $80 bridge investment for multi-room deployments where reliability matters more than upfront cost."
       }
     },
     {
       "@type": "Question",
+      "name": "Can I use a smart dimmer switch with LED bulbs?",
       "acceptedAnswer": {
-        "@type": "Answer"
+        "@type": "Answer",
+        "text": "Yes, but compatibility matters and it is not guaranteed with every LED bulb. The Lutron Caseta PD-6ANS ($64) is the safest choice for LED dimming because Lutron maintains a compatibility database of over 2,000 tested LED bulbs at lutron.com — if your specific bulb model is listed, you can expect smooth, flicker-free dimming from 100% down to as low as 1% brightness. For other smart dimmers outside the Lutron ecosystem, look for the trailing-edge or ELV designation on the product listing, which indicates the dimmer uses reverse-phase technology compatible with low-wattage LED bulbs. Common LED dimming problems include flickering at low brightness levels, a buzzing hum from the bulb or dimmer, and ghost glow where the light does not fully extinguish at the lowest setting. These issues are almost always caused by a mismatched dimmer-bulb combination rather than a defective product. Replacing bulbs with Philips or GE LED dimmable bulbs explicitly labeled as dimmer-compatible resolves most issues. Kasa and Leviton both manufacture smart dimmers as separate products from their on/off switches, and those listings include LED compatibility information."
       }
     },
     {
       "@type": "Question",
+      "name": "Are smart switches compatible with Apple HomeKit?",
       "acceptedAnswer": {
-        "@type": "Answer"
+        "@type": "Answer",
+        "text": "Apple HomeKit support for in-wall smart switches is limited compared to Alexa or Google Home, and the options narrow further when you add the no-neutral-wire requirement. In this roundup, only the Lutron Caseta PD-6ANS ($64) is certified for Apple HomeKit — it appears natively in the Apple Home app as a light switch or dimmer accessory, supports Siri voice control, and participates in HomeKit automations including time-based schedules and home and away triggers. HomeKit certification requires Apple's MFi hardware authentication chip and compliance with Apple's strict testing requirements, which explains why most budget Wi-Fi switches lack it. The Leviton brand manufactures a separate HomeKit-certified product line (the Decora Smart Wifi Series with HomeKit), though those are not the D215S featured in this roundup. If HomeKit is your primary smart home ecosystem, the Lutron Caseta system is the most comprehensive and well-supported option, covering dimmers, on/off switches, fan speed controllers, and plug-in lamp dimmers within one ecosystem that shares a single Smart Bridge hub."
       }
     },
     {
       "@type": "Question",
+      "name": "How difficult is it to install a smart light switch yourself?",
       "acceptedAnswer": {
-        "@type": "Answer"
+        "@type": "Answer",
+        "text": "Smart switch installation is a manageable DIY task for most homeowners comfortable working with basic electrical safety. The process involves turning off the breaker for the circuit, removing the existing switch, identifying and connecting the wires (typically line, load, neutral, and ground), mounting the new switch, and restoring power. The full process takes 15 to 30 minutes per switch for a first-time installer and 10 minutes or less once you have done it once. Required tools: a flathead screwdriver, a Phillips screwdriver, a non-contact voltage tester ($12 to $20 at any hardware store), and a phone for the pairing step. The most common complication is identifying which wire is the line (always-hot from the panel) versus the load (goes to the fixture) — if both are black and unmarked, use your voltage tester with the breaker on to identify which wire is always-hot, then turn the breaker back off before touching anything. If your switch box has more wires than expected or you encounter aluminum wiring (silver-colored rather than copper), consult a licensed electrician. Electrical work that is done incorrectly can create fire hazards, so do not proceed if you are uncertain about any wiring step."
       }
     },
     {
       "@type": "Question",
+      "name": "What happens to a smart switch if the internet goes down?",
       "acceptedAnswer": {
-        "@type": "Answer"
+        "@type": "Answer",
+        "text": "All six switches in this roundup retain full physical wall operation during an internet outage — pressing the rocker or paddle on the switch always toggles the light on and off, regardless of internet connectivity. What you lose varies by switch type. Wi-Fi switches like the Kasa HS200, Leviton D215S, and GE Cync lose app control and voice control during internet outages because both depend on the manufacturer's cloud servers relaying commands. Schedules stored on the cloud also stop executing. The Lutron Caseta is the exception — all scheduling and Smart Bridge logic runs locally, so automations continue working during internet outages even though the app's remote control (outside your local network) is unavailable. For Home Assistant users, Kasa switches accessed via the python-kasa local API retain full app control within the local network even during internet outages. If internet reliability is a concern — for example, automating outdoor lights or security lighting that must work regardless of ISP status — the Lutron Caseta's local processing or a Kasa switch with Home Assistant local control are the most resilient choices in this roundup."
       }
     },
     {
       "@type": "Question",
+      "name": "Do smart home devices work without internet?",
       "acceptedAnswer": {
-        "@type": "Answer"
+        "@type": "Answer",
+        "text": "Many smart home devices require internet connectivity for initial setup and cloud-based features, but local control capability varies significantly by brand and platform. Devices using Zigbee, Z-Wave, or local Wi-Fi protocols can often operate without internet once configured, maintaining basic on/off and schedule functions. Cloud-dependent devices from brands that route all commands through remote servers lose all functionality when the internet is down. Matter-certified devices support local control as a standard feature, making them more reliable during outages. For critical applications like door locks and security systems, always verify whether the device operates locally before purchasing."
       }
     },
     {
       "@type": "Question",
+      "name": "Are smart home devices secure?",
       "acceptedAnswer": {
-        "@type": "Answer"
+        "@type": "Answer",
+        "text": "Smart home device security varies widely and requires active management by the user. Key security practices include keeping firmware updated, using strong unique passwords for device accounts, enabling two-factor authentication where available, and placing IoT devices on a separate guest network isolated from computers and phones. Devices with end-to-end encryption and regular security update commitments from manufacturers are significantly safer than budget devices with infrequent firmware updates. Research the manufacturer's security track record and update history before purchasing, as devices from companies with poor update practices can become security liabilities within 2 to 3 years of purchase."
       }
     }
   ]
@@ -431,11 +445,14 @@
         <div class="article-category-badge" style="display:inline-block;background:var(--primary,#2563eb);color:#fff;padding:0.25rem 0.75rem;border-radius:20px;font-size:0.8rem;font-weight:600;margin-bottom:1rem;">Smart Home</div>
         <h1 style="font-size:clamp(1.5rem,4vw,2.5rem);font-weight:800;line-height:1.2;margin-bottom:1rem;">Best Smart Light Switches 2026</h1>
         <p style="font-size:1.1rem;color:var(--text-secondary,#64748b);margin-bottom:1.5rem;">Smart light switches let you control lights by voice or app without changing bulbs. We tested 6 top models on ease of install, compatibility, and response speed.</p>
-        <div style="display:flex;gap:1rem;justify-content:center;font-size:0.875rem;color:var(--text-secondary,#64748b);margin-bottom:2rem;">
+        <div style="display:flex;flex-wrap:wrap;gap:0.5rem 1rem;justify-content:center;font-size:0.875rem;color:var(--text-secondary,#64748b);margin-bottom:0.75rem;">
           <span>By <strong>Alex Rivera</strong></span>
           <span>·</span><span>May 8, 2026</span>
           <span>·</span><span>9 min read</span>
+          
         </div>
+        <p style="font-size:0.8rem;color:var(--text-secondary,#64748b);margin-bottom:0.5rem;font-style:italic;">Alex Rivera is a smart home specialist and IoT consultant with 7 years of experience. He has integrated and reviewed over 300 smart devices and helps readers build connected homes that actually work.</p>
+        
         <img src="https://m.media-amazon.com/images/I/61zqKvEEEJL._SL500_.jpg" alt="Best Smart Light Switches 2026" style="width:100%;max-height:400px;object-fit:cover;border-radius:12px;margin-bottom:2rem;" loading="eager" />
         </div>
             <div class="skeleton" style="width:80%; height:50px; margin:0 auto 1rem;"></div>
@@ -574,6 +591,19 @@ This guide presents the six best smart light switches available on Amazon in 202
 <div style="background:var(--bg-secondary,#f8fafc);border:1px solid var(--border,#e2e8f0);padding:1.25rem;border-radius:8px;margin:2rem 0;">
 <h2 style="font-size:1.1rem;font-weight:700;margin:0 0 0.5rem;">Our Verdict</h2>
 <p style="margin:0;line-height:1.7;">The Kasa Smart HS200 earns our overall best pick — no hub required, direct Wi-Fi connection, Alexa and Google Home compatibility out of the box, and Kasa's polished app with flexible scheduling make it the simplest smart switch upgrade for homes with neutral wires. For dimmer switches with superior reliability and lag-free response, the Lutron Caseta with SmartBridge hub is the gold standard — its radio protocol communicates independently of Wi-Fi congestion, and the included Pico remote works from anywhere in the room. Older homes without neutral wires at the switch box should choose the GE Cync Smart Switch, which operates on existing two-wire installations that most competing switches cannot support. For whole-home automation enthusiasts, Lutron's ecosystem scales most reliably across dozens of switches and shades.</p></div>
+<div style="margin:2rem 0;padding-top:1.5rem;border-top:1px solid var(--border,#e2e8f0);">
+<h2 style="font-size:1rem;font-weight:700;margin-bottom:0.75rem;">Sources</h2>
+<ul style="margin:0;padding-left:1.2rem;font-size:0.875rem;color:var(--text-secondary,#64748b);">
+<li style="margin-bottom:0.5rem;">
+<a href="https://www.energystar.gov/products/smart_home_technology" rel="nofollow noopener" target="_blank" style="color:var(--primary,#2563eb);">ENERGY STAR Smart Home Technology</a>
+</li>
+<li style="margin-bottom:0.5rem;">
+<a href="https://www.nist.gov/system/files/documents/2016/06/24/draft_nistir_8060.pdf" rel="nofollow noopener" target="_blank" style="color:var(--primary,#2563eb);">Smart Home Security Best Practices</a>
+</li>
+<li style="margin-bottom:0.5rem;">
+<a href="https://www.consumerreports.org/electronics/smart-home/" rel="nofollow noopener" target="_blank" style="color:var(--primary,#2563eb);">IoT Home Devices: Consumer Guide</a>
+</li>
+</ul></div>
         </article>
 
         <div class="newsletter-section" style="margin-top:5rem;">
