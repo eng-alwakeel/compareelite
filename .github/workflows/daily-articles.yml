@@ -1,8 +1,9 @@
 name: Daily Article Generator
 
 on:
-  schedule:
-    - cron: '0 5 * * *'   # 8:00 AM KSA (UTC+3)
+  # PAUSED — re-enable by uncommenting the schedule block below
+  # schedule:
+  #   - cron: '0 5 * * *'   # 8:00 AM KSA (UTC+3)
   workflow_dispatch:        # يدوي عند الحاجة
 
 permissions:
