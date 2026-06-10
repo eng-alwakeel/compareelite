@@ -27,16 +27,15 @@ Strategic oversight only. Creates tasks with evidence requirements. Monitors pip
 ## DAILY ROUTINE — 8:00 AM KSA
 
 ### STEP 1 — Topic selection
-Read `data/articles-index.md` and pick **4 NEW topics** that are NOT in the index:
+Read `data/articles-slugs.txt` (one slug per line) and pick **1 NEW topic** that is NOT already in the file. Choose from whichever category is currently thinnest, rotating through: Tech → Home Office / Smart Home → Home Fitness → repeat.
 
-| Slot | Category | Selection priority |
-|------|----------|---------------------|
-| 1 | Tech | Highest Amazon-commission rate (laptops > headphones > peripherals) |
-| 2 | Tech | Second-highest, complementary keyword |
-| 3 | Home Office OR Smart Home | Whichever is thinner in the index |
-| 4 | Home Fitness OR Smart Home | Whichever is thinner |
+Category rotation priority within each run:
+- If last published was Tech → pick Home Office or Smart Home
+- If last published was Home Office/Smart Home → pick Home Fitness
+- If last published was Home Fitness → pick Tech
+- Default when unknown: Tech (highest Amazon commission rate)
 
-Hard rule: never pick a slug already present in the index. If you do, the Editor will refuse with `DUPLICATE_TOPIC` — that's a wasted run.
+Hard rule: never pick a slug already present in articles-slugs.txt. If you do, the Editor will refuse with `DUPLICATE_TOPIC` — that's a wasted run.
 
 ### STEP 2 — Create one issue per topic
 
@@ -44,7 +43,7 @@ For each slug, open a GitHub issue with this exact body:
 
 ```
 Category: <category>
-Priority: <1–4>
+Priority: 1
 
 ## Done when (evidence-based — paste each command's literal output)
 

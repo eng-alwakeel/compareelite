@@ -49,6 +49,11 @@ jobs:
       - name: Regenerate articles-index.md
         run: node scripts/generate-articles-index.js
 
+      - name: Regenerate articles-slugs.txt (slim duplicate-check list for Director)
+        run: |
+          ls articles/*.json | xargs -n1 basename | sed 's/\.json//' | sort > data/articles-slugs.txt
+          echo "articles-slugs.txt updated: $(wc -l < data/articles-slugs.txt) slugs"
+
       - name: Regenerate per-article static HTML pages
         run: node scripts/generate-article-pages.js
 
@@ -67,5 +72,5 @@ jobs:
 
       - name: Commit and push manifest + sitemap + index + article pages
         run: |
-          git add data/articles-manifest.json data/articles-index.md sitemap.xml blog/article/
+          git add data/articles-manifest.json data/articles-index.md data/articles-slugs.txt sitemap.xml blog/article/
           git diff --staged --quiet && echo "No changes" || (git commit -m "chore: update articles manifest + sitemap + index + per-article pages [skip ci]" && git push origin main)
