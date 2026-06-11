@@ -1,8 +1,10 @@
 name: Daily Article Generator
 
 on:
-  schedule:
-    - cron: '0 */6 * * *'   # every 6 hours → 4 runs/day, 1 article/run
+  # DISABLED — schedule runs via Paperclip Routines (Claude Max), not GitHub Actions
+  # To re-enable API-based runs: uncomment below and set ANTHROPIC_API_KEY in GitHub Secrets
+  # schedule:
+  #   - cron: '0 */6 * * *'   # every 6 hours → 4 runs/day, 1 article/run
   workflow_dispatch:        # يدوي عند الحاجة
 
 permissions:
