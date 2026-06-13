@@ -147,17 +147,29 @@ If your re-run disagrees with the Editor's pasted output → REJECTED with `evid
 #### Group 8 — `related_articles` (0 points)
 Skip entirely if the field is `[]` or absent. The Publisher will inject related articles after this review passes — at this stage the field MUST be empty / absent. If you find it populated by the Editor → REJECTED, "Editor wrote related_articles outside its scope".
 
+#### Group 9 — E-E-A-T fields (10 points)
+81. `author` is a named person — NOT "CompareElite Team" or any generic placeholder. Must be one of: "Sarah Mitchell", "Alex Rivera", "James Cooper", or "Adel Alwakeel" (Editor's Pick only)
+82. `author_bio` is present and non-empty
+83. `reviewer` is present and non-empty
+84. `reviewer_title` is present and non-empty
+85. `key_takeaways` is an array of 4–5 items, each non-empty
+86. Every `key_takeaways` item contains at least one number or measurable spec
+87. `external_citations` is an array of exactly 3 items
+88. Every citation has non-empty `title`, `url`, and `publisher` fields
+89. `testing_narrative` is present, non-empty, and written in first person (contains "I" or "we")
+90. `testing_narrative` is ≥ 40 words
+
 ### RULE 4 — REPORTING
 
 **APPROVED:**
 ```
-APPROVED ✅  <score>/80
+APPROVED ✅  <score>/90
 Ready for Publisher.
 ```
 
 **REJECTED:**
 ```
-REJECTED ❌  <score>/80
+REJECTED ❌  <score>/90
 Failed checks:
 - [Group X] [field/path]: [what's wrong] → [specific fix]
 - [Group X] [field/path]: [what's wrong] → [specific fix]
