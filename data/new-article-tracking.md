@@ -7,18 +7,21 @@ Update "first_impression" and "indexed" columns from Google Search Console weekl
 
 | slug | created | committed | sitemap | indexnow_submitted | gsc_indexed | first_impression | notes |
 |------|---------|-----------|---------|-------------------|-------------|-----------------|-------|
-| best-office-chair-for-under-200-2026 | 2026-06-09 | 2026-06-09 19:06 UTC | ✅ | ❓ not confirmed | ❓ | — | v4 fields: unknown (check) |
-| best-gaming-chairs-under-300-2026 | 2026-06-10 | 2026-06-10 06:36 UTC | ✅ | ❓ not confirmed | ❓ | — | v4 CONFIRMED ✅ validator PASS |
+| best-office-chair-for-under-200-2026 | 2026-06-09 | 2026-06-09 19:06 UTC | ✅ | ✅ 2026-06-13 HTTP 200 | ❓ | — | v4 fields: check pending |
+| best-gaming-chairs-under-300-2026 | 2026-06-10 | 2026-06-10 06:36 UTC | ✅ | ✅ 2026-06-13 HTTP 200 | ❓ | — | v4 CONFIRMED ✅ validator PASS |
 
 ## IndexNow Submission Status
 
-Last confirmed IndexNow run: **2026-06-03** (data/google-indexing-report.json)
-- Submitted: 190 URLs, quota hit, 191 remaining
-- The two new articles (Jun 9–10) were NOT in that batch — submitted AFTER the quota run
+Last confirmed IndexNow run: **2026-06-13** (data/indexnow-log.json — new persistent log)
+- best-office-chair-for-under-200-2026 → HTTP 200 ✅ 2026-06-13T12:44:54Z
+- best-gaming-chairs-under-300-2026    → HTTP 200 ✅ 2026-06-13T12:44:54Z
 
-Neither new article has a confirmed IndexNow submission on record.
-The update-manifest.yml workflow calls `node scripts/notify-indexnow.js` on each push,
-but no log file captures the HTTP response per-slug. Check Vercel logs for confirmation.
+Previous bulk run: **2026-06-03** — 190 URLs submitted, quota hit.
+New articles published after that run were not in the batch; now confirmed submitted above.
+
+**Logging gap fixed:** notify-indexnow.js now appends every submission to
+data/indexnow-log.json (url + submittedAt + status + ok). All future auto-submissions
+via update-manifest.yml are fully traceable.
 
 ## Google Indexing Baseline (2026-06-03)
 

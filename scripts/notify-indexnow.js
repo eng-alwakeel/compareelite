@@ -19,6 +19,16 @@ const https = require('https');
 
 const ROOT = path.resolve(__dirname, '..');
 const MANIFEST_PATH = path.join(ROOT, 'data', 'articles-manifest.json');
+const LOG_PATH = path.join(ROOT, 'data', 'indexnow-log.json');
+
+function appendLog(entries) {
+  let log = [];
+  if (fs.existsSync(LOG_PATH)) {
+    try { log = JSON.parse(fs.readFileSync(LOG_PATH, 'utf8')); } catch (_) {}
+  }
+  log.push(...entries);
+  fs.writeFileSync(LOG_PATH, JSON.stringify(log, null, 2));
+}
 
 const HOST = 'compareelite.com';
 const URL_PREFIX = `https://${HOST}/blog/article/`;
@@ -104,9 +114,22 @@ async function main() {
   const { status, body } = await post(key, urlList);
   console.log(`IndexNow response: HTTP ${status}${body ? ` | ${body.trim()}` : ''}`);
 
+  // Append to persistent log so every submission is traceable
+  const submittedAt = new Date().toISOString();
+  const ok = status >= 200 && status < 300;
+  if (!dryRun) {
+    appendLog(urlList.map(url => ({
+      url,
+      submittedAt,
+      status,
+      ok,
+    })));
+    console.log(`IndexNow log updated: data/indexnow-log.json (+${urlList.length} entries)`);
+  }
+
   // Per IndexNow protocol: 200 = OK, 202 = Accepted (queued).
   // Any other code is a real failure that should fail the workflow.
-  if (status < 200 || status >= 300) {
+  if (!ok) {
     process.exit(1);
   }
 }
