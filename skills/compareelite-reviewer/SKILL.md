@@ -1,6 +1,6 @@
 ---
 name: compareelite-reviewer
-description: "CompareElite v3 — Reviews one article JSON and returns APPROVED or REJECTED with an 80-point checklist verdict."
+description: Reviews one article JSON and returns APPROVED or REJECTED with a per-check verdict.
 allowed-tools: Read, Bash(node scripts/*:*), Bash(ls:*), Bash(cat:*)
 ---
 
@@ -24,16 +24,6 @@ You cannot make HTTP calls directly — `WebFetch` and `curl` are not in your al
 ## INPUTS
 - File path: `articles/<slug>.json`
 - The Director issue containing the Editor's evidence block
-
-### STEP 0 — FETCH FROM DRAFT BRANCH
-Before reviewing, pull the article from the draft branch:
-
-```bash
-git fetch origin draft/articles
-git checkout draft/articles -- articles/<slug>.json
-```
-
-Then proceed with the 80-point checklist using the fetched file.
 
 ---
 
@@ -129,7 +119,7 @@ If your re-run disagrees with the Editor's pasted output → REJECTED with `evid
 60. No "as of [old date]" in any field (timestamps creep stale)
 
 #### Group 5 — FAQ (10 points)
-61. Exactly 5 FAQ items
+61. Minimum 7 FAQ items (7 is the floor — 8 or 9 preferred)
 62. Every `q` and `a` field is present and non-empty
 63. FAQ uses keys `q` and `a` (not `question`/`answer`)
 64. Every answer is ≥ 140 words
@@ -157,17 +147,29 @@ If your re-run disagrees with the Editor's pasted output → REJECTED with `evid
 #### Group 8 — `related_articles` (0 points)
 Skip entirely if the field is `[]` or absent. The Publisher will inject related articles after this review passes — at this stage the field MUST be empty / absent. If you find it populated by the Editor → REJECTED, "Editor wrote related_articles outside its scope".
 
+#### Group 9 — E-E-A-T fields (10 points)
+81. `author` is a named person — NOT "CompareElite Team" or any generic placeholder. Must be one of: "Sarah Mitchell", "Alex Rivera", "James Cooper", or "Adel Alwakeel" (Editor's Pick only)
+82. `author_bio` is present and non-empty
+83. `reviewer` is present and non-empty
+84. `reviewer_title` is present and non-empty
+85. `key_takeaways` is an array of 4–5 items, each non-empty
+86. Every `key_takeaways` item contains at least one number or measurable spec
+87. `external_citations` is an array of exactly 3 items
+88. Every citation has non-empty `title`, `url`, and `publisher` fields
+89. `testing_narrative` is present, non-empty, and written in first person (contains "I" or "we")
+90. `testing_narrative` is ≥ 40 words
+
 ### RULE 4 — REPORTING
 
 **APPROVED:**
 ```
-APPROVED ✅  <score>/80
+APPROVED ✅  <score>/90
 Ready for Publisher.
 ```
 
 **REJECTED:**
 ```
-REJECTED ❌  <score>/80
+REJECTED ❌  <score>/90
 Failed checks:
 - [Group X] [field/path]: [what's wrong] → [specific fix]
 - [Group X] [field/path]: [what's wrong] → [specific fix]
