@@ -57,6 +57,9 @@ jobs:
       - name: Regenerate per-article static HTML pages
         run: node scripts/generate-article-pages.js
 
+      - name: Regenerate category hub pages
+        run: node scripts/generate-category-pages.js
+
       - name: Notify IndexNow of changed articles
         run: |
           NEW=$(git diff-tree --no-commit-id --name-only -r --diff-filter=AM HEAD -- 'articles/*.json' \
@@ -72,5 +75,5 @@ jobs:
 
       - name: Commit and push manifest + sitemap + index + article pages
         run: |
-          git add data/articles-manifest.json data/articles-index.md data/articles-slugs.txt data/indexnow-log.json sitemap.xml blog/article/
+          git add data/articles-manifest.json data/articles-index.md data/articles-slugs.txt data/indexnow-log.json sitemap.xml blog/article/ blog/tech/ blog/home-office/ blog/smart-home/ blog/home-fitness/
           git diff --staged --quiet && echo "No changes" || (git commit -m "chore: update articles manifest + sitemap + index + per-article pages [skip ci]" && git push origin main)

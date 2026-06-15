@@ -410,6 +410,17 @@
             <nav class="nav-links" id="nav-menu" aria-label="Main navigation">
                 <a href="/" onclick="closeMenu()">Home</a>
                 <a href="/blog" onclick="closeMenu()">Guides</a>
+                <div class="nav-dropdown" id="nav-categories-dropdown">
+                    <button class="nav-dropdown-trigger" onclick="toggleDropdown('nav-categories-dropdown')" aria-expanded="false" aria-haspopup="true">
+                        Categories <span class="nav-caret" aria-hidden="true">▾</span>
+                    </button>
+                    <div class="nav-dropdown-menu" role="menu">
+                        <a href="/blog/tech" onclick="closeMenu()" role="menuitem">💻 Tech</a>
+                        <a href="/blog/home-office" onclick="closeMenu()" role="menuitem">🖥️ Home Office</a>
+                        <a href="/blog/smart-home" onclick="closeMenu()" role="menuitem">🏠 Smart Home</a>
+                        <a href="/blog/home-fitness" onclick="closeMenu()" role="menuitem">🏋️ Home Fitness</a>
+                    </div>
+                </div>
                 <div class="nav-dropdown" id="nav-brands-dropdown">
                     <button class="nav-dropdown-trigger" onclick="toggleDropdown('nav-brands-dropdown')" aria-expanded="false" aria-haspopup="true">
                         Brands <span class="nav-caret" aria-hidden="true">▾</span>
@@ -438,6 +449,8 @@
                 <li style="opacity:0.5;">/</li>
                 <li><a href="/blog" style="color:var(--primary);">Guides</a></li>
                 <li style="opacity:0.5;">/</li>
+                <li id="breadcrumb-category" style="color:var(--primary);"><a href="/blog/smart-home" style="color:var(--primary);">Smart Home</a></li>
+                <li id="breadcrumb-sep" style="opacity:0.5;">/</li>
                 <li id="breadcrumb-title" style="color:var(--text-secondary);">Loading...</li>
             </ol>
         </div>

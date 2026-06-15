@@ -28,6 +28,10 @@ const VALID_CATEGORIES = ['Tech', 'Home Office', 'Smart Home', 'Home Fitness'];
 const STATIC_PAGES = [
   { loc: `${SITE_URL}/`, changefreq: 'daily', priority: '1.0' },
   { loc: `${SITE_URL}/blog`, changefreq: 'daily', priority: '0.9' },
+  { loc: `${SITE_URL}/blog/tech`,         changefreq: 'daily', priority: '0.85' },
+  { loc: `${SITE_URL}/blog/home-office`,  changefreq: 'daily', priority: '0.85' },
+  { loc: `${SITE_URL}/blog/smart-home`,   changefreq: 'daily', priority: '0.85' },
+  { loc: `${SITE_URL}/blog/home-fitness`, changefreq: 'daily', priority: '0.85' },
   { loc: `${SITE_URL}/affiliate-disclosure`, changefreq: 'monthly', priority: '0.3' },
   { loc: `${SITE_URL}/privacy`, changefreq: 'monthly', priority: '0.3' },
   { loc: `${SITE_URL}/terms`, changefreq: 'monthly', priority: '0.3' },

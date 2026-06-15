@@ -278,6 +278,20 @@ function applyMeta(template, m, article) {
     `\n  <!-- Structured Data (JSON-LD) for SEO -->\n${structuredData}\n</head>`
   );
 
+  // Inject category breadcrumb (SSG — Googlebot reads this directly).
+  const CAT_SLUG_MAP = {
+    'Tech':         'tech',
+    'Home Office':  'home-office',
+    'Smart Home':   'smart-home',
+    'Home Fitness': 'home-fitness',
+  };
+  const catSlug  = CAT_SLUG_MAP[article.category] || 'tech';
+  const catLabel = escapeHtmlText(article.category || 'Tech');
+  out = out.replace(
+    /<li id="breadcrumb-category"[^>]*><\/li>/,
+    `<li id="breadcrumb-category" style="color:var(--primary);"><a href="/blog/${catSlug}" style="color:var(--primary);">${catLabel}</a></li>`
+  );
+
   // The shell uses ../css/, ../js/, ../index.html (one level up from /blog/).
   // Generated files live one level deeper at /blog/article/<slug>.html — so
   // ../css/ would resolve to /blog/css/ (wrong). Rewrite all relative paths
