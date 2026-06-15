@@ -11,7 +11,9 @@
   "author_bio": "Alex Rivera is a smart home specialist and IoT consultant who has reviewed over 500 connected devices and contributed to leading consumer technology outlets.",
   "reviewer": "Mike Chen",
   "reviewer_title": "Senior Product Analyst",
-  "stats": { "readers": 0 },
+  "stats": {
+    "readers": 0
+  },
   "key_takeaways": [
     "The Bird Buddy PRO Solar tops our list at $269 with a 5MP camera, 2K HD video, and AI species identification covering more than 1,000 birds.",
     "The Birdfy 2 ($199) runs a dual-lens 2K system plus a side camera and matches visitors against a database of over 6,000 species.",
@@ -212,5 +214,18 @@
       "relevance": "Supports the placement and safety guidance on positioning feeders away from ambush points and providing nearby cover for visiting birds."
     }
   ],
-  "related_articles": []
+  "related_articles": [
+    {
+      "slug": "best-smart-pet-feeders-2026",
+      "title": "Best Smart Pet Feeders 2026"
+    },
+    {
+      "slug": "best-smart-thermostat-for-under-100-2026",
+      "title": "Best Smart Thermostat for Under $100 in 2026: Tested & Ranked"
+    },
+    {
+      "slug": "best-smart-litter-boxes-2026",
+      "title": "Best Smart Litter Boxes 2026: Tested & Ranked"
+    }
+  ]
 }
