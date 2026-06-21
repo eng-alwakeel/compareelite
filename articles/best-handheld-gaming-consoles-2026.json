@@ -62,13 +62,13 @@
       "rank": 3,
       "name": "Lenovo Legion Go",
       "price": "$699",
-      "rating": "8.9/10",
+      "rating": "9.0/10",
       "best_for": "Best Big Screen",
       "image": "https://images-na.ssl-images-amazon.com/images/P/B0CM74YFSP.01._SL500_.jpg",
       "link": "https://www.amazon.com/dp/B0CM74YFSP?tag=compareelite-20",
       "pros": [
         "The 8.8-inch 144Hz WQXGA (2560x1600) screen is the largest and sharpest here, 1.4 inches bigger than the Steam Deck's OLED panel.",
-        "Detachable controllers and a built-in kickstand enable an FPS mouse mode no other handheld in this list offers.",
+        "Two detachable controllers and a built-in kickstand enable an FPS mouse mode no other handheld in this list offers.",
         "The Z1 Extreme with 16GB of RAM holds 50 to 60 FPS at 1200p in most 2024 titles."
       ],
       "cons": [
@@ -80,7 +80,7 @@
       "rank": 4,
       "name": "Nintendo Switch OLED",
       "price": "$349",
-      "rating": "9.0/10",
+      "rating": "8.8/10",
       "best_for": "Best Budget & Family Pick",
       "image": "https://images-na.ssl-images-amazon.com/images/P/B098RKWHHZ.01._SL500_.jpg",
       "link": "https://www.amazon.com/dp/B098RKWHHZ?tag=compareelite-20",
@@ -98,7 +98,7 @@
       "rank": 5,
       "name": "MSI Claw 8 AI+ A2VM",
       "price": "$899",
-      "rating": "9.0/10",
+      "rating": "8.7/10",
       "best_for": "Best Battery Life",
       "image": "https://images-na.ssl-images-amazon.com/images/P/B0GN3XZWLM.01._SL500_.jpg",
       "link": "https://www.amazon.com/dp/B0GN3XZWLM?tag=compareelite-20",
@@ -127,7 +127,7 @@
       ],
       "cons": [
         "The 40Wh battery yields only 1.5 to 2 hours at a full 25W load, roughly half the ROG Xbox Ally X's runtime.",
-        "Early units had a microSD reader prone to overheating, and the slot still sits close to the rear exhaust vent."
+        "Early 2023 launch units had a microSD reader prone to overheating, and the slot still sits within roughly 1 inch of the rear exhaust vent."
       ]
     }
   ],
@@ -172,7 +172,7 @@
     },
     {
       "q": "How long do handheld gaming consoles last before they feel outdated?",
-      "a": "A well-built handheld typically stays comfortably usable for three to five years, though the timeline depends on the platform. The Nintendo Switch OLED uses a 2019-era Tegra X1 chip yet still runs every new first-party game because Nintendo optimizes exclusively for that hardware, so it ages gracefully despite modest specs. PC handhelds like the Steam Deck OLED and ROG Xbox Ally X face steeper curves because AAA games keep demanding more power, but their adjustable graphics settings let you trade resolution and frame rate to keep playing newer titles for years. Build quality matters as much as silicon: Hall-effect sticks, like those on the MSI Claw 8 AI+, resist the drift that ends many handhelds early, and replaceable M.2 2230 SSDs let you expand storage rather than replace the device. Battery health also declines after 500 to 800 charge cycles, so expect to lose 15 to 20 percent of runtime by year three regardless of which model you choose."
+      "a": "A durable handheld typically stays comfortably usable for three to five years, though the timeline depends on the platform. The Nintendo Switch OLED uses a 2019-era Tegra X1 chip yet still runs every new first-party game because Nintendo optimizes exclusively for that hardware, so it ages gracefully despite modest specs. PC handhelds like the Steam Deck OLED and ROG Xbox Ally X face steeper curves because AAA games keep demanding more power, but their adjustable graphics settings let you trade resolution and frame rate to keep playing newer titles for years. Build quality matters as much as silicon: Hall-effect sticks, like those on the MSI Claw 8 AI+, resist the drift that ends many handhelds early, and replaceable M.2 2230 SSDs let you expand storage rather than replace the device. Battery health also declines after 500 to 800 charge cycles, so expect to lose 15 to 20 percent of runtime by year three regardless of which model you choose."
     },
     {
       "q": "Can these handhelds connect to a TV or monitor?",
