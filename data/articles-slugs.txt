@@ -185,6 +185,7 @@ best-smart-motion-sensors-2026
 best-smart-outdoor-cameras-2026
 best-smart-outdoor-lights-2026
 best-smart-pet-cameras-2026
+best-smart-pet-doors-2026
 best-smart-pet-feeders-2026
 best-smart-pet-water-fountains-2026
 best-smart-plugs-2026
