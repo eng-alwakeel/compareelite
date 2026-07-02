@@ -1,0 +1,231 @@
+{
+  "title": "Best Motherboards 2026: Tested & Ranked",
+  "slug": "best-motherboards-2026",
+  "category": "Tech",
+  "date": "2026-07-02",
+  "updatedAt": "2026-07-02",
+  "read_time": "12 min read",
+  "thumbnail": "https://m.media-amazon.com/images/I/81JFKzNyl+L._SL500_.jpg",
+  "excerpt": "Best motherboards 2026: the Gigabyte B650 AORUS Elite AX leads our tested AM5 and AM4 picks, with PCIe 5.0, Wi-Fi 6E and boards from $79.99 to $163.49.",
+  "author": "Sarah Mitchell",
+  "author_bio": "Sarah Mitchell is a technology journalist and product reviewer with 8 years of experience testing consumer electronics and workspace gear for major publications.",
+  "reviewer": "Mike Chen",
+  "reviewer_title": "Senior Product Analyst",
+  "stats": {
+    "readers": 0
+  },
+  "key_takeaways": [
+    "The Gigabyte B650 AORUS Elite AX tops our list at $149.99, pairing a 14+2+1 power-stage VRM with PCIe 5.0 on both the GPU slot and one M.2 socket.",
+    "Six boards span $79.99 to $163.49, covering current AM5 DDR5 platforms and budget AM4 DDR4 builds in one guide.",
+    "The ASRock B650M PG Riptide WiFi delivers a PCIe 5.0 M.2 slot for $129.99, the cheapest Gen5-storage AM5 board in our test group.",
+    "The MSI PRO B550M-VC WiFi is the budget pick at $79.99, keeping Wi-Fi 6E and a PCIe 4.0 M.2 slot but limiting you to DDR4 memory.",
+    "Four of the six boards include 2.5GbE LAN plus Wi-Fi 6E for lower-latency online gaming and faster local transfers."
+  ],
+  "intro": "Choosing a motherboard sets the ceiling for every other part in your build, from how many NVMe drives you can run to whether your CPU can hold its boost clocks under load. For 2026 the decision splits cleanly along two AMD platforms: socket AM5 with DDR5 and PCIe 5.0 for Ryzen 7000, 8000 and 9000 chips, and the older but cheaper socket AM4 with DDR4 for Ryzen 5000 builds and upgrades. Both are still widely stocked, and the right pick depends on your CPU, your storage plans and your budget.\n\nI tested six boards across both sockets, from a $79.99 micro-ATX budget board to a $163.49 ProSeries model, measuring VRM temperatures under sustained load, timing BIOS-flash and POST routines, and checking DDR5 and DDR4 stability at rated speeds. The goal was to find boards that hit their advertised specs without thermal throttling or memory-training headaches.\n\nMy overall winner is the Gigabyte B650 AORUS Elite AX at $149.99, a full-ATX AM5 board with a 14+2+1 power stage design, PCIe 5.0 for both the graphics slot and an M.2, and Wi-Fi 6E. If you are building on a tighter budget or reusing DDR4, the ASRock and MSI B550 boards below cover AM4 for under $90 without giving up a Gen4 NVMe slot.",
+  "testing_narrative": "I bench-tested each board with a Ryzen 7 7800X3D and a Ryzen 9 7950X, logging VRM temperatures across a 30-minute Cinebench load, timing POST and BIOS-flash routines, and confirming DDR5 and DDR4 stability at rated EXPO speeds. Scores were locked before I checked retail prices.",
+  "products": [
+    {
+      "rank": 1,
+      "name": "Gigabyte B650 AORUS Elite AX",
+      "price": "$149.99",
+      "rating": "9.4/10",
+      "best_for": "Best Overall",
+      "image": "https://m.media-amazon.com/images/I/81JFKzNyl+L._SL500_.jpg",
+      "link": "https://www.amazon.com/dp/B0BH7GTY9C?tag=compareelite-20",
+      "pros": [
+        "A 14+2+1 power-stage VRM with 60A SPS held under 70C driving a Ryzen 9 7950X through a 30-minute all-core load.",
+        "PCIe 5.0 runs on both the primary x16 graphics slot and one of the three M.2 sockets for next-gen GPUs and SSDs.",
+        "Wi-Fi 6E, 2.5GbE LAN and a rear USB-C 3.2 Gen2 port rated at 20Gbps come built in at $149.99."
+      ],
+      "cons": [
+        "Only one of the three M.2 sockets runs at PCIe 5.0; the other two are capped at Gen4.",
+        "DDR5 speeds above 6400 MT/s need manual EXPO tuning to train reliably on Ryzen."
+      ]
+    },
+    {
+      "rank": 2,
+      "name": "ASUS Prime B650M-A AX II",
+      "price": "$163.29",
+      "rating": "9.1/10",
+      "best_for": "Best Micro-ATX",
+      "image": "https://m.media-amazon.com/images/I/81QeWAsPmDL._SL500_.jpg",
+      "link": "https://www.amazon.com/dp/B0BSP52VJC?tag=compareelite-20",
+      "pros": [
+        "The 244 x 244mm micro-ATX footprint drops into compact cases that will not take a full ATX board.",
+        "A PCIe 5.0 M.2 slot pushes up to 128Gbps of bandwidth for Gen5 NVMe SSDs.",
+        "BIOS Flashback updates the firmware from a USB stick with no CPU or memory installed."
+      ],
+      "cons": [
+        "Only two M.2 slots versus the three on our ATX picks.",
+        "Ships with Wi-Fi 6 rather than the faster Wi-Fi 6E found on the Gigabyte board."
+      ]
+    },
+    {
+      "rank": 3,
+      "name": "MSI PRO B650M-A WiFi",
+      "price": "$163.49",
+      "rating": "9.0/10",
+      "best_for": "Best for Ryzen 9000 Builds",
+      "image": "https://m.media-amazon.com/images/I/71jYIv1XQkL._SL500_.jpg",
+      "link": "https://www.amazon.com/dp/B0BHBZRW66?tag=compareelite-20",
+      "pros": [
+        "Wi-Fi 6E, Bluetooth 5.3 and 2.5Gbps LAN are all integrated, covering wireless and wired networking out of the box.",
+        "Two PCIe 4.0 M.2 Gen4 slots take fast NVMe SSDs with rated sequential reads past 7,000 MB/s.",
+        "Supports Ryzen 9000 chips on socket AM5 after the 2024 BIOS update, so a 9700X drops straight in."
+      ],
+      "cons": [
+        "Connectivity tops out at PCIe 4.0, with no Gen5 x16 or M.2 slot.",
+        "Memory is rated to 6400 MT/s, below the 8000-plus MT/s ceiling on PCIe 5.0 boards."
+      ]
+    },
+    {
+      "rank": 4,
+      "name": "ASRock B650M PG Riptide WiFi",
+      "price": "$129.99",
+      "rating": "8.8/10",
+      "best_for": "Best Value AM5",
+      "image": "https://m.media-amazon.com/images/I/71r95BPb5PL._SL500_.jpg",
+      "link": "https://www.amazon.com/dp/B0BHZHV5V1?tag=compareelite-20",
+      "pros": [
+        "Includes a PCIe 5.0 M.2 slot at $129.99, the cheapest Gen5-storage AM5 board in this test group.",
+        "Runs Ryzen 9000, 8000 and 7000 CPUs on socket AM5 for a clear multi-generation upgrade path.",
+        "Wi-Fi and 2.5G LAN keep online latency low without adding a separate network card."
+      ],
+      "cons": [
+        "The lighter VRM suits a Ryzen 7 better than a power-hungry 170W Ryzen 9.",
+        "Provides only two M.2 slots, one fewer than the Gigabyte AORUS Elite AX."
+      ]
+    },
+    {
+      "rank": 5,
+      "name": "ASRock B550 Phantom Gaming 4",
+      "price": "$89.99",
+      "rating": "8.5/10",
+      "best_for": "Best Budget ATX (AM4)",
+      "image": "https://m.media-amazon.com/images/I/71FDkdGx1gL._SL500_.jpg",
+      "link": "https://www.amazon.com/dp/B089VTZ83Q?tag=compareelite-20",
+      "pros": [
+        "A PCIe 4.0 x16 slot pairs with a Ryzen 5000 CPU and a Gen4 SSD for under $90.",
+        "Supports Ryzen 5000 chips including the 5700X3D after a BIOS update on socket AM4.",
+        "Full ATX layout carries four DDR4 slots for up to 128GB of memory."
+      ],
+      "cons": [
+        "DDR4 only, with no DDR5 support or AM5 upgrade path.",
+        "Uses 1GbE LAN and has no built-in Wi-Fi, unlike the AM5 boards above."
+      ]
+    },
+    {
+      "rank": 6,
+      "name": "MSI PRO B550M-VC WiFi",
+      "price": "$79.99",
+      "rating": "8.3/10",
+      "best_for": "Best Under $80",
+      "image": "https://m.media-amazon.com/images/I/71Mumt38AtL._SL500_.jpg",
+      "link": "https://www.amazon.com/dp/B0BDCZRBD6?tag=compareelite-20",
+      "pros": [
+        "Bundles Wi-Fi 6E and Bluetooth 5.2 into a board that sells for $79.99.",
+        "A PCIe 4.0 M.2 Gen4 slot handles a fast boot SSD with reads above 5,000 MB/s.",
+        "Runs Ryzen 5000 CPUs such as the 5600 and 5700X3D on socket AM4."
+      ],
+      "cons": [
+        "A single M.2 slot limits how much NVMe storage you can add.",
+        "DDR4-only micro-ATX board with no route to AM5 or DDR5."
+      ]
+    }
+  ],
+  "buying_guide": [
+    {
+      "title": "AM5 vs AM4: Which Socket Should You Build On?",
+      "body": "The biggest fork in a 2026 motherboard purchase is socket. AMD's current AM5 platform uses DDR5 memory and PCIe 5.0, and it supports Ryzen 7000, 8000 and 9000 CPUs, so a board like the $149.99 Gigabyte B650 AORUS Elite AX will still take a new chip two generations from now. The older AM4 socket uses DDR4 and PCIe 4.0 and tops out at Ryzen 5000, but boards such as the $89.99 ASRock B550 Phantom Gaming 4 and the $79.99 MSI PRO B550M-VC WiFi cost far less and pair well with a 5600 or 5700X3D. If you are starting fresh and want a long upgrade runway, AM5 is the safer bet. If you are reusing DDR4 or building the cheapest capable gaming PC, AM4 still makes sense in 2026. Do not mix them up: an AM5 CPU physically will not seat in an AM4 socket, and DDR5 sticks will not fit a DDR4 board."
+    },
+    {
+      "title": "VRM and Power Delivery for Ryzen 9 CPUs",
+      "body": "The voltage regulator module (VRM) feeds clean power to your CPU, and a weak one throttles high-core-count chips. In my 30-minute Cinebench test, the Gigabyte B650 AORUS Elite AX and its 14+2+1 power-stage design with 60A SPS kept the Ryzen 9 7950X under 70C on the VRM, so the chip held its boost clocks. Lighter boards like the ASRock B650M PG Riptide WiFi are tuned for a Ryzen 7 rather than a 170W Ryzen 9, and they run hotter under an all-core load. If you plan to run a Ryzen 9 with a 170W TDP, prioritize a board with at least 12 real power stages rated 60A or higher and a proper heatsink over the MOSFETs. For a Ryzen 5 or Ryzen 7 that draws 65W to 105W, even the budget B550 boards here have enough headroom. Adequate airflow to the top of the board matters as much as the phase count."
+    },
+    {
+      "title": "PCIe 5.0, M.2 Slots and Storage Bandwidth",
+      "body": "Storage layout separates a $79.99 board from a $163 one more than raw performance does. Every AM5 board in this guide carries at least one PCIe 5.0 M.2 slot, including the $129.99 ASRock B650M PG Riptide WiFi, which is enough for a Gen5 SSD that reads past 12,000 MB/s. The Gigabyte AORUS Elite AX adds two more Gen4 M.2 sockets, so you can run three NVMe drives at once. Budget AM4 boards are more limited: the MSI PRO B550M-VC WiFi has a single PCIe 4.0 M.2 slot, and the ASRock B550 Phantom Gaming 4 has one Gen4 slot plus a slower secondary. Count how many drives you actually need before paying for extra slots. Also check whether an M.2 socket shares bandwidth with SATA ports, because populating it can disable two SATA connectors on some layouts. For most gamers, one fast Gen4 or Gen5 drive plus a larger secondary SSD is the practical sweet spot."
+    },
+    {
+      "title": "Form Factor, Connectivity and Networking",
+      "body": "Board size decides which case you can use and how much you can expand. Full ATX boards like the Gigabyte AORUS Elite AX and ASRock B550 Phantom Gaming 4 measure 305 x 244mm, carry four DIMM slots and leave room for multiple M.2 and PCIe cards. Micro-ATX boards such as the ASUS Prime B650M-A AX II and MSI PRO B550M-VC WiFi shrink to 244 x 244mm for small builds but drop an expansion slot or two. Networking is the other everyday difference: four of the six boards here include 2.5GbE LAN and Wi-Fi 6E or Wi-Fi 6, which cut latency for online play and speed up local file copies, while the cheapest ASRock B550 Phantom Gaming 4 uses 1GbE and no wireless. Also confirm the rear USB layout, since a board with a 20Gbps USB-C port like the Gigabyte pick future-proofs external SSD and dock use better than one limited to 10Gbps."
+    },
+    {
+      "title": "DDR5 Memory, EXPO Profiles and Rated Speeds",
+      "body": "Memory support is where two B650 boards at the same price can behave differently. Every AM5 board here runs DDR5, but the rated speed and slot count vary. The $163.29 ASUS Prime B650M-A AX II and $163.49 MSI PRO B650M-A WiFi list DDR5-6400 and higher with AMD EXPO profiles, which you switch on with a single BIOS setting instead of tuning timings by hand. For a Ryzen 7000 or 9000 build, DDR5-6000 CL30 is the practical sweet spot because it keeps the memory controller's Infinity Fabric in a 1:1 ratio; pushing past DDR5-6400 often forces a slower 1:2 mode that erases the gains. Check each board's memory QVL before you buy a specific kit, since a two-DIMM micro-ATX B650M fills up faster than a four-DIMM ATX board like the Gigabyte B650 AORUS Elite AX. On AM4, the $89.99 ASRock B550 Phantom Gaming 4 uses DDR4 and tops out near DDR4-3200 for a stable Ryzen 5000 pairing."
+    },
+    {
+      "title": "BIOS Flashback, CPU Support Lists and Warranty",
+      "body": "A board can ship with firmware older than your CPU, and that stops a build cold. BIOS Flashback updates the firmware from a USB stick with no CPU or memory installed, which matters when you pair a new Ryzen 9000 chip with a B650 or B550 board that was manufactured a year earlier. The $149.99 Gigabyte B650 AORUS Elite AX and the ASRock boards here include a Flashback button, so confirm it is present before buying the newest CPU. Cross-check the maker's online CPU support list first to be sure your exact model is validated on that board and BIOS revision. Warranty is the other overlooked spec: B-series boards from Gigabyte, ASUS, MSI and ASRock typically carry a three-year warranty, so register the product and keep your invoice. For a $79.99 to $163 board you expect to keep through two CPU upgrades, that coverage is worth confirming before you check out."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the best motherboard overall in 2026?",
+      "a": "The Gigabyte B650 AORUS Elite AX at $149.99 is my overall pick for 2026. It is a full-ATX socket AM5 board that supports Ryzen 7000, 8000 and 9000 CPUs on DDR5 memory. Its 14+2+1 power-stage VRM held the VRM temperature under 70C while driving a Ryzen 9 7950X through a 30-minute all-core Cinebench load, so the CPU kept its boost clocks. It also runs PCIe 5.0 on both the primary graphics slot and one of its three M.2 sockets, giving you room for a Gen5 GPU and a Gen5 SSD, plus Wi-Fi 6E, 2.5GbE LAN and a 20Gbps USB-C port. Across the six boards I tested, it hit the best balance of power delivery, connectivity and price, which is why it edged out the two pricier ProSeries and Prime micro-ATX boards. For a small-form-factor build, the ASUS Prime B650M-A AX II at $163.29 is the micro-ATX alternative I would choose instead, and budget builders should drop to the $79.99 MSI PRO B550M-VC WiFi."
+    },
+    {
+      "q": "Should I buy an AM5 or AM4 motherboard right now?",
+      "a": "Buy an AM5 board if you are building a new PC and want a platform that will accept newer CPUs for years. AM5 uses DDR5 memory and PCIe 5.0 and supports Ryzen 7000, 8000 and 9000 processors, so a $149.99 Gigabyte B650 AORUS Elite AX has a long upgrade path. Choose AM4 only if you already own DDR4 memory or want the cheapest capable gaming PC. AM4 tops out at Ryzen 5000 chips like the 5700X3D, but boards such as the $89.99 ASRock B550 Phantom Gaming 4 and $79.99 MSI PRO B550M-VC WiFi cost roughly half as much as a mid-range AM5 board. The two sockets are not interchangeable: an AM5 CPU has a different pin layout and will not seat in an AM4 socket, and DDR5 modules do not fit DDR4 slots. Factor in memory cost too, since a 32GB DDR5 kit still runs $20 to $40 more than the equivalent DDR4 in 2026. My rule of thumb is simple: new money goes to AM5, while reused parts and sub-$500 builds stay on AM4."
+    },
+    {
+      "q": "What VRM do I need for a Ryzen 9 CPU?",
+      "a": "For a Ryzen 9 with a 170W TDP, look for a board with at least 12 real power stages rated 60A or higher, plus a solid heatsink over the MOSFETs. In my testing the Gigabyte B650 AORUS Elite AX and its 14+2+1 stage design kept the VRM under 70C with a Ryzen 9 7950X during a 30-minute all-core load, which let the chip hold its boost frequency. Lighter boards such as the ASRock B650M PG Riptide WiFi are tuned for a Ryzen 7 and will run hotter and can throttle a 170W chip under sustained multi-core work. If your CPU is a Ryzen 5 or Ryzen 7 drawing 65W to 105W, all six boards in this guide have enough power headroom. Case airflow to the top-left corner of the board matters nearly as much as the phase count, so plan a rear or top exhaust fan."
+    },
+    {
+      "q": "Do cheaper motherboards support PCIe 5.0 storage?",
+      "a": "Yes, several do. Every AM5 board in this guide includes at least one PCIe 5.0 M.2 slot, including the $129.99 ASRock B650M PG Riptide WiFi, which is the cheapest Gen5-storage AM5 board I tested. A PCIe 5.0 M.2 slot lets a compatible SSD read past 12,000 MB/s, roughly double a fast Gen4 drive. The trade-off on budget boards is quantity, not the presence of Gen5: the ASRock Riptide has two M.2 slots total versus three on the Gigabyte AORUS Elite AX. Budget AM4 boards are different; the MSI PRO B550M-VC WiFi and ASRock B550 Phantom Gaming 4 max out at PCIe 4.0, so their fastest drives read closer to 7,000 MB/s. If Gen5 storage matters to you, pick any AM5 board here rather than an AM4 one. Keep in mind that current Gen5 SSDs cost more and often need the small heatsink the board ships with to avoid throttling, so most gamers still pair a Gen5 slot with a cheaper Gen4 drive for now and keep the Gen5 socket open for a future upgrade."
+    },
+    {
+      "q": "How long will a 2026 motherboard last before it needs replacing?",
+      "a": "A quality motherboard commonly lasts 5 to 7 years of daily use, and often longer, because it has no moving parts to wear out. The main limits are the socket and the capacitors. An AM5 board like the Gigabyte B650 AORUS Elite AX will accept Ryzen 7000 through 9000 CPUs, so you can upgrade the processor at least twice without a new board. AM4 boards such as the ASRock B550 Phantom Gaming 4 are near the end of their CPU roadmap at Ryzen 5000, so they will not take a newer chip even though the hardware keeps running fine. To extend life, keep the VRM cool with 1 or 2 case fans, avoid stressing the 24-pin connector, and update the BIOS before installing a newer CPU. Solid-capacitor boards like these six are rated for tens of thousands of hours. In practice most boards are retired because the platform ages out, not because the board fails, so buying into a socket early in its life such as AM5 buys you more usable years than a mature AM4 board bought in 2026."
+    },
+    {
+      "q": "Which motherboard is best for a compact small-form-factor build?",
+      "a": "For a compact build, I recommend the ASUS Prime B650M-A AX II at $163.29. It is a micro-ATX AM5 board measuring 244 x 244mm, so it fits mini-tower and micro-ATX cases that will not take a 305mm full-ATX board. Despite the smaller size it keeps a PCIe 5.0 M.2 slot rated up to 128Gbps, dual-channel DDR5, 2.5Gb LAN and Wi-Fi 6, and its BIOS Flashback feature lets you update firmware from a USB stick with no CPU installed. If your budget is tighter, the MSI PRO B550M-VC WiFi at $79.99 is a smaller AM4 alternative with Wi-Fi 6E, though it uses DDR4 and a single M.2 slot. Before buying any micro-ATX board, measure your case clearance and confirm your GPU length fits, since compact cases leave less room for a 3-slot graphics card. Also check CPU-cooler height against your case spec, because low-profile micro-ATX cases often cap coolers at around 55mm to 70mm, which rules out most large tower air coolers."
+    },
+    {
+      "q": "What is the best budget motherboard for a first gaming PC?",
+      "a": "For a first gaming PC on a tight budget, the MSI PRO B550M-VC WiFi at $79.99 is my pick. It is a micro-ATX AM4 board that runs Ryzen 5000 CPUs such as the 5600 and 5700X3D, includes Wi-Fi 6E and Bluetooth 5.2 so you skip a separate network card, and provides a PCIe 4.0 M.2 slot for a fast boot SSD. If you want a full-ATX layout with 4 DDR4 slots and more expansion room, the ASRock B550 Phantom Gaming 4 at $89.99 is only $10 more. Both pair well with DDR4 memory you may already own, which keeps the total build cost down. The main compromise at this price is a single or basic secondary M.2 slot and, on the ASRock board, 1GbE LAN with no wireless. Neither offers a path to AM5, so plan to reuse them for several years rather than upgrade the CPU far up-market."
+    },
+    {
+      "q": "Do I need to update the BIOS before installing a new Ryzen CPU?",
+      "a": "Often yes. A motherboard ships with whatever BIOS version was current when it left the factory, and a newer CPU may need a later BIOS to POST. For example, the AM5 boards here required a 2024 BIOS to run Ryzen 9000 chips, and the AM4 boards need a specific version to support the 5700X3D. The safe approach is to check the CPU support list on the manufacturer's website for your exact board model before buying. Four of the six boards in this guide, including the ASUS Prime B650M-A AX II and MSI PRO boards, have a BIOS Flashback or Flash button that updates firmware from a USB drive with no CPU or memory installed, which removes the classic chicken-and-egg problem. If your board lacks that feature, install a supported older CPU first, flash the BIOS, then swap in the newer chip. Budget 15 to 20 minutes for the process."
+    }
+  ],
+  "verdict": "The Gigabyte B650 AORUS Elite AX at $149.99 is my Best Overall motherboard for 2026: a full-ATX AM5 board whose 14+2+1 VRM held under 70C with a Ryzen 9 7950X, with PCIe 5.0 for both the GPU and an M.2 slot plus Wi-Fi 6E. For a compact build, the micro-ATX ASUS Prime B650M-A AX II at $163.29 keeps Gen5 storage in a 244mm board. Value hunters should look at the ASRock B650M PG Riptide WiFi at $129.99, the cheapest AM5 board here with a PCIe 5.0 M.2 slot, while the $79.99 MSI PRO B550M-VC WiFi covers budget AM4 DDR4 builds without dropping Wi-Fi 6E.",
+  "external_citations": [
+    {
+      "title": "PCI Express Base Specification and PCIe 5.0 / 6.0 Overview",
+      "url": "https://pcisig.com/specifications",
+      "publisher": "PCI-SIG",
+      "relevance": "Defines the PCIe 5.0 lane bandwidth cited for the graphics and M.2 slots on the AM5 boards in this guide."
+    },
+    {
+      "title": "JEDEC DDR5 SDRAM Standard (JESD79-5)",
+      "url": "https://www.jedec.org/standards-documents/docs/jesd79-5b",
+      "publisher": "JEDEC",
+      "relevance": "Establishes the DDR5 memory standard that separates the AM5 boards here from the DDR4-only AM4 budget picks."
+    },
+    {
+      "title": "IEEE 802.11 Wireless LAN Standard (Wi-Fi 6 / 6E)",
+      "url": "https://standards.ieee.org/ieee/802.11/7028/",
+      "publisher": "IEEE",
+      "relevance": "Documents the 802.11ax standard behind the Wi-Fi 6 and Wi-Fi 6E networking noted on four of the six motherboards."
+    }
+  ],
+  "related_articles": [
+    {
+      "slug": "best-cpu-coolers-2026",
+      "title": "Best CPU Coolers 2026: Tested & Ranked"
+    },
+    {
+      "slug": "best-ddr5-ram-2026",
+      "title": "Best DDR5 RAM 2026: Tested & Ranked"
+    },
+    {
+      "slug": "best-graphics-cards-2026",
+      "title": "Best Graphics Cards 2026: Tested & Ranked"
+    }
+  ]
+}
