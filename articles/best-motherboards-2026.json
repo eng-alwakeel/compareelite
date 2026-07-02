@@ -11,7 +11,9 @@
   "author_bio": "Sarah Mitchell is a technology journalist and product reviewer with 8 years of experience testing consumer electronics and workspace gear for major publications.",
   "reviewer": "Mike Chen",
   "reviewer_title": "Senior Product Analyst",
-  "stats": { "readers": 0 },
+  "stats": {
+    "readers": 0
+  },
   "key_takeaways": [
     "The Gigabyte B650 AORUS Elite AX tops our list at $149.99, pairing a 14+2+1 power-stage VRM with PCIe 5.0 on both the GPU slot and one M.2 socket.",
     "Six boards span $79.99 to $163.49, covering current AM5 DDR5 platforms and budget AM4 DDR4 builds in one guide.",
@@ -19,8 +21,7 @@
     "The MSI PRO B550M-VC WiFi is the budget pick at $79.99, keeping Wi-Fi 6E and a PCIe 4.0 M.2 slot but limiting you to DDR4 memory.",
     "Four of the six boards include 2.5GbE LAN plus Wi-Fi 6E for lower-latency online gaming and faster local transfers."
   ],
-  "intro": "Choosing a motherboard sets the ceiling for every other part in your build, from how many NVMe drives you can run to whether your CPU can hold its boost clocks under load. For 2026 the decision splits cleanly along two AMD platforms: socket AM5 with DDR5 and PCIe 5.0 for Ryzen 7000, 8000 and 9000 chips, and the older but cheaper socket AM4 with DDR4 for Ryzen 5000 builds and upgrades. Both are still widely stocked, and the right pick depends on your CPU, your storage plans and your budget.\n\nI tested six boards across both sockets, from a $79.99 micro-ATX budget board to a $163.49 ProSeries model, measuring VRM temperatures under sustained load, timing BIOS-flash and POST routines, and checking DDR5 and DDR4 stability at rated speeds. The goal was to find boards that hit their advertised specs without thermal throttling or memory-training headaches.\n\nMy overall winner is the Gigabyte B650 AORUS Elite AX at $149.99, a full-ATX AM5 board with a 14+2+1 power stage design, PCIe 5.0 for both the graphics slot and an M.2, and Wi-Fi 6E. If you are building on a tighter budget or reusing DDR4, the ASRock and MSI B550 boards below cover AM4 for under $90 without giving up a Gen4 NVMe slot."
-,
+  "intro": "Choosing a motherboard sets the ceiling for every other part in your build, from how many NVMe drives you can run to whether your CPU can hold its boost clocks under load. For 2026 the decision splits cleanly along two AMD platforms: socket AM5 with DDR5 and PCIe 5.0 for Ryzen 7000, 8000 and 9000 chips, and the older but cheaper socket AM4 with DDR4 for Ryzen 5000 builds and upgrades. Both are still widely stocked, and the right pick depends on your CPU, your storage plans and your budget.\n\nI tested six boards across both sockets, from a $79.99 micro-ATX budget board to a $163.49 ProSeries model, measuring VRM temperatures under sustained load, timing BIOS-flash and POST routines, and checking DDR5 and DDR4 stability at rated speeds. The goal was to find boards that hit their advertised specs without thermal throttling or memory-training headaches.\n\nMy overall winner is the Gigabyte B650 AORUS Elite AX at $149.99, a full-ATX AM5 board with a 14+2+1 power stage design, PCIe 5.0 for both the graphics slot and an M.2, and Wi-Fi 6E. If you are building on a tighter budget or reusing DDR4, the ASRock and MSI B550 boards below cover AM4 for under $90 without giving up a Gen4 NVMe slot.",
   "testing_narrative": "I bench-tested each board with a Ryzen 7 7800X3D and a Ryzen 9 7950X, logging VRM temperatures across a 30-minute Cinebench load, timing POST and BIOS-flash routines, and confirming DDR5 and DDR4 stability at rated EXPO speeds. Scores were locked before I checked retail prices.",
   "products": [
     {
@@ -148,6 +149,14 @@
     {
       "title": "Form Factor, Connectivity and Networking",
       "body": "Board size decides which case you can use and how much you can expand. Full ATX boards like the Gigabyte AORUS Elite AX and ASRock B550 Phantom Gaming 4 measure 305 x 244mm, carry four DIMM slots and leave room for multiple M.2 and PCIe cards. Micro-ATX boards such as the ASUS Prime B650M-A AX II and MSI PRO B550M-VC WiFi shrink to 244 x 244mm for small builds but drop an expansion slot or two. Networking is the other everyday difference: four of the six boards here include 2.5GbE LAN and Wi-Fi 6E or Wi-Fi 6, which cut latency for online play and speed up local file copies, while the cheapest ASRock B550 Phantom Gaming 4 uses 1GbE and no wireless. Also confirm the rear USB layout, since a board with a 20Gbps USB-C port like the Gigabyte pick future-proofs external SSD and dock use better than one limited to 10Gbps."
+    },
+    {
+      "title": "DDR5 Memory, EXPO Profiles and Rated Speeds",
+      "body": "Memory support is where two B650 boards at the same price can behave differently. Every AM5 board here runs DDR5, but the rated speed and slot count vary. The $163.29 ASUS Prime B650M-A AX II and $163.49 MSI PRO B650M-A WiFi list DDR5-6400 and higher with AMD EXPO profiles, which you switch on with a single BIOS setting instead of tuning timings by hand. For a Ryzen 7000 or 9000 build, DDR5-6000 CL30 is the practical sweet spot because it keeps the memory controller's Infinity Fabric in a 1:1 ratio; pushing past DDR5-6400 often forces a slower 1:2 mode that erases the gains. Check each board's memory QVL before you buy a specific kit, since a two-DIMM micro-ATX B650M fills up faster than a four-DIMM ATX board like the Gigabyte B650 AORUS Elite AX. On AM4, the $89.99 ASRock B550 Phantom Gaming 4 uses DDR4 and tops out near DDR4-3200 for a stable Ryzen 5000 pairing."
+    },
+    {
+      "title": "BIOS Flashback, CPU Support Lists and Warranty",
+      "body": "A board can ship with firmware older than your CPU, and that stops a build cold. BIOS Flashback updates the firmware from a USB stick with no CPU or memory installed, which matters when you pair a new Ryzen 9000 chip with a B650 or B550 board that was manufactured a year earlier. The $149.99 Gigabyte B650 AORUS Elite AX and the ASRock boards here include a Flashback button, so confirm it is present before buying the newest CPU. Cross-check the maker's online CPU support list first to be sure your exact model is validated on that board and BIOS revision. Warranty is the other overlooked spec: B-series boards from Gigabyte, ASUS, MSI and ASRock typically carry a three-year warranty, so register the product and keep your invoice. For a $79.99 to $163 board you expect to keep through two CPU upgrades, that coverage is worth confirming before you check out."
     }
   ],
   "faq": [
