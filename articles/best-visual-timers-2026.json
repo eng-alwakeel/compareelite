@@ -11,7 +11,9 @@
   "author_bio": "Sarah Mitchell is a technology journalist and product reviewer with 8 years of experience testing consumer electronics and workspace gear for major publications.",
   "reviewer": "Mike Chen",
   "reviewer_title": "Senior Product Analyst",
-  "stats": { "readers": 0 },
+  "stats": {
+    "readers": 0
+  },
   "key_takeaways": [
     "The Secura 60-Minute 7.5-inch tops our list at $16.99 with a fully mechanical movement that needs zero batteries and a 7.5-inch dial readable from across a room.",
     "The TK3 Pomodoro Timer Cube ($53.99) is the only digital pick here, flipping between 5, 10, 30, and 60-minute presets plus a 1-second-resolution stopwatch.",
@@ -208,5 +210,18 @@
       "relevance": "Supports the point that behavioral tools and visual cues are recommended supports for children, including those who struggle with managing time."
     }
   ],
-  "related_articles": []
+  "related_articles": [
+    {
+      "slug": "best-budget-office-chairs-under-200-2026",
+      "title": "Best Budget Office Chairs Under $200 2026: Tested & Ranked"
+    },
+    {
+      "slug": "best-computer-speakers-2026",
+      "title": "Best Computer Speakers 2026: Tested & Ranked"
+    },
+    {
+      "slug": "best-copy-holders-2026",
+      "title": "Best Copy Holders 2026: Tested & Ranked"
+    }
+  ]
 }

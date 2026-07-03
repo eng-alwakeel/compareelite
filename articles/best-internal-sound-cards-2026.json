@@ -11,7 +11,9 @@
   "author_bio": "Sarah Mitchell is a technology journalist and product reviewer with 8 years of experience testing consumer electronics and workspace gear for major publications.",
   "reviewer": "Mike Chen",
   "reviewer_title": "Senior Product Analyst",
-  "stats": { "readers": 0 },
+  "stats": {
+    "readers": 0
+  },
   "key_takeaways": [
     "The Creative Sound Blaster AE-7 tops our list at $212.20 with a 127dB ESS SABRE-class DAC and a Xamp amp that drives 600-ohm headphones.",
     "The external Sound BlasterX G6 reaches 130dB DNR and 32-bit/384kHz over one USB cable for $179.84, and also works on consoles.",
@@ -206,5 +208,18 @@
       "relevance": "Supports the guidance on safe listening levels when using the powerful 600-ohm headphone amplifiers in the AE-7, G6, and Audigy FX V2."
     }
   ],
-  "related_articles": []
+  "related_articles": [
+    {
+      "slug": "best-graphics-cards-2026",
+      "title": "Best Graphics Cards 2026: Tested & Ranked"
+    },
+    {
+      "slug": "best-sd-cards-2026",
+      "title": "Best SD Cards 2026: Tested & Ranked"
+    },
+    {
+      "slug": "best-audio-interfaces-2026",
+      "title": "Best Audio Interfaces 2026: Tested & Ranked"
+    }
+  ]
 }

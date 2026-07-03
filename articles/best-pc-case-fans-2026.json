@@ -203,5 +203,18 @@
       "relevance": "Independent explainer on when airflow versus static-pressure fans matter, backing the article's core selection framework."
     }
   ],
-  "related_articles": []
+  "related_articles": [
+    {
+      "slug": "best-pc-cases-2026",
+      "title": "Best PC Cases 2026: Tested & Ranked"
+    },
+    {
+      "slug": "best-audio-interfaces-2026",
+      "title": "Best Audio Interfaces 2026: Tested & Ranked"
+    },
+    {
+      "slug": "best-bluetooth-trackers-2026",
+      "title": "Best Bluetooth Trackers 2026: Tested & Ranked"
+    }
+  ]
 }

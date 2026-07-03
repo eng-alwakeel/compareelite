@@ -162,7 +162,7 @@
     },
     {
       "q": "How long should a quality product in this category last?",
-      "a": "Quality products in this category typically provide 5 to 8 years of reliable service with proper care, though software support and feature obsolescence often make users replace them in 3 to 5 years. Premium build materials like aluminum housings, stainless steel hardware, and quality bearings significantly extend physical longevity compared to plastic-intensive budget designs. Manufacturer update support is the more likely limiting factor \u2014 products with discontinued software or firmware updates become incompatible with evolving platforms and services before the hardware wears out. Choosing products from manufacturers with 5+ year update track records for similar devices provides the best long-term value."
+      "a": "Quality products in this category typically provide 5 to 8 years of reliable service with proper care, though software support and feature obsolescence often make users replace them in 3 to 5 years. Premium build materials like aluminum housings, stainless steel hardware, and quality bearings significantly extend physical longevity compared to plastic-intensive budget designs. Manufacturer update support is the more likely limiting factor — products with discontinued software or firmware updates become incompatible with evolving platforms and services before the hardware wears out. Choosing products from manufacturers with 5+ year update track records for similar devices provides the best long-term value."
     },
     {
       "q": "What warranty should I expect and what does it cover?",
@@ -170,7 +170,20 @@
     }
   ],
   "verdict": "The DJI Mic Mini (1 TX + 1 RX) earns the Best Overall title at $149.00 with its 400m wireless range, automatic gain limiting, and 17g transmitter that disappears on any garment. Creators needing to mic two speakers simultaneously should step up to the Hollyland Lark M2 at $129.00, which adds 48kHz/24-bit recording and 40 hours of total battery life in a dual-channel kit. Professionals shooting narrative or broadcast work who need the flattest possible frequency response and the lowest self-noise should pair the Rode Lavalier GO ($79.00) or RODE Lavalier II ($99.00) with their existing wireless transmitter. Budget-conscious laptop podcasters get reliable omnidirectional audio with zero setup from the Movo M1 at $14.95.",
-  "related_articles": [],
+  "related_articles": [
+    {
+      "slug": "best-audio-interfaces-2026",
+      "title": "Best Audio Interfaces 2026: Tested & Ranked"
+    },
+    {
+      "slug": "best-bluetooth-trackers-2026",
+      "title": "Best Bluetooth Trackers 2026: Tested & Ranked"
+    },
+    {
+      "slug": "best-bone-conduction-headphones-2026",
+      "title": "Best Bone Conduction Headphones 2026: Tested & Ranked"
+    }
+  ],
   "author_bio": "Sarah Mitchell is a consumer tech reviewer with 8 years of hands-on testing experience. She has evaluated over 400 products for leading publications and specializes in home office ergonomics and productivity gear.",
   "key_takeaways": [
     "The DJI Mic Mini (1 is the best overall choice for most users",
