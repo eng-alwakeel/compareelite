@@ -66,7 +66,17 @@ Use Adel Alwakeel ONLY when the Director or CTO explicitly designates the articl
 ## STRICT RULES
 
 ### RULE 1 — NO DUPLICATE TOPICS
-Before writing, read `data/articles-index.md`. If the topic already exists → stop and report to Director with a `DUPLICATE_TOPIC: <slug>` comment. Do not start writing.
+Before writing, run the **root-keyword dedup gate against actual `origin/main` file existence** — never trust `data/articles-index.md` / `data/articles-slugs.txt` alone (CI only refreshes those on pushes to main, so they are STALE on a working branch):
+
+```bash
+node scripts/check-dedup.js <candidate-slug>
+```
+
+- Exit `0` (`OK`) → safe to write.
+- Exit `2` (`DUPLICATE_TOPIC: <live-slug>`) → **stop.** A live article shares this root keyword (hyphenation variants collapse: `weight-lifting`==`weightlifting`, `smart-watch`==`smartwatch`, `sound-bar`==`soundbar`, `wi-fi`==`wifi`). Report to Director with a `DUPLICATE_TOPIC: <live-slug>` comment. Do not start writing.
+- Exit `3` (`DUPLICATE_TOPIC_WARN: <live-slug>`) → same root, different year (annual refresh). Surface the matched live slug to the Reviewer and confirm it is intentional before proceeding.
+
+Why this gate exists: in [COM-636](/COM/issues/COM-636) an exact-string check on the stale index let `best-weightlifting-belts-2026` pass even though `articles/best-weight-lifting-belts-2026.json` was already live on `origin/main` (keyword cannibalization). Always paste the gate's output (matched live slug) into the pick log so the Reviewer can audit. Reading `data/articles-index.md` for category/topic context is still fine, but it is **not** the dedup authority.
 
 ### RULE 2 — AMAZON VERIFICATION
 For every product:
