@@ -14,9 +14,9 @@
   "stats": { "readers": 0 },
   "key_takeaways": [
     "The TP-Link AV2000 TL-PA9020P KIT tops our list at $79.99 with a rated 2,000 Mbps, two Gigabit ports per adapter, and a pass-through outlet.",
-    "For gigabit wired backhaul without the premium, the TP-Link AV1000 TL-PA7017P KIT delivers a full Gigabit port and pass-through outlet for $53.98.",
+    "For gigabit wired backhaul on a budget, the Tenda AV1000 PH3 kit delivers a full Gigabit port and a 1,000 Mbps rating for $39.99.",
     "Powerline speeds are rated at the physical layer; real-world throughput typically lands at 30 to 50 percent of the number printed on the box.",
-    "The lowest-cost kit we recommend, the TP-Link AV600 TL-PA4010 KIT, costs $24.96 but caps at a 600 Mbps rating.",
+    "The lowest-cost kit we recommend, the TP-Link AV600 TL-PA4010 KIT, costs $35.98 but caps at a 600 Mbps rating.",
     "Need WiFi in a dead zone too? The TP-Link WPA8631P KIT pairs AV1300 powerline with an AC1200 access point for $119.99."
   ],
   "intro": "Powerline adapters solve a problem that mesh systems and range extenders often cannot: getting a stable, wired connection to a room that your router simply cannot reach through walls and floors. Instead of running Ethernet cable through the house, a pair of adapters uses the copper electrical wiring already in your walls to carry network traffic between two outlets. You plug one adapter in near the router, run a short cable to it, plug the second adapter in wherever you need internet, and connect your TV, console, or desktop to it.\n\nThe catch is that not all kits perform alike, and the speed numbers on the box, ranging from AV600 to AV2000, describe a theoretical physical-layer maximum rather than what you will actually see. Wiring age, circuit layout, and distance all shave real throughput well below the rating. That makes the specific model, port count, and pass-through design matter more than the headline speed.\n\nWe evaluated six kits across those factors, weighing rated speed, Gigabit versus Fast Ethernet ports, pass-through outlets, and price. Whether you want the fastest link for a gaming rig, a cheap fix for a smart TV, or a kit that also broadcasts WiFi in a dead zone, one of the picks below fits.",
@@ -42,20 +42,20 @@
     },
     {
       "rank": 2,
-      "name": "TP-Link AV1000 Powerline Adapter TL-PA7017P KIT",
-      "price": "$53.98",
+      "name": "Tenda AV1000 Powerline Adapter Kit PH3",
+      "price": "$39.99",
       "rating": "9.2/10",
       "best_for": "Best Value",
-      "image": "https://m.media-amazon.com/images/I/61qttkvUFVS._AC_SL1500_.jpg",
-      "link": "https://www.amazon.com/dp/B08M13B8B6?tag=compareelite-20",
+      "image": "https://m.media-amazon.com/images/I/51gOmThX1oL._AC_SL1500_.jpg",
+      "link": "https://www.amazon.com/dp/B01N1JN6CV?tag=compareelite-20",
       "pros": [
-        "One Gigabit Ethernet port per adapter and a 1,000 Mbps rating cover 4K streaming and online gaming for $53.98.",
-        "The pass-through outlet plus built-in noise filtering stops a nearby power strip from dragging down the link.",
-        "Plug-and-pair setup finishes in under 2 minutes with no software or configuration."
+        "A Gigabit Ethernet port and a 1,000 Mbps AV1000 rating cover 4K streaming and online gaming for $39.99.",
+        "Plug-and-pair setup finishes in under 2 minutes with a one-press pair button and no software.",
+        "At $39.99 it is the cheapest gigabit-port kit here, undercutting the next Gigabit option by $23."
       ],
       "cons": [
-        "A single Ethernet port per unit means only one wired device per adapter.",
-        "The 1,000 Mbps rating is half the AV2000 pick's ceiling for large local file transfers."
+        "No pass-through outlet, so each compact adapter occupies its wall socket.",
+        "A single Ethernet port per adapter limits you to one wired device per outlet."
       ]
     },
     {
@@ -115,13 +115,13 @@
     {
       "rank": 6,
       "name": "TP-Link AV600 Powerline Adapter TL-PA4010 KIT",
-      "price": "$24.96",
+      "price": "$35.98",
       "rating": "8.3/10",
       "best_for": "Best Budget",
       "image": "https://m.media-amazon.com/images/I/61v1wxmNifL._AC_SL1500_.jpg",
       "link": "https://www.amazon.com/dp/B00AWRUICG?tag=compareelite-20",
       "pros": [
-        "At $24.96 it is the lowest-cost kit we recommend, undercutting the AV1000 value pick by $29.",
+        "At $35.98 it is the lowest-cost kit here, and its nano housing weighs and measures less than any other pick.",
         "The nano housing is small enough to sit beside a second plug on a duplex outlet.",
         "Power-saving mode drops consumption automatically, trimming idle draw by up to 85 percent."
       ],
@@ -142,11 +142,11 @@
     },
     {
       "title": "Why a Pass-Through Outlet Is Worth Paying For",
-      "body": "A plain powerline adapter occupies the wall socket it plugs into, which is a real cost in rooms where outlets are scarce. A pass-through model, such as the TP-Link TL-PA7017P KIT and TL-PA9020P KIT or the TRENDnet TPL-423E2K, rebuilds the socket on its own face so you can plug a lamp, charger, or power strip back in. Just as important, pass-through units include a built-in noise filter on that outlet. Powerline networking is sensitive to electrical noise from motors, chargers, and switching power supplies, and plugging those loads directly into a filtered pass-through keeps them from degrading the data link. That is also why manufacturers warn against plugging any powerline adapter into a surge-protected power strip: the strip's own filtering attenuates the network signal. If your only free outlet already hosts a power strip, a filtered pass-through adapter lets you keep both. Expect to pay a small premium of roughly $10 to $15 over a non-pass-through kit of the same speed tier, which our TRENDnet TPL-422E2K and TPL-423E2K pair illustrates almost exactly."
+      "body": "A plain powerline adapter occupies the wall socket it plugs into, which is a real cost in rooms where outlets are scarce. A pass-through model, such as the TP-Link TL-PA9020P KIT or the TRENDnet TPL-423E2K, rebuilds the socket on its own face so you can plug a lamp, charger, or power strip back in. Just as important, pass-through units include a built-in noise filter on that outlet. Powerline networking is sensitive to electrical noise from motors, chargers, and switching power supplies, and plugging those loads directly into a filtered pass-through keeps them from degrading the data link. That is also why manufacturers warn against plugging any powerline adapter into a surge-protected power strip: the strip's own filtering attenuates the network signal. If your only free outlet already hosts a power strip, a filtered pass-through adapter lets you keep both. Expect to pay a small premium of roughly $10 to $15 over a non-pass-through kit of the same speed tier, which our TRENDnet TPL-422E2K and TPL-423E2K pair illustrates almost exactly."
     },
     {
       "title": "Ports, Multi-Device Rooms, and WiFi Kits",
-      "body": "Count your wired devices before you buy. Most powerline adapters, including the TRENDnet kits and the TP-Link AV600 and AV1000 picks, carry a single Ethernet port, so each adapter feeds exactly one device. If your entertainment center holds a TV, a console, and a streaming box, a one-port adapter forces you to add a small Ethernet switch. The AV2000 TL-PA9020P KIT solves this with two Gigabit ports per adapter, and the WiFi-equipped TL-WPA8631P KIT provides three Gigabit ports on its extender unit. The WiFi kit is a different category worth understanding: it combines a powerline backhaul with an AC1200 access point, so the far adapter not only offers wired ports but also broadcasts a 2.4 GHz and 5 GHz network. That is the right tool when a room needs both a wired console and better wireless coverage for phones and tablets. A wired-only kit is cheaper and simpler if you just need one Ethernet drop, so match the port count and WiFi capability to the devices in the destination room rather than overbuying."
+      "body": "Count your wired devices before you buy. Most powerline adapters, including the TRENDnet kits, the Tenda AV1000 PH3, and the TP-Link AV600 pick, carry a single Ethernet port, so each adapter feeds exactly one device. If your entertainment center holds a TV, a console, and a streaming box, a one-port adapter forces you to add a small Ethernet switch. The AV2000 TL-PA9020P KIT solves this with two Gigabit ports per adapter, and the WiFi-equipped TL-WPA8631P KIT provides three Gigabit ports on its extender unit. The WiFi kit is a different category worth understanding: it combines a powerline backhaul with an AC1200 access point, so the far adapter not only offers wired ports but also broadcasts a 2.4 GHz and 5 GHz network. That is the right tool when a room needs both a wired console and better wireless coverage for phones and tablets. A wired-only kit is cheaper and simpler if you just need one Ethernet drop, so match the port count and WiFi capability to the devices in the destination room rather than overbuying."
     },
     {
       "title": "Home Wiring and What Actually Limits Performance",
@@ -164,7 +164,7 @@
     },
     {
       "q": "Are powerline adapters better than WiFi extenders or mesh systems?",
-      "a": "It depends on what is failing in your setup. A powerline adapter delivers a wired connection over your electrical wiring, so it is the better choice when a specific device, such as a smart TV, game console, or desktop, sits in a room your router cannot reach reliably. Because the data rides on copper rather than radio, it sidesteps the wall penetration and neighbor interference that cripple WiFi over distance, and it typically gives lower, steadier latency for gaming. Mesh systems and extenders are the better answer when you need wireless coverage for many roaming phones and laptops across a large area. The two approaches also combine well: a WiFi powerline kit like the TP-Link WPA8631P KIT at $119.99 uses a powerline backhaul to feed an access point in the dead zone, giving you both a wired drop and fresh WiFi. If you only need one solid Ethernet connection in one room, a wired powerline kit is cheaper and simpler than a full mesh set."
+      "a": "The right choice comes down to what is failing in your setup. A powerline adapter delivers a wired connection over your electrical wiring, so it is the better choice when a specific device, such as a smart TV, game console, or desktop, sits in a room your router cannot reach reliably. Because the data rides on copper rather than radio, it sidesteps the wall penetration and neighbor interference that cripple WiFi over distance, and it typically gives lower, steadier latency for gaming. Mesh systems and extenders are the better answer when you need wireless coverage for many roaming phones and laptops across a large area. The two approaches also combine well: a WiFi powerline kit like the TP-Link WPA8631P KIT at $119.99 uses a powerline backhaul to feed an access point in the dead zone, giving you both a wired drop and fresh WiFi. If you only need one solid Ethernet connection in one room, a wired powerline kit is cheaper and simpler than a full mesh set."
     },
     {
       "q": "Do powerline adapters really reach their advertised speeds?",
@@ -184,14 +184,14 @@
     },
     {
       "q": "What is the best budget powerline adapter?",
-      "a": "The TP-Link AV600 TL-PA4010 KIT at $24.96 is our budget pick, and it is enough for the most common single-device job. Its 600 Mbps rating is the lowest in this guide, translating to roughly 100 to 200 Mbps of real throughput on good wiring, but that easily covers a single 4K stream, which needs only about 25 Mbps, plus general browsing and video calls. The compact nano housing is small enough to sit beside a second plug on a duplex outlet, and power-saving mode trims idle draw automatically. The trade-offs versus pricier kits are clear: there is no pass-through outlet, so the adapter occupies its socket, and each unit has a single Ethernet port, so it feeds only one device. If you plan to connect several devices or want gigabit headroom for a fast internet plan, step up to the AV1000 TL-PA7017P KIT at $53.98 instead. But for wiring one smart TV or console in a back room on a tight budget, the AV600 kit does the job for under $25."
+      "a": "The TP-Link AV600 TL-PA4010 KIT at $35.98 is our budget pick, and it is enough for the most common single-device job. Its 600 Mbps rating is the lowest in this guide, translating to roughly 100 to 200 Mbps of real throughput on good wiring, but that easily covers a single 4K stream, which needs only about 25 Mbps, plus general browsing and video calls. The compact nano housing is small enough to sit beside a second plug on a duplex outlet, and power-saving mode trims idle draw automatically. The trade-offs versus pricier kits are clear: there is no pass-through outlet, so the adapter occupies its socket, and each unit has a single Ethernet port, so it feeds only one device. If you want a true Gigabit port and a 1,000 Mbps rating for only about $4 more, step up to the Tenda AV1000 PH3 kit at $39.99 instead. But for wiring one smart TV or console in a back room at the lowest possible price, the AV600 kit does the job for under $36."
     },
     {
       "q": "Do powerline adapters work with surge protectors or power strips?",
       "a": "You should plug the adapters themselves directly into a wall outlet, not into a surge protector or power strip. Surge protectors contain filtering components designed to absorb electrical noise and voltage spikes, and those same components attenuate the high-frequency data signal a powerline adapter transmits. Plugging an adapter into one can cut throughput dramatically or drop the link entirely. The correct approach is to plug each adapter straight into the wall, then, if you need surge protection or extra sockets, plug the power strip into the adapter's pass-through outlet on models that have one, such as the TP-Link TL-PA9020P KIT or TRENDnet TPL-423E2K. That pass-through includes a built-in noise filter, so it can feed a power strip without the strip degrading the network signal. If your adapter has no pass-through, keep it in its own dedicated wall socket and use a nearby second outlet for the power strip. This one placement detail is responsible for a large share of the poor results people report, so it is worth getting right during the first 5 minutes of setup."
     }
   ],
-  "verdict": "For most people the TP-Link AV2000 TL-PA9020P KIT at $79.99 is the kit to buy: its 2,000 Mbps rating, two Gigabit ports per adapter, and filtered pass-through outlet make it the fastest, most flexible wired option here. If you only need to wire a single device and want to save money, the TP-Link AV1000 TL-PA7017P KIT at $53.98 delivers a full Gigabit port and pass-through for a third less. Shoppers who also need wireless coverage in the destination room should choose the TP-Link WPA8631P KIT at $119.99, which adds an AC1200 access point to the powerline link, while the $24.96 TP-Link AV600 TL-PA4010 KIT covers a lone smart TV on the tightest budget.",
+  "verdict": "For most people the TP-Link AV2000 TL-PA9020P KIT at $79.99 is the kit to buy: its 2,000 Mbps rating, two Gigabit ports per adapter, and filtered pass-through outlet make it the fastest, most flexible wired option here. If you only need to wire a single device and want to save money, the Tenda AV1000 PH3 kit at $39.99 delivers a full Gigabit port and a matching 1,000 Mbps rating for half the price. Shoppers who also need wireless coverage in the destination room should choose the TP-Link WPA8631P KIT at $119.99, which adds an AC1200 access point to the powerline link, while the $35.98 TP-Link AV600 TL-PA4010 KIT covers a lone smart TV on the tightest budget.",
   "external_citations": [
     {
       "title": "IEEE 1901-2020: Standard for Broadband over Power Line Networks",
