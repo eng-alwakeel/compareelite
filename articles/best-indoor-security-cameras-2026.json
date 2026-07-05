@@ -11,7 +11,9 @@
   "author_bio": "Sarah Mitchell is a technology journalist and product reviewer with 8 years of experience testing consumer electronics and smart-home gear for major publications.",
   "reviewer": "Mike Chen",
   "reviewer_title": "Senior Product Analyst",
-  "stats": { "readers": 0 },
+  "stats": {
+    "readers": 0
+  },
   "key_takeaways": [
     "The Wyze Cam v4 tops our list at $35.97 with a 2.5K sensor, color night vision, and local microSD recording that needs no monthly subscription.",
     "For deep Google Home integration the Google Nest Cam Indoor 3rd Gen runs $74.99 and adds on-device AI that sorts people from packages before it pings your phone.",
@@ -19,8 +21,7 @@
     "The SwitchBot Indoor Cam at $34.99 pans a full 360 degrees and drops its lens behind a physical privacy shutter when you switch to home mode.",
     "The cheapest pick is the GALAYOU G2 at $24.99, a 2K pan-and-tilt camera with a built-in siren and 24/7 microSD recording."
   ],
-  "intro": "An indoor security camera is the fastest way to keep eyes on a front room, a nursery, or a pet while you are out, and the current crop does it in sharp 2K or better for under $80. Unlike a doorbell or an outdoor camera, an indoor model plugs into a wall outlet, streams over your home Wi-Fi, and sends motion alerts to your phone, so you can check a live feed or talk through a two-way speaker from anywhere. The best of them now separate a person from a pet or a passing shadow, which cuts the flood of pointless notifications that made older cameras annoying.\n\nWe tested six plug-in indoor cameras priced from $24.99 to $74.99 and ranked them on resolution, night vision, motion-detection accuracy, storage, and subscription lock-in. We favored cameras that record to a local microSD card without a monthly fee, because paying every month to view your own footage adds up fast. Each pick works with Alexa or Google to pull the feed onto a smart display.\n\nOur top pick, the Wyze Cam v4, earned the spot with a 2.5K sensor and free local recording that undercuts pricier rivals. Below it sit a premium Google option with the smartest alerts, a 360-degree pan-and-tilt model, and a sub-$25 budget camera. Every product was checked against its live Amazon listing, and the buying guide walks through resolution, local versus cloud storage, and the privacy features that matter most in a room you live in."
-  ,
+  "intro": "An indoor security camera is the fastest way to keep eyes on a front room, a nursery, or a pet while you are out, and the current crop does it in sharp 2K or better for under $80. Unlike a doorbell or an outdoor camera, an indoor model plugs into a wall outlet, streams over your home Wi-Fi, and sends motion alerts to your phone, so you can check a live feed or talk through a two-way speaker from anywhere. The best of them now separate a person from a pet or a passing shadow, which cuts the flood of pointless notifications that made older cameras annoying.\n\nWe tested six plug-in indoor cameras priced from $24.99 to $74.99 and ranked them on resolution, night vision, motion-detection accuracy, storage, and subscription lock-in. We favored cameras that record to a local microSD card without a monthly fee, because paying every month to view your own footage adds up fast. Each pick works with Alexa or Google to pull the feed onto a smart display.\n\nOur top pick, the Wyze Cam v4, earned the spot with a 2.5K sensor and free local recording that undercuts pricier rivals. Below it sit a premium Google option with the smartest alerts, a 360-degree pan-and-tilt model, and a sub-$25 budget camera. Every product was checked against its live Amazon listing, and the buying guide walks through resolution, local versus cloud storage, and the privacy features that matter most in a room you live in.",
   "testing_narrative": "I mounted all six cameras in a living room and a nursery, then ran two weeks of day and night footage while triggering motion with a person, a dog, and a robot vacuum to check false alerts. I timed app pairing, measured how far night vision stayed usable, compared local microSD playback against cloud clips, and logged which features demanded a paid plan.",
   "products": [
     {
@@ -214,7 +215,7 @@
     },
     {
       "title": "Reduce the Risk of Sudden Infant Death and Safe Sleep",
-      "url": "https://safetosleep.nichd.nih.gov/safesleepbasics/environment",
+      "url": "https://safetosleep.nichd.nih.gov/reduce-risk/reduce",
       "publisher": "NIH / NICHD",
       "relevance": "Reinforces our advice to keep camera cords well away from a crib when using an indoor camera as a baby monitor."
     }
