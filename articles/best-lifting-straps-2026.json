@@ -43,8 +43,8 @@
       "price": "$14.95",
       "best_for": "Best Overall",
       "image": "https://m.media-amazon.com/images/I/61+UlXddzxL._SL500_.jpg",
-      "link": "https://www.amazon.com/dp/B07BB4463X?tag=compareelite-20",
-      "asin": "B07BB4463X",
+      "link": "https://www.amazon.com/dp/B07BB3VQ42?tag=compareelite-20",
+      "asin": "B07BB3VQ42",
       "pros": [
         "18-inch cotton length gives two to three full wraps around a 28mm barbell",
         "Neoprene wrist pad roughly 4mm thick cushions loads past 400 pounds",
@@ -62,8 +62,8 @@
       "price": "$10.95",
       "best_for": "Best Value",
       "image": "https://m.media-amazon.com/images/I/81RyY8mhh7L._SL500_.jpg",
-      "link": "https://www.amazon.com/dp/B07T9GS5DZ?tag=compareelite-20",
-      "asin": "B07T9GS5DZ",
+      "link": "https://www.amazon.com/dp/B0011861UI?tag=compareelite-20",
+      "asin": "B0011861UI",
       "pros": [
         "NeoTek wrist cushion at a price of $10.95, the lowest padded option here",
         "21.5-inch cotton length adds an extra wrap versus 18-inch straps",
@@ -80,8 +80,8 @@
       "price": "$49.99",
       "best_for": "Best Premium Grip",
       "image": "https://m.media-amazon.com/images/I/81xoSlpkbRL._SL500_.jpg",
-      "link": "https://www.amazon.com/dp/B081TJ23GM?tag=compareelite-20",
-      "asin": "B081TJ23GM",
+      "link": "https://www.amazon.com/dp/B07J2MWVDD?tag=compareelite-20",
+      "asin": "B07J2MWVDD",
       "pros": [
         "One-piece pad wraps the bar without threading and releases in under 1 second",
         "Made in the USA since 1998 with a covered lifetime workmanship guarantee",
@@ -98,8 +98,8 @@
       "price": "$19.99",
       "best_for": "Best for Max Deadlifts",
       "image": "https://m.media-amazon.com/images/I/71vgU5Rzl8L._SL500_.jpg",
-      "link": "https://www.amazon.com/dp/B0FNH3M3TB?tag=compareelite-20",
-      "asin": "B0FNH3M3TB",
+      "link": "https://www.amazon.com/dp/B0FNGVVTJV?tag=compareelite-20",
+      "asin": "B0FNGVVTJV",
       "pros": [
         "Sewn-in wooden dowel locks the wrap so the bar cannot spin during a 1-rep max",
         "Padded wrist section reduces bar bite on sets above 315 pounds",
@@ -116,8 +116,8 @@
       "price": "$20.99",
       "best_for": "Best No-Slip Grip",
       "image": "https://m.media-amazon.com/images/I/71-YjN1fRGL._SL500_.jpg",
-      "link": "https://www.amazon.com/dp/B01FR2CHWY?tag=compareelite-20",
-      "asin": "B01FR2CHWY",
+      "link": "https://www.amazon.com/dp/B001SG5LNG?tag=compareelite-20",
+      "asin": "B001SG5LNG",
       "pros": [
         "DuraGrip rubber strips run the full 21.5-inch strap to stop slipping on a bare bar",
         "Nylon construction resists fraying better than cotton over 1000-plus reps",
@@ -134,8 +134,8 @@
       "price": "$8.99",
       "best_for": "Best Budget",
       "image": "https://m.media-amazon.com/images/I/91LTyE8SNxL._SL500_.jpg",
-      "link": "https://www.amazon.com/dp/B0DJ38MJHJ?tag=compareelite-20",
-      "asin": "B0DJ38MJHJ",
+      "link": "https://www.amazon.com/dp/B07H45VYGC?tag=compareelite-20",
+      "asin": "B07H45VYGC",
       "pros": [
         "Priced at $8.99, the lowest in this guide for a padded pair",
         "24-inch length gives the most bar wraps for thick axle or fat bars",
@@ -197,5 +197,8 @@
       "source": "ACE"
     }
   ],
-  "related_articles": []
+  "related_articles": [],
+  "stats": {
+    "readers": 0
+  }
 }
